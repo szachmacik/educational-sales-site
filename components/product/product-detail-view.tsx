@@ -141,7 +141,7 @@ export function ProductDetailView({ slug }: ProductDetailViewProps) {
                                 "@context": "https://schema.org",
                                 "@type": "Product",
                                 "name": product.title,
-                                "image": [product.image || 'https://educational-sales-site.com/product-placeholder.png'],
+                                "image": [product.image || 'https://kamila.shor.dev/product-placeholder.png'],
                                 "description": product.description,
                                 "sku": product.slug,
                                 "brand": {

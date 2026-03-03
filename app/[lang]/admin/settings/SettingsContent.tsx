@@ -208,7 +208,7 @@ export default function SettingsContent({ dictionary }: { dictionary: any }) {
             siteName: "Kamila Łobko-Koziej",
             aiDiscoveryEnabled: true,
             aiSummary: "Educational materials for English teachers including lesson plans and PDF resources.",
-            canonicalUrl: "https://educational-sales-site.com",
+            canonicalUrl: "https://kamila.shor.dev",
         },
         integrations: {
             webhooks: [],
@@ -436,7 +436,7 @@ export default function SettingsContent({ dictionary }: { dictionary: any }) {
                         ...parsed.seo,
                         aiDiscoveryEnabled: parsed.seo?.aiDiscoveryEnabled ?? true,
                         aiSummary: parsed.seo?.aiSummary || "Educational materials for English teachers including lesson plans and PDF resources.",
-                        canonicalUrl: parsed.seo?.canonicalUrl || "https://educational-sales-site.com",
+                        canonicalUrl: parsed.seo?.canonicalUrl || "https://kamila.shor.dev",
                     },
                     integrations: parsed.integrations || { webhooks: [], mcp: { serverUrl: "", enabled: false }, externalApis: [] },
                     emails: parsed.emails || {
