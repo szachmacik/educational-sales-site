@@ -2,7 +2,7 @@ const fs = require('fs');
 
 async function send() {
     try {
-        const promptPath = 'C:\\Users\\kamil\\.gemini\\antigravity\\brain\\ab66d138-3e92-47e7-9e7a-736de7189474\\final_audit_prompt.md';
+        const promptPath = 'C:\\Users\\kamil\\.gemini\\antigravity\\brain\\63be3e0a-7184-4b97-b5be-b13911af28e5\\manus_schedule_prompt.md';
         const prompt = fs.readFileSync(promptPath, 'utf8');
 
         console.log("Wysyłanie żądania do lokalnego API...");
@@ -11,7 +11,7 @@ async function send() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 isLocal: true,
-                targetUrl: 'https://fuzzy-chefs-join.loca.lt',
+                targetUrl: 'http://kamila.shor.dev',
                 customPrompt: prompt
             })
         });
