@@ -10,6 +10,7 @@ import { getUserProfile } from "@/lib/user-profile-service";
 import { generateOrderId } from "@/lib/order-schema";
 import { processStripePayment } from "@/lib/integrations/stripe-service";
 import { processPayNowPayment } from "@/lib/integrations/paynow-service";
+import { processZenPayment } from "@/lib/integrations/zen-service";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -386,9 +387,33 @@ export function CheckoutContent() {
             }
 
             if (form.paymentMethod === 'card' || form.paymentMethod === 'applepay') {
-                result = await processStripePayment(finalTotal, 'PLN');
+                // Stripe — card payments (Visa, Mastercard, Apple Pay)
+                result = await processStripePayment(
+                    finalTotal,
+                    'PLN',
+                    orderId,
+                    form.email,
+                    cart.items.map(i => i.title).join(', ')
+                );
+            } else if (form.paymentMethod === 'zen') {
+                // Zen.com — BLIK, card, Apple Pay, Google Pay via Zen
+                result = await processZenPayment(
+                    finalTotal,
+                    'PLN',
+                    orderId,
+                    form.email,
+                    form.firstName,
+                    form.lastName,
+                    cart.items.map(i => i.title).join(', ')
+                );
             } else {
-                result = await processPayNowPayment(finalTotal, orderId, form.email);
+                // PayNow (mBank) — BLIK, fast transfers
+                result = await processPayNowPayment(
+                    finalTotal,
+                    orderId,
+                    form.email,
+                    cart.items.map(i => i.title).join(', ')
+                );
             }
 
             if (result.success && result.redirectUrl) {
