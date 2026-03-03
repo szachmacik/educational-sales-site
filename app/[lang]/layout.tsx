@@ -48,7 +48,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
   const t = await getCommonDictionary(lang);
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://educational-sales-site.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://kamila.shor.dev';
 
   // Construct alternate links for all languages (International SEO)
   const languageAlternates: Record<string, string> = {
