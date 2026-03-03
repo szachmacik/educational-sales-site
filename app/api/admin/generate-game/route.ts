@@ -1,7 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
+import { requireAuth } from "@/lib/api-auth";
 
 export async function POST(req: NextRequest) {
-    try {
+    const authError = await requireAuth();
+    if (authError) return authError;
+
+        try {
         const { prompt, type } = await req.json();
 
         if (!process.env.GEMINI_API_KEY) {

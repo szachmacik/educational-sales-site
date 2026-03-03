@@ -4,7 +4,7 @@ import path from "path";
 
 export const dynamic = "force-dynamic";
 
-const REPORTS_FILE = path.join(process.cwd(), "public", "audit-reports.json");
+const REPORTS_FILE = path.join(process.cwd(), "data", "audit-reports.json");
 
 function readReports() {
     if (!fs.existsSync(REPORTS_FILE)) return [];

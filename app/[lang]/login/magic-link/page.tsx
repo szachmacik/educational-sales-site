@@ -50,7 +50,7 @@ function MagicLinkContent() {
             if (result) {
                 localStorage.setItem("user_token", result.token);
                 localStorage.setItem("user_role", result.user.role);
-                document.cookie = `user_token=${result.token}; path=/; max-age=${60 * 60 * 24 * 7}`;
+                document.cookie = `user_token=${result.token}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Strict; Secure`;
                 router.push(`/${language}/dashboard`);
             } else {
                 setError("Invalid or expired login token.");

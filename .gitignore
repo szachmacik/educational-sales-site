@@ -21,6 +21,12 @@ npm-debug.log*
 .env*
 mcp-integrations/.env
 
+# runtime data (never commit sensitive data to repo)
+data/
+public/orders.db.json
+public/telemetry.db.json
+public/audit-reports.json
+
 # audit and sensitive reports
 *.json
 !package.json

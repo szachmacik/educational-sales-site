@@ -1,9 +1,25 @@
 import { NextRequest, NextResponse } from "next/server";
+import { requireAuth } from "@/lib/api-auth";
 
 export async function POST(request: NextRequest) {
-    try {
+    const authError = await requireAuth();
+    if (authError) return authError;
+
+        try {
         const { url, cookie } = await request.json();
         if (!url) return NextResponse.json({ error: "URL is required" }, { status: 400 });
+        // SECURITY: Allowlist to prevent SSRF attacks
+        const ALLOWED_DOMAINS = ['wordwall.net', 'genial.ly', 'genially.com', 'learningapps.org', 'quizlet.com'];
+        try {
+            const parsedUrl = new URL(url);
+            const isAllowed = ALLOWED_DOMAINS.some(d => parsedUrl.hostname === d || parsedUrl.hostname.endsWith('.' + d));
+            if (!isAllowed) {
+                return NextResponse.json({ error: "Domain not allowed" }, { status: 403 });
+            }
+        } catch {
+            return NextResponse.json({ error: "Invalid URL" }, { status: 400 });
+        }
+
 
         // Add a timeout to prevent long-hanging requests
         const controller = new AbortController();

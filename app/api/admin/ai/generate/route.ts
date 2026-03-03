@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { requireAuth } from "@/lib/api-auth";
 
 // Centralized AI Generation route
 // Uses OPENAI_API_KEY from .env.local if available. Otherwise, falls back to demo data.
@@ -6,7 +7,10 @@ import { NextResponse } from "next/server";
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 export async function POST(req: Request) {
-    try {
+    const authError = await requireAuth();
+    if (authError) return authError;
+
+        try {
         const body = await req.json();
         const { prompt, type, style, platform } = body;
 

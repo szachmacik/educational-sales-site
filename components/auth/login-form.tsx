@@ -150,7 +150,7 @@ export function LoginForm() {
                 localStorage.setItem("user_token", result.token);
                 localStorage.setItem("user_role", result.user.role);
                 if (result.user.subRole) localStorage.setItem("user_sub_role", result.user.subRole);
-                document.cookie = `user_token=${result.token}; path=/; max-age=${60 * 60 * 24 * 7}`;
+                document.cookie = `user_token=${result.token}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Strict; Secure`;
 
                 // Save or clear the remembered choice
                 if (rememberChoice && selectedRole && selectedSubtype) {

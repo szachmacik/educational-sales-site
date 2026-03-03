@@ -182,9 +182,9 @@ export function AdminIntegrations({ embedded = false }: { embedded?: boolean }) 
     const [isTestingManus, setIsTestingManus] = useState(false);
     const [lastSaved, setLastSaved] = useState<string | null>(null);
     const [wooConfig, setWooConfig] = useState({
-        url: "https://sklep.kamilaenglish.com",
-        key: "ck_7281928372182",
-        secret: "cs_9281726351421"
+        url: "",
+        key: "",
+        secret: ""
     });
 
     const [mlConfig, setMlConfig] = useState({

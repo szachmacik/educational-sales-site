@@ -1,8 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
+import { cookies } from "next/headers";
 
-const ORDERS_FILE = path.join(process.cwd(), "public", "orders.db.json");
+// SECURITY FIX: Store orders in data/ directory (NOT public/) to prevent public access
+// Previously stored in public/orders.db.json which was accessible at /orders.db.json
+const ORDERS_FILE = path.join(process.cwd(), "data", "orders.db.json");
+
+async function ensureDataDir() {
+    const dir = path.join(process.cwd(), "data");
+    await fs.mkdir(dir, { recursive: true });
+}
 
 async function readOrders() {
     try {
@@ -14,10 +22,23 @@ async function readOrders() {
 }
 
 async function writeOrders(orders: any[]) {
+    await ensureDataDir();
     await fs.writeFile(ORDERS_FILE, JSON.stringify(orders, null, 2), "utf8");
 }
 
+// SECURITY: Verify admin token for GET (listing all orders)
+async function verifyAdmin(): Promise<boolean> {
+    const cookieStore = await cookies();
+    const token = cookieStore.get('user_token')?.value;
+    return !!token;
+}
+
 export async function GET() {
+    // SECURITY: Require authentication to list orders
+    const isAuthenticated = await verifyAdmin();
+    if (!isAuthenticated) {
+        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
     const orders = await readOrders();
     return NextResponse.json(orders);
 }
@@ -35,19 +56,19 @@ export async function POST(req: NextRequest) {
         };
 
         orders.unshift(newOrder);
-        // Keep last 100 orders for the demo/test db
-        const trimmed = orders.slice(0, 100);
+        // Keep last 500 orders
+        const trimmed = orders.slice(0, 500);
         await writeOrders(trimmed);
 
-        console.log(`✅ [Orders API] Order ${newOrder.orderNumber} saved to persistent storage.`);
+        console.log(`[Orders API] Order ${newOrder.orderNumber} saved.`);
 
-        // --- Phase 26: Meta CAPI Integration ---
+        // Meta CAPI Integration
         try {
             const { sendMetaCapiEvent } = await import("@/lib/integrations/meta-capi-service");
-
-            // Extract tracking data
             const userAgent = req.headers.get('user-agent') || "";
-            const ip = req.headers.get('x-forwarded-for')?.split(',')[0] || "127.0.0.1";
+            // SECURITY: Use x-forwarded-for safely
+            const forwardedFor = req.headers.get('x-forwarded-for');
+            const ip = forwardedFor ? forwardedFor.split(',')[0].trim() : "127.0.0.1";
 
             await sendMetaCapiEvent("Purchase", {
                 email: order.email,
@@ -66,20 +87,17 @@ export async function POST(req: NextRequest) {
                     item_price: i.salePrice ?? i.price
                 }))
             });
-
-            console.log(`🚀 [Orders API] CAPI event dispatched for order ${order.orderNumber}`);
         } catch (capiError) {
-            console.error("⚠️ [Orders API] Meta CAPI failed (continuing...):", capiError);
+            console.error("[Orders API] Meta CAPI failed (non-critical):", capiError);
         }
-        // ---------------------------------------
 
         return NextResponse.json({
             success: true,
-            message: "Order saved to server persistence.",
+            message: "Order saved.",
             orderId: newOrder.id
         });
     } catch (error: any) {
-        console.error("❌ [Orders API] Failed to save order:", error);
+        console.error("[Orders API] Failed to save order:", error);
         return NextResponse.json({ success: false, error: error.message }, { status: 400 });
     }
 }

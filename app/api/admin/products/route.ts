@@ -1,11 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
+import { requireAuth } from "@/lib/api-auth";
 import fs from "fs/promises";
 import path from "path";
 
 const PRODUCTS_PATH = path.join(process.cwd(), "lib", "data", "products.json");
 
 export async function GET() {
-    try {
+    const authError = await requireAuth();
+    if (authError) return authError;
+
+        try {
         const fileContents = await fs.readFile(PRODUCTS_PATH, "utf8");
         const products = JSON.parse(fileContents);
         return NextResponse.json(products);
@@ -16,7 +20,10 @@ export async function GET() {
 }
 
 export async function POST(request: NextRequest) {
-    try {
+    const authError = await requireAuth();
+    if (authError) return authError;
+
+        try {
         const products = await request.json();
 
         if (!Array.isArray(products)) {
