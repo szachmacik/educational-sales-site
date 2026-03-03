@@ -1,0 +1,4505 @@
+{
+  "en": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.nav.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "common.socialProof.header",
+            "value": "Facebook Community"
+          },
+          {
+            "path": "common.checkout.email",
+            "value": "Email *"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.contact.form.email",
+            "value": "E-mail"
+          },
+          {
+            "path": "common.contact.form.placeholders.email",
+            "value": "jan@example.com"
+          },
+          {
+            "path": "common.login.email",
+            "value": "Email"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          },
+          {
+            "path": "common.blog.title",
+            "value": "Blog"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "landing.categories.items.mega-pack.title",
+            "value": "Mega Pack"
+          },
+          {
+            "path": "landing.categories.items.special-lessons.title",
+            "value": "Special Lessons"
+          },
+          {
+            "path": "landing.categories.items.speakbook.title",
+            "value": "Speakbooks"
+          },
+          {
+            "path": "landing.categories.items.stories.title",
+            "value": "Stories & Audio"
+          },
+          {
+            "path": "landing.categories.items.flashcards.title",
+            "value": "Flashcards"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.products.bestseller",
+            "value": "Bestseller"
+          },
+          {
+            "path": "shop.products.productCategories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "shop.products.features.audio",
+            "value": "Audio MP3"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.tabs.seo",
+            "value": "SEO & Meta"
+          },
+          {
+            "path": "admin.adminSettings.tabs.workshop",
+            "value": "AI Studio & Canva"
+          },
+          {
+            "path": "admin.adminSettings.tabs.google",
+            "value": "Google Cloud"
+          },
+          {
+            "path": "admin.adminSettings.tabs.guardian",
+            "value": "AI Guardian"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4",
+            "value": "Google Analytics 4"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.marketing.fb_pixel",
+            "value": "Facebook Pixel"
+          },
+          {
+            "path": "admin.adminSettings.marketing.meta_verification",
+            "value": "Meta Domain Verification"
+          },
+          {
+            "path": "admin.adminSettings.marketing.gsc",
+            "value": "Google Search Console"
+          },
+          {
+            "path": "admin.adminSettings.gamification.badges.early_bird.name",
+            "value": "Early Bird"
+          },
+          {
+            "path": "admin.adminSettings.market.curriculum.options.uk_ofsted",
+            "value": "UK (Ofsted)"
+          },
+          {
+            "path": "admin.adminSettings.market.curriculum.options.us_cc",
+            "value": "USA (Common Core)"
+          },
+          {
+            "path": "admin.adminSettings.interactive.auto_import",
+            "value": "Auto-Sourcing"
+          },
+          {
+            "path": "admin.adminSettings.interactive.platforms.quizizz_desc",
+            "value": "API Sync"
+          },
+          {
+            "path": "admin.adminSettings.workshop.rag_sources.options.notebook_lm",
+            "value": "NotebookLM Connector"
+          },
+          {
+            "path": "admin.adminSettings.workshop.generators.ai_quiz",
+            "value": "AI Quiz Maker"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.wordwall",
+            "value": "Wordwall Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.genially",
+            "value": "Genially Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.learningapps",
+            "value": "LearningApps Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.item1",
+            "value": "Wordwall Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.item2",
+            "value": "Genially Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.item3",
+            "value": "LearningApps Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.chat.subtitle",
+            "value": "Direct communication with the browser agent"
+          },
+          {
+            "path": "admin.adminSettings.emails.smtp.port",
+            "value": "Port"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_id",
+            "value": "Google Client ID"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_secret",
+            "value": "Google Client Secret"
+          },
+          {
+            "path": "admin.adminSettings.guardian.title",
+            "value": "AI Safety & Technical Guardian"
+          },
+          {
+            "path": "admin.adminSettings.pricing.title",
+            "value": "Purchasing Power Parity (PPP)"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.title",
+            "value": "AdminPanel"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.subtitle",
+            "value": "Creative Studio"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.dashboard",
+            "value": "Dashboard"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.role",
+            "value": "Administrator"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.online",
+            "value": "Online"
+          },
+          {
+            "path": "admin.adminPanel.dashboard.title",
+            "value": "Dashboard"
+          },
+          {
+            "path": "admin.adminPanel.products.importAi",
+            "value": "Import AI"
+          },
+          {
+            "path": "admin.adminPanel.products.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.statusFilter",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.orders.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.email",
+            "value": "Email"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.coupons.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.upload",
+            "value": "Upload"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.blog.title",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.blog.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.mega-pack",
+            "value": "Mega Packs"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.import.enhancedText.bestseller",
+            "value": "✨ BESTSELLER!"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tes",
+            "value": "TES (UK)"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.log",
+            "value": "System Log"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.stats.products_short",
+            "value": "prod."
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.title",
+            "value": "WooCommerce / WordPress Site"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.autoSync",
+            "value": "AUTO-SYNC ON"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.manus.title",
+            "value": "Manus AI Session"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.manus.instance",
+            "value": "Agent API Instance"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      }
+    }
+  },
+  "uk": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.checkout.email",
+            "value": "Email *"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.contact.form.email",
+            "value": "E-mail"
+          },
+          {
+            "path": "common.login.email",
+            "value": "Email"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [
+          "admin.adminSettings.gamification",
+          "admin.adminSettings.integrations"
+        ],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.tabs.google",
+            "value": "Google Cloud"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4",
+            "value": "Google Analytics 4"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.marketing.fb_pixel",
+            "value": "Facebook Pixel"
+          },
+          {
+            "path": "admin.adminSettings.marketing.gsc",
+            "value": "Google Search Console"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_id",
+            "value": "Google Client ID"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_secret",
+            "value": "Google Client Secret"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.email",
+            "value": "Email"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      }
+    }
+  },
+  "de": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.nav.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "common.nav.contact",
+            "value": "Kontakt"
+          },
+          {
+            "path": "common.footer.links.catalog",
+            "value": "Katalog"
+          },
+          {
+            "path": "common.footer.links.contact",
+            "value": "Kontakt"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          },
+          {
+            "path": "common.verify.success.course",
+            "value": "Kurs"
+          },
+          {
+            "path": "common.blog.title",
+            "value": "Blog"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "common.nav.dashboard",
+            "value": "Dashboard",
+            "word": "Dashboard"
+          },
+          {
+            "path": "common.login.emailInvalid",
+            "value": "Ungültiges E-Mail-Format",
+            "word": "Format"
+          },
+          {
+            "path": "common.certificates.backToDashboard",
+            "value": "Zurück zum Dashboard",
+            "word": "Dashboard"
+          }
+        ]
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "landing.categories.items.speakbook.title",
+            "value": "Speakbooks"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.products.bestseller",
+            "value": "Bestseller"
+          },
+          {
+            "path": "shop.products.productCategories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "shop.products.features.audio",
+            "value": "Audio MP3"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "shop.products.features.printReady",
+            "value": "Bereit zum Drucken (A4-Format)",
+            "word": "Format"
+          }
+        ]
+      },
+      "admin": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.tabs.seo",
+            "value": "SEO & Meta"
+          },
+          {
+            "path": "admin.adminSettings.tabs.google",
+            "value": "Google Cloud"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4",
+            "value": "Google Analytics 4"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.marketing.gsc",
+            "value": "Google Search Console"
+          },
+          {
+            "path": "admin.adminSettings.gamification.badges.early_bird.name",
+            "value": "Early Bird"
+          },
+          {
+            "path": "admin.adminSettings.market.curriculum.options.uk_ofsted",
+            "value": "UK (Ofsted)"
+          },
+          {
+            "path": "admin.adminSettings.market.curriculum.options.us_cc",
+            "value": "USA (Common Core)"
+          },
+          {
+            "path": "admin.adminSettings.automation.chat.subtitle",
+            "value": "Direct communication with the browser agent"
+          },
+          {
+            "path": "admin.adminSettings.emails.smtp.port",
+            "value": "Port"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.title",
+            "value": "AdminPanel"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.subtitle",
+            "value": "Creative Studio"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.dashboard",
+            "value": "Dashboard"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.role",
+            "value": "Administrator"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.online",
+            "value": "Online"
+          },
+          {
+            "path": "admin.adminPanel.dashboard.title",
+            "value": "Dashboard"
+          },
+          {
+            "path": "admin.adminPanel.products.table.product",
+            "value": "Produkt"
+          },
+          {
+            "path": "admin.adminPanel.products.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.statusFilter",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.orders.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.coupons.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.upload",
+            "value": "Upload"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.blog.title",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.blog.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.import.enhancedText.bestseller",
+            "value": "✨ BESTSELLER!"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tes",
+            "value": "TES (UK)"
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "admin.adminSettings.gamification.badges.early_bird.desc",
+            "value": "Purchase within 1h from publication",
+            "word": "Purchase"
+          },
+          {
+            "path": "admin.adminSettings.market.trends.top_selling",
+            "value": "Beliebtestes Format: 'Interaktive Escape Rooms'",
+            "word": "Format"
+          },
+          {
+            "path": "admin.adminSettings.integrations.webhooks.events.order_created",
+            "value": "Order created",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminSettings.integrations.webhooks.events.order_paid",
+            "value": "Order paid",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.report_desc",
+            "value": "Login: OK, Formular: Ausgefüllt, Bilder: Hochgeladen, SEO: Optimiert. Gesamtzeit: {time}",
+            "word": "Log"
+          }
+        ]
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      }
+    }
+  },
+  "es": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.nav.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          },
+          {
+            "path": "common.blog.title",
+            "value": "Blog"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "common.login.emailInvalid",
+            "value": "Formato de correo incorrecto",
+            "word": "Format"
+          }
+        ]
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "landing.categories.items.mega-pack.title",
+            "value": "Mega Pack"
+          },
+          {
+            "path": "landing.categories.items.speakbook.title",
+            "value": "Speakbooks"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.products.productCategories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "shop.products.features.audio",
+            "value": "Audio MP3"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [
+          "admin.adminSettings",
+          "admin.adminPanel"
+        ],
+        "untranslated": [],
+        "englishLeaks": []
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      }
+    }
+  },
+  "fr": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.nav.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.contact.form.email",
+            "value": "E-mail"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          },
+          {
+            "path": "common.blog.title",
+            "value": "Blog"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "common.login.emailInvalid",
+            "value": "Format d'e-mail invalide",
+            "word": "Format"
+          }
+        ]
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "landing.categories.items.mega-pack.title",
+            "value": "Mega Pack"
+          },
+          {
+            "path": "landing.categories.items.speakbook.title",
+            "value": "Speakbooks"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.products.productCategories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "shop.products.features.pdf",
+            "value": "Format PDF"
+          },
+          {
+            "path": "shop.products.features.audio",
+            "value": "Audio MP3"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.tabs.google",
+            "value": "Google Cloud"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4",
+            "value": "Google Analytics 4"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.marketing.fb_pixel",
+            "value": "Facebook Pixel"
+          },
+          {
+            "path": "admin.adminSettings.marketing.gsc",
+            "value": "Google Search Console"
+          },
+          {
+            "path": "admin.adminSettings.workshop.rag_sources.notebook_lm",
+            "value": "URL NotebookLM"
+          },
+          {
+            "path": "admin.adminSettings.emails.smtp.port",
+            "value": "Port"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.blog.title",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.stats.products_short",
+            "value": "prod."
+          }
+        ],
+        "englishLeaks": []
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      }
+    }
+  },
+  "it": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.nav.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "common.checkout.email",
+            "value": "Email *"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.contact.form.email",
+            "value": "E-mail"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          },
+          {
+            "path": "common.blog.title",
+            "value": "Blog"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "common.footer.links.privacy",
+            "value": "Informativa sulla Privacy",
+            "word": "Privacy"
+          },
+          {
+            "path": "common.checkout.steps.access",
+            "value": "Accesso",
+            "word": "Access"
+          },
+          {
+            "path": "common.checkout.trust.instant",
+            "value": "Accesso istantaneo",
+            "word": "Access"
+          },
+          {
+            "path": "common.login.password",
+            "value": "Password",
+            "word": "Password"
+          },
+          {
+            "path": "common.login.loggingIn",
+            "value": "Accesso in corso...",
+            "word": "Access"
+          },
+          {
+            "path": "common.login.success",
+            "value": "Accesso effettuato!",
+            "word": "Access"
+          },
+          {
+            "path": "common.login.successMessage",
+            "value": "Accesso effettuato con successo! Reindirizzamento...",
+            "word": "Access"
+          },
+          {
+            "path": "common.login.emailInvalid",
+            "value": "Formato e-mail non valido",
+            "word": "Format"
+          }
+        ]
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "landing.categories.items.mega-pack.title",
+            "value": "Mega Pack"
+          },
+          {
+            "path": "landing.categories.items.speakbook.title",
+            "value": "Speakbooks"
+          },
+          {
+            "path": "landing.categories.items.flashcards.title",
+            "value": "Flashcards"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "landing.features.items.0.title",
+            "value": "Accesso immediato",
+            "word": "Access"
+          },
+          {
+            "path": "landing.trustBar.instantAccess",
+            "value": "Accesso immediato",
+            "word": "Access"
+          }
+        ]
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.products.productCategories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "shop.products.features.audio",
+            "value": "Audio MP3"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "shop.shop.clearFilters",
+            "value": "Cancella filtri",
+            "word": "Cancel"
+          },
+          {
+            "path": "shop.shop.clearAll",
+            "value": "Cancella tutti i filtri",
+            "word": "Cancel"
+          },
+          {
+            "path": "shop.products.instantAccess",
+            "value": "Accesso immediato ai file",
+            "word": "Access"
+          }
+        ]
+      },
+      "admin": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.market.curriculum.options.us_cc",
+            "value": "USA (Common Core)"
+          },
+          {
+            "path": "admin.adminSettings.workshop.rag_sources.notebook_lm",
+            "value": "URL NotebookLM"
+          },
+          {
+            "path": "admin.adminSettings.emails.smtp.host",
+            "value": "Host SMTP"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.subtitle",
+            "value": "Creative Studio"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.online",
+            "value": "Online"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.table.date",
+            "value": "Data"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.date",
+            "value": "Data"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.blog.title",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.blog.table.date",
+            "value": "Data"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.import.enhancedText.bestseller",
+            "value": "✨ BESTSELLER!"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.stats.products_short",
+            "value": "prod."
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "admin.adminSettings.emails.templates.login_details.content",
+            "value": "Ecco i tuoi dati: E-mail: {email}, Password: {password}",
+            "word": "Password"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.logs.agent_login",
+            "value": "Accesso al pannello venditore...",
+            "word": "Access"
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.report_desc",
+            "value": "Accesso: OK, Modulo: Compilato, Immagini: Caricate, SEO: Ottimizzato. Tempo totale: {time}",
+            "word": "Access"
+          }
+        ]
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      }
+    }
+  },
+  "cs": {
+    "namespaces": {
+      "common": {
+        "missing": [
+          "common.certificates.verifiedTitle"
+        ],
+        "untranslated": [
+          {
+            "path": "common.nav.products",
+            "value": "Produkty"
+          },
+          {
+            "path": "common.nav.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "common.nav.contact",
+            "value": "Kontakt"
+          },
+          {
+            "path": "common.hero.cta_secondary",
+            "value": "O autorce"
+          },
+          {
+            "path": "common.footer.links.catalog",
+            "value": "Katalog"
+          },
+          {
+            "path": "common.footer.links.about",
+            "value": "O autorce"
+          },
+          {
+            "path": "common.footer.links.contact",
+            "value": "Kontakt"
+          },
+          {
+            "path": "common.cart.products",
+            "value": "Produkty"
+          },
+          {
+            "path": "common.checkout.invoiceTitle",
+            "value": "Faktura"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.checkout.summaryProducts",
+            "value": "Produkty"
+          },
+          {
+            "path": "common.contact.form.email",
+            "value": "E-mail"
+          },
+          {
+            "path": "common.quickSale.page.payment_card",
+            "value": "Karta"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          },
+          {
+            "path": "common.blog.title",
+            "value": "Blog"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "landing": {
+        "missing": [
+          "landing.trustBar.socialCommunity"
+        ],
+        "untranslated": [],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.shop.categories",
+            "value": "Kategorie"
+          },
+          {
+            "path": "shop.products.bestseller",
+            "value": "Bestseller"
+          },
+          {
+            "path": "shop.products.productCategories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "shop.products.productCategories.culture",
+            "value": "Kultura"
+          },
+          {
+            "path": "shop.products.features.audio",
+            "value": "Audio MP3"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [
+          "admin.adminSettings.automation.scrapers.card_title",
+          "admin.adminSettings.automation.scrapers.item1",
+          "admin.adminSettings.automation.scrapers.item2",
+          "admin.adminSettings.automation.scrapers.item3"
+        ],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.market.curriculum.options.us_cc",
+            "value": "USA (Common Core)"
+          },
+          {
+            "path": "admin.adminSettings.automation.chat.subtitle",
+            "value": "Direct communication with the browser agent"
+          },
+          {
+            "path": "admin.adminSettings.emails.smtp.port",
+            "value": "Port"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_id",
+            "value": "Google Client ID"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_secret",
+            "value": "Google Client Secret"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.title",
+            "value": "AdminPanel"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.subtitle",
+            "value": "Creative Studio"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.products",
+            "value": "Produkty"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.online",
+            "value": "Online"
+          },
+          {
+            "path": "admin.adminPanel.products.title",
+            "value": "Produkty"
+          },
+          {
+            "path": "admin.adminPanel.products.table.product",
+            "value": "Produkt"
+          },
+          {
+            "path": "admin.adminPanel.products.table.price",
+            "value": "Cena"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.table.products",
+            "value": "Produkty"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.email",
+            "value": "Email"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.products",
+            "value": "Produkty"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.blog.title",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.culture",
+            "value": "Kultura"
+          },
+          {
+            "path": "admin.adminPanel.import.enhancedText.bestseller",
+            "value": "✨ BESTSELLER!"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.stats.products_short",
+            "value": "prod."
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "dashboard.dashboard.games.provider",
+            "value": "Platforma"
+          }
+        ],
+        "englishLeaks": []
+      }
+    }
+  },
+  "sk": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.nav.products",
+            "value": "Produkty"
+          },
+          {
+            "path": "common.nav.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "common.nav.contact",
+            "value": "Kontakt"
+          },
+          {
+            "path": "common.footer.groups.help",
+            "value": "Pomoc"
+          },
+          {
+            "path": "common.footer.links.contact",
+            "value": "Kontakt"
+          },
+          {
+            "path": "common.cart.products",
+            "value": "Produkty"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.checkout.summaryProducts",
+            "value": "Produkty"
+          },
+          {
+            "path": "common.contact.form.email",
+            "value": "E-mail"
+          },
+          {
+            "path": "common.quickSale.page.payment_card",
+            "value": "Karta"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          },
+          {
+            "path": "common.blog.title",
+            "value": "Blog"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "landing": {
+        "missing": [
+          "landing.trustBar.socialCommunity"
+        ],
+        "untranslated": [],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.products.bestseller",
+            "value": "Bestseller"
+          },
+          {
+            "path": "shop.products.productCategories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "shop.products.features.audio",
+            "value": "Audio MP3"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [
+          "admin.adminPanel.orders.table.products",
+          "admin.adminPanel.materials.dialog.selectLabel",
+          "admin.adminPanel.materials.dialog.placeholder"
+        ],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.market.curriculum.options.us_cc",
+            "value": "USA (Common Core)"
+          },
+          {
+            "path": "admin.adminSettings.automation.chat.subtitle",
+            "value": "Direct communication with the browser agent"
+          },
+          {
+            "path": "admin.adminSettings.emails.smtp.port",
+            "value": "Port"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_id",
+            "value": "Google Client ID"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_secret",
+            "value": "Google Client Secret"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.title",
+            "value": "AdminPanel"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.subtitle",
+            "value": "Creative Studio"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.products",
+            "value": "Produkty"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.online",
+            "value": "Online"
+          },
+          {
+            "path": "admin.adminPanel.products.title",
+            "value": "Produkty"
+          },
+          {
+            "path": "admin.adminPanel.products.table.product",
+            "value": "Produkt"
+          },
+          {
+            "path": "admin.adminPanel.products.table.price",
+            "value": "Cena"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.email",
+            "value": "Email"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.products",
+            "value": "Produkty"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.blog.title",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.import.enhancedText.bestseller",
+            "value": "✨ BESTSELLER!"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tes",
+            "value": "TES (UK)"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.stats.products_short",
+            "value": "prod."
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "dashboard.dashboard.games.provider",
+            "value": "Platforma"
+          }
+        ],
+        "englishLeaks": []
+      }
+    }
+  },
+  "ro": {
+    "namespaces": {
+      "common": {
+        "missing": [
+          "common.certificates.verifiedTitle"
+        ],
+        "untranslated": [
+          {
+            "path": "common.nav.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "common.checkout.email",
+            "value": "Email *"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.contact.form.email",
+            "value": "E-mail"
+          },
+          {
+            "path": "common.login.email",
+            "value": "Email"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          },
+          {
+            "path": "common.blog.title",
+            "value": "Blog"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "landing": {
+        "missing": [
+          "landing.trustBar.socialCommunity"
+        ],
+        "untranslated": [
+          {
+            "path": "landing.categories.items.speakbook.title",
+            "value": "Speakbooks"
+          },
+          {
+            "path": "landing.categories.items.flashcards.title",
+            "value": "Flashcards"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.products.productCategories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "shop.products.features.pdf",
+            "value": "Format PDF"
+          },
+          {
+            "path": "shop.products.features.audio",
+            "value": "Audio MP3"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.tabs.ai",
+            "value": "Modele AI"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.gamification.badges.early_bird.name",
+            "value": "Early Bird"
+          },
+          {
+            "path": "admin.adminSettings.emails.smtp.host",
+            "value": "Host SMTP"
+          },
+          {
+            "path": "admin.adminSettings.emails.smtp.port",
+            "value": "Port"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_id",
+            "value": "Google Client ID"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_secret",
+            "value": "Google Client Secret"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.subtitle",
+            "value": "Creative Studio"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.role",
+            "value": "Administrator"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.online",
+            "value": "Online"
+          },
+          {
+            "path": "admin.adminPanel.products.importAi",
+            "value": "Import AI"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.email",
+            "value": "Email"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.blog.title",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.blog.table.date",
+            "value": "Data"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.import.title",
+            "value": "Import AI"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.import.enhancedText.bestseller",
+            "value": "✨ BESTSELLER!"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tes",
+            "value": "TES (UK)"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.stats.products_short",
+            "value": "prod."
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      }
+    }
+  },
+  "hu": {
+    "namespaces": {
+      "common": {
+        "missing": [
+          "common.certificates.verifiedTitle"
+        ],
+        "untranslated": [
+          {
+            "path": "common.nav.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "common.cart.couponHeader",
+            "value": "Kupon:"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.contact.form.email",
+            "value": "E-mail"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          },
+          {
+            "path": "common.blog.title",
+            "value": "Blog"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.products.bestseller",
+            "value": "Bestseller"
+          },
+          {
+            "path": "shop.products.features.audio",
+            "value": "Audio MP3"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [
+          "admin.adminSettings.automation.scrapers.card_title",
+          "admin.adminPanel.dashboard.recentOrders.status.processing"
+        ],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.market.curriculum.options.us_cc",
+            "value": "USA (Common Core)"
+          },
+          {
+            "path": "admin.adminSettings.emails.smtp.port",
+            "value": "Port"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_id",
+            "value": "Google Client ID"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_secret",
+            "value": "Google Client Secret"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.subtitle",
+            "value": "Creative Studio"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.online",
+            "value": "Online"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.blog.title",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.flashcards",
+            "value": "Fiszki"
+          },
+          {
+            "path": "admin.adminPanel.import.enhancedText.bestseller",
+            "value": "✨ BESTSELLER!"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tes",
+            "value": "TES (UK)"
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      }
+    }
+  },
+  "pt": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.nav.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.contact.form.email",
+            "value": "E-mail"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          },
+          {
+            "path": "common.blog.title",
+            "value": "Blog"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "common.login.success",
+            "value": "Logado!",
+            "word": "Log"
+          },
+          {
+            "path": "common.login.emailInvalid",
+            "value": "Formato de e-mail inválido",
+            "word": "Format"
+          }
+        ]
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "landing.categories.items.speakbook.title",
+            "value": "Speakbooks"
+          },
+          {
+            "path": "landing.categories.items.flashcards.title",
+            "value": "Flashcards"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.products.productCategories.speakbook",
+            "value": "Speakbook"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.gamification.badges.early_bird.name",
+            "value": "Early Bird"
+          },
+          {
+            "path": "admin.adminSettings.emails.smtp.host",
+            "value": "Host SMTP"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.online",
+            "value": "Online"
+          },
+          {
+            "path": "admin.adminPanel.products.importAi",
+            "value": "Import AI"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.statusFilter",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.orders.table.date",
+            "value": "Data"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.date",
+            "value": "Data"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.upload",
+            "value": "Upload"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.blog.table.date",
+            "value": "Data"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.mega-pack",
+            "value": "Mega Packs"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.stats.products_short",
+            "value": "prod."
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "admin.adminSettings.gamification.badges.early_bird.desc",
+            "value": "Purchase within 1h from publication",
+            "word": "Purchase"
+          },
+          {
+            "path": "admin.adminSettings.market.trends.top_selling",
+            "value": "Formato mais popular: 'Escape Rooms Interativos'",
+            "word": "Format"
+          },
+          {
+            "path": "admin.adminSettings.integrations.webhooks.events.order_created",
+            "value": "Order created",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminSettings.integrations.webhooks.events.order_paid",
+            "value": "Order paid",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminSettings.editor.toolbar.listOrdered",
+            "value": "Ordered List",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminPanel.dashboard.stats.orders",
+            "value": "Orders",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminPanel.dashboard.stats.avgOrderValue",
+            "value": "Avg. Order Value",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminPanel.dashboard.recentOrders.title",
+            "value": "Recent Orders",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminPanel.dashboard.recentOrders.subtitle",
+            "value": "Latest transactions",
+            "word": "Latest"
+          },
+          {
+            "path": "admin.adminPanel.orders.stats.today",
+            "value": "Orders today",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminPanel.orders.table.order",
+            "value": "Order",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminPanel.orders.status.cancelled",
+            "value": "Cancelada",
+            "word": "Cancel"
+          },
+          {
+            "path": "admin.adminPanel.materials.dialog.cancel",
+            "value": "Cancel",
+            "word": "Cancel"
+          }
+        ]
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      }
+    }
+  },
+  "lt": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.products.features.audio",
+            "value": "Audio MP3"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [
+          "admin.adminPanel.blog.categories.inspiracje"
+        ],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.tabs.google",
+            "value": "Google Cloud"
+          },
+          {
+            "path": "admin.adminSettings.tabs.guardian",
+            "value": "AI Guardian"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4",
+            "value": "Google Analytics 4"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.marketing.fb_pixel",
+            "value": "Facebook Pixel"
+          },
+          {
+            "path": "admin.adminSettings.marketing.gsc",
+            "value": "Google Search Console"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.wordwall",
+            "value": "Wordwall Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.genially",
+            "value": "Genially Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.learningapps",
+            "value": "LearningApps Scraper"
+          },
+          {
+            "path": "admin.adminSettings.emails.smtp.port",
+            "value": "Port"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_id",
+            "value": "Google Client ID"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_secret",
+            "value": "Google Client Secret"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.title",
+            "value": "AdminPanel"
+          },
+          {
+            "path": "admin.adminPanel.products.importAi",
+            "value": "Import AI"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.table.date",
+            "value": "Data"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.date",
+            "value": "Data"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.blog.title",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.blog.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tes",
+            "value": "TES (UK)"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.log",
+            "value": "System Log"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.stats.products_short",
+            "value": "prod."
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.title",
+            "value": "WooCommerce / WordPress Site"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.autoSync",
+            "value": "AUTO-SYNC ON"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.manus.title",
+            "value": "Manus AI Session"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.manus.instance",
+            "value": "Agent API Instance"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "admin.adminSettings.editor.toolbar.listOrdered",
+            "value": "Ordered List",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.ready",
+            "value": "Ready",
+            "word": "Ready"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.saveAll",
+            "value": "Save all",
+            "word": "Save"
+          }
+        ]
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "dashboard.dashboard.games.provider",
+            "value": "Platforma"
+          }
+        ],
+        "englishLeaks": []
+      }
+    }
+  },
+  "lv": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.products.features.audio",
+            "value": "Audio MP3"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [
+          "admin.adminPanel.integrations.agent.mockAnalysis.optimizedTitleSuffix",
+          "admin.adminPanel.integrations.agent.mockAnalysis.suggestedPrice",
+          "admin.adminPanel.integrations.agent.mockAnalysis.subject",
+          "admin.adminPanel.integrations.agent.mockAnalysis.seoTags"
+        ],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.tabs.google",
+            "value": "Google Cloud"
+          },
+          {
+            "path": "admin.adminSettings.tabs.guardian",
+            "value": "AI Guardian"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4",
+            "value": "Google Analytics 4"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.marketing.fb_pixel",
+            "value": "Facebook Pixel"
+          },
+          {
+            "path": "admin.adminSettings.marketing.gsc",
+            "value": "Google Search Console"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.wordwall",
+            "value": "Wordwall Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.genially",
+            "value": "Genially Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.learningapps",
+            "value": "LearningApps Scraper"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_id",
+            "value": "Google Client ID"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_secret",
+            "value": "Google Client Secret"
+          },
+          {
+            "path": "admin.adminPanel.products.table.price",
+            "value": "Cena"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.upload",
+            "value": "Upload"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tes",
+            "value": "TES (UK)"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.log",
+            "value": "System Log"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.stats.products_short",
+            "value": "prod."
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.title",
+            "value": "WooCommerce / WordPress Site"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.autoSync",
+            "value": "AUTO-SYNC ON"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.manus.title",
+            "value": "Manus AI Session"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.manus.instance",
+            "value": "Agent API Instance"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "admin.adminPanel.materials.dialog.cancel",
+            "value": "Cancel",
+            "word": "Cancel"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.saveAll",
+            "value": "Save all",
+            "word": "Save"
+          }
+        ]
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "dashboard.dashboard.games.provider",
+            "value": "Platforma"
+          }
+        ],
+        "englishLeaks": []
+      }
+    }
+  },
+  "et": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.nav.contact",
+            "value": "Kontakt"
+          },
+          {
+            "path": "common.footer.links.contact",
+            "value": "Kontakt"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "common.nav.login",
+            "value": "Logi sisse",
+            "word": "Log"
+          },
+          {
+            "path": "common.auth.logout",
+            "value": "Logi välja",
+            "word": "Log"
+          },
+          {
+            "path": "common.login.submit",
+            "value": "Logi sisse",
+            "word": "Log"
+          }
+        ]
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.products.features.audio",
+            "value": "Audio MP3"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.tabs.google",
+            "value": "Google Cloud"
+          },
+          {
+            "path": "admin.adminSettings.tabs.guardian",
+            "value": "AI Guardian"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4",
+            "value": "Google Analytics 4"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.marketing.fb_pixel",
+            "value": "Facebook Pixel"
+          },
+          {
+            "path": "admin.adminSettings.marketing.gsc",
+            "value": "Google Search Console"
+          },
+          {
+            "path": "admin.adminSettings.market.curriculum.options.us_cc",
+            "value": "USA (Common Core)"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.wordwall",
+            "value": "Wordwall Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.genially",
+            "value": "Genially Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.learningapps",
+            "value": "LearningApps Scraper"
+          },
+          {
+            "path": "admin.adminSettings.emails.smtp.port",
+            "value": "Port"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_id",
+            "value": "Google Client ID"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_secret",
+            "value": "Google Client Secret"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.title",
+            "value": "AdminPanel"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.table.customer",
+            "value": "Klient"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.customer",
+            "value": "Klient"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.upload",
+            "value": "Upload"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tes",
+            "value": "TES (UK)"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.log",
+            "value": "System Log"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.stats.products_short",
+            "value": "prod."
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.title",
+            "value": "WooCommerce / WordPress Site"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.autoSync",
+            "value": "AUTO-SYNC ON"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.manus.title",
+            "value": "Manus AI Session"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.manus.instance",
+            "value": "Agent API Instance"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "admin.adminPanel.sidebar.logout",
+            "value": "Logi välja",
+            "word": "Log"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.logoutTooltip",
+            "value": "Logi sessioonist välja",
+            "word": "Log"
+          },
+          {
+            "path": "admin.adminPanel.materials.dialog.cancel",
+            "value": "Cancel",
+            "word": "Cancel"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.saveAll",
+            "value": "Save all",
+            "word": "Save"
+          }
+        ]
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      }
+    }
+  },
+  "hr": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.nav.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "common.nav.contact",
+            "value": "Kontakt"
+          },
+          {
+            "path": "common.nav.dashboard",
+            "value": "Panel"
+          },
+          {
+            "path": "common.footer.links.contact",
+            "value": "Kontakt"
+          },
+          {
+            "path": "common.cart.couponHeader",
+            "value": "Kupon:"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.contact.form.email",
+            "value": "E-mail"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          },
+          {
+            "path": "common.blog.title",
+            "value": "Blog"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.shop.add",
+            "value": "Dodaj"
+          },
+          {
+            "path": "shop.products.productCategories.culture",
+            "value": "Kultura"
+          },
+          {
+            "path": "shop.products.features.audio",
+            "value": "Audio MP3"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [
+          "admin.adminPanel.products.toasts",
+          "admin.adminPanel.blog.categories.recenzje"
+        ],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.market.curriculum.options.uk_ofsted",
+            "value": "UK (Ofsted)"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.wordwall",
+            "value": "Wordwall Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.genially",
+            "value": "Genially Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.learningapps",
+            "value": "LearningApps Scraper"
+          },
+          {
+            "path": "admin.adminSettings.emails.smtp.port",
+            "value": "Port"
+          },
+          {
+            "path": "admin.adminSettings.guardian.title",
+            "value": "AI Safety & Technical Guardian"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.role",
+            "value": "Administrator"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.online",
+            "value": "Online"
+          },
+          {
+            "path": "admin.adminPanel.dashboard.title",
+            "value": "Dashboard"
+          },
+          {
+            "path": "admin.adminPanel.products.importAi",
+            "value": "Import AI"
+          },
+          {
+            "path": "admin.adminPanel.products.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.statusFilter",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.orders.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.email",
+            "value": "Email"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.coupons.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.blog.title",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.blog.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.culture",
+            "value": "Kultura"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tes",
+            "value": "TES (UK)"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.log",
+            "value": "System Log"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.stats.products_short",
+            "value": "prod."
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.title",
+            "value": "WooCommerce / WordPress Site"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.autoSync",
+            "value": "AUTO-SYNC ON"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.manus.title",
+            "value": "Manus AI Session"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.manus.instance",
+            "value": "Agent API Instance"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "admin.adminSettings.common.saved",
+            "value": "Saved!",
+            "word": "Save"
+          },
+          {
+            "path": "admin.adminSettings.economy.loyalty.protip",
+            "value": "Pro-tip: Subscribers can receive 2x more points if you enable the multiplier in the Gamification section.",
+            "word": "Subscribe"
+          },
+          {
+            "path": "admin.adminSettings.emails.save",
+            "value": "Save templates",
+            "word": "Save"
+          },
+          {
+            "path": "admin.adminSettings.editor.toolbar.listOrdered",
+            "value": "Ordered List",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.logout",
+            "value": "Logout Session",
+            "word": "Log"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.logoutTooltip",
+            "value": "Logout",
+            "word": "Log"
+          }
+        ]
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      }
+    }
+  },
+  "sr": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.nav.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "common.nav.contact",
+            "value": "Kontakt"
+          },
+          {
+            "path": "common.nav.dashboard",
+            "value": "Panel"
+          },
+          {
+            "path": "common.footer.links.contact",
+            "value": "Kontakt"
+          },
+          {
+            "path": "common.cart.couponHeader",
+            "value": "Kupon:"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.contact.form.email",
+            "value": "E-mail"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          },
+          {
+            "path": "common.verify.success.course",
+            "value": "Kurs"
+          },
+          {
+            "path": "common.blog.title",
+            "value": "Blog"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.shop.add",
+            "value": "Dodaj"
+          },
+          {
+            "path": "shop.products.productCategories.culture",
+            "value": "Kultura"
+          },
+          {
+            "path": "shop.products.features.audio",
+            "value": "Audio MP3"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [
+          "admin.adminPanel.dashboard.periods",
+          "admin.adminPanel.dashboard.currency",
+          "admin.adminPanel.dashboard.stats",
+          "admin.adminPanel.dashboard.charts",
+          "admin.adminPanel.dashboard.recentOrders",
+          "admin.adminPanel.products",
+          "admin.adminPanel.blog.categories.inspiracje",
+          "admin.adminPanel.import.success",
+          "admin.adminPanel.import.placeholders",
+          "admin.adminPanel.import.categories",
+          "admin.adminPanel.import.enhancedText",
+          "admin.adminPanel.integrations.inventory.stats"
+        ],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.tabs.google",
+            "value": "Google Cloud"
+          },
+          {
+            "path": "admin.adminSettings.tabs.guardian",
+            "value": "AI Guardian"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4",
+            "value": "Google Analytics 4"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.marketing.fb_pixel",
+            "value": "Facebook Pixel"
+          },
+          {
+            "path": "admin.adminSettings.marketing.meta_verification",
+            "value": "Meta Domain Verification"
+          },
+          {
+            "path": "admin.adminSettings.marketing.gsc",
+            "value": "Google Search Console"
+          },
+          {
+            "path": "admin.adminSettings.market.curriculum.options.uk_ofsted",
+            "value": "UK (Ofsted)"
+          },
+          {
+            "path": "admin.adminSettings.market.curriculum.options.us_cc",
+            "value": "USA (Common Core)"
+          },
+          {
+            "path": "admin.adminSettings.integrations.webhooks.add",
+            "value": "Dodaj Webhook"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.wordwall",
+            "value": "Wordwall Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.genially",
+            "value": "Genially Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.learningapps",
+            "value": "LearningApps Scraper"
+          },
+          {
+            "path": "admin.adminSettings.emails.smtp.port",
+            "value": "Port"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_id",
+            "value": "Google Client ID"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_secret",
+            "value": "Google Client Secret"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.role",
+            "value": "Administrator"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.online",
+            "value": "Online"
+          },
+          {
+            "path": "admin.adminPanel.orders.statusFilter",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.orders.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.email",
+            "value": "Email"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.coupons.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.upload",
+            "value": "Upload"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.blog.title",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.blog.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tes",
+            "value": "TES (UK)"
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.manus.instance",
+            "value": "Agent API Instance"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "admin.adminSettings.economy.loyalty.protip",
+            "value": "Savet: Pretplatnici mogu dobijati 2x više bodova ako aktivirate multiplikator u Gamifikaciji.",
+            "word": "Save"
+          },
+          {
+            "path": "admin.adminSettings.insights.sync.title",
+            "value": "Log sinhronizacije",
+            "word": "Log"
+          },
+          {
+            "path": "admin.adminPanel.integrations.aiTip.title",
+            "value": "AI Savet",
+            "word": "Save"
+          }
+        ]
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "dashboard.dashboard.games.provider",
+            "value": "Platforma"
+          }
+        ],
+        "englishLeaks": []
+      }
+    }
+  },
+  "sl": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.nav.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "common.nav.contact",
+            "value": "Kontakt"
+          },
+          {
+            "path": "common.nav.dashboard",
+            "value": "Panel"
+          },
+          {
+            "path": "common.footer.links.contact",
+            "value": "Kontakt"
+          },
+          {
+            "path": "common.cart.couponHeader",
+            "value": "Kupon:"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          },
+          {
+            "path": "common.blog.title",
+            "value": "Blog"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.shop.add",
+            "value": "Dodaj"
+          },
+          {
+            "path": "shop.products.productCategories.culture",
+            "value": "Kultura"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.tabs.google",
+            "value": "Google Cloud"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4",
+            "value": "Google Analytics 4"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.marketing.fb_pixel",
+            "value": "Facebook Pixel"
+          },
+          {
+            "path": "admin.adminSettings.marketing.gsc",
+            "value": "Google Search Console"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.wordwall",
+            "value": "Wordwall Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.genially",
+            "value": "Genially Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.learningapps",
+            "value": "LearningApps Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.chat.subtitle",
+            "value": "Direct communication with the browser agent"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_id",
+            "value": "Google Client ID"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_secret",
+            "value": "Google Client Secret"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.blog",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.menu.role",
+            "value": "Administrator"
+          },
+          {
+            "path": "admin.adminPanel.dashboard.periods.7days",
+            "value": "7 dni"
+          },
+          {
+            "path": "admin.adminPanel.dashboard.periods.30days",
+            "value": "30 dni"
+          },
+          {
+            "path": "admin.adminPanel.dashboard.periods.90days",
+            "value": "90 dni"
+          },
+          {
+            "path": "admin.adminPanel.products.table.price",
+            "value": "Cena"
+          },
+          {
+            "path": "admin.adminPanel.products.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.statusFilter",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.orders.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.email",
+            "value": "Email"
+          },
+          {
+            "path": "admin.adminPanel.orders.export_headers.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.coupons.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.blog.title",
+            "value": "Blog"
+          },
+          {
+            "path": "admin.adminPanel.blog.table.status",
+            "value": "Status"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.culture",
+            "value": "Kultura"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tes",
+            "value": "TES (UK)"
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "admin.adminSettings.integrations.webhooks.events.order_created",
+            "value": "Order created",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminSettings.integrations.webhooks.events.order_paid",
+            "value": "Order paid",
+            "word": "Order"
+          }
+        ]
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "dashboard.dashboard.games.provider",
+            "value": "Platforma"
+          }
+        ],
+        "englishLeaks": []
+      }
+    }
+  },
+  "bg": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "landing": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.tabs.google",
+            "value": "Google Cloud"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4",
+            "value": "Google Analytics 4"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.marketing.fb_pixel",
+            "value": "Facebook Pixel"
+          },
+          {
+            "path": "admin.adminSettings.marketing.gsc",
+            "value": "Google Search Console"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.wordwall",
+            "value": "Wordwall Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.genially",
+            "value": "Genially Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.learningapps",
+            "value": "LearningApps Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.chat.subtitle",
+            "value": "Direct communication with the browser agent"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_id",
+            "value": "Google Client ID"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_secret",
+            "value": "Google Client Secret"
+          },
+          {
+            "path": "admin.adminPanel.sidebar.subtitle",
+            "value": "Creative Studio"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.wordpress",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.products.source_badges.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "admin.adminPanel.orders.paymentMethods.paypal",
+            "value": "PayPal"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.upload",
+            "value": "Upload"
+          },
+          {
+            "path": "admin.adminPanel.materials.badges.drive",
+            "value": "Google Drive"
+          },
+          {
+            "path": "admin.adminPanel.chat.capabilities.web",
+            "value": "Internet"
+          },
+          {
+            "path": "admin.adminPanel.import.placeholders.url",
+            "value": "https://www.sklep.linguachess.com/..."
+          },
+          {
+            "path": "admin.adminPanel.import.categories.mega-pack",
+            "value": "Mega Packs"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.scenariusze",
+            "value": "Scenariusze"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.zlobek",
+            "value": "Żłobek"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.special-lessons",
+            "value": "Lekcje Specjalne"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.speakbook",
+            "value": "Speakbook"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.stories",
+            "value": "Historyjki"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.culture",
+            "value": "Kultura"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.pory-roku",
+            "value": "Pory Roku"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.teatr",
+            "value": "Teatr"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.flashcards",
+            "value": "Fiszki"
+          },
+          {
+            "path": "admin.adminPanel.import.categories.inne",
+            "value": "Inne"
+          },
+          {
+            "path": "admin.adminPanel.import.enhancedText.bestseller",
+            "value": "✨ BESTSELLER!"
+          },
+          {
+            "path": "admin.adminPanel.import.enhancedText.whatYouGet",
+            "value": "📚 Co otrzymujesz:"
+          },
+          {
+            "path": "admin.adminPanel.import.enhancedText.features.pdf",
+            "value": "• Gotowe do druku materiały PDF"
+          },
+          {
+            "path": "admin.adminPanel.import.enhancedText.features.teacher",
+            "value": "• Instrukcje dla nauczyciela"
+          },
+          {
+            "path": "admin.adminPanel.import.enhancedText.features.worksheets",
+            "value": "• Karty pracy i ćwiczenia"
+          },
+          {
+            "path": "admin.adminPanel.import.enhancedText.footer",
+            "value": "⭐ Sprawdzone przez setki nauczycieli!"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tes",
+            "value": "TES (UK)"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.log",
+            "value": "System Log"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.stats.products_short",
+            "value": "prod."
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.title",
+            "value": "WooCommerce / WordPress Site"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.autoSync",
+            "value": "AUTO-SYNC ON"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.manus.title",
+            "value": "Manus AI Session"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.manus.instance",
+            "value": "Agent API Instance"
+          }
+        ],
+        "englishLeaks": [
+          {
+            "path": "admin.adminSettings.integrations.webhooks.events.order_created",
+            "value": "Order created",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminSettings.integrations.webhooks.events.order_paid",
+            "value": "Order paid",
+            "word": "Order"
+          },
+          {
+            "path": "admin.adminPanel.materials.dialog.cancel",
+            "value": "Cancel",
+            "word": "Cancel"
+          },
+          {
+            "path": "admin.adminPanel.integrations.inventory.logs.agent_done",
+            "value": "Ready! Product is waiting for approval.",
+            "word": "Ready"
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.ready",
+            "value": "Ready",
+            "word": "Ready"
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.report_desc",
+            "value": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}",
+            "word": "Log"
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.mockAnalysis.description",
+            "value": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!",
+            "word": "Ready"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.saveAll",
+            "value": "Save all",
+            "word": "Save"
+          }
+        ]
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      }
+    }
+  },
+  "el": {
+    "namespaces": {
+      "common": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "common.checkout.email",
+            "value": "Email *"
+          },
+          {
+            "path": "common.checkout.paymentMethods.cardSub",
+            "value": "Visa, Mastercard, American Express"
+          },
+          {
+            "path": "common.checkout.paymentMethods.blik",
+            "value": "BLIK"
+          },
+          {
+            "path": "common.contact.form.email",
+            "value": "E-mail"
+          },
+          {
+            "path": "common.contact.form.placeholders.email",
+            "value": "jan@example.com"
+          },
+          {
+            "path": "common.login.email",
+            "value": "Email"
+          },
+          {
+            "path": "common.verify.placeholder",
+            "value": "XXXX-XXXX-XXXX"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "landing": {
+        "missing": [
+          "landing.testimonials.reviews (Array length mismatch)"
+        ],
+        "untranslated": [
+          {
+            "path": "landing.categories.items.mega-pack.title",
+            "value": "Mega Pack"
+          },
+          {
+            "path": "landing.categories.items.speakbook.title",
+            "value": "Speakbooks"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "shop": {
+        "missing": [],
+        "untranslated": [
+          {
+            "path": "shop.products.bestseller",
+            "value": "Bestseller"
+          },
+          {
+            "path": "shop.products.productCategories.speakbook",
+            "value": "Speakbook"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "admin": {
+        "missing": [
+          "admin.adminPanel.dashboard",
+          "admin.adminPanel.products",
+          "admin.adminPanel.orders",
+          "admin.adminPanel.coupons",
+          "admin.adminPanel.materials",
+          "admin.adminPanel.certificates",
+          "admin.adminPanel.blog",
+          "admin.adminPanel.chat",
+          "admin.adminPanel.import",
+          "admin.adminPanel.integrations.agent.stats",
+          "admin.adminPanel.integrations.agent.mockAnalysis",
+          "admin.adminPanel.integrations.agent.idle"
+        ],
+        "untranslated": [
+          {
+            "path": "admin.adminSettings.tabs.seo",
+            "value": "SEO & Meta"
+          },
+          {
+            "path": "admin.adminSettings.tabs.workshop",
+            "value": "AI Studio & Canva"
+          },
+          {
+            "path": "admin.adminSettings.tabs.google",
+            "value": "Google Cloud"
+          },
+          {
+            "path": "admin.adminSettings.tabs.guardian",
+            "value": "AI Guardian"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4",
+            "value": "Google Analytics 4"
+          },
+          {
+            "path": "admin.adminSettings.marketing.ga4_placeholder",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "path": "admin.adminSettings.marketing.fb_pixel",
+            "value": "Facebook Pixel"
+          },
+          {
+            "path": "admin.adminSettings.marketing.gsc",
+            "value": "Google Search Console"
+          },
+          {
+            "path": "admin.adminSettings.workshop.generators.ai_quiz",
+            "value": "AI Quiz Maker"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.wordwall",
+            "value": "Wordwall Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.genially",
+            "value": "Genially Scraper"
+          },
+          {
+            "path": "admin.adminSettings.automation.scrapers.options.learningapps",
+            "value": "LearningApps Scraper"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_id",
+            "value": "Google Client ID"
+          },
+          {
+            "path": "admin.adminSettings.google.config.client_secret",
+            "value": "Google Client Secret"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp",
+            "value": "WooCommerce / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.wp_full",
+            "value": "WordPress / Publigo"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tpt",
+            "value": "Teachers Pay Teachers"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.etsy",
+            "value": "Etsy Education"
+          },
+          {
+            "path": "admin.adminPanel.integrations.marketplaces.names.tes",
+            "value": "TES (UK)"
+          },
+          {
+            "path": "admin.adminPanel.integrations.agent.toasts.proxy_success",
+            "value": "Proxy: {ip} ({location}) OK"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.key",
+            "value": "Consumer Key"
+          },
+          {
+            "path": "admin.adminPanel.integrations.settings.woo.secret",
+            "value": "Consumer Secret"
+          }
+        ],
+        "englishLeaks": []
+      },
+      "dashboard": {
+        "missing": [],
+        "untranslated": [],
+        "englishLeaks": []
+      }
+    }
+  }
+}

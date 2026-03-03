@@ -1,0 +1,243 @@
+{
+  "hero": {
+    "badge": "Oktatási anyagok Kamila Łobko-Koziejtől",
+    "title_part1": "Források",
+    "title_part2": "Angoltanároknak",
+    "subtitle": "Angolt tanítasz? Meríts ihletet! Találj kreatív tananyagokat, magával ragadó egész éves projekteket és pedagógiai újításokat.",
+    "cta_catalog": "Katalógus megtekintése",
+    "cta_secondary": "Hogyan működik?",
+    "stats_lessons": "Kész leckék",
+    "stats_teachers": "Tanárok",
+    "stats_rating": "Értékelés",
+    "viewSample": "Minta megtekintése",
+    "videoPresentation": "Videó bemutató",
+    "verifiedBadge": "Ellenőrzött anyagok",
+    "testedInClass": "Osztályban tesztelve",
+    "materialsCount": "Anyagok"
+  },
+  "features": {
+    "header": "Miért válassza anyagainkat?",
+    "sub": "Szenvedéllyel és a részletekre odafigyelve készült",
+    "items": [
+      {
+        "title": "Azonnali hozzáférés",
+        "desc": "Töltse le az anyagokat azonnal a vásárlás után"
+      },
+      {
+        "title": "Anyanyelvi felvételek",
+        "desc": "Professzionális audio felvételek"
+      },
+      {
+        "title": "Innovatív ötletek",
+        "desc": "Azonnal megvalósítható projektek"
+      },
+      {
+        "title": "Kész óratervek",
+        "desc": "Részletes óravázlatok"
+      },
+      {
+        "title": "Időmegtakarítás",
+        "desc": "Nyomtatásra kész anyagok"
+      },
+      {
+        "title": "Gyakorlatban tesztelve",
+        "desc": "Az osztályteremben kipróbálva"
+      }
+    ]
+  },
+  "categories": {
+    "badge": "Termékkategóriák",
+    "browse": "Kategória böngészése",
+    "viewCatalog": "Teljes katalógus megtekintése",
+    "header": "Mit talál üzletünkben?",
+    "sub": "Válasszon kategóriát, és fedezzen fel olyan anyagokat, amelyek gazdagítják óráit",
+    "items": {
+      "mega-pack": {
+        "title": "Mega Csomag",
+        "description": "Átfogó 2 az 1-ben oktatási csomagok - minden anyag + egész éves óratervek",
+        "label": "csomagok"
+      },
+      "scenariusze": {
+        "title": "Óratervek",
+        "description": "Használatra kész óratervek hónapról hónapra nyomtatható anyagokkal",
+        "label": "tervek"
+      },
+      "special-lessons": {
+        "title": "Különleges leckék",
+        "description": "Anyagok ünnepekre, szokatlan napokra és különleges alkalmakra",
+        "label": "szettek"
+      },
+      "speakbook": {
+        "title": "Beszélőkönyvek",
+        "description": "Interaktív füzetek a beszédkészség és a szókincs fejlesztésére",
+        "label": "beszélőkönyvek"
+      },
+      "stories": {
+        "title": "Történetek és Hanganyag",
+        "description": "E-könyvek és történetek anyanyelvi hangfelvételekkel",
+        "label": "történetek"
+      },
+      "teatr": {
+        "title": "Színház és Játékok",
+        "description": "Színházi forgatókönyvek, társasjátékok és mozgásos tevékenységek",
+        "label": "anyagok"
+      },
+      "zlobek": {
+        "title": "Bölcsőde",
+        "description": "Anyagok kisgyermekeknek",
+        "label": "anyagok"
+      },
+      "przedszkole": {
+        "title": "Óvoda",
+        "description": "Anyagok óvodásoknak",
+        "label": "anyagok"
+      },
+      "klasy-1-3": {
+        "title": "1-3. osztály",
+        "description": "Anyagok 1-3. osztály számára",
+        "label": "anyagok"
+      },
+      "klasy-4-6": {
+        "title": "4-6. osztály",
+        "description": "Anyagok 4-6. osztály számára",
+        "label": "anyagok"
+      },
+      "klasy-7-8": {
+        "title": "7-8. osztály",
+        "description": "Anyagok 7-8. osztály számára",
+        "label": "anyagok"
+      },
+      "liceum": {
+        "title": "Középiskola / Felnőttek",
+        "description": "Anyagok középiskolásoknak és felnőtteknek",
+        "label": "anyagok"
+      },
+      "gry": {
+        "title": "Játékok",
+        "description": "Játékok és tevékenységek",
+        "label": "játékok"
+      },
+      "culture": {
+        "title": "Kultúra",
+        "description": "Kulturális anyagok",
+        "label": "anyagok"
+      },
+      "flashcards": {
+        "title": "Tanulókártyák",
+        "description": "Flashcardok",
+        "label": "kártyák"
+      },
+      "inne": {
+        "title": "Egyéb",
+        "description": "Egyéb anyagok",
+        "label": "anyagok"
+      },
+      "pory-roku": {
+        "title": "Évszakok",
+        "description": "Szezonális anyagok",
+        "label": "anyagok"
+      }
+    }
+  },
+  "trustBar": {
+    "securePayments": "Biztonságos fizetés",
+    "instantAccess": "Azonnali hozzáférés",
+    "happyTeachers": "12000+ elégedett tanár",
+    "rating": "Értékelés 4.9/5",
+    "saveTime": "Időtakarékos",
+    "verifiedMaterials": "Ellenőrzött anyagok",
+    "multiplePayments": "Többféle fizetési mód",
+    "downloadInstant": "Azonnali letöltés",
+    "passion": "Szenvedéllyel készült",
+    "qualityGuarantee": "Minőségi garancia",
+    "regularUpdates": "Rendszeresen frissítve",
+    "bonuses": "Bónuszok hűséges vásárlóknak",
+    "socialCommunity": {
+      "header": "Csatlakozz közösségünkhöz",
+      "desc": "Több mint 12 000 angoltanár osztja meg ötleteit és véleményét csoportunkban. Maradj naprakész a hírekkel és az ingyenes anyagokkal!",
+      "cta": "Kövess minket a Facebookon",
+      "followers": "Követő",
+      "stats": "Letöltött anyag",
+      "imageAlts": {
+        "speakbook": "Conversations with Speakbook (Grades 4-8)",
+        "theater": "Theater Plays (Grades 1-6)",
+        "megapack": "Mega Pack - complete scenarios",
+        "nursery": "Scenarios for Nursery and Preschool",
+        "stories": "Project Stories & Culture Pack",
+        "games": "Games and activities for Special Lesson Days"
+      }
+    }
+  },
+  "testimonials": {
+    "header": "Mit mondanak a tanárok?",
+    "subheader": "Csatlakozz elégedett angoltanárok ezreihez",
+    "stats": {
+      "teachers": "Tanárok a közösségben",
+      "rating": "Átlagos értékelés",
+      "materials": "Kidolgozott anyagok",
+      "satisfaction": "Elégedettségi garancia"
+    },
+    "reviews": [
+      {
+        "name": "Kovács Anna",
+        "role": "Angoltanár, Budapest",
+        "content": "Az anyagok fantasztikusak! A diákjaim még soha nem voltak ennyire elkötelezettek. Rengeteg időt spórolok az órákra való felkészüléssel."
+      },
+      {
+        "name": "Nagy Tamás",
+        "role": "Általános iskolai tanár, Debrecen",
+        "content": "A kész óratervek és a nyomtatható anyagok telitalálatnak bizonyultak. Minden tanárnak ajánlom őket!"
+      },
+      {
+        "name": "Szabó Magdolna",
+        "role": "Tanár, Szeged",
+        "content": "Már a harmadik csomagomat veszem, és le vagyok nyűgözve a minőségtől. Az anyanyelvi felvételek felbecsülhetetlenek!"
+      },
+      {
+        "name": "Tóth Péter",
+        "role": "Középiskolai tanár, Pécs",
+        "content": "Professzionális anyagok, amelyek az órán is remekül működnek. Megéri a befektetést."
+      }
+    ]
+  },
+  "aboutAuthor": {
+    "badge": "Ismerd meg a szerzőt",
+    "title": "Kamila Łobko-Koziej",
+    "description1": "Angoltanár vagyok, több mint 15 éves tapasztalattal óvodásokkal és kisiskolásokkal. A tanítás iránti szenvedélyem és a kreatív tanítási módszerek folyamatos keresése inspirált arra, hogy eredeti oktatási anyagokat hozzak létre.",
+    "description2": "Hiszem, hogy egy idegen nyelv tanulása minden gyermek számára lenyűgöző kaland lehet. Anyagaim ötvözik a bevált pedagógiai módszereket a játékos elemekkel, így az órák vonzóak és hatékonyak.",
+    "stats": {
+      "experience": "év tapasztalat",
+      "materials": "anyag",
+      "teachers": "tanár",
+      "trainings": "képzés"
+    },
+    "floating": {
+      "line1": "Szenvedéllyel",
+      "line2": "készítve tanároknak"
+    }
+  },
+  "contests": {
+    "header": "Ongoing Projects & Contests",
+    "subheader": "Join our educational initiatives and win attractive prizes for your school!",
+    "viewAll": "View all projects",
+    "cta": "Learn more",
+    "platform": "Go to Contest Platform",
+    "stats": {
+      "contests": "Contests",
+      "participants": "Participants yearly",
+      "tradition": "Years of tradition"
+    },
+    "items": {
+      "lingus": {
+        "name": "Linguś",
+        "fullName": "National English Language Contest",
+        "description": "Test your knowledge of the English language"
+      },
+      "matmis": {
+        "name": "MatMiś",
+        "fullName": "National Mathematics Contest",
+        "description": "Develop logical thinking and mathematical skills"
+      }
+    }
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "seo": {
+    "title": "Mācību materiāli angļu valodas skolotājiem | Kamila Łobko-Koziej",
+    "description": "Radoši mācību materiāli, stundu plāni, gada projekti un gatavas pakas angļu valodas skolotājiem.",
+    "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
+  },
+  "nav": {
+    "products": "Produkti",
+    "materialy": "Materiāli",
+    "blog": "Blogs",
+    "contact": "Kontakti",
+    "login": "Pieteikties",
+    "dashboard": "Panelis",
+    "adminPanel": "Admin panelis"
+  },
+  "brand": {
+    "educationalMaterials": "Mācību materiāli",
+    "byKamila": "Kamila Łobko-Koziej"
+  },
+  "hero": {
+    "badge": "Materiāli skolotājiem",
+    "title": "Māciet angļu valodu ar aizrautību un vieglumu",
+    "subtitle": "Radoši mācību materiāli, kas pārveidos jūsu stundas. Ietaupiet laiku sagatavošanās darbiem un iedvesmojiet savus skolēnus katru dienu.",
+    "cta_main": "Pārlūkot materiālus",
+    "cta_secondary": "Par autori",
+    "demoText": "Skatīt paneļa demo:",
+    "teacherProfile": "Skolotāja profils",
+    "studentProfile": "Skolēna profils"
+  },
+  "footer": {
+    "rights": "Visas tiesības aizsargātas.",
+    "description": "Oriģināli, radoši mācību materiāli angļu valodas skolotājiem. Iedvesmojies!",
+    "groups": {
+      "shop": "Veikals",
+      "info": "Informācija",
+      "help": "Palīdzība"
+    },
+    "links": {
+      "catalog": "Katalogs",
+      "materials": "Mācību materiāli",
+      "projects": "Gada projekti",
+      "scenarios": "Stundu plāni",
+      "packs": "Tematiskās pakas",
+      "about": "Par autori",
+      "contact": "Kontakti",
+      "privacy": "Privātuma politika",
+      "terms": "Lietošanas noteikumi",
+      "howToBuy": "Kā nopirkt?",
+      "faq": "BUJ",
+      "returns": "Atgriešana",
+      "account": "Mans konts",
+      "admin": "Skolotāja panelis (Admin)"
+    }
+  },
+  "auth": {
+    "logout": "Izrakstīties",
+    "myCourses": "Mani kursi",
+    "studentPanel": "Skolēna panelis",
+    "roleAdmin": "Administrator",
+    "roleTeacher": "Teacher",
+    "roleStudent": "Student"
+  },
+  "cart": {
+    "empty": "Jūsu grozs ir tukšs",
+    "emptySub": "Pievienojiet produktus, lai turpinātu iepirkšanos",
+    "browse": "Pārlūkot produktus",
+    "reserved": "Jūsu grozs ir rezervēts:",
+    "header": "Grozs ({count})",
+    "remove": "Noņemt",
+    "specialOffer": "ĪPAŠAIS PIEDĀVĀJUMS",
+    "orderBump": "Pievienot e-pasta veidņu paku (+29 €)",
+    "orderBumpDesc": "20 lietošanai gatavas veidnes saziņai ar vecākiem. Ietaupiet 70%!",
+    "summary": "Kopsavilkums",
+    "couponPlaceholder": "Atlaižu kods",
+    "apply": "Piemērot",
+    "couponHeader": "Kupons:",
+    "products": "Produkti",
+    "discount": "Atlaide",
+    "total": "Kopā",
+    "checkout": "Turpināt uz norēķiniem",
+    "secure": "Drošs maksājums",
+    "couponInvalid": "Nederīgs atlaižu kods",
+    "couponInactive": "Šis kupons vairs nav aktīvs",
+    "couponExpired": "Šī kupona derīguma termiņš ir beidzies",
+    "couponLimitReached": "Šis kupons ir sasniedzis savu lietošanas limitu",
+    "couponMinOrder": "Minimālā pasūtījuma vērtība: {minOrderValue} {currency}",
+    "couponAppliedPercent": "Atlaide {percent}% ir piemērota!",
+    "couponAppliedFixed": "Atlaide {amount} {currency} ir piemērota!",
+    "currencySymbol": "€"
+  },
+  "socialProof": {
+    "header": "Facebook kopiena",
+    "sub": "Esiet informēti par jaunumiem un pievienojieties diskusijai!",
+    "cta": "Skatīt mūsu profilu, pilnu iedvesmas",
+    "madeWithLove": "Radīts ar mīlestību",
+    "polishQuality": "un poļu kvalitāti"
+  },
+  "newsletter": {
+    "header": "Esiet informēti!",
+    "sub": "Abonējiet mūsu biļetenu un saņemiet informāciju par jauniem materiāliem, akcijām un ekskluzīvām atlaidēm.",
+    "placeholder": "Jūsu e-pasta adrese",
+    "button": "Abonēt",
+    "success": "Paldies, ka abonējāt biļetenu!",
+    "privacy": "Mēs cienām jūsu privātumu. Jūs varat atteikties jebkurā laikā."
+  },
+  "checkout": {
+    "acceptTermsError": "Jums jāpiekrīt noteikumiem un nosacījumiem",
+    "successTitle": "Paldies par jūsu pasūtījumu!",
+    "successOrder": "Jūsu pasūtījums Nr. {orderNumber} ir saņemts.",
+    "successEmail": "Mēs nosūtījām pasūtījuma informāciju uz norādīto e-pasta adresi.",
+    "backToStore": "Atpakaļ uz veikalu",
+    "myCourses": "Mani kursi",
+    "backToCart": "Atpakaļ uz grozu",
+    "steps": {
+      "cart": "Grozs",
+      "payment": "Maksājums",
+      "access": "Piekļuve"
+    },
+    "trust": {
+      "secure": "Drošs maksājums",
+      "ssl": "SSL šifrēšana",
+      "instant": "Tūlītēja piekļuve"
+    },
+    "header": "Pabeidziet pasūtījumu",
+    "contactTitle": "Kontaktinformācija",
+    "email": "E-pasts *",
+    "firstName": "Vārds *",
+    "lastName": "Uzvārds *",
+    "phone": "Tālrunis (neobligāti)",
+    "invoiceTitle": "Rēķins",
+    "wantInvoice": "Vēlos saņemt PVN rēķinu",
+    "nip": "PVN maksātāja kodas / Reģistrācijas Nr.",
+    "nipError": "Ievadiet derīgu kodu",
+    "lookup": "Iegūt datus",
+    "lookupSuccess": "Uzņēmuma dati iegūti!",
+    "nipNotFound": "Uzņēmums nav atrasts",
+    "nipSearchError": "Kļūda meklēšanā. Lūdzu, mēģiniet vēlreiz.",
+    "companyName": "Uzņēmuma nosaukums",
+    "companyAddress": "Uzņēmuma adrese",
+    "addressPlaceholder": "Tiks aizpildīts automātiski",
+    "paymentTitle": "Maksājuma metode",
+    "paymentMethods": {
+      "card": "Maksājumu karte",
+      "cardSub": "Visa, Mastercard, American Express",
+      "blik": "BLIK",
+      "blikSub": "Ātrs maksājums ar BLIK kodu",
+      "transfer": "Bankas pārskaitījums",
+      "transferSub": "Tradicionāls bankas pārskaitījums"
+    },
+    "yourOrder": "Jūsu pasūtījums",
+    "summaryProducts": "Produkti",
+    "summaryDiscount": "Atlaide ({code})",
+    "summaryTotal": "Kopā",
+    "terms": "Piekrītu veikala noteikumiem un privātuma politikai",
+    "termsRequired": "Nepieciešams, lai pabeigtu pasūtījumu",
+    "processing": "Apstrāde...",
+    "pay": "Maksāt {total}",
+    "instantAccessInfo": "Pēc apmaksas materiāli ir uzreiz pieejami panelī",
+    "socialProof": "+2 500 skolotāju jau ir iegādājušies",
+    "toPayMobile": "Apmaksai",
+    "paymentFailed": "Maksājums neizdevās. Lūdzu, mēģiniet vēlreiz.",
+    "paymentSystemError": "Maksājumu sistēmas kļūda."
+  },
+  "contact": {
+    "title": "Sazinieties ar mums",
+    "subtitle": "Vai jums ir jautājums par materiāliem? Nepieciešams atbalsts pakas izvēlē? Rakstiet mums vai runājiet ar mūsu AI asistentu. Mēs esam šeit jūsu dēļ!",
+    "aiBadge": "Mēs parasti atbildam 2 stundu laikā",
+    "trustBadge": "Vairāk nekā 12 000 apmierinātu skolotāju",
+    "emailTitle": "Rakstiet e-pastu",
+    "emailDesc": "Mūsu pastkaste ir atvērta jums 24/7.",
+    "phoneTitle": "Zvaniet mums",
+    "phoneDesc": "Pir-Piek no 9:00 līdz 17:00 esam pie tālruņa.",
+    "formTitle": "Kontakforma",
+    "addressTitle": "Galvenais birojs",
+    "addressValue": "Varšava, Educational iela 123",
+    "aiHelp": "Nepieciešama ātra atbilde?",
+    "aiHelpDesc": "Mūsu viedais asistents zina atbildes uz vairumu biežāk uzdoto jautājumu. Jautājiet par produktiem, mācību metodēm vai materiālu pieejamību.",
+    "aiHelpMobile": "AI asistents ir pieejams ekrāna apakšējā stūrī.",
+    "form": {
+      "name": "Vārds un uzvārds",
+      "email": "E-pasts",
+      "subject": "Temats",
+      "message": "Jūsu ziņa",
+      "messagePlaceholder": "Kā mēs varam jums palīdzēt?",
+      "sending": "Sūta...",
+      "send": "Sūtīt ziņu",
+      "success": "Ziņa nosūtīta!",
+      "successDesc": "Paldies, ka sazinājāties ar mums. Mēs atbildēsim pēc iespējas ātrāk.",
+      "placeholders": {
+        "name": "Jānis Bērziņš",
+        "email": "janis@example.com",
+        "subject": "Jautājums par produktu...",
+        "message": "Aprakstiet, kā mēs varam jums palīdzēt..."
+      }
+    },
+    "info": {
+      "emailValue": "contact@kamilaenglish.com",
+      "phoneValue": "+48 123 456 789"
+    },
+    "aiChat": {
+      "title": "AI asistents",
+      "status": "Tiešsaistē un gatavs",
+      "thinking": "Domāju...",
+      "inputPlaceholder": "Uzdot jautājumu...",
+      "dataInputPlaceholder": "Ievadīt vārdu un e-pastu...",
+      "welcome": "Sveiki! Es esmu jūsu viedais asistents. Pirms sākam, vai jūs jau esat mūsu klients?",
+      "options": {
+        "yes": "Jā, esmu klients",
+        "no": "Nē, vēl ne"
+      },
+      "responses": {
+        "clientYes": "Lieliski! Kā es varu jums šodien palīdzēt?",
+        "clientNo": "Saprotu. Es labprāt palīdzētu jums iepazīt mūsu materiālus. Kāds ir jūsu vārds un e-pasts, lai es varētu jums nosūtīt dažus bezmaksas paraugus?",
+        "dataSaved": "Paldies! Esmu saglabājis jūsu informāciju. Tagad droši jautājiet jebko.",
+        "fallback": "Atvainojiet, es ne visai saprotu. Vai jūs varētu pārfrāzēt? Jūs varat jautāt par cenām, piegādi vai mācību metodēm."
+      },
+      "knowledge": {
+        "price": "Mūsu PDF materiāli sākas no 29 €. Gada pakas (Mega Pack) pašlaik ir pārdošanā par 149 €.",
+        "delivery": "Visi materiāli ir digitāli. Jūs saņemsiet lejupielādes saiti e-pastā uzreiz pēc apmaksas.",
+        "preschool": "Mums ir lieliska sadaļa 'Angļu valoda bērnudārzā'. Īpaši iesaku mūsu paku '4 gadalaiki'.",
+        "contact": "Jūs varat rakstīt mums e-pastu vai zvanīt +48 123 456 789 (Pir-Piek 9:00-17:00).",
+        "invoice": "Jā, mēs izsniedzam PVN rēķinus. Jūs varat norādīt rēķina informāciju grozā.",
+        "methods": "Kamila Łobko-Koziej veicina spēlēs balstītu pieeju (TPR, komunikācijas spēles). Apskatiet mūsu blogu, lai uzzinātu vairāk!"
+      }
+    }
+  },
+  "login": {
+    "title": "Laipni lūdzam atpakaļ!",
+    "desc": "Ievadiet savu e-pastu, lai ieietu skolēnu zonā.",
+    "student": "Skolēns",
+    "teacher": "Skolotājs",
+    "email": "E-pasts",
+    "emailTeacher": "Darba e-pasts",
+    "password": "Parole",
+    "loggingIn": "Piesakās...",
+    "success": "Pieteicies!",
+    "submit": "Pieteikties",
+    "successMessage": "Veiksmīgi pieteicies! Pārvirza...",
+    "errorDefault": "Nepareizs e-pasts vai parole.",
+    "errorSystem": "Pieteikšanās kļūda. Lūdzu mēģiniet vēlreiz.",
+    "emailRequired": "E-pasts ir obligāts",
+    "emailInvalid": "Nederīgs e-pasta formāts",
+    "passwordRequired": "Parole ir obligāta",
+    "passwordMin": "Parolei jābūt vismaz 4 rakstzīmēm",
+    "forgotPassword": "Forgot your password?",
+    "magicLink": "Login with Magic Link",
+    "magicLinkDesc": "We'll send you a one-time login link to your email address.",
+    "sendMagicLink": "Send Magic Link",
+    "backToLogin": "Back to login",
+    "checkEmail": "Check your inbox",
+    "resetPassword": "Reset password",
+    "magicLinkSent": "A login link has been sent to your email address.",
+    "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
+    "resetSuccess": "Your password has been changed successfully."
+  },
+  "quickSale": {
+    "title": "ĀTRS MAKSĀJUMS",
+    "demoProduct": {
+      "title": "Premium e-grāmatas piemērs",
+      "excerpt": "Šis ir demonstrācijas produkts. Pilnajā versijā dati tiktu iegūti no datu bāzes."
+    },
+    "page": {
+      "guarantee": "30 dienu apmierinātības garantija",
+      "totalLabel": "Kopā apmaksai:",
+      "email_label": "Jūsu e-pasts",
+      "email_placeholder": "adrese@email.com",
+      "payment_method": "Maksājuma veids",
+      "payment_card": "Karte",
+      "blik_code": "BLIK kods",
+      "terms": "Es piekrītu veikala noteikumiem",
+      "pay_btn": "Es pērku un maksāju",
+      "secure_checkout": "SSL šifrēts savienojums"
+    },
+    "optimization": {
+      "timer": {
+        "text": "Jūsu piedāvājums beigsies pēc:"
+      },
+      "social_proof": {
+        "viewing": "Šo piedāvājumu pašlaik skatās {count} cilvēki"
+      },
+      "savings": "Jūs ietaupāt"
+    },
+    "bump": {
+      "yes_btn": "JĀ, pievienot manam pasūtījumam",
+      "price_prefix": "tikai",
+      "description": "Vienreizējs piedāvājums! Pievienojiet lietošanai gatavu darba lapu komplektu (PDF)."
+    }
+  },
+  "verify": {
+    "title": "Sertifikāta pārbaude",
+    "subtitle": "Ievadiet sertifikāta pārbaudes kodu, lai apstiprinātu tā autentiskumu.",
+    "placeholder": "XXXX-XXXX-XXXX",
+    "success": {
+      "title": "Sertifikāts apstiprināts",
+      "desc": "Šis sertifikāts ir autentisks un to izdevusi mūsu platforma.",
+      "user": "Dalībnieks",
+      "course": "Kurss",
+      "date": "Pabeigšanas datums",
+      "code": "Kods",
+      "view": "Skatīt sertifikātu"
+    },
+    "error": {
+      "title": "Sertifikāts nav atrasts",
+      "desc": "Mēs neatradām sertifikātu ar norādīto kodu. Lūdzu, pārbaudiet, vai kods ir pareizs."
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "404",
+      "message": "Lapa nav atrasta.",
+      "back": "Atpakaļ uz sākumlapu"
+    }
+  },
+  "blog": {
+    "title": "Blogs",
+    "subtitle": "Raksti, padomi un iedvesma angļu valodas skolotājiem. Uzziniet, kā mācīt efektīvāk un ar lielāku aizrautību.",
+    "empty": "Nav atrasts neviens bloga raksts.",
+    "readMore": "Lasīt vairāk",
+    "backToBlog": "Atpakaļ uz blogu",
+    "share": "Dalīties:",
+    "notFound": "Nav atrasts"
+  },
+  "common": {
+    "loading": "Ielādē..."
+  },
+  "certificates": {
+    "title": "Pabeigšanas sertifikāts",
+    "subtitle": "Ar šo apliecinām, ka",
+    "completedCourse": "ir veiksmīgi pabeidzis kursu",
+    "completionDate": "Pabeigšanas datums:",
+    "verificationCode": "Pārbaudes kods:",
+    "downloadPdf": "Lejupielādēt PDF",
+    "share": "Dalīties",
+    "backToDashboard": "Atpakaļ uz paneli",
+    "styleTitle": "Mainīt sertifikāta stilu",
+    "verifiedTitle": "Sertifikāts apstiprināts",
+    "verifiedDesc": "Šo sertifikātu ir izdevusi mūsu platforma.",
+    "notFound": "Sertifikāts nav atrasts",
+    "copySuccess": "Saite nokopēta starpliktuvē!"
+  },
+  "languages": {
+    "pl": "Poļu",
+    "en": "Angļu",
+    "uk": "Ukraiņu",
+    "de": "Vācu",
+    "es": "Spāņu",
+    "fr": "Franču",
+    "it": "Itāļu",
+    "cs": "Čehu",
+    "sk": "Slovāku",
+    "ro": "Rumāņu",
+    "hu": "Ungāru",
+    "pt": "Portugāļu",
+    "lt": "Lietuviešu",
+    "lv": "Latviešu",
+    "et": "Igauņu",
+    "hr": "Horvātu",
+    "sr": "Serbu",
+    "sl": "Slovēņu",
+    "bg": "Bulgāru",
+    "el": "Grieķu",
+    "nl": "Holandiešu",
+    "sv": "Zviedru",
+    "fi": "Somu",
+    "no": "Norvēģu",
+    "da": "Dāņu"
+  },
+  "fomo": {
+    "names": [
+      "John",
+      "Emily",
+      "Michael",
+      "Sarah",
+      "David",
+      "Jessica",
+      "Robert"
+    ],
+    "cities": [
+      "London",
+      "New York",
+      "Chicago",
+      "Toronto",
+      "Sydney",
+      "Dublin",
+      "Berlin"
+    ],
+    "purchaseMessage": "{name} from {city}",
+    "productMessage": "Just bought \"{product}\"",
+    "timeAgo": "{time} min ago"
+  },
+  "exitIntent": {
+    "title": "WAIT!",
+    "subtitle": "Before you leave...",
+    "header": "Get your free \"Starter Pack\"",
+    "description": "Join our newsletter and receive 50 free worksheets!",
+    "cta": "I want my gift",
+    "noThanks": "No thanks, I'll pay full price later"
+  }
+}

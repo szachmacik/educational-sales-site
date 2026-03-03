@@ -1,0 +1,403 @@
+{
+  "seo": {
+    "title": "Vzdělávací materiály pro učitele angličtiny | Kamila Łobko-Koziej",
+    "description": "Kreativní výukové materiály, plány lekcí, celoroční projekty a hotové balíčky pro učitele angličtiny.",
+    "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
+  },
+  "nav": {
+    "products": "Produkty",
+    "materialy": "Materiály",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "login": "Přihlášení",
+    "dashboard": "Nástěnka",
+    "adminPanel": "Administrace"
+  },
+  "brand": {
+    "educationalMaterials": "Vzdělávací materiály",
+    "byKamila": "od Kamily Łobko-Koziej"
+  },
+  "hero": {
+    "badge": "Materiály pro učitele",
+    "title": "Učte angličtinu s vášní a lehkostí",
+    "subtitle": "Kreativní výukové materiály, které změní vaše lekce. Ušetřete čas na přípravu a inspirujte své studenty každý den.",
+    "cta_main": "Procházet materiály",
+    "cta_secondary": "O autorce",
+    "demoText": "Ukázka panelu:",
+    "teacherProfile": "Profil učitele",
+    "studentProfile": "Profil studenta"
+  },
+  "footer": {
+    "rights": "Všechna práva vyhrazena.",
+    "description": "Originální, kreativní výukové materiály pro učitele angličtiny. Nechte se inspirovat!",
+    "groups": {
+      "shop": "Obchod",
+      "info": "Informace",
+      "help": "Nápověda"
+    },
+    "links": {
+      "catalog": "Katalog",
+      "materials": "Výukové materiály",
+      "projects": "Celoroční projekty",
+      "scenarios": "Plány lekcí",
+      "packs": "Tematické balíčky",
+      "about": "O autorce",
+      "contact": "Kontakt",
+      "privacy": "Zásady ochrany osobních údajů",
+      "terms": "Obchodní podmínky",
+      "howToBuy": "Jak nakoupit?",
+      "faq": "FAQ",
+      "returns": "Vrácení zboží",
+      "account": "Můj účet",
+      "admin": "Učitelský panel (Admin)"
+    }
+  },
+  "auth": {
+    "logout": "Odhlásit se",
+    "myCourses": "Moje kurzy",
+    "studentPanel": "Studentský panel",
+    "roleAdmin": "Administrator",
+    "roleTeacher": "Teacher",
+    "roleStudent": "Student"
+  },
+  "cart": {
+    "empty": "Váš košík je prázdný",
+    "emptySub": "Pro pokračování v nákupu přidejte produkty",
+    "browse": "Procházet produkty",
+    "reserved": "Váš košík je rezervován pro:",
+    "header": "Košík ({count})",
+    "remove": "Odstranit",
+    "specialOffer": "SPECIÁLNÍ NABÍDKA",
+    "orderBump": "Přidat balíček e-mailových šablon (+29 €)",
+    "orderBumpDesc": "20 hotových šablon pro komunikaci s rodiči. Ušetřete 70 %!",
+    "summary": "Souhrn",
+    "couponPlaceholder": "Slevový kód",
+    "apply": "Použít",
+    "couponHeader": "Kupón:",
+    "products": "Produkty",
+    "discount": "Sleva",
+    "total": "Celkem",
+    "checkout": "Pokračovat k pokladně",
+    "secure": "Bezpečná platba",
+    "couponInvalid": "Invalid coupon code",
+    "couponInactive": "This coupon is no longer active",
+    "couponExpired": "This coupon has expired",
+    "couponLimitReached": "This coupon has reached its usage limit",
+    "couponMinOrder": "Minimum order value: {minOrderValue} {currency}",
+    "couponAppliedPercent": "Discount {percent}% has been applied!",
+    "couponAppliedFixed": "Discount {amount} {currency} has been applied!",
+    "currencySymbol": "€"
+  },
+  "socialProof": {
+    "header": "Facebook komunita",
+    "sub": "Buďte v obraze díky novinkám a zapojte se do diskuze!",
+    "cta": "Zobrazit náš profil plný inspirace",
+    "madeWithLove": "Vytvořeno s láskou",
+    "polishQuality": "a polskou kvalitou"
+  },
+  "newsletter": {
+    "header": "Buďte v obraze!",
+    "sub": "Přihlaste se k odběru našeho newsletteru a získejte informace o nových materiálech, akcích a exkluzivních slevách.",
+    "placeholder": "Vaše e-mailová adresa",
+    "button": "Odebírat",
+    "success": "Děkujeme za přihlášení k odběru newsletteru!",
+    "privacy": "Respektujeme vaše soukromí. Z odběru se můžete kdykoli odhlásit."
+  },
+  "checkout": {
+    "acceptTermsError": "Musíte přijmout obchodní podmínky",
+    "successTitle": "Děkujeme za vaši objednávku!",
+    "successOrder": "Vaše objednávka č. #{orderNumber} byla přijata.",
+    "successEmail": "Podrobnosti o objednávce jsme zaslali na uvedenou e-mailovou adresu.",
+    "backToStore": "Zpět do obchodu",
+    "myCourses": "Moje kurzy",
+    "backToCart": "Zpět do košíku",
+    "steps": {
+      "cart": "Košík",
+      "payment": "Platba",
+      "access": "Přístup"
+    },
+    "trust": {
+      "secure": "Bezpečná platba",
+      "ssl": "SSL šifrování",
+      "instant": "Okamžitý přístup"
+    },
+    "header": "Dokončete objednávku",
+    "contactTitle": "Kontaktní údaje",
+    "email": "E-mail *",
+    "firstName": "Jméno *",
+    "lastName": "Příjmení *",
+    "phone": "Telefon (volitelné)",
+    "invoiceTitle": "Faktura",
+    "wantInvoice": "Chci obdržet fakturu s DPH",
+    "nip": "DIČ / IČO",
+    "nipError": "Zadejte platné DIČ",
+    "lookup": "Načíst data",
+    "lookupSuccess": "Data společnosti načtena!",
+    "nipNotFound": "Společnost nenalezena",
+    "nipSearchError": "Chyba při hledání. Zkuste to prosím znovu.",
+    "companyName": "Název společnosti",
+    "companyAddress": "Adresa společnosti",
+    "addressPlaceholder": "Vyplní se automaticky",
+    "paymentTitle": "Způsob platby",
+    "paymentMethods": {
+      "card": "Platební karta",
+      "cardSub": "Visa, Mastercard, American Express",
+      "blik": "BLIK",
+      "blikSub": "Rychlá platba kódem BLIK",
+      "transfer": "Bankovní převod",
+      "transferSub": "Tradiční bankovní převod"
+    },
+    "yourOrder": "Vaše objednávka",
+    "summaryProducts": "Produkty",
+    "summaryDiscount": "Sleva ({code})",
+    "summaryTotal": "Celkem",
+    "terms": "Přijímám obchodní podmínky obchodu a zásady ochrany osobních údajů",
+    "termsRequired": "Vyžadováno pro dokončení objednávky",
+    "processing": "Zpracování...",
+    "pay": "Zaplatit {total}",
+    "instantAccessInfo": "Po zaplacení jsou materiály okamžitě k dispozici v panelu",
+    "socialProof": "+2 500 učitelů již nakoupilo",
+    "toPayMobile": "K úhradě",
+    "paymentFailed": "Payment failed. Please try again.",
+    "paymentSystemError": "Payment system error."
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "subtitle": "Máte dotaz k materiálům? Potřebujete pomoci s výběrem balíčku? Napište nám nebo si promluvte s naším AI asistentem. Jsme tu pro vás!",
+    "aiBadge": "Obvykle odpovídáme do 2 hodin",
+    "trustBadge": "Více než 12 000 spokojených učitelů",
+    "emailTitle": "Napište e-mail",
+    "emailDesc": "Naše schránka je pro vás otevřena 24/7.",
+    "phoneTitle": "Zavolejte nám",
+    "phoneDesc": "Po-Pá od 9:00 do 17:00 jsme na telefonu.",
+    "formTitle": "Kontaktní formulář",
+    "addressTitle": "Sídlo společnosti",
+    "addressValue": "Varšava, Vzdělávací ulice 123",
+    "aiHelp": "Potřebujete rychlou odpověď?",
+    "aiHelpDesc": "Náš chytrý asistent zná odpovědi na většinu běžných otázek. Zeptejte se na produkty, metody výuky nebo dostupnost materiálů.",
+    "aiHelpMobile": "AI asistent je k dispozici v dolním rohu obrazovky.",
+    "form": {
+      "name": "Jméno a příjmení",
+      "email": "E-mail",
+      "subject": "Předmět",
+      "message": "Vaše zpráva",
+      "messagePlaceholder": "Jak vám můžeme pomoci?",
+      "sending": "Odesílání...",
+      "send": "Odeslat zprávu",
+      "success": "Zpráva odeslána!",
+      "successDesc": "Děkujeme, že jste nás kontaktovali. Odpovíme vám co nejdříve.",
+      "placeholders": {
+        "name": "Jan Novák",
+        "email": "jan@example.cz",
+        "subject": "Dotaz na produkt...",
+        "message": "Popište, jak vám můžeme pomoci..."
+      }
+    },
+    "info": {
+      "emailValue": "contact@kamilaenglish.com",
+      "phoneValue": "+48 123 456 789"
+    },
+    "aiChat": {
+      "title": "AI Asistent",
+      "status": "Online a připraven",
+      "thinking": "Přemýšlím...",
+      "inputPlaceholder": "Zeptejte se na něco...",
+      "dataInputPlaceholder": "Zadejte jméno a e-mail...",
+      "welcome": "Ahoj! Jsem tvůj chytrý asistent. Než začneme, jsi už naším zákazníkem?",
+      "options": {
+        "yes": "Ano, jsem zákazník",
+        "no": "Ne, ještě ne"
+      },
+      "responses": {
+        "clientYes": "Skvělé! Jak ti mohu dnes pomoci?",
+        "clientNo": "Rozumím. Rád ti pomohu prozkoumat naše materiály. Jaké je tvé jméno a e-mail, abych ti mohl poslat nějaké ukázky zdarma?",
+        "dataSaved": "Děkuji! Uložil jsem tvé údaje. Teď se klidně na cokoli ptej.",
+        "fallback": "Omlouvám se, ale nerozumím. Mohl bys to přeformulovat? Můžeš se zeptat na ceny, doručení nebo metody výuky."
+      },
+      "knowledge": {
+        "price": "Naše PDF materiály začínají na 29 €. Roční balíčky (Mega Pack) jsou momentálně v akci za 149 €.",
+        "delivery": "Všechny materiály jsou digitální. Odkaz ke stažení obdržíte ihned po zaplacení.",
+        "preschool": "Máme skvělou sekci 'Angličtina v mateřské škole'. Doporučuji zejména náš balíček 4 roční období.",
+        "contact": "Můžete nám napsat e-mail nebo zavolat na +1 234 567 890 (Po-Pá 9:00-17:00).",
+        "invoice": "Ano, vystavujeme faktury s DPH. Údaje pro fakturu můžete uvést v košíku.",
+        "methods": "Kamila Łobko-Koziej prosazuje přístup založený na hře (TPR, komunikativní hry). Podívejte se na náš blog pro více informací!"
+      }
+    }
+  },
+  "login": {
+    "title": "Vítejte zpět!",
+    "desc": "Zadejte svůj e-mail pro vstup do studentské zóny.",
+    "student": "Student",
+    "teacher": "Učitel",
+    "email": "E-mail",
+    "emailTeacher": "Pracovní e-mail",
+    "password": "Heslo",
+    "loggingIn": "Přihlašování...",
+    "success": "Přihlášeno!",
+    "submit": "Přihlásit se",
+    "successMessage": "Úspěšně přihlášeno! Přesměrování...",
+    "errorDefault": "Neplatný e-mail nebo heslo.",
+    "errorSystem": "Došlo k chybě při přihlašování. Zkuste to prosím znovu.",
+    "emailRequired": "E-mail je povinný",
+    "emailInvalid": "Neplatný formát e-mailu",
+    "passwordRequired": "Heslo je povinné",
+    "passwordMin": "Heslo musí mít alespoň 4 znaky",
+    "forgotPassword": "Forgot your password?",
+    "magicLink": "Login with Magic Link",
+    "magicLinkDesc": "We'll send you a one-time login link to your email address.",
+    "sendMagicLink": "Send Magic Link",
+    "backToLogin": "Back to login",
+    "checkEmail": "Check your inbox",
+    "resetPassword": "Reset password",
+    "magicLinkSent": "A login link has been sent to your email address.",
+    "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
+    "resetSuccess": "Your password has been changed successfully."
+  },
+  "quickSale": {
+    "title": "RYCHLÁ PLATBA",
+    "demoProduct": {
+      "title": "Příklad prémiového e-booku",
+      "excerpt": "Toto je ukázkový produkt. V plné verzi by byla data načtena z databáze."
+    },
+    "page": {
+      "guarantee": "30denní záruka spokojenosti",
+      "totalLabel": "Celkem k úhradě:",
+      "email_label": "Váš e-mail",
+      "email_placeholder": "adresa@email.cz",
+      "payment_method": "Způsob platby",
+      "payment_card": "Karta",
+      "blik_code": "BLIK kód",
+      "terms": "Přijímám obchodní podmínky",
+      "pay_btn": "Kupuji a platím",
+      "secure_checkout": "SSL šifrované připojení"
+    },
+    "optimization": {
+      "timer": {
+        "text": "Vaše nabídka vyprší za:"
+      },
+      "social_proof": {
+        "viewing": "{count} lidí si právě prohlíží tuto nabídku"
+      },
+      "savings": "Ušetříte"
+    },
+    "bump": {
+      "yes_btn": "ANO, přidat k mé objednávce",
+      "price_prefix": "jen za",
+      "description": "Jednorázová nabídka! Přidejte sadu pracovních listů (PDF) připravených k použití."
+    }
+  },
+  "verify": {
+    "title": "Ověření certifikátu",
+    "subtitle": "Zadejte ověřovací kód certifikátu pro potvrzení jeho pravosti.",
+    "placeholder": "XXXX-XXXX-XXXX",
+    "success": {
+      "title": "Certifikát ověřen",
+      "desc": "Tento certifikát je pravý a byl vydán naší platformou.",
+      "user": "Účastník",
+      "course": "Kurz",
+      "date": "Datum dokončení",
+      "code": "Kód",
+      "view": "Zobrazit certifikát",
+      "certificates": {
+        "verifiedTitle": "Verifikovaný certifikát"
+      }
+    },
+    "error": {
+      "title": "Certifikát nenalezen",
+      "desc": "Certifikát s tímto kódem jsme nenalezli. Zkontrolujte prosím správnost kódu."
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "404",
+      "message": "Stránka nenalezena.",
+      "back": "Zpět na úvodní stránku"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Články, tipy a inspirace pro učitele angličtiny. Naučte se učit efektivněji a s větší vášní.",
+    "empty": "Nebyly nalezeny žádné příspěvky.",
+    "readMore": "Číst více",
+    "backToBlog": "Zpět na blog",
+    "share": "Sdílet:",
+    "notFound": "Nenalezeno"
+  },
+  "common": {
+    "loading": "Načítání..."
+  },
+  "certificates": {
+    "title": "Osvědčení o absolvování",
+    "subtitle": "Tímto potvrzujeme, že",
+    "completedCourse": "absolvoval(a) kurz",
+    "completionDate": "Datum dokončení:",
+    "verificationCode": "Ověřovací kód:",
+    "downloadPdf": "Stáhnout PDF",
+    "share": "Sdílet",
+    "backToDashboard": "Zpět na nástěnku",
+    "styleTitle": "Změnit styl certifikátu",
+    "verifiedTitle": "Ověřený certifikát",
+    "verifiedDesc": "Tento certifikát byl vydán naší platformou.",
+    "notFound": "Certifikát nenalezen",
+    "copySuccess": "Odkaz zkopírován do schránky!",
+    "completionTitle": "Certifikát ověřen"
+  },
+  "languages": {
+    "pl": "Polish",
+    "en": "English",
+    "uk": "Ukrainian",
+    "de": "German",
+    "es": "Spanish",
+    "fr": "French",
+    "it": "Italian",
+    "cs": "Czech",
+    "sk": "Slovak",
+    "ro": "Romanian",
+    "hu": "Hungarian",
+    "pt": "Portuguese",
+    "lt": "Lithuanian",
+    "lv": "Latvian",
+    "et": "Estonian",
+    "hr": "Croatian",
+    "sr": "Serbian",
+    "sl": "Slovenian",
+    "bg": "Bulgarian",
+    "el": "Greek",
+    "nl": "Dutch",
+    "sv": "Swedish",
+    "fi": "Finnish",
+    "no": "Norwegian",
+    "da": "Danish"
+  },
+  "fomo": {
+    "names": [
+      "John",
+      "Emily",
+      "Michael",
+      "Sarah",
+      "David",
+      "Jessica",
+      "Robert"
+    ],
+    "cities": [
+      "London",
+      "New York",
+      "Chicago",
+      "Toronto",
+      "Sydney",
+      "Dublin",
+      "Berlin"
+    ],
+    "purchaseMessage": "{name} from {city}",
+    "productMessage": "Just bought \"{product}\"",
+    "timeAgo": "{time} min ago"
+  },
+  "exitIntent": {
+    "title": "WAIT!",
+    "subtitle": "Before you leave...",
+    "header": "Get your free \"Starter Pack\"",
+    "description": "Join our newsletter and receive 50 free worksheets!",
+    "cta": "I want my gift",
+    "noThanks": "No thanks, I'll pay full price later"
+  }
+}

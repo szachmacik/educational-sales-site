@@ -1,0 +1,85 @@
+﻿
+--- Auditing en ---
+Zero missing keys in en.
+Identical keys (potentially untranslated) in en:
+  - categories.items.mega-pack.title: Mega Pack
+  - categories.items.special-lessons.title: Special Lessons
+  - categories.items.speakbook.title: Speakbooks
+  - categories.items.stories.title: Stories & Audio
+  - categories.items.flashcards.title: Flashcards
+  - products.bestseller: Bestseller
+  - products.productCategories.mega-pack: Mega Packs
+  - products.productCategories.speakbook: Speakbook
+  - products.features.audio: Audio MP3
+  - products.features.instant: Instant Download
+  - aboutAuthor.title: Kamila ┼üobko-Koziej
+  - socialProof.header: Facebook Community
+  - checkout.email: Email *
+  - checkout.paymentMethods.cardSub: Visa, Mastercard, American Express
+  - adminSettings.tabs.seo: SEO & Meta
+  - adminSettings.tabs.google: Google Cloud
+  - adminSettings.tabs.guardian: AI Guardian
+  - adminSettings.tabs.workshop: AI Studio & Canva
+  - adminSettings.marketing.ga4: Google Analytics 4
+  - adminSettings.marketing.ga4_placeholder: G-XXXXXXXXXX
+  - adminSettings.marketing.fb_pixel: Facebook Pixel
+  - adminSettings.marketing.meta_verification: Meta Domain Verification
+  - adminSettings.marketing.gsc: Google Search Console
+  - adminSettings.google.config.client_id: Google Client ID
+  - adminSettings.google.config.client_secret: Google Client Secret
+  - adminSettings.pricing.title: Purchasing Power Parity (PPP)
+  - adminSettings.guardian.title: AI Safety & Technical Guardian
+  - adminSettings.workshop.title: AI Workshop (RAG Engine)
+  - adminSettings.workshop.generators.speaking: Speaking Cards
+  - adminSettings.workshop.canva.title: Canva Connector
+  - adminSettings.workshop.canva.api_key: Canva Design Token
+  - adminSettings.market.title: Market & Curriculum Intelligence
+  - adminSettings.market.trends.title: Trend-Watcher
+  - adminSettings.insights.title: AI Audit & Product Insights
+  - adminSettings.automation.agents.manus: Manus AI Connector
+  - adminSettings.automation.agents.general: Custom Browser Agent (Webhook)
+  - studentPanel.purchase_history.status: Status
+
+--- Auditing es ---
+Zero missing keys in es.
+Identical keys (potentially untranslated) in es:
+  - categories.items.mega-pack.title: Mega Pack
+  - categories.items.speakbook.title: Speakbooks
+  - products.productCategories.mega-pack: Mega Packs
+  - products.productCategories.speakbook: Speakbook
+  - products.features.audio: Audio MP3
+  - aboutAuthor.title: Kamila ┼üobko-Koziej
+  - checkout.email: Email *
+  - checkout.paymentMethods.cardSub: Visa, Mastercard, American Express
+  - adminSettings.tabs.google: Google Cloud
+  - adminSettings.marketing.ga4: Google Analytics 4
+  - adminSettings.marketing.ga4_placeholder: G-XXXXXXXXXX
+  - adminSettings.marketing.gsc: Google Search Console
+  - adminSettings.google.config.client_id: Google Client ID
+  - adminSettings.google.config.client_secret: Google Client Secret
+  - studentPanel.team.copy: Kopiuj
+  - subscription.plans.pro.price: 49 z┼é/mies
+  - subscription.plans.school.price: 199 z┼é/mies
+
+--- Auditing pt ---
+Zero missing keys in pt.
+Identical keys (potentially untranslated) in pt:
+  - categories.items.mega-pack.title: Mega Pack
+  - categories.items.speakbook.title: Speakbooks
+  - categories.items.flashcards.title: Flashcards
+  - products.bestseller: Bestseller
+  - products.productCategories.mega-pack: Mega Packs
+  - products.productCategories.speakbook: Speakbook
+  - aboutAuthor.title: Kamila ┼üobko-Koziej
+  - checkout.paymentMethods.cardSub: Visa, Mastercard, American Express
+  - adminSettings.tabs.google: Google Cloud
+  - adminSettings.marketing.ga4: Google Analytics 4
+  - adminSettings.marketing.ga4_placeholder: G-XXXXXXXXXX
+  - adminSettings.marketing.gsc: Google Search Console
+  - adminSettings.google.config.client_id: Google Client ID
+  - adminSettings.google.config.client_secret: Google Client Secret
+  - adminSettings.pricing.title: Purchasing Power Parity (PPP)
+  - adminSettings.interactive.platforms.learningapps: LearningApps Embed
+  - adminSettings.market.trends.title: Trend-Watcher
+  - adminSettings.automation.agents.manus: Manus AI Connector
+  - adminSettings.automation.agents.general: Custom Browser Agent (Webhook)

@@ -1,0 +1,243 @@
+{
+  "hero": {
+    "badge": "Materiale didattico di Kamila Łobko-Koziej",
+    "title_part1": "Risorse per",
+    "title_part2": "Insegnanti di Inglese",
+    "subtitle": "Insegni inglese? Lasciati ispirare! Trova qui materiali didattici creativi, progetti annuali coinvolgenti e innovazioni pedagogiche.",
+    "cta_catalog": "Vedi Catalogo",
+    "cta_secondary": "Come funziona?",
+    "stats_lessons": "Lezioni pronte",
+    "stats_teachers": "Insegnanti",
+    "stats_rating": "Valutazione",
+    "viewSample": "Vedi esempio",
+    "videoPresentation": "Video presentazione",
+    "verifiedBadge": "Materiali verificati",
+    "testedInClass": "Testato in classe",
+    "materialsCount": "Materiali"
+  },
+  "features": {
+    "header": "Perché scegliere i nostri materiali?",
+    "sub": "Creato con passione e attenzione ai dettagli",
+    "items": [
+      {
+        "title": "Accesso immediato",
+        "desc": "Scarica i materiali subito dopo l'acquisto"
+      },
+      {
+        "title": "Registrazioni madrelingua",
+        "desc": "Registrazioni audio professionali"
+      },
+      {
+        "title": "Idee di innovazione",
+        "desc": "Progetti pronti da implementare"
+      },
+      {
+        "title": "Piani di lezione pronti",
+        "desc": "Scenari di lezione dettagliati"
+      },
+      {
+        "title": "Risparmio di tempo",
+        "desc": "Materiali pronti per la stampa"
+      },
+      {
+        "title": "Testato in pratica",
+        "desc": "Testato in classe"
+      }
+    ]
+  },
+  "categories": {
+    "badge": "Categorie di Prodotti",
+    "browse": "Sfoglia categoria",
+    "viewCatalog": "Vedi catalogo completo",
+    "header": "Cosa troverai nel nostro negozio?",
+    "sub": "Scegli una categoria e scopri materiali per arricchire le tue lezioni",
+    "items": {
+      "mega-pack": {
+        "title": "Mega Pack",
+        "description": "Pacchetti educativi completi 2-in-1 - tutti i materiali + piani di lezione annuali",
+        "label": "pacchetti"
+      },
+      "scenariusze": {
+        "title": "Piani di Lezione",
+        "description": "Piani di lezione pronti all'uso mese per mese con materiali stampabili",
+        "label": "piani"
+      },
+      "special-lessons": {
+        "title": "Lezioni Speciali",
+        "description": "Materiali per festività, giorni insoliti e occasioni speciali",
+        "label": "set"
+      },
+      "speakbook": {
+        "title": "Speakbooks",
+        "description": "Libretti interattivi per sviluppare il parlato e il vocabolario",
+        "label": "speakbooks"
+      },
+      "stories": {
+        "title": "Storie e Audio",
+        "description": "E-book e storie con registrazioni audio di madrelingua",
+        "label": "storie"
+      },
+      "teatr": {
+        "title": "Teatro e Giochi",
+        "description": "Copioni teatrali, giochi da tavolo e attività di movimento",
+        "label": "materiali"
+      },
+      "zlobek": {
+        "title": "Asilo Nido",
+        "description": "Materiali per i più piccoli",
+        "label": "materiali"
+      },
+      "przedszkole": {
+        "title": "Scuola Materna",
+        "description": "Materiali per bambini in età prescolare",
+        "label": "materiali"
+      },
+      "klasy-1-3": {
+        "title": "Classi 1-3",
+        "description": "Materiali per le classi 1-3",
+        "label": "materiali"
+      },
+      "klasy-4-6": {
+        "title": "Classi 4-6",
+        "description": "Materiali per le classi 4-6",
+        "label": "materiali"
+      },
+      "klasy-7-8": {
+        "title": "Classi 7-8",
+        "description": "Materiali per le classi 7-8",
+        "label": "materiali"
+      },
+      "liceum": {
+        "title": "Scuola Superiore / Adulti",
+        "description": "Materiali per scuole superiori e adulti",
+        "label": "materiali"
+      },
+      "gry": {
+        "title": "Giochi",
+        "description": "Giochi e attività",
+        "label": "giochi"
+      },
+      "culture": {
+        "title": "Cultura",
+        "description": "Materiali culturali",
+        "label": "materiali"
+      },
+      "flashcards": {
+        "title": "Flashcards",
+        "description": "Carte didattiche",
+        "label": "carte"
+      },
+      "inne": {
+        "title": "Altri",
+        "description": "Altri materiali",
+        "label": "materiali"
+      },
+      "pory-roku": {
+        "title": "Stagioni",
+        "description": "Materiali stagionali",
+        "label": "materiali"
+      }
+    }
+  },
+  "trustBar": {
+    "securePayments": "Pagamenti sicuri",
+    "instantAccess": "Accesso immediato",
+    "happyTeachers": "12000+ insegnanti felici",
+    "rating": "Valutazione 4.9/5",
+    "saveTime": "Risparmia tempo",
+    "verifiedMaterials": "Materiali verificati",
+    "multiplePayments": "Molteplici metodi di pagamento",
+    "downloadInstant": "Download istantaneo",
+    "passion": "Creato con passione",
+    "qualityGuarantee": "Garanzia di qualità",
+    "regularUpdates": "Aggiornamenti regolari",
+    "bonuses": "Bonus per clienti fedeli",
+    "socialCommunity": {
+      "header": "Unisciti alla nostra community",
+      "desc": "Oltre 12.000 insegnanti di inglese condividono le loro idee e opinioni nel nostro gruppo. Rimani aggiornato sulle novità e sui materiali gratuiti!",
+      "cta": "Seguici su Facebook",
+      "followers": "Follower",
+      "stats": "Materiali scaricati",
+      "imageAlts": {
+        "speakbook": "Conversations with Speakbook (Grades 4-8)",
+        "theater": "Theater Plays (Grades 1-6)",
+        "megapack": "Mega Pack - complete scenarios",
+        "nursery": "Scenarios for Nursery and Preschool",
+        "stories": "Project Stories & Culture Pack",
+        "games": "Games and activities for Special Lesson Days"
+      }
+    }
+  },
+  "testimonials": {
+    "header": "Cosa dicono gli insegnanti?",
+    "subheader": "Unisciti a migliaia di insegnanti di inglese soddisfatti",
+    "stats": {
+      "teachers": "Insegnanti nella community",
+      "rating": "Valutazione media",
+      "materials": "Materiali sviluppati",
+      "satisfaction": "Garanzia di soddisfazione"
+    },
+    "reviews": [
+      {
+        "name": "Chiara Rossi",
+        "role": "Insegnante di inglese, Roma",
+        "content": "I materiali sono fantastici! I miei studenti sono coinvolti come mai prima d'ora. Risparmio un sacco di tempo nella preparazione."
+      },
+      {
+        "name": "Alessandro Bianchi",
+        "role": "Insegnante di scuola primaria, Milano",
+        "content": "I piani pronti all'uso e i materiali stampabili sono un successo. Li consiglio a ogni insegnante!"
+      },
+      {
+        "name": "Elena Ferrari",
+        "role": "Insegnante, Napoli",
+        "content": "Compro il mio terzo pacchetto e sono entusiasta della qualità. Le registrazioni di madrelingua sono inestimabili!"
+      },
+      {
+        "name": "Marco Esposito",
+        "role": "Insegnante di scuola superiore, Firenze",
+        "content": "Materiali professionali che funzionano davvero in classe. Vale l'investimento."
+      }
+    ]
+  },
+  "aboutAuthor": {
+    "badge": "Incontra l'autrice",
+    "title": "Kamila Łobko-Koziej",
+    "description1": "Sono un'insegnante di inglese con oltre 15 anni di esperienza di lavoro con bambini in età prescolare e scolare. La mia passione per l'insegnamento e la costante ricerca di metodi didattici creativi mi hanno ispirato a creare materiali educativi originali.",
+    "description2": "Credo che imparare una lingua straniera possa essere un'avventura affascinante per ogni bambino. I miei materiali combinano metodi pedagogici comprovati con elementi di gioco, rendendo le lezioni coinvolgenti ed efficaci.",
+    "stats": {
+      "experience": "anni di esperienza",
+      "materials": "materiali",
+      "teachers": "insegnanti",
+      "trainings": "formazioni"
+    },
+    "floating": {
+      "line1": "Creato con passione",
+      "line2": "per gli insegnanti"
+    }
+  },
+  "contests": {
+    "header": "Ongoing Projects & Contests",
+    "subheader": "Join our educational initiatives and win attractive prizes for your school!",
+    "viewAll": "View all projects",
+    "cta": "Learn more",
+    "platform": "Go to Contest Platform",
+    "stats": {
+      "contests": "Contests",
+      "participants": "Participants yearly",
+      "tradition": "Years of tradition"
+    },
+    "items": {
+      "lingus": {
+        "name": "Linguś",
+        "fullName": "National English Language Contest",
+        "description": "Test your knowledge of the English language"
+      },
+      "matmis": {
+        "name": "MatMiś",
+        "fullName": "National Mathematics Contest",
+        "description": "Develop logical thinking and mathematical skills"
+      }
+    }
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "hero": {
+    "badge": "Mācību materiāli no Kamila Łobko-Koziej",
+    "title_part1": "Resursi",
+    "title_part2": "Angļu valodas skolotājiem",
+    "subtitle": "Mācāt angļu valodu? Iedvesmojieties! Šeit atradīsiet radošus mācību materiālus, aizraujošus gada projektus un pedagoģiskas inovācijas.",
+    "cta_catalog": "Skatīt katalogu",
+    "cta_secondary": "Kā tas darbojas?",
+    "stats_lessons": "Gatavas nodarbības",
+    "stats_teachers": "Skolotāji",
+    "stats_rating": "Vērtējums",
+    "viewSample": "Skatīt paraugu",
+    "videoPresentation": "Video prezentācija",
+    "verifiedBadge": "Pārbaudīti materiāli",
+    "testedInClass": "Pārbaudīts klasē",
+    "materialsCount": "Materiāli"
+  },
+  "features": {
+    "header": "Kāpēc izvēlēties mūsu materiālus?",
+    "sub": "Radīts ar aizrautību un uzmanību detaļām",
+    "items": [
+      {
+        "title": "Tūlītēja piekļuve",
+        "desc": "Lejupielādējiet materiālus uzreiz pēc pirkuma"
+      },
+      {
+        "title": "Dzimtās valodas runātāju ieraksti",
+        "desc": "Profesionāli audio ieraksti"
+      },
+      {
+        "title": "Inovāciju idejas",
+        "desc": "Projekti, kas gatavi īstenošanai"
+      },
+      {
+        "title": "Gatavi stundu plāni",
+        "desc": "Detalizēti mācību scenāriji"
+      },
+      {
+        "title": "Laika taupīšana",
+        "desc": "Drukāšanai gatavi materiāli"
+      },
+      {
+        "title": "Pārbaudīts praksē",
+        "desc": "Testēts klasē"
+      }
+    ]
+  },
+  "categories": {
+    "badge": "Produktu kategorijas",
+    "browse": "Pārlūkot kategoriju",
+    "viewCatalog": "Skatīt visu katalogu",
+    "header": "Ko atradīsiet mūsu veikalā?",
+    "sub": "Izvēlieties kategoriju un atklājiet materiālus, kas bagātinās jūsu nodarbības",
+    "items": {
+      "mega-pack": {
+        "title": "Mega Paka",
+        "description": "Visaptverošas mācību pakas 2-in-1 - visi materiāli + gada stundu plāni",
+        "label": "pakas"
+      },
+      "scenariusze": {
+        "title": "Stundu plāni",
+        "description": "Lietošanai gatavi stundu scenāriji mēnesi pēc mēneša ar drukājamiem materiāliem",
+        "label": "plāni"
+      },
+      "special-lessons": {
+        "title": "Īpašas nodarbības",
+        "description": "Materiāli svētkiem, neparastām dienām un īpašiem gadījumiem",
+        "label": "komplekti"
+      },
+      "speakbook": {
+        "title": "Runāšanas grāmatas",
+        "description": "Interaktīvas grāmatas runāšanas un vārdu krājuma attīstīšanai",
+        "label": "grāmatas"
+      },
+      "stories": {
+        "title": "Stāsti un Audio",
+        "description": "E-grāmatas un stāsti ar dzimtās valodas runātāju audio ierakstiem",
+        "label": "stāsti"
+      },
+      "teatr": {
+        "title": "Teātris un Spēles",
+        "description": "Teātra scenāriji, galda spēles un kustību aktivitātes",
+        "label": "materiāli"
+      },
+      "zlobek": {
+        "title": "Silīte",
+        "description": "Materiāli mazuļiem",
+        "label": "materiāli"
+      },
+      "przedszkole": {
+        "title": "Bērnudārzs",
+        "description": "Materiāli pirmsskolas vecuma bērniem",
+        "label": "materiāli"
+      },
+      "klasy-1-3": {
+        "title": "1.-3. klase",
+        "description": "Materiāli 1.-3. klasei",
+        "label": "materiāli"
+      },
+      "klasy-4-6": {
+        "title": "4.-6. klase",
+        "description": "Materiāli 4.-6. klasei",
+        "label": "materiāli"
+      },
+      "klasy-7-8": {
+        "title": "7.-8. klase",
+        "description": "Materiāli 7.-8. klasei",
+        "label": "materiāli"
+      },
+      "liceum": {
+        "title": "Vidusskola / Pieaugušie",
+        "description": "Materiāli vidusskolai un pieaugušajiem",
+        "label": "materiāli"
+      },
+      "gry": {
+        "title": "Spēles",
+        "description": "Spēles un aktivitātes",
+        "label": "spēles"
+      },
+      "culture": {
+        "title": "Kultūra",
+        "description": "Kultūras materiāli",
+        "label": "materiāli"
+      },
+      "flashcards": {
+        "title": "Kartītes",
+        "description": "Mācību kartītes (Flashcards)",
+        "label": "kartītes"
+      },
+      "inne": {
+        "title": "Citi",
+        "description": "Citi materiāli",
+        "label": "materiāli"
+      },
+      "pory-roku": {
+        "title": "Gadalaiki",
+        "description": "Sezonāli materiāli",
+        "label": "materiāli"
+      }
+    }
+  },
+  "trustBar": {
+    "securePayments": "Droši maksājumi",
+    "instantAccess": "Tūlītēja piekļuve",
+    "happyTeachers": "12000+ laimīgu skolotāju",
+    "rating": "Vērtējums 4.9/5",
+    "saveTime": "Ietaupiet laiku",
+    "verifiedMaterials": "Pārbaudīti materiāli",
+    "multiplePayments": "Daudz maksājumu metožu",
+    "downloadInstant": "Tūlītēja lejupielāde",
+    "passion": "Radīts ar aizrautību",
+    "qualityGuarantee": "Kvalitātes garantija",
+    "regularUpdates": "Regulāri atjaunināts",
+    "bonuses": "Bonusi lojāliem klientiem",
+    "socialCommunity": {
+      "header": "Pievienojieties mūsu kopienai",
+      "desc": "Vairāk nekā 12 000 angļu valodas skolotāju mūsu grupā dalās ar idejām un viedokļiem. Sekojiet jaunumiem un bezmaksas materiāliem!",
+      "cta": "Sekojiet mums Facebook",
+      "followers": "Sekotāju",
+      "stats": "Lejupielādēto materiālu",
+      "imageAlts": {
+        "speakbook": "Conversations with Speakbook (Grades 4-8)",
+        "theater": "Theater Plays (Grades 1-6)",
+        "megapack": "Mega Pack - complete scenarios",
+        "nursery": "Scenarios for Nursery and Preschool",
+        "stories": "Project Stories & Culture Pack",
+        "games": "Games and activities for Special Lesson Days"
+      }
+    }
+  },
+  "testimonials": {
+    "header": "Ko saka skolotāji?",
+    "subheader": "Pievienojieties tūkstošiem apmierinātu angļu valodas skolotāju",
+    "stats": {
+      "teachers": "Skolotāji kopienā",
+      "rating": "Vidējais vērtējums",
+      "materials": "Izstrādātie materiāli",
+      "satisfaction": "Apmierinātības garantija"
+    },
+    "reviews": [
+      {
+        "name": "Laura Bērziņa",
+        "role": "Angļu valodas skolotāja, Rīga",
+        "content": "Materiāli ir fantastiski! Mani skolēni ir iesaistīti kā vēl nekad. Es ietaupu milzum daudz laika, gatavojoties stundām."
+      },
+      {
+        "name": "Jānis Kalniņš",
+        "role": "Sākumskolas skolotājs, Jelgava",
+        "content": "Gatavie plāni un drukājamie materiāli ir īsts atradums. Iesaku tos ikvienam skolotājam!"
+      },
+      {
+        "name": "Zane Ozoliņa",
+        "role": "Skolotāja, Liepāja",
+        "content": "Pērku jau savu trešo paketi un esmu sajūsmā par kvalitāti. Dzimtās valodas runātāju ieraksti ir neatsverami!"
+      },
+      {
+        "name": "Andris Liepiņš",
+        "role": "Vidusskolas skolotājs, Valmiera",
+        "content": "Profesionāli materiāli, kas tiešām strādā klasē. Ir vērts investēt."
+      }
+    ]
+  },
+  "aboutAuthor": {
+    "badge": "Iepazīstiet autori",
+    "title": "Kamila Łobko-Koziej",
+    "description1": "Esmu angļu valodas skolotāja ar vairāk nekā 15 gadu pieredzi darbā ar pirmsskolas un sākumskolas vecuma bērniem. Mana aizrautība ar mācīšanu un nepārtraukta radošu mācību metožu meklēšana iedvesmoja mani radīt oriģinālus izglītojošus materiālus.",
+    "description2": "Es ticu, ka svešvalodas apguve var būt aizraujošs piedzīvojums katram bērnam. Mani materiāli apvieno pārbaudītas pedagoģiskās metodes ar spēles elementiem, padarot nodarbības saistošas un efektīvas.",
+    "stats": {
+      "experience": "gadu pieredze",
+      "materials": "materiāli",
+      "teachers": "skolotāji",
+      "trainings": "apmācības"
+    },
+    "floating": {
+      "line1": "Radīts ar aizrautību",
+      "line2": "skolotājiem"
+    }
+  },
+  "contests": {
+    "header": "Ongoing Projects & Contests",
+    "subheader": "Join our educational initiatives and win attractive prizes for your school!",
+    "viewAll": "View all projects",
+    "cta": "Learn more",
+    "platform": "Go to Contest Platform",
+    "stats": {
+      "contests": "Contests",
+      "participants": "Participants yearly",
+      "tradition": "Years of tradition"
+    },
+    "items": {
+      "lingus": {
+        "name": "Linguś",
+        "fullName": "National English Language Contest",
+        "description": "Test your knowledge of the English language"
+      },
+      "matmis": {
+        "name": "MatMiś",
+        "fullName": "National Mathematics Contest",
+        "description": "Develop logical thinking and mathematical skills"
+      }
+    }
+  }
+}

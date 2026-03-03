@@ -1,0 +1,50 @@
+﻿{
+  "en": [
+    {
+      "path": "nav.blog",
+      "type": "SAME_AS_PL",
+      "value": "Blog"
+    },
+    {
+      "path": "course.quiz",
+      "type": "SAME_AS_PL",
+      "value": "Quiz"
+    },
+    {
+      "path": "categories.items.special-lessons.title",
+      "type": "SAME_AS_PL",
+      "value": "Special Lessons"
+    },
+    {
+      "path": "categories.items.stories.title",
+      "type": "SAME_AS_PL",
+      "value": "Stories & Audio"
+    },
+    {
+      "path": "categories.items.flashcards.title",
+      "type": "SAME_AS_PL",
+      "value": "Flashcards"
+    },
+    {
+      "path": "products.bestseller",
+      "type": "SAME_AS_PL",
+      "value": "Bestseller"
+    },
+    {
+      "path": "products.productCategories.mega-pack",
+      "type": "SAME_AS_PL",
+      "value": "Mega Packs"
+    },
+    {
+      "path": "products.features.audio",
+      "type": "SAME_AS_PL",
+      "value": "Audio MP3"
+    },
+    {
+      "path": "products.features.instant",
+      "type": "SAME_AS_PL",
+      "value": "Instant Download"
+    },
+    {
+      "path": "testimonials.reviews",
+      "type": "LENGTH_MISMATCH"

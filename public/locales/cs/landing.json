@@ -1,0 +1,243 @@
+{
+  "hero": {
+    "badge": "Vzdělávací materiály od Kamily Łobko-Koziej",
+    "title_part1": "Zdroje pro",
+    "title_part2": "Učitele angličtiny",
+    "subtitle": "Učíte angličtinu? Nechte se inspirovat! Najděte zde kreativní výukové materiály, zajímavé celoroční projekty a pedagogické inovace.",
+    "cta_catalog": "Zobrazit katalog",
+    "cta_secondary": "Jak to funguje?",
+    "stats_lessons": "Hotové lekce",
+    "stats_teachers": "Učitelé",
+    "stats_rating": "Hodnocení",
+    "viewSample": "Zobrazit ukázku",
+    "videoPresentation": "Video prezentace",
+    "verifiedBadge": "Ověřené materiály",
+    "testedInClass": "Otestováno ve třídě",
+    "materialsCount": "Materiály"
+  },
+  "features": {
+    "header": "Proč si vybrat naše materiály?",
+    "sub": "Vytvořeno s vášní a smyslem pro detail",
+    "items": [
+      {
+        "title": "Okamžitý přístup",
+        "desc": "Stáhněte si materiály ihned po zakoupení"
+      },
+      {
+        "title": "Nahrávky rodilých mluvčích",
+        "desc": "Profesionální audio nahrávky"
+      },
+      {
+        "title": "Nápady na inovace",
+        "desc": "Projekty připravené k realizaci"
+      },
+      {
+        "title": "Hotové plány lekcí",
+        "desc": "Detailní scénáře lekcí"
+      },
+      {
+        "title": "Úspora času",
+        "desc": "Materiály připravené k tisku"
+      },
+      {
+        "title": "Ověřeno v praxi",
+        "desc": "Otestováno ve třídě"
+      }
+    ]
+  },
+  "categories": {
+    "badge": "Kategorie produktů",
+    "browse": "Procházet kategorii",
+    "viewCatalog": "Zobrazit celý katalog",
+    "header": "Co najdete v našem obchodě?",
+    "sub": "Vyberte si kategorii a objevte materiály, které obohatí vaše lekce",
+    "items": {
+      "mega-pack": {
+        "title": "Mega Balíček",
+        "description": "Komplexní vzdělávací balíčky 2 v 1 - všechny materiály + celoroční plány lekcí",
+        "label": "balíčky"
+      },
+      "scenariusze": {
+        "title": "Plány lekcí",
+        "description": "Hotové plány lekcí na každý měsíc s tisknutelnými materiály",
+        "label": "plány"
+      },
+      "special-lessons": {
+        "title": "Speciální lekce",
+        "description": "Materiály pro svátky, neobvyklé dny a speciální příležitosti",
+        "label": "sady"
+      },
+      "speakbook": {
+        "title": "Speakbooky",
+        "description": "Interaktivní knížky pro rozvoj mluvení a slovní zásoby",
+        "label": "speakbooky"
+      },
+      "stories": {
+        "title": "Příběhy a Audio",
+        "description": "E-knihy a příběhy s audio nahrávkami od rodilých mluvčích",
+        "label": "příběhy"
+      },
+      "teatr": {
+        "title": "Divadlo a Hry",
+        "description": "Divadelní scénáře, deskové hry a pohybové aktivity",
+        "label": "materiály"
+      },
+      "zlobek": {
+        "title": "Jesle",
+        "description": "Materiály pro batolata",
+        "label": "materiály"
+      },
+      "przedszkole": {
+        "title": "Mateřská škola",
+        "description": "Materiály pro předškoláky",
+        "label": "materiály"
+      },
+      "klasy-1-3": {
+        "title": "1.-3. třída",
+        "description": "Materiály pro 1.-3. třídu",
+        "label": "materiály"
+      },
+      "klasy-4-6": {
+        "title": "4.-6. třída",
+        "description": "Materiály pro 4.-6. třídu",
+        "label": "materiály"
+      },
+      "klasy-7-8": {
+        "title": "7.-8. třída",
+        "description": "Materiály pro 7.-8. třídu",
+        "label": "materiály"
+      },
+      "liceum": {
+        "title": "Střední škola / Dospělí",
+        "description": "Materiály pro střední školy a dospělé",
+        "label": "materiály"
+      },
+      "gry": {
+        "title": "Hry",
+        "description": "Hry a aktivity",
+        "label": "hry"
+      },
+      "culture": {
+        "title": "Culture",
+        "description": "Kulturní materiály",
+        "label": "materiály"
+      },
+      "flashcards": {
+        "title": "Kartičky",
+        "description": "Obrázkové karty (Flashcards)",
+        "label": "karty"
+      },
+      "inne": {
+        "title": "Ostatní",
+        "description": "Ostatní materiály",
+        "label": "materiály"
+      },
+      "pory-roku": {
+        "title": "Roční období",
+        "description": "Sezónní materiály",
+        "label": "materiály"
+      }
+    }
+  },
+  "trustBar": {
+    "securePayments": "Bezpečné platby",
+    "instantAccess": "Okamžitý přístup",
+    "happyTeachers": "12000+ spokojených učitelů",
+    "rating": "Hodnocení 4.9/5",
+    "saveTime": "Ušetřete čas",
+    "verifiedMaterials": "Ověřené materiály",
+    "multiplePayments": "Mnoho platebních metod",
+    "downloadInstant": "Okamžité stažení",
+    "passion": "Vytvořeno s vášní",
+    "qualityGuarantee": "Záruka kvality",
+    "regularUpdates": "Pravidelně aktualizováno",
+    "bonuses": "Bonusy pro věrné zákazníky",
+    "socialCommunity": {
+      "header": "Připojte se k naší komunitě",
+      "desc": "Více než 12 000 učitelů angličtiny sdílí nápady a názory v naší skupině. Sledujte novinky a darmové materiály!",
+      "cta": "Sledujte nás na Facebooku",
+      "followers": "Sledujících",
+      "stats": "Stažených materiálů",
+      "imageAlts": {
+        "speakbook": "Conversations with Speakbook (Grades 4-8)",
+        "theater": "Theater Plays (Grades 1-6)",
+        "megapack": "Mega Pack - complete scenarios",
+        "nursery": "Scenarios for Nursery and Preschool",
+        "stories": "Project Stories & Culture Pack",
+        "games": "Games and activities for Special Lesson Days"
+      }
+    }
+  },
+  "testimonials": {
+    "header": "Co říkají učitelé?",
+    "subheader": "Přidejte se k tisícům spokojených učitelů angličtiny",
+    "stats": {
+      "teachers": "Učitelů v komunitě",
+      "rating": "Průměrné hodnocení",
+      "materials": "Vyvinuté materiály",
+      "satisfaction": "Záruka spokojenosti"
+    },
+    "reviews": [
+      {
+        "name": "Jana Nováková",
+        "role": "Učitelka angličtiny, Praha",
+        "content": "Materiály jsou úžasné! Moji studenti jsou zapojení jako nikdy předtím. Ušetřím spoustu času na přípravu lekcí."
+      },
+      {
+        "name": "Petr Svoboda",
+        "role": "Učitel na základní škole, Brno",
+        "content": "Hotové plány a materiály k tisku jsou trefa do černého. Doporučuji každému učiteli!"
+      },
+      {
+        "name": "Lenka Černá",
+        "role": "Učitelka, Ostrava",
+        "content": "Kupuji už třetí balíček a jsem nadšená kvalitou. Nahrávky rodilých mluvčích jsou k nezaplacení!"
+      },
+      {
+        "name": "Martin Kučera",
+        "role": "Učitel na gymnáziu, Plzeň",
+        "content": "Profesionální materiály, které ve třídě opravdu fungují. Stojí za investici."
+      }
+    ]
+  },
+  "aboutAuthor": {
+    "badge": "Seznamte se s autorkou",
+    "title": "Kamila Łobko-Koziej",
+    "description1": "Jsem učitelka angličtiny s více než 15 lety zkušeností s prací s dětmi v předškolním a raném školním věku. Moje vášeň pro učení a neustálé hledání kreativních výukových metod mě inspirovaly k vytvoření originálních vzdělávacích materiálů.",
+    "description2": "Věřím, že učení se cizímu jazyku může být fascinujícím dobrodružstvím pro každé dítě. Moje materiály kombinují osvědčené pedagogické metody s herními prvky, díky čemuž jsou lekce poutavé a efektivní.",
+    "stats": {
+      "experience": "let zkušeností",
+      "materials": "materiálů",
+      "teachers": "učitelů",
+      "trainings": "školení"
+    },
+    "floating": {
+      "line1": "Vytvořeno s vášní",
+      "line2": "pro učitele"
+    }
+  },
+  "contests": {
+    "header": "Ongoing Projects & Contests",
+    "subheader": "Join our educational initiatives and win attractive prizes for your school!",
+    "viewAll": "View all projects",
+    "cta": "Learn more",
+    "platform": "Go to Contest Platform",
+    "stats": {
+      "contests": "Contests",
+      "participants": "Participants yearly",
+      "tradition": "Years of tradition"
+    },
+    "items": {
+      "lingus": {
+        "name": "Linguś",
+        "fullName": "National English Language Contest",
+        "description": "Test your knowledge of the English language"
+      },
+      "matmis": {
+        "name": "MatMiś",
+        "fullName": "National Mathematics Contest",
+        "description": "Develop logical thinking and mathematical skills"
+      }
+    }
+  }
+}

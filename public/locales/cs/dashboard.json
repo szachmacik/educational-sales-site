@@ -1,0 +1,198 @@
+{
+  "welcome": "Ahoj",
+  "teacher_welcome": "Spravujte své materiály a třídy na jednom místě.",
+  "student_welcome": "Připraveni na další dávku znalostí? Podívejte se, co pro vás máme!",
+  "add_materials": "Přidat materiály",
+  "dashboard": {
+    "tabs": {
+      "courses": "Moje kurzy",
+      "materials": "PDF/ZIP materiály",
+      "games": "Interaktivní hry",
+      "wallet": "Moje peněženka"
+    },
+    "materials": {
+      "title": "Vaše digitální materiály",
+      "download": "Stáhnout soubor",
+      "print": "Tisknout materiály",
+      "no_files": "Zatím nemáte žádné materiály ke stažení."
+    },
+    "awards": {
+      "title": "Vaše síň slávy",
+      "subtitle": "Získávejte odznaky za dokončené lekce a hry!",
+      "mock": {
+        "start": "Rychlý start",
+        "startDesc": "Dokončil první lekci",
+        "vocab": "Mistr slovíček",
+        "vocabDesc": "100% v testu",
+        "steady": "Systematický",
+        "steadyDesc": "Přihlášen 7 dní v řadě",
+        "polyglot": "Polyglot",
+        "polyglotDesc": "Složil úroveň A1"
+      }
+    },
+    "games": {
+      "title": "Centrum online her",
+      "subtitle": "Vzdělávací hry",
+      "play": "Hrát nyní",
+      "provider": "Platforma",
+      "no_games": "Žádné interaktivní hry nejsou k dispozici.",
+      "loading": "Načítání hry...",
+      "notice": "V plné verzi aplikace by se zde zobrazil interaktivní iframe od {provider}.",
+      "fullscreen": "Celá obrazovka",
+      "report": "Nahlásit chybu"
+    },
+    "sidebar": {
+      "library": "Knihovna materiálů",
+      "team": "Moje třída / Tým",
+      "purchases": "Faktury a nákupy",
+      "wallet": "Peněženka bodů",
+      "settings": "Nastavení účtu",
+      "myLessons": "Moje lekce",
+      "interactiveGames": "Hry a zábava",
+      "myAwards": "Moje ocenění",
+      "myProfile": "Můj profil",
+      "rank": "Začínající učitel",
+      "points": "bodů",
+      "nextRank": "Do úrovně Expert"
+    },
+    "subscription": {
+      "title": "Váš plán",
+      "activeClasses": "Aktivní třídy",
+      "unlimited": "Neomezeno",
+      "export": "Export materiálů",
+      "active": "Aktivní",
+      "aiCredits": "AI kredity",
+      "classes": "Třídy",
+      "limitReached": "Limit bezplatného plánu dosažen",
+      "upgrade": "Upgradovat plán"
+    },
+    "purchases": {
+      "loading": "Načítání historie...",
+      "title": "Historie nákupů",
+      "empty": "Žádné objednávky",
+      "emptyDesc": "Zatím jste neprovedli žádné nákupy. Přejděte do obchodu a podívejte se na dostupné materiály.",
+      "goToShop": "Do obchodu",
+      "moreItems": "další",
+      "invoice": "Faktura"
+    },
+    "course": {
+      "notFound": "Kurz nenalezen",
+      "selectLesson": "Vyberte lekci z nabídky.",
+      "backToDashboard": "Zpět na nástěnku",
+      "prevLesson": "Předchozí lekce",
+      "nextLesson": "Další lekce",
+      "complete": "Označit jako dokončené",
+      "completed": "Dokončeno",
+      "backToCourses": "Moje kurzy",
+      "playVideo": "PŘEHRÁT VIDEO",
+      "gameTitle": "Interaktivní online hra",
+      "gameDesc": "Tento materiál byl vygenerován automaticky. Klikněte na tlačítko níže pro otevření hry v novém okně.",
+      "gameBtn": "Otevřít hru nyní",
+      "introduction": "Úvod",
+      "materialsTitle": "Materiály k lekci",
+      "viewingInstructions": "Vyberte lekci z nabídky.",
+      "finishCourse": "Dokončit kurz",
+      "teachingModes": {
+        "online": "Online",
+        "stationary": "Prezenčně",
+        "hybrid": "Hybridně"
+      }
+    },
+    "library": {
+      "title": "Vaše knihovna",
+      "recent": "Nedávno zakoupené",
+      "downloadZip": "Stáhnout vše (ZIP)",
+      "browseFiles": "Procházet soubory",
+      "progress": "Váš pokrok",
+      "progressDesc": "{percent}% materiálů z {pack} dokončeno.",
+      "level": "Úroveň",
+      "open": "Otevřít balíček",
+      "preview": "Interaktivní náhled",
+      "previewGame": "Náhled hry",
+      "filters": {
+        "all": "Vše",
+        "pdf": "E-knihy a PDF",
+        "audio": "Audio",
+        "courses": "Online kurzy"
+      },
+      "badges": {
+        "game": "Vzdělávací hra",
+        "pack": "Balíček"
+      },
+      "stats": {
+        "files": "souborů",
+        "more": "více"
+      },
+      "discover": {
+        "title": "Objevte další materiály",
+        "desc": "Prohlédněte si obchod a přidejte nové balíčky do své knihovny.",
+        "btn": "Do obchodu"
+      }
+    },
+    "studentTasks": {
+      "title": "Vaše úkoly a materiály",
+      "assignee": "Učitel",
+      "due": "Termín",
+      "status": {
+        "todo": "K vyřízení",
+        "inProgress": "Probíhá",
+        "available": "Dostupné"
+      },
+      "actions": {
+        "start": "Začít",
+        "open": "Otevřít"
+      },
+      "mock": {
+        "homework": "Domácí úkol: Present Simple",
+        "teacher": "Učitel Jane",
+        "tomorrow": "Zítra, 14:00",
+        "quiz": "Test: Zvířata",
+        "friday": "Pátek",
+        "ebook": "E-kniha: Základy gramatiky",
+        "system": "Systém"
+      }
+    },
+    "team": {
+      "title": "Moje třída / Tým",
+      "subtitle": "Sdílejte materiály se svými studenty",
+      "create_class": "Vytvořit novou třídu",
+      "students_count": "{count} studentů",
+      "created_at": "Vytvořeno: {date}",
+      "access_code": "Přístupový kód studenta",
+      "shared_materials": "Sdílené materiály ({count})",
+      "manage_btn": "Spravovat přístup",
+      "empty": {
+        "title": "Nová třída",
+        "desc": "Vytvořte skupinu pro své studenty, sdílejte materiály a sledujte pokrok.",
+        "btn": "Začít nastavení"
+      },
+      "pro": {
+        "active": "Váš PRO plán je aktivní",
+        "unlock": "Odemkněte neomezené třídy",
+        "desc": "PRO plán pro učitele umožňuje vytvářet neomezené skupiny, přidávat až 100 studentů a přístup k automatickým generátorům testů.",
+        "upgrade": "Upgradovat na PRO za $12",
+        "status": "Aktivní"
+      }
+    },
+    "wallet": {
+      "title": "Vaše vzdělávací peněženka",
+      "subtitle": "Sbírejte body za nákupy a aktivitu. Vyměňte je za slevy!",
+      "available": "Dostupné prostředky",
+      "value": "Hodnota v {currency}",
+      "points": "bodů",
+      "spend": "Utratit body v obchodu",
+      "history": "Poslední aktivita",
+      "mock": {
+        "purchase": "Nákup: Mega Pack A1-A2",
+        "bonus": "Uvítací bonus",
+        "today": "Dnes",
+        "daysAgo": "před {count} dny"
+      }
+    },
+    "certificates": {
+      "none": "Žádné certifikáty",
+      "teacher_desc": "Certifikáty se udělují po dokončení kurzů typu 'Masterclass'.",
+      "student_desc": "Dokončete kurz na 100%, abyste získali svůj diplom!"
+    }
+  }
+}

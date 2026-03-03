@@ -1,0 +1,421 @@
+{
+  "seo": {
+    "title": "Materiały Edukacyjne dla Nauczycieli Angielskiego | Kamila Łobko-Koziej",
+    "description": "Kreatywne materiały dydaktyczne, scenariusze lekcji, projekty całoroczne i gotowe pakiety dla nauczycieli języka angielskiego.",
+    "ai_summary": "Sklep z materiałami edukacyjnymi dla nauczycieli języka angielskiego. Oferujemy scenariusze lekcji, karty pracy PDF, pakiety tematyczne i projekty całoroczne. Stworzone przez Kamilę Łobko-Koziej z ponad 15-letnim doświadczeniem."
+  },
+  "nav": {
+    "products": "Produkty",
+    "materialy": "Materiały",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "login": "Zaloguj",
+    "dashboard": "Panel",
+    "adminPanel": "Panel Admina",
+    "verify": "Weryfikacja"
+  },
+  "brand": {
+    "educationalMaterials": "Materiały Edukacyjne",
+    "byKamila": "by Kamila Łobko-Koziej"
+  },
+  "hero": {
+    "badge": "Materiały dla Nauczycieli",
+    "title": "Ucz Angielskiego z Pasją i Lekkością",
+    "subtitle": "Kreatywne materiały dydaktyczne, które odmienią Twoje lekcje. Oszczędzaj czas na przygotowaniach i inspiruj swoich uczniów każdego dnia.",
+    "cta_main": "Przeglądaj materiały",
+    "cta_secondary": "O autorce",
+    "demoText": "Zobacz demo panelu:",
+    "teacherProfile": "Profil Nauczyciela",
+    "studentProfile": "Profil Ucznia"
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "description": "Autorskie, kreatywne materiały dydaktyczne dla nauczycieli języka angielskiego. Daj się zainspirować!",
+    "groups": {
+      "shop": "Sklep",
+      "info": "Informacje",
+      "help": "Pomoc"
+    },
+    "links": {
+      "catalog": "Katalog",
+      "materials": "Materiały dydaktyczne",
+      "projects": "Projekty całoroczne",
+      "scenarios": "Scenariusze lekcji",
+      "packs": "Pakiety tematyczne",
+      "about": "O autorce",
+      "contact": "Kontakt",
+      "privacy": "Polityka prywatności",
+      "terms": "Regulamin",
+      "howToBuy": "Jak kupić?",
+      "faq": "FAQ",
+      "returns": "Zwroty i reklamacje",
+      "account": "Moje konto",
+      "admin": "Panel Nauczyciela (Admin)"
+    }
+  },
+  "auth": {
+    "logout": "Wyloguj się",
+    "myCourses": "Moje Kursy",
+    "studentPanel": "Panel Kursanta",
+    "roleAdmin": "Administrator",
+    "roleTeacher": "Nauczyciel",
+    "roleStudent": "Uczeń"
+  },
+  "cart": {
+    "empty": "Twój koszyk jest pusty",
+    "emptySub": "Dodaj produkty, aby kontynuować zakupy",
+    "browse": "Przeglądaj produkty",
+    "reserved": "Twój koszyk jest zarezerwowany przez:",
+    "header": "Koszyk ({count})",
+    "remove": "Usuń",
+    "specialOffer": "OFERTA SPECJALNA",
+    "orderBump": "Dodaj pakiet szablonów email (+29 zł)",
+    "orderBumpDesc": "20 gotowych szablonów do komunikacji z rodzicami. Oszczędzasz 70%!",
+    "summary": "Podsumowanie",
+    "couponPlaceholder": "Kod rabatowy",
+    "apply": "Zastosuj",
+    "couponHeader": "Kupon:",
+    "products": "Produkty",
+    "discount": "Rabat",
+    "total": "Razem",
+    "checkout": "Przejdź do płatności",
+    "secure": "Bezpieczna płatność",
+    "couponInvalid": "Nieprawidłowy kod kuponu",
+    "couponInactive": "Ten kupon nie jest już aktywny",
+    "couponExpired": "Ten kupon wygasł",
+    "couponLimitReached": "Ten kupon został już wykorzystany maksymalną liczbę razy",
+    "couponMinOrder": "Minimalna wartość zamówienia: {minOrderValue} {currency}",
+    "couponAppliedPercent": "Zniżka {percent}% została zastosowana!",
+    "couponAppliedFixed": "Zniżka {amount} {currency} została zastosowana!",
+    "currencySymbol": "zł"
+  },
+  "socialProof": {
+    "header": "Facebook Community",
+    "sub": "Bądź na bieżąco z nowościami i dołącz do dyskusji!",
+    "cta": "Zobacz nasz profil pełny inspiracji",
+    "madeWithLove": "Tworzone z Miłością",
+    "polishQuality": "i Polską Jakością"
+  },
+  "newsletter": {
+    "header": "Bądź na bieżąco!",
+    "sub": "Zapisz się do newslettera i otrzymuj informacje o nowych materiałach, promocjach i ekskluzywnych zniżkach.",
+    "placeholder": "Twój adres e-mail",
+    "button": "Zapisz się",
+    "success": "Dziękujemy za zapisanie się do newslettera!",
+    "privacy": "Szanujemy Twoją prywatność. Możesz zrezygnować w każdej chwili."
+  },
+  "checkout": {
+    "acceptTermsError": "Musisz zaakceptować regulamin",
+    "successTitle": "Dziękujemy za zamówienie!",
+    "successOrder": "Twoje zamówienie nr {orderNumber} zostało przyjęte.",
+    "successEmail": "Szczegóły zamówienia wysłaliśmy na podany adres email.",
+    "backToStore": "Wróć do sklepu",
+    "myCourses": "Moje kursy",
+    "backToCart": "Wróć do koszyka",
+    "steps": {
+      "cart": "Koszyk",
+      "payment": "Płatność",
+      "access": "Dostęp"
+    },
+    "trust": {
+      "secure": "Bezpieczna płatność",
+      "ssl": "Szyfrowanie SSL",
+      "instant": "Natychmiastowy dostęp"
+    },
+    "header": "Dokończ zamówienie",
+    "contactTitle": "Dane kontaktowe",
+    "email": "Email *",
+    "firstName": "Imię *",
+    "lastName": "Nazwisko *",
+    "phone": "Telefon (opcjonalnie)",
+    "invoiceTitle": "Faktura",
+    "wantInvoice": "Chcę otrzymać fakturę VAT",
+    "nip": "NIP *",
+    "nipError": "Wprowadź poprawny 10-cyfrowy NIP",
+    "lookup": "Pobierz dane",
+    "lookupSuccess": "Dane firmy zostały pobrane!",
+    "nipNotFound": "Nie znaleziono firmy",
+    "nipSearchError": "Błąd podczas wyszukiwania. Spróbuj ponownie.",
+    "companyName": "Nazwa firmy *",
+    "companyAddress": "Adres firmy",
+    "addressPlaceholder": "Zostanie uzupełniony automatycznie",
+    "paymentTitle": "Metoda płatności",
+    "paymentMethods": {
+      "card": "Karta płatnicza",
+      "cardSub": "Visa, Mastercard, American Express",
+      "blik": "BLIK",
+      "blikSub": "Szybka płatność kodem BLIK",
+      "transfer": "Przelew bankowy",
+      "transferSub": "Tradycyjny przelew na konto"
+    },
+    "yourOrder": "Twoje zamówienie",
+    "summaryProducts": "Produkty",
+    "summaryDiscount": "Rabat ({code})",
+    "summaryTotal": "Razem",
+    "terms": "Akceptuję regulamin sklepu oraz politykę prywatności",
+    "termsRequired": "Wymagane do realizacji zamówienia",
+    "processing": "Przetwarzanie...",
+    "pay": "Zapłać {total} zł",
+    "instantAccessInfo": "Po płatności materiały dostępne od razu w panelu",
+    "socialProof": "+2,500 nauczycieli już kupiło",
+    "toPayMobile": "Do zapłaty",
+    "paymentFailed": "Płatność nie powiodła se. Spróbuj ponownie.",
+    "paymentSystemError": "Błąd systemu płatności."
+  },
+  "contact": {
+    "title": "Bądźmy w kontakcie",
+    "subtitle": "Masz pytanie dotyczące materiałów? Potrzebujesz wsparcia w doborze pakietu? Napisz do nas lub porozmawiaj z naszym asystentem AI. Jesteśmy tu dla Ciebie!",
+    "aiBadge": "Odpowiadamy zwykle w 2 godziny",
+    "trustBadge": "Ponad 5000 zadowolonych nauczycieli",
+    "emailTitle": "Napisz e-mail",
+    "emailDesc": "Nasza skrzynka jest otwarta 24/7 dla Ciebie.",
+    "phoneTitle": "Zadzwoń do nas",
+    "phoneDesc": "Pn-Pt od 9:00 do 17:00 jesteśmy pod telefonem.",
+    "formTitle": "Formularz Kontaktowy",
+    "addressTitle": "Siedziba",
+    "addressValue": "Warszawa, Polska",
+    "aiHelp": "Potrzebujesz szybkiej odpowiedzi?",
+    "aiHelpDesc": "Nasz inteligentny asystent zna odpowiedzi na większość najczęstszych pytań. Zapytaj o produkty, metody nauczania lub dostępność materiałów.",
+    "aiHelpMobile": "Asystent AI jest dostępny w dolnym rogu ekranu.",
+    "form": {
+      "name": "Imię i Nazwisko",
+      "email": "E-mail",
+      "subject": "Temat",
+      "message": "Twoja wiadomość",
+      "messagePlaceholder": "W czym możemy Ci pomóc?",
+      "sending": "Wysyłanie...",
+      "send": "Wyślij Wiadomość",
+      "success": "Wiadomość została wysłana!",
+      "successDesc": "Dziękujemy za kontakt. Odpowiemy tak szybko, jak to możliwe.",
+      "placeholders": {
+        "name": "Jan Kowalski",
+        "email": "jan@example.com",
+        "subject": "Pytanie o produkt...",
+        "message": "Opisz, w czym możemy pomóc..."
+      }
+    },
+    "info": {
+      "emailValue": "contact@kamilaenglish.com",
+      "phoneValue": ""
+    },
+    "aiChat": {
+      "title": "Asystent AI",
+      "status": "Online & Gotowy",
+      "thinking": "Myślę...",
+      "inputPlaceholder": "Zadaj pytanie...",
+      "dataInputPlaceholder": "Wpisz imię i e-mail...",
+      "welcome": "Cześć! Jestem Twoim inteligentnym asystentem. Zanim zaczniemy, czy jesteś już naszym klientem?",
+      "options": {
+        "yes": "Tak, jestem klientem",
+        "no": "Nie, jeszcze nie"
+      },
+      "responses": {
+        "clientYes": "Świetnie! W czym mogę Ci dzisiaj pomóc?",
+        "clientNo": "Rozumiem. Chętnie Ci pomogę poznać nasze materiały. Jak masz na imię i na jaki e-mail mogę przesłać Ci darmowe próbki naszych materiałów?",
+        "dataSaved": "Dziękuję! Zapisałem Twoje dane. Teraz śmiało pytaj o co chcesz.",
+        "fallback": "Przepraszam, nie do końca rozumiem to pytanie. Czy możesz sformułować je inaczej? Możesz zapytać o ceny, dostawę materiałów lub metody nauczania."
+      },
+      "knowledge": {
+        "price": "Nasze materiały PDF zaczynają się już od 29 zł. Pakiety roczne (Mega Pack) są obecnie w promocji za 149 zł.",
+        "delivery": "Wszystkie materiały są cyfrowe. Link do pobrania otrzymasz natychmiast po opłaceniu zamówienia na swój adres e-mail.",
+        "preschool": "Mamy świetną sekcję 'Angielski w Żłobku i Przedszkolu'. Polecam szczególnie nasz pakiet 4 Pory Roku.",
+        "contact": "Możesz do nas napisać na podany e-mail (pn-pt 9:00-17:00).",
+        "invoice": "Tak, wystawiamy faktury VAT. Dane do faktury możesz podać w koszyku podczas składania zamówienia.",
+        "methods": "Kamila Łobko-Koziej promuje podejście oparte na relacji i zabawie (TPR, gry komunikacyjne). Sprawdź nasz blog, aby dowiedzieć się więcej!"
+      }
+    }
+  },
+  "login": {
+    "title": "Witaj ponownie!",
+    "desc": "Wpisz swój email, aby wejść do strefy kursanta.",
+    "student": "Uczeń",
+    "teacher": "Nauczyciel",
+    "email": "Email",
+    "emailTeacher": "Email służbowy",
+    "password": "Hasło",
+    "loggingIn": "Logowanie...",
+    "success": "Zalogowano!",
+    "submit": "Zaloguj się",
+    "successMessage": "Zalogowano pomyślnie! Przekierowywanie...",
+    "errorDefault": "Nieprawidłowy email lub hasło.",
+    "errorSystem": "Wystąpił błąd logowania. Spróbuj ponownie.",
+    "emailRequired": "Email jest wymagany",
+    "emailInvalid": "Nieprawidłowy format email",
+    "passwordRequired": "Hasło jest wymagane",
+    "passwordMin": "Hasło musi mieć min. 4 znaki",
+    "forgotPassword": "Nie pamiętasz hasła?",
+    "magicLink": "Zaloguj się przez Magic Link",
+    "magicLinkDesc": "Prześlemy Ci jednorazowy link logujący na Twój adres e-mail.",
+    "sendMagicLink": "Wyślij Magic Link",
+    "backToLogin": "Wróć do logowania",
+    "checkEmail": "Sprawdź swoją skrzynkę",
+    "resetPassword": "Zresetuj hasło",
+    "magicLinkSent": "Link logujący został wysłany na podany adres email.",
+    "emailCheckDesc": "Jeśli konto o tym adresie istnieje, wysłaliśmy instrukcje na skrzynkę.",
+    "resetSuccess": "Twoje hasło zostało zmienione pomyślnie."
+  },
+  "quickSale": {
+    "title": "SZYBKA PŁATNOŚĆ",
+    "demoProduct": {
+      "title": "Przykładowy E-book Premium",
+      "excerpt": "To jest produkt demonstracyjny. W pełnej wersji dane byłyby pobierane z bazy."
+    },
+    "page": {
+      "guarantee": "Gwarancja satysfakcji 30 dni",
+      "totalLabel": "Razem do zapłaty:",
+      "email_label": "Twój e-mail",
+      "email_placeholder": "adres@email.com",
+      "payment_method": "Metoda płatności",
+      "payment_card": "Karta",
+      "blik_code": "Kod BLIK",
+      "terms": "Akceptuję regulamin sklepu",
+      "pay_btn": "Kupuję i płacę",
+      "secure_checkout": "Połączenie szyfrowane SSL"
+    },
+    "optimization": {
+      "timer": {
+        "text": "Twoja oferta wygasa za:"
+      },
+      "social_proof": {
+        "viewing": "{count} osoby oglądają tę ofertę"
+      },
+      "savings": "Oszczędzasz"
+    },
+    "bump": {
+      "yes_btn": "TAK, dodaj do zamówienia",
+      "price_prefix": "tylko",
+      "description": "Jednorazowa oferta! Dodaj zestaw gotowych kart pracy (PDF)."
+    }
+  },
+  "verify": {
+    "title": "Weryfikacja certyfikatu",
+    "subtitle": "Wprowadź kod weryfikacyjny certyfikatu, aby potwierdzić jego autentyczność.",
+    "placeholder": "XXXX-XXXX-XXXX",
+    "success": {
+      "title": "Certyfikat zweryfikowany",
+      "desc": "Ten certyfikat jest autentyczny i został wydany przez naszą platformę.",
+      "user": "Uczestnik",
+      "course": "Kurs",
+      "date": "Data ukończenia",
+      "code": "Kod",
+      "view": "Zobacz certyfikat"
+    },
+    "error": {
+      "title": "Certyfikat nie znaleziony",
+      "desc": "Nie znaleźliśmy certyfikatu o podanym kodzie. Sprawdź czy kod jest poprawny."
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "404",
+      "message": "Strona nie została znaleziona.",
+      "back": "Wróć na stronę główną"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Artykuły, porady i inspiracje dla nauczycieli języka angielskiego. Dowiedz się, jak uczyć skuteczniej i z większą pasją.",
+    "empty": "Brak wpisów na blogu.",
+    "readMore": "Czytaj więcej",
+    "backToBlog": "Wróć do bloga",
+    "share": "Udostępnij:",
+    "notFound": "Nie znaleziono"
+  },
+  "common": {
+    "loading": "Ładowanie...",
+    "success": "Akcja wykonana pomyślnie."
+  },
+  "certificates": {
+    "title": "Certyfikat Ukończenia",
+    "subtitle": "Niniejszym zaświadcza się, że",
+    "completedCourse": "ukończył/a kurs",
+    "completionDate": "Data ukończenia:",
+    "verificationCode": "Kod weryfikacyjny:",
+    "downloadPdf": "Pobierz PDF",
+    "share": "Udostępnij",
+    "backToDashboard": "Wróć do panelu",
+    "styleTitle": "Zmień styl certyfikatu",
+    "verifiedTitle": "Certyfikat zweryfikowany",
+    "verifiedDesc": "Ten certyfikat został wydany przez naszą platformę.",
+    "notFound": "Certyfikat nie znaleziony",
+    "copySuccess": "Link skopiowany do schowka!"
+  },
+  "languages": {
+    "pl": "Polski",
+    "en": "Angielski",
+    "uk": "Ukraiński",
+    "de": "Niemiecki",
+    "es": "Hiszpański",
+    "fr": "Francuski",
+    "it": "Włoski",
+    "cs": "Czeski",
+    "sk": "Słowacki",
+    "ro": "Rumuński",
+    "hu": "Węgierski",
+    "pt": "Portugalski",
+    "lt": "Litewski",
+    "lv": "Łotewski",
+    "et": "Estoński",
+    "hr": "Chorwacki",
+    "sr": "Serbski",
+    "sl": "Słoweński",
+    "bg": "Bułgarski",
+    "el": "Grecki",
+    "nl": "Holenderski",
+    "sv": "Szwedzki",
+    "fi": "Fiński",
+    "no": "Norweski",
+    "da": "Duński"
+  },
+  "fomo": {
+    "names": [
+      "Anna",
+      "Marek",
+      "Sara",
+      "Elena",
+      "Krzysztof",
+      "Joanna",
+      "Łukasz"
+    ],
+    "cities": [
+      "Warszawa",
+      "Kraków",
+      "Wrocław",
+      "Poznań",
+      "Gdańsk",
+      "Łódź",
+      "Katowice"
+    ],
+    "purchaseMessage": "{name} z {city}",
+    "productMessage": "Właśnie kupił(a) \"{product}\"",
+    "timeAgo": "{time} min temu"
+  },
+  "exitIntent": {
+    "title": "CZEKAJ!",
+    "subtitle": "Zanim wyjdziesz...",
+    "header": "Odbierz darmowy \"Pakiet Startowy\"",
+    "description": "Zapisz się do newslettera i odbierz pakiet 50 darmowych kart pracy!",
+    "cta": "Chcę swój prezent",
+    "noThanks": "Nie dziękuję, zapłacę pełną cenę"
+  },
+  "announcement": {
+    "launchOffer": "Oferta specjalna: -20% z kodem \"START20\"",
+    "limitedTime": "Tylko teraz: sprawdź nasze nowe pakiety!"
+  },
+  "points": {
+    "loyaltyProgram": "Program Lojalnościowy",
+    "name": "Kamila Points",
+    "balance": "Twoje punkty",
+    "earn": "Zyskaj {amount} punktów",
+    "spend": "Kup za {amount} punktów",
+    "priceInPoints": "Cena w punktach",
+    "insufficient": "Brakujących punktów: {missing}",
+    "history": "Historia punktów",
+    "welcomeGift": "Prezent powitalny",
+    "purchaseReward": "Nagroda za zakup",
+    "collectWays": "Jak zbierać punkty?",
+    "collect_purchase": "Kupuj produkty (1 zł = 10 pkt)",
+    "collect_login": "Zaloguj się codziennie (+10 pkt)",
+    "collect_review": "Wystaw opinię o produkcie (+50 pkt)"
+  }
+}

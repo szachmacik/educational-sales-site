@@ -1,0 +1,80 @@
+[
+  {
+    "id": "mega-pack",
+    "slug": "mega-pack",
+    "name": "Mega Pack",
+    "color": "ff0000"
+  },
+  {
+    "id": "scenariusze",
+    "slug": "scenariusze",
+    "name": "Scenariusze",
+    "color": "4ade80"
+  },
+  {
+    "id": "zlobek",
+    "slug": "zlobek",
+    "name": "Zlobek",
+    "color": "f472b6"
+  },
+  {
+    "id": "special-lessons",
+    "slug": "special-lessons",
+    "name": "Special Lessons",
+    "color": "fbbf24"
+  },
+  {
+    "id": "speakbook",
+    "slug": "speakbook",
+    "name": "Speakbook",
+    "color": "60a5fa"
+  },
+  {
+    "id": "stories",
+    "slug": "stories",
+    "name": "Stories",
+    "color": "a78bfa"
+  },
+  {
+    "id": "culture",
+    "slug": "culture",
+    "name": "Culture",
+    "color": "f87171"
+  },
+  {
+    "id": "pory-roku",
+    "slug": "pory-roku",
+    "name": "Pory Roku",
+    "color": "2dd4bf"
+  },
+  {
+    "id": "teatr",
+    "slug": "teatr",
+    "name": "Teatr",
+    "color": "fb923c"
+  },
+  {
+    "id": "flashcards",
+    "slug": "flashcards",
+    "name": "Flashcards",
+    "color": "9ca3af"
+  },
+  {
+    "id": "gry",
+    "slug": "gry",
+    "name": "Gry",
+    "color": "c084fc"
+  },
+  {
+    "id": "inne",
+    "slug": "inne",
+    "name": "Inne",
+    "color": "94a3b8"
+  },
+  {
+    "id": "pakiety",
+    "slug": "pakiety",
+    "name": "Pakiety",
+    "color": "8b5cf6"
+  }
+]

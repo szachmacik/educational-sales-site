@@ -1,0 +1,854 @@
+// Complete product catalog - Educational Materials for English Teachers
+
+export interface Product {
+    title: string;
+    description: string;
+    price: string;
+    url: string;
+    categories: string[];
+    image?: string;
+    translations?: {
+        [key: string]: {
+            title: string;
+            description: string;
+        }
+    };
+}
+
+// Keep old name for backwards compatibility
+export type KamilaEnglishProduct = Product;
+
+// Category colors for product badges
+export const CATEGORY_COLORS: Record<string, string> = {
+    "mega-pack": "ff0000",
+    "scenariusze": "4ade80",
+    "zlobek": "f472b6",
+    "special-lessons": "fbbf24",
+    "speakbook": "60a5fa",
+    "stories": "a78bfa",
+    "culture": "f87171",
+    "pory-roku": "2dd4bf",
+    "teatr": "fb923c",
+    "flashcards": "9ca3af",
+    "gry": "c084fc",
+    "inne": "94a3b8",
+    "pakiety": "8b5cf6"
+};
+
+export const getProductImage = (p: Product) => p.image || "/placeholder.svg";
+
+export const PRODUCTS: Product[] = [
+    {
+        title: "Angielski w przedszkolu MEGA PACK 2w1 : wszystkie materiały PDF + wszystkie scenariusze zajęć",
+        description: "Mega Pack Angielski w przedszkolu: Four Seasons to połączenie dwóch całorocznych, skorelowanych ze sobą pakietów: pakietu scenariuszy zajęć oraz pakietu materiałów pdf. Zawiera także szczegółowy rozkład materiału na każdy miesiąc.\n\n1) Pakiet wszystkich scenariuszy zajęć (od września do czerwca)\nScenariusze zajęć na każdy miesiąc obejmują następujące obszary tematyczne:\nWrzesień: action verbs, numbers, colours\nPaździernik: school supplies, autumn, forest animals\nListopad: body parts, Teddy Bear Day, Hedgehog Day\nGrudzień: toys, Christmas, winter\nStyczeń: family, house, food\nLuty: emotions, clothes (Carnival), Dinosaur Day\nMarzec: pets, the weather, Easter\nKwiecień: spring, farm animals, Earth Day\nMaj: zoo animals, Mother’s Day, sports\nCzerwiec: summer & holiday places, Oceans Day, Father’s Day\n\n2) Pakiet materiałów pdf na wszystkie pory roku\nCo znajdę w pakiecie?\nobszary tematyczne omawiane podczas każdej z czterech pór roku oraz lekcje tematyczne związane ze specjalnymi dniami i nietypowymi świętami przypadającymi w danym okresie – łącznie ponad 400 stron PDF!",
+        price: "420.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/super-pakiet-2w1-pakiet-wszystkie-scenariusze-zajec-pakiet-4-pory-roku/",
+        categories: ["mega-pack", "scenariusze", "pakiety", "przedszkole"],
+        image: "/products/mega-pack-2w1.png",
+
+        translations: {
+            en: {
+                title: "English in Kindergarten MEGA PACK 2in1",
+                description: "Mega Pack English in Kindergarten: Four Seasons is a combination of two year-round..."
+            },
+            uk: {
+                title: "Англійська в дитячому садку MEGA PACK 2в1",
+                description: "Mega Pack Англійська в дитячому садку..."
+            },
+            de: {
+                title: "Englisch im Kindergarten MEGA PACK 2in1",
+                description: "Mega Pack Englisch im Kindergarten..."
+            },
+            es: {
+                title: "Inglés en el Jardín de Infantes MEGA PACK 2en1",
+                description: "Mega Pack Inglés en el Jardín de Infantes..."
+            }
+        }
+    },
+    {
+        title: "Angielski w przedszkolu: pakiet wszystkich scenariuszy zajęć (wrzesień-czerwiec)",
+        description: "PAKIET SCENARIUSZY ZAJĘĆ na cały rok szkolny\nScenariusze zajęć na każdy miesiąc obejmują następujące obszary tematyczne:\nWrzesień: action verbs, numbers, colours\nPaździernik: school supplies, autumn, forest animals\nListopad: body parts, Teddy Bear Day, Hedgehog Day\nGrudzień: toys, Christmas, winter\nStyczeń: family, house, food\nLuty: emotions, clothes (Carnival), Dinosaur Day\nMarzec: pets, the weather, Easter\nKwiecień: spring, farm animals, Earth Day\nMaj: zoo animals, Mother’s Day, sports\nCzerwiec: summer & holiday places, Oceans Day, Father’s Day\nKażdy ze scenariuszy jest opracowany dla trzech grup wiekowych: maluchów (3 lata), średniaków (4 lata) i starszaków (5-6 lat).",
+        price: "307.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/pakiet-wszystkich-scenariuszy-wrzesien-czerwiec/",
+        categories: ["scenariusze", "pakiety", "przedszkole"],
+        image: "/products/scenariusze-wrzesien-czerwiec.png"
+    },
+    {
+        title: "Angielski w żłobku MEGA PACK: zestawy na cały rok szkolny",
+        description: "Kompletny zestaw 200 gotowych scenariuszy zajęć wraz z materiałami PDF na cały rok szkolny dla dzieci w wieku żłobkowym. 4 pakiety tematyczne (Pory Roku) z zabawami sensorycznymi i muzycznymi.",
+        price: "245.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-mega-pack-zestawy-na-caly-rok-szkolny/",
+        categories: ["mega-pack", "zlobek"],
+        image: "/products/Grafiki-pakietowe-48-uh2ez6x-1200x848.png"
+    },
+    {
+        title: "Special Lessons Pack: gotowe zajęcia na dni specjalne",
+        description: "🎉Special Lessons Pack to gotowe zajęcia, które możesz wykorzystać podczas tzw. lekcji specjalnych w trakcie roku szkolnego ❤️\nW skład pakietu Special Lessons wchodzą gotowe zajęcia (dokładny konspekt, wszystkie potrzebne materiały PDF, wszystkie potrzebne materiały interaktywne) na następujące dni specjalne w trakcie roku szkolnego:\n🔸September Fun: pierwsze powakacyjne zajęcia\n🔸 European Day of Languages: Europejski Dzień Języków Obcych (wraz z girlandą flag do dekoracji sali)\n🔸 World Pets Day: Światowy Dzień Zwierząt Domowych\n🔸 Thanksgiving: Święto Dziękczynienia\n🔸 Christmas Playscript: scenariusz przedstawienia mikołajkowego / świątecznego\n🔸  Australia Day: Dzień Australii\n🔸 Pizza Day: Dzień Pizzy\n🔸 Saint Patrick's Day: Dzień Świętego Patryka\n🔸 Easter: zajęcia wielkanocne\n🔸 Children's Day: Dzień Dziecka\n🔸 World Oceans Day: Światowy Dzień Oceanów\n🔸 Summer Playscript: scenariusz przedstawienia wiosennego / letniego w temacie podróży, sportu i wypoczynku na świeżym powietrzu",
+        price: "236.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/special-lesson-pack-1-3/",
+        categories: ["special-lessons", "przedszkole", "klasy-1-3"],
+        image: "/products/Szkolenie-projekty-2526-1-9662lhj-1200x675.png"
+    },
+    {
+        title: "Speakbook Pack",
+        description: "Przedstawiam Wam SPEAKBOOKI - czyli lapbooki, które mówią!\nDosłownie. Bo każdy z 20 (!) speakbooków w cyklu to pretekst do rozmowy, opowiadania, zadawania pytań na tematy dobrze znane i bliskie uczniom - przy aktywizacji słownictwa związanego z danym tematem.\nWłaśnie dlatego w każdym naszym speakbooku znajdziesz:\n🔵 szczegółowe instrukcje z ilustrującymi je zdjęciami\n🟢 gotowe szablony poszczególnych elementów (wklejki, rozkładane ilustracje, koperty na słówka, dialogi-harmonijki z kodami QR, koła fortuny i inne!)\n🟡 pomysły na aktywności skupione na mówieniu\n🟠 sekcję &#8222;Dlaczego tak?\" - rzeczowo wyjaśniającą, dlaczego właśnie tę aktywność warto zastosować i w jaki sposób pomaga ona dzieciom\nPamiętaj! Nawet podczas technicznych czynności, takich jak wycinanie, składanie, kolorowanie czy przyklejanie, możecie aktywnie ćwiczyć angielski. Wystarczy, że mówisz, co należy zrobić, jednocześnie pokazując to. Dzięki temu dzieci osłuchują się z językiem, uczą się go w działaniu i widzą, że angielski to nie tylko lekcja, ale narzędzie do komunikacji w codziennych sytuacjach! 👍\nTo właśnie sedno naszego projektu &#8222;MY ENGLISH SPEAKBOOK\": tworzymy, działamy, rozmawiamy - po angielsku!\nCykl speakbooków to projekt edukacyjny, który dodatkowo może być realizowany jako innowacja pedagogiczna ✨- jako GRATIS przy zakupie całego pakietu otrzymasz opis projektu (cele, metody, efekty itp.)\nJest to promocyjna oferta przedsprzedażowa - cena znacznie wzrośnie w momencie ukończenia całego produktu.\nKażdy ze speakbooków będzie ukazywał się w odpowiednim, zgodnym z jego tematyką momencie roku - tak, by można było spokojnie wszystko przygotować przed zajęciami.\nKup teraz, aby uzyskać dostęp w promocyjnej cenie, zanim produkt zostanie ukończony!",
+        price: "224.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-pack/",
+        categories: ["speakbook", "przedszkole", "klasy-1-3"],
+        image: "/products/Miniaturka-speakbooks-sklep-y1ru05e-1200x848.png"
+    },
+    {
+        title: "Angielski w przedszkolu: materiały PDF na 4 pory roku",
+        description: "Materiały dydaktyczne podzielone na cztery pory roku: wiosna, lato, jesień, zima. Flashcards, gry, karty pracy.",
+        price: "203.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/pakiet-materialow-na-4-pory-roku/",
+        categories: ["pakiety", "pory-roku", "przedszkole"],
+        image: "/products/Grafiki-pakietowe-7-1200x848.png"
+    },
+    {
+        title: "Pakiet Stories: ebooki + audio na 4 pory roku + flashcards",
+        description: "PROJEKT STORIES obejmuje opowiadania do każdej z czterech pór roku (który wraz z całym pakietem może posłużyć jako innowacja w nauczaniu).\nKażde opowiadanie składa się z:\n• stron z obrazkami i tekstem\n• audiobooka odczytanego przez native speakera języka angielskiego\n• flashcards do treści ujętych w historyjkach\ni uwzględnia słownictwo, którego dzieci zazwyczaj uczą się dokładnie o tej porze roku. Słówka z danego tematu są oznaczone kolorem, by nauczyciel mógł zrobić pauzę w tym miejscu, a dzieci same dopowiedziały słówko na podstawie obrazka, w ten sposób utrwalając je.\nKażda z historyjek jest w wersji pdf (możesz ją wydrukować, traktując jako książeczkę, lub wyświetlić dzieciom na rzutniku) oraz w postaci nagrania treści odczytanego przez native speakera! W ten sposób możecie z historyjkami pracować na wiele sposobów, np. po wspólnym przeczytaniu odgrywać scenki do czytanego nagrania z podziałem na role.",
+        price: "179.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/pakiet-stories-ebooki-audio-na-4-pory-roku/",
+        categories: ["stories", "przedszkole", "klasy-1-3"],
+        image: "/products/Projekt-Stories-2-1200x848.png"
+    },
+    {
+        title: "Special Lessons Pack vol. 2",
+        description: "Special Lessons Pack vol. 2 to gotowe zajęcia, które możesz wykorzystać podczas tzw. dni specjalnych w trakcie roku szkolnego\nW skład pakietu Special Lessons wchodzą materiały na gazetkę do dekoracji sali + gra drużynowa (np. terenowa, kalambury, zagadki itp.) i/lub interaktywna prezentacja z aktywnościami dla całej klasy, a także dwa scenariusze przedstawień do przygotowania z uczniami.\nW pakiecie:\n• European Day of Languages: Europejski Dzień Języków Obcych (materiały na gazetkę + gra terenowa Passport to Europe)\n• Pumpkin Day: Dzień Dyni (materiały na gazetkę + gra terenowa Pumpkin Hunt)\n• Guy Fawkes Day: Dzień Guya Fawkesa (materiały na gazetkę + gra drużynowa + interaktywna prezentacja)\n• Christmas: Boże Narodzenie (materiały na gazetkę + kalendarz adwentowy z challenge'ami + interaktywna prezentacja + gra Gift Givers)\n• Grandparents Day: scenariusz przedstawienia &#8222;Special Grandparents\"\n• English Language Day: scenariusz przedstawienia &#8222;English Zoo\"",
+        price: "169.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/special-lesson-vol-2/",
+        categories: ["special-lessons", "przedszkole", "klasy-1-3"],
+        image: "/products/Szkolenie-projekty-2526-iq8wss9-1200x675.png"
+    },
+    {
+        title: "Culture Corner Pack",
+        description: "Pakiet Culture Corner obejmuje następujące zestawy:\n1. Wales: St David's Day\n2. Ireland: St Patrick's Day\n3. England: St George's Day\n4. Scotland: St Andrew's Day\nKażdy z nich zawiera:\n• MATERIAŁY NA GAZETKĘ\nNapis i basic facts o kraju, flaga, drogowskaz prowadzący do najsłynniejszych zakątków każdego z krajów wraz ze zdjęciami, sekcje (odpowiednio dla danego kraju): Symbols, Fun Facts (Ciekawostki), Traditional Dishes z podpisami, kody QR kierujące do nagrań codziennych zwrotów po irlandzku i walijsku, Famous People, a także dużo barwnych, pasujących i ŁATWYCH DO WYCIĘCIA ilustracji oraz miejsce na wypowiedzi uczniów\n• Interaktywną PREZENTACJĘ do przeprowadzenia w klasie w formie aktywizujących ucznia warsztatów  - na każdym kroku pełną aktywności, w które zaangażujesz uczniów w formie turnieju\n• GRĘ PODŁOGOWĄ do przeprowadzenia w klasie np. w formie warsztatów 🙂 ➡ Uczniowie poruszają się po klasie, ćwicząc gramatykę w kontekście kultury danego kraju na dwóch poziomach trudności! ➡ Uczniowie współpracują w drużynach i utrwalają gramatykę jednocześnie! W każdym z zestawów ćwiczymy inny zakres gramatyki:\nWales:\nLevel 1: przedimek nieokreślony 'a'/'an', czasownik 'to be', czasownik 'have got', konstrukcja 'there…', czas Present Simple.\nLevel 2: some/any/no, stopniowanie przymiotników, czasy Present Continuous, Past Simple, Present Perfect, Past Continuous, few/a few/little/a little\nIreland:\nLevel 1: zaimki wskazujące this/that/these/those, przymiotniki dzierżawcze my/your/his/her/our/their, czasowniki „have” i „be”, czas Present Simple, przyimki czasu in/on/at, dopełniacz saksoński (’s).\nLevel 2: Present Perfect, already/yet, for/since, zaimki dzierżawcze (mine/yours…), często mylone przymiotniki i zaimki (his vs him, our vs us, their vs them), must & have to]\nEngland:\nLevel 1: przedimek określony &#8222;the\" vs przedimek nieokreślony &#8222;a\", czas Present Simple (twierdzenia, pytania, przeczenia), czasownik &#8222;can\"\nLevel 2: czas Future Simple, konstrukcja &#8222;be going to\", okresy warunkowe: 0 & 1st conditional, time prepositions: przyimki czasu (at/on/in), reflexive pronouns: zaimki zwrotne (myself, yourself itd.) vs object pronouns, possessive adjectives\nScotland:\nLevel 1: czas Present Continuous (twierdzenia, pytania, przeczenia), konstrukcja “Let’s…”, pytania szczegółowe (Wh- questions)\nLevel 2: zdania względne (relative clauses: which, who, whose…), często mylone pytania z operatorem DO vs inwersją TO BE, zaimki nieokreślone z some-, any-, no-, every- (indefinite pronouns: something, somebody, somewhere…)",
+        price: "155.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/the-uk-ireland-materialy-kulturowe-pakiet/",
+        categories: ["culture", "klasy-4-6", "klasy-7-8"],
+        image: "/products/Grafiki-pakietowe-28-1200x848.png"
+    },
+    {
+        title: "Angielski w przedszkolu: pakiet scenariuszy na 5 miesięcy (luty-czerwiec)",
+        description: "PAKIET SCENARIUSZY ZAJĘĆ na 5 miesięcy\nScenariusze zajęć obejmują następujące obszary tematyczne:\nLuty: emotions, clothes (Carnival), Dinosaur Day\nMarzec: pets, the weather, Easter\nKwiecień: spring, farm animals, Earth Day\nMaj: zoo animals, Mother’s Day, sports\nCzerwiec: summer & holiday places, Oceans Day, Father’s Day\nKażdy ze scenariuszy jest opracowany dla trzech grup wiekowych:\nmaluchów (3 lata), średniaków (4 lata) i starszaków (5-6 lat).\nW każdym miesiącu jest ich , więc sprawdzą się idealnie, jeżeli angielski jest prowadzony w każdej z grup 2 razy w tygodniu.\nScenariusze są w pełni skorelowane z MATERIAŁAMI z pakietu 4 pór roku…\n(jeśli jeszcze nie słyszałaś o pakiecie materiałów na 4 pory roku –  kliknij tutaj)\nCo zawierają scenariusze zajęć?\nsłownictwo i zwroty do wprowadzenia na poszczególnych zajęciach;\ntemat zajęć do wpisania do dziennika (zgodnie z zaleceniem większości placówek sformułowany częściowo po angielsku, częściowo po polsku);\nspis potrzebnych materiałów w postaci wygodnej listy do odznaczania – szablony, gry, karty obrazkowe czy karty pracy do druku dostępne w zestawie materiałów “4 pory roku“\nprzebieg każdych zajęć ze szczegółowo opisanymi krokami\nSCENARIUSZE zajęć są idealnym rozwiązaniem dla Ciebie, jeśli…\njesteś zaangażowaną nauczycielką i chciałabyś mieć więcej energii podczas zajęć, nie musząc spędzać godzin na ich wcześniejszym przygotowaniu;\nchcesz zyskać dodatkowy czas, otrzymując gotowy rozkład materiału i tematy do wpisania do dziennika – by nie martwić się kwestią dokumentacji;\nlubisz mieć wszystko uporządkowane w jednym miejscu;\nchciałabyś odkryć jeszcze więcej sposobów na wprowadzanie i utrwalanie słownictwa",
+        price: "152.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/pakiet-scenariuszy-luty-marzec-kwiecien-maj-czerwiec/",
+        categories: ["scenariusze", "przedszkole"],
+        image: "/products/special-2.png"
+    },
+    {
+        title: "Angielski w przedszkolu: pakiet scenariuszy na 5 miesięcy (wrzesień-styczeń)",
+        description: "Scenariusze zajęć na pierwszy semestr: wrzesień, październik, listopad, grudzień, styczeń.",
+        price: "152.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/pakiet-scenariuszy-wrzesien-styczen/",
+        categories: ["scenariusze", "przedszkole"],
+        image: "/products/special-3.png"
+    },
+    {
+        title: "Pakiet Stories: ebooki + flashcards na 4 pory roku",
+        description: "PROJEKT STORIES obejmuje opowiadania do każdej z czterech pór roku (który wraz z całym pakietem może posłużyć jako innowacja w nauczaniu).\nKażde opowiadanie składa się z:\n• stron z obrazkami i tekstem\n• flashcards do treści ujętych w historyjkach\ni uwzględnia słownictwo, którego dzieci uczą się dokładnie o tej porze roku. Słówka z danego tematu są oznaczone kolorem czarnym, by nauczyciel mógł zrobić pauzę w tym miejscu, a dzieci same dopowiedziały słówko na podstawie obrazka, w ten sposób utrwalając je.\nKażda z historyjek jest w wersji pdf (możesz ją wydrukować, traktując jako książeczkę, lub wyświetlić dzieciom na rzutniku) W ten sposób możecie z historyjkami pracować na wiele sposobów, np. po wspólnym przeczytaniu odgrywać scenki do czytanego nagrania z podziałem na role.",
+        price: "143.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/pakiet-stories-e-booki-na-4-pory-roku/",
+        categories: ["stories", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-68-1200x848.png"
+    },
+    {
+        title: "Angielski w żłobku: Autumn Pack",
+        description: "Co znajdziesz w zestawie Autumn Pack dla maluszków?\nGotowe scenariusze zajęć wraz z materiałami PDF na całą jesień!\n🎵 Rymowanki, piosenki i zabawy do prostych melodii\n✋ Pomysły na wykorzystanie przedmiotów codziennego użytku\n🐿 Scenariusze stworzone z doświadczenia mamy i lektorki 😉\n📄 Gotowe materiały PDF do druku – zero stresu przed zajęciami\nCzy wiesz, że…\n💡 W każdym miesiącu znajdziesz aż 20 gotowych scenariuszy – możesz prowadzić zajęcia codziennie lub wybrać te, które najlepiej pasują do Twojej grupy\n💡 Każdy temat zawiera sensoryczne, ruchowe i muzyczne aktywności – wspierające rozwój mowy, motoryki i koncentracji nawet u najmłodszych dzieci\n💡Poza scenariuszami i materiałami, w pakiecie znajdziesz mnóstwo przydatnych porad oraz rozkłady materiału\n[Obecnie gotowe są zestawy September oraz October - zestaw November w przygotowaniu! Zaktualizuje się automatycznie w trzecim tygodniu października]",
+        price: "97.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-autumn-pack/",
+        categories: ["zlobek"],
+        image: "/products/239-2bdqq7e-1200x848.png"
+    },
+    {
+        title: "Angielski przez teatr dla klas 0-3",
+        description: "Dlaczego warto przygotowywać z uczniami przedstawienia w języku angielskim?\nTego rodzaju inscenizacje:\n🔵 ćwiczą pamięć\n🔵 uczą współpracy\n🔵 pomagają w przyswajaniu słownictwa i struktur gramatycznych - zwłaszcza, jeżeli tekst przedstawienia uwzględnia rytm, pewną powtarzalność\n🔵 angażują emocje w naukę języka\n🔵 pomagają w aktywizacji języka - użycie w kontekście, często wspomagane odpowiednią gestykulacją, ruchem\nPakiet zawiera:\n1️⃣ ENGLISH ZOO\nPrzedstawienie o nauce języka angielskiego, które można zorganizować w dowolnym momencie roku szkolnego z uczniami zerówki lub klas 1-3? Czemu nie! Wybierzmy się do zoo - ale nie byle jakiego… 😉\n🐆🐘🦒🐒🦘🐅🦏🐫\nEnglish Zoo to przedstawienie, w którym przeróżne zwierzaki pomogą dzieciom w nauce angielskiego - dobra zabawa gwarantowana! Możecie urządzić je z okazji dnia języka angielskiego w Waszej placówce, Dnia Języków Obcych, dnia otwartego, rozpoczęcia czy zakończenia roku szkolnego… - wpasuje się w naprawdę każdą okazję! ☺️\nZestaw zawiera:\n✅ SPIS RÓL (dla 8-10 osób + nieograniczonej liczby osób biorących udział w części muzycznej)\n✅ SPIS REKWIZYTÓW I DEKORACJI\n✅ SCENARIUSZ (4 scenki)\n✅ WYSTĘP Z PIOSENKĄ (treść piosenki z układem choreograficznym oraz nagraniem w mp3)\n✅ DEKORACJE DO DRUKU (duży szyld zoo, plakietki z nazwami zwierząt)\n2️⃣ CHRISTMAS PLAYSCRIPT\nChristmas Playscript to kompletny scenariusz przedstawienia o nieco roztargnionym Świętym Mikołaju, składający się ze spisu ról (na trzech poziomach trudności), spisu rekwizytów, propozycji dekoracji sceny, występu muzycznego oraz czterech scenek świątecznej opowieści ❤️ Przedstawienie możesz oczywiście dowolnie dostosować do możliwości swoich uczniów ☺️\nZestaw zawiera:\n✅ SPIS RÓL:\nna 3 poziomach trudności, dzięki czemu zaangażujesz wszystkich uczniów: zarówno małą, jak i większą grupkę!\n✅ Dokładny SPIS REKWIZYTÓW:\nłatwo dostępne rzeczy, które pomogą dzieciom zrozumieć treść i ubarwią występ\n✅ szczegółowy SCENARIUSZ:\nprzedstawienie składa się z 4 scenek oraz występu muzycznego\n3️⃣ GRANDPARENTS DAY\nJeżeli szukacie wzruszającego, a jednocześnie łatwego do przygotowania przedstawienia z okazji Dnia Babci i Dziadka dla Waszych przedszkolaków lub uczniów klas 1-3, z pomocą przychodzi Grandparents' Day Playscript 💞🧑🏼‍🦳👨🏼‍🦳\nZestaw zawiera:\n✅ krótki wstęp muzyczny (piosenka wykorzystuje dobrze znaną dzieciom melodię, dzięki czemu nie będzie trudna do opanowania, zaś naukę prostego tekstu wspomoże dokładnie opisana gestykulacja 😊)\n✅ SPIS RÓL na różnych poziomach trudności (10-11 ról + nieograniczona liczba dzieci występujących z piosenką)\n✅ Dokładny SPIS REKWIZYTÓW wraz z propozycją DEKORACJI sali:\nłatwo dostępne rzeczy, które pomogą dzieciom zrozumieć treść i ubarwią występ\n✅ szczegółowy SCENARIUSZ:\nprzedstawienie składa się z 2 scenek oraz występu muzycznego\n4️⃣ SUMMER PLAYSCRIPT\nJeżeli chodzi Wam po głowie zorganizowanie z uczniami występu z okazji zakończenia roku szkolnego (lub też innego przedstawienia odbywającego się w okresie wiosenno-letnim), łapcie przepis na przedstawienie, którego główne tematy to:\n⚽️ sport\n⛺️ wypoczynek na świeżym powietrzu\n✈️ podróże\n…a więc tematy, które na pewno pojawiły lub pojawią się na zajęciach z Waszymi uczniami 💚\nPS. Rozpoczęcie przygotowań wcześniej pozwoli dzieciom na płynne opanowanie przebiegu występu i treści ról, a przy tym idealnie wpasuje się w tematykę zwyczajowo omawianą w tym okresie roku! 🙂\nZestaw zawiera:\n✅ SPIS RÓL:\nna 3 poziomach trudności, dzięki czemu zaangażujesz wszystkich uczniów: zarówno małą, jak i większą grupkę!\n✅ Dokładny SPIS REKWIZYTÓW:\nłatwo dostępne rzeczy, które pomogą dzieciom zrozumieć treść i ubarwią występ\n✅ szczegółowy SCENARIUSZ:\nprzedstawienie składa się z 4 scenek oraz występu muzycznego",
+        price: "93.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-przez-teatr-dla-zerowki-i-klas-1-3/",
+        categories: ["teatr", "klasy-1-3", "przedszkole"],
+        image: "/products/Grafiki-pakietowe-1-1200x848.png"
+    },
+    {
+        title: "Merry Christmas Pack",
+        description: "&#8222;Teacher, a będzie lekcja świąteczna?\" za 3, 2, 1&#8230; 💥\nBędzie, będzie&#8230; i to nie jedna 😉 A wraz z nią oczywiście aktywizacja słownictwa i gramatyki, ale o tym ciii 🤫 😁\nOto Merry Christmas! Pack 🎄, a w nim&#8230;\n🌠 Kalendarz adwentowy z językowymi 'tiny challenges'\n🌠 Materiały na zimową gazetkę, którą ozdobicie salę przez cały okres okołoświąteczny (a spokojnie może powisieć nawet i dłużej, nie tracąc na aktualności)\n🌠 Prezentacja na temat zwyczajów bożonarodzeniowych w różnych krajach\n🌠 Drużynowa gra “Gift Givers”z tekstami i audio, do której przeprowadzenia potrzebujecie papierowych kopert, trochę miejsca, no i oczywiście naszych materiałów 🎁",
+        price: "79.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/merry-christmas-pack/",
+        categories: ["special-lessons"],
+        image: "/products/Grafiki-pakietowe-1200x848.png"
+    },
+    {
+        title: "Interaktywne quizy kulturowe",
+        description: "Pakiet quizów kulturowych - interaktywnych oraz do druku - wykorzystasz m.in.:\n✅ podczas przygotowań uczniów do KONKURSU KURATORYJNEGO - również jako self-study!\n✅ podczas zajęć dodatkowych i kół językowych\n✅ na zastępstwach\n✅ do tworzenia turniejów i quiz battles\n✅ podczas rozgrzewki lub na zakończenie lekcji\n✅ na zajęciach online lub stacjonarnych\n✅ jako dopełnienie kulturowych projektów edukacyjnych - jak np. projekt Culture Corner! ✨\nPakiet zawiera:\n• karty do druku z basic facts na temat krajów anglojęzycznych, które najczęściej pojawiają się na konkursach - wersja ucznia oraz klucz dla nauczyciela (Anglia, Szkocja, Walia, Irlandia, Stany Zjednoczone, Australia, Nowa Zelandia, Kanada)\n• the UK & Ireland: history (quiz interaktywny + pdf)\n• the UK & Ireland: geography  (quiz interaktywny + pdf)\n• the UK & Ireland: cities & landmarks  (quiz interaktywny + pdf)\n• the UK & Ireland: famous people  (quiz interaktywny + pdf)\n• the USA: history  (quiz interaktywny + pdf)\n• the USA: geography  (quiz interaktywny + pdf)\n• the USA: cities & landmarks (quiz interaktywny + pdf)\n• the USA: famous people (quiz interaktywny + pdf)\n•  Australia: general information  (quiz interaktywny + pdf)\n• New Zealand: general information  (quiz interaktywny + pdf)\n•  Canada: general information  (quiz interaktywny + pdf)\n•  the UK & Ireland: general information  (quiz interaktywny)\n•  the USA, Australia, Canada: general information  (quiz interaktywny)\n• the UK: traditional dishes  (quiz interaktywny)\n• all countries: important days  (quiz interaktywny)\n•  all countries: landmarks  (quiz interaktywny)\n💥NEW the UK: literature 📚 (quiz interaktywny + pdf)\n💥NEW the UK: royal family 👑 (quiz interaktywny + pdf)\n💥NEW Ireland: general information ☘️ (quiz interaktywny + pdf)\n💥NEW UK & Ireland: music 🎶 (quiz interaktywny + pdf)\n💥NEW UK & Ireland: traditions & celebrations 🎉 (quiz interaktywny + pdf)\n💥NEW Scotland: general information🥁 (quiz interaktywny + pdf)\n💥NEW Wales: general information 🐉 (quiz interaktywny + pdf)\n💥NEW Northern Ireland: general information🌉 (quiz interaktywny + pdf)\n💥 NEW the USA: literature 📚 (quiz interaktywny + pdf)\n💥 NEW the USA: music 🎷 (quiz interaktywny + pdf)\n💥 NEW the USA: traditions & celebrations 🎆 (quiz interaktywny + pdf)\n💥 NEW the USA: presidents 🇺🇸 (quiz interaktywny + pdf)\n💥 NEW the USA: Native American culture 🪶 (quiz interaktywny + pdf)\n💥 NEW the USA: states & capitals 🗽 (quiz interaktywny + pdf)\n💥 NEW Australia: nature & geography🐨 (quiz interaktywny + pdf)\n💥 NEW Australia: history 🏛️ (quiz interaktywny + pdf)\n💥 NEW Australia: famous people ⛹🏻‍♂️ (quiz interaktywny + pdf)\n[Wszystkie quizy oznaczone ikonką NEW są tegoroczną nowością - quizy dotyczące USA i Australii zaktualizują się już niebawem!]",
+        price: "59.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/interaktywne-quizy-kulturowe/",
+        categories: ["culture"],
+        image: "/products/Grafiki-pakietowe-1-2-1200x848.png"
+    },
+    {
+        title: "Przedszkole: zestaw materiałów na jesień",
+        description: "Barwy, które niesie kolorowy wiatr… Jesień tuż tuż, dlatego przygotowaliśmy dla Was cały ZESTAW jesiennych materiałów i pomysłów na zabawy dla grup przedszkolnych! To zestaw idealny na początek roku szkolnego i pozostałe jesiennie miesiące\nCo znajdę w zestawie JESIEŃ?\nMateriały pdf (flashcards, karty pracy, gry, szablony do przeprowadzenia zabaw językowych itd.) wraz z instrukcjami ich wykorzystania w obrębie obszarów tematycznych realizowanych jesienią:\n• autumn   jesień\n• action verbs   czasowniki ruchu\n• school supplies  przybory szkolne\n• forest animals  zwierzęta leśne\n• colours  kolory\n• numbers  liczby\n• body parts  części ciała\n• Hedgehog Day  dzień jeża\n• Teddy Bear Day  dzień pluszowego misia",
+        price: "59.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/przedszkole-pakiet-materialow-na-jesien/",
+        categories: ["pory-roku", "przedszkole"],
+        image: "/products/1-1200x848.png"
+    },
+    {
+        title: "Przedszkole: zestaw materiałów na zimę",
+        description: "PRZEDSZKOLE: MATERIAŁY DO DRUKU - ZESTAW ZIMA\nZima to czas magicznych lekcji! Nasz pakiet to kompletne rozwiązanie dla nauczycieli przedszkolnych, którzy chcą wprowadzić świąteczną atmosferę bez godzin przygotowań. ✨\nCo znajdę w zestawie ZIMA❓\n❄️ Ponad 100 stron PDF z autorskimi materiałami: flashcards, gry sensoryczne, karty pracy i szablony DIY.\nObszary tematyczne:\n• winter & Christmas ➡️ zima i Boże Narodzenie (magia świąt!)\n• toys ➡️ zabawki (idealne pod prezenty)\n• family ➡️ rodzina (ciepło domowego ogniska)\n• house ➡️ dom\n• food ➡️ jedzenie (zimowe przysmaki)\n• Dinosaur Day ➡️ dzień dinozaura (zimowa przygoda)\n• Carnival ➡️ karnawał (zabawa i emocje)\nZadbaj o zaangażowanie swoich uczniów tej zimy! ❄️",
+        price: "59.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/przedszkole-pakiet-materialow-na-zime/",
+        categories: ["pory-roku", "przedszkole"]
+        ,
+        image: "/products/Grafiki-pakietowe-2023-08-02T090202.620-1200x848.png"
+    },
+    {
+        title: "Przedszkole: zestaw materiałów na wiosnę",
+        description: "PRZEDSZKOLE: MATERIAŁY DO DRUKU - ZESTAW WIOSNA\nNareszcie wiosna! Wokół wszystko rozkwita, fruwa i skacze - aż trudno oderwać wzrok! Tej wiosny obudźcie w Waszych małych uczniach wielkich odkrywców razem z zestawem wiosennych materiałów i pomysłów na zabawy dla grup przedszkolnych!\nCo znajdę w zestawie WIOSNA?\nMateriały pdf (flashcards, karty pracy, gry, szablony do przeprowadzenia zabaw językowych itd.) wraz z instrukcjami ich wykorzystania w obrębie obszarów tematycznych realizowanych wiosną:\n• spring➡️wiosna\n• Easter➡️Wielkanoc\n• clothes➡️ubrania\n• pets➡️zwierzęta domowe\n• farm animals➡️zwierzęta na wsi\n• Earth Day➡️Dzień Ziemi\n• the weather➡️pogoda",
+        price: "59.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/przedszkole-pakiet-materialow-na-wszystkie-na-wiosne/",
+        categories: ["pory-roku", "przedszkole"]
+        ,
+        image: "/products/5-1200x848.png"
+    },
+    {
+        title: "Przedszkole: zestaw materiałów na lato",
+        description: "PRZEDSZKOLE: MATERIAŁY DO DRUKU - ZESTAW LATO\nI wreszcie lato! Wykorzystajcie ten czas w przedszkolu, prowadząc angażujące zajęcia - może nawet na świeżym powietrzu - z☀️ ZESTAWEM letnich materiałów i pomysłów na zabawy ☀️ dla grup przedszkolnych! (By nie musieć odmawiać sobie tej godzinki leżenia w hamaku wśród zieleni&#8230;)\nCo znajdę w zestawie LATO?\nMateriały pdf (flashcards, karty pracy, gry, szablony do przeprowadzenia zabaw językowych itd.) wraz z instrukcjami ich wykorzystania w obrębie obszarów tematycznych realizowanych latem:\n• summer & summer holidays➡️lato i wakacje\n• zoo animals➡️ zwierzęta w zoo\n• Mother's Day & Father's Day➡️ dzień mamy i dzień taty\n• sports➡️sporty\n• holiday places➡️wakacyjne miejsca\n• Oceans Day➡️Dzień Oceanów",
+        price: "59.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/przedszkole-zestaw-materialow-na-lato/",
+        categories: ["pory-roku", "przedszkole"]
+        ,
+        image: "/products/Grafiki-pakietowe-4-2-1200x848.png"
+    },
+    // ŻŁOBEK MONTHLY
+    {
+        title: "Angielski w żłobku: zestaw February",
+        description: "Co znajdziesz w zestawie February dla maluszków?\n20 gotowych scenariuszy zajęć wraz z materiałami PDF na cały luty!\n🎵 Rymowanki, piosenki i zabawy do prostych melodii\n✋ Pomysły na wykorzystanie przedmiotów codziennego użytku\n🐿 Scenariusze stworzone z doświadczenia mamy i lektorki 😉\n📄 Gotowe materiały PDF do druku – zero stresu przed zajęciami\nCzy wiesz, że…\n📷 Wszystkie ilustracje w pakiecie to nie rysunki, a zdjęcia,  dzięki czemu najmniejsze dzieci łatwiej rozpoznają i zapamiętują zwierzęta, owoce czy przedmioty - to rozwiązanie w duchu pedagogiki Montessori\n📅 W każdym miesiącu znajdziesz aż 20 gotowych scenariuszy – możesz prowadzić zajęcia codziennie lub wybrać te, które najlepiej pasują do Twojej grupy\n💡 Każdy temat zawiera sensoryczne, ruchowe i muzyczne aktywności – wspierające rozwój mowy, motoryki i koncentracji nawet u najmłodszych dzieci",
+        price: "49.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-zestaw-february/",
+        categories: ["zlobek"],
+        image: "/products/Grafiki-pakietowe-2026-01-31T193000.594-lm0t46l-1200x848.png"
+    },
+    {
+        title: "Angielski w żłobku: zestaw September",
+        description: "Co znajdziesz w zestawie September dla maluszków?\n20 gotowych scenariuszy zajęć wraz z materiałami PDF na cały wrzesień!\n🎵 Rymowanki, piosenki i zabawy do prostych melodii\n✋ Pomysły na wykorzystanie przedmiotów codziennego użytku\n🐿 Scenariusze stworzone z doświadczenia mamy i lektorki 😉\n📄 Gotowe materiały PDF do druku – zero stresu przed zajęciami\nCzy wiesz, że…\n📷 Wszystkie ilustracje w pakiecie to nie rysunki, a zdjęcia,  dzięki czemu najmniejsze dzieci łatwiej rozpoznają i zapamiętują zwierzęta, owoce czy przedmioty - to rozwiązanie w duchu pedagogiki Montessori\n📅 W każdym miesiącu znajdziesz aż 20 gotowych scenariuszy – możesz prowadzić zajęcia codziennie lub wybrać te, które najlepiej pasują do Twojej grupy\n💡 Każdy temat zawiera sensoryczne, ruchowe i muzyczne aktywności – wspierające rozwój mowy, motoryki i koncentracji nawet u najmłodszych dzieci",
+        price: "49.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-zestaw-september/",
+        categories: ["zlobek"],
+        image: "/products/236-kba8a8n-1200x848.png"
+    },
+    {
+        title: "Angielski w żłobku: zestaw October",
+        description: "Zestaw 20 gotowych scenariuszy zajęć wraz z materiałami PDF na cały miesiąc dla dzieci w wieku żłobkowym. Zawiera piosenki, zabawy sensoryczne i ruchowe oraz materiały do druku.",
+        price: "49.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-zestaw-october/",
+        categories: ["zlobek"],
+        image: "/products/237-rhx3tau-1200x848.png"
+    },
+    {
+        title: "Angielski w żłobku: zestaw November",
+        description: "Co znajdziesz w zestawie November dla maluszków?\n20 gotowych scenariuszy zajęć wraz z materiałami PDF na cały listopad!\n🎵 Rymowanki, piosenki i zabawy do prostych melodii\n✋ Pomysły na wykorzystanie przedmiotów codziennego użytku\n🐿 Scenariusze stworzone z doświadczenia mamy i lektorki 😉\n📄 Gotowe materiały PDF do druku – zero stresu przed zajęciami\nCzy wiesz, że…\n📷 Wszystkie ilustracje w pakiecie to nie rysunki, a zdjęcia,  dzięki czemu najmniejsze dzieci łatwiej rozpoznają i zapamiętują zwierzęta, owoce czy przedmioty - to rozwiązanie w duchu pedagogiki Montessori\n📅 W każdym miesiącu znajdziesz aż 20 gotowych scenariuszy – możesz prowadzić zajęcia codziennie lub wybrać te, które najlepiej pasują do Twojej grupy\n💡 Każdy temat zawiera sensoryczne, ruchowe i muzyczne aktywności – wspierające rozwój mowy, motoryki i koncentracji nawet u najmłodszych dzieci",
+        price: "49.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-zestaw-november/",
+        categories: ["zlobek"],
+        image: "/products/238-yex7kdu-1200x848.png"
+    },
+    {
+        title: "Angielski w żłobku: zestaw December",
+        description: "Co znajdziesz w zestawie December dla maluszków?\n20 gotowych scenariuszy zajęć wraz z materiałami PDF na cały grudzień!\n🎵 Rymowanki, piosenki i zabawy do prostych melodii\n✋ Pomysły na wykorzystanie przedmiotów codziennego użytku\n🐿 Scenariusze stworzone z doświadczenia mamy i lektorki 😉\n📄 Gotowe materiały PDF do druku – zero stresu przed zajęciami\nCzy wiesz, że…\n📷 Wszystkie ilustracje w pakiecie to nie rysunki, a zdjęcia,  dzięki czemu najmniejsze dzieci łatwiej rozpoznają i zapamiętują zwierzęta, owoce czy przedmioty - to rozwiązanie w duchu pedagogiki Montessori\n📅 W każdym miesiącu znajdziesz aż 20 gotowych scenariuszy – możesz prowadzić zajęcia codziennie lub wybrać te, które najlepiej pasują do Twojej grupy\n💡 Każdy temat zawiera sensoryczne, ruchowe i muzyczne aktywności – wspierające rozwój mowy, motoryki i koncentracji nawet u najmłodszych dzieci",
+        price: "49.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-zestaw-december/",
+        categories: ["zlobek"],
+        image: "/products/240-9fxsnex-1200x848.png"
+    },
+    {
+        title: "Angielski w żłobku: zestaw January",
+        description: "Co znajdziesz w zestawie January dla maluszków?\n20 gotowych scenariuszy zajęć wraz z materiałami PDF na cały styczeń!\n🎵 Rymowanki, piosenki i zabawy do prostych melodii\n✋ Pomysły na wykorzystanie przedmiotów codziennego użytku\n🐿 Scenariusze stworzone z doświadczenia mamy i lektorki 😉\n📄 Gotowe materiały PDF do druku – zero stresu przed zajęciami\nCzy wiesz, że…\n📷 Wszystkie ilustracje w pakiecie to nie rysunki, a zdjęcia,  dzięki czemu najmniejsze dzieci łatwiej rozpoznają i zapamiętują zwierzęta, owoce czy przedmioty - to rozwiązanie w duchu pedagogiki Montessori\n📅 W każdym miesiącu znajdziesz aż 20 gotowych scenariuszy – możesz prowadzić zajęcia codziennie lub wybrać te, które najlepiej pasują do Twojej grupy\n💡 Każdy temat zawiera sensoryczne, ruchowe i muzyczne aktywności – wspierające rozwój mowy, motoryki i koncentracji nawet u najmłodszych dzieci",
+        price: "49.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-zestaw-january/",
+        categories: ["zlobek"],
+        image: "/products/242-y413ae2-1200x848.png"
+    },
+    // CULTURE CORNER
+    {
+        title: "Culture corner: Wales",
+        description: "Dzień św. Dawida, patrona Walii, obchodzimy co roku 1 marca. Zorganizuj z tej okazji warsztaty tematyczne z swoimi uczniami!\nCo zawiera zestaw\nMateriały na gazetkę ścienną\nGotowe do wydrukowania plansze, które odmienią Twoją klasę i przeniosą uczniów do serca Walii!\nNapis WALES i podstawowe informacje, flaga, drogowskaz prowadzący do magicznych zakątków Walii, a także sekcje Symbols, Welsh Food, Fun Facts, Let's Speak a Little Welsh wraz z ilustracjami, podpisami i wszystkimi informacjami\nWizualna powtórka dla uczniów – wystarczy zerknąć na ścianę, by przypomnieć sobie kluczowe fakty.\nEstetyczne, przyciągające uwagę – nie musisz nic projektować, tylko drukujesz i gotowe!\nInteraktywna prezentacja\nPełna ciekawostek, zdjęć, video i nagrań ukrytych pod kodami QR – uczniowie odkryją Walię w niezapomniany sposób!\nWprowadzenie do walijskiej kultury, m.in. symboli, słynnych miejsc, języka, znanych Walijczyków\nInteraktywna, a więc - na każdym kroku - pełna aktywności, w które zaangażujesz uczniów w formie turnieju\nPodłogowa gra drużynowa\nUczniowie poruszają się po klasie, ćwicząc gramatykę w kontekście kultury walijskiej na dwóch poziomach trudności!\nLevel 1: przedimek nieokreślony 'a'/'an', czasownik 'to be', czasownik 'have got', konstrukcja 'there&#8230;', czas Present Simple.\nLevel 2: some/any/no, stopniowanie przymiotników, czasy Present Continuous, Past Simple, Present Perfect, Past Continuous, few/a few/little/a little\nUczniowie grają w walijskim klimacie, współpracują w drużynach i utrwalają gramatykę jednocześnie!\n&#8230;.\nZestaw Wales  jest elementem pakietu Culture Corner Pack, w skład którego wchodzą:\nWales. St David's Day (1st March)\nIreland. St Patrick's Day (17th March)\nEngland. St George's Day (23rd April)\nScotland. St Andrew's Day (30th November)\nZestawy zawierają analogiczne komponenty, dzięki czemu tworzą spójną całość i mogą posłużyć do zrealizowania CYKLU WARSZTATÓW CULTURE CORNER",
+        price: "43.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/wales-lekcja-kulturowa/",
+        categories: ["culture", "klasy-4-6", "klasy-7-8"],
+        image: "/products/Grafiki-pakietowe-24-1200x848.png"
+    },
+    {
+        title: "Culture corner: Ireland",
+        description: "Dzień św. Patryka, patrona Irlandii, obchodzimy co roku 17 marca. Zorganizuj z tej okazji warsztaty tematyczne z swoimi uczniami!\nZestaw zawiera:\n• Materiały na gazetkę\n[Napis i basic facts o kraju, flaga, drogowskaz prowadzący do magicznych zakątków Irlandii wraz ze zdjęciami, sekcje: Symbols, Fun Facts (Ciekawostki), Let's Speak a Little Irish (podstawowe zwroty wraz z kodami QR do odsłuchania), St. Patrick wraz z informacjami o patronie Irlandii, a także dużo barwnych, pasujących i ŁATWYCH DO WYCIĘCIA ilustracji oraz miejsce na wypowiedzi uczniów]\n• Prezentacja do przeprowadzenia w klasie w formie aktywizujących ucznia warsztatów\n[Pełną irlandzkich ciekawostek, zdjęć, video i ukrytych nagrań. Jest interaktywna, a więc - na każdym kroku - proponuje aktywności, w które zaangażujesz uczniów w formie turnieju. Zawiera sekcje: Irish symbols & St. Patrick, Famous Places, Irish Music & Irish Dance, Language, Famous People przybliżą Twoim uczniom Irlandię z każdej strony]\n• Tematyczna gra podłogowa\n[Uczniowie ćwiczą gramatykę w kontekście dnia św. Patryka na dwóch poziomach trudności!\nLevel 1: zaimki wskazujące this/that/these/those, przymiotniki dzierżawcze my/your/his/her/our/their, czasowniki &#8222;have\" i &#8222;be\", czas Present Simple, przyimki czasu in/on/at, dopełniacz saksoński ('s).\nLevel 2: Present Perfect, already/yet, for/since, zaimki dzierżawcze (mine/yours&#8230;), często mylone przymiotniki i zaimki (his vs him, our vs us, their vs them), must & have to]",
+        price: "43.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/ireland-lekcja-kulturowa-kopia/",
+        categories: ["culture", "klasy-4-6", "klasy-7-8"],
+        image: "/products/Grafiki-pakietowe-25-1200x848.png"
+    },
+    {
+        title: "Culture corner: England",
+        description: "Dzień św. Jerzego, patrona Anglii, obchodzimy co roku 23 kwietnia. Zorganizuj z tej okazji warsztaty tematyczne z swoimi uczniami!\nZestaw zawiera:\n• materiały na gazetkę\n• prezentację\n• grę tematyczną do przeprowadzenia w klasie np. w formie warsztatów 🙂",
+        price: "43.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/england-lekcja-kulturowa/",
+        categories: ["culture", "klasy-4-6", "klasy-7-8"],
+        image: "/products/Grafiki-pakietowe-26-1-1200x848.png"
+    },
+    {
+        title: "Culture corner: Scotland",
+        description: "Dzień św. Andrzeja, patrona Szkocji, obchodzimy co roku 30 listopada. Zorganizuj z tej okazji (czy też z okazji innego szkockiego wydarzenia: Burns Night, 25 stycznia lub rozpoczynających się w maju szkockich Highland Games) warsztaty tematyczne z swoimi uczniami!\nZestaw zawiera:\n• Materiały na gazetkę\n➡ Napis i basic facts o kraju, flaga, drogowskaz prowadzący do najsłynniejszych zakątków Szkocji wraz ze zdjęciami, sekcje: Symbols, Fun Facts (Ciekawostki), Traditional Dishes z podpisami, a także dużo barwnych, pasujących i ŁATWYCH DO WYCIĘCIA ilustracji oraz miejsce na wypowiedzi uczniów\n• Prezentacja do przeprowadzenia w klasie w formie aktywizujących ucznia warsztatów\n➡ Interaktywna, a więc - na każdym kroku - pełna aktywności, w które zaangażujesz uczniów w formie turnieju\n➡ Sekcje: Symbols, Famous Places, Traditions, Famous People przybliżą Twoim uczniom Szkocję z każdej strony\n• Tematyczna gra podłogowa\n➡ Uczniowie poruszają się po klasie, ćwicząc gramatykę w kontekście kultury szkockiej na dwóch poziomach trudności!\n➡ Uczniowie współpracują w drużynach i utrwalają gramatykę jednocześnie!\nLevel 1: czas Present Continuous (twierdzenia, pytania, przeczenia), konstrukcja “Let’s…”, pytania szczegółowe (Wh- questions)\nLevel 2: zdania względne (relative clauses: which, who, whose…), często mylone pytania z operatorem DO vs inwersją TO BE, zaimki nieokreślone z some-, any-, no-, every- (indefinite pronouns: something, somebody, somewhere…)",
+        price: "43.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/scotland-materialy-kulturowe/",
+        categories: ["culture", "klasy-4-6", "klasy-7-8"],
+        image: "/products/Grafiki-pakietowe-27-1200x848.png"
+    },
+    // SCENARIUSZE MONTHLY
+    {
+        title: "Scenariusze zajęć – czerwiec",
+        description: "SCENARIUSZE ZAJĘĆ NA CAŁY CZERWIEC skorelowane z materiałami pdf z zestawu LATO\nKażdy z planów jest opracowany dla trzech grup wiekowych: maluchów (3 lata), średniaków (4 lata) i starszaków (5-6 lat). Jest ich 8, więc sprawdzą się idealnie, jeżeli angielski jest prowadzony w każdej z grup 2 razy w tygodniu.\nCo zawierają plany zajęć?\n- słownictwo i zwroty do wprowadzenia na poszczególnych zajęciach;\n- temat zajęć do wpisania do dziennika (zgodnie z zaleceniem większości placówek sformułowany częściowo po angielsku, częściowo po polsku);\n- spis potrzebnych materiałów w postaci wygodnej listy do odznaczania – szablony, karty czy karty pracy do druku dostępne w zestawie pdf na tę porę roku\n- przebieg zajęć ze szczegółowo opisanymi krokami\nPlany zajęć są idealnym rozwiązaniem dla Ciebie, jeśli…\n- jesteś zaangażowaną nauczycielką i chciałabyś mieć więcej energii podczas zajęć, nie musząc spędzać godzin na ich wcześniejszym przygotowaniu;\n- chcesz zyskać dodatkowy czas, otrzymując gotowy rozkład materiału i tematy do wpisania do dziennika – by nie martwić się kwestią dokumentacji;\n- zakupiłaś zestaw materiałów pdf i chciałabyś odkryć jeszcze więcej sposobów na jego wykorzystanie",
+        price: "42.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-czerwiec/",
+        categories: ["scenariusze"]
+        ,
+        image: "/products/Grafiki-pakietowe-2023-08-01T183002.274-1200x848.png"
+    },
+    {
+        title: "Scenariusze zajęć – grudzień",
+        description: "SCENARIUSZE ZAJĘĆ NA CAŁY GRUDZIEŃ skorelowane z materiałami pdf z zestawu ZIMA\nKażdy z planów jest opracowany dla trzech grup wiekowych: maluchów (3 lata), średniaków (4 lata) i starszaków (5-6 lat). Jest ich 8, więc sprawdzą się idealnie, jeżeli angielski jest prowadzony w każdej z grup 2 razy w tygodniu.\nCo zawierają plany zajęć?\n- słownictwo i zwroty do wprowadzenia na poszczególnych zajęciach;\n- temat zajęć do wpisania do dziennika (zgodnie z zaleceniem większości placówek sformułowany częściowo po angielsku, częściowo po polsku);\n- spis potrzebnych materiałów w postaci wygodnej listy do odznaczania – szablony, karty czy karty pracy do druku dostępne w zestawie pdf na tę porę roku\n- przebieg zajęć ze szczegółowo opisanymi krokami\nPlany zajęć są idealnym rozwiązaniem dla Ciebie, jeśli…\n- jesteś zaangażowaną nauczycielką i chciałabyś mieć więcej energii podczas zajęć, nie musząc spędzać godzin na ich wcześniejszym przygotowaniu;\n- chcesz zyskać dodatkowy czas, otrzymując gotowy rozkład materiału i tematy do wpisania do dziennika – by nie martwić się kwestią dokumentacji;\n- zakupiłaś zestaw materiałów pdf i chciałabyś odkryć jeszcze więcej sposobów na jego wykorzystanie",
+        price: "42.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-grudzien/",
+        categories: ["scenariusze"]
+        ,
+        image: "/products/Grafiki-pakietowe-2023-08-01T182312.099-1200x848.png"
+    },
+    {
+        title: "Scenariusze zajęć – styczeń",
+        description: "SCENARIUSZE ZAJĘĆ NA CAŁY STYCZEŃ skorelowane z materiałami pdf z zestawu ZIMA\nKażdy z planów jest opracowany dla trzech grup wiekowych: maluchów (3 lata), średniaków (4 lata) i starszaków (5-6 lat). Jest ich 8, więc sprawdzą się idealnie, jeżeli angielski jest prowadzony w każdej z grup 2 razy w tygodniu.\nCo zawierają plany zajęć?\n- słownictwo i zwroty do wprowadzenia na poszczególnych zajęciach;\n- temat zajęć do wpisania do dziennika (zgodnie z zaleceniem większości placówek sformułowany częściowo po angielsku, częściowo po polsku);\n- spis potrzebnych materiałów w postaci wygodnej listy do odznaczania – szablony, karty czy karty pracy do druku dostępne w zestawie pdf na tę porę roku\n- przebieg zajęć ze szczegółowo opisanymi krokami\nPlany zajęć są idealnym rozwiązaniem dla Ciebie, jeśli…\n- jesteś zaangażowaną nauczycielką i chciałabyś mieć więcej energii podczas zajęć, nie musząc spędzać godzin na ich wcześniejszym przygotowaniu;\n- chcesz zyskać dodatkowy czas, otrzymując gotowy rozkład materiału i tematy do wpisania do dziennika – by nie martwić się kwestią dokumentacji;\n- zakupiłaś zestaw materiałów pdf i chciałabyś odkryć jeszcze więcej sposobów na jego wykorzystanie",
+        price: "42.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-styczen/",
+        categories: ["scenariusze"]
+        ,
+        image: "/products/Grafiki-pakietowe-2023-08-01T182405.076-1200x848.png"
+    },
+    {
+        title: "Scenariusze zajęć – luty",
+        description: "Scenariusze zajęć na luty\nSCENARIUSZE ZAJĘĆ NA CAŁY LUTY skorelowane z materiałami pdf z zestawu ZIMA\nKażdy z planów jest opracowany dla trzech grup wiekowych: maluchów (3 lata), średniaków (4 lata) i starszaków (5-6 lat). Jest ich 8, więc sprawdzą się idealnie, jeżeli angielski jest prowadzony w każdej z grup 2 razy w tygodniu.\nCo zawierają plany zajęć?\n- słownictwo i zwroty do wprowadzenia na poszczególnych zajęciach;\n- temat zajęć do wpisania do dziennika (zgodnie z zaleceniem większości placówek sformułowany częściowo po angielsku, częściowo po polsku);\n- spis potrzebnych materiałów w postaci wygodnej listy do odznaczania – szablony, karty czy karty pracy do druku dostępne w zestawie pdf na tę porę roku\n- przebieg zajęć ze szczegółowo opisanymi krokami\nPlany zajęć są idealnym rozwiązaniem dla Ciebie, jeśli…\n- jesteś zaangażowaną nauczycielką i chciałabyś mieć więcej energii podczas zajęć, nie musząc spędzać godzin na ich wcześniejszym przygotowaniu;\n- chcesz zyskać dodatkowy czas, otrzymując gotowy rozkład materiału i tematy do wpisania do dziennika – by nie martwić się kwestią dokumentacji;\n- zakupiłaś zestaw materiałów pdf i chciałabyś odkryć jeszcze więcej sposobów na jego wykorzystanie",
+        price: "42.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-luty/",
+        categories: ["scenariusze"]
+        ,
+        image: "/products/Grafiki-pakietowe-2023-08-01T182516.087-1200x848.png"
+    },
+    {
+        title: "Scenariusze zajęć – marzec",
+        description: "SCENARIUSZE ZAJĘĆ NA CAŁY MARZEC skorelowane z materiałami pdf z zestawu WIOSNA\nKażdy z planów jest opracowany dla trzech grup wiekowych: maluchów (3 lata), średniaków (4 lata) i starszaków (5-6 lat). Jest ich 8, więc sprawdzą się idealnie, jeżeli angielski jest prowadzony w każdej z grup 2 razy w tygodniu.\nCo zawierają plany zajęć?\n- słownictwo i zwroty do wprowadzenia na poszczególnych zajęciach;\n- temat zajęć do wpisania do dziennika (zgodnie z zaleceniem większości placówek sformułowany częściowo po angielsku, częściowo po polsku);\n- spis potrzebnych materiałów w postaci wygodnej listy do odznaczania – szablony, karty czy karty pracy do druku dostępne w zestawie pdf na tę porę roku\n- przebieg zajęć ze szczegółowo opisanymi krokami\nPlany zajęć są idealnym rozwiązaniem dla Ciebie, jeśli…\n- jesteś zaangażowaną nauczycielką i chciałabyś mieć więcej energii podczas zajęć, nie musząc spędzać godzin na ich wcześniejszym przygotowaniu;\n- chcesz zyskać dodatkowy czas, otrzymując gotowy rozkład materiału i tematy do wpisania do dziennika – by nie martwić się kwestią dokumentacji;\n- zakupiłaś zestaw materiałów pdf i chciałabyś odkryć jeszcze więcej sposobów na jego wykorzystanie",
+        price: "42.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-marzec/",
+        categories: ["scenariusze"]
+        ,
+        image: "/products/Grafiki-pakietowe-2023-08-01T182624.131-1200x848.png"
+    },
+    {
+        title: "Scenariusze zajęć – wrzesień",
+        description: "SCENARIUSZE ZAJĘĆ NA CAŁY WRZESIEŃ skorelowane z materiałami pdf i z pakietu JESIEŃ\nKażdy z planów jest opracowany dla trzech grup wiekowych: maluchów (3 lata), średniaków (4 lata) i starszaków (5-6 lat). Jest ich 8, więc sprawdzą się idealnie, jeżeli angielski jest prowadzony w każdej z grup 2 razy w tygodniu.\nCo zawierają plany zajęć?\n- słownictwo i zwroty do wprowadzenia na poszczególnych zajęciach;\n- temat zajęć do wpisania do dziennika (zgodnie z zaleceniem większości placówek sformułowany częściowo po angielsku, częściowo po polsku);\n- spis potrzebnych materiałów w postaci wygodnej listy do odznaczania – szablony, karty czy karty pracy do druku dostępne w zestawie pdf na tę porę roku\n- przebieg zajęć ze szczegółowo opisanymi krokami\nPlany zajęć są idealnym rozwiązaniem dla Ciebie, jeśli…\n- jesteś zaangażowaną nauczycielką i chciałabyś mieć więcej energii podczas zajęć, nie musząc spędzać godzin na ich wcześniejszym przygotowaniu;\n- chcesz zyskać dodatkowy czas, otrzymując gotowy rozkład materiału i tematy do wpisania do dziennika – by nie martwić się kwestią dokumentacji;\n- zakupiłaś zestaw materiałów pdf i chciałabyś odkryć jeszcze więcej sposobów na jego wykorzystanie",
+        price: "42.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-wrzesien/",
+        categories: ["scenariusze"]
+        ,
+        image: "/products/Grafiki-pakietowe-2023-08-01T181627.096-1200x848.png"
+    },
+    {
+        title: "Scenariusze zajęć – kwiecień",
+        description: "SCENARIUSZE ZAJĘĆ NA CAŁY KWIECIEŃ skorelowane z materiałami pdf z zestawu WIOSNA\nKażdy z planów jest opracowany dla trzech grup wiekowych: maluchów (3 lata), średniaków (4 lata) i starszaków (5-6 lat). Jest ich 8, więc sprawdzą się idealnie, jeżeli angielski jest prowadzony w każdej z grup 2 razy w tygodniu.\nCo zawierają plany zajęć?\n- słownictwo i zwroty do wprowadzenia na poszczególnych zajęciach;\n- temat zajęć do wpisania do dziennika (zgodnie z zaleceniem większości placówek sformułowany częściowo po angielsku, częściowo po polsku);\n- spis potrzebnych materiałów w postaci wygodnej listy do odznaczania – szablony, karty czy karty pracy do druku dostępne w zestawie pdf na tę porę roku\n- przebieg zajęć ze szczegółowo opisanymi krokami\nPlany zajęć są idealnym rozwiązaniem dla Ciebie, jeśli…\n- jesteś zaangażowaną nauczycielką i chciałabyś mieć więcej energii podczas zajęć, nie musząc spędzać godzin na ich wcześniejszym przygotowaniu;\n- chcesz zyskać dodatkowy czas, otrzymując gotowy rozkład materiału i tematy do wpisania do dziennika – by nie martwić się kwestią dokumentacji;\n- zakupiłaś zestaw materiałów pdf i chciałabyś odkryć jeszcze więcej sposobów na jego wykorzystanie",
+        price: "42.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-kwiecien/",
+        categories: ["scenariusze"]
+        ,
+        image: "/products/Grafiki-pakietowe-2023-08-01T182732.043-1200x848.png"
+    },
+    {
+        title: "Scenariusze zajęć – październik",
+        description: "PLANY ZAJĘĆ NA CAŁY\nPAŹDZIERNIK\nskorelowane z materiałami z pakietu Jesień\nKażdy z planów jest opracowany dla trzech grup wiekowych: maluchów (3 lata), średniaków (4 lata) i starszaków (5-6 lat). Jest ich 8, więc sprawdzą się idealnie, jeżeli angielski jest prowadzony w każdej z grup 2 razy w tygodniu.\nCo zawierają plany zajęć\nsłownictwo i zwroty do wprowadzenia na poszczególnych zajęciach;\ntemat zajęć do wpisania do dziennika (zgodnie z zaleceniem większości placówek sformułowany częściowo po angielsku, częściowo po polsku);\nspis potrzebnych materiałów w postaci wygodnej listy do odznaczania – szablony, karty czy karty pracy do druku dostępne w pakiecie JESIEŃ\nprzebieg zajęć ze szczegółowo opisanymi krokami\nPlany zajęć są idealnym rozwiązaniem dla Ciebie, jeśli…\njesteś zaangażowaną nauczycielką i chciałabyś mieć więcej energii podczas zajęć, nie musząc spędzać godzin na ich wcześniejszym przygotowaniu;\nchcesz zyskać dodatkowy czas, otrzymując gotowy rozkład materiału i tematy do wpisania do dziennika – by nie martwić się kwestią dokumentacji;\nzakupiłaś pakiet Jesień i chciałabyś odkryć jeszcze więcej sposobów na wykorzystanie zawartych w nim materiałów",
+        price: "42.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-wrzesien-kopia/",
+        categories: ["scenariusze"]
+        ,
+        image: "/products/Grafiki-pakietowe-2023-08-01T182055.146-1200x848.png"
+    },
+    {
+        title: "Scenariusze zajęć – maj",
+        description: "SCENARIUSZE ZAJĘĆ NA CAŁY MAJ skorelowane z materiałami pdf z zestawu LATO\nKażdy z planów jest opracowany dla trzech grup wiekowych: maluchów (3 lata), średniaków (4 lata) i starszaków (5-6 lat). Jest ich 8, więc sprawdzą się idealnie, jeżeli angielski jest prowadzony w każdej z grup 2 razy w tygodniu.\nCo zawierają plany zajęć?\n- słownictwo i zwroty do wprowadzenia na poszczególnych zajęciach;\n- temat zajęć do wpisania do dziennika (zgodnie z zaleceniem większości placówek sformułowany częściowo po angielsku, częściowo po polsku);\n- spis potrzebnych materiałów w postaci wygodnej listy do odznaczania – szablony, karty czy karty pracy do druku dostępne w zestawie pdf na tę porę roku\n- przebieg zajęć ze szczegółowo opisanymi krokami\nPlany zajęć są idealnym rozwiązaniem dla Ciebie, jeśli…\n- jesteś zaangażowaną nauczycielką i chciałabyś mieć więcej energii podczas zajęć, nie musząc spędzać godzin na ich wcześniejszym przygotowaniu;\n- chcesz zyskać dodatkowy czas, otrzymując gotowy rozkład materiału i tematy do wpisania do dziennika – by nie martwić się kwestią dokumentacji;\n- zakupiłaś zestaw materiałów pdf i chciałabyś odkryć jeszcze więcej sposobów na jego wykorzystanie",
+        price: "42.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-maj/",
+        categories: ["scenariusze"]
+        ,
+        image: "/products/Grafiki-pakietowe-2023-08-01T182852.070-1200x848.png"
+    },
+    {
+        title: "Scenariusze zajęć – listopad",
+        description: "SCENARIUSZE ZAJĘĆ NA CAŁY LISTOPAD skorelowane z materiałami pdf i z pakietu JESIEŃ\nKażdy z planów jest opracowany dla trzech grup wiekowych: maluchów (3 lata), średniaków (4 lata) i starszaków (5-6 lat). Jest ich 8, więc sprawdzą się idealnie, jeżeli angielski jest prowadzony w każdej z grup 2 razy w tygodniu.\nCo zawierają plany zajęć?\n- słownictwo i zwroty do wprowadzenia na poszczególnych zajęciach;\n- temat zajęć do wpisania do dziennika (zgodnie z zaleceniem większości placówek sformułowany częściowo po angielsku, częściowo po polsku);\n- spis potrzebnych materiałów w postaci wygodnej listy do odznaczania – szablony, karty czy karty pracy do druku dostępne w zestawie pdf na tę porę roku\n- przebieg zajęć ze szczegółowo opisanymi krokami\nPlany zajęć są idealnym rozwiązaniem dla Ciebie, jeśli…\n- jesteś zaangażowaną nauczycielką i chciałabyś mieć więcej energii podczas zajęć, nie musząc spędzać godzin na ich wcześniejszym przygotowaniu;\n- chcesz zyskać dodatkowy czas, otrzymując gotowy rozkład materiału i tematy do wpisania do dziennika – by nie martwić się kwestią dokumentacji;\n- zakupiłaś zestaw materiałów pdf i chciałabyś odkryć jeszcze więcej sposobów na jego wykorzystanie",
+        price: "42.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-listopad/",
+        categories: ["scenariusze"]
+        ,
+        image: "/products/Grafiki-pakietowe-2023-08-01T182159.052-1200x848.png"
+    },
+    // STORIES
+    {
+        title: "Stories na zimę: ebook + audio",
+        description: "Zimowe historyjki z nagraniami audio.",
+        price: "42.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-zime-ebook-audio/",
+        categories: ["stories", "przedszkole", "klasy-1-3"]
+        ,
+        image: "/products/Grafiki-pakietowe-2022-12-08T173403.951-1200x848.png"
+    },
+    {
+        title: "Stories na wiosnę: ebook + audio",
+        description: "Wiosenne historyjki z nagraniami audio.",
+        price: "42.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-wiosne-ebook-audio/",
+        categories: ["stories", "przedszkole", "klasy-1-3"]
+        ,
+        image: "/products/Projekt-Stories-2-1200x848.png"
+    },
+    {
+        title: "Stories na lato: ebook + audio",
+        description: "Letnie historyjki z nagraniami audio.",
+        price: "42.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-lato-ebook-audio/",
+        categories: ["stories", "przedszkole", "klasy-1-3"]
+        ,
+        image: "/products/Projekt-Stories-3-1200x848.png"
+    },
+    {
+        title: "Stories na jesień: ebook + audio",
+        description: "PROJEKT STORIES obejmuje opowiadania do każdej z czterech pór roku (który wraz z całym pakietem może posłużyć jako innowacja w nauczaniu).\nKażde opowiadanie składa się z:\n• stron z obrazkami i tekstem\n• audiobooka odczytanego przez native speakera\ni uwzględnia słownictwo, którego dzieci uczą się dokładnie o tej porze roku. Słówka z danego tematu są oznaczone kolorem czarnym, by nauczyciel mógł zrobić pauzę w tym miejscu, a dzieci same dopowiedziały słówko na podstawie obrazka, w ten sposób utrwalając je.\nKażda z historyjek jest w wersji pdf (możesz ją wydrukować, traktując jako książeczkę, lub wyświetlić dzieciom na rzutniku) oraz w postaci NAGRANIA treści odczytanego przez native speakera języka angielskiego! W ten sposób możecie z historyjkami pracować na wiele sposobów, np. po wspólnym przeczytaniu odgrywać scenki do czytanego nagrania z podziałem na role.",
+        price: "42.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-jesien-ebook-audio/",
+        categories: ["stories", "przedszkole", "klasy-1-3"]
+        ,
+        image: "/products/Projekt-Stories-9-1200x848.png"
+    },
+    // SPECIAL LESSONS INDIVIDUAL
+    {
+        title: "Pumpkin Day: dekoracja i gra",
+        description: "Zestaw Pumpkin Day to aż 77 stron zestawu, z którym zorganizujesz Dzień Dyni w Twojej placówce, ćwicząc przy okazji najczęściej sprawiające uczniom problemy angielskie czasowniki!\nZestaw zawiera:\n• materiały na gazetkę: dyniowy napis, basic facts, fun facts: ciekawostki, pumpkin recipes: przepisy na proste dania z dyni\n• grę drużynową Pumpkin Hunt na odmianę czasowników &#8222;to be\" i &#8222;to have\"\n• grę drużynową Pumpkin Hunt na twierdzenia, pytania i przeczenia w czasie Present Simple\nKażdą z gier bez problemu przeprowadzisz zarówno w jednej sali lekcyjnej, jak i w całym budynku lub nawet na dworze!",
+        price: "35.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/pumpking-day/",
+        categories: ["special-lessons"],
+        image: "/products/Grafiki-pakietowe-25-1200x848.png"
+    },
+    {
+        title: "Guy Fawkes Day & Bonfire Night",
+        description: "Na Guy Fawkes Day, który przypada już 5 listopada, mamy dla Was:\n•  materiały na gazetkę tematyczną\n•  prezentację - w przystępny sposób przedstawiającą historię i tradycje Guy Fakes Day & Bonfire Night\n•  zagadki - wraz z instrukcją przeprowadzenia aktywności\n•  grę Bonfire Night Drama, w której Wasi uczniowie potrenują czas Present Continuous i&#8230; umiejętność współpracy 🙂",
+        price: "35.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/guy-fawkes-day-bonfire-night/",
+        categories: ["special-lessons"],
+        image: "/products/Grafiki-pakietowe-45-8fotf4b-1200x848.png"
+    },
+    {
+        title: "Day of Languages: dekoracja i gra",
+        description: "Przez cały rok jest dobry czas na naukę języków obcych…\n&#8230;ale chyba zgodzicie się, że wrzesień to szczególny moment, by je świętować!\n26 września obchodzimy European Day of Languages - a to doskonała okazja, by pokazać uczniom, że języki łączą ludzi, otwierają drzwi do świata i pozwalają odkrywać nowe kultury.\nCo znajdziesz w zestawie Day of Languages?\nmateriały na gazetkę: napis DAY OF LANGUAGES (w tle ukryte europejskie zabytki do rozpoznania po angielsku), kula ziemska z zaznaczoną Europą, karta z kalendarza z datą święta, strzałki z korzyściami płynącymi z nauki języków, flagi z nazwami języków (np. do stworzenia girlandy), przepisy na dania z kilku krajów Europy (tak proste, że nawet very young learners będą mogli spróbować je przygotować ).\ngra terenowa PASSPORT TO EUROPE - czyli poszukiwanie walizek ze zdaniami w czasie Present Simple, w których należy wyśledzić błędy i zdobyć tajne hasło, wpisując je&#8230; oczywiście do paszportu",
+        price: "35.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/day-of-languages-dekoracja-i-gra/",
+        categories: ["special-lessons"],
+        image: "/products/Grafiki-pakietowe-o64pb66-1200x848.png"
+    },
+    {
+        title: "Kulturowa lekcja 'London Tour'",
+        description: "Przed Tobą lekcja pokazowa w przedszkolu albo szkole językowej i nie masz pojęcia, jak się za to zabrać? A może szukasz pomysłów na zorganizowanie Dnia Języka Angielskiego? W obu przypadkach z pomocą przychodzi zestaw 'London Tour'!\n• W łatwy sposób dostosujesz zajęcia zarówno do grupy młodszej (4-6 lat), jak i starszej (7-10 lat) dzięki różnym wariantom zakresu słownictwa.\n• Lekcja zawiera wyraźny aspekt kulturowy: symbole Londynu, które pomogą przybliżyć stolicę Anglii nawet najmłodszym uczniom.\n• Uwzględnione w scenariuszu rymowane zabawy i reagowanie językowe pozwolą wyraźnie zaprezentować &#8222;zanurzanie\" dzieci w języku podczas Twoich zajęć.\nZestaw zawiera konspekt zajęć wraz z cennymi wskazówkami oraz materiały PDF potrzebne do ich przeprowadzenia.",
+        price: "35.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/kulturowa-lekcja-pokazowa-london-tour/",
+        categories: ["culture"],
+        image: "/products/Grafiki-pakietowe-21-1200x848.png"
+    },
+    {
+        title: "'Letters to Santa' Playscript",
+        description: "CHRISTMAS PLAYSCRIPT: Letters to Santa\n…to kompletny scenariusz przedstawienia o nieco roztargnionym Świętym Mikołaju, składający się ze spisu ról (na trzech poziomach trudności), spisu rekwizytów, propozycji dekoracji sceny, występu muzycznego oraz czterech scenek świątecznej opowieści. Przedstawienie możesz w elastyczny sposób dostosować do możliwości swoich uczniów\nZestaw zawiera:\nSPIS RÓL:\nna 3 poziomach trudności, dzięki czemu zaangażujesz wszystkich uczniów: zarówno małą, jak i znacznie większą grupkę!\n(Minimalna liczba osób to 6, maksymalna: w zasadzie no limit  )\nDokładny SPIS REKWIZYTÓW:\nłatwo dostępne rzeczy, które pomogą dzieciom zrozumieć treść i ubarwią występ\nSzczegółowy SCENARIUSZ:\nprzedstawienie składa się z 4 scenek oraz występu muzycznego",
+        price: "29.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/christmas-fun/",
+        categories: ["teatr"],
+        image: "/products/Grafiki-pakietowe-2023-08-01T165841.048-1200x848.png"
+    },
+    {
+        title: "Special Lessons: Pizza Day",
+        description: "Czy ktoś tu ma ochotę na PIZZĘ?\nJeśli powoli myślicie już o lutowych zajęciach z angielskiego, nie zapomnijcie o Dniu Pizzy!\nMam dla Was przepis na taką lekcję (lub kilka lekcji!), że palce lizać!\nMateriał zawiera gotowe zajęcia na Dzień Pizzy (lub pizzową lekcję z tematu Food dowolnego innego dnia w roku!), które możecie swobodnie zaadaptować do wieku i możliwości Waszych uczniów.\nPS. Zaproponowane aktywności + materiały mogą Wam spokojnie posłużyć przez więcej niż jedną lekcję z daną grupą!",
+        price: "29.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/pizza-day/",
+        categories: ["special-lessons", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-2023-08-01T171502.204-1200x848.png"
+    },
+    {
+        title: "Grandparents' Day Playscript",
+        description: "Przedstawienie z okazji Dnia Babci i Dziadka lub Dnia Rodziny zawiera:\n• krótki wstęp muzyczny (tekst piosenki do znanej dzieciom melodii wraz z opisaną gestykulacją)\n• scenariusz (składający się z dwóch scenek, listy ról, listy potrzebnych rekwizytów, propozycji dekoracji sali)",
+        price: "29.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/grandparents-day-playscript/",
+        categories: ["teatr"],
+        image: "/products/Grafiki-pakietowe-1-1200x848.png"
+    },
+    {
+        title: "Special Lessons: Thanksgiving",
+        description: "Jeżeli chcesz zabrać swoich uczniów z klas 1-4 w ciekawą (i przeeepyszną!) podróż do początków amerykańskiego Święta Dziękczynienia, koniecznie zorganizuj zajęcia z zestawem Thanksgiving!\nZestaw zawiera:\n• szczegółowy konspekt zajęć wraz z pomysłami  i wskazówkami, jak rozplanować lekcję lub warsztaty o Święcie Dziękczynienia\n• materiały pdf (flashcards, gra: I have, who has?, menu i karty z potrawami oraz dolary do zabawy skupionej na speaking i użycie języka angielskiego w prawdziwej sytuacji życiowej - podczas zamawiania potraw w restauracji i płacenia za nie: Thanksgiving Restaurant, karty pracy do aktywności bazującej na słuchaniu w oparciu o krótki filmik)\n• materiały interaktywne (zgadywankę Thanksgiving symbols - pytania oraz odsłaniające się stopniowo zdjęcia stanowiące wprowadzenie do tematu\n• słowniczek Quizlet",
+        price: "29.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/thanksgiving-fun/",
+        categories: ["special-lessons", "przedszkole", "klasy-1-3"],
+        image: "/products/Thanksgiving-grafika-pakietowa-minatura-1200x848.png"
+    },
+    {
+        title: "English Zoo Playscript",
+        description: "Przedstawienie o nauce języka angielskiego, które można zorganizować w dowolnym momencie roku szkolnego? Czemu nie! Wybierzmy się do zoo - ale nie byle jakiego&#8230;\nEnglish Zoo to przedstawienie, w którym przeróżne zwierzaki pomogą dzieciom w nauce angielskiego - dobra zabawa gwarantowana! Możecie urządzić je z okazji dnia języka angielskiego w Waszej placówce, Dnia Języków Obcych, dnia otwartego, rozpoczęcia czy zakończenia roku szkolnego&#8230; - wpasuje się w naprawdę każdą okazję!\nZestaw  English Zoo Playscript zawiera:\n• SPIS RÓL (dla 8-10 osób + nieograniczonej liczby osób biorących udział w występie muzycznym)\n• SPIS REKWIZYTÓW I DEKORACJI\n• SCENARIUSZ (4 scenki)\n• WYSTĘP Z PIOSENKĄ (treść piosenki z układem choreograficznym oraz nagraniem)\n• DEKORACJE DO DRUKU (duży szyld zoo, plakietki z nazwami zwierząt)\nRekomendowany wiek uczniów: klasy 0-3",
+        price: "29.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/english-zoo-playscript/",
+        categories: ["teatr"],
+        image: "/products/Grafiki-pakietowe-1200x848.png"
+    },
+    {
+        title: "Special Lessons: Under the Sea",
+        description: "Gotowe zajęcia (warsztaty) na Dzień Oceanów zawierają 15 kart obrazkowych, planszę do gry I spy, propozycje aktywności do rozbudzającego ciekawość filmu o zwierzętach morskich, zestaw zagadek do gry drużynowej, propozycję wykonania projektu, słowniczek Quizlet oraz szczegółową instrukcję - konspekt, według którego przeprowadzimy całe warsztaty.",
+        price: "29.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/under-the-sea-gotowe-zajecia/",
+        categories: ["special-lessons", "przedszkole", "klasy-1-3"],
+        image: "/products/under-the-sea-grafika-ibbcs66-1200x848.png"
+    },
+    {
+        title: "Special Lessons: Saint Patrick's Day",
+        description: "Zabierz swoich uczniów ze szkoły podstawowej (1-4) w podróż do zielonej Irlandii, podczas której dzieci poznają najważniejsze symbole dnia świętego Patryka i rozwiążą związane z nimi zadania i zagadki, popytają Leprechauna o jego codzienne czynności, stworzą własną opowieść pełną niespodziewanych zwrotów akcji, a także zdobędą prawdziwy garniec złota wypełniony&#8230; czyżby złotem? To się okaże!\nKonspekt zawiera różne warianty pomysłów, dzięki czemu możesz zaadaptować materiały zarówno do pracy z młodszymi, jak i starszymi uczniami!",
+        price: "29.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/st-patricks-day/",
+        categories: ["special-lessons", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-2023-02-09T091256.586-1200x848.png"
+    },
+    {
+        title: "Special Lessons: September fun",
+        description: "Nie masz pomysłu na pierwsze powakacyjne zajęcia dla swoich pierwszo-, drugo- i trzecioklasistów?  Przybywamy z pomocą! Oto Powakacyjna Powtórka dla klas 1-3!\nZestaw zawiera kompletny konspekt zajęć wraz z zabawą rozpoczynającą, kartami pracy, odznakami dla uczniów (do wykorzystania podczas zabawy skoncentrowanej na mówienie) oraz grą Treasure Chest Quest na trzech poziomach trudności, a także propozycją aktywności do wykonania w domu, które posłuży nam również jako powtórkowa zgadywanka na kolejne zajęcia.\nOpis gry:\nWybierzcie się na przygodę w wakacyjnym klimacie - uczniowie, grając w drużynie flamingów , papug , delfinów  lub tropikalnych rybek  będą musieli rozwiązywać zadania po angielsku, by dotrzeć do skarbu Ale uwaga, po drodze grasują rekiny! Gra dostępna jest na trzech poziomach: dla uczniów rozpoczynających klasę 1, klasę 2 i klasę 3 szkoły podstawowej. Polecenia są dopasowane trudnością do danego poziomu - im niższy wiek uczniów, tym więcej wsparcia w postaci dodatkowych podpowiedzi czy też prostszych konstrukcji i znanych dzieciom tematów Rzucamy interaktywną kostką  i poruszamy się pionkami po planszy. Po kliknięciu na znak  na danym polu pojawi się zadanie do wykonania: Speaking Task (pytanie, na które drużyna musi odpowiedzieć), Action Task (zadanie do wykonania w sali), lub też Surprise Task (zostajemy przekierowani np. do ćwiczenia w Wordwall, takiego jak anagram albo quiz  ze znanych dzieciom tematów: farm animals, sports itp.). Po napotkaniu rekina - drużyna wraca na start!  Gra jest całkowicie interaktywna, nadaje się do wyświetlenia na ekranie lub tablicy, ale oczywiście można również wydrukować planszę i odczytywać dzieciom polecenia",
+        price: "29.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/powakacyjna-powtorka-klasy-1-3/",
+        categories: ["special-lessons", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-2022-09-23T123941.246-1200x848.png"
+    },
+    {
+        title: "Special Lessons: Day of Languages",
+        description: "Europejski Dzień Języków Obcych oraz Dzień Europy wprost idealna okazja na angażującą językową lekcję\nDay of Languages to gotowe materiały na Dzień Języków Europejskich (26.09) lub Dzień Europy (09.05).\nPodczas zajęć z okazji tego dnia udekorujemy salę kolorową girlandą przeróżnych flag , poznamy nazwy krajów i narodowości  (w tym europejskich krajów anglojęzycznych), spróbujemy rozpoznać różne języki obce w multimedialnym quizie , będziemy ćwiczyć przedstawianie się i zadawanie pytań z uroczymi kartami zwierzątek-podrożników , a nawet wcielimy się w mieszkańców różnych państw - nie zabraknie dobrej zabawy i duuużo mówienia po angielsku !\nDokładny KONSPEKT zawiera różne warianty pomysłów, dzięki czemu możesz zaadaptować materiały zarówno do pracy z młodszymi, jak i starszymi uczniami!\nW zestawie znajdziesz zarówno KOMPONENTY DO DRUKU , jak i KOMPONENTY MULTIMEDIALNE",
+        price: "29.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/dzien-jezykow/",
+        categories: ["special-lessons", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-2023-08-22T144959.964-1200x848.png"
+    },
+    {
+        title: "Special Lessons: Pets Day",
+        description: "Światowy Dzień Zwierząt Domowych jest obchodzony co roku 4 października\nJeżeli nie macie nic przeciwko, by na Waszych zajęciach zaroiło się od szynszyl, myszoskoczków, papużek falistych, jamników i złotych rybek, a Wasi uczniowie z chęcią poznają nazwy różnych zwierząt domowych i ich akcesoriów, poszukają chowających się w ciemnościach zwierzątek z latarką, wezmą udział w quizie multimedialno-sensorycznym dotyczącym ciekawych faktów o zwierzętach, rozwiążą zadania na użycie przedimka A / AN oraz zaimków THIS, THAT, THESE, THOSE, a przede wszystkim będą potrafili wykorzystać poznaną gramatykę i słownictwo w praktycznych zadaniach skupionych na mówieniu (w tym udzielaniu informacji i&#8230; oczywiście zgadywaniu) - zestaw World Pets Day jest właśnie dla Was!\nUwaga: w zestawie znajdziecie zarówno podstawowe nazwy zwierzaków, jak i te bardziej wyszukane , a także akcesoria\nDokładny KONSPEKT zawiera różne warianty pomysłów, dzięki czemu możesz zaadaptować materiały zarówno do pracy z młodszymi, jak i starszymi uczniami!\nW zestawie znajdziesz zarówno KOMPONENTY DO DRUKU , jak i KOMPONENTY MULTIMEDIALNE",
+        price: "29.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/dzien-zwierzat/",
+        categories: ["special-lessons", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-2023-09-17T125118.388-1200x848.png"
+    },
+    {
+        title: "Special Lessons: Easter",
+        description: "Jeżeli szukacie pomysłów na świąteczne zajęcia, z zestawem Easter Wasi uczniowie spróbują odgadnąć, jakie symbole wielkanocne ukryły się w pisankach w zabawie rozbudzającej kreatywność, utrwalą ich nazwy dzięki kartom pracy w postaci wklejek do zeszytu, poćwiczą używanie przyimków miejsca - ruchowo oraz z interaktywną grą zachęcającą do mówienia, a także przygotują w domu bonusowy projekt, który posłuży do warm-up'u na kolejnych zajęciach 😍\n✅ Dokładny KONSPEKT zawiera różne warianty pomysłów, dzięki czemu możesz zaadaptować materiały zarówno do pracy z młodszymi, jak i starszymi uczniami!\n✅ W zestawie znajdziesz zarówno KOMPONENTY DO DRUKU 🖼️, jak i KOMPONENTY MULTIMEDIALNE 🖥️",
+        price: "29.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/easter/",
+        categories: ["special-lessons", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-1-1200x848.png"
+    },
+    {
+        title: "Special Lessons: Australia Day",
+        description: "Australia Day\nPodczas podróży na ten fascynujący kontynent Twoi uczniowie będą mieli okazję:\nwylosować i odgadnąć symbole Australii w interaktywnej grze ,\nsprawdzić rozumienie ze słuchu i poznać ciekawe fakty na temat tego kraju z przygotowanego specjalnie na ten dzień video w przystępny sposób prezentującego podstawowe informacje o Australii ,\npoćwiczyć refleks z australijskimi zwierzętami i liczbami w zabawie ruchowej ,\nporozmawiać o ulubionych sportach Australijczyków  (i to w wykonaniu australijskich zwierzaków !), grając w drużynach i używając czasu Present Continuous!\n&#8230;A obchody dnia Australii w Waszej szkole zwieńczy gazetka prezentująca prace uczniów z aborygeńskim motywem\nDokładny KONSPEKT zawiera różne warianty pomysłów, dzięki czemu możesz zaadaptować materiały zarówno do pracy z młodszymi, jak i starszymi uczniami!\nW zestawie znajdziesz zarówno KOMPONENTY DO DRUKU , jak i KOMPONENTY MULTIMEDIALNE",
+        price: "29.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/dzien-australii/",
+        categories: ["special-lessons", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-3-1200x848.png"
+    },
+    // PAGE 2 PRODUCTS
+    {
+        title: "Stories na jesień: ebook",
+        description: "PROJEKT STORIES obejmuje opowiadania do każdej z czterech pór roku (który wraz z całym pakietem może posłużyć jako innowacja w nauczaniu).\nKażde opowiadanie składa się z:\n• stron z obrazkami i tekstem\n• audiobooka odczytanego przez native speakera\ni uwzględnia słownictwo, którego dzieci uczą się dokładnie o tej porze roku. Słówka z danego tematu są oznaczone kolorem czarnym, by nauczyciel mógł zrobić pauzę w tym miejscu, a dzieci same dopowiedziały słówko na podstawie obrazka, w ten sposób utrwalając je.\nKażda z historyjek jest w wersji pdf (możesz ją wydrukować, traktując jako książeczkę, lub wyświetlić dzieciom na rzutniku) oraz w postaci NAGRANIA treści odczytanego przez native speakera języka angielskiego! W ten sposób możecie z historyjkami pracować na wiele sposobów, np. po wspólnym przeczytaniu odgrywać scenki do czytanego nagrania z podziałem na role.\nUWAGA. Jest to promocyjna oferta przedsprzedażowa, więc historyjki i nagrania otrzymasz na początku września. Po tym terminie cena znacznie wzrośnie!",
+        price: "28.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-jesien/",
+        categories: ["stories", "przedszkole", "klasy-1-3"]
+        ,
+        image: "/products/B-22.png"
+    },
+    {
+        title: "Stories na zimę: ebook",
+        description: "Ebook z zimowymi historyjkami.",
+        price: "28.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-zime-ebook/",
+        categories: ["stories", "przedszkole", "klasy-1-3"]
+        ,
+        image: "/products/B-22.png"
+    },
+    {
+        title: "Stories na wiosnę: ebook",
+        description: "Ebook z wiosennymi historyjkami.",
+        price: "28.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-wiosne-ebook/",
+        categories: ["stories", "przedszkole", "klasy-1-3"]
+        ,
+        image: "/products/Projekt-Stories-1200x848.png"
+    },
+    {
+        title: "Stories na lato: ebook",
+        description: "Ebook z letnimi historyjkami.",
+        price: "28.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-lato-ebook/",
+        categories: ["stories", "przedszkole", "klasy-1-3"]
+        ,
+        image: "/products/Projekt-Stories-1-1200x848.png"
+    },
+    {
+        title: "Summer Playscript: scenariusz przedstawienia",
+        description: "Coraz cieplejsze dni to wspaniała okazja, by przygotować z uczniami PRZEDSTAWIENIE na zakończenie roku szkolnego!\nSummer Script przeznaczony dla uczniów zerówki i klas 1-3 zawiera:\nSPIS RÓL:\nna 3 poziomach trudności, dzięki czemu zaangażujesz wszystkich uczniów: zarówno małą, jak i większą grupkę!\nDokładny SPIS REKWIZYTÓW:\nłatwo dostępne rzeczy, które pomogą dzieciom zrozumieć treść i ubarwią występ\nszczegółowy SCENARIUSZ:\nprzedstawienie składa się z 4 scenek oraz występu muzycznego",
+        price: "28.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/scenariusz-przedstawienia-lato/",
+        categories: ["teatr"],
+        image: "/products/Grafiki-pakietowe-1200x848.png"
+    },
+    {
+        title: "Special Lessons: Let's Celebrate",
+        description: "Gotowe zajęcia (warsztaty) na Dzień Dziecka zawierają zestaw 18 kart obrazkowych, dwie interaktywne gry na utrwalenie słownictwa oraz produkcję językową, propozycję wykonania projektu, słowniczek Quizlet oraz szczegółową instrukcję - konspekt, według którego przeprowadzimy całe warsztaty. Jest tam również bonusowa GRA TERENOWA, która może być wisienką na torcie naszego Dnia Dziecka!",
+        price: "28.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/lets-celebrate/",
+        categories: ["special-lessons", "przedszkole", "klasy-1-3"],
+        image: "/products/Lets-celebrate-grafika-iinllbx-1200x848.png"
+    },
+    // SPEAKBOOKS
+    {
+        title: "Speakbook: My Fairy Tale Character Day",
+        description: "SPEAKBOOK… 💬\n…czyli lapbook, przy wykonaniu i używaniu którego kładziemy zdecydowany nacisk na SPEAKING.\nWłaśnie dlatego w każdym naszym speakbooku znajdziesz:\n🔵 szczegółowe instrukcje z ilustrującymi je zdjęciami\n🟢 gotowe szablony poszczególnych elementów (wklejki, rozkładane ilustracje, koperty na słówka, dialogi-harmonijki z kodami QR, koła fortuny i inne!)\n🟡 pomysły na aktywności skupione na mówieniu\n🟠 sekcję „Dlaczego tak?” – rzeczowo wyjaśniającą, dlaczego właśnie tę aktywność warto zastosować i w jaki sposób pomaga ona dzieciom\nPamiętaj! Nawet podczas technicznych czynności, takich jak wycinanie, składanie, kolorowanie czy przyklejanie, możecie aktywnie ćwiczyć angielski. Wystarczy, że mówisz, co należy zrobić, jednocześnie pokazując to. Dzięki temu dzieci osłuchują się z językiem, uczą się go w działaniu i widzą, że angielski to nie tylko lekcja, ale narzędzie do komunikacji w codziennych sytuacjach! 👍\nTo właśnie sedno naszego projektu „MY ENGLISH SPEAKBOOK”: tworzymy, działamy, rozmawiamy – po angielsku!\n______________________\nW speakbooku „My Fairy Tale Character Day” ćwiczymy:\n👉 pytania o wygląd, ubiór, miejsce zamieszkania i ulubione rzeczy (w 3 os. l. poj.)\n👉 przedstawianie własnego bajkowego bohatera (w czasie Present Simple) ukrytego za magicznym zwierciadłem\n👉 słownictwo związane z nazwami miejsc - w formie mapy bajkowej krainy\n👉 słownictwo związane z opisywaniem osób (przymiotniki, atrybuty) - ukryte w odpowiednich kopertach",
+        price: "26.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-fairy-tale-character-day/",
+        categories: ["speakbook", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-2025-10-26T172923.878-yb70ayz-1024x724.png"
+    },
+    {
+        title: "Speakbook: My Winter",
+        description: "SPEAKBOOK… 💬 – Lapbook, który naprawdę zachęca dzieci do mówienia!\nZima to idealny czas na budowanie pewności siebie w języku angielskim. Nasz zimowy Speakbook to interaktywne narzędzie, które zamienia naukę w przygodę.\nW środku znajdziesz:\n🔵 Szczegółowe instrukcje 'krok po kroku' z realnymi zdjęciami.\n🟢 Gotowe do druku szablony: interaktywne okienka, koperty na słówka, koła fortuny.\n🟡 Metodyka SPEAKING: unikalne pomysły na gry i zabawy komunikacyjne.\n🟠 Sekcja ekspercka: dowiedz się, dlaczego dane ćwiczenie działa!\n______________________\nTematyka zimowa:\n👉 Budowanie zdań o oznakach zimy (zaszronione okienka).\n👉 Audio native speakera: łamańce językowe pod kodami QR.\n👉 Słownictwo: zimowe sporty, polarne zwierzęta, ciepłe ubrania.\n👉 Gramatyka: praktyczne użycie 'a / an' w kontekście zimy.\nPodaruj swoim uczniom radość z mówienia tej zimy! ❄️",
+        price: "26.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-winter/",
+        categories: ["speakbook", "przedszkole", "klasy-1-3"],
+        image: "/products/214-enfa1kj-1024x724.png"
+    },
+    {
+        title: "Speakbook: My Christmas",
+        description: "SPEAKBOOK… 💬\n…czyli lapbook, przy wykonaniu i używaniu którego kładziemy zdecydowany nacisk na SPEAKING.\nWłaśnie dlatego w każdym naszym speakbooku znajdziesz:\n🔵 szczegółowe instrukcje z ilustrującymi je zdjęciami\n🟢 gotowe szablony poszczególnych elementów (wklejki, rozkładane ilustracje, koperty na słówka, dialogi-harmonijki z kodami QR, koła fortuny i inne!)\n🟡 pomysły na aktywności skupione na mówieniu - do realizacji w drużynach lub w parach\n🟠 sekcję „Dlaczego tak?” – rzeczowo wyjaśniającą, dlaczego właśnie tę aktywność warto zastosować i w jaki sposób pomaga ona dzieciom\nPamiętaj! Nawet podczas technicznych czynności, takich jak wycinanie, składanie, kolorowanie czy przyklejanie, możecie aktywnie ćwiczyć angielski. Wystarczy, że mówisz, co należy zrobić, jednocześnie pokazując to. Dzięki temu dzieci osłuchują się z językiem, uczą się go w działaniu i widzą, że angielski to nie tylko lekcja, ale narzędzie do komunikacji w codziennych sytuacjach! 👍\nTo właśnie sedno naszego projektu „MY ENGLISH SPEAKBOOK”: tworzymy, działamy, rozmawiamy – po angielsku!\n______________________\nW speakbooku „My Christmas” ćwiczymy:\n👉 rozumienie tekstu słuchanego z mini-kalendarzem dni świątecznych i ich tradycji w UK\n👉 opowiadanie historii Bożego Narodzenia z wykorzystaniem czasu Present Simple - w formie szopki z przesuwanymi obrazkami\n👉 mówienie o tym, co robimy w Święta (w różnych osobach l.poj i mn.) - z obracanym kołem fortuny\n👉 słownictwo z kategorii Nativity, North Pole i Ornaments - do posegregowania w mini-kopertach!",
+        price: "26.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-christmas/",
+        categories: ["speakbook", "przedszkole", "klasy-1-3"],
+        image: "/products/215-l3bk69o-1024x724.png"
+    },
+    {
+        title: "Speakbook: My Grandparents",
+        description: "SPEAKBOOK… 💬\n…czyli lapbook, przy wykonaniu i używaniu którego kładziemy zdecydowany nacisk na SPEAKING.\nWłaśnie dlatego w każdym naszym speakbooku znajdziesz:\n🔵 szczegółowe instrukcje z ilustrującymi je zdjęciami\n🟢 gotowe szablony poszczególnych elementów (wklejki, rozkładane ilustracje, koperty na słówka, dialogi-harmonijki z kodami QR, koła fortuny i inne!)\n🟡 pomysły na aktywności skupione na mówieniu - do realizacji w drużynach lub w parach\n🟠 sekcję „Dlaczego tak?” – rzeczowo wyjaśniającą, dlaczego właśnie tę aktywność warto zastosować i w jaki sposób pomaga ona dzieciom\nPamiętaj! Nawet podczas technicznych czynności, takich jak wycinanie, składanie, kolorowanie czy przyklejanie, możecie aktywnie ćwiczyć angielski. Wystarczy, że mówisz, co należy zrobić, jednocześnie pokazując to. Dzięki temu dzieci osłuchują się z językiem, uczą się go w działaniu i widzą, że angielski to nie tylko lekcja, ale narzędzie do komunikacji w codziennych sytuacjach! 👍\nTo właśnie sedno naszego projektu „MY ENGLISH SPEAKBOOK”: tworzymy, działamy, rozmawiamy – po angielsku!\n______________________\nW speakbooku „My Grandparents” ćwiczymy:\n👉 przymiotniki opisujące cechy naszych babć i dziadków - w formie rozkładanych rozetek\n👉 przysłówki częstotliwości - czyli ulubione czynności dziadków na specjalnym wskaźniku, który pokaże, jak często dziadek grywa w szachy, a babcia pije herbatkę 😉\n👉 pytania i odpowiedzi w czasie Present Simple - wraz z nagraniami ukrytymi pod kodami QR prostych zdań o dziadkach\n👉 podziękowania dla dziadków - na specjalnej wklejce w formie mini-listów do babci i dziadka",
+        price: "26.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-grandparents/",
+        categories: ["speakbook", "przedszkole", "klasy-1-3"],
+        image: "/products/216-j50wf6k-1024x724.png"
+    },
+    {
+        title: "Speakbook: My Pizza Day",
+        description: "SPEAKBOOK… 💬\n…czyli lapbook, przy wykonaniu i używaniu którego kładziemy zdecydowany nacisk na SPEAKING.\nWłaśnie dlatego w każdym naszym speakbooku znajdziesz:\n🔵 szczegółowe instrukcje z ilustrującymi je zdjęciami\n🟢 gotowe szablony poszczególnych elementów (wklejki, rozkładane ilustracje, koperty na słówka, dialogi-harmonijki z kodami QR, koła fortuny i inne!)\n🟡 pomysły na aktywności skupione na mówieniu - do realizacji w drużynach lub w parach\n🟠 sekcję „Dlaczego tak?” – rzeczowo wyjaśniającą, dlaczego właśnie tę aktywność warto zastosować i w jaki sposób pomaga ona dzieciom\nPamiętaj! Nawet podczas technicznych czynności, takich jak wycinanie, składanie, kolorowanie czy przyklejanie, możecie aktywnie ćwiczyć angielski. Wystarczy, że mówisz, co należy zrobić, jednocześnie pokazując to. Dzięki temu dzieci osłuchują się z językiem, uczą się go w działaniu i widzą, że angielski to nie tylko lekcja, ale narzędzie do komunikacji w codziennych sytuacjach! 👍\nTo właśnie sedno naszego projektu „MY ENGLISH SPEAKBOOK”: tworzymy, działamy, rozmawiamy – po angielsku!\n______________________\nW speakbooku „My Pizza Day” uczniowie:\n👉 poznają ciekawostki o pizzy w formie krótkich tekstów schowanych pod kawałkami pizzy\n👉 ćwiczą słownictwo związane z jedzeniem w formie angażującej gry typu Chinese whispers, dzięki której uczniowie bez problemu utrwalą przeróżne pizza toppings, mówiąc przy tym pełnymi zdaniami\n👉 odgrywają dialog zamawiania pizzy (z audio ukrytymi pod kodami QR) z elementem emocjonującej zabawy w role i zgadywanie lubianych przez dzieci postaci, która zaangażuje najpierw drużyny, a następnie całą klasę\n👉 tworzą i prezentują własne pomysły na pizzę, mówiąc pełnymi zdaniami i reagując na wypowiedzi innych",
+        price: "26.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-pizza-day/",
+        categories: ["speakbook", "przedszkole", "klasy-1-3"],
+        image: "/products/217-osq9xz8-1024x724.png"
+    },
+    {
+        title: "Speakbook: My Australia Day",
+        description: "Szukasz cyklu materiałów, które naprawdę zachęcą młodszych uczniów do komunikacji?\nPoznaj SPEAKBOOKI – czyli lapbooki, które mówią!\nDosłownie. Bo każdy z 20 speakbooków w pakiecie to pretekst do rozmowy, opowiadania, prezentowania, zadawania pytań  na tematy dobrze znane i bliskie uczniom.\nMy English Speakbook Project to projekt edukacyjny, który dodatkowo może być realizowany jako innowacja pedagogiczna.\nKażdy speakbook ma 3 angażujące ucznia sekcje:\n🔎 Strefa słownictwa – ilustracje z podpisami schowanymi pod otwieranymi okienkami\n🗣️ Strefa rozmówek – związane z tematem i przydatne w różnych sytuacjach pytania i odpowiedzi z kodami QR z nagraniami do odtworzenia przez nauczyciela lub rodzica\n💬 Strefa otwarta – miejsce na opowieść inspirowaną zdjęciem, biletem, listkiem… czymś prawdziwym! 💚\n…a wszystko wraz z instrukcjami dla nauczyciela i opisem projektu (cele, metody, efekty itp.)\n[Obecnie pakiet jest w PRZEDSPRZEDAŻY, a więc i w promocyjnej cenie. Materiały będą ukazywać się sukcesywnie od początku września - tak, by daną lekcję można było zrealizować w odpowiednim momencie roku szkolnego. Kupując wcześniej, zyskujesz nielimitowany dostęp do całego pakietu w niższej cenie, bo po opublikowaniu gotowych materiałów cena wzrośnie!]",
+        price: "26.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-australia-day/",
+        categories: ["speakbook", "przedszkole", "klasy-1-3"],
+        image: "/products/Miniaturka-speakbooks-sklep-y1ru05e-1024x724.png"
+    },
+    {
+        title: "Speakbook: All About Me",
+        description: "SPEAKBOOK… 💬\n…czyli lapbook, przy wykonaniu i używaniu którego kładziemy zdecydowany nacisk na SPEAKING.\nWłaśnie dlatego w każdym naszym speakbooku znajdziesz:\n🔵 szczegółowe instrukcje z ilustrującymi je zdjęciami\n🟢 gotowe szablony poszczególnych elementów (wklejki, rozkładane ilustracje, koperty na słówka, dialogi-harmonijki z kodami QR, koła fortuny i inne!)\n🟡 pomysły na aktywności skupione na mówieniu\n🟠 sekcję &#8222;Dlaczego tak?\" - rzeczowo wyjaśniającą, dlaczego właśnie tę aktywność warto zastosować i w jaki sposób pomaga ona dzieciom\nPamiętaj! Nawet podczas technicznych czynności, takich jak wycinanie, składanie, kolorowanie czy przyklejanie, możecie aktywnie ćwiczyć angielski. Wystarczy, że mówisz, co należy zrobić, jednocześnie pokazując to. Dzięki temu dzieci osłuchują się z językiem, uczą się go w działaniu i widzą, że angielski to nie tylko lekcja, ale narzędzie do komunikacji w codziennych sytuacjach! 👍\nTo właśnie sedno naszego projektu &#8222;MY ENGLISH SPEAKBOOK\": tworzymy, działamy, rozmawiamy – po angielsku!\nW speakbooku &#8222;All About Me\" ćwiczymy:\n👉 pytania o imię, wiek, pochodzenie, samopoczucie\n👉 mówienie o swoim nastroju\n👉 pytania i krótkie odpowiedzi: Are you…? Do you like…? Can you…? Have you got?\n👉 mówienie o hobby: I love… I really like… I like… I don't mind…",
+        price: "26.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-all-about-me/",
+        categories: ["speakbook", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-38-9j6ct85-1024x724.png"
+    },
+    {
+        title: "Speakbook: My Day of European Languages",
+        description: "SPEAKBOOK… 💬\n…czyli lapbook, przy wykonaniu i używaniu którego kładziemy zdecydowany nacisk na SPEAKING.\nWłaśnie dlatego w każdym naszym speakbooku znajdziesz:\n🔵 szczegółowe instrukcje z ilustrującymi je zdjęciami\n🟢 gotowe szablony poszczególnych elementów (wklejki, rozkładane ilustracje, koperty na słówka, dialogi-harmonijki z kodami QR, koła fortuny i inne!)\n🟡 pomysły na aktywności skupione na mówieniu\n🟠 sekcję „Dlaczego tak?” – rzeczowo wyjaśniającą, dlaczego właśnie tę aktywność warto zastosować i w jaki sposób pomaga ona dzieciom\nPamiętaj! Nawet podczas technicznych czynności, takich jak wycinanie, składanie, kolorowanie czy przyklejanie, możecie aktywnie ćwiczyć angielski. Wystarczy, że mówisz, co należy zrobić, jednocześnie pokazując to. Dzięki temu dzieci osłuchują się z językiem, uczą się go w działaniu i widzą, że angielski to nie tylko lekcja, ale narzędzie do komunikacji w codziennych sytuacjach! 👍\nTo właśnie sedno naszego projektu „MY ENGLISH SPEAKBOOK”: tworzymy, działamy, rozmawiamy – po angielsku!\nW speakbooku „My Day of European Languages” ćwiczymy:\n👉 pytania o pochodzenie, narodowość, języki obce, kraje\n👉 przedstawianie znanych zabytków europejskich\n👉 stopień najwyższy przymiotnika (superlative) w formie mini-quizu o Europie\n👉 mówienie m.in. o językach, których chcielibyśmy się nauczyć i krajach, które chcielibyśmy zobaczyć",
+        price: "26.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-day-of-european-languages/",
+        categories: ["speakbook", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-2-rizgauq-1024x724.png"
+    },
+    {
+        title: "Speakbook: My Autumn",
+        description: "SPEAKBOOK… 💬\n…czyli lapbook, przy wykonaniu i używaniu którego kładziemy zdecydowany nacisk na SPEAKING.\nWłaśnie dlatego w każdym naszym speakbooku znajdziesz:\n🔵 szczegółowe instrukcje z ilustrującymi je zdjęciami\n🟢 gotowe szablony poszczególnych elementów (wklejki, rozkładane ilustracje, koperty na słówka, dialogi-harmonijki z kodami QR, koła fortuny i inne!)\n🟡 pomysły na aktywności skupione na mówieniu\n🟠 sekcję „Dlaczego tak?” – rzeczowo wyjaśniającą, dlaczego właśnie tę aktywność warto zastosować i w jaki sposób pomaga ona dzieciom\nPamiętaj! Nawet podczas technicznych czynności, takich jak wycinanie, składanie, kolorowanie czy przyklejanie, możecie aktywnie ćwiczyć angielski. Wystarczy, że mówisz, co należy zrobić, jednocześnie pokazując to. Dzięki temu dzieci osłuchują się z językiem, uczą się go w działaniu i widzą, że angielski to nie tylko lekcja, ale narzędzie do komunikacji w codziennych sytuacjach! 👍\nTo właśnie sedno naszego projektu „MY ENGLISH SPEAKBOOK”: tworzymy, działamy, rozmawiamy – po angielsku!\n_______________________________\nW speakbooku „My Autumn” ćwiczymy:\n👉 słownictwo związane z jesienią: dary jesieni, zwierzęta leśne, warzywa i owoce, ubrania\n👉 mówienie o oznakach jesieni (czas Present Simple)\n👉 przedstawianie swoich ulubionego jesiennego miesiąca, dania, koloru i leśnego zwierzęcia\n👉 mówienie o pogodzie oraz o tym, co przy danej pogodzie robimy i w co się ubieramy",
+        price: "26.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-autumn/",
+        categories: ["speakbook", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-35-6u736sw-1024x724.png"
+    },
+    {
+        title: "Speakbook: My Pumpkin Day",
+        description: "SPEAKBOOK… 💬\n…czyli lapbook, przy wykonaniu i używaniu którego kładziemy zdecydowany nacisk na SPEAKING.\nWłaśnie dlatego w każdym naszym speakbooku znajdziesz:\n🔵 szczegółowe instrukcje z ilustrującymi je zdjęciami\n🟢 gotowe szablony poszczególnych elementów (wklejki, rozkładane ilustracje, koperty na słówka, dialogi-harmonijki z kodami QR, koła fortuny i inne!)\n🟡 pomysły na aktywności skupione na mówieniu\n🟠 sekcję „Dlaczego tak?” – rzeczowo wyjaśniającą, dlaczego właśnie tę aktywność warto zastosować i w jaki sposób pomaga ona dzieciom\nPamiętaj! Nawet podczas technicznych czynności, takich jak wycinanie, składanie, kolorowanie czy przyklejanie, możecie aktywnie ćwiczyć angielski. Wystarczy, że mówisz, co należy zrobić, jednocześnie pokazując to. Dzięki temu dzieci osłuchują się z językiem, uczą się go w działaniu i widzą, że angielski to nie tylko lekcja, ale narzędzie do komunikacji w codziennych sytuacjach! 👍\nTo właśnie sedno naszego projektu „MY ENGLISH SPEAKBOOK”: tworzymy, działamy, rozmawiamy – po angielsku!\n____________________________\nW speakbooku „My Pumpkin Day” ćwiczymy:\n👉 mówienie o przygotowaniu potraw - wykonując mini-książkę kucharską i prezentując przepisy w aktywizującej komunikacyjnie zabawie\n👉 mówienie o nastrojach i emocjach - odgadując je w grze, w którą bez problemu zaangażujemy całą klasę\n👉 rozumienie tekstu, odgadując dyniowe ciekawostki",
+        price: "26.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-pumpkin-day/",
+        categories: ["speakbook", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-34-e64n0jw-1024x724.png"
+    },
+    {
+        title: "Classroom Language",
+        description: "Na dobry początek przyszłego roku szkolnego, startowy must-have każdych zajęć językowych: Classroom Language do dekoracji sali!\n👉Ale czy tylko &#8222;dekoracji\"?\nAbsolutnie nie! 🙂 , bo umieszczone w widocznych miejscach klasy czy pracowni językowej komunikaty będą nie tylko ✅utrwalały ważne zwroty, ✅ porządkowały ustalone na początku roku zasady, ale także ✅bezpośrednio aktywizowały uczniów w konkretnych sytuacjach na każdych zajęciach!\n• 12 ilustrowanych kart Classroom Rules & Motivational Messages + szablony do wpisania własnych zasad i haseł, sformułowanych z naszymi uczniami\n• 14 kart Questions (najczęściej zadawanych przez uczniów pytań po angielsku i po polsku) w postaci dymków + szablony do wpisania własnych pytań (takich, które powracają jak bumerang na każdej lekcji 😉 )\n• znak We speak English here do umieszczenia np. na drzwiach pracowni językowej",
+        price: "25.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/classroom-language/",
+        categories: ["inne"],
+        image: "/products/Grafiki-pakietowe-20-1-1024x724.png"
+    },
+    {
+        title: "Stories: Opowiadanie 'Colours of the forest'",
+        description: "Opowiadanie o kolorach lasu.",
+        price: "24.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/project-stories-colours-of-the-forest/",
+        categories: ["stories", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-49-1eo4umu-1024x724.png"
+    },
+    {
+        title: "Angielski w przedszkolu: Mother's Day",
+        description: "Lekcja na Dzień Mamy w przedszkolu wpisująca się w tematykę FARM ANIMALS oraz ZOO ANIMALS - ćwiczymy mówienie o zwierzątkach i ich mamach 😊",
+        price: "23.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/mothers-day/",
+        categories: ["special-lessons", "przedszkole"],
+        image: "/products/Grafiki-pakietowe-1-2rsyx5z-1024x724.png"
+    },
+    {
+        title: "Angielski w przedszkolu: Children's Day",
+        description: "Lekcja na Dzień Dziecka w przedszkolu do zorganizowania w przedszkolnym ogródku, na placu zabaw czy w parku, która wpisuje się w tematykę SUMMER i stanowi małe podsumowanie tematów z całego roku szkolnego 😊 Zabierzcie kilka kolorowych hula hop i nasze materiały - dobra zabawa gwarantowana!",
+        price: "23.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/childrens-day/",
+        categories: ["special-lessons", "przedszkole"],
+        image: "/products/POSTY-NOWY-FORMAT-2023-17-eo5vz0q-819x1024.png"
+    },
+    {
+        title: "Angielski w przedszkolu: Oceans Day",
+        description: "Lekcja na Dzień Oceanów w przedszkolu wpisująca się w tematykę SEA ANIMALS - ćwiczymy mówienie o morskich stworzeniach, szukając zwierzątek ukrytych w akwariach, reagując językowo przy piosence, grając w związaną z tematem grę, i oczywiście dobrze się bawiąc 😊",
+        price: "23.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/oceans-day/",
+        categories: ["special-lessons", "przedszkole"],
+        image: "/products/POSTY-NOWY-FORMAT-2023-2-1uipb6m-819x1024.png"
+    },
+    {
+        title: "Flashcards – Stories zima",
+        description: "Zestaw obejmuje łącznie 190 kart obrazkowych (95 z podpisami i 95 bez podpisów oraz &#8222;plecki\" przeznaczone na tył karty) z tematów:\nChristmas\nwinter\nshapes\ntoys\nfamily\nfood\nhouse\nclothes\nemotions\nbasic adjectives\nKarty szczególnie polecane są do przedszkola oraz klas 1-3 🙂",
+        price: "22.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/flashcards-stories-zimia/",
+        categories: ["flashcards", "przedszkole", "klasy-1-3"],
+        image: "/products/Grafiki-pakietowe-2022-11-08T085226.441-1-1024x724.png"
+    },
+    {
+        title: "Flashcards – Stories jesień",
+        description: "Zestaw obejmuje łącznie 150 kart obrazkowych (75 z podpisami i 75 bez podpisów oraz &#8222;plecki\" przeznaczone na tył karty) z tematów:\nautumn\nforest animals\naction verbs\ncolours\nnumbers\nbody parts\nKarty szczególnie polecane są do przedszkola oraz klas 1-3 🙂",
+        price: "22.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/flashcards-project-stories-jesien/",
+        categories: ["flashcards", "przedszkole", "klasy-1-3"],
+        image: "/products/Flashcards-autumn-2-1024x724.png"
+    },
+    {
+        title: "Culture Posters",
+        description: "Zestaw plakatów, które udekorują Twoją klasę lub pracownię językową oraz w czytelny sposób przedstawią Twoim uczniom najważniejsze symbole związane z krajami anglojęzycznymi: ich zabytkami, przyrodą, kuchnią czy sportem.\nKażda plansza zawiera 9 zdjęć wraz z podpisami w języku angielskim.\nTematyka plakatów jest uniwersalna, zatem możesz wykorzystywać je przez cały rok szkolny, a dodatkowo jako przypomnienie treści kulturowych np. przed konkursem. Stanowią świetną dekorację i wizualną powtórkę.\nW zestawie dostępny format A4 i A3.\nW pakiecie:\n• The United Kingdom\n• The United States\n• Australia",
+        price: "22.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/culture-posters/",
+        categories: ["culture", "klasy-4-6", "klasy-7-8"],
+        image: "/products/Grafiki-pakietowe-1-afc0560-1024x724.png"
+    },
+    {
+        title: "Dekoracja 4 Seasons",
+        description: "Dekoracja 4 Seasons doskonale ozdobi Waszą salę lekcyjną na każdą z czterech pór roku! 🙂\nZestaw zawiera literki do stworzenia nazw pór roku oraz do każdej z nich pola z nazwami miesięcy i symbolami - łącznie niemal 120 stron PDF!\n• Kilka wariantów - wydrukuj pełne plansze z barwnym tłem za literkami bez konieczności wycinania lub też same literki na kolorowym papierze albo do pokolorowania przez uczniów - wybór należy do Ciebie!\n• Elastyczność - możesz uzupełnić dekorację dowolną treścią, umieszczając napis w górnej części tablicy raz, na początku danej pory roku, a w międzyczasie delikatnie modyfikując to, co znajdzie się pod spodem - w zależności od występujących w danym okresie roku dni specjalnych, świąt itp. (które oczywiście również znajdziesz w naszym sklepie!)\n• Użyteczność - porozmawiaj z uczniami o tym, jaki symbole danej pory roku ukryły się w literkach, ułóżcie o nich zdania po angielsku, wymyślcie dodatkowe słowa związane z daną porą roku rozpoczynające się od tych literek, przeliterujcie nazwy pór roku, zakryj jedno z pól z nazwą miesiąca i poproś uczniów o zapisanie jego nazwy&#8230; Używaj zestawu, jak tylko chcesz! 🙂",
+        price: "21.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/napisy-do-dekoracji-sali/",
+        categories: ["inne"],
+        image: "/products/Grafiki-pakietowe-39-49ivcpr-1024x724.png"
+    },
+    {
+        title: "Spring & Summer English Learning Challenge",
+        description: "Ostatnie zajęcia przed długim weekendem? Lekcja tuż po wycieczce szkolnej? Na pewno dobrze znasz te &#8222;klimaty\" 😉\nCoraz cieplejsze dni to doskonała okazja na&#8230; nieco mniej standardowe prace domowe 🙂\nEnglish Learning Challenge w wydaniu Spring & Summer to dwa zestawy (przeznaczone dla uczniów starszych klas szkoły podstawowej lub szkoły średniej na poziomie A2/B1 oraz B1/B2) zadań w formie interaktywnej, które wykorzystasz jako zachętę uczniów do kontaktu z językiem angielskim po Waszych zajęciach, w przyjemnej i angażującej formie.\nNa koniec zajęć uczeń wybiera obrazek, który mu się podoba, pod nim zaś kryje się polecenie. Możesz wykorzystać tę zabawę jako stały element zamykający Wasze wiosenne / letnie zajęcia lub też dodatkowo punktowaną aktywność dla chętnych.\nZadania są otwarte - uczniowie wykonują je w czasie po zajęciach, mając możliwość wyboru formy ich realizacji, co wspiera ich autonomię.",
+        price: "18.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/spring-summer-english-learning-challenge/",
+        categories: ["inne"],
+        image: "/products/POSTY-NOWY-FORMAT-2023-1-0fjj08g-819x1024.png"
+    },
+    {
+        title: "Stories na zimę: audio",
+        description: "Nagrania audio do zimowych historyjek.",
+        price: "15.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-zime-audio-2/",
+        categories: ["stories", "przedszkole", "klasy-1-3"]
+        ,
+        image: "/products/B-22.png"
+    },
+    {
+        title: "Dyplomy ukończenia kursu / warsztatów",
+        description: "Zestaw zawiera 10 wzorów w dwóch wersjach językowych: angielskiej i polskiej.\nMożna je wykorzystać jako certyfikaty wręczane na zakończenie roku szkolnego, z okazji ukończenia kursu językowego itp.\nKażdy z wzorów zawiera również wersję z wykropkowanym miejscem, w które możesz wpisać nazwę wydarzenia (np. warsztatów), w których wzięli udział Twoi uczniowie!\n• Union Jack, wersja teens\n• United Kingdom, wersja teens\n• United Kingdom, wersja kids\n• United States, wersja teens\n• United States, wersja kids\n• Australia, wersja teens\n• Australia, wersja kids\n• Royal, wersja teens/adults\n• Stars, wersja kids\n• Travelling, wersja teens/kids",
+        price: "15.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/dyplomy-na-zakonczenie-roku/",
+        categories: ["inne"],
+        image: "/products/Grafiki-pakietowe-1024x724.png"
+    },
+    {
+        title: "Stories na lato: audio",
+        description: "PROJEKT STORIES obejmuje opowiadania do każdej z czterech pór roku (który wraz z całym pakietem może posłużyć jako innowacja w nauczaniu).\nKażde opowiadanie składa się z:\n• stron z obrazkami i tekstem\n• audiobooka odczytanego przez native speakera\ni uwzględnia słownictwo, którego dzieci uczą się dokładnie o tej porze roku. Słówka z danego tematu są oznaczone kolorem czarnym, by nauczyciel mógł zrobić pauzę w tym miejscu, a dzieci same dopowiedziały słówko na podstawie obrazka, w ten sposób utrwalając je.\nKażda z historyjek jest w wersji pdf (możesz ją wydrukować, traktując jako książeczkę, lub wyświetlić dzieciom na rzutniku) oraz w postaci NAGRANIA treści odczytanego przez native speakera języka angielskiego! W ten sposób możecie z historyjkami pracować na wiele sposobów, np. po wspólnym przeczytaniu odgrywać scenki do czytanego nagrania z podziałem na role.\nUWAGA. Jest to promocyjna oferta przedsprzedażowa, więc historyjki i nagrania otrzymasz na początku września. Po tym terminie cena znacznie wzrośnie!",
+        price: "15.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-lato-audio/",
+        categories: ["stories", "przedszkole", "klasy-1-3"]
+        ,
+        image: "/products/B-22.png"
+    },
+    {
+        title: "Stories na jesień: audio",
+        description: "Nagrania audio do jesiennych historyjek.",
+        price: "15.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-jesien-audio/",
+        categories: ["stories", "przedszkole", "klasy-1-3"]
+        ,
+        image: "/products/B-22.png"
+    },
+    {
+        title: "Holiday photos warm-up",
+        description: "Chcesz, żeby Twoja pierwsza lekcja po wakacjach była pełna energii?\nTen zestaw zawiera 6 pomysłów na językowe aktywności z wykorzystaniem wakacyjnych ilustracji. Dzięki nim szybko zaangażujesz uczniów i sprawisz, że wrzesień zacznie się w pozytywnej, wakacyjnej atmosferze 🌞✈️\nCo znajdziesz w środku?\n✅ 6 pomysłów na warm-up oparty na ilustracjach (uwzględniający pracę całą klasą, w drużynach, indywidualną, w parach) w dwóch wersjach: SET 1. zdjęć różnych wakacyjnych miejsc i SET 2. miejsc z pewnym niepasującym elementem\n✅ jasne instrukcje krok po kroku – gotowe do użycia od razu na lekcji (wariant dla grup młodszych oraz starszych)\n✅ materiały w formie PDF (opcja do druku)\n✅ materiały w formie PPTX (opcja do wyświetlenia)\nTen zestaw sprawdzi się idealnie na początku września, ale też jako uniwersalne warm-upy przez cały rok, np. przy temacie podróży czy wakacji.",
+        price: "15.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/holiday-photos-warm-up/",
+        categories: ["inne"],
+        image: "/products/HOLIDAY-PHOTOS-WARM-UP-2-p15iddx-1024x576.png"
+    },
+    {
+        title: "Autumn I spy",
+        description: "Zabierz uczniów na spacer i zagrajcie w lubianą przez wszystkich grę &#8222;I spy\" w wersji jesiennej!\nZestaw zawiera karty do gry z elementami do odnalezienia (opisanymi za pomocą różnych przymiotników) dla sześciu drużyn. Zabawę możesz przeprowadzić w wersji łatwiejszej dla młodszych uczniów i nieco utrudnionej dla starszych, dzięki czemu sprawdzi się w klasach 1-5.",
+        price: "12.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/autumn-i-spy/",
+        categories: ["gry"],
+        image: "/products/Grafiki-pakietowe-22-1024x724.png"
+    },
+    {
+        title: "Winter I spy",
+        description: "Zabierz uczniów na spacer i zagrajcie w lubianą przez wszystkich grę &#8222;I spy\" w wersji zimowej!\nZestaw zawiera karty do gry z elementami do odnalezienia (opisanymi za pomocą różnych przymiotników) dla sześciu drużyn. Zabawę możesz przeprowadzić w wersji łatwiejszej dla młodszych uczniów i nieco utrudnionej dla starszych, dzięki czemu sprawdzi się w klasach 1-5.",
+        price: "12.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/winter-i-spy/",
+        categories: ["gry"],
+        image: "/products/Grafiki-pakietowe-27-1024x724.png"
+    },
+    {
+        title: "Dzień Kropki / Dot Day",
+        description: "Dzień Kropki / Dot Day 🎈\n👉 Na ten sympatyczny dzień o ciekawej historii mamy dla Was zestaw, który wykorzystacie zarówno na zajęciach z języka angielskiego, jak i zajęciach zintegrowanych!\nSą wśród nich karty z elementami z następujących kategorii:\n🍋 jedzenie / food\n🦆 zwierzęta / animals\n🧺 przedmioty / objects\n🧢 ubrania / clothes\n🪀 zabawki / toys\nElementy pogrupowane są kolorami:\n🔴 czerwony / red\n🟠 pomarańczowy / orange\n🟡 żółty / yellow\n🟢 zielony / green\n🔵 niebieski / blue\n🟣 fioletowy / purple\n🩷 różowy / pink\n⚪ biały / white\n🟤 brązowy / brown\n⚫ czarny / black\nDzięki temu wykorzystasz je m.in. do nauczania kolorów i wzorów, co zazwyczaj ma miejsce na początku roku szkolnego.\nDodatkowo każda z kart występuje w wersji służącej do gry 👉‘Znajdź intruza’ / ‘Odd man out’ – jeden z elementów został umieszczony na karcie w błędnym kolorze! Zadaniem dzieci jest poprawne zidentyfikowanie obiektu i nazwanie go po angielsku (lub w młodszych grupach, podczas zajęć zintegrowanych, po polsku).\nKażda z kart ma również tzw. plecki: dla dzieci młodszych w wersji jednolitej, dla starszych – z odpowiednio dobranym do każdej z nich wzorem.\n👉 Zestaw zawiera łącznie 44 karty, w tym karty kropek z kolorowymi elementami, oddzielne karty do gry ‘Znajdź intruza’ / ‘Odd man out’, plecki w dwóch wariantach oraz ✅INSTRUKCJE ZABAW.",
+        price: "10.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/dzien-kropki-dot-day/",
+        categories: ["special-lessons"],
+        image: "/products/B-22.png"
+    },
+    {
+        title: "Harry Potter: interaktywne quizy dla klas 4-6",
+        description: "#klasa4 #klasa5 #klasa6 #pastsimple #harrypotter\nCzy są tu jacyś miłośnicy Harry'ego Pottera? Jeżeli tak, mam dla Was dwa materiały, które możecie wykorzystać na zajęciach z Waszymi uczniami z klas 4-6!\nQuiz filmowy zawiera pytania dotyczące filmowych przygód młodego czarodzieja - przy każdym pytaniu znajdują się 3 odpowiedzi do wyboru, a po dokonaniu odpowiedzi uczniowie oglądają króciutki klip w języku angielskim - scenę związaną z danym pytaniem. Dla młodszych lub mniej zaawansowanych uczniów materiał może stanowić punkt wyjściowy do wprowadzenia/przypomnienia czasów użytych w quizie (głównie Past Simple, ale również Present Continuous), ze starszymi można skupić się bardziej na rozumieniu ze słuchu fragmentów filmów\nQuiz Find the Character zawiera pytania dotyczące postaci pojawiających się we wszystkich tomach. Proponowany wariant gry: uczniowie grają w drużynach. Każda z drużyn otrzymuje &#8222;buzzer\" (jak w teleturnieju - można wykorzystać gotowe lub też wykonane samemu np. z dużych kolorowych nakrętek). Nauczyciel  wyświetla kolejno podpowiedzi (zaczynając od tej oznaczonej kolorem zielonym) - kiedy drużyna zna już odpowiedź, naciska brzęczyk i odpowiada. Jeżeli odpowiedź jest poprawna i drużyna zdołała odgadnąć postać po zaledwie jednej podpowiedzi, otrzymuje 3 punkty, jeżeli po dwóch - 2 pkt, jeżeli po trzech - 1 pkt. Wygrywa drużyna z największą liczbą punktów. Materiał może posłużyć jako punkt wyjściowy do wprowadzenia lub powtórki czasu Past Simple (znajdują się w nim zarówno czasowniki regularne, jak i nieregularne - twierdzenia i przeczenia).",
+        price: "10.00",
+        url: "https://www.sklep.kamilaenglish.com/index.php/product/harry-potter/",
+        categories: ["gry", "klasy-4-6"],
+        image: "/products/B-22.png"
+    }
+];
+
+// Backwards compatibility alias
+export const KAMILA_ENGLISH_PRODUCTS = PRODUCTS;

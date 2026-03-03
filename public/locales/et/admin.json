@@ -1,0 +1,1642 @@
+{
+  "adminSettings": {
+    "title": "Süsteemi seaded",
+    "description": "Veebisaidi konfigureerimine, analüütika ja SEO haldamine",
+    "ai_providers": {
+      "title": "Aktiivne AI teenusepakkuja",
+      "description": "Valige mudel sisu genereerimiseks",
+      "api_key": "API võti"
+    },
+    "tabs": {
+      "ai": "AI mudelid",
+      "marketing": "Turundus ja analüütika",
+      "seo": "SEO ja metaandmed",
+      "economy": "Majandus ja rahakott",
+      "gamification": "Mängustamine ja märgid",
+      "market": "Turu ja õppekava analüüs",
+      "insights": "AI audit ja ettepanekud",
+      "channels": "Müügikanalid",
+      "integrations": "Integratsioonid ja API",
+      "interactive": "Mängud ja interaktsioonid",
+      "workshop": "AI stuudio ja Canva",
+      "automation": "Agendid ja automatiseerimine",
+      "emails": "E-posti teavitused",
+      "google": "Google Cloud",
+      "abandoned": "Hülatud ostukorvid",
+      "guardian": "AI Guardian",
+      "affiliate": "Partnerprogramm",
+      "pricing": "Hinnad ja valuutad (PPP)",
+      "taxes": "Arved ja maksud",
+      "growth_hacks": "Growth Hacks",
+      "ai_discovery": "AI Discovery (SEO)"
+    },
+    "sections": {
+      "shopping": "Ostlemine ja rahandus",
+      "ai": "AI ja interaktsioonid",
+      "growth": "Kasv ja bränd",
+      "system": "Süsteemi seaded"
+    },
+    "common": {
+      "save": "Salvesta muudatused",
+      "saved": "Salvestatud!",
+      "save_success": "Settings have been successfully saved.",
+      "subject": "Teema",
+      "content": "Sisu",
+      "enabled_desc": "Globaalne lüliti jälgimisskriptide jaoks"
+    },
+    "marketing": {
+      "ga4": "Google Analytics 4",
+      "ga4_placeholder": "G-XXXXXXXXXX",
+      "fb_pixel": "Facebook Pixel",
+      "fb_pixel_placeholder": "Piksli ID",
+      "meta_verification": "Meta domeeni kinnitamine",
+      "meta_placeholder": "Kinnituskood",
+      "gsc": "Google Search Console",
+      "gsc_placeholder": "Google'i kinnituskood",
+      "enabled": "Luba jälgimine"
+    },
+    "seo": {
+      "default_title": "Vaikimisi lehe pealkiri",
+      "default_desc": "Vaikimisi metakirjeldus",
+      "og_image": "Vaikimisi jagatav pilt (OG Image)",
+      "site_name": "Saidi nimi",
+      "basic_title": "Põhiline SEO",
+      "basic_desc": "Otsingumootori nähtavuse seaded",
+      "canonical_url": "Canonical Base URL",
+      "canonical_desc": "The base URL used for canonical and alternate (hreflang) links.",
+      "ai_discovery_title": "AI Search Optimization",
+      "ai_discovery_desc": "Configure how AI agents (Gemini, Perplexity, GPT-4) discover and interpret your site.",
+      "ai_discovery_enabled": "Enable AI Crawler Hints",
+      "ai_discovery_enabled_desc": "Injects specialized meta-data for LLM-based search engines.",
+      "ai_summary": "AI Product Summary",
+      "ai_summary_placeholder": "What should AI agents know about your store?",
+      "ai_summary_desc": "This summary helps AI agents provide accurate answers about your services.",
+      "sitemap_regenerate": "Regenerate Multi-Locale Sitemap",
+      "growth_hacks_title": "Growth & Performance Hacks",
+      "growth_hacks_desc": "Advanced tools to increase conversion and track user behavior.",
+      "fomo_title": "FOMO Elements (Scarcity)",
+      "fomo_desc": "Show 'Limited Stock' and 'Recent Purchase' alerts.",
+      "trust_title": "Trust Badges",
+      "trust_desc": "Display security and guarantee badges on product pages.",
+      "ux_tracking": "UX Tracking (Heatmaps)",
+      "clarity_id": "Microsoft Clarity ID",
+      "hotjar_id": "Hotjar Site ID"
+    },
+    "economy": {
+      "title": "Punktide ja rahakoti süsteem",
+      "description": "Hallake virtuaalset valuutat, tellimusi ja kliendilojaalsust",
+      "wallet": {
+        "title": "Virtuaalne rahakott",
+        "enable_wallet": "Luba kasutaja rahakott",
+        "allow_topup": "Luba täiendamine",
+        "recurring_topup": "Automaatne korduv täiendamine",
+        "conversion_rate": "Täienduskurss (1 EUR = X punkti)",
+        "description": "Kliendi virtuaalse rahakoti haldamine"
+      },
+      "loyalty": {
+        "title": "Lojaalsuspunktid",
+        "enable_loyalty": "Luba punktide kogumine",
+        "points_per_eur": "Punktid iga kulutatud 1 EUR eest",
+        "min_redeem": "Minimaalne punktide arv lunastamiseks",
+        "description": "Punktid aktiivsuse ja ostude eest",
+        "protip": "Pro-näpunäide: Tellijad saavad 2x rohkem punkte, kui lubate kordaja jaotises 'Mängustamine'."
+      },
+      "subscriptions": {
+        "title": "Tellimused",
+        "description": "Korduvate juurdepääsumudelite haldamine",
+        "status_active": "AKTIIVNE",
+        "per_month": "/ kuu",
+        "perks": {
+          "all_pdfs": "Kõik PDF-id piiranguteta",
+          "free_topup": "Tasuta rahakoti täiendamine ({amount} iga kuu)"
+        },
+        "add_plan": "Lisa uus plaan"
+      }
+    },
+    "gamification": {
+      "title": "Mängustamine",
+      "description": "Motiveerige õpilasi tasemete ja märkidega",
+      "levels": {
+        "silver": "Hõbetase",
+        "gold": "Kuldne tase",
+        "diamond": "Teemant VIP"
+      },
+      "perks": {
+        "discount": "Automaatne allahindlus (%)",
+        "auto_discount": "Rakendatakse automaatselt kassas",
+        "hidden_tier": "Ainult manuaalne määramine"
+      },
+      "badges_title": "Õpilaste märgid",
+      "badges": {
+        "early_bird": {
+          "name": "Varajane lind",
+          "desc": "Ost 1 tunni jooksul pärast avaldamist"
+        },
+        "collector": {
+          "name": "Koguja",
+          "desc": "Omab 50+ materjali"
+        },
+        "top_reviewer": {
+          "name": "Tipparvustaja",
+          "desc": "10 usaldusväärset arvustust"
+        }
+      }
+    },
+    "market": {
+      "title": "Turu- ja õppekavaanalüüs",
+      "description": "Jälgige turutrende ja haridusalaseid nõudeid",
+      "curriculum": {
+        "title": "Õppekava monitor",
+        "description": "AI kontrollib vastavust kehtivatele nõuetele (MoE / Ofsted / teised)",
+        "monitor_label": "Jälgitav õppekava",
+        "options": {
+          "pl_mein": "Poola (MEiN)",
+          "uk_ofsted": "Ühendkuningriik (Ofsted)",
+          "us_cc": "USA (Common Core)"
+        },
+        "status": "Teie materjalide vastavus: 85%",
+        "alerts": "Tuvastatud muudatus 4.-6. klassi nõuetes"
+      },
+      "trends": {
+        "title": "Trend-Watcher",
+        "description": "Populaarsed tooted sellistel platvormidel nagu TPT teie kategooriates",
+        "top_selling": "Kõige populaarsem formaat: 'Interaktiivsed põgenemistoad'",
+        "competitor_bestsellers": "Konkurentide müügihitid",
+        "recommendation": "Soovitus: Looge 'Lihavõtte põgenemistoa' komplekt (suur nõudlus)",
+        "ai_rec": "AI soovitus"
+      }
+    },
+    "insights": {
+      "title": "AI audit ja toote ülevaated",
+      "description": "Teie ressursside analüüs ja laiendamise ideed",
+      "sync": {
+        "title": "Sünkroonimise register",
+        "description": "Mängude ja materjalide välisplatvormidelt importimise olek",
+        "last_sync": "Viimane edukas sünkroonimine: 15 minutit tagasi",
+        "pending_drafts": "{count} uut mustandit ülevaatamiseks"
+      },
+      "expansion": {
+        "title": "Materjalide tehas (soovitused)",
+        "description": "Ideed olemasolevate toodete laiendamiseks madala kuluga",
+        "item1": "Toodet 'Unit 1' saab laiendada 20 õpikaardiga (AI genereerib need automaatselt)",
+        "item2": "Koostage 'Mega Pack' oma 3 kõige populaarsemast stsenaariumist (potentsiaalne +25% marginaal)"
+      },
+      "audit": {
+        "title": "Konversiooni audit",
+        "description": "AI analüüsib teie toodete kirjeldusi ja fotosid",
+        "suggestion": "Vahetage välja toote 'Loomade õpikaardid' põhifoto – praegusel on madal klikkimismäär (CTR)"
+      }
+    },
+    "integrations": {
+      "title": "Integratsioonid",
+      "description": "Ühendused väliste süsteemidega",
+      "webhooks": {
+        "title": "Webhookid",
+        "description": "Saada tellimuse teavitused välistesse süsteemidesse",
+        "add": "Add Webhook",
+        "url": "Target URL",
+        "event": "Event",
+        "events": {
+          "order_created": "Tellimus loodud",
+          "order_paid": "Tellimus makstud",
+          "user_registered": "Kasutaja registreeritud"
+        }
+      },
+      "mcp": {
+        "title": "MCP Connectors",
+        "description": "Connect external models and knowledge bases via MCP protocol",
+        "server": "MCP Server Address",
+        "status": "Connection status"
+      },
+      "api": {
+        "title": "External API Keys",
+        "description": "Integrations with CRM, Mailing, and other systems",
+        "service": "Service (e.g., MailerLite, Zapier)",
+        "key": "API Key / Token",
+        "coming_soon": "Integration with MailerLite, ActiveCampaign and Zapier is being implemented.",
+        "coming_soon_desc": "You can already save keys in the Webhooks section for testing."
+      }
+    },
+    "interactive": {
+      "title": "Online mängude integratsioon",
+      "description": "Ühendage Wordwall, Genially ja teised platvormid oma poega",
+      "auto_import": "Loo toode automaatselt pärast mängu lisamist platvormile",
+      "auto_import_desc": "Süsteem tuvastab toote loomisel automaatselt pesastatud koodid (Embed).",
+      "sync_status": "Viimane mängude sünkroonimine",
+      "sync_hint": "Soovitame toote muutmise paneelis kleepida otselingid mängudele. Süüsteem muudab need õppija jaoks automaatselt interaktiivseks aknaks.",
+      "other_title": "Muud integratsioonid",
+      "platforms": {
+        "wordwall": "Wordwall API võti",
+        "wordwall_placeholder": "nt. kamila-lo-ko",
+        "genially": "Genially API võti",
+        "genially_placeholder": "nt. https://view.genial.ly/profile/nick",
+        "sync_title": "Wordwall & Genially sünkroonimine",
+        "h5p_desc": "Pesasta lokaalselt",
+        "learningapps_desc": "iFrame'i kaudu",
+        "quizizz_desc": "API sünkroonimine"
+      }
+    },
+    "workshop": {
+      "title": "AI töötuba (RAG mootor)",
+      "description": "Genereerige tuletatud materjale oma teadmusbaasi põhjal",
+      "generate_btn": "Genereeri materjalid",
+      "status_ready": "Valmis genereerimiseks",
+      "rag_sources": {
+        "title": "Teadmusallikad (RAG)",
+        "description": "Valige oma AI teadmusbaas",
+        "main_label": "Põhiallikas (RAG)",
+        "notebook_lm": "Link NotebookLM-i / teadmusbaasi juurde",
+        "options": {
+          "google_drive": "Google Drive (kaust: Edu-Materials)",
+          "notebook_lm": "NotebookLM konnektor",
+          "local": "Kohalik vektordomeen"
+        }
+      },
+      "generators": {
+        "title": "Materjalide generaator",
+        "reading": "Lugemine (tekst + küsimused)",
+        "listening": "Kuulamine (stsenaarium + AI heli)",
+        "speaking": "Kõnekaardid",
+        "vocabulary": "Sõnavara harjutused",
+        "flashcards": "Õpikaardid (CSV/Anki)",
+        "tests": "Testide generaator",
+        "worksheets": "PDF töölehed",
+        "ai_quiz": "AI viktoriini koostaja"
+      },
+      "canva": {
+        "title": "Canva konnektor",
+        "description": "Eksportige genereeritud sisu otse Canva projektidesse",
+        "api_key": "Canva disaini märk (token)",
+        "auto_export": "Automaatne eksport",
+        "connect": "Ühenda Canvaga"
+      },
+      "title_prefix": "AI Creative",
+      "title_suffix": "Studio",
+      "badge": "Next-Gen",
+      "powered_by": "Powered by OpenAI & HeyGen",
+      "available_credits": "Available Credits",
+      "generations_today": "Generations Today",
+      "studio": "Studio",
+      "history": "History",
+      "studios": {
+        "images": "Image Studio",
+        "video": "Video Studio",
+        "avatars": "Avatar Studio",
+        "social": "Social Hub",
+        "flashcards": "Flashcards",
+        "canva": "Canva Studio"
+      },
+      "actions": {
+        "reuse": "Reuse Prompt",
+        "generate": "Generate Asset",
+        "processing": "Processing...",
+        "attach": "Attach",
+        "change_product": "Change Product",
+        "connect": "Connect to Product"
+      },
+      "labels": {
+        "persona": "Select AI Persona",
+        "script": "Script",
+        "prompt": "Creative Prompt",
+        "preview": "Preview",
+        "history_empty": "Your canvas awaits.",
+        "connect_desc": "Link this AI asset to your store inventory.",
+        "professional_suite": "Professional Creative Suite"
+      },
+      "social_hub": {
+        "title": "Social Media Hub",
+        "subtitle": "Post Generator & Optimization",
+        "platforms": {
+          "instagram": "Instagram",
+          "facebook": "Facebook",
+          "linkedin": "LinkedIn",
+          "youtube": "YouTube"
+        },
+        "labels": {
+          "select_product": "Select Product to Promote",
+          "pick_placeholder": "Pick from Product Library...",
+          "campaign_context": "Campaign Context / Prompt",
+          "prompt_placeholder": "What are we promoting today? (e.g., 'New Flashcard Set for Christmas')",
+          "ai_copy": "AI Generated Copy",
+          "thinking": "Thinking...",
+          "regenerate": "Regenerate Copy",
+          "copy_placeholder": "AI will generate your post content here...",
+          "media_asset": "Media Asset",
+          "auto_selected": "Auto-Selected",
+          "select_asset": "Select Asset",
+          "from_gallery": "From Product Gallery",
+          "viral_growth": "Viral Growth",
+          "score": "Score",
+          "ai_expectancy": "AI expects {percent}% higher engagement on {platform}.",
+          "live_mockup": "Live Mockup Preview",
+          "mockup_placeholder": "Your mockup copy will appear here...",
+          "export": "Export to Socials"
+        }
+      },
+      "flashcards": {
+        "title": "AI Flashcard Studio",
+        "subtitle": "Transform topics into beautiful, ready-to-print flashcard sets.",
+        "badge": "Smart Learning",
+        "branding_kit": "Branding Kit",
+        "export_canva": "Export to Canva",
+        "smart_generator": "Smart Generator",
+        "topic_label": "Topic or Context",
+        "topic_placeholder": "e.g. Life Cycle of a Frog",
+        "style_label": "Visual Style",
+        "styles": {
+          "academic": "Academic",
+          "playful": "Playful",
+          "minimal": "Minimal",
+          "canva_ai": "Canva AI"
+        },
+        "generate_btn": "Generate Deck",
+        "generating": "Generating...",
+        "live_preview": "Live Preview",
+        "cards_prepared": "{count} Cards Prepared",
+        "empty": "No cards generated yet",
+        "add_custom": "Add Custom Card"
+      }
+    },
+    "automation": {
+      "title": "AI-agentide liidesed",
+      "description": "Ühendage agendid nagu Manus AI, GPT-4o veebibrauseriga või Playwright/Selenium päringud",
+      "agent_delivered": "Agent saatis {count} uut mustandit!",
+      "agents": {
+        "title": "Saadaval olevad brauseripõhised agendid",
+        "select_placeholder": "Valige automatiseerimisagent",
+        "manus": "Manus AI liides",
+        "general": "Kohandatud brauseriagent (Webhook)",
+        "status_idle": "Agent on tööks valmis",
+        "btn_send": "Saada agent linkide järele"
+      },
+      "receiver": {
+        "title": "Vastuvõtja aadress (Endpoint)",
+        "description": "Sisestage see URL Manuscript AI-sse, et agent saaks leitud lingid otse teie mustanditesse saata",
+        "simulate_test": "(Simuleeri agendi saabumist / Testi Webhooki)",
+        "simulate_btn": "Simuleeri agenti"
+      },
+      "scrapers": {
+        "title": "Agendi ülesanded",
+        "card_title": "Brauseritööd",
+        "options": {
+          "wordwall": "Wordwall Scraper",
+          "genially": "Genially Scraper",
+          "learningapps": "LearningApps Scraper"
+        },
+        "item1": "Leia Embed-lingid mängudele minu Genially profiilis",
+        "item2": "Kontrolli uute Canva mallide saadavust",
+        "item3": "Laadi alla jagamiskoodid Wordwallist"
+      },
+      "chat": {
+        "title": "AI Agent Vestlus",
+        "subtitle": "Otsesuhtlus brauseriagendiga",
+        "placeholder": "Kust ma täna otsin?",
+        "capabilities": "Praegused võimekused: Genially, Wordwall, Canva",
+        "welcome": "Tere! Olen tööks valmis. Saate mulle ülesandeid määrata oma kontodel (Wordwall, Canva, Genially). Mida ma teaksin tegema?"
+      }
+    },
+    "emails": {
+      "title": "Süsteemiteadete mallid",
+      "description": "Hallake klientidele automaatselt saadetavate sõnumite sisu",
+      "save": "Salvesta mallid",
+      "templates": {
+        "welcome": {
+          "title": "Tervitus pärast registreerimist",
+          "subject": "Tere tulemast kogukonda!",
+          "content": "Meil on hea meel, et olete meiega. Teie sisselogimisandmed on..."
+        },
+        "order_confirmed": {
+          "title": "Tellimuse kinnitus",
+          "subject": "Teie tellimus #{orderNumber} on kätte saadud",
+          "content": "Täname ostu eest! Teie materjalid on nüüd paneelis saadaval."
+        },
+        "login_details": {
+          "title": "Juurdepääsuandmed (pärast ostu)",
+          "subject": "Teie kursuse juurdepääsuandmed",
+          "content": "Siin on teie sisselogimisandmed: E-post: {email}, Parool: {password}"
+        }
+      },
+      "smtp": {
+        "title": "SMTP konfiguratsioon / Teenusepakkuja",
+        "description": "E-posti serveri seaded süsteemiteadete jaoks",
+        "enable_system": "Luba süsteemne saatmine",
+        "enable_desc": "Kasuta konfigureeritud SMTP serverit",
+        "host": "SMTP host",
+        "port": "Port"
+      },
+      "variables": "Saadaolevad muutujad: {orderNumber}, {email}, {password}, {firstName}, {total}"
+    },
+    "google": {
+      "title": "Google Cloud integratsioon",
+      "description": "Ühendage Google Drive materjalide otseseks importimiseks poodi",
+      "auth": {
+        "title": "Google'i autoriseerimine",
+        "connect": "Ühenda Google Drive'iga",
+        "disconnect": "Katkesta ühendus",
+        "status_connected": "Ühendatud kontoga: {email}",
+        "status_disconnected": "Aktiivne ühendus puudub",
+        "drive_description": "Connect the 'Edu-Materials' folder from your Google Drive"
+      },
+      "drive": {
+        "title": "Google Drive'i brauser",
+        "import_selected": "Impordi valitud failid",
+        "refresh": "Värskenda nimekirja",
+        "no_files": "Teie kettalt ei leitud PDF/ZIP faile",
+        "import_success": "Failid imporditi edukalt materjalidena",
+        "column_name": "Faili nimi",
+        "column_size": "Suurus",
+        "column_action": "Tegevus",
+        "description": "Sirvige impordiks valmis PDF ja ZIP faile",
+        "button": "Laadi alla Google Drive'ist",
+        "connecting": "Ühendamine...",
+        "picker_title": "Vali failid Google Drive'ist",
+        "import_count": "Impordi valitud ({count})",
+        "toast_success": "Imporditi {count} faili Google Drive'ist"
+      },
+      "config": {
+        "client_id": "Google Client ID",
+        "client_secret": "Google Client Secret",
+        "redirect_uri": "Redirect URI"
+      }
+    },
+    "abandoned": {
+      "title": "Hüljatud ostukorv",
+      "description": "Automaatsed meeldetuletused klientidele, kes pole ostu lõpule viinud",
+      "delay": "Esimese e-kirja viivitus (tundides)",
+      "discount_code": "Sooduskood e-kirjas (valikuline)",
+      "enable_auto": "Luba automaatne taastamine",
+      "stats": {
+        "total_recovered": "Taastatud tulu",
+        "pending_carts": "Ootel ostukorvid"
+      }
+    },
+    "guardian": {
+      "title": "AI valvur ja tehniline järelevalve",
+      "description": "Intelligentne süsteemivigade, seadusandluse ja jõudluse jälgimine",
+      "legal_check": "Õiguslike muudatuste jälgimine (EU E-commerce)",
+      "tech_check": "Reaalajaline tehniliste vigade jälgimine",
+      "security_check": "Autoriseerimata juurdepääsu katsete analüüs",
+      "alerts": "Kriitiliste probleemide teavitused",
+      "status_good": "Süsteem töötab tõrgeteta",
+      "status_warning": "Tuvastatud võimalik õigusaktidega vastuolu",
+      "last_scan": "Viimane täielik süsteemi skannimine"
+    },
+    "affiliate": {
+      "title": "Soovituste ja partnerite süsteem",
+      "description": "Muutke oma kliendid brändi saadikuteks",
+      "commission": "Partneri komisjonitasu (%)",
+      "discount": "Soovituse allahindlus (%)",
+      "cookie_life": "Küpsiste eluiga (päevades)",
+      "referral_links": "Genereeri soovituse lingid",
+      "total_partners": "Aktiivsed partnerid",
+      "payouts": "Ootel väljamaksed"
+    },
+    "pricing": {
+      "title": "Ostujõu pariteet (PPP)",
+      "description": "Automaatne hindade kohandamine ostujõuga 19 riigis",
+      "enable_ppp": "Luba intelligentne regionaalne hinnakujundus",
+      "base_currency": "Baasvaluuta",
+      "regions": {
+        "western": "Lääne-Euroopa (100% hind)",
+        "central": "Kesk-Euroopa (85% hind)",
+        "eastern": "Ida-Euroopa (70% hind)",
+        "balkans": "Balkan (60% hind)"
+      },
+      "recurring_title": "Subscriptions & Recurring Payments",
+      "recurring_visa_title": "Visa Recurring Payments",
+      "recurring_visa_desc": "Enable automatic card charging for subscription products. Supported via Stripe Billing and PayNow Recurring.",
+      "recurring_frequency": "Standard Frequency",
+      "recurring_monthly": "30 DAYS / MONTHLY",
+      "recurring_grace_period": "Grace Period / Retry",
+      "recurring_retry": "3 DAYS RETRY",
+      "paynow_title": "PayNow Integration",
+      "paynow_access_key": "Access Key",
+      "paynow_signature_key": "Signature Key",
+      "blik_title": "BLIK Support Enabled",
+      "blik_desc": "PayNow allows users to pay with BLIK codes directly on your checkout page."
+    },
+    "taxes": {
+      "title": "Maksud ja arveldamine",
+      "description": "Käibemaksumäärade haldamine ja automaatne EL-i arvete väljastamine",
+      "eu_vat_moss": "Luba VAT-MOSS / OSS süsteem",
+      "invoice_provider": "Arvete teenusepakkuja (nt. Fakturownia, InFakt)",
+      "infakt_api_key": "InFakt API Key",
+      "test_connection": "Testi API ühendust",
+      "stripe_title": "Stripe Payments",
+      "stripe_publishable": "Stripe Publishable Key",
+      "stripe_secret": "Stripe Secret Key"
+    },
+    "editor": {
+      "placeholder": "Alusta kirjutamist...",
+      "prompts": {
+        "link": "Sisesta URL:",
+        "image": "Sisesta pildi URL:"
+      },
+      "toolbar": {
+        "bold": "Paks kiri",
+        "italic": "Kursiiv",
+        "h2": "Pealkiri 2",
+        "h3": "Pealkiri 3",
+        "list": "Järjestamata loend",
+        "listOrdered": "Järjestatud loend",
+        "link": "Sisesta link",
+        "image": "Sisesta pilt",
+        "quote": "Tsitaat",
+        "code": "Koodiplokk"
+      }
+    }
+  },
+  "adminPanel": {
+    "sidebar": {
+      "title": "AdminPanel",
+      "subtitle": "Loovstuudio",
+      "expand": "Laienda",
+      "collapse": "Ahenda",
+      "logout": "Logi välja",
+      "logoutTooltip": "Logi sessioonist välja",
+      "menu": {
+        "dashboard": "Töölaud",
+        "products": "Tooted",
+        "orders": "Tellimused",
+        "coupons": "Coupons",
+        "materials": "Materjalid",
+        "blog": "Blogi",
+        "import": "Import AI",
+        "settings": "Seaded",
+        "chat": "AI Chat",
+        "home": "Avaleht",
+        "role": "Administraator",
+        "online": "Sees",
+        "abandoned": "Abandoned Carts",
+        "offers": "Offer Generator",
+        "workshop": "AI Creative Suite",
+        "landing_builder": "Landing Pages"
+      }
+    },
+    "dashboard": {
+      "title": "Töölaud",
+      "subtitle": "Müügi ülevaade ja analüütika",
+      "periods": {
+        "7days": "7 päeva",
+        "30days": "30 päeva",
+        "90days": "90 päeva",
+        "all": "Kogu aeg"
+      },
+      "addProduct": "Lisa toode",
+      "currency": "€",
+      "stats": {
+        "revenue": "Tulu",
+        "orders": "Tellimused",
+        "customers": "Kliendid",
+        "avgOrderValue": "Keskmine tellimuse väärtus",
+        "vsPrevious": "võrreldes eelmise perioodiga",
+        "inSelectedPeriod": "Valitud perioodil",
+        "uniqueCustomers": "Ainulaadsed ostjad",
+        "perOrder": "Tellimuse kohta"
+      },
+      "charts": {
+        "weeklyRevenue": "Nädala tulu",
+        "revenueByDay": "Müük päevade lõikes",
+        "bestsellersRanking": "Enimmuüdud tooted",
+        "topSellingProducts": "Populaarsed tooted",
+        "noSalesData": "Müügiandmed puuduvad",
+        "sold": "{count} müüdud",
+        "days": {
+          "mon": "E",
+          "tue": "T",
+          "wed": "K",
+          "thu": "N",
+          "fri": "R",
+          "sat": "L",
+          "sun": "P"
+        }
+      },
+      "recentOrders": {
+        "title": "Viimased tellimused",
+        "subtitle": "Viimased tehingud",
+        "viewAll": "Vaata kõiki",
+        "noOrders": "Tellimusi veel pole",
+        "productCount": "{count} toodet",
+        "status": {
+          "completed": "Lõpetatud",
+          "pending": "Ootel",
+          "processing": "Töötlemisel"
+        }
+      },
+      "aiInsights": {
+        "card": {
+          "monitoring": "Active Market Monitoring",
+          "strategyTitle": "Your growth strategy for {period}",
+          "periodWeek": "next week",
+          "periodMonth": "this month",
+          "description": "We analyzed your last {count} orders. We have 3 specific recommendations that could increase your revenue by approx. 18%.",
+          "generateBtn": "Generate Strategic Report"
+        },
+        "modal": {
+          "title": "AI Growth Report",
+          "subtitle": "Generated for: Administrator • Feb 2024",
+          "revenueChance": "Revenue Chance",
+          "revenueGrowth": "Possible growth in 14 days",
+          "crossSellScore": "Cross-sell Score",
+          "crossSellDesc": "High linking potential",
+          "retentionProj": "Retention Proj.",
+          "retentionDesc": "Loyal returning customers",
+          "recommendedActions": "Recommended Actions",
+          "action1Title": "Email: Abandoned Cart (New template)",
+          "action1Desc": "Customers are abandoning carts for \"Preschool - Autumn Pack\". We suggest adding a 48h timer and 5% discount.",
+          "action2Title": "Bundle: Preschool Combo Pack",
+          "action2Desc": "Combine 3 most popular products into one bundle. Suggested price: $59.99.",
+          "deploy": "Deploy",
+          "create": "Create",
+          "skip": "Skip report",
+          "apply": "Apply Recommendations",
+          "success": "Strategic report has been saved and sent for analysis."
+        },
+        "overlay": {
+          "title": "Processing Big Data...",
+          "subtitle": "\"Analyzing correlations between products and buying behaviors of your customers.\"",
+          "step1": "Clustering users...",
+          "step3": "Generating visualizations..."
+        },
+        "wordwallSync": {
+          "title": "Smart Interactive Sync",
+          "description": "Paste links to your resources (Wordwall, Genially, Canva, YouTube, Google Slides, Quizizz, NotebookLM, Vocaroo) to add them as products.",
+          "placeholder": "https://wordwall.net/...\nhttps://view.genial.ly/...\nhttps://canva.com/design/...\nhttps://youtube.com/watch?v=...\nhttps://quizizz.com/...",
+          "syncBtn": "Start Sync",
+          "syncing": "Syncing...",
+          "success": "Successfully imported {count} new games!",
+          "noNew": "All provided links have already been imported.",
+          "invalid": "No valid educational links (Wordwall/Genially/Canva/YouTube/Slides/etc) detected.",
+          "close": "Close"
+        }
+      },
+      "interactivePreview": {
+        "subtitle": "Live preview of interactive material",
+        "noPreview": "No preview available for this asset",
+        "close": "Close"
+      },
+      "activeAiLogs": {
+        "title": "Active AI Logs",
+        "live": "Live",
+        "imageGenerated": "Image Generated",
+        "socialPostReady": "Social Post Ready",
+        "flashcardCreated": "Flashcard Created",
+        "trendIdentified": "Trend identified",
+        "seoOptimized": "SEO Optimized",
+        "imagePolished": "Image Polished"
+      },
+      "studioQuickAccess": {
+        "title": "Studio Quick Access",
+        "imageStudio": "Image Studio",
+        "generate4k": "Generate 4K Visuals",
+        "socialHub": "Social Hub",
+        "viralCreation": "Viral Post Creation"
+      }
+    },
+    "products": {
+      "title": "Tooted",
+      "subtitle": "Halda oma digitooteid",
+      "search": "Otsi tooteid...",
+      "importAi": "AI Import",
+      "addProduct": "Lisa toode",
+      "noProducts": "Tooteid ei leitud",
+      "addFirst": "Lisa esimene toode",
+      "table": {
+        "product": "Toode",
+        "category": "Kategooria",
+        "price": "Hind",
+        "source": "Kanalid",
+        "status": "Staatus",
+        "actions": "Tegevused"
+      },
+      "status": {
+        "published": "Avaldatud",
+        "draft": "Mustand"
+      },
+      "actions": {
+        "edit": "Muuda",
+        "viewAccess": "View Product Access",
+        "copyLink": "Kopeeri kiir-ostulink",
+        "hide": "Peida",
+        "publish": "Avalda",
+        "delete": "Kustuta"
+      },
+      "toasts": {
+        "linkCopied": "Kiir-ostulink kopeeritud:\n{link}",
+        "deleteConfirm": "Kas olete kindel, et soovite selle toote kustutada?"
+      },
+      "categories": {
+        "lesson-plans": "Tunnikavad",
+        "worksheets": "Töölehed",
+        "flashcards": "Õpikaardid",
+        "games": "Online mängud",
+        "audio": "Audiomaterjalid",
+        "video": "Videomaterjalid",
+        "bundles": "Komplektid",
+        "other": "Muu"
+      },
+      "source_badges": {
+        "wordpress": "WordPress / Publigo",
+        "tpt": "Teachers Pay Teachers",
+        "ai_optimized": "AI Optimeeritud"
+      }
+    },
+    "orders": {
+      "title": "Tellimused",
+      "subtitle": "Halda tellimusi ja jälgi makseid",
+      "exportCsv": "Ekspordi CSV",
+      "stats": {
+        "revenue": "Tulu (laekunud)",
+        "pending": "Ootel maksed",
+        "today": "Tänased tellimused"
+      },
+      "search": "Otsi tellimusi...",
+      "statusFilter": "Staatus",
+      "allStatuses": "Kõik",
+      "empty": "Tellimusi ei leitud",
+      "table": {
+        "order": "Tellimus",
+        "customer": "Klient",
+        "products": "Tooted",
+        "total": "Summa",
+        "status": "Staatus",
+        "date": "Kuupäev"
+      },
+      "status": {
+        "pending": "Ootel",
+        "processing": "Töötlemisel",
+        "completed": "Lõpetatud",
+        "cancelled": "Tühistatud",
+        "refunded": "Tagastatud"
+      },
+      "paymentMethods": {
+        "card": "Kaart",
+        "transfer": "Pangaülekanne",
+        "blik": "BLIK",
+        "paypal": "PayPal"
+      },
+      "details": {
+        "notFound": "Tellimust ei leitud",
+        "back": "Tagasi nimekirja",
+        "invoice": "Väljasta arve",
+        "payment": "Makse",
+        "summary": "Kokkuvõte",
+        "sendEmail": "Saada e-kiri",
+        "items": "Üksused",
+        "paidAt": "Makstud: {date}",
+        "discount": "Allahindlus",
+        "total": "Summa kokku",
+        "quantity": "Kogus"
+      },
+      "paymentStatus": {
+        "paid": "Makstud",
+        "pending": "Ootel",
+        "failed": "Ebaõnnestunud",
+        "refunded": "Tagastatud"
+      },
+      "export_headers": {
+        "order_number": "Tellimuse nr",
+        "date": "Kuupäev",
+        "customer": "Klient",
+        "email": "E-post",
+        "products": "Tooted",
+        "total": "Summa",
+        "status": "Staatus"
+      }
+    },
+    "coupons": {
+      "title": "Kupongid",
+      "subtitle": "Halda sooduskoode",
+      "addCoupon": "Uus kupong",
+      "editCoupon": "Muuda kupongi",
+      "createCoupon": "Loo kupong",
+      "stats": {
+        "all": "Kõik kupongid",
+        "active": "Aktiivsed",
+        "usage": "Kasutusi kokku"
+      },
+      "form": {
+        "code": "Kupongi kood",
+        "generate": "Genereeri",
+        "placeholder": "nt. SUVI2024",
+        "discountType": "Soodustuse tüüp",
+        "percent": "Protsent (%)",
+        "fixed": "Fikseeritud summa",
+        "discountValue": "Soodustuse väärtus",
+        "usageLimit": "Kasutuspiirang",
+        "minOrderValue": "Min. tellimuse summa",
+        "expiresAt": "Aegub (valikuline)"
+      },
+      "ux": {
+        "show": "Show",
+        "hide": "Hide",
+        "copy": "Copy",
+        "copied": "Copied!",
+        "secure": "Encrypted"
+      },
+      "preview": {
+        "title": "Preview & Accept",
+        "accept": "Accept Changes",
+        "reject": "Discard",
+        "bulk_title": "Review Generated Drafts",
+        "apply_all": "Accept All ({count})",
+        "diff_before": "Before Optimization",
+        "diff_after": "AI Suggestion"
+      },
+      "table": {
+        "code": "Kood",
+        "discount": "Soodustus",
+        "usage": "Kasutus",
+        "expires": "Aegub",
+        "status": "Staatus"
+      },
+      "toasts": {
+        "deleteConfirm": "Kas olete kindel, et soovite selle kupongi kustutada?"
+      }
+    },
+    "materials": {
+      "title": "Materjalide raamatukogu",
+      "subtitle": "Teie õppematerjalid ja ressursid",
+      "deleteSelected": "Delete ({count})",
+      "assignToProduct": "Assign to product ({count})",
+      "dragDrop": "Drag and drop files here",
+      "clickToUpload": "or click the button below to select from disk",
+      "selectFiles": "Select files",
+      "or": "- OR -",
+      "library": {
+        "title": "File Library ({count})",
+        "description": "List of all uploaded materials.",
+        "empty": "No files found. Upload something."
+      },
+      "table": {
+        "check": "Select",
+        "fileName": "File Name",
+        "size": "Suurus",
+        "source": "Source",
+        "product": "Assigned Product",
+        "actions": "Tegevused"
+      },
+      "badges": {
+        "upload": "Upload",
+        "drive": "Google Drive",
+        "unassigned": "Unassigned"
+      },
+      "dialog": {
+        "title": "Assign files to product",
+        "selectLabel": "Select product",
+        "placeholder": "Select product from list...",
+        "cancel": "Cancel",
+        "save": "Salvesta muudatused"
+      },
+      "toasts": {
+        "uploadSuccess": "Failid on edukalt üles laaditud",
+        "deleted": "File deleted",
+        "deletedSelected": "Deleted selected files",
+        "assigned": "Assigned {count} files to product"
+      }
+    },
+    "certificates": {
+      "title": "Sertifikaadid",
+      "subtitle": "Sertifikaatide mallide haldamine",
+      "stats": {
+        "totalIssued": "Total issued",
+        "avgScore": "Avg. exam score"
+      },
+      "tabs": {
+        "templates": "Templates",
+        "exams": "Exams",
+        "issued": "Issued"
+      },
+      "templates": {
+        "create": "Create Template",
+        "preview": "Edit Template",
+        "standardTitle": "Standard Diploma (A4)",
+        "standardDesc": "Default template for language courses",
+        "certificateTitle": "Certificate of Completion",
+        "completedCourse": "Completed course: {course}",
+        "aiGenerate": "Generate AI Template",
+        "aiDesc": "Describe style (e.g. 'modern', 'for kids'), and AI will create a unique diploma design.",
+        "createAi": "Create with AI"
+      },
+      "exams": {
+        "create": "New Exam",
+        "description": "Create a question bank or let AI generate a test from course content.",
+        "createAi": "Create AI Exam"
+      },
+      "issued": {
+        "empty": "No certificates issued this month."
+      }
+    },
+    "blog": {
+      "title": "Blogi",
+      "subtitle": "Artiklite ja sisu haldamine",
+      "newPost": "Uus postitus",
+      "searchPlaceholder": "Search posts...",
+      "empty": "No blog posts found",
+      "writeFirst": "Write first post",
+      "table": {
+        "title": "Pealkiri",
+        "category": "Kategooria",
+        "status": "Staatus",
+        "date": "Kuupäev"
+      },
+      "status": {
+        "published": "Published",
+        "draft": "Draft"
+      },
+      "actions": {
+        "preview": "Preview",
+        "delete": "Delete",
+        "save": "Save",
+        "edit": "Edit",
+        "hide": "Hide",
+        "publish": "Publish"
+      },
+      "categories": {
+        "mega-pack": "Mega Packs",
+        "scenariusze": "Scenarios",
+        "zlobek": "Nursery",
+        "special-lessons": "Special Lessons",
+        "speakbook": "Speakbook",
+        "stories": "Stories",
+        "culture": "Culture",
+        "pory-roku": "Seasons",
+        "teatr": "Theater",
+        "flashcards": "Flashcards",
+        "gry": "Games",
+        "inne": "Muud",
+        "metodyka": "Õppemetoodika",
+        "materialy": "Õppematerjalid",
+        "technologia": "Tehnoloogia hariduses",
+        "inspiracje": "Inspiratsioon ja ideed",
+        "recenzje": "Arvustused",
+        "wydarzenia": "Sündmused"
+      },
+      "toasts": {
+        "deleteConfirm": "Are you sure you want to delete this post?"
+      },
+      "form": {
+        "createTitle": "New Post",
+        "createSubtitle": "Create a new blog post",
+        "editTitle": "Edit Post",
+        "editSubtitle": "Edit existing blog post",
+        "titlePlaceholder": "Post title...",
+        "contentTitle": "Content",
+        "contentPlaceholder": "Start writing post content...",
+        "excerptTitle": "Excerpt",
+        "excerptPlaceholder": "Short description displayed on post list...",
+        "statusTitle": "Status",
+        "categoryTitle": "Category",
+        "categoryPlaceholder": "Select category",
+        "tagsTitle": "Tags",
+        "tagsPlaceholder": "tag1, tag2, tag3",
+        "imageTitle": "Featured Image",
+        "imagePlaceholder": "https://example.com/image.jpg",
+        "seoTitle": "SEO",
+        "metaTitleLabel": "Meta Title",
+        "metaTitlePlaceholder": "Search engine title",
+        "metaDescLabel": "Meta Description",
+        "metaDescPlaceholder": "Search engine description",
+        "charCount": "{count}/{max} characters",
+        "seoPreview": "Google Preview",
+        "generate": "Generate",
+        "save": "Save",
+        "saveChanges": "Save Changes",
+        "saving": "Saving...",
+        "delete": "Delete",
+        "notFound": "Post not found",
+        "backToList": "Back to list",
+        "titleRequired": "Please enter a title first"
+      }
+    },
+    "chat": {
+      "title": "Tugi (Vestlus)",
+      "subtitle": "Kliendivestlused",
+      "welcome": "Welcome to AI Center. How can I help?",
+      "newChat": "New Chat",
+      "history": "History",
+      "placeholder": "Select model",
+      "capabilities": {
+        "database": "Database",
+        "store": "Store",
+        "web": "Internet",
+        "files": "Files"
+      },
+      "inputPlaceholder": "Type a message...",
+      "disclaimer": "AI can make mistakes. Verify important information.",
+      "generatedBy": "Generated by {model}",
+      "mockResponse": "Mudeli {model} simuleeritud vastus. Saadi: \"{content}\". Täisversioonis järgneks siin ühendus API-ga (nt OpenAI, Manus) tai andmebaasiga.",
+      "mockSessions": {
+        "s1": {
+          "title": "Müügi analüüs Q1",
+          "date": "Täna"
+        },
+        "s2": {
+          "title": "Uued tootekirjeldused",
+          "date": "Eile"
+        },
+        "s3": {
+          "title": "Integratsioonide silumine",
+          "date": "2 päeva tagasi"
+        }
+      }
+    },
+    "import": {
+      "title": "Andmete import",
+      "subtitle": "Toodete massiline üleslaadimine ja migreerimine",
+      "catalogUrl": "Catalog URL",
+      "catalogUrlDesc": "Paste link to products page (kamilaenglish.com)",
+      "scan": "Scan Products",
+      "scanning": "Scanning...",
+      "enhance": "Enhance with AI",
+      "enhancing": "Enhancing...",
+      "import": "Import ({count})",
+      "importing": "Importing...",
+      "productsFound": "Products ({count})",
+      "selectedCount": "{count} selected",
+      "selectAll": "Select All",
+      "deselectAll": "Deselect All",
+      "allCategories": "All",
+      "openSource": "Open Source",
+      "preview": {
+        "testInteractive": "Test Interactive Game",
+        "sourceLink": "Source Link",
+        "selectToPreview": "Select a product to preview",
+        "backToList": "Back to List",
+        "acceptAndCreate": "Accept & Create {count} Drafts"
+      },
+      "configureAi": "Configure API keys in settings before using AI",
+      "selectProducts": "Select products to import",
+      "noAssetsFound": "No valid assets were found. Please ensure you are using public links (e.g. wordwall.net/resource/...) and not your private dashboard.",
+      "privateLink": "Skipped private page: {url}",
+      "errors": {
+        "enterUrl": "Enter catalog URL",
+        "onlyKamila English": "Only kamilaenglish.com products are supported",
+        "configureAi": "Configure API keys in settings before using AI",
+        "selectProducts": "Select products to import"
+      },
+      "success": {
+        "found": "Found {count} products from Kamila English!",
+        "enhanced": "Descriptions enhanced by AI!",
+        "imported": "Imported {count} products!"
+      },
+      "placeholders": {
+        "url": "https://www.sklep.kamilaenglish.com/..."
+      },
+      "categories": {
+        "mega-pack": "Mega-paketid",
+        "scenariusze": "Stsenaariumid",
+        "zlobek": "Sõim",
+        "special-lessons": "Eritunnid",
+        "speakbook": "Speakbook",
+        "stories": "Lood",
+        "culture": "Kultuur",
+        "pory-roku": "Aastaajad",
+        "teatr": "Teater",
+        "flashcards": "Õpikaardid",
+        "gry": "Mängud",
+        "inne": "Muud"
+      },
+      "enhancedText": {
+        "titlePrefix": "🎯",
+        "bestseller": "✨ MÜÜGIHITT!",
+        "whatYouGet": "📚 Mida saate:",
+        "features": {
+          "pdf": "• Trükivalmis PDF materjalid",
+          "teacher": "• Juhised õpetajale",
+          "worksheets": "• Töölehed ja harjutused"
+        },
+        "footer": "⭐ Sadu õpetajate poolt heaks kiidetud!"
+      }
+    },
+    "success": {
+      "found": "Found {count} products from Kamila English!",
+      "enhanced": "Descriptions enhanced by AI!",
+      "imported": "Imported {count} products!"
+    },
+    "placeholders": {
+      "url": "https://www.sklep.kamilaenglish.com/..."
+    },
+    "categories": {
+      "mega-pack": "Mega Packs",
+      "scenariusze": "Scenarios",
+      "zlobek": "Nursery",
+      "special-lessons": "Special Lessons",
+      "speakbook": "Speakbook",
+      "stories": "Stories",
+      "culture": "Culture",
+      "pory-roku": "Seasons",
+      "teatr": "Theater",
+      "flashcards": "Flashcards",
+      "gry": "Games",
+      "inne": "Others"
+    },
+    "footer": "⭐ Trusted by hundreds of teachers!",
+    "item1": "Full access to materials",
+    "item2": "SEO Optimized content",
+    "item3": "Implementation guide for students",
+    "assistant": {
+      "title": "AI Copilot",
+      "status": "Active Intelligence",
+      "welcome": "How can I help you today?",
+      "placeholder": "Ask me anything...",
+      "suggestions": {
+        "generate_visuals": "Generate 4K Visuals",
+        "social_post": "Create Social Post",
+        "avatar_script": "New AI Avatar Script",
+        "seo_optimize": "SEO Optimize Description",
+        "product_cover": "Generate Product Cover",
+        "sync_wordwall": "Sync with Wordwall",
+        "config_workshop": "Configure AI Workshop",
+        "test_api": "Test API Credentials",
+        "connect_canva": "Connect Canva Design",
+        "gen_strategy": "Generate Strategy",
+        "view_trends": "View Trends",
+        "open_workshop": "Open Workshop"
+      },
+      "responses": {
+        "processing": "I'm processing your request. As your AI Copilot, I can help you manage products, generate creative assets, and optimize your store.",
+        "products_context": "You currently have {count} products in your store. I can help you generate descriptions or images for them in the AI Workshop.",
+        "product_example": "For example, I noticed \"{title}\". Would you like to optimize it?",
+        "workshop_info": "The AI Workshop is where you can generate images, videos, and social media posts. You can find it in the 'Workshop' tab of Settings or the dedicated Studio page.",
+        "wordwall_info": "To sync with Wordwall, go to the Products page and use the 'Interactive Import' button. I can also help you scrape metadata from any educational URL!",
+        "hello": "Hello! I'm your AI Copilot. I'm currently aware of {count} products and your store settings. How can I assist you today?"
+      }
+    },
+    "offers": {
+      "title": "AI Offer Generator",
+      "subtitle": "Create high-converting offers in seconds.",
+      "beta": "Beta Growth Suite",
+      "parameters": {
+        "title": "Campaign Parameters",
+        "description": "Define the goal of your offer",
+        "promotion_type": "Promotion Type",
+        "occasional": "Occasional",
+        "evergreen": "Evergreen",
+        "product": "Product / Service",
+        "product_placeholder": "e.g. Lesson Plan Bundle A1-C1",
+        "benefit": "Main Benefit",
+        "benefit_placeholder": "What will the customer gain?",
+        "discount": "Discount (%)",
+        "generate": "Generate AI Offer",
+        "analyzing": "Analyzing market..."
+      },
+      "preview": {
+        "ai_project": "AI PROJECT",
+        "effectiveness": "Effectiveness: {score}%",
+        "title": "Special Early Bird Offer",
+        "subtitle": "Review the generated campaign before publishing",
+        "ad_copy_label": "Ad Slogan",
+        "conversion_label": "Conversion",
+        "vs_avg": "+{diff}% vs avg",
+        "discount_code_label": "Your discount code",
+        "copied": "Copied",
+        "copy": "Copy",
+        "reject": "Reject and change parameters",
+        "accept": "Accept and Publish Offer"
+      },
+      "loading": {
+        "title": "AI Magic in progress...",
+        "description": "\"Analyzing market trends and optimizing sales psychology for your products.\"",
+        "progress_label": "Competitor analysis..."
+      },
+      "toasts": {
+        "copied": "Discount code copied!",
+        "ready": "Offer ready for review!"
+      }
+    },
+    "landingBuilder": {
+      "title": "Landing Page Builder",
+      "draftVersion": "Draft Version: {name}",
+      "desktop": "Desktop",
+      "mobile": "Mobile",
+      "preview": "Preview",
+      "save": "Save changes",
+      "saving": "Saving...",
+      "elements": "Page Elements",
+      "text": "Text",
+      "image": "Image",
+      "button": "Button",
+      "aiBlock": "AI Block",
+      "canvas": "Canvas (Layers)",
+      "hero": "Hero Section",
+      "features": "Advantages & Benefits",
+      "pricing": "Pricing Section",
+      "aiMagic": {
+        "title": "Ready for magic?",
+        "desc": "Use AI to automatically match copy and colors to your product.",
+        "optimize": "Optimize with AI"
+      },
+      "mock": {
+        "newCourse": "New Course",
+        "heroTitle": "Start teaching the language {joy}",
+        "joy": "with joy",
+        "heroDesc": "Ready-made scenarios your students will love. Zero stress, 100% results.",
+        "buyNow": "Buy now and start teaching",
+        "learnMore": "Learn more",
+        "addImage": "Add main image (Drag & Drop)"
+      },
+      "optimization": {
+        "title": "AI Landing Optimization",
+        "desc": "We detected {count} areas for improvement to increase conversion by approx. {percent}%.",
+        "current": "Current Version",
+        "aiSuggestion": "AI Suggestion (Improved conversion)",
+        "recommendation": "RECOMMENDATION",
+        "skip": "Skip changes",
+        "apply": "Apply optimization",
+        "success": "AI changes have been applied to the project!",
+        "processing": "Working on the project...",
+        "processingDesc": "\"Scanning your copy for benefit language and analyzing market heatmaps.\"",
+        "analysingHeaders": "Analyzing headers...",
+        "pickingColors": "Choosing color palette...",
+        "renderingPreview": "Rendering preview...",
+        "paletteTitle": "Improved Color Palette (Ocean Night)",
+        "paletteDesc": "We will change the accents to a more professional navy and energetic blue.",
+        "suggestionTitle": "Stop wasting hours on preparation. Choose ready-made solutions.",
+        "suggestionDesc": "Join 500+ teachers who reclaimed 10 hours a week. We guarantee a smile on every student's face.",
+        "suggestionButton": "Claim your time and start now"
+      },
+      "toasts": {
+        "saved": "Landing page saved successfully!"
+      }
+    },
+    "integrations": {
+      "title": "Integratsioonid",
+      "subtitle": "Ühendage oma pood välisteenustega",
+      "loading": "Loading translations...",
+      "addStore": "Add store",
+      "sync_status": "Sync: {date}",
+      "today": "Today",
+      "tabs": {
+        "sync": "Warehouse & Sync",
+        "agent": "Publication Agent",
+        "settings": "Marketplace Settings"
+      },
+      "marketplaces": {
+        "groups": {
+          "poland": "Poland",
+          "usa": "USA",
+          "dach": "Germany (DACH)",
+          "uk": "UK",
+          "fr_es": "France/Spain"
+        },
+        "names": {
+          "wp": "WooCommerce / Publigo",
+          "wp_full": "WordPress / Publigo",
+          "tpt": "Teachers Pay Teachers",
+          "etsy": "Etsy Education",
+          "eduki": "Eduki (Germany)",
+          "tes": "TES (UK)",
+          "mieux": "MieuxEnseigner (France/Spain)"
+        }
+      },
+      "inventory": {
+        "title": "Global Materials Inventory",
+        "badge": "Central Warehouse",
+        "description": "Manage source files and their presence in different markets.",
+        "source": "Source: kamilaenglish.com",
+        "allFiles": "All PDFs, Games and Audio in one place",
+        "updateBtn": "Update Inventory",
+        "syncBtn": "Sync Inventory",
+        "progress": "Sync progress",
+        "log": "System Log",
+        "waiting": "Waiting for start...",
+        "logs": {
+          "init": "Väliste süsteemidega ühenduse algatamine...",
+          "auth": "Publigo (wp-idea) ja WooCommerce'i autoriseerimine...",
+          "fetching": "Tootenimekirja hankimine (mitmekanaliline hankimine)...",
+          "syncing": "Laoseisude ja digitaalsete failide sünkroonimine...",
+          "complete": "Sünkroonimine lõpetatud. Tuvastati {count} uut materjali.",
+          "agent_init": "Keskkonna algatamine turu {mkt} jaoks...",
+          "agent_login": "Müüjapaneeli sisselogimine...",
+          "agent_fill": "Vormi täitmine: {title}...",
+          "agent_optimize": "SEO optimeerimine ja failide üleslaadimine...",
+          "agent_done": "Valmis! Toode ootab kinnitamist."
+        },
+        "toasts": {
+          "sync_success": "Ladu on edukalt värskendatud.",
+          "analysis_done": "AI analüüs on lõpetatud. Soovitatud andmed on valmis.",
+          "no_tokens": "Ebapiisav arv žetoone. Palun täiendage oma kontot.",
+          "tokens_spent": "AI operatsiooni eest võeti maha {count} žetooni.",
+          "test_woo": "WooCommerce'i ühenduse testimine...",
+          "woo_success": "Ühendus kamilaenglish.com-iga (API v3) õnnestus",
+          "test_manus": "Manus AI litsentsi kontrollimine...",
+          "manus_success": "Litsents on aktiivne. Agent on tööks valmis.",
+          "settings_saved": "Seaded on lokaalselt salvestatud.",
+          "new_channel": "Uue müügikanali konfiguraatori avamine...",
+          "edit_schedule": "Graafiku muutmine on saadaval süsteemi seadetes.",
+          "importing": "Uute toodete importimine..."
+        },
+        "stats": {
+          "products_short": "prod."
+        }
+      },
+      "schedule": {
+        "title": "Schedule",
+        "daily02": "Daily at 02:00",
+        "active": "Active",
+        "disabled": "Disabled",
+        "checkOnlyChanges": "Check only changes",
+        "changeCron": "Change cron settings"
+      },
+      "aiTip": {
+        "title": "AI Tip",
+        "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
+        "importBtn": "Import now"
+      },
+      "agent": {
+        "catalogTitle": "Product Catalog",
+        "ready": "Valmis",
+        "emptyState": {
+          "title": "Select product and target market",
+          "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
+        },
+        "selectMarket": "Select target market",
+        "launchBtn": "Launch Agent",
+        "launchAdmin": "Launch Agent (Admin)",
+        "launchPoints": "Launch for {count} pts",
+        "working": "Agent Working...",
+        "manusMode": "Manus Mode: Active",
+        "marketPrefix": "EnglishLearning: ",
+        "yourBalance": "Your balance",
+        "analysisTitle": "AI Analysis for {market}",
+        "regionalOptimization": "Regional optimization",
+        "suggestedTitle": "Suggested Title (SEO Local)",
+        "suggestedPrice": "Price (PPP Conversion)",
+        "sellingProb": "Selling Probability",
+        "veryHigh": "VERY HIGH",
+        "success": {
+          "title": "Task Completed!",
+          "description": "AI Agent successfully visited {market} and published your product.",
+          "viewLogs": "VIEW SESSION LOGS"
+        },
+        "toasts": {
+          "session_manager": "Opening session manager...",
+          "proxy_success": "Proxy: {ip} ({location}) OK",
+          "report_title": "Agent Report",
+          "report_desc": "Sisse logitud: OK, Vorm: Täidetud, Pildid: Üles laaditud, SEO: Optimeeritud. Koguaeg: {time}"
+        },
+        "stats": {
+          "points": "pts"
+        },
+        "mockAnalysis": {
+          "title": "AI Analüüs",
+          "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
+          "suggestedPrice": "$12.99",
+          "subject": "English Language Arts",
+          "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
+          "description": "Avage oma klassiruumi potentsiaal selle premium {title} abil. \n\nLoodud pedagoogide poolt pedagoogidele, see ressurss sisaldab:\n- Täielikke PDF-stsenaariume\n- Printimiseks valmis töölehti\n- Interaktiivseid visuaalseid abivahendeid.\n\nIdeaalne nii veebi- kui ka kohapealseteks tundideks!"
+        },
+        "idle": {
+          "title": "In standby",
+          "description": "Run agent to start automation process on platform {market}."
+        }
+      },
+      "settings": {
+        "title": "Multi-Channel Connections",
+        "description": "Configure access data for external stores.",
+        "saveAll": "Save all",
+        "lastSaved": "Last saved: {time}",
+        "woo": {
+          "title": "WooCommerce / WordPress Site",
+          "url": "Store URL (REST API)",
+          "key": "Consumer Key",
+          "secret": "Consumer Secret",
+          "connected": "Connected",
+          "autoSync": "AUTO-SYNC ON",
+          "test": "Test"
+        },
+        "manus": {
+          "title": "Manus AI Session",
+          "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
+          "instance": "Agent API Instance",
+          "test": "Test Manus",
+          "manage": "Manage Session",
+          "proxy": "Test Proxy"
+        }
+      }
+    }
+  },
+  "logs": {
+    "init": "🚀 Initializing AI Scraper agent...",
+    "connect": "🔍 Connecting to API session...",
+    "extract": "🧩 Extracting mechanics and metadata...",
+    "images": "🖼️ Generating preview thumbnails...",
+    "seo": "✍️ Crafting SEO-optimized descriptions...",
+    "pricing": "💰 Calculating regional pricing...",
+    "finalize": "✨ Finalizing product drafts..."
+  },
+  "interactive": {
+    "title": "Interactive Content",
+    "subtitle": "Import and optimize Games with AI",
+    "placeholder": "Paste links (one per line)...",
+    "found": "Found {count} interactive items!",
+    "generate": "Generate drafts",
+    "createDrafts": "Accept and create drafts",
+    "success": "Successfully imported {count} products!",
+    "preview_title": "AI Draft Preview",
+    "preview_desc": "Review generated products and test interactive content.",
+    "logs": {
+      "launching": "🚀 Launching real-time scraping agent...",
+      "analyzing": "🔍 Analyzing: {url}...",
+      "private": "⚠️ Link {url} appears to be a private collection. Skipping - please use individual game links.",
+      "extracted": "✅ Extracted: {title}",
+      "dropped": "❌ Connection dropped for: {url}",
+      "complete": "Scraping complete! Successfully extracted metadata for {count} assets."
+    }
+  },
+  "integrations": {
+    "title": "Educational BaseLinker",
+    "subtitle": "Global materials sales and AI automation.",
+    "loading": "Loading translations...",
+    "addStore": "Add store",
+    "sync_status": "Sync: {date}",
+    "today": "Today",
+    "tabs": {
+      "sync": "Warehouse & Sync",
+      "agent": "Publication Agent",
+      "settings": "Marketplace Settings"
+    },
+    "marketplaces": {
+      "groups": {
+        "poland": "Poland",
+        "usa": "USA",
+        "dach": "Germany (DACH)",
+        "uk": "UK",
+        "fr_es": "France/Spain"
+      },
+      "names": {
+        "wp": "WooCommerce / Publigo",
+        "wp_full": "WordPress / Publigo",
+        "tpt": "Teachers Pay Teachers",
+        "etsy": "Etsy Education",
+        "eduki": "Eduki (Germany)",
+        "tes": "TES (UK)",
+        "mieux": "MieuxEnseigner (France/Spain)"
+      }
+    },
+    "inventory": {
+      "title": "Global Materials Inventory",
+      "badge": "Central Warehouse",
+      "description": "Manage source files and their presence in different markets.",
+      "source": "Source: kamilaenglish.com",
+      "allFiles": "All PDFs, Games and Audio in one place",
+      "updateBtn": "Update Inventory",
+      "syncBtn": "Sync Inventory",
+      "progress": "Sync progress",
+      "log": "System Log",
+      "waiting": "Waiting for start...",
+      "logs": {
+        "init": "Initializing connection with external systems...",
+        "auth": "Authorizing Publigo (wp-idea) & WooCommerce...",
+        "fetching": "Fetching product list (Multi-Channel Sourcing)...",
+        "syncing": "Syncing stock levels and digital files...",
+        "complete": "Sync complete. Detected {count} new materials.",
+        "agent_init": "Initializing environment for {mkt}...",
+        "agent_login": "Logging into seller panel...",
+        "agent_fill": "Filling form: {title}...",
+        "agent_optimize": "Optimizing SEO and uploading files...",
+        "agent_done": "Ready! Product is waiting for approval."
+      },
+      "toasts": {
+        "sync_success": "Warehouse updated successfully.",
+        "analysis_done": "AI Analysis complete. Suggested data is ready.",
+        "no_tokens": "Insufficient tokens. Top up your account.",
+        "tokens_spent": "{count} tokens deducted for AI operation.",
+        "test_woo": "Testing WooCommerce connection...",
+        "woo_success": "Connected successfully to kamilaenglish.com (API v3)",
+        "test_manus": "Verifying Manus AI license...",
+        "manus_success": "License active. Agent ready for work.",
+        "settings_saved": "Settings saved locally.",
+        "new_channel": "Opening new sales channel configurator...",
+        "edit_schedule": "Schedule editing available in system settings.",
+        "importing": "Importing new products..."
+      },
+      "stats": {
+        "products_short": "prod."
+      }
+    },
+    "schedule": {
+      "title": "Schedule",
+      "daily02": "Daily at 02:00",
+      "active": "Active",
+      "disabled": "Disabled",
+      "checkOnlyChanges": "Check only changes",
+      "changeCron": "Change cron settings"
+    },
+    "aiTip": {
+      "title": "AI Tip",
+      "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
+      "importBtn": "Import now"
+    },
+    "agent": {
+      "catalogTitle": "Product Catalog",
+      "ready": "Ready",
+      "emptyState": {
+        "title": "Select product and target market",
+        "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
+      },
+      "selectMarket": "Select target market",
+      "launchBtn": "Launch Agent",
+      "launchAdmin": "Launch Agent (Admin)",
+      "launchPoints": "Launch for {count} pts",
+      "working": "Agent Working...",
+      "manusMode": "Manus Mode: Active",
+      "marketPrefix": "EnglishLearning: ",
+      "yourBalance": "Your balance",
+      "analysisTitle": "AI Analysis for {market}",
+      "regionalOptimization": "Regional optimization",
+      "suggestedTitle": "Suggested Title (SEO Local)",
+      "suggestedPrice": "Price (PPP Conversion)",
+      "sellingProb": "Selling Probability",
+      "veryHigh": "VERY HIGH",
+      "success": {
+        "title": "Task Completed!",
+        "description": "AI Agent successfully visited {market} and published your product.",
+        "viewLogs": "VIEW SESSION LOGS"
+      },
+      "toasts": {
+        "session_manager": "Opening session manager...",
+        "proxy_success": "Proxy: {ip} ({location}) OK",
+        "report_title": "Agent Report",
+        "report_desc": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}"
+      },
+      "stats": {
+        "points": "pts"
+      },
+      "mockAnalysis": {
+        "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
+        "suggestedPrice": "$12.99",
+        "subject": "English Language Arts",
+        "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
+        "description": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!"
+      },
+      "idle": {
+        "title": "In standby",
+        "description": "Run agent to start automation process on platform {market}."
+      }
+    },
+    "settings": {
+      "title": "Multi-Channel Connections",
+      "description": "Configure access data for external stores.",
+      "saveAll": "Save all",
+      "lastSaved": "Last saved: {time}",
+      "woo": {
+        "title": "WooCommerce / WordPress Site",
+        "url": "Store URL (REST API)",
+        "key": "Consumer Key",
+        "secret": "Consumer Secret",
+        "connected": "Connected",
+        "autoSync": "AUTO-SYNC ON",
+        "test": "Test"
+      },
+      "manus": {
+        "title": "Manus AI Session",
+        "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
+        "instance": "Agent API Instance",
+        "test": "Test Manus",
+        "manage": "Manage Session",
+        "proxy": "Test Proxy"
+      },
+      "mailerlite": {
+        "title": "MailerLite Integration",
+        "api_key": "MailerLite API Key",
+        "placeholder": "ml_...",
+        "groups": "Subscriber Group ID",
+        "test": "Test Connection"
+      },
+      "manychat": {
+        "title": "ManyChat Automation",
+        "api_key": "ManyChat API Key",
+        "placeholder": "mc_...",
+        "automation_id": "Default Flow ID",
+        "test": "Test Automation"
+      }
+    }
+  },
+  "abandonedHub": {
+    "title": "Abandoned Cart Hub",
+    "subtitle": "Recover lost sales and manage leads",
+    "table": {
+      "customer": "Customer",
+      "cart": "Cart Items",
+      "value": "Value",
+      "lastActive": "Last Active",
+      "actions": "Actions"
+    },
+    "actions": {
+      "sendReminder": "Send Reminder",
+      "recoveryLink": "Copy Recovery Link",
+      "delete": "Remove lead"
+    },
+    "status": {
+      "contacted": "Contacted",
+      "pending": "Pending",
+      "recovered": "Recovered"
+    },
+    "notifications": {
+      "reminderSent": "Recovery email simulation sent to {email}",
+      "linkCopied": "Recovery link copied with discount code!"
+    }
+  }
+}

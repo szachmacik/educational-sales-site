@@ -1,0 +1,400 @@
+{
+  "seo": {
+    "title": "Oktatási anyagok angoltanároknak | Kamila Łobko-Koziej",
+    "description": "Kreatív tananyagok, óratervek, egész éves projektek és kész csomagok angoltanároknak.",
+    "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
+  },
+  "nav": {
+    "products": "Termékek",
+    "materialy": "Anyagok",
+    "blog": "Blog",
+    "contact": "Kapcsolat",
+    "login": "Bejelentkezés",
+    "dashboard": "Vezérlőpult",
+    "adminPanel": "Admin Panel"
+  },
+  "brand": {
+    "educationalMaterials": "Oktatási Anyagok",
+    "byKamila": "Kamila Łobko-Koziej által"
+  },
+  "hero": {
+    "badge": "Anyagok tanároknak",
+    "title": "Tanítson angolt szenvedéllyel és könnyedén",
+    "subtitle": "Kreatív tananyagok, amelyek átalakítják az óráit. Spóroljon időt a felkészüléssel, és inspirálja diákjait minden nap.",
+    "cta_main": "Böngészés az anyagok között",
+    "cta_secondary": "A szerzőről",
+    "demoText": "Panel demó megtekintése:",
+    "teacherProfile": "Tanári profil",
+    "studentProfile": "Diák profil"
+  },
+  "footer": {
+    "rights": "Minden jog fenntartva.",
+    "description": "Eredeti, kreatív tananyagok angoltanároknak. Meríts ihletet!",
+    "groups": {
+      "shop": "Bolt",
+      "info": "Információ",
+      "help": "Segítség"
+    },
+    "links": {
+      "catalog": "Katalógus",
+      "materials": "Tananyagok",
+      "projects": "Egész éves projektek",
+      "scenarios": "Óratervek",
+      "packs": "Tematikus csomagok",
+      "about": "A szerzőről",
+      "contact": "Kapcsolat",
+      "privacy": "Adatvédelmi irányelvek",
+      "terms": "Szolgáltatási feltételek",
+      "howToBuy": "Hogyan vásároljak?",
+      "faq": "GYIK",
+      "returns": "Visszaküldés",
+      "account": "Fiókom",
+      "admin": "Tanári panel (Admin)"
+    }
+  },
+  "auth": {
+    "logout": "Kijelentkezés",
+    "myCourses": "Kurzusaim",
+    "studentPanel": "Diák panel",
+    "roleAdmin": "Administrator",
+    "roleTeacher": "Teacher",
+    "roleStudent": "Student"
+  },
+  "cart": {
+    "empty": "A kosarad üres",
+    "emptySub": "Adjon hozzá termékeket a vásárlás folytatásához",
+    "browse": "Termékek böngészése",
+    "reserved": "A kosarát lefoglaltuk:",
+    "header": "Kosár ({count})",
+    "remove": "Eltávolítás",
+    "specialOffer": "KÜLÖNLEGES AJÁNLAT",
+    "orderBump": "Email sabloncsomag hozzáadása (+29 €)",
+    "orderBumpDesc": "20 használatra kész sablon a szülőkkel való kommunikációhoz. Spóroljon 70%-ot!",
+    "summary": "Összegzés",
+    "couponPlaceholder": "Kedvezmény kód",
+    "apply": "Alkalmaz",
+    "couponHeader": "Kupon:",
+    "products": "Termékek",
+    "discount": "Kedvezmény",
+    "total": "Összesen",
+    "checkout": "Tovább a pénztárhoz",
+    "secure": "Biztonságos fizetés",
+    "couponInvalid": "Invalid coupon code",
+    "couponInactive": "This coupon is no longer active",
+    "couponExpired": "This coupon has expired",
+    "couponLimitReached": "This coupon has reached its usage limit",
+    "couponMinOrder": "Minimum order value: {minOrderValue} {currency}",
+    "couponAppliedPercent": "Discount {percent}% has been applied!",
+    "couponAppliedFixed": "Discount {amount} {currency} has been applied!",
+    "currencySymbol": "€"
+  },
+  "socialProof": {
+    "header": "Facebook Közösség",
+    "sub": "Legyen naprakész a hírekkel és csatlakozzon a beszélgetéshez!",
+    "cta": "Tekintse meg inspirációval teli profilunkat",
+    "madeWithLove": "Szeretettel készült",
+    "polishQuality": "és lengyel minőséggel"
+  },
+  "newsletter": {
+    "header": "Legyen naprakész!",
+    "sub": "Iratkozzon fel hírlevelünkre, és értesüljön az új anyagokról, promóciókról és exkluzív kedvezményekről.",
+    "placeholder": "Az e-mail címe",
+    "button": "Feliratkozás",
+    "success": "Köszönjük a feliratkozást a hírlevélre!",
+    "privacy": "Tiszteletben tartjuk a magánéletét. Bármikor leiratkozhat."
+  },
+  "checkout": {
+    "acceptTermsError": "El kell fogadnia a feltételeket",
+    "successTitle": "Köszönjük a rendelését!",
+    "successOrder": "A(z) #{orderNumber} számú rendelése beérkezett.",
+    "successEmail": "A rendelés részleteit elküldtük a megadott e-mail címre.",
+    "backToStore": "Vissza a boltba",
+    "myCourses": "Kurzusaim",
+    "backToCart": "Vissza a kosárhoz",
+    "steps": {
+      "cart": "Kosár",
+      "payment": "Fizetés",
+      "access": "Hozzáférés"
+    },
+    "trust": {
+      "secure": "Biztonságos fizetés",
+      "ssl": "SSL titkosítás",
+      "instant": "Azonnali hozzáférés"
+    },
+    "header": "Rendelés befejezése",
+    "contactTitle": "Kapcsolattartási adatok",
+    "email": "E-mail *",
+    "firstName": "Keresztnév *",
+    "lastName": "Vezetéknév *",
+    "phone": "Telefon (opcionális)",
+    "invoiceTitle": "Számla",
+    "wantInvoice": "Áfás számlát kérek",
+    "nip": "Adószám",
+    "nipError": "Kérjük, adjon meg érvényes adószámot",
+    "lookup": "Adatok lekérése",
+    "lookupSuccess": "Cégadatok lekérve!",
+    "nipNotFound": "Cég nem található",
+    "nipSearchError": "Hiba a keresés során. Kérjük, próbálja újra.",
+    "companyName": "Cégnév",
+    "companyAddress": "Cím",
+    "addressPlaceholder": "Automatikusan kitöltve",
+    "paymentTitle": "Fizetési mód",
+    "paymentMethods": {
+      "card": "Bankkártya",
+      "cardSub": "Visa, Mastercard, American Express",
+      "blik": "BLIK",
+      "blikSub": "Gyors fizetés BLIK kóddal",
+      "transfer": "Banki átutalás",
+      "transferSub": "Hagyományos banki átutalás"
+    },
+    "yourOrder": "Rendelése",
+    "summaryProducts": "Termékek",
+    "summaryDiscount": "Kedvezmény ({code})",
+    "summaryTotal": "Összesen",
+    "terms": "Elfogadom az üzlet felhasználási feltételeit és adatvédelmi irányelveit",
+    "termsRequired": "Szükséges a rendelés befejezéséhez",
+    "processing": "Feldolgozás...",
+    "pay": "Fizetés {total}",
+    "instantAccessInfo": "Fizetés után az anyagok azonnal elérhetővé válnak a panelen",
+    "socialProof": "+2 500 tanár vásárolt már",
+    "toPayMobile": "Fizetendő",
+    "paymentFailed": "Payment failed. Please try again.",
+    "paymentSystemError": "Payment system error."
+  },
+  "contact": {
+    "title": "Lépjen kapcsolatba velünk",
+    "subtitle": "Kérdése van az anyagokkal kapcsolatban? Segítségre van szüksége a csomag kiválasztásához? Írjon nekünk, vagy beszéljen AI asszisztensünkkel. Itt vagyunk az Ön számára!",
+    "aiBadge": "Általában 2 órán belül válaszolunk",
+    "trustBadge": "Több mint 12 000 elégedett tanár",
+    "emailTitle": "Írjon e-mailt",
+    "emailDesc": "Postaládánk a nap 24 órájában nyitva áll az Ön számára.",
+    "phoneTitle": "Hívjon minket",
+    "phoneDesc": "Hétfőtől péntekig 9:00-től 17:00-ig elérhetőek vagyunk telefonon.",
+    "formTitle": "Kapcsolati űrlap",
+    "addressTitle": "Székhely",
+    "addressValue": "Varsó, Oktatási utca 123",
+    "aiHelp": "Gyors válaszra van szüksége?",
+    "aiHelpDesc": "Intelligens asszisztensünk tudja a választ a legtöbb gyakori kérdésre. Kérdezzen a termékekről, tanítási módszerekről vagy az anyagok elérhetőségéről.",
+    "aiHelpMobile": "Az AI asszisztens a képernyő alsó sarkában érhető el.",
+    "form": {
+      "name": "Név és vezetéknév",
+      "email": "E-mail",
+      "subject": "Tárgy",
+      "message": "Az Ön üzenete",
+      "messagePlaceholder": "Miben segíthetünk?",
+      "sending": "Küldés...",
+      "send": "Üzenet küldése",
+      "success": "Üzenet elküldve!",
+      "successDesc": "Köszönjük, hogy kapcsolatba lépett velünk. A lehető leghamarabb válaszolunk.",
+      "placeholders": {
+        "name": "Kiss János",
+        "email": "janos@pelda.hu",
+        "subject": "Érdeklődés termékkel kapcsolatban...",
+        "message": "Írja le, miben segíthetünk..."
+      }
+    },
+    "info": {
+      "emailValue": "contact@kamilaenglish.com",
+      "phoneValue": "+48 123 456 789"
+    },
+    "aiChat": {
+      "title": "AI Asszisztens",
+      "status": "Online és kész",
+      "thinking": "Gondolkodik...",
+      "inputPlaceholder": "Tegyen fel egy kérdést...",
+      "dataInputPlaceholder": "Adja meg nevét és e-mail címét...",
+      "welcome": "Szia! Én vagyok az intelligens asszisztensed. Mielőtt elkezdenénk, vagy már az ügyfelünk?",
+      "options": {
+        "yes": "Igen, ügyfél vagyok",
+        "no": "Még nem"
+      },
+      "responses": {
+        "clientYes": "Nagyszerű! Miben segíthetek ma?",
+        "clientNo": "Értem. Szívesen segítek felfedezni anyagainkat. Mi a neved és az e-mail címed, hogy küldhessek néhány ingyenes mintát?",
+        "dataSaved": "Köszönöm! Mentettem az adataidat. Most már bátran kérdezhetsz bármit.",
+        "fallback": "Sajnálom, nem teljesen értem. Meg tudnád fogalmazni másképp? Kérdezhetsz árakról, szállításról vagy tanítási módszerekről."
+      },
+      "knowledge": {
+        "price": "PDF anyagaink 29 €-tól indulnak. Az éves csomagok (Mega Pack) jelenleg 149 €-ért akciósak.",
+        "delivery": "Minden anyag digitális. A fizetés után azonnal megkapja a letöltési linket.",
+        "preschool": "Van egy nagyszerű 'Angol az óvodában' részünk. Különösen ajánlom a 4 évszak csomagunkat.",
+        "contact": "Írhat nekünk e-mailt, vagy hívhat minket a +1 234 567 890 számon (H-P 9:00-17:00).",
+        "invoice": "Igen, áfás számlát állítunk ki. A számlázási adatokat a kosárban adhatja meg.",
+        "methods": "Kamila Łobko-Koziej a játékközpontú megközelítést (TPR, kommunikatív játékok) támogatja. Nézze meg blogunkat, hogy többet tudjon meg!"
+      }
+    }
+  },
+  "login": {
+    "title": "Üdvözöljük újra!",
+    "desc": "Adja meg e-mail címét a diákzónába való belépéshez.",
+    "student": "Diák",
+    "teacher": "Tanár",
+    "email": "E-mail",
+    "emailTeacher": "Munkahelyi e-mail",
+    "password": "Jelszó",
+    "loggingIn": "Bejelentkezés...",
+    "success": "Bejelentkezve!",
+    "submit": "Bejelentkezés",
+    "successMessage": "Sikeres bejelentkezés! Átirányítás...",
+    "errorDefault": "Érvénytelen e-mail cím vagy jelszó.",
+    "errorSystem": "Bejelentkezési hiba történt. Kérjük, próbálja újra.",
+    "emailRequired": "Az e-mail cím kötelező",
+    "emailInvalid": "Érvénytelen e-mail formátum",
+    "passwordRequired": "A jelszó kötelező",
+    "passwordMin": "A jelszónak legalább 4 karakterből kell állnia",
+    "forgotPassword": "Forgot your password?",
+    "magicLink": "Login with Magic Link",
+    "magicLinkDesc": "We'll send you a one-time login link to your email address.",
+    "sendMagicLink": "Send Magic Link",
+    "backToLogin": "Back to login",
+    "checkEmail": "Check your inbox",
+    "resetPassword": "Reset password",
+    "magicLinkSent": "A login link has been sent to your email address.",
+    "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
+    "resetSuccess": "Your password has been changed successfully."
+  },
+  "quickSale": {
+    "title": "GYORS FIZETÉS",
+    "demoProduct": {
+      "title": "Példa prémium e-könyvre",
+      "excerpt": "Ez egy bemutató termék. A teljes verzióban az adatok az adatbázisból kerülnének lekérésre."
+    },
+    "page": {
+      "guarantee": "30 napos elégedettségi garancia",
+      "totalLabel": "Összesen fizetendő:",
+      "email_label": "Az Ön e-mail címe",
+      "email_placeholder": "cim@email.hu",
+      "payment_method": "Fizetési mód",
+      "payment_card": "Kártya",
+      "blik_code": "BLIK kód",
+      "terms": "Elfogadom az üzlet feltételeit",
+      "pay_btn": "Megveszem és fizetek",
+      "secure_checkout": "SSL titkosított kapcsolat"
+    },
+    "optimization": {
+      "timer": {
+        "text": "Az ajánlat lejár:"
+      },
+      "social_proof": {
+        "viewing": "{count} ember nézi éppen ezt az ajánlatot"
+      },
+      "savings": "Megtakarítás"
+    },
+    "bump": {
+      "yes_btn": "IGEN, adja hozzá a rendelésemhez",
+      "price_prefix": "csak",
+      "description": "Egyszeri ajánlat! Adjon hozzá egy készletnyi használatra kész munkalapot (PDF)."
+    }
+  },
+  "verify": {
+    "title": "Tanúsítvány ellenőrzése",
+    "subtitle": "A hitelesség megerősítéséhez adja meg a tanúsítvány ellenőrző kódját.",
+    "placeholder": "XXXX-XXXX-XXXX",
+    "success": {
+      "title": "Tanúsítvány ellenőrizve",
+      "desc": "Ez a tanúsítvány hiteles, és a mi platformunk állította ki.",
+      "user": "Résztvevő",
+      "course": "Kurzus",
+      "date": "Befejezés dátuma",
+      "code": "Kód",
+      "view": "Tanúsítvány megtekintése"
+    },
+    "error": {
+      "title": "A tanúsítvány nem található",
+      "desc": "Nem találtunk tanúsítványt a megadott kóddal. Kérjük, ellenőrizze a kód helyességét."
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "404",
+      "message": "Az oldal nem található.",
+      "back": "Vissza a főoldalra"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Cikkek, tippek és inspiráció angoltanároknak. Tanulja meg, hogyan tanítson hatékonyabban és több szenvedéllyel.",
+    "empty": "Nem található bejegyzés.",
+    "readMore": "Olvass tovább",
+    "backToBlog": "Vissza a bloghoz",
+    "share": "Megosztás:",
+    "notFound": "Nem található"
+  },
+  "common": {
+    "loading": "Betöltés..."
+  },
+  "certificates": {
+    "title": "Tanúsítvány a befejezésről",
+    "subtitle": "Ezúton igazoljuk, hogy",
+    "completedCourse": "sikeresen elvégezte a kurzust",
+    "completionDate": "Befejezés dátuma:",
+    "verificationCode": "Ellenőrző kód:",
+    "downloadPdf": "PDF letöltése",
+    "share": "Megosztás",
+    "backToDashboard": "Vissza a vezérlőpultra",
+    "styleTitle": "Tanúsítvány stílusának módosítása",
+    "verifiedTitle": "Ellenőrzött tanúsítvány",
+    "verifiedDesc": "Ezt a tanúsítványt a mi platformunk állította ki.",
+    "notFound": "A tanúsítvány nem található",
+    "copySuccess": "Link a vágólapra másolva!",
+    "completionTitle": "Tanúsítvány ellenőrizve"
+  },
+  "languages": {
+    "pl": "Polish",
+    "en": "English",
+    "uk": "Ukrainian",
+    "de": "German",
+    "es": "Spanish",
+    "fr": "French",
+    "it": "Italian",
+    "cs": "Czech",
+    "sk": "Slovak",
+    "ro": "Romanian",
+    "hu": "Hungarian",
+    "pt": "Portuguese",
+    "lt": "Lithuanian",
+    "lv": "Latvian",
+    "et": "Estonian",
+    "hr": "Croatian",
+    "sr": "Serbian",
+    "sl": "Slovenian",
+    "bg": "Bulgarian",
+    "el": "Greek",
+    "nl": "Dutch",
+    "sv": "Swedish",
+    "fi": "Finnish",
+    "no": "Norwegian",
+    "da": "Danish"
+  },
+  "fomo": {
+    "names": [
+      "John",
+      "Emily",
+      "Michael",
+      "Sarah",
+      "David",
+      "Jessica",
+      "Robert"
+    ],
+    "cities": [
+      "London",
+      "New York",
+      "Chicago",
+      "Toronto",
+      "Sydney",
+      "Dublin",
+      "Berlin"
+    ],
+    "purchaseMessage": "{name} from {city}",
+    "productMessage": "Just bought \"{product}\"",
+    "timeAgo": "{time} min ago"
+  },
+  "exitIntent": {
+    "title": "WAIT!",
+    "subtitle": "Before you leave...",
+    "header": "Get your free \"Starter Pack\"",
+    "description": "Join our newsletter and receive 50 free worksheets!",
+    "cta": "I want my gift",
+    "noThanks": "No thanks, I'll pay full price later"
+  }
+}

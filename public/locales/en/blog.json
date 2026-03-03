@@ -1,0 +1,10 @@
+{
+    "blog": {
+        "title": "Educational Blog",
+        "subtitle": "Inspirations, methodology, and news from the world of English language teaching.",
+        "empty": "We currently have no new articles. Please check back soon!",
+        "readMore": "Read more",
+        "backToBlog": "Back to blog",
+        "share": "Share:"
+    }
+}

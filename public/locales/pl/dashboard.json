@@ -1,0 +1,54 @@
+{
+  "dashboard": {
+    "tabs": {
+      "courses": "Moje Kursy",
+      "materials": "Materiały PDF/ZIP",
+      "games": "Gry Interaktywne",
+      "wallet": "Mój Portfel"
+    },
+    "materials": {
+      "title": "Twoje Materiały Cyfrowe",
+      "download": "Pobierz plik",
+      "print": "Drukuj materiały",
+      "no_files": "Nie posiadasz jeszcze żadnych materiałów do pobrania."
+    },
+    "games": {
+      "title": "Centrum Gier Online",
+      "play": "Zagraj teraz",
+      "provider": "Platforma",
+      "no_games": "Brak dostępnych gier interaktywnych."
+    },
+    "library": {
+      "title": "Twoja Biblioteka",
+      "recent": "Ostatnio zakupione",
+      "packDesc": "Kompletny zestaw materiałów na cały rok szkolny.",
+      "downloadZip": "Pobierz wszystko (ZIP)",
+      "browseFiles": "Przeglądaj pliki",
+      "progress": "Twój Postęp",
+      "progressDesc": "Ukończono {percent}% materiałów z pakietu {pack}.",
+      "level": "Poziom",
+      "open": "Otwórz Pakiet",
+      "preview": "Podgląd interaktywny",
+      "previewGame": "Podgląd gry",
+      "stats": {
+        "files": "plików",
+        "more": "więcej"
+      },
+      "filters": {
+        "all": "Wszystkie",
+        "pdf": "E-Booki i PDF",
+        "audio": "Audio",
+        "courses": "Kursy Online"
+      },
+      "badges": {
+        "game": "Gra Edukacyjna",
+        "pack": "Pakiet"
+      },
+      "discover": {
+        "title": "Odkryj więcej materiałów",
+        "desc": "Przeglądaj sklep i dodawaj nowe pakiety.",
+        "btn": "Idź do sklepu"
+      }
+    }
+  }
+}

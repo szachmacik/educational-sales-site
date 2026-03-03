@@ -1,0 +1,243 @@
+{
+  "hero": {
+    "badge": "Undervisningsmateriell av Kamila Łobko-Koziej",
+    "title_part1": "Ressurser for",
+    "title_part2": "Engelsklærere",
+    "subtitle": "Undervisner du i engelsk? Bli inspirert! Her finner du kreativt undervisningsmateriell, engasjerende helårsprosjekter og pedagogiske innovasjoner.",
+    "cta_catalog": "Se katalog",
+    "cta_secondary": "Hvordan fungerer det?",
+    "stats_lessons": "Ferdige leksjoner",
+    "stats_teachers": "Lærere",
+    "stats_rating": "Vurdering",
+    "viewSample": "Se eksempelleksjon",
+    "videoPresentation": "Videopresentasjon",
+    "verifiedBadge": "Verifisert materiell",
+    "testedInClass": "Testet i klasserommet",
+    "materialsCount": "Materiell"
+  },
+  "features": {
+    "header": "Hvorfor velge vårt materiell?",
+    "sub": "Laget med lidenskap og fokus på detaljer",
+    "items": [
+      {
+        "title": "Umiddelbar tilgang",
+        "desc": "Last ned materiellet umiddelbart etter kjøp"
+      },
+      {
+        "title": "Native speaker-innspillinger",
+        "desc": "Profesjonelle lydopptak"
+      },
+      {
+        "title": "Innovasjonsidéer",
+        "desc": "Prosjekter som er klare til å implementeres"
+      },
+      {
+        "title": "Ferdige leksjonsplaner",
+        "desc": "Grundige undervisningsscenarier"
+      },
+      {
+        "title": "Tidsbesparende",
+        "desc": "Utskriftsklart materiell"
+      },
+      {
+        "title": "Testet i praksis",
+        "desc": "Testet i klasserommet"
+      }
+    ]
+  },
+  "categories": {
+    "badge": "Produktkategorier",
+    "browse": "Bla i kategori",
+    "viewCatalog": "Se hele katalogen",
+    "header": "Hva finner du i vår butikk?",
+    "sub": "Velg en kategori og oppdag materiell som vil friske opp leksjonene dine",
+    "items": {
+      "mega-pack": {
+        "title": "Mega Pack",
+        "description": "Omfattende 2-i-1 utdanningspakker – alt materiell + leksjonsplaner for hele året",
+        "label": "pakker"
+      },
+      "scenariusze": {
+        "title": "Leksjonsplaner",
+        "description": "Ferdige leksjonsplaner for hver måned med utskriftsklart materiell",
+        "label": "planer"
+      },
+      "special-lessons": {
+        "title": "Spesialleksjoner",
+        "description": "Materiell for høytider, spesielle dager og anledninger",
+        "label": "sett"
+      },
+      "speakbook": {
+        "title": "Speakbooks",
+        "description": "Interaktive hefter for utvikling av taleferdigheter og ordforråd",
+        "label": "speakbooks"
+      },
+      "stories": {
+        "title": "Stories & Audio",
+        "description": "E-bøker og historier med lydopptak fra morsmålstalere",
+        "label": "historier"
+      },
+      "teatr": {
+        "title": "Teater & Spill",
+        "description": "Teatermanus, brettspill og bevegelsesleker",
+        "label": "materiell"
+      },
+      "zlobek": {
+        "title": "Småbarn",
+        "description": "Materiell for de minste barna",
+        "label": "materiell"
+      },
+      "przedszkole": {
+        "title": "Barnehage",
+        "description": "Materiell for barnehagebarn",
+        "label": "materiell"
+      },
+      "klasy-1-3": {
+        "title": "Trinn 1-3",
+        "description": "Materiell for trinn 1-3",
+        "label": "materiell"
+      },
+      "klasy-4-6": {
+        "title": "Trinn 4-6",
+        "description": "Materiell for trinn 4-6",
+        "label": "materiell"
+      },
+      "klasy-7-8": {
+        "title": "Trinn 7-8",
+        "description": "Materiell for trinn 7-8",
+        "label": "materiell"
+      },
+      "liceum": {
+        "title": "Vgs / Voksne",
+        "description": "Materiell for videregående skole og voksne",
+        "label": "materiell"
+      },
+      "gry": {
+        "title": "Spill",
+        "description": "Spill og aktiviteter",
+        "label": "spill"
+      },
+      "culture": {
+        "title": "Kultur",
+        "description": "Kulturmateriell",
+        "label": "materiell"
+      },
+      "flashcards": {
+        "title": "Flashcards",
+        "description": "Flashcards",
+        "label": "kort"
+      },
+      "inne": {
+        "title": "Annet",
+        "description": "Annet materiell",
+        "label": "materiell"
+      },
+      "pory-roku": {
+        "title": "Årstider",
+        "description": "Sesongmateriell",
+        "label": "materiell"
+      }
+    }
+  },
+  "trustBar": {
+    "securePayments": "Sikre betalinger",
+    "instantAccess": "Umiddelbar tilgang",
+    "happyTeachers": "12000+ fornøyde lærere",
+    "rating": "Vurdering 4.9/5",
+    "saveTime": "Spar tid",
+    "verifiedMaterials": "Verifisert materiell",
+    "multiplePayments": "Flere betalingsmetoder",
+    "downloadInstant": "Last ned umiddelbart",
+    "passion": "Laget med lidenskap",
+    "qualityGuarantee": "Kvalitetsgaranti",
+    "regularUpdates": "Regelmessige oppdateringer",
+    "bonuses": "Bonuser for lojale kunder",
+    "socialCommunity": {
+      "header": "Bli med i vårt fellesskap",
+      "desc": "Over 12 000 engelsklærere deler sine idéer og tilbakemeldinger i vår gruppe. Hold deg oppdatert med nyheter og gratis materiell!",
+      "cta": "Følg oss på Facebook",
+      "followers": "Følgere",
+      "stats": "Nedlastet materiell",
+      "imageAlts": {
+        "speakbook": "Samtaler med Speakbook (Trinn 4-8)",
+        "theater": "Teaterstykker (Trinn 1-6)",
+        "megapack": "Mega Pack – komplette scenarier",
+        "nursery": "Scenarier for barnehage og småbarn",
+        "stories": "Project Stories & Culture Pack",
+        "games": "Spill og aktiviteter for temadager"
+      }
+    }
+  },
+  "testimonials": {
+    "header": "Hva sier lærerne?",
+    "subheader": "Bli med tusenvis av fornøyde engelsklærere",
+    "stats": {
+      "teachers": "Lærere i fellesskapet",
+      "rating": "Gjennomsnittlig vurdering",
+      "materials": "Utviklet materiell",
+      "satisfaction": "Fornøydgaranti"
+    },
+    "reviews": [
+      {
+        "name": "Sarah Wilson",
+        "role": "Engelsklærer, London",
+        "content": "Materiellet er fantastisk! Elevene mine er mer engasjerte enn noen gang. Jeg sparer enormt mye tid på leksjonsforberedelser."
+      },
+      {
+        "name": "James Smith",
+        "role": "Barneskolelærer, Manchester",
+        "content": "Ferdige planer og utskriftsklart materiell er en kjempesuksess. Jeg anbefaler det til alle lærere!"
+      },
+      {
+        "name": "Emily Brown",
+        "role": "Språklærer, Bristol",
+        "content": "Jeg kjøper min tredje pakke og er strålende fornøyd med kvaliteten. Innspillingene med morsmålstalere er uvurderlige!"
+      },
+      {
+        "name": "David Miller",
+        "role": "Ungdomsskolelærer, Birmingham",
+        "content": "Profesjonelt materiell som virkelig fungerer i klasserommet. Verdt investeringen."
+      }
+    ]
+  },
+  "aboutAuthor": {
+    "badge": "Møt forfatteren",
+    "title": "Kamila Łobko-Koziej",
+    "description1": "Jeg er en engelsklærer med over 15 års erfaring med å jobbe med barnehagebarn og elever i grunnskolen. Min lidenskap for undervisning og stadige søken etter kreative metoder inspirerte meg til å lage mitt eget materiell.",
+    "description2": "Jeg tror at det å lære et fremmedspråk kan være et fascinerende eventyr for alle barn. Mitt materiell kombinerer utprøvde pedagogiske metoder med lekelementer, noe som gjør leksjonene engasjerende og effektive.",
+    "stats": {
+      "experience": "års erfaring",
+      "materials": "materiell",
+      "teachers": "lærere",
+      "trainings": "kurs"
+    },
+    "floating": {
+      "line1": "Laget med lidenskap",
+      "line2": "for lærere"
+    }
+  },
+  "contests": {
+    "header": "Ongoing Projects & Contests",
+    "subheader": "Join our educational initiatives and win attractive prizes for your school!",
+    "viewAll": "View all projects",
+    "cta": "Learn more",
+    "platform": "Go to Contest Platform",
+    "stats": {
+      "contests": "Contests",
+      "participants": "Participants yearly",
+      "tradition": "Years of tradition"
+    },
+    "items": {
+      "lingus": {
+        "name": "Linguś",
+        "fullName": "National English Language Contest",
+        "description": "Test your knowledge of the English language"
+      },
+      "matmis": {
+        "name": "MatMiś",
+        "fullName": "National Mathematics Contest",
+        "description": "Develop logical thinking and mathematical skills"
+      }
+    }
+  }
+}

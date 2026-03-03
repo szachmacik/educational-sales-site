@@ -1,0 +1,70 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules/
+**/node_modules/
+package-lock.json
+pnpm-lock.yaml
+
+# next.js
+.next/
+out/
+
+# production
+build/
+
+# debug
+*.log*
+npm-debug.log*
+
+# env files
+.env*
+mcp-integrations/.env
+
+# audit and sensitive reports
+*.json
+!package.json
+!tsconfig.json
+!components.json
+!mcp-integrations/package.json
+!package-lock.json
+/translation_audit_report.json
+/ui-clarity-report.json
+/admin_audit.json
+/audit-report-all.json
+/global_translation_audit.json
+/namespace_audit_report.json
+/audit_results.json
+/leaks.json
+/product_sources.json
+/empty-buttons-report.json
+/audit_sample_utf8.json
+/audit_report.txt
+/audit_report_utf8.txt
+/audit_output.txt
+/serveo_error.txt
+/serveo_output.txt
+/server_logs.txt
+/build-output.txt
+/manus_site.html
+/final-audit.txt
+/manus_assets.js
+*.db
+*.sqlite
+*.exe
+*.dll
+*.so
+*.bin
+*.pt
+*.zip
+*.tar.gz
+*.7z
+.env*
+mcp-integrations/.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

@@ -1,0 +1,198 @@
+{
+  "welcome": "Hallo",
+  "teacher_welcome": "Verwalten Sie Ihre Materialien und Klassen an einem Ort.",
+  "student_welcome": "Bereit für eine neue Dosis Wissen? Sehen Sie, was wir für Sie haben!",
+  "add_materials": "Materialien hinzufügen",
+  "dashboard": {
+    "tabs": {
+      "courses": "Meine Kurse",
+      "materials": "PDF/ZIP-Materialien",
+      "games": "Interaktive Spiele",
+      "wallet": "Mein Wallet"
+    },
+    "materials": {
+      "title": "Ihre digitalen Materialien",
+      "download": "Datei herunterladen",
+      "print": "Materialien drucken",
+      "no_files": "Sie haben noch keine Download-Materialien."
+    },
+    "awards": {
+      "title": "Ihre Ruhmeshalle",
+      "subtitle": "Verdienen Sie Abzeichen für abgeschlossene Lektionen und Spiele!",
+      "mock": {
+        "start": "Schnellstart",
+        "startDesc": "Erste Lektion abgeschlossen",
+        "vocab": "Vokabelmeister",
+        "vocabDesc": "100% im Quiz",
+        "steady": "Systematisch",
+        "steadyDesc": "7 Tage in Folge angemeldet",
+        "polyglot": "Polyglott",
+        "polyglotDesc": "A1-Niveau bestanden"
+      }
+    },
+    "games": {
+      "title": "Online-Spiele-Center",
+      "subtitle": "Lernspiele",
+      "play": "Jetzt spielen",
+      "provider": "Plattform",
+      "no_games": "Keine interaktiven Spiele verfügbar.",
+      "loading": "Spiel wird geladen...",
+      "notice": "In der Vollversion der App würde hier ein interaktiver Iframe von {provider} erscheinen.",
+      "fullscreen": "Vollbild",
+      "report": "Fehler melden"
+    },
+    "sidebar": {
+      "library": "Materialbibliothek",
+      "team": "Meine Klasse / Team",
+      "purchases": "Rechnungen & Käufe",
+      "wallet": "Punkte-Wallet",
+      "settings": "Kontoeinstellungen",
+      "myLessons": "Meine Lektionen",
+      "interactiveGames": "Spiele & Spaß",
+      "myAwards": "Meine Auszeichnungen",
+      "myProfile": "Mein Profil",
+      "rank": "Anfänger-Lehrer",
+      "points": "Pkt.",
+      "nextRank": "Zum Expertenlevel"
+    },
+    "subscription": {
+      "title": "Ihr Plan",
+      "activeClasses": "Aktive Klassen",
+      "unlimited": "Unbegrenzt",
+      "export": "Materialexport",
+      "active": "Aktiv",
+      "aiCredits": "AI-Credits",
+      "classes": "Klassen",
+      "limitReached": "Gratis-Plan-Limit erreicht",
+      "upgrade": "Plan upgraden"
+    },
+    "purchases": {
+      "loading": "Verlauf wird geladen...",
+      "title": "Kaufverlauf",
+      "empty": "Keine Bestellungen",
+      "emptyDesc": "Sie haben noch keine Käufe getätigt. Besuchen Sie den Shop für verfügbare Materialien.",
+      "goToShop": "Zum Shop",
+      "moreItems": "mehr",
+      "invoice": "Rechnung"
+    },
+    "course": {
+      "notFound": "Kurs nicht gefunden",
+      "selectLesson": "Wählen Sie eine Lektion aus dem Menü.",
+      "backToDashboard": "Zurück zum Dashboard",
+      "prevLesson": "Vorherige Lektion",
+      "nextLesson": "Nächste Lektion",
+      "complete": "Als abgeschlossen markieren",
+      "completed": "Abgeschlossen",
+      "backToCourses": "Meine Kurse",
+      "playVideo": "VIDEO ABSPIELEN",
+      "gameTitle": "Interaktives Online-Spiel",
+      "gameDesc": "Dieses Material wurde automatisch generiert. Klicken Sie auf die Schaltfläche unten, um das Spiel in einem neuen Fenster zu öffnen.",
+      "gameBtn": "Spiel jetzt öffnen",
+      "introduction": "Einführung",
+      "materialsTitle": "Lektionsmaterialien",
+      "viewingInstructions": "Wählen Sie eine Lektion aus dem Menü.",
+      "finishCourse": "Kurs abschließen",
+      "teachingModes": {
+        "online": "Online",
+        "stationary": "Präsenz",
+        "hybrid": "Hybrid"
+      }
+    },
+    "library": {
+      "title": "Ihre Bibliothek",
+      "recent": "Kürzlich gekauft",
+      "downloadZip": "Alle herunterladen (ZIP)",
+      "browseFiles": "Dateien durchsuchen",
+      "progress": "Ihr Fortschritt",
+      "progressDesc": "{percent}% der Materialien aus {pack} abgeschlossen.",
+      "level": "Level",
+      "open": "Paket öffnen",
+      "preview": "Interaktive Vorschau",
+      "previewGame": "Spielvorschau",
+      "filters": {
+        "all": "Alle",
+        "pdf": "E-Books & PDF",
+        "audio": "Audio",
+        "courses": "Online-Kurse"
+      },
+      "badges": {
+        "game": "Lernspiel",
+        "pack": "Paket"
+      },
+      "stats": {
+        "files": "Dateien",
+        "more": "mehr"
+      },
+      "discover": {
+        "title": "Entdecken Sie mehr Materialien",
+        "desc": "Durchsuchen Sie den Shop und fügen Sie neue Pakete zu Ihrer Bibliothek hinzu.",
+        "btn": "Zum Shop"
+      }
+    },
+    "studentTasks": {
+      "title": "Ihre Aufgaben & Materialien",
+      "assignee": "Lehrer",
+      "due": "Fällig",
+      "status": {
+        "todo": "Zu erledigen",
+        "inProgress": "In Bearbeitung",
+        "available": "Verfügbar"
+      },
+      "actions": {
+        "start": "Starten",
+        "open": "Öffnen"
+      },
+      "mock": {
+        "homework": "Hausaufgabe: Present Simple",
+        "teacher": "Lehrer Jane",
+        "tomorrow": "Morgen, 14:00",
+        "quiz": "Quiz: Tiere",
+        "friday": "Freitag",
+        "ebook": "E-Book: Grammatik-Grundlagen",
+        "system": "System"
+      }
+    },
+    "team": {
+      "title": "Meine Klasse / Team",
+      "subtitle": "Teilen Sie Materialien mit Ihren Schülern",
+      "create_class": "Neue Klasse erstellen",
+      "students_count": "{count} Schüler",
+      "created_at": "Erstellt: {date}",
+      "access_code": "Schüler-Zugangscode",
+      "shared_materials": "Geteilte Materialien ({count})",
+      "manage_btn": "Zugang verwalten",
+      "empty": {
+        "title": "Neue Klasse",
+        "desc": "Erstellen Sie eine Gruppe für Ihre Schüler, um Materialien zu teilen und Fortschritte zu verfolgen.",
+        "btn": "Einrichtung starten"
+      },
+      "pro": {
+        "active": "Ihr PRO-Plan ist aktiv",
+        "unlock": "Unbegrenzte Klassen freischalten",
+        "desc": "Der PRO-Plan für Lehrer ermöglicht unbegrenzte Gruppen, bis zu 100 Schüler und Zugang zu automatischen Quiz-Generatoren.",
+        "upgrade": "Auf PRO für $12 upgraden",
+        "status": "Aktiv"
+      }
+    },
+    "wallet": {
+      "title": "Ihr Bildungs-Wallet",
+      "subtitle": "Sammeln Sie Punkte für Käufe und Aktivitäten. Tauschen Sie sie gegen Rabatte!",
+      "available": "Verfügbare Mittel",
+      "value": "Wert in {currency}",
+      "points": "Pkt.",
+      "spend": "Punkte im Shop ausgeben",
+      "history": "Letzte Aktivität",
+      "mock": {
+        "purchase": "Kauf: Mega Pack A1-A2",
+        "bonus": "Willkommensbonus",
+        "today": "Heute",
+        "daysAgo": "vor {count} Tagen"
+      }
+    },
+    "certificates": {
+      "none": "Keine Zertifikate",
+      "teacher_desc": "Zertifikate werden nach Abschluss von 'Masterclass'-Kursen vergeben.",
+      "student_desc": "Schließen Sie den Kurs zu 100% ab, um Ihr Diplom zu erhalten!"
+    }
+  }
+}

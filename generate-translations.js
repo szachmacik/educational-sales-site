@@ -1,0 +1,208 @@
+// Helper script to generate translation templates for new languages
+// This creates baseline translations that can be refined later
+
+const fs = require('fs');
+const path = require('path');
+
+// New languages to add
+const newLanguages = {
+    hu: { name: 'Hungarian', nativeName: 'Magyar' },
+    pt: { name: 'Portuguese', nativeName: 'Português' },
+    lt: { name: 'Lithuanian', nativeName: 'Lietuvių' },
+    lv: { name: 'Latvian', nativeName: 'Latviešu' },
+    et: { name: 'Estonian', nativeName: 'Eesti' },
+    hr: { name: 'Croatian', nativeName: 'Hrvatski' },
+    sr: { name: 'Serbian', nativeName: 'Српски' },
+    sl: { name: 'Slovenian', nativeName: 'Slovenščina' },
+    bg: { name: 'Bulgarian', nativeName: 'Български' },
+    el: { name: 'Greek', nativeName: 'Ελληνικά' }
+};
+
+// Machine translations for key UI strings
+const translations = {
+    hu: {
+        products: "Termékek", materialy: "Anyagok", blog: "Blog", contact: "Kapcsolat",
+        login: "Bejelentkezés", logout: "Kijelentkezés", myAccount: "Fiókom",
+        dashboard: "Vezérlőpult", allCategories: "Minden kategória",
+        searchPlaceholder: "Termékek keresése...", search: "Keresés",
+        filterByCategory: "Szűrés kategória szerint", filterByAge: "Szűrés kor szerint",
+        clearFilters: "Szűrők törlése", productsFound: "termék találva",
+        sortBy: "Rendezés", newest: "Legújabb", oldest: "Legrégebbi",
+        priceAsc: "Ár: növekvő", priceDesc: "Ár: csökkenő", nameAsc: "Név: A-Z",
+        nameDesc: "Név: Z-A", header: "Termékek", sub: "Fedezze fel oktatási anyagainkat",
+        addToCart: "Kosárba", notFound: "Termék nem található",
+        backToStore: "Vissza a boltba", description: "Leírás",
+        share: "Megosztás", securePurchase: "Biztonságos vásárlás",
+        instantAccess: "Azonnali hozzáférés a fájlokhoz", digitalFormat: "Digitális formátum",
+        pdfInfo: "Nyomtatásra kész PDF fájlokat kap", seeAlso: "Lásd még",
+        bestseller: "Bestseller", toastAdded: "Kosárba helyezve",
+        toastCopied: "Link másolva", toastCopiedDesc: "Termék link vágólapra másolva"
+    },
+    pt: {
+        products: "Produtos", materialy: "Materiais", blog: "Blog", contact: "Contacto",
+        login: "Entrar", logout: "Sair", myAccount: "Minha Conta",
+        dashboard: "Painel", allCategories: "Todas as categorias",
+        searchPlaceholder: "Pesquisar produtos...", search: "Pesquisar",
+        filterByCategory: "Filtrar por categoria", filterByAge: "Filtrar por idade",
+        clearFilters: "Limpar filtros", productsFound: "produtos encontrados",
+        sortBy: "Ordenar por", newest: "Mais recente", oldest: "Mais antigo",
+        priceAsc: "Preço: crescente", priceDesc: "Preço: decrescente", nameAsc: "Nome: A-Z",
+        nameDesc: "Nome: Z-A", header: "Produtos", sub: "Explore os nossos materiais educativos",
+        addToCart: "Adicionar ao carrinho", notFound: "Produto não encontrado",
+        backToStore: "Voltar à loja", description: "Descrição",
+        share: "Partilhar", securePurchase: "Compra segura",
+        instantAccess: "Acesso instantâneo aos ficheiros", digitalFormat: "Formato digital",
+        pdfInfo: "Receberá ficheiros PDF prontos para imprimir", seeAlso: "Veja também",
+        bestseller: "Bestseller", toastAdded: "Adicionado ao carrinho",
+        toastCopied: "Link copiado", toastCopiedDesc: "Link do produto copiado para a área de transferência"
+    },
+    lt: {
+        products: "Produktai", materialy: "Medžiagos", blog: "Tinklaraštis", contact: "Kontaktai",
+        login: "Prisijungti", logout: "Atsijungti", myAccount: "Mano paskyra",
+        dashboard: "Valdymo skydas", allCategories: "Visos kategorijos",
+        searchPlaceholder: "Ieškoti produktų...", search: "Ieškoti",
+        filterByCategory: "Filtruoti pagal kategoriją", filterByAge: "Filtruoti pagal amžių",
+        clearFilters: "Išvalyti filtrus", productsFound: "produktų rasta",
+        sortBy: "Rūšiuoti pagal", newest: "Naujausi", oldest: "Seniausi",
+        priceAsc: "Kaina: didėjančia", priceDesc: "Kaina: mažėjančia", nameAsc: "Pavadinimas: A-Z",
+        nameDesc: "Pavadinimas: Z-A", header: "Produktai", sub: "Atraskite mūsų mokymo medžiagas",
+        addToCart: "Į krepšelį", notFound: "Produktas nerastas",
+        backToStore: "Atgal į parduotuvę", description: "Aprašymas",
+        share: "Dalintis", securePurchase: "Saugus pirkimas",
+        instantAccess: "Momentinis prieiga prie failų", digitalFormat: "Skaitmeninis formatas",
+        pdfInfo: "Gausite spausdinimui paruoštus PDF failus", seeAlso: "Taip pat žiūrėkite",
+        bestseller: "Bestseller", toastAdded: "Pridėta į krepšelį",
+        toastCopied: "Nuoroda nukopijuota", toastCopiedDesc: "Produkto nuoroda nukopijuota į iškarpinę"
+    },
+    lv: {
+        products: "Produkti", materialy: "Materiāli", blog: "Blogs", contact: "Kontakti",
+        login: "Pieslēgties", logout: "Izrakstīties", myAccount: "Mans konts",
+        dashboard: "Vadības panelis", allCategories: "Visas kategorijas",
+        searchPlaceholder: "Meklēt produktus...", search: "Meklēt",
+        filterByCategory: "Filtrēt pēc kategorijas", filterByAge: "Filtrēt pēc vecuma",
+        clearFilters: "Notīrīt filtrus", productsFound: "produkti atrasti",
+        sortBy: "Kārtot pēc", newest: "Jaunākie", oldest: "Vecākie",
+        priceAsc: "Cena: augoša", priceDesc: "Cena: dilstoša", nameAsc: "Nosaukums: A-Z",
+        nameDesc: "Nosaukums: Z-A", header: "Produkti", sub: "Izpētiet mūsu izglītības materiālus",
+        addToCart: "Grozā", notFound: "Produkts nav atrasts",
+        backToStore: "Atpakaļ uz veikalu", description: "Apraksts",
+        share: "Dalīties", securePurchase: "Droša pirkšana",
+        instantAccess: "Tūlītēja piekļuve failiem", digitalFormat: "Digitālais formāts",
+        pdfInfo: "Jūs saņemsiet drukāšanai gatavus PDF failus", seeAlso: "Skatīt arī",
+        bestseller: "Bestseller", toastAdded: "Pievienots grozam",
+        toastCopied: "Saite nokopēta", toastCopiedDesc: "Produkta saite nokopēta starpliktuvē"
+    },
+    et: {
+        products: "Tooted", materialy: "Materjalid", blog: "Blogi", contact: "Kontakt",
+        login: "Logi sisse", logout: "Logi välja", myAccount: "Minu konto",
+        dashboard: "Juhtpaneel", allCategories: "Kõik kategooriad",
+        searchPlaceholder: "Otsi tooteid...", search: "Otsi",
+        filterByCategory: "Filtreeri kategooria järgi", filterByAge: "Filtreeri vanuse järgi",
+        clearFilters: "Tühista filtrid", productsFound: "toodet leitud",
+        sortBy: "Sorteeri", newest: "Uusimad", oldest: "Vanimad",
+        priceAsc: "Hind: kasvav", priceDesc: "Hind: kahanev", nameAsc: "Nimi: A-Z",
+        nameDesc: "Nimi: Z-A", header: "Tooted", sub: "Avasta meie õppematerjale",
+        addToCart: "Ostukorvi", notFound: "Toodet ei leitud",
+        backToStore: "Tagasi poodi", description: "Kirjeldus",
+        share: "Jaga", securePurchase: "Turvaline ost",
+        instantAccess: "Kohene juurdepääs failidele", digitalFormat: "Digitaalne formaat",
+        pdfInfo: "Saate printimiseks valmis PDF-failid", seeAlso: "Vaata ka",
+        bestseller: "Bestseller", toastAdded: "Lisatud ostukorvi",
+        toastCopied: "Link kopeeritud", toastCopiedDesc: "Toote link kopeeritud lõikelauale"
+    },
+    hr: {
+        products: "Proizvodi", materialy: "Materijali", blog: "Blog", contact: "Kontakt",
+        login: "Prijava", logout: "Odjava", myAccount: "Moj račun",
+        dashboard: "Nadzorna ploča", allCategories: "Sve kategorije",
+        searchPlaceholder: "Pretraži proizvode...", search: "Pretraži",
+        filterByCategory: "Filtriraj po kategoriji", filterByAge: "Filtriraj po dobi",
+        clearFilters: "Očisti filtre", productsFound: "proizvoda pronađeno",
+        sortBy: "Sortiraj po", newest: "Najnovije", oldest: "Najstarije",
+        priceAsc: "Cijena: rastuća", priceDesc: "Cijena: padajuća", nameAsc: "Naziv: A-Z",
+        nameDesc: "Naziv: Z-A", header: "Proizvodi", sub: "Istražite naše obrazovne materijale",
+        addToCart: "U košaricu", notFound: "Proizvod nije pronađen",
+        backToStore: "Natrag u trgovinu", description: "Opis",
+        share: "Podijeli", securePurchase: "Sigurna kupnja",
+        instantAccess: "Trenutni pristup datotekama", digitalFormat: "Digitalni format",
+        pdfInfo: "Primit ćete PDF datoteke spremne za ispis", seeAlso: "Pogledajte također",
+        bestseller: "Bestseller", toastAdded: "Dodano u košaricu",
+        toastCopied: "Link kopiran", toastCopiedDesc: "Link proizvoda kopiran u međuspremnik"
+    },
+    sr: {
+        products: "Proizvodi", materialy: "Materijali", blog: "Blog", contact: "Kontakt",
+        login: "Prijava", logout: "Odjava", myAccount: "Moj nalog",
+        dashboard: "Kontrolna tabla", allCategories: "Sve kategorije",
+        searchPlaceholder: "Pretraži proizvode...", search: "Pretraži",
+        filterByCategory: "Filtriraj po kategoriji", filterByAge: "Filtriraj po uzrastu",
+        clearFilters: "Očisti filtere", productsFound: "proizvoda pronađeno",
+        sortBy: "Sortiraj po", newest: "Najnovije", oldest: "Najstarije",
+        priceAsc: "Cena: rastuća", priceDesc: "Cena: opadajuća", nameAsc: "Naziv: A-Z",
+        nameDesc: "Naziv: Z-A", header: "Proizvodi", sub: "Istražite naše obrazovne materijale",
+        addToCart: "U korpu", notFound: "Proizvod nije pronađen",
+        backToStore: "Nazad u prodavnicu", description: "Opis",
+        share: "Podeli", securePurchase: "Sigurna kupovina",
+        instantAccess: "Trenutni pristup fajlovima", digitalFormat: "Digitalni format",
+        pdfInfo: "Dobićete PDF fajlove spremne za štampu", seeAlso: "Pogledajte takođe",
+        bestseller: "Bestseller", toastAdded: "Dodato u korpu",
+        toastCopied: "Link kopiran", toastCopiedDesc: "Link proizvoda kopiran u clipboard"
+    },
+    sl: {
+        products: "Izdelki", materialy: "Materiali", blog: "Blog", contact: "Kontakt",
+        login: "Prijava", logout: "Odjava", myAccount: "Moj račun",
+        dashboard: "Nadzorna plošča", allCategories: "Vse kategorije",
+        searchPlaceholder: "Išči izdelke...", search: "Išči",
+        filterByCategory: "Filtriraj po kategoriji", filterByAge: "Filtriraj po starosti",
+        clearFilters: "Počisti filtre", productsFound: "izdelkov najdenih",
+        sortBy: "Razvrsti po", newest: "Najnovejše", oldest: "Najstarejše",
+        priceAsc: "Cena: naraščajoče", priceDesc: "Cena: padajoče", nameAsc: "Ime: A-Z",
+        nameDesc: "Ime: Z-A", header: "Izdelki", sub: "Raziščite naše izobraževalne materiale",
+        addToCart: "V košarico", notFound: "Izdelek ni najden",
+        backToStore: "Nazaj v trgovino", description: "Opis",
+        share: "Deli", securePurchase: "Varen nakup",
+        instantAccess: "Takojšen dostop do datotek", digitalFormat: "Digitalni format",
+        pdfInfo: "Prejeli boste PDF datoteke pripravljene za tisk", seeAlso: "Glejte tudi",
+        bestseller: "Bestseller", toastAdded: "Dodano v košarico",
+        toastCopied: "Povezava kopirana", toastCopiedDesc: "Povezava izdelka kopirana v odložišče"
+    },
+    bg: {
+        products: "Продукти", materialy: "Материали", blog: "Блог", contact: "Контакт",
+        login: "Вход", logout: "Изход", myAccount: "Моят акаунт",
+        dashboard: "Табло", allCategories: "Всички категории",
+        searchPlaceholder: "Търсене на продукти...", search: "Търсене",
+        filterByCategory: "Филтриране по категория", filterByAge: "Филтриране по възраст",
+        clearFilters: "Изчистване на филтри", productsFound: "намерени продукти",
+        sortBy: "Сортиране по", newest: "Най-нови", oldest: "Най-стари",
+        priceAsc: "Цена: възходяща", priceDesc: "Цена: низходяща", nameAsc: "Име: A-Z",
+        nameDesc: "Име: Z-A", header: "Продукти", sub: "Разгледайте нашите образователни материали",
+        addToCart: "В количката", notFound: "Продуктът не е намерен",
+        backToStore: "Обратно в магазина", description: "Описание",
+        share: "Споделяне", securePurchase: "Сигурна покупка",
+        instantAccess: "Незабавен достъп до файлове", digitalFormat: "Цифров формат",
+        pdfInfo: "Ще получите PDF файлове готови за печат", seeAlso: "Вижте също",
+        bestseller: "Бестселър", toastAdded: "Добавено в количката",
+        toastCopied: "Връзката е копирана", toastCopiedDesc: "Връзката към продукта е копирана в клипборда"
+    },
+    el: {
+        products: "Προϊόντα", materialy: "Υλικά", blog: "Ιστολόγιο", contact: "Επικοινωνία",
+        login: "Σύνδεση", logout: "Αποσύνδεση", myAccount: "Ο λογαριασμός μου",
+        dashboard: "Πίνακας ελέγχου", allCategories: "Όλες οι κατηγορίες",
+        searchPlaceholder: "Αναζήτηση προϊόντων...", search: "Αναζήτηση",
+        filterByCategory: "Φιλτράρισμα κατά κατηγορία", filterByAge: "Φιλτράρισμα κατά ηλικία",
+        clearFilters: "Εκκαθάριση φίλτρων", productsFound: "προϊόντα βρέθηκαν",
+        sortBy: "Ταξινόμηση κατά", newest: "Νεότερα", oldest: "Παλαιότερα",
+        priceAsc: "Τιμή: αύξουσα", priceDesc: "Τιμή: φθίνουσα", nameAsc: "Όνομα: A-Z",
+        nameDesc: "Όνομα: Z-A", header: "Προϊόντα", sub: "Εξερευνήστε τα εκπαιδευτικά μας υλικά",
+        addToCart: "Στο καλάθι", notFound: "Το προϊόν δεν βρέθηκε",
+        backToStore: "Επιστροφή στο κατάστημα", description: "Περιγραφή",
+        share: "Κοινοποίηση", securePurchase: "Ασφαλής αγορά",
+        instantAccess: "Άμεση πρόσβαση στα αρχεία", digitalFormat: "Ψηφιακή μορφή",
+        pdfInfo: "Θα λάβετε αρχεία PDF έτοιμα για εκτύπωση", seeAlso: "Δείτε επίσης",
+        bestseller: "Bestseller", toastAdded: "Προστέθηκε στο καλάθι",
+        toastCopied: "Ο σύνδεσμος αντιγράφηκε", toastCopiedDesc: "Ο σύνδεσμος του προϊόντος αντιγράφηκε στο πρόχειρο"
+    }
+};
+
+console.log('Translation data prepared for', Object.keys(newLanguages).length, 'languages');
+console.log('Ready to add to translations.ts');
+
+module.exports = { newLanguages, translations };

@@ -1,0 +1,243 @@
+{
+  "hero": {
+    "badge": "Materiale educaționale de Kamila Łobko-Koziej",
+    "title_part1": "Resurse pentru",
+    "title_part2": "Profesorii de Engleză",
+    "subtitle": "Predați limba engleză? Lăsați-vă inspirați! Găsiți aici materiale didactice creative, proiecte anuale captivante și inovații pedagogice.",
+    "cta_catalog": "Vezi catalogul",
+    "cta_secondary": "Cum funcționează?",
+    "stats_lessons": "Lecții gata făcute",
+    "stats_teachers": "Profesori",
+    "stats_rating": "Evaluare",
+    "viewSample": "Vezi exemplu",
+    "videoPresentation": "Prezentare video",
+    "verifiedBadge": "Materiale verificate",
+    "testedInClass": "Testat la clasă",
+    "materialsCount": "Materiale"
+  },
+  "features": {
+    "header": "De ce să alegeți materialele noastre?",
+    "sub": "Creat cu pasiune și atenție la detalii",
+    "items": [
+      {
+        "title": "Acces instantanue",
+        "desc": "Descărcați materialele imediat după cumpărare"
+      },
+      {
+        "title": "Înregistrări de la vorbitori nativi",
+        "desc": "Înregistrări audio profesionale"
+      },
+      {
+        "title": "Idei de inovare",
+        "desc": "Proiecte gata de implementare"
+      },
+      {
+        "title": "Planuri de lecții gata făcute",
+        "desc": "Scenarii de lecție detaliate"
+      },
+      {
+        "title": "Economie de timp",
+        "desc": "Materiale gata de imprimat"
+      },
+      {
+        "title": "Testat în practică",
+        "desc": "Testat la clasă"
+      }
+    ]
+  },
+  "categories": {
+    "badge": "Categorii de Produse",
+    "browse": "Răsfoiește categoria",
+    "viewCatalog": "Vezi tot catalogul",
+    "header": "Ce veți găsi în magazinul nostru?",
+    "sub": "Alegeți o categorie și descoperiți materiale care vă vor îmbogăți lecțiile",
+    "items": {
+      "mega-pack": {
+        "title": "Mega Pachet",
+        "description": "Pachete educaționale complete 2-în-1 - toate materialele + planuri de lecție anuale",
+        "label": "pachete"
+      },
+      "scenariusze": {
+        "title": "Planuri de Lecție",
+        "description": "Planuri de lecție gata de utilizare lună de lună cu materiale imprimabile",
+        "label": "planuri"
+      },
+      "special-lessons": {
+        "title": "Lecții Speciale",
+        "description": "Materiale pentru sărbători, zile neobișnuite și ocazii speciale",
+        "label": "seturi"
+      },
+      "speakbook": {
+        "title": "Speakbooks",
+        "description": "Cărticele interactive pentru dezvoltarea vorbirii și vocabularului",
+        "label": "speakbooks"
+      },
+      "stories": {
+        "title": "Povești și Audio",
+        "description": "Cărți electronice și povești cu înregistrări audio de la vorbitori nativi",
+        "label": "povești"
+      },
+      "teatr": {
+        "title": "Teatru și Jocuri",
+        "description": "Scenarii de teatru, jocuri de societate și activități de mișcare",
+        "label": "materiale"
+      },
+      "zlobek": {
+        "title": "Creșă",
+        "description": "Materiale pentru copii mici",
+        "label": "materiale"
+      },
+      "przedszkole": {
+        "title": "Grădiniță",
+        "description": "Materiale pentru preșcolari",
+        "label": "materiale"
+      },
+      "klasy-1-3": {
+        "title": "Clasele 1-3",
+        "description": "Materiale pentru clasele 1-3",
+        "label": "materiale"
+      },
+      "klasy-4-6": {
+        "title": "Clasele 4-6",
+        "description": "Materiale pentru clasele 4-6",
+        "label": "materiale"
+      },
+      "klasy-7-8": {
+        "title": "Clasele 7-8",
+        "description": "Materiale pentru clasele 7-8",
+        "label": "materiale"
+      },
+      "liceum": {
+        "title": "Liceu / Adulți",
+        "description": "Materiale pentru liceu și adulți",
+        "label": "materiale"
+      },
+      "gry": {
+        "title": "Jocuri",
+        "description": "Jocuri și activități",
+        "label": "jocuri"
+      },
+      "culture": {
+        "title": "Cultură",
+        "description": "Materiale culturale",
+        "label": "materiale"
+      },
+      "flashcards": {
+        "title": "Flashcards",
+        "description": "Carduri de memorie",
+        "label": "carduri"
+      },
+      "inne": {
+        "title": "Altele",
+        "description": "Alte materiale",
+        "label": "materiale"
+      },
+      "pory-roku": {
+        "title": "Anotimpuri",
+        "description": "Materiale sezoniere",
+        "label": "materiale"
+      }
+    }
+  },
+  "trustBar": {
+    "securePayments": "Plăți sigure",
+    "instantAccess": "Acces imediat",
+    "happyTeachers": "12000+ profesori mulțumiți",
+    "rating": "Evaluare 4.9/5",
+    "saveTime": "Economisește timp",
+    "verifiedMaterials": "Materiale verificate",
+    "multiplePayments": "Metode de plată multiple",
+    "downloadInstant": "Descărcare instantanee",
+    "passion": "Creat cu pasiune",
+    "qualityGuarantee": "Garanție de calitate",
+    "regularUpdates": "Actualizat regulat",
+    "bonuses": "Bonusuri pentru clienți loiali",
+    "socialCommunity": {
+      "header": "Alătură-te comunității noastre",
+      "desc": "Peste 12.000 de profesori de limba engleză împărtășesc idei și opinii în grupul nostru. Fiți la curent cu noutățile și materialele gratuite!",
+      "cta": "Urmărește-ne pe Facebook",
+      "followers": "Urmăritori",
+      "stats": "Materiale descărcate",
+      "imageAlts": {
+        "speakbook": "Conversations with Speakbook (Grades 4-8)",
+        "theater": "Theater Plays (Grades 1-6)",
+        "megapack": "Mega Pack - complete scenarios",
+        "nursery": "Scenarios for Nursery and Preschool",
+        "stories": "Project Stories & Culture Pack",
+        "games": "Games and activities for Special Lesson Days"
+      }
+    }
+  },
+  "testimonials": {
+    "header": "Ce spun profesorii?",
+    "subheader": "Alăturați-vă miilor de profesori de engleză mulțumiți",
+    "stats": {
+      "teachers": "Profesori în comunitate",
+      "rating": "Evaluare medie",
+      "materials": "Materiale dezvoltate",
+      "satisfaction": "Garanție de satisfacție"
+    },
+    "reviews": [
+      {
+        "name": "Ana Ionescu",
+        "role": "Profesor de engleză, București",
+        "content": "Materialele sunt fantastice! Elevii mei sunt implicați ca niciodată. Economisesc o tonă de timp cu pregătirea lecțiilor."
+      },
+      {
+        "name": "Andrei Popescu",
+        "role": "Profesor de școală primară, Cluj-Napoca",
+        "content": "Planurile gata de utilizare și materialele imprimabile sunt un succes. Le recomand fiecărui profesor!"
+      },
+      {
+        "name": "Elena Dumitrescu",
+        "role": "Profesor, Iași",
+        "content": "Cumpăr deja al treilea pachet și sunt încântată de calitate. Înregistrările de la vorbitori nativi sunt inestimabile!"
+      },
+      {
+        "name": "Mihai Stoica",
+        "role": "Profesor de liceu, Timișoara",
+        "content": "Materiale profesionale care funcționează cu adevărat la clasă. Merită investiția."
+      }
+    ]
+  },
+  "aboutAuthor": {
+    "badge": "Cunoașteți autoarea",
+    "title": "Kamila Łobko-Koziej",
+    "description1": "Sunt profesoară de engleză cu peste 15 ani de experiență în lucrul cu copiii preșcolari și școlari mici. Pasiunea mea pentru predare și căutarea constantă a unor metode creative de predare m-au inspirat să creez materiale educaționale originale.",
+    "description2": "Cred că învățarea unei limbi străine poate fi o aventură fascinantă pentru fiecare copil. Materialele mele combină metode pedagogice dovedite cu elemente de joc, făcând cursurile atractive și eficiente.",
+    "stats": {
+      "experience": "ani de experiență",
+      "materials": "materiale",
+      "teachers": "profesori",
+      "trainings": "traininguri"
+    },
+    "floating": {
+      "line1": "Creat cu pasiune",
+      "line2": "pentru profesori"
+    }
+  },
+  "contests": {
+    "header": "Ongoing Projects & Contests",
+    "subheader": "Join our educational initiatives and win attractive prizes for your school!",
+    "viewAll": "View all projects",
+    "cta": "Learn more",
+    "platform": "Go to Contest Platform",
+    "stats": {
+      "contests": "Contests",
+      "participants": "Participants yearly",
+      "tradition": "Years of tradition"
+    },
+    "items": {
+      "lingus": {
+        "name": "Linguś",
+        "fullName": "National English Language Contest",
+        "description": "Test your knowledge of the English language"
+      },
+      "matmis": {
+        "name": "MatMiś",
+        "fullName": "National Mathematics Contest",
+        "description": "Develop logical thinking and mathematical skills"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "usr_admin",
+    "name": "Admin User",
+    "email": "admin@example.com",
+    "role": "admin",
+    "passwordHash": "$2b$10$EpOku.k7A/1Zj5n4vj.u..C7A.z/...",
+    "isAdmin": true
+  },
+  {
+    "id": "usr_std",
+    "name": "Demo Teacher",
+    "email": "user@example.com",
+    "role": "user",
+    "passwordHash": "$2b$10$EpOku.k7A/1Zj5n4vj.u..C7A.z/...",
+    "isAdmin": false,
+    "purchasedProducts": []
+  }
+]

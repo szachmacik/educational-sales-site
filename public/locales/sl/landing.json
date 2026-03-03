@@ -1,0 +1,243 @@
+{
+  "hero": {
+    "badge": "Izobraževalna gradiva Kamile Łobko-Koziej",
+    "title_part1": "Viri za",
+    "title_part2": "Učitelje angleščine",
+    "subtitle": "Poučujete angleščino? Navdihnite se! Tukaj poiščite ustvarjalna učna gradiva, zanimive celoletne projekte in pedagoške inovacije.",
+    "cta_catalog": "Oglej si katalog",
+    "cta_secondary": "Kako deluje?",
+    "stats_lessons": "Pripravljene lekcije",
+    "stats_teachers": "Učitelji",
+    "stats_rating": "Rating",
+    "viewSample": "Oglej si vzorec",
+    "videoPresentation": "Video predstavitev",
+    "verifiedBadge": "Preverjena gradiva",
+    "testedInClass": "Preizkušeno v razredu",
+    "materialsCount": "Gradiva"
+  },
+  "features": {
+    "header": "Zakaj izbrati naša gradiva?",
+    "sub": "Ustvarjeno s strastjo in pozornostjo do podrobnosti",
+    "items": [
+      {
+        "title": "Takojšen dostop",
+        "desc": "Prenesite gradiva takoj po nakupu"
+      },
+      {
+        "title": "Posnetki naravnih govorcev",
+        "desc": "Profesionalni avdio posnetki"
+      },
+      {
+        "title": "Ideje za inovacije",
+        "desc": "Projekti, pripravljeni za izvedbo"
+      },
+      {
+        "title": "Pripravljeni učni načrti",
+        "desc": "Podrobni scenariji lekcij"
+      },
+      {
+        "title": "Prihranek časa",
+        "desc": "Gradiva, pripravljena za tisk"
+      },
+      {
+        "title": "Preizkušeno v praksi",
+        "desc": "Preizkušeno v razredu"
+      }
+    ]
+  },
+  "categories": {
+    "badge": "Kategorije izdelkov",
+    "browse": "Brskaj po kategoriji",
+    "viewCatalog": "Oglej si celoten katalog",
+    "header": "Kaj boste našli v naši trgovini?",
+    "sub": "Izberite kategorijo in odkrijte gradiva, ki bodo obogatila vaše lekcije",
+    "items": {
+      "mega-pack": {
+        "title": "Mega Paket",
+        "description": "Celoviti izobraževalni paketi 2-v-1 - vsa gradiva + celoletni učni načrti",
+        "label": "paketi"
+      },
+      "scenariusze": {
+        "title": "Učni načrti",
+        "description": "Učni scenariji pripravljeni za uporabo iz meseca v mesec z gradivi za tiskanje",
+        "label": "načrti"
+      },
+      "special-lessons": {
+        "title": "Posebne lekcije",
+        "description": "Gradiva za praznike, neobičajne dneve in posebne priložnosti",
+        "label": "kompleti"
+      },
+      "speakbook": {
+        "title": "Govorne knjige",
+        "description": "Interaktivne knjižice za razvoj govora in besedišča",
+        "label": "knjige"
+      },
+      "stories": {
+        "title": "Zgodbe in Avdio",
+        "description": "E-knjige in zgodbe z zvočnimi posnetki naravnih govorcev",
+        "label": "zgodbe"
+      },
+      "teatr": {
+        "title": "Gledališče in Igre",
+        "description": "Gledališki scenariji, družabne igre in gibalne dejavnosti",
+        "label": "gradiva"
+      },
+      "zlobek": {
+        "title": "Jasli",
+        "description": "Gradiva za malčke",
+        "label": "gradiva"
+      },
+      "przedszkole": {
+        "title": "Vrtec",
+        "description": "Gradiva za predšolske otroke",
+        "label": "gradiva"
+      },
+      "klasy-1-3": {
+        "title": "1.-3. razred",
+        "description": "Gradiva za 1.-3. razred",
+        "label": "gradiva"
+      },
+      "klasy-4-6": {
+        "title": "4.-6. razred",
+        "description": "Gradiva za 4.-6. razred",
+        "label": "gradiva"
+      },
+      "klasy-7-8": {
+        "title": "7.-8. razred",
+        "description": "Gradiva za 7.-8. razred",
+        "label": "gradiva"
+      },
+      "liceum": {
+        "title": "Srednja šola / Odrasli",
+        "description": "Gradiva za srednjo šolo in odrasle",
+        "label": "gradiva"
+      },
+      "gry": {
+        "title": "Igre",
+        "description": "Igre in dejavnosti",
+        "label": "igre"
+      },
+      "culture": {
+        "title": "Culture",
+        "description": "Kulturna gradiva",
+        "label": "gradiva"
+      },
+      "flashcards": {
+        "title": "Kartice",
+        "description": "Učne kartice (Flashcards)",
+        "label": "kartice"
+      },
+      "inne": {
+        "title": "Ostalo",
+        "description": "Ostala gradiva",
+        "label": "gradiva"
+      },
+      "pory-roku": {
+        "title": "Letni časi",
+        "description": "Sezonska gradiva",
+        "label": "gradiva"
+      }
+    }
+  },
+  "trustBar": {
+    "securePayments": "Varna plačila",
+    "instantAccess": "Takojšen dostop",
+    "happyTeachers": "12000+ zadovoljnih učiteljev",
+    "rating": "Rating 4.9/5",
+    "saveTime": "Prihranite čas",
+    "verifiedMaterials": "Preverjena gradiva",
+    "multiplePayments": "Veliko načinov plačila",
+    "downloadInstant": "Takojšen prenos",
+    "passion": "Ustvarjeno s strastjo",
+    "qualityGuarantee": "Garancija kakovosti",
+    "regularUpdates": "Redno posodobljeno",
+    "bonuses": "Bonusi za zveste kupce",
+    "socialCommunity": {
+      "header": "Pridružite se naši skupnosti",
+      "desc": "Več kot 12.000 učiteljev angleščine si v naši skupini izmenjuje ideje in mnenja. Bodite na tekočem z novostmi in brezplačnimi gradivi!",
+      "cta": "Spremljajte nas na Facebooku",
+      "followers": "Sledilcev",
+      "stats": "Prenesenih gradiv",
+      "imageAlts": {
+        "speakbook": "Conversations with Speakbook (Grades 4-8)",
+        "theater": "Theater Plays (Grades 1-6)",
+        "megapack": "Mega Pack - complete scenarios",
+        "nursery": "Scenarios for Nursery and Preschool",
+        "stories": "Project Stories & Culture Pack",
+        "games": "Games and activities for Special Lesson Days"
+      }
+    }
+  },
+  "testimonials": {
+    "header": "Kaj pravijo učitelji?",
+    "subheader": "Pridružite se tisočem zadovoljnih učiteljev angleščine",
+    "stats": {
+      "teachers": "Učitelji v skupnosti",
+      "rating": "Povprečna ocena",
+      "materials": "Razvita gradiva",
+      "satisfaction": "Garancija zadovoljstva"
+    },
+    "reviews": [
+      {
+        "name": "Ana Novak",
+        "role": "Učiteljica angleščine, Ljubljana",
+        "content": "Gradiva so fantastična! Moji učenci so vključeni kot še nikoli prej. Prihranim ogromno časa pri pripravi na lekcije."
+      },
+      {
+        "name": "Luka Horvat",
+        "role": "Učitelj v osnovni šoli, Maribor",
+        "content": "Načrti, pripravljeni na uporabo, in gradiva za tisk so zadetek v polno. Priporočam jih vsakemu učitelju!"
+      },
+      {
+        "name": "Maja Zupan",
+        "role": "Učiteljica, Kranj",
+        "content": "Kupujem že svoj tretji paket in sem navdušena nad kakovostjo. Posnetki naravnih govorcev so neprecenljivi!"
+      },
+      {
+        "name": "Peter Kovač",
+        "role": "Srednješolski učitelj, Celje",
+        "content": "Profesionalna gradiva, ki v razredu dejansko delujejo. Vredno naložbe."
+      }
+    ]
+  },
+  "aboutAuthor": {
+    "badge": "Spoznajte avtorico",
+    "title": "Kamila Łobko-Koziej",
+    "description1": "Sem učiteljica angleščine z več kot 15 leti izkušenj pri delu z otroki predšolske in zgodnje šolske starosti. Moja strast do poučevanja in stalno iskanje kreativnih metod poučevanja sta me navdihnila, da ustvarim izvirna izobraževalna gradiva.",
+    "description2": "Verjamem, da je učenje tujega jezika lahko fascinantna pustolovščina za vsakega otroka. Moja gradiva združujejo preizkušene pedagoške metode z elementi igre, zaradi česar so lekcije privlačne in učinkovite.",
+    "stats": {
+      "experience": "let izkušenj",
+      "materials": "gradiv",
+      "teachers": "učiteljev",
+      "trainings": "usposabljanj"
+    },
+    "floating": {
+      "line1": "Ustvarjeno s strastjo",
+      "line2": "za učitelje"
+    }
+  },
+  "contests": {
+    "header": "Ongoing Projects & Contests",
+    "subheader": "Join our educational initiatives and win attractive prizes for your school!",
+    "viewAll": "View all projects",
+    "cta": "Learn more",
+    "platform": "Go to Contest Platform",
+    "stats": {
+      "contests": "Contests",
+      "participants": "Participants yearly",
+      "tradition": "Years of tradition"
+    },
+    "items": {
+      "lingus": {
+        "name": "Linguś",
+        "fullName": "National English Language Contest",
+        "description": "Test your knowledge of the English language"
+      },
+      "matmis": {
+        "name": "MatMiś",
+        "fullName": "National Mathematics Contest",
+        "description": "Develop logical thinking and mathematical skills"
+      }
+    }
+  }
+}

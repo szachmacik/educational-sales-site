@@ -1,0 +1,243 @@
+{
+  "hero": {
+    "badge": "Õppematerjalid autorilt Kamila Łobko-Koziej",
+    "title_part1": "Ressursid",
+    "title_part2": "Inglise keele õpetajatele",
+    "subtitle": "Õpetad inglise keelt? Saa inspiratsiooni! Leia siit loovaid õppematerjale, kaasahaaravaid aastaprojekte ja pedagoogilisi uuendusi.",
+    "cta_catalog": "Vaata kataloogi",
+    "cta_secondary": "Kuidas see töötab?",
+    "stats_lessons": "Valmis tunnid",
+    "stats_teachers": "Õpetajad",
+    "stats_rating": "Hinnang",
+    "viewSample": "Vaata näidist",
+    "videoPresentation": "Videoesitlus",
+    "verifiedBadge": "Kontrollitud materjalid",
+    "testedInClass": "Klassis testitud",
+    "materialsCount": "Materjalid"
+  },
+  "features": {
+    "header": "Miks valida meie materjalid?",
+    "sub": "Loodud kire ja tähelepanuga detailidele",
+    "items": [
+      {
+        "title": "Välkside juurdepääs",
+        "desc": "Laadige materjalid alla kohe pärast ostu"
+      },
+      {
+        "title": "Emakeelsete kõnelejate helisalvestised",
+        "desc": "Professionaalsed helisalvestised"
+      },
+      {
+        "title": "Innovatsiooni ideed",
+        "desc": "Kasutusvalmis projektid"
+      },
+      {
+        "title": "Valmis tunnikavad",
+        "desc": "Üksikasjalikud tunnikiired"
+      },
+      {
+        "title": "Aja kokkuhoid",
+        "desc": "Prinditavad materjalid"
+      },
+      {
+        "title": "Praktikas kontrollitud",
+        "desc": "Klassis testitud"
+      }
+    ]
+  },
+  "categories": {
+    "badge": "Tootekategooriad",
+    "browse": "Sirvi kategooriat",
+    "viewCatalog": "Vaata tervet kataloogi",
+    "header": "Mida leiad meie poest?",
+    "sub": "Vali kategooria ja avasta materjale, mis rikastavad sinu tunde",
+    "items": {
+      "mega-pack": {
+        "title": "Megapakk",
+        "description": "Põhjalikud 2-ühes õppepaketid - kõik materjalid + aastased tunnikavad",
+        "label": "paketid"
+      },
+      "scenariusze": {
+        "title": "Tunnikavad",
+        "description": "Kasutusvalmis tunnikavad kuust kuusse koos prinditavate materjalidega",
+        "label": "kavad"
+      },
+      "special-lessons": {
+        "title": "Eritunnid",
+        "description": "Materjalid pühadeks, ebatavalisteks päevadeks ja erilisteks sündmusteks",
+        "label": "komplektid"
+      },
+      "speakbook": {
+        "title": "Kõneraamatud",
+        "description": "Interaktiivsed vihikud rääkimise ja sõnavara arendamiseks",
+        "label": "raamatud"
+      },
+      "stories": {
+        "title": "Lood ja Audio",
+        "description": "E-raamatud ja lood emakeelekõnelejate helisalvestistega",
+        "label": "lood"
+      },
+      "teatr": {
+        "title": "Teater ja Mängud",
+        "description": "Teatrisstsenaariumid, lauamängud ja liikumistegevused",
+        "label": "materjalid"
+      },
+      "zlobek": {
+        "title": "Sõim",
+        "description": "Materjalid väikelastele",
+        "label": "materjalid"
+      },
+      "przedszkole": {
+        "title": "Lasteaed",
+        "description": "Materjalid eelkooliealistele",
+        "label": "materjalid"
+      },
+      "klasy-1-3": {
+        "title": "1.-3. klass",
+        "description": "Materjalid 1.-3. klassile",
+        "label": "materjalid"
+      },
+      "klasy-4-6": {
+        "title": "4.-6. klass",
+        "description": "Materjalid 4.-6. klassile",
+        "label": "materjalid"
+      },
+      "klasy-7-8": {
+        "title": "7.-8. klass",
+        "description": "Materjalid 7.-8. klassile",
+        "label": "materjalid"
+      },
+      "liceum": {
+        "title": "Gümnaasium / Täiskasvanud",
+        "description": "Materjalid gümnaasiumile ja täiskasvanutele",
+        "label": "materjalid"
+      },
+      "gry": {
+        "title": "Mängud",
+        "description": "Mängud ja tegevused",
+        "label": "mängud"
+      },
+      "culture": {
+        "title": "Kultuur",
+        "description": "Kultuurimaterjalid",
+        "label": "materjalid"
+      },
+      "flashcards": {
+        "title": "Flash-kaardid",
+        "description": "Õppekaardid (Flashcards)",
+        "label": "kaardid"
+      },
+      "inne": {
+        "title": "Muud",
+        "description": "Muud materjalid",
+        "label": "materjalid"
+      },
+      "pory-roku": {
+        "title": "Aastaajad",
+        "description": "Hooajalised materjalid",
+        "label": "materjalid"
+      }
+    }
+  },
+  "trustBar": {
+    "securePayments": "Turvalised maksed",
+    "instantAccess": "Kohene juurdepääs",
+    "happyTeachers": "12000+ õnnelikku õpetajat",
+    "rating": "Hinnang 4.9/5",
+    "saveTime": "Säästa aega",
+    "verifiedMaterials": "Kontrollitud materjalid",
+    "multiplePayments": "Palju makseviise",
+    "downloadInstant": "Kohene allalaadimine",
+    "passion": "Loodud kirega",
+    "qualityGuarantee": "Kvaliteedigarantii",
+    "regularUpdates": "Regulaarselt uuendatud",
+    "bonuses": "Boonused püsiklientidele",
+    "socialCommunity": {
+      "header": "Liitu meie kogukonnaga",
+      "desc": "Meie grupis jagavad ideid ja arvamusi üle 12 000 inglise keele õpetaja. Ole kursis uudiste ja tasuta materjalidega!",
+      "cta": "Jälgi meid Facebookis",
+      "followers": "Jälgijat",
+      "stats": "Allalaaditud materjali",
+      "imageAlts": {
+        "speakbook": "Conversations with Speakbook (Grades 4-8)",
+        "theater": "Theater Plays (Grades 1-6)",
+        "megapack": "Mega Pack - complete scenarios",
+        "nursery": "Scenarios for Nursery and Preschool",
+        "stories": "Project Stories & Culture Pack",
+        "games": "Games and activities for Special Lesson Days"
+      }
+    }
+  },
+  "testimonials": {
+    "header": "Mida õpetajad räägivad?",
+    "subheader": "Liitu tuhandete rahulolevate inglise keele õpetajatega",
+    "stats": {
+      "teachers": "Õpetajaid kogukonnas",
+      "rating": "Keskmine hinnang",
+      "materials": "Väljatöötatud materjalid",
+      "satisfaction": "Rahulolugarantii"
+    },
+    "reviews": [
+      {
+        "name": "Tiina Tamm",
+        "role": "Inglise keele õpetaja, Tallinn",
+        "content": "Materjalid on fantastilised! Minu õpilased on kaasatud nagu mitte kunagi varem. Säästan tohutult aega tundide ettevalmistamisel."
+      },
+      {
+        "name": "Margus Kask",
+        "role": "Algkooliõpetaja, Tartu",
+        "content": "Kasutusvalmis kavad ja prinditavad materjalid on täistabamus. Soovitan neid igale õpetajale!"
+      },
+      {
+        "name": "Kairi Lepik",
+        "role": "Õpetaja, Pärnu",
+        "content": "Ostsin juba kolmanda paki ja olen kvaliteedist vaimustuses. Emakeelsete kõnelejate salvestised on hindamatud!"
+      },
+      {
+        "name": "Jaanus Sepp",
+        "role": "Gümnaasiumiõpetaja, Narva",
+        "content": "Professionaalsed materjalid, mis klassis tõesti töötavad. Väärt investeering."
+      }
+    ]
+  },
+  "aboutAuthor": {
+    "badge": "Tutvu autoriga",
+    "title": "Kamila Łobko-Koziej",
+    "description1": "Olen inglise keele õpetaja, kellel on üle 15 aasta kogemust töös eelkooliealiste ja algkooliealiste lastega. Minu kirg õpetamise vastu ja pidev loovate õppemeetodite otsimine inspireeris mind looma originaalseid õppematerjale.",
+    "description2": "Usun, et võõrkeele õppimine võib olla iga lapse jaoks põnev seiklus. Minu materjalid ühendavad tõestatud pedagoogilised meetodid mänguliste elementidega, muutes tunnid kaasahaaravaks ja tõhusaks.",
+    "stats": {
+      "experience": "aastat kogemust",
+      "materials": "materjali",
+      "teachers": "õpetajat",
+      "trainings": "koolitust"
+    },
+    "floating": {
+      "line1": "Loodud kirega",
+      "line2": "õpetajatele"
+    }
+  },
+  "contests": {
+    "header": "Ongoing Projects & Contests",
+    "subheader": "Join our educational initiatives and win attractive prizes for your school!",
+    "viewAll": "View all projects",
+    "cta": "Learn more",
+    "platform": "Go to Contest Platform",
+    "stats": {
+      "contests": "Contests",
+      "participants": "Participants yearly",
+      "tradition": "Years of tradition"
+    },
+    "items": {
+      "lingus": {
+        "name": "Linguś",
+        "fullName": "National English Language Contest",
+        "description": "Test your knowledge of the English language"
+      },
+      "matmis": {
+        "name": "MatMiś",
+        "fullName": "National Mathematics Contest",
+        "description": "Develop logical thinking and mathematical skills"
+      }
+    }
+  }
+}

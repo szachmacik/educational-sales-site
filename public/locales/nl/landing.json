@@ -1,0 +1,243 @@
+{
+  "hero": {
+    "badge": "Educatieve Materialen door Kamila Łobko-Koziej",
+    "title_part1": "Hulpmiddelen voor",
+    "title_part2": "Docenten Engels",
+    "subtitle": "Geef je Engels? Laat je inspireren! Vind hier creatief lesmateriaal, boeiende jaarprojecten en pedagogische innovaties.",
+    "cta_catalog": "Bekijk Catalogus",
+    "cta_secondary": "Hoe werkt het?",
+    "stats_lessons": "Kant-en-klare Lessen",
+    "stats_teachers": "Docenten",
+    "stats_rating": "Beoordeling",
+    "viewSample": "Bekijk voorbeeldles",
+    "videoPresentation": "Videopresentatie",
+    "verifiedBadge": "Geverifieerde materialen",
+    "testedInClass": "Getest in de klas",
+    "materialsCount": "Materialen"
+  },
+  "features": {
+    "header": "Waarom kiezen voor onze materialen?",
+    "sub": "Gemaakt met passie en oog voor detail",
+    "items": [
+      {
+        "title": "Direct Toegang",
+        "desc": "Download materialen direct na aankoop"
+      },
+      {
+        "title": "Native Speaker Opnames",
+        "desc": "Professionele audio-opnames"
+      },
+      {
+        "title": "Innovatieve Ideeën",
+        "desc": "Kant-en-klare projecten om te implementeren"
+      },
+      {
+        "title": "Klaar lesplannen",
+        "desc": "Gedetailleerde lesscenario's"
+      },
+      {
+        "title": "Tijdbesparing",
+        "desc": "Printklare materialen"
+      },
+      {
+        "title": "In de praktijk getest",
+        "desc": "Getest in het klaslokaal"
+      }
+    ]
+  },
+  "categories": {
+    "badge": "Productcategorieën",
+    "browse": "Blader door categorie",
+    "viewCatalog": "Bekijk volledige catalogus",
+    "header": "Wat vind je in onze winkel?",
+    "sub": "Kies een categorie en ontdek materialen om je lessen op te vrolijken",
+    "items": {
+      "mega-pack": {
+        "title": "Mega Pack",
+        "description": "Uitgebreide 2-in-1 educatieve pakketten - alle materialen + lesplannen voor het hele jaar",
+        "label": "pakketten"
+      },
+      "scenariusze": {
+        "title": "Lesplannen",
+        "description": "Kant-en-klare lesplannen voor elke maand met printbare materialen",
+        "label": "plannen"
+      },
+      "special-lessons": {
+        "title": "Speciale Lessen",
+        "description": "Materialen voor vakanties, ongewone dagen en speciale gelegenheden",
+        "label": "sets"
+      },
+      "speakbook": {
+        "title": "Speakbooks",
+        "description": "Interactieve boekjes om spreekvaardigheid en woordenschat te ontwikkelen",
+        "label": "speakbooks"
+      },
+      "stories": {
+        "title": "Stories & Audio",
+        "description": "E-books en verhalen met audio-opnames door native speakers",
+        "label": "verhalen"
+      },
+      "teatr": {
+        "title": "Theater & Spellen",
+        "description": "Theaterscripts, bordspellen en bewegingsactiviteiten",
+        "label": "materialen"
+      },
+      "zlobek": {
+        "title": "Peuterspeelzaal",
+        "description": "Materialen voor peuters",
+        "label": "materialen"
+      },
+      "przedszkole": {
+        "title": "Kleuterschool",
+        "description": "Materialen voor kleuters",
+        "label": "materialen"
+      },
+      "klasy-1-3": {
+        "title": "Groepen 3-5",
+        "description": "Materialen voor groepen 3-5",
+        "label": "materialen"
+      },
+      "klasy-4-6": {
+        "title": "Groepen 6-8",
+        "description": "Materialen voor groepen 6-8",
+        "label": "materialen"
+      },
+      "klasy-7-8": {
+        "title": "Voortgezet Onderwijs",
+        "description": "Materialen voor voortgezet onderwijs",
+        "label": "materialen"
+      },
+      "liceum": {
+        "title": "Middelbare School / Volwassenen",
+        "description": "Materialen voor middelbare school en volwassenen",
+        "label": "materialen"
+      },
+      "gry": {
+        "title": "Spellen",
+        "description": "Spellen en activiteiten",
+        "label": "spellen"
+      },
+      "culture": {
+        "title": "Cultuur",
+        "description": "Culturele materialen",
+        "label": "materialen"
+      },
+      "flashcards": {
+        "title": "Flashcards",
+        "description": "Flashcards",
+        "label": "kaarten"
+      },
+      "inne": {
+        "title": "Overig",
+        "description": "Overige materialen",
+        "label": "materialen"
+      },
+      "pory-roku": {
+        "title": "Seizoenen",
+        "description": "Seizoensgebonden materialen",
+        "label": "materialen"
+      }
+    }
+  },
+  "trustBar": {
+    "securePayments": "Veilige betalingen",
+    "instantAccess": "Directe toegang",
+    "happyTeachers": "12000+ vrolijke docenten",
+    "rating": "Beoordeling 4.9/5",
+    "saveTime": "Bespaar tijd",
+    "verifiedMaterials": "Geverifieerde materialen",
+    "multiplePayments": "Meerdere betaalmethoden",
+    "downloadInstant": "Direct downloaden",
+    "passion": "Gemaakt met passie",
+    "qualityGuarantee": "Kwaliteitsgarantie",
+    "regularUpdates": "Regelmatig bijgewerkt",
+    "bonuses": "Bonussen voor trouwe klanten",
+    "socialCommunity": {
+      "header": "Sluit je aan bij onze community",
+      "desc": "Meer dan 12.000 docenten Engels delen hun ideeën en feedback in onze groep. Blijf op de hoogte van nieuws en gratis materialen!",
+      "cta": "Volg ons op Facebook",
+      "followers": "Volgers",
+      "stats": "Gedownloade materialen",
+      "imageAlts": {
+        "speakbook": "Gesprekken met Speakbook (Groepen 6-8)",
+        "theater": "Theaterstukken (Groepen 3-8)",
+        "megapack": "Mega Pack - volledige scenario's",
+        "nursery": "Scenario's voor Peuterspeelzaal en Kleuterschool",
+        "stories": "Projectverhalen & Cultuurpakket",
+        "games": "Spellen en activiteiten voor Speciale Lesdagen"
+      }
+    }
+  },
+  "testimonials": {
+    "header": "Wat zeggen docenten?",
+    "subheader": "Sluit je aan bij duizenden tevreden docenten Engels",
+    "stats": {
+      "teachers": "Docenten in community",
+      "rating": "Gemiddelde beoordeling",
+      "materials": "Ontwikkelde materialen",
+      "satisfaction": "Tevredenheidsgarantie"
+    },
+    "reviews": [
+      {
+        "name": "Sarah Wilson",
+        "role": "Docent Engels, Londen",
+        "content": "De materialen zijn fantastisch! Mijn leerlingen zijn betrokken als nooit tevoren. Ik bespaar een hoop tijd op de voorbereiding van de lessen."
+      },
+      {
+        "name": "James Smith",
+        "role": "Leraar basisonderwijs, Manchester",
+        "content": "Kant-en-klare plannen en printbare materialen zijn een schot in de roos. Ik raad ze elke docent aan!"
+      },
+      {
+        "name": "Emily Brown",
+        "role": "Taaldocent, Bristol",
+        "content": "Ik koop mijn derde pakket en ik ben verrukt over de kwaliteit. Native speaker opnames zijn onbetaalbaar!"
+      },
+      {
+        "name": "David Miller",
+        "role": "Docent voortgezet onderwijs, Birmingham",
+        "content": "Professionele materialen die echt werken in de klas. De investering meer dan waard."
+      }
+    ]
+  },
+  "aboutAuthor": {
+    "badge": "Maak kennis met de auteur",
+    "title": "Kamila Łobko-Koziej",
+    "description1": "Ik ben een docent Engels met meer dan 15 jaar ervaring in het werken met jonge kinderen in de kleuterklas en het basisonderwijs. Mijn passie voor lesgeven en voortdurende zoektocht naar creatieve lesmethoden inspireerden mij om origineel educatief materiaal te creëren.",
+    "description2": "Ik geloof dat het leren van een vreemde taal een fascinerend avontuur kan zijn voor elk kind. Mijn materialen combineren bewezen pedagogische methoden met speelse elementen, waardoor de lessen boeiend en effectief zijn.",
+    "stats": {
+      "experience": "jaren ervaring",
+      "materials": "materialen",
+      "teachers": "docenten",
+      "trainings": "trainingen"
+    },
+    "floating": {
+      "line1": "Gemaakt met passie",
+      "line2": "voor docenten"
+    }
+  },
+  "contests": {
+    "header": "Ongoing Projects & Contests",
+    "subheader": "Join our educational initiatives and win attractive prizes for your school!",
+    "viewAll": "View all projects",
+    "cta": "Learn more",
+    "platform": "Go to Contest Platform",
+    "stats": {
+      "contests": "Contests",
+      "participants": "Participants yearly",
+      "tradition": "Years of tradition"
+    },
+    "items": {
+      "lingus": {
+        "name": "Linguś",
+        "fullName": "National English Language Contest",
+        "description": "Test your knowledge of the English language"
+      },
+      "matmis": {
+        "name": "MatMiś",
+        "fullName": "National Mathematics Contest",
+        "description": "Develop logical thinking and mathematical skills"
+      }
+    }
+  }
+}

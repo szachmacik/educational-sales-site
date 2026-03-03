@@ -1,0 +1,243 @@
+{
+  "hero": {
+    "badge": "Oppimateriaalit Kamila Łobko-Koziejiltä",
+    "title_part1": "Resursseja",
+    "title_part2": "Englannin opettajille",
+    "subtitle": "Opetatko englantia? Inspiroidu! Täältä löydät luovia opetusmateriaaleja, kiehtovia vuosiprojekteja ja pedagogisia innovaatioita.",
+    "cta_catalog": "Katso kuvasto",
+    "cta_secondary": "Miten se toimii?",
+    "stats_lessons": "Valmiit oppitunnit",
+    "stats_teachers": "Opettajaa",
+    "stats_rating": "Arvosana",
+    "viewSample": "Katso esimerkkioppitunti",
+    "videoPresentation": "Videoesittely",
+    "verifiedBadge": "Varmennetut materiaalit",
+    "testedInClass": "Testattu luokassa",
+    "materialsCount": "Materiaalit"
+  },
+  "features": {
+    "header": "Miksi valita meidän materiaalimme?",
+    "sub": "Luotu intohimolla ja huomiolla yksityiskohtiin",
+    "items": [
+      {
+        "title": "Välitön pääsy",
+        "desc": "Lataa materiaalit heti ostoksen jälkeen"
+      },
+      {
+        "title": "Syntyperäiset puhujat",
+        "desc": "Ammattimaiset äänitallenteet"
+      },
+      {
+        "title": "Innovaatioideoita",
+        "desc": "Valmiita projekteja toteutettavaksi"
+      },
+      {
+        "title": "Valmiit tuntisuunnitelmat",
+        "desc": "Yksityiskohtaiset opetusskenaariot"
+      },
+      {
+        "title": "Ajan säästö",
+        "desc": "Tulostusvalmiit materiaalit"
+      },
+      {
+        "title": "Käytännössä testattu",
+        "desc": "Testattu luokkahuoneessa"
+      }
+    ]
+  },
+  "categories": {
+    "badge": "Tuotekategoriat",
+    "browse": "Selaa kategoriaa",
+    "viewCatalog": "Katso koko kuvasto",
+    "header": "Mitä löydät kaupastamme?",
+    "sub": "Valitse kategoria ja löydä materiaaleja piristämään oppituntejasi",
+    "items": {
+      "mega-pack": {
+        "title": "Mega Pack",
+        "description": "Kattavat 2-in-1-opetuspaketit – kaikki materiaalit + koko vuoden tuntisuunnitelmat",
+        "label": "paketit"
+      },
+      "scenariusze": {
+        "title": "Tuntisuunnitelmat",
+        "description": "Valmiit tuntisuunnitelmat joka kuukaudelle tulostettavien materiaalien kera",
+        "label": "suunnitelmat"
+      },
+      "special-lessons": {
+        "title": "Erikoistunnit",
+        "description": "Materiaalit juhlapyhiin, erikoispäiviin ja erityistilanteisiin",
+        "label": "setit"
+      },
+      "speakbook": {
+        "title": "Speakbooks",
+        "description": "Interaktiiviset vihkoset puheen ja sanaston kehittämiseen",
+        "label": "speakbooks"
+      },
+      "stories": {
+        "title": "Stories & Audio",
+        "description": "E-kirjoja ja tarinoita syntyperäisen puhujan äänitallenteilla",
+        "label": "tarinat"
+      },
+      "teatr": {
+        "title": "Teatteri & Pelit",
+        "description": "Teatterikäsikirjoituksia, lautapelejä ja liikkumisleikkejä",
+        "label": "materiaalit"
+      },
+      "zlobek": {
+        "title": "Päiväkoti",
+        "description": "Materiaalit taaperoille",
+        "label": "materiaalit"
+      },
+      "przedszkole": {
+        "title": "Esikoulu",
+        "description": "Materiaalit esikoululaisille",
+        "label": "materiaalit"
+      },
+      "klasy-1-3": {
+        "title": "Luokat 1–3",
+        "description": "Materiaalit luokille 1–3",
+        "label": "materiaalit"
+      },
+      "klasy-4-6": {
+        "title": "Luokat 4–6",
+        "description": "Materiaalit luokille 4–6",
+        "label": "materiaalit"
+      },
+      "klasy-7-8": {
+        "title": "Luokat 7–8",
+        "description": "Materiaalit luokille 7–8",
+        "label": "materiaalit"
+      },
+      "liceum": {
+        "title": "Lukio / Aikuiset",
+        "description": "Materiaalit lukioon ja aikuisille",
+        "label": "materiaalit"
+      },
+      "gry": {
+        "title": "Pelit",
+        "description": "Pelejä ja aktiviteetteja",
+        "label": "pelit"
+      },
+      "culture": {
+        "title": "Kulttuuri",
+        "description": "Kulttuurimateriaaleja",
+        "label": "materiaalit"
+      },
+      "flashcards": {
+        "title": "Flashcards",
+        "description": "Flashcards-kortit",
+        "label": "kortit"
+      },
+      "inne": {
+        "title": "Muut",
+        "description": "Muita materiaaleja",
+        "label": "materiaalit"
+      },
+      "pory-roku": {
+        "title": "Vuodenajat",
+        "description": "Kausimateriaaleja",
+        "label": "materiaalit"
+      }
+    }
+  },
+  "trustBar": {
+    "securePayments": "Turvalliset maksut",
+    "instantAccess": "Välitön pääsy",
+    "happyTeachers": "12 000+ tyytyväistä opettajaa",
+    "rating": "Arvosana 4.9/5",
+    "saveTime": "Säästä aikaa",
+    "verifiedMaterials": "Varmennetut materiaalit",
+    "multiplePayments": "Useita maksutapoja",
+    "downloadInstant": "Lataa välittömästi",
+    "passion": "Luotu intohimolla",
+    "qualityGuarantee": "Laatutakuu",
+    "regularUpdates": "Säännölliset päivitykset",
+    "bonuses": "Bonuksia kanta-asiakkaille",
+    "socialCommunity": {
+      "header": "Liity yhteisöömme",
+      "desc": "Yli 12 000 englannin opettajaa jakaa ideoitaan ja palautettaan ryhmässämme. Pysy ajan tasalla uutisista ja ilmaisista materiaaleista!",
+      "cta": "Seuraa meitä Facebookissa",
+      "followers": "Seuraajaa",
+      "stats": "Ladattuja materiaaleja",
+      "imageAlts": {
+        "speakbook": "Keskusteluja Speakbookilla (luokat 4–8)",
+        "theater": "Teatterinäytelmät (luokat 1–6)",
+        "megapack": "Mega Pack – täydelliset skenaariot",
+        "nursery": "Skenaariot päiväkotiin ja esikouluun",
+        "stories": "Project Stories & Culture Pack",
+        "games": "Pelejä ja aktiviteetteja teemapäiviin"
+      }
+    }
+  },
+  "testimonials": {
+    "header": "Mitä opettajat sanovat?",
+    "subheader": "Liity tuhansien tyytyväisten englannin opettajien joukkoon",
+    "stats": {
+      "teachers": "Opettajaa yhteisössä",
+      "rating": "Keskimääräinen arvosana",
+      "materials": "Kehitettyjä materiaaleja",
+      "satisfaction": "Tyytyväisyystakuu"
+    },
+    "reviews": [
+      {
+        "name": "Sarah Wilson",
+        "role": "Englannin opettaja, Lontoo",
+        "content": "Materiaalit ovat upeita! Oppilaani ovat sitoutuneempia kuin koskaan. Säästän valtavasti aikaa tuntien valmistelussa."
+      },
+      {
+        "name": "James Smith",
+        "role": "Alakoulun opettaja, Manchester",
+        "content": "Valmiit suunnitelmat ja tulostettavat materiaalit ovat hittituote. Suosittelen niitä jokaiselle opettajalle!"
+      },
+      {
+        "name": "Emily Brown",
+        "role": "Kieltenopettaja, Bristol",
+        "content": "Ostan jo kolmatta pakettiani ja olen erittäin tyytyväinen laatuun. Syntyperäisten puhujien äänitteet ovat korvaamattomia!"
+      },
+      {
+        "name": "David Miller",
+        "role": "Yläkoulun opettaja, Birmingham",
+        "content": "Ammattimaisia materiaaleja, jotka todella toimivat luokassa. Investoinnin arvoisia."
+      }
+    ]
+  },
+  "aboutAuthor": {
+    "badge": "Tapaa kirjoittaja",
+    "title": "Kamila Łobko-Koziej",
+    "description1": "Olen englannin opettaja, jolla on yli 15 vuoden kokemus työskentelystä esikoulu- ja alakouluikäisten lasten kanssa. Intohimoni opettamiseen ja jatkuva luovien opetusmenetelmien etsiminen inspiroivat minua luomaan alkuperäisiä opetusmateriaaleja.",
+    "description2": "Uskon, että vieraan kielen oppiminen voi olla kiehtova seikkailu jokaiselle lapselle. Materiaalini yhdistävät koeteltuja pedagogisia menetelmiä leikillisiin elementteihin, tehden tunneista mielenkiintoisia ja tehokkaita.",
+    "stats": {
+      "experience": "vuotta kokemusta",
+      "materials": "materiaalia",
+      "teachers": "opettajaa",
+      "trainings": "koulutusta"
+    },
+    "floating": {
+      "line1": "Luotu intohimolla",
+      "line2": "opettajille"
+    }
+  },
+  "contests": {
+    "header": "Ongoing Projects & Contests",
+    "subheader": "Join our educational initiatives and win attractive prizes for your school!",
+    "viewAll": "View all projects",
+    "cta": "Learn more",
+    "platform": "Go to Contest Platform",
+    "stats": {
+      "contests": "Contests",
+      "participants": "Participants yearly",
+      "tradition": "Years of tradition"
+    },
+    "items": {
+      "lingus": {
+        "name": "Linguś",
+        "fullName": "National English Language Contest",
+        "description": "Test your knowledge of the English language"
+      },
+      "matmis": {
+        "name": "MatMiś",
+        "fullName": "National Mathematics Contest",
+        "description": "Develop logical thinking and mathematical skills"
+      }
+    }
+  }
+}

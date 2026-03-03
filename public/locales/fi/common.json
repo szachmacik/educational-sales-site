@@ -1,0 +1,399 @@
+{
+  "seo": {
+    "title": "Oppimateriaalit englannin opettajille | Kamila Łobko-Koziej",
+    "description": "Luovat opetusmateriaalit, tuntisuunnitelmat, ympärivuotiset projektit ja valmiit paketit englannin opettajille.",
+    "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
+  },
+  "nav": {
+    "products": "Tuotteet",
+    "materialy": "Materiaalit",
+    "blog": "Blogi",
+    "contact": "Ota yhteyttä",
+    "login": "Kirjaudu",
+    "dashboard": "Hallintapaneeli",
+    "adminPanel": "Ylläpitopaneeli"
+  },
+  "brand": {
+    "educationalMaterials": "Oppimateriaalit",
+    "byKamila": "Kamila Łobko-Koziejiltä"
+  },
+  "hero": {
+    "badge": "Materiaaleja opettajille",
+    "title": "Opeta englantia intohimolla ja vaivattomuudella",
+    "subtitle": "Luovat opetusmateriaalit, jotka uudistavat oppituntisi. Säästä aikaa valmistelussa ja inspiroi oppilaitasi joka päivä.",
+    "cta_main": "Selaa materiaaleja",
+    "cta_secondary": "Tietoa kirjoittajasta",
+    "demoText": "Katso paneelin esittely:",
+    "teacherProfile": "Opettajan profiili",
+    "studentProfile": "Oppilaan profiili"
+  },
+  "footer": {
+    "rights": "Kaikki oikeudet pidätetään.",
+    "description": "Alkuperäiset, luovat opetusmateriaalit englannin opettajille. Hae inspiraatiota!",
+    "groups": {
+      "shop": "Kauppa",
+      "info": "Tiedot",
+      "help": "Apua"
+    },
+    "links": {
+      "catalog": "Kuvasto",
+      "materials": "Opetusmateriaalit",
+      "projects": "Vuosiprojektit",
+      "scenarios": "Tuntisuunnitelmat",
+      "packs": "Teemapaketit",
+      "about": "Tietoa kirjoittajasta",
+      "contact": "Ota yhteyttä",
+      "privacy": "Tietosuojaseloste",
+      "terms": "Käyttöehdot",
+      "howToBuy": "Miten ostaa?",
+      "faq": "UKK",
+      "returns": "Palautukset",
+      "account": "Oma tili",
+      "admin": "Opettajapaneeli (Admin)"
+    }
+  },
+  "auth": {
+    "logout": "Kirjaudu ulos",
+    "myCourses": "Omat kurssit",
+    "studentPanel": "Oppilaspaneeli",
+    "roleAdmin": "Ylläpitäjä",
+    "roleTeacher": "Opettaja",
+    "roleStudent": "Oppilas"
+  },
+  "cart": {
+    "empty": "Ostoskorisi on tyhjä",
+    "emptySub": "Lisää tuotteita jatkaaksesi ostoksia",
+    "browse": "Selaa tuotteita",
+    "reserved": "Ostoskorisi on varattu:",
+    "header": "Ostoskori ({count})",
+    "remove": "Poista",
+    "specialOffer": "ERIKOISTARJOUS",
+    "orderBump": "Lisää sähköpostimallipaketti (+29)",
+    "orderBumpDesc": "20 valmista mallia vanhempien kanssa viestimiseen. Säästä 70%!",
+    "summary": "Yhteenveto",
+    "couponPlaceholder": "Alennuskoodi",
+    "apply": "Käytä",
+    "couponHeader": "Kuponki:",
+    "products": "Tuotteet",
+    "discount": "Alennus",
+    "total": "Yhteensä",
+    "checkout": "Kassalle",
+    "secure": "Turvallinen maksu",
+    "couponInvalid": "Virheellinen kuponkikoodi",
+    "couponInactive": "Kuponki ei ole enää aktiivinen",
+    "couponExpired": "Kuponki on vanhentunut",
+    "couponLimitReached": "Kupongin käyttöraja täynnä",
+    "couponMinOrder": "Tilauksen vähimmäisarvo: {minOrderValue} {currency}",
+    "couponAppliedPercent": "Alennus {percent}% käytössä!",
+    "couponAppliedFixed": "Alennus {amount} {currency} käytössä!",
+    "currencySymbol": "€"
+  },
+  "socialProof": {
+    "header": "Facebook-yhteisö",
+    "sub": "Pysy ajan tasalla uutisista ja liity keskusteluun!",
+    "cta": "Katso profiilimme täynnä inspiraatiota",
+    "madeWithLove": "Luotu rakkaudella",
+    "polishQuality": "ja puolalaisella laadulla"
+  },
+  "newsletter": {
+    "header": "Pysy ajan tasalla!",
+    "sub": "Tilaa uutiskirjeemme ja saa tietoa uusista materiaaleista, kampanjoista ja tyylikkäistä alennuksista.",
+    "placeholder": "Sähköpostiosoitteesi",
+    "button": "Tilaa",
+    "success": "Kiitos uutiskirjeen tilaamisesta!",
+    "privacy": "Kunnioitamme yksityisyyttäsi. Voit peruuttaa tilauksen milloin tahansa."
+  },
+  "checkout": {
+    "acceptTermsError": "Sinun on hyväksyttävä käyttöehdot",
+    "successTitle": "Kiitos tilauksestasi!",
+    "successOrder": "Tilauksesi #{orderNumber} on vastaanotettu.",
+    "successEmail": "Tilauksen tiedot on lähetetty sähköpostiisi.",
+    "backToStore": "Takaisin kauppaan",
+    "myCourses": "Omat kurssit",
+    "backToCart": "Takaisin ostoskoriin",
+    "steps": {
+      "cart": "Ostoskori",
+      "payment": "Maksu",
+      "access": "Pääsy"
+    },
+    "trust": {
+      "secure": "Turvallinen maksu",
+      "ssl": "SSL-salaus",
+      "instant": "Välitön pääsy"
+    },
+    "header": "Viimeistele tilauksesi",
+    "contactTitle": "Yhteystiedot",
+    "email": "Sähköposti *",
+    "firstName": "Etunimi *",
+    "lastName": "Sukunimi *",
+    "phone": "Puhelin (valinnainen)",
+    "invoiceTitle": "Lasku",
+    "wantInvoice": "Haluan ALV-laskun",
+    "nip": "ALV-numero / Y-tunnus *",
+    "nipError": "Anna voimassa oleva ALV-numero",
+    "lookup": "Hae tiedot",
+    "lookupSuccess": "Yrityksen tiedot haettu onnistuneesti!",
+    "nipNotFound": "Yritystä ei löytynyt",
+    "nipSearchError": "Virhe haun aikana. Yritä uudelleen.",
+    "companyName": "Yrityksen nimi *",
+    "companyAddress": "Yrityksen osoite",
+    "addressPlaceholder": "Täytetään automaattisesti",
+    "paymentTitle": "Maksutapa",
+    "paymentMethods": {
+      "card": "Luottokortti",
+      "cardSub": "Visa, Mastercard, American Express",
+      "blik": "BLIK",
+      "blikSub": "Pikamaksu BLIK-koodilla",
+      "transfer": "Pankkisiirto",
+      "transferSub": "Perinteinen pankkisiirto"
+    },
+    "yourOrder": "Tilauksesi",
+    "summaryProducts": "Tuotteet",
+    "summaryDiscount": "Alennus ({code})",
+    "summaryTotal": "Yhteensä",
+    "terms": "Hyväksyn kaupan ehdot ja tietosuojaselosteen",
+    "termsRequired": "Vaaditaan tilauksen käsittelyyn",
+    "processing": "Käsitellään...",
+    "pay": "Maksa {total}",
+    "instantAccessInfo": "Materiaalit käytettävissä paneelissa heti maksun jälkeen",
+    "socialProof": "Yli 2 500 opettajaa on jo mukana",
+    "toPayMobile": "Maksettavaa",
+    "paymentFailed": "Payment failed. Please try again.",
+    "paymentSystemError": "Payment system error."
+  },
+  "contact": {
+    "title": "Ota yhteyttä",
+    "subtitle": "Onko sinulla kysyttävää materiaaleista? Tarvitsetko apua paketin valinnassa? Kirjoita meille tai keskustele AI-avustajamme kanssa. Olemme täällä sinua varten!",
+    "aiBadge": "Vastaamme yleensä 2 tunnissa",
+    "trustBadge": "Yli 12 000 tyytyväistä opettajaa",
+    "emailTitle": "Lähetä sähköpostia",
+    "emailDesc": "Sähköpostimme on avoinna sinulle 24/7.",
+    "phoneTitle": "Soita meille",
+    "phoneDesc": "Olemme puhelimen päässä ma-pe klo 9:00–17:00.",
+    "formTitle": "Ota yhteyttä -lomake",
+    "addressTitle": "Pääkonttori",
+    "addressValue": "Varsova, Opetuskatu 123",
+    "aiHelp": "Tarvitsetko nopean vastauksen?",
+    "aiHelpDesc": "Älykäs avustajamme tietää vastaukset useimpiin yleisiin kysymyksiin. Kysy tuotteista, opetusmenetelmistä tai materiaalien saatavuudesta.",
+    "aiHelpMobile": "AI-avustaja on käytettävissä näytön alakulmassa.",
+    "form": {
+      "name": "Etu- ja sukunimi",
+      "email": "Sähköposti",
+      "subject": "Aihe",
+      "message": "Viestisi",
+      "messagePlaceholder": "Miten voimme auttaa?",
+      "sending": "Lähetetään...",
+      "send": "Lähetä viesti",
+      "success": "Viesti lähetetty!",
+      "successDesc": "Kiitos yhteydenotostasi. Vastaamme mahdollisimman pian.",
+      "placeholders": {
+        "name": "Matti Meikäläinen",
+        "email": "matti@esimerkki.fi",
+        "subject": "Tuotekysely...",
+        "message": "Kuvaile, miten voimme auttaa..."
+      }
+    },
+    "info": {
+      "emailValue": "contact@kamilaenglish.com",
+      "phoneValue": "+48 123 456 789"
+    },
+    "aiChat": {
+      "title": "AI-avustaja",
+      "status": "Paikalla ja valmiina",
+      "thinking": "Mietitään...",
+      "inputPlaceholder": "Kysy jotain...",
+      "dataInputPlaceholder": "Anna nimi ja sähköposti...",
+      "welcome": "Hei! Olen älykäs avustajasi. Ennen kuin aloitamme, oletko jo asiakkaamme?",
+      "options": {
+        "yes": "Kyllä, olen asiakas",
+        "no": "En vielä"
+      },
+      "responses": {
+        "clientYes": "Hienoa! Miten voin auttaa tänään?",
+        "clientNo": "Ymmärrän. Autan mielelläni sinua tutustumaan materiaaleihimme. Mikä on nimesi ja sähköpostisi, jotta voin lähettää sinulle ilmaisia näytteitä?",
+        "dataSaved": "Kiitos! Tallensin tietosi. Voit nyt kysyä mitä vain.",
+        "fallback": "Anteeksi, en aivan ymmärtänyt. Voisitko muotoilla kysymyksesi uudelleen? Voit kysyä hinnoista, toimituksesta tai opetusmenetelmistä."
+      },
+      "knowledge": {
+        "price": "PDF-materiaalimme alkavat 29 dollarista. Vuosipaketit (Mega Pack) ovat tällä hetkellä tarjouksessa 149 dollarilla.",
+        "delivery": "Kaikki materiaalit ovat digitaalisia. Saat latauslinkin heti maksun jälkeen.",
+        "preschool": "Meillä on loistava 'Englanti esikoulussa' -osio. Suosittelen erityisesti 4 Seasons -pakettiamme.",
+        "contact": "Voit lähettää sähköpostia tai soittaa +1 234 567 890 (ma-pe 9:00-17:00).",
+        "invoice": "Kyllä, kirjoitamme ALV-laskuja. Voit antaa laskutustiedot ostoskorissa.",
+        "methods": "Kamila Łobko-Koziej edistää leikkiin perustuvaa lähestymistapaa (TPR, kommunikatiiviset pelit). Lue lisää blogistamme!"
+      }
+    }
+  },
+  "login": {
+    "title": "Tervetuloa takaisin!",
+    "desc": "Kirjaudu sähköpostillasi siirtyäksesi oppilaspuolelle.",
+    "student": "Oppilas",
+    "teacher": "Opettaja",
+    "email": "Sähköposti",
+    "emailTeacher": "Työsähköposti",
+    "password": "Salasana",
+    "loggingIn": "Kirjaudutaan sisään...",
+    "success": "Kirjautuminen onnistui!",
+    "submit": "Kirjaudu sisään",
+    "successMessage": "Kirjautuminen onnistui! Ohjataan uudelleen...",
+    "errorDefault": "Virheellinen sähköposti tai salasana.",
+    "errorSystem": "Kirjautumisessa tapahtui virhe. Yritä uudelleen.",
+    "emailRequired": "Sähköposti vaaditaan",
+    "emailInvalid": "Virheellinen sähköpostimuoto",
+    "passwordRequired": "Salasana vaaditaan",
+    "passwordMin": "Salasanan on oltava vähintään 4 merkkiä",
+    "forgotPassword": "Forgot your password?",
+    "magicLink": "Login with Magic Link",
+    "magicLinkDesc": "We'll send you a one-time login link to your email address.",
+    "sendMagicLink": "Send Magic Link",
+    "backToLogin": "Back to login",
+    "checkEmail": "Check your inbox",
+    "resetPassword": "Reset password",
+    "magicLinkSent": "A login link has been sent to your email address.",
+    "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
+    "resetSuccess": "Your password has been changed successfully."
+  },
+  "quickSale": {
+    "title": "PIKAMAKSU",
+    "demoProduct": {
+      "title": "Esimerkki Premium E-kirja",
+      "excerpt": "Tämä on esittelytuote. Täydellisessä versiossa tiedot haetaan tietokannasta."
+    },
+    "page": {
+      "guarantee": "30 päivän tyytyväisyystakuu",
+      "totalLabel": "Yhteensä maksettavaa:",
+      "email_label": "Sähköpostisi",
+      "email_placeholder": "osoite@email.fi",
+      "payment_method": "Maksutapa",
+      "payment_card": "Kortti",
+      "blik_code": "BLIK-koodi",
+      "terms": "Hyväksyn kaupan ehdot",
+      "pay_btn": "Ostan ja maksan",
+      "secure_checkout": "SSL-salattu yhteys"
+    },
+    "optimization": {
+      "timer": {
+        "text": "Tarjouksesi vanhenee:"
+      },
+      "social_proof": {
+        "viewing": "{count} henkilöä katsoo tätä tarjousta juuri nyt"
+      },
+      "savings": "Säästät"
+    },
+    "bump": {
+      "yes_btn": "KYLLÄ, lisää tilaukseeni",
+      "price_prefix": "vain",
+      "description": "Kertaluonteinen tarjous! Lisää valmiit tehtävämonisteet (PDF)."
+    }
+  },
+  "verify": {
+    "title": "Sertifikaatin varmennus",
+    "subtitle": "Anna sertifikaatin varmennuskoodi vahvistaaksesi sen aitouden.",
+    "placeholder": "XXXX-XXXX-XXXX",
+    "success": {
+      "title": "Sertifikaatti varmennettu",
+      "desc": "Tämä sertifikaatti on aito ja alustamme myöntämä.",
+      "user": "Osallistuja",
+      "course": "Kurssi",
+      "date": "Suorituspäivämäärä",
+      "code": "Koodi",
+      "view": "Näytä sertifikaatti"
+    },
+    "error": {
+      "title": "Sertifikaattia ei löytynyt",
+      "desc": "Annetulla koodilla ei löytynyt sertifikaattia. Tarkista koodin oikeinkirjoitus."
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "404",
+      "message": "Sivua ei löytynyt.",
+      "back": "Takaisin etusivulle"
+    }
+  },
+  "blog": {
+    "title": "Blogi",
+    "subtitle": "Artikkeleita, vinkkejä ja inspiraatiota englannin opettajille. Opi opettamaan tehokkaammin ja intohimolla.",
+    "empty": "Blogikirjoituksia ei löytynyt.",
+    "readMore": "Lue lisää",
+    "backToBlog": "Takaisin blogiin",
+    "share": "Jaa:",
+    "notFound": "Ei löytynyt"
+  },
+  "common": {
+    "loading": "Ladataan..."
+  },
+  "certificates": {
+    "title": "Suoritustodistus",
+    "subtitle": "Tämä todistaa, että",
+    "completedCourse": "on suorittanut kurssin",
+    "completionDate": "Suorituspäivämäärä:",
+    "verificationCode": "Varmennuskoodi:",
+    "downloadPdf": "Lataa PDF",
+    "share": "Jaa",
+    "backToDashboard": "Takaisin hallintapaneeliin",
+    "styleTitle": "Vaihda sertifikaatin tyyliä",
+    "verifiedTitle": "Sertifikaatti varmennettu",
+    "verifiedDesc": "Tämä sertifikaatti on alustamme myöntämä.",
+    "notFound": "Sertifikaattia ei löytynyt",
+    "copySuccess": "Linkki kopioitu leikepöydälle!"
+  },
+  "languages": {
+    "pl": "Polish",
+    "en": "English",
+    "uk": "Ukrainian",
+    "de": "German",
+    "es": "Spanish",
+    "fr": "French",
+    "it": "Italian",
+    "cs": "Czech",
+    "sk": "Slovak",
+    "ro": "Romanian",
+    "hu": "Hungarian",
+    "pt": "Portuguese",
+    "lt": "Lithuanian",
+    "lv": "Latvian",
+    "et": "Estonian",
+    "hr": "Croatian",
+    "sr": "Serbian",
+    "sl": "Slovenian",
+    "bg": "Bulgarian",
+    "el": "Greek",
+    "nl": "Dutch",
+    "sv": "Swedish",
+    "fi": "Finnish",
+    "no": "Norwegian",
+    "da": "Danish"
+  },
+  "fomo": {
+    "names": [
+      "John",
+      "Emily",
+      "Michael",
+      "Sarah",
+      "David",
+      "Jessica",
+      "Robert"
+    ],
+    "cities": [
+      "London",
+      "New York",
+      "Chicago",
+      "Toronto",
+      "Sydney",
+      "Dublin",
+      "Berlin"
+    ],
+    "purchaseMessage": "{name} from {city}",
+    "productMessage": "Just bought \"{product}\"",
+    "timeAgo": "{time} min ago"
+  },
+  "exitIntent": {
+    "title": "WAIT!",
+    "subtitle": "Before you leave...",
+    "header": "Get your free \"Starter Pack\"",
+    "description": "Join our newsletter and receive 50 free worksheets!",
+    "cta": "I want my gift",
+    "noThanks": "No thanks, I'll pay full price later"
+  }
+}

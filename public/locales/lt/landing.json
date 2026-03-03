@@ -1,0 +1,243 @@
+{
+  "hero": {
+    "badge": "Mokymo priemonės iš Kamila Łobko-Koziej",
+    "title_part1": "Ištekliai",
+    "title_part2": "Anglų k. Mokytojams",
+    "subtitle": "Mokote anglų kalbos? Įsikvėpkite! Čia rasite kūrybiškas mokymo priemones, įdomius metinius projektus ir pedagogines naujoves.",
+    "cta_catalog": "Peržiūrėti katalogą",
+    "cta_secondary": "Kaip tai veikia?",
+    "stats_lessons": "Paruoštos pamokos",
+    "stats_teachers": "Mokytojai",
+    "stats_rating": "Įvertinimas",
+    "viewSample": "Peržiūrėti pavyzdį",
+    "videoPresentation": "Vaizdo pristatymas",
+    "verifiedBadge": "Patvirtintos priemonės",
+    "testedInClass": "Išbandyta klasėje",
+    "materialsCount": "Medžiagos"
+  },
+  "features": {
+    "header": "Kodėl rinktis mūsų priemones?",
+    "sub": "Sukurta su aistra ir dėmesiu detalėms",
+    "items": [
+      {
+        "title": "Momentinė prieiga",
+        "desc": "Atsisiųskite priemones iškart po pirkimo"
+      },
+      {
+        "title": "Gimtakalbių įrašai",
+        "desc": "Profesionalūs garso įrašai"
+      },
+      {
+        "title": "Inovacijų idėjos",
+        "desc": "Projektai, paruošti įgyvendinimui"
+      },
+      {
+        "title": "Paruošti pamokų planai",
+        "desc": "Išsamūs pamokų scenarijai"
+      },
+      {
+        "title": "Laiko taupymas",
+        "desc": "Priemonės, paruoštos spausdinimui"
+      },
+      {
+        "title": "Išbandyta praktikoje",
+        "desc": "Išbandyta klasėje"
+      }
+    ]
+  },
+  "categories": {
+    "badge": "Produktų kategorijos",
+    "browse": "Naršyti kategoriją",
+    "viewCatalog": "Peržiūrėti visą katalogą",
+    "header": "Ką rasite mūsų parduotuvėje?",
+    "sub": "Pasirinkite kategoriją ir atraskite priemones, kurios praturtins jūsų pamokas",
+    "items": {
+      "mega-pack": {
+        "title": "Mega Paketas",
+        "description": "Išsamūs mokymo paketai 2-in-1 - visos priemonės + metiniai pamokų planai",
+        "label": "paketai"
+      },
+      "scenariusze": {
+        "title": "Pamokų planai",
+        "description": "Paruošti naudojimui pamokų scenarijai mėnuo po mėnesio su spausdinama medžiaga",
+        "label": "planai"
+      },
+      "special-lessons": {
+        "title": "Specialios pamokos",
+        "description": "Medžiaga šventėms, neįprastoms dienoms ir ypatingoms progoms",
+        "label": "rinkiniai"
+      },
+      "speakbook": {
+        "title": "Kalbėjimo knygos",
+        "description": "Interaktyvios knygelės kalbėjimo ir žodyno lavinimui",
+        "label": "knygos"
+      },
+      "stories": {
+        "title": "Istorijos ir Garsas",
+        "description": "El. knygos ir istorijos su gimtakalbių garso įrašais",
+        "label": "istorijos"
+      },
+      "teatr": {
+        "title": "Teatras ir Žaidimai",
+        "description": "Teatro scenarijai, stalo žaidimai ir judesio veiklos",
+        "label": "priemonės"
+      },
+      "zlobek": {
+        "title": "Lopšelis",
+        "description": "Medžiaga mažyliams",
+        "label": "priemonės"
+      },
+      "przedszkole": {
+        "title": "Darželis",
+        "description": "Medžiaga ikimokyklinukams",
+        "label": "priemonės"
+      },
+      "klasy-1-3": {
+        "title": "1-3 klasės",
+        "description": "Medžiaga 1-3 klasėms",
+        "label": "priemonės"
+      },
+      "klasy-4-6": {
+        "title": "4-6 klasės",
+        "description": "Medžiaga 4-6 klasėms",
+        "label": "priemonės"
+      },
+      "klasy-7-8": {
+        "title": "7-8 klasės",
+        "description": "Medžiaga 7-8 klasėms",
+        "label": "priemonės"
+      },
+      "liceum": {
+        "title": "Gimnazija / Suaugusieji",
+        "description": "Medžiaga gimnazijoms ir suaugusiems",
+        "label": "priemonės"
+      },
+      "gry": {
+        "title": "Žaidimai",
+        "description": "Žaidimai ir veiklos",
+        "label": "žaidimai"
+      },
+      "culture": {
+        "title": "Kultūra",
+        "description": "Kultūrinė medžiaga",
+        "label": "priemonės"
+      },
+      "flashcards": {
+        "title": "Kortelės",
+        "description": "Mokomosios kortelės (Flashcards)",
+        "label": "kortelės"
+      },
+      "inne": {
+        "title": "Kiti",
+        "description": "Kitos priemonės",
+        "label": "priemonės"
+      },
+      "pory-roku": {
+        "title": "Metų laikai",
+        "description": "Sezoninė medžiaga",
+        "label": "priemonės"
+      }
+    }
+  },
+  "trustBar": {
+    "securePayments": "Saugūs mokėjimai",
+    "instantAccess": "Momentinė prieiga",
+    "happyTeachers": "12000+ laimingų mokytojų",
+    "rating": "Įvertinimas 4.9/5",
+    "saveTime": "Taupykite laiką",
+    "verifiedMaterials": "Patvirtintos priemonės",
+    "multiplePayments": "Daugybė mokėjimo būdų",
+    "downloadInstant": "Momentinis atsisiuntimas",
+    "passion": "Sukurta su aistra",
+    "qualityGuarantee": "Kokybės garantija",
+    "regularUpdates": "Nuolat atnaujinama",
+    "bonuses": "Priedai lojaliems klientams",
+    "socialCommunity": {
+      "header": "Prisijunkite prie mūsų bendruomenės",
+      "desc": "Daugiau nei 12 000 anglų kalbos mokytojų mūsų grupėje dalijasi idėjomis ir nuomonėmis. Sužinokite naujienas ir gaukite nemokamą medžiagą!",
+      "cta": "Sekite mus Facebook",
+      "followers": "Sekėjų",
+      "stats": "Atsisiųstos medžiagos",
+      "imageAlts": {
+        "speakbook": "Conversations with Speakbook (Grades 4-8)",
+        "theater": "Theater Plays (Grades 1-6)",
+        "megapack": "Mega Pack - complete scenarios",
+        "nursery": "Scenarios for Nursery and Preschool",
+        "stories": "Project Stories & Culture Pack",
+        "games": "Games and activities for Special Lesson Days"
+      }
+    }
+  },
+  "testimonials": {
+    "header": "Ką sako mokytojai?",
+    "subheader": "Prisijunkite prie tūkstančių patenkintų anglų kalbos mokytojų",
+    "stats": {
+      "teachers": "Mokytojai bendruomenėje",
+      "rating": "Vidutinis įvertinimas",
+      "materials": "Sukurtos priemonės",
+      "satisfaction": "Pasitenkinimo garantija"
+    },
+    "reviews": [
+      {
+        "name": "Aistė Petrauskaitė",
+        "role": "Anglų k. mokytoja, Vilnius",
+        "content": "Priemonės fantastiškos! Mano mokiniai įsitraukę kaip niekada anksčiau. Sutaupau daugybę laiko ruošdamasi pamokoms."
+      },
+      {
+        "name": "Mantas Jankauskas",
+        "role": "Pradinių klasių mokytojas, Kaunas",
+        "content": "Paruošti planai ir spausdinama medžiaga yra dešimtukas. Rekomenduoju kiekvienam mokytojui!"
+      },
+      {
+        "name": "Rūta Kazlauskaitė",
+        "role": "Mokytoja, Klaipėda",
+        "content": "Perku jau trečią rinkinį ir esu sužavėta kokybe. Gimtakalbių įrašai yra neįkainojami!"
+      },
+      {
+        "name": "Tomas Rimkus",
+        "role": "Gimnazijos mokytojas, Šiauliai",
+        "content": "Profesionali medžiaga, kuri tikrai veikia klasėje. Verta investicijų."
+      }
+    ]
+  },
+  "aboutAuthor": {
+    "badge": "Susipažinkite su autore",
+    "title": "Kamila Łobko-Koziej",
+    "description1": "Esu anglų kalbos mokytoja su daugiau nei 15 metų patirtimi dirbant su ikimokyklinio ir pradinio mokyklinio amžiaus vaikais. Mano aistra mokymui ir nuolatinė kūrybiškų mokymo metodų paieška įkvėpė mane kurti originalias edukacines priemones.",
+    "description2": "Tikiu, kad užsienio kalbos mokymasis gali būti įspūdingas nuotykis kiekvienam vaikui. Mano priemonės derina patikrintus pedagoginius metodus su žaidimo elementais, todėl pamokos tampa patrauklios ir efektyvios.",
+    "stats": {
+      "experience": "metų patirties",
+      "materials": "priemonių",
+      "teachers": "mokytojų",
+      "trainings": "apmokymų"
+    },
+    "floating": {
+      "line1": "Sukurta su aistra",
+      "line2": "mokytojams"
+    }
+  },
+  "contests": {
+    "header": "Ongoing Projects & Contests",
+    "subheader": "Join our educational initiatives and win attractive prizes for your school!",
+    "viewAll": "View all projects",
+    "cta": "Learn more",
+    "platform": "Go to Contest Platform",
+    "stats": {
+      "contests": "Contests",
+      "participants": "Participants yearly",
+      "tradition": "Years of tradition"
+    },
+    "items": {
+      "lingus": {
+        "name": "Linguś",
+        "fullName": "National English Language Contest",
+        "description": "Test your knowledge of the English language"
+      },
+      "matmis": {
+        "name": "MatMiś",
+        "fullName": "National Mathematics Contest",
+        "description": "Develop logical thinking and mathematical skills"
+      }
+    }
+  }
+}

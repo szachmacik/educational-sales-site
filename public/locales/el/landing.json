@@ -1,0 +1,238 @@
+{
+  "hero": {
+    "badge": "Εκπαιδευτικό Υλικό από την Kamila Łobko-Koziej",
+    "title_part1": "Πόροι για",
+    "title_part2": "Καθηγητές Αγγλικών",
+    "subtitle": "Διδάσκετε αγγλικά; Εμπνευστείτε! Βρείτε δημιουργικό διδακτικό υλικό, ενδιαφέροντα ολοχρονικά έργα και παιδαγωγικές καινοτομίες εδώ.",
+    "cta_catalog": "Δείτε τον Κατάλογο",
+    "cta_secondary": "Πώς λειτουργεί;",
+    "stats_lessons": "Έτοιμα Μαθήματα",
+    "stats_teachers": "Καθηγητές",
+    "stats_rating": "Βαθμολογία",
+    "viewSample": "Δείτε δείγμα μαθήματος",
+    "videoPresentation": "Παρουσίαση βίντεο",
+    "verifiedBadge": "Επαληθευμένο υλικό",
+    "testedInClass": "Δοκιμασμένο στην τάξη",
+    "materialsCount": "Υλικά"
+  },
+  "features": {
+    "header": "Γιατί να επιλέξετε το υλικό μας;",
+    "sub": "Δημιουργήθηκε με πάθος και προσοχή στη λεπτομέρεια",
+    "items": [
+      {
+        "title": "Άμεση Πρόσβαση",
+        "desc": "Λήψη υλικού αμέσως μετά την αγορά"
+      },
+      {
+        "title": "Ηχογραφήσεις Native Speaker",
+        "desc": "Επαγγελματικές ηχογραφήσεις ήχου"
+      },
+      {
+        "title": "Ιδέες για Καινοτομία",
+        "desc": "Έτοιμα έργα προς υλοποίηση"
+      },
+      {
+        "title": "Έτοιμα Σχέδια Μαθήματος",
+        "desc": "Λεπτομερή σενάρια μαθήματος"
+      },
+      {
+        "title": "Εξοικονόμηση Χρόνου",
+        "desc": "Υλικό έτοιμο για εκτύπωση"
+      },
+      {
+        "title": "Δοκιμασμένο στην Πράξη",
+        "desc": "Δοκιμασμένο μέσα στην τάξη"
+      }
+    ]
+  },
+  "categories": {
+    "badge": "Κατηγορίες Προϊόντων",
+    "browse": "Περιήγηση στην κατηγορία",
+    "viewCatalog": "Δείτε τον πλήρη κατάλογο",
+    "header": "Τι θα βρείτε στο κατάστημά μας;",
+    "sub": "Επιλέξτε μια κατηγορία και ανακαλύψτε υλικά για να εμπλουτίσετε τα μαθήματά σας",
+    "items": {
+      "mega-pack": {
+        "title": "Mega Pack",
+        "description": "Ολοκληρωμένα εκπαιδευτικά πακέτα 2 σε 1 - όλα τα υλικά + σχέδια μαθήματος για όλο το χρόνο",
+        "label": "πακέτα"
+      },
+      "scenariusze": {
+        "title": "Σχέδια Μαθήματος",
+        "description": "Έτοιμα προς χρήση σχέδια μαθήματος για κάθε μήνα με εκτυπώσιμο υλικό",
+        "label": "σχέδια"
+      },
+      "special-lessons": {
+        "title": "Ειδικά Μαθήματα",
+        "description": "Υλικό για γιορτές, ασυνήθιστες μέρες και ειδικές περιστάσεις",
+        "label": "σετ"
+      },
+      "speakbook": {
+        "title": "Speakbooks",
+        "description": "Διαδραστικά βιβλιαράκια που αναπτύσσουν την ομιλία και το λεξιλόγιο",
+        "label": "speakbooks"
+      },
+      "stories": {
+        "title": "Ιστορίες & Ήχος",
+        "description": "E-books και ιστορίες με ηχογραφήσεις από native speakers",
+        "label": "ιστορίες"
+      },
+      "teatr": {
+        "title": "Θέατρο & Παιχνίδια",
+        "description": "Σενάρια θεάτρου, επιτραπέζια παιχνίδια και δραστηριότητες κίνησης",
+        "label": "υλικά"
+      },
+      "zlobek": {
+        "title": "Βρεφονηπιακός Σταθμός",
+        "description": "Υλικό για νήπια",
+        "label": "υλικά"
+      },
+      "przedszkole": {
+        "title": "Νηπιαγωγείο",
+        "description": "Υλικό για παιδιά νηπιαγωγείου",
+        "label": "υλικά"
+      },
+      "klasy-1-3": {
+        "title": "Τάξεις 1-3",
+        "description": "Υλικό για τις τάξεις 1-3",
+        "label": "υλικά"
+      },
+      "klasy-4-6": {
+        "title": "Τάξεις 4-6",
+        "description": "Υλικό για τις τάξεις 4-6",
+        "label": "υλικά"
+      },
+      "klasy-7-8": {
+        "title": "Τάξεις 7-8",
+        "description": "Υλικό για τις τάξεις 7-8",
+        "label": "υλικά"
+      },
+      "liceum": {
+        "title": "Λύκειο",
+        "description": "Υλικό για το λύκειο",
+        "label": "υλικά"
+      },
+      "gry": {
+        "title": "Παιχνίδια",
+        "description": "Παιχνίδια και δραστηριότητες",
+        "label": "παιχνίδια"
+      },
+      "culture": {
+        "title": "Πολιτισμός",
+        "description": "Πολιτιστικά υλικά",
+        "label": "υλικά"
+      },
+      "flashcards": {
+        "title": "Κάρτες",
+        "description": "Κάρτες λεξιλογίου",
+        "label": "κάρτες"
+      },
+      "inne": {
+        "title": "Άλλα",
+        "description": "Άλλα εκπαιδευτικά υλικά",
+        "label": "υλικά"
+      },
+      "pory-roku": {
+        "title": "Εποχές",
+        "description": "Υλικό για τις εποχές και γιορτές",
+        "label": "σετ"
+      }
+    }
+  },
+  "trustBar": {
+    "securePayments": "Ασφαλείς πληρωμές",
+    "instantAccess": "Άμεση πρόσβαση",
+    "happyTeachers": "12000+ ικανοποιημένοι καθηγητές",
+    "rating": "Βαθμολογία 4.9/5",
+    "saveTime": "Εξοικονομήστε χρόνο",
+    "verifiedMaterials": "Επαληθευμένο υλικό",
+    "multiplePayments": "Πολλαπλές μέθοδοι πληρωμής",
+    "downloadInstant": "Άμεση λήψη",
+    "passion": "Δημιουργήθηκε με πάθος",
+    "qualityGuarantee": "Εγγύηση ποιότητας",
+    "regularUpdates": "Τακτικές ενημερώσεις",
+    "bonuses": "Επιπλέον υλικό (Bonus)",
+    "socialCommunity": {
+      "header": "Γίνετε μέλος της κοινότητάς μας",
+      "desc": "Πάνω από 12.000 καθηγητές Αγγλικών μοιράζονται τις ιδέες και τα σχόλιά τους στην ομάδα μας. Μείνετε ενημερωμένοι με νέα και δωρεάν υλικά!",
+      "cta": "Ακολουθήστε μας στο Facebook",
+      "followers": "Ακόλουθοι",
+      "stats": "Λήψη υλικών",
+      "imageAlts": {
+        "speakbook": "Conversations with Speakbook (Grades 4-8)",
+        "theater": "Theater Plays (Grades 1-6)",
+        "megapack": "Mega Pack - complete scenarios",
+        "nursery": "Scenarios for Nursery and Preschool",
+        "stories": "Project Stories & Culture Pack",
+        "games": "Games and activities for Special Lesson Days"
+      }
+    }
+  },
+  "testimonials": {
+    "header": "Τι λένε οι καθηγητές;",
+    "subheader": "Γίνετε μέλος χιλιάδων ικανοποιημένων καθηγητών αγγλικών",
+    "stats": {
+      "teachers": "Καθηγητές στην κοινότητα",
+      "rating": "Μέση βαθμολογία",
+      "materials": "Αναπτυγμένα υλικά",
+      "satisfaction": "Εγγύηση ικανοποίησης"
+    },
+    "reviews": [
+      {
+        "name": "Sarah Wilson",
+        "role": "Καθηγήτρια Αγγλικών, Λονδίνο",
+        "content": "Τα υλικά είναι φανταστικά! Οι μαθητές μου συμμετέχουν όπως ποτέ άλλοτε. Εξοικονομώ πολύ χρόνο στην προετοιμασία των μαθημάτων."
+      },
+      {
+        "name": "James Smith",
+        "role": "Δάσκαλος Δημοτικού, Μάντσεστερ",
+        "content": "Τα έτοιμα σχέδια και το εκτυπώσιμο υλικό είναι μεγάλη επιτυχία. Τα συνιστώ σε κάθε καθηγητή!"
+      },
+      {
+        "name": "Emily Brown",
+        "role": "Καθηγήτρια, Μπρίστολ",
+        "content": "Αγοράζω το τρίτο πακέτο μου και είμαι ενθουσιασμένη με την ποιότητα. Οι ηχογραφήσεις από native speakers είναι πολύτιμες!"
+      }
+    ]
+  },
+  "aboutAuthor": {
+    "badge": "Γνωρίστε τη συγγραφέα",
+    "title": "Kamila Łobko-Koziej",
+    "description1": "Είμαι καθηγήτρια Αγγλικών με πάνω από 15 χρόνια εμπειρίας στην προσχολική και πρωτοβάθμια εκπαίδευση. Το πάθος μου για τη διδασκαλία και η συνεχής αναζήτηση για δημιουργικές μεθόδους με ενέπνευσαν να δημιουργήσω πρωτότυπο εκπαιδευτικό υλικό.",
+    "description2": "Πιστεύω ότι η εκμάθηση μιας ξένης γλώσσας μπορεί να είναι μια συναρπαστική περιπέτεια για κάθε παιδί. Τα υλικά μου συνδυάζουν αποδεδειγμένες παιδαγωγικές μεθόδους με το παιχνίδι, κάνοντας τα μαθήματα ενδιαφέροντα και αποτελεσματικά.",
+    "stats": {
+      "experience": "χρόνια εμπειρίας",
+      "materials": "υλικά",
+      "teachers": "καθηγητές",
+      "trainings": "εκπαιδεύσεις"
+    },
+    "floating": {
+      "line1": "Δημιουργήθηκε με πάθος",
+      "line2": "για τους καθηγητές"
+    }
+  },
+  "contests": {
+    "header": "Ongoing Projects & Contests",
+    "subheader": "Join our educational initiatives and win attractive prizes for your school!",
+    "viewAll": "View all projects",
+    "cta": "Learn more",
+    "platform": "Go to Contest Platform",
+    "stats": {
+      "contests": "Contests",
+      "participants": "Participants yearly",
+      "tradition": "Years of tradition"
+    },
+    "items": {
+      "lingus": {
+        "name": "Linguś",
+        "fullName": "National English Language Contest",
+        "description": "Test your knowledge of the English language"
+      },
+      "matmis": {
+        "name": "MatMiś",
+        "fullName": "National Mathematics Contest",
+        "description": "Develop logical thinking and mathematical skills"
+      }
+    }
+  }
+}

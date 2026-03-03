@@ -1,0 +1,10 @@
+{
+    "blog": {
+        "title": "Blog Edukacyjny",
+        "subtitle": "Inspiracje, metodyka i nowości ze świata nauczania języka angielskiego.",
+        "empty": "Obecnie nie mamy nowych artykułów. Zapraszamy wkrótce!",
+        "readMore": "Czytaj więcej",
+        "backToBlog": "Powrót do bloga",
+        "share": "Udostępnij:"
+    }
+}

@@ -1,0 +1,1641 @@
+{
+  "adminSettings": {
+    "title": "Systeminställningar",
+    "description": "Hantera sajtkonfiguration, analys och SEO",
+    "ai_providers": {
+      "title": "Aktiv AI-leverantör",
+      "description": "Välj modell för innehållsgenerering",
+      "api_key": "API-nyckel"
+    },
+    "tabs": {
+      "ai": "AI-modeller",
+      "marketing": "Marknadsföring & Analys",
+      "seo": "SEO & Meta",
+      "economy": "Ekonomi & Plånbok",
+      "gamification": "Gamification & Badges",
+      "market": "Marknad & Kursplansanalys",
+      "insights": "AI-granskning & Förslag",
+      "channels": "Försäljningskanaler",
+      "integrations": "Integrationer & API",
+      "interactive": "Spel & Interaktioner",
+      "workshop": "AI Studio & Canva",
+      "automation": "Agenter & Automatisering",
+      "emails": "E-postaviseringar",
+      "google": "Google Cloud",
+      "abandoned": "Övergivna varukorgar",
+      "guardian": "AI Guardian",
+      "affiliate": "Affiliateprogram",
+      "pricing": "Betalningar & Prissättning",
+      "taxes": "Fakturor & Skatter",
+      "growth_hacks": "Growth Hacks",
+      "ai_discovery": "AI Discovery (SEO)"
+    },
+    "sections": {
+      "shopping": "Shopping & Ekonomi",
+      "ai": "AI & Interaktioner",
+      "growth": "Tillväxt & Varumärke",
+      "system": "Systeminställningar"
+    },
+    "common": {
+      "save": "Spara ändringar",
+      "saved": "Sparat!",
+      "save_success": "Settings have been successfully saved.",
+      "subject": "Ämne",
+      "content": "Innehåll",
+      "enabled_desc": "Global brytare för trackingskript"
+    },
+    "marketing": {
+      "ga4": "Google Analytics 4",
+      "ga4_placeholder": "G-XXXXXXXXXX",
+      "fb_pixel": "Facebook Pixel",
+      "fb_pixel_placeholder": "Pixel ID",
+      "meta_verification": "Meta Domain Verification",
+      "meta_placeholder": "Verifieringskod",
+      "gsc": "Google Search Console",
+      "gsc_placeholder": "Google Verifieringskod",
+      "enabled": "Aktivera tracking"
+    },
+    "seo": {
+      "default_title": "Standardtitel för sida",
+      "default_desc": "Standard metabeskrivning",
+      "og_image": "Standard bild för delning (OG Image)",
+      "site_name": "Sajtnamn",
+      "basic_title": "Grundläggande SEO",
+      "basic_desc": "Inställningar för synlighet i sökmotorer",
+      "canonical_url": "Canonical Base URL",
+      "canonical_desc": "The base URL used for canonical and alternate (hreflang) links.",
+      "ai_discovery_title": "AI Search Optimization",
+      "ai_discovery_desc": "Configure how AI agents (Gemini, Perplexity, GPT-4) discover and interpret your site.",
+      "ai_discovery_enabled": "Enable AI Crawler Hints",
+      "ai_discovery_enabled_desc": "Injects specialized meta-data for LLM-based search engines.",
+      "ai_summary": "AI Product Summary",
+      "ai_summary_placeholder": "What should AI agents know about your store?",
+      "ai_summary_desc": "This summary helps AI agents provide accurate answers about your services.",
+      "sitemap_regenerate": "Regenerate Multi-Locale Sitemap",
+      "growth_hacks_title": "Growth & Performance Hacks",
+      "growth_hacks_desc": "Advanced tools to increase conversion and track user behavior.",
+      "fomo_title": "FOMO Elements (Scarcity)",
+      "fomo_desc": "Show 'Limited Stock' and 'Recent Purchase' alerts.",
+      "trust_title": "Trust Badges",
+      "trust_desc": "Display security and guarantee badges on product pages.",
+      "ux_tracking": "UX Tracking (Heatmaps)",
+      "clarity_id": "Microsoft Clarity ID",
+      "hotjar_id": "Hotjar Site ID"
+    },
+    "economy": {
+      "title": "Poäng & Plånbokssystem",
+      "description": "Hantera virtuell valuta, prenumerationer och kundlojalitet",
+      "wallet": {
+        "title": "Virtuell plånbok",
+        "enable_wallet": "Aktivera användarplånbok",
+        "allow_topup": "Tillåt påfyllning",
+        "recurring_topup": "Automatisk återkommande påfyllning",
+        "conversion_rate": "Växelkurs (1 EUR = X poäng)",
+        "description": "Hantera kundens virtuella plånbok"
+      },
+      "loyalty": {
+        "title": "Lojalitetspoäng",
+        "enable_loyalty": "Aktivera poänginsamling",
+        "points_per_eur": "Poäng för varje spenderad 1 EUR",
+        "min_redeem": "Minsta poäng för inlösen",
+        "description": "Poäng för aktivitet och köp",
+        "protip": "Pro-tip: Prenumeranter kan få 2x fler poäng om du aktiverar multiplikatorn i Gamification-sektionen."
+      },
+      "subscriptions": {
+        "title": "Planer & Prenumerationer",
+        "description": "Skapa återkommande åtkomstmodeller för material",
+        "status_active": "AKTIV",
+        "per_month": "/ månad",
+        "perks": {
+          "all_pdfs": "Alla PDF:er utan gräns",
+          "free_topup": "Gratis påfyllning av plånbok ({amount} varje månad)"
+        },
+        "add_plan": "Lägg till ny plan"
+      }
+    },
+    "gamification": {
+      "title": "Gamification",
+      "description": "Motivera elever med nivåer, badges och belöningar.",
+      "levels": {
+        "silver": "Silver-nivå",
+        "gold": "Guld-nivå",
+        "diamond": "Diamant-VIP"
+      },
+      "perks": {
+        "discount": "Auto-rabatt (%)",
+        "auto_discount": "Appliceras automatiskt i kassan",
+        "hidden_tier": "Endast manuell tilldelning"
+      },
+      "badges_title": "Elev-badges",
+      "badges": {
+        "early_bird": {
+          "name": "Early Bird",
+          "desc": "Köp inom 1 timme från publicering"
+        },
+        "collector": {
+          "name": "Samlare",
+          "desc": "Har 50+ material"
+        },
+        "top_reviewer": {
+          "name": "Topprecensent",
+          "desc": "10 pålitliga recensioner"
+        }
+      }
+    },
+    "market": {
+      "title": "Marknadsbevakning",
+      "description": "Håll koll på konkurrenter och globala trender inom utbildning.",
+      "curriculum": {
+        "title": "Läroplansbevakning",
+        "description": "Anpassa material till nationella krav",
+        "monitor_label": "Målregion",
+        "options": {
+          "pl_mein": "Polen (MEiN)",
+          "uk_ofsted": "Storbritannien (Ofsted)",
+          "us_cc": "USA (Common Core)"
+        },
+        "status": "Anpassningsnivå",
+        "alerts": "Vissa filer behöver uppdateras för 2026/27 års reform"
+      },
+      "trends": {
+        "title": "Marknadstrender",
+        "description": "Daglig scout analyserar trendande ämnen",
+        "top_selling": "Bestsellers hos konkurrenter",
+        "competitor_bestsellers": "Konkurrenternas bestsellers",
+        "recommendation": "Hög efterfrågan på 'Earth Day'-material upptäckt",
+        "ai_rec": "AI-rekommendation"
+      }
+    },
+    "insights": {
+      "title": "AI-granskning & Produktinsikter",
+      "description": "Analys av dina resurser och expansionsidéer",
+      "sync": {
+        "title": "Synkregister",
+        "description": "Status för import av spel och material från externa plattformar",
+        "last_sync": "Senaste lyckade synk: 15 min sedan",
+        "pending_drafts": "{count} nya utkast att granska"
+      },
+      "expansion": {
+        "title": "Materialfabrik (Förslag)",
+        "description": "Idéer för att utöka befintliga produkter till låg kostnad",
+        "item1": "Produkten 'Unit 1' kan utökas med 20 flashcards (AI genererar dem automatiskt)",
+        "item2": "Gör ett 'Mega Pack' av 3 av dina mest populära scenarier (Potential: +25% marginal)"
+      },
+      "audit": {
+        "title": "Konverteringsgranskning",
+        "description": "AI analyserar beskrivningar och bilder för dina produkter",
+        "suggestion": "Byt huvudbild i 'Flashcards Animals' – nuvarande har låg CTR"
+      }
+    },
+    "integrations": {
+      "title": "Connectorer & Webhooks",
+      "description": "Hantera externa anslutningar och automatisering",
+      "webhooks": {
+        "title": "Webhooks",
+        "description": "Skicka orderaviseringar till externa system",
+        "add": "Lägg till Webhook",
+        "url": "Mål-URL",
+        "event": "Händelse",
+        "events": {
+          "order_created": "Order skapad",
+          "order_paid": "Order betald",
+          "user_registered": "Användare registrerad"
+        }
+      },
+      "mcp": {
+        "title": "MCP Connectorer",
+        "description": "Anslut externa modeller och kunskapsbaser via MCP-protokollet",
+        "server": "MCP-serveradress",
+        "status": "Anslutningsstatus"
+      },
+      "api": {
+        "title": "Externa API-nycklar",
+        "description": "Integrationer med CRM, e-post och andra system",
+        "service": "Tjänst (t.ex. MailerLite, Zapier)",
+        "key": "API-nyckel / Token",
+        "coming_soon": "Integration med MailerLite, ActiveCampaign och Zapier håller på att implementeras.",
+        "coming_soon_desc": "Du kan redan spara nycklar i Webhooks-sektionen för testning."
+      }
+    },
+    "interactive": {
+      "title": "Interaktivt innehåll",
+      "description": "Integrera spel från Wordwall, Genially och H5P.",
+      "auto_import": "Auto-Sourcing",
+      "auto_import_desc": "Systemet detekterar automatiskt inbäddningskoder (Embed) när du skapar en produkt.",
+      "sync_status": "Synkroniseringsstatus",
+      "sync_hint": "Vi föreslår att du klistrar in direktlänkar till spel i redigeringspanelen för produkter. Systemet förvandlar dem automatiskt till ett interaktivt fönster för eleven.",
+      "other_title": "Andra integrationer",
+      "platforms": {
+        "wordwall": "Wordwall Profil-ID",
+        "wordwall_placeholder": "t.ex. kamila-lo-ko",
+        "genially": "Genially Profil-URL",
+        "genially_placeholder": "t.ex. https://view.genial.ly/profile/nick",
+        "sync_title": "Plattforms-synkronisering",
+        "h5p_desc": "Bädda in lokalt",
+        "learningapps_desc": "Via iFrame",
+        "quizizz_desc": "API-synk"
+      }
+    },
+    "workshop": {
+      "title": "AI-verkstad",
+      "description": "Verktyg för snabb utveckling av nytt material.",
+      "generate_btn": "Generera material",
+      "status_ready": "Redo att arbeta",
+      "rag_sources": {
+        "title": "AI Kunskapsbas (RAG)",
+        "description": "Välj din AI-kunskapsbas",
+        "main_label": "Huvudkälla (RAG)",
+        "notebook_lm": "NotebookLM URL",
+        "options": {
+          "google_drive": "Google Drive (Mapp: Edu-Materials)",
+          "notebook_lm": "NotebookLM Connector",
+          "local": "Lokal vektordatabas"
+        }
+      },
+      "generators": {
+        "title": "Materialgeneratorer",
+        "reading": "Läsa",
+        "listening": "Lyssna",
+        "speaking": "Tala",
+        "vocabulary": "Ordförråd",
+        "flashcards": "Flashcards",
+        "tests": "Prov & Examina",
+        "worksheets": "Arbetsblad",
+        "ai_quiz": "AI Quiz Maker"
+      },
+      "canva": {
+        "title": "Canva-integration",
+        "description": "Exportera material direkt till Canva-designer",
+        "api_key": "Design API-nyckel",
+        "auto_export": "Auto-export",
+        "connect": "Verifiera anslutning"
+      },
+      "title_prefix": "AI Creative",
+      "title_suffix": "Studio",
+      "badge": "Next-Gen",
+      "powered_by": "Powered by OpenAI & HeyGen",
+      "available_credits": "Available Credits",
+      "generations_today": "Generations Today",
+      "studio": "Studio",
+      "history": "History",
+      "studios": {
+        "images": "Image Studio",
+        "video": "Video Studio",
+        "avatars": "Avatar Studio",
+        "social": "Social Hub",
+        "flashcards": "Flashcards",
+        "canva": "Canva Studio"
+      },
+      "actions": {
+        "reuse": "Reuse Prompt",
+        "generate": "Generate Asset",
+        "processing": "Processing...",
+        "attach": "Attach",
+        "change_product": "Change Product",
+        "connect": "Connect to Product"
+      },
+      "labels": {
+        "persona": "Select AI Persona",
+        "script": "Script",
+        "prompt": "Creative Prompt",
+        "preview": "Preview",
+        "history_empty": "Your canvas awaits.",
+        "connect_desc": "Link this AI asset to your store inventory.",
+        "professional_suite": "Professional Creative Suite"
+      },
+      "social_hub": {
+        "title": "Social Media Hub",
+        "subtitle": "Post Generator & Optimization",
+        "platforms": {
+          "instagram": "Instagram",
+          "facebook": "Facebook",
+          "linkedin": "LinkedIn",
+          "youtube": "YouTube"
+        },
+        "labels": {
+          "select_product": "Select Product to Promote",
+          "pick_placeholder": "Pick from Product Library...",
+          "campaign_context": "Campaign Context / Prompt",
+          "prompt_placeholder": "What are we promoting today? (e.g., 'New Flashcard Set for Christmas')",
+          "ai_copy": "AI Generated Copy",
+          "thinking": "Thinking...",
+          "regenerate": "Regenerate Copy",
+          "copy_placeholder": "AI will generate your post content here...",
+          "media_asset": "Media Asset",
+          "auto_selected": "Auto-Selected",
+          "select_asset": "Select Asset",
+          "from_gallery": "From Product Gallery",
+          "viral_growth": "Viral Growth",
+          "score": "Score",
+          "ai_expectancy": "AI expects {percent}% higher engagement on {platform}.",
+          "live_mockup": "Live Mockup Preview",
+          "mockup_placeholder": "Your mockup copy will appear here...",
+          "export": "Export to Socials"
+        }
+      },
+      "flashcards": {
+        "title": "AI Flashcard Studio",
+        "subtitle": "Transform topics into beautiful, ready-to-print flashcard sets.",
+        "badge": "Smart Learning",
+        "branding_kit": "Branding Kit",
+        "export_canva": "Export to Canva",
+        "smart_generator": "Smart Generator",
+        "topic_label": "Topic or Context",
+        "topic_placeholder": "e.g. Life Cycle of a Frog",
+        "style_label": "Visual Style",
+        "styles": {
+          "academic": "Academic",
+          "playful": "Playful",
+          "minimal": "Minimal",
+          "canva_ai": "Canva AI"
+        },
+        "generate_btn": "Generate Deck",
+        "generating": "Generating...",
+        "live_preview": "Live Preview",
+        "cards_prepared": "{count} Cards Prepared",
+        "empty": "No cards generated yet",
+        "add_custom": "Add Custom Card"
+      }
+    },
+    "automation": {
+      "title": "AI-automatisering",
+      "description": "Delegera rutinuppgifter till AI-agenter.",
+      "agent_delivered": "Agenten skickade {count} nya utkast!",
+      "agents": {
+        "title": "Aktiv agent",
+        "select_placeholder": "Välj automatiseringsagent",
+        "manus": "Manus AI Agent (Full Browser)",
+        "general": "General Web Scraper",
+        "status_idle": "I standby",
+        "btn_send": "Skicka agenten på jobb"
+      },
+      "receiver": {
+        "title": "Webhook-mottagare",
+        "description": "Adress för att ta emot data från externa webbläsare/scrapers.",
+        "simulate_test": "Simulera mottagen data",
+        "simulate_btn": "Testa mottagare"
+      },
+      "scrapers": {
+        "title": "Webbläsar-scraping-uppgifter",
+        "card_title": "Webbläsar-jobb",
+        "options": {
+          "wordwall": "Wordwall Scraper",
+          "genially": "Genially Scraper",
+          "learningapps": "LearningApps Scraper"
+        },
+        "item1": "Wordwall Scraper",
+        "item2": "Genially Scraper",
+        "item3": "LearningApps Scraper"
+      },
+      "chat": {
+        "title": "AI Agent-chatt",
+        "subtitle": "Direktkommunikation med webbläsaragenten",
+        "placeholder": "Var ska jag leta idag?",
+        "capabilities": "Nuvarande förmågor: Genially, Wordwall, Canva",
+        "welcome": "Hej! Jag är redo att börja. Du kan ge mig uppgifter för dina konton (Wordwall, Canva, Genially). Vad ska jag göra?"
+      }
+    },
+    "emails": {
+      "title": "Systemmeddelandemallar",
+      "description": "Hantera innehållet i meddelanden som skickas automatiskt till kunder",
+      "save": "Spara mallar",
+      "templates": {
+        "welcome": {
+          "title": "Hälsning efter registrering",
+          "subject": "Välkommen till communityn!",
+          "content": "Vi är glada att ha dig med oss. Dina inloggningsuppgifter är..."
+        },
+        "order_confirmed": {
+          "title": "Orderbekräftelse",
+          "subject": "Din order #{orderNumber} har tagits emot",
+          "content": "Tack för ditt köp! Ditt material finns nu tillgängligt i panelen."
+        },
+        "login_details": {
+          "title": "Åtkomstuppgifter (efter köp)",
+          "subject": "Dina inloggningsuppgifter till kursen",
+          "content": "Här är dina inloggningsuppgifter: E-post: {email}, Lösenord: {password}"
+        }
+      },
+      "smtp": {
+        "title": "SMTP-konfiguration / Leverantör",
+        "description": "E-postserverinställningar för systemmeddelanden",
+        "enable_system": "Aktivera systemsändning",
+        "enable_desc": "Använd konfigurerad SMTP-server",
+        "host": "SMTP-värd",
+        "port": "Port"
+      },
+      "variables": "Tillgängliga variabler: {orderNumber}, {email}, {password}, {firstName}, {total}"
+    },
+    "google": {
+      "title": "Google Cloud-integration",
+      "description": "Anslut Google Drive för att importera material direkt till butiken",
+      "auth": {
+        "title": "Google-auktorisering",
+        "connect": "Anslut till Google Drive",
+        "disconnect": "Koppla ur konto",
+        "status_connected": "Ansluten till konto: {email}",
+        "status_disconnected": "Ingen aktiv anslutning",
+        "drive_description": "Connect the 'Edu-Materials' folder from your Google Drive"
+      },
+      "drive": {
+        "title": "Google Drive-bläddrare",
+        "import_selected": "Importera valda filer",
+        "refresh": "Uppdatera lista",
+        "no_files": "Inga PDF/ZIP-filer hittades på din Drive",
+        "import_success": "Filerna har importerats som material",
+        "column_name": "Filnamn",
+        "column_size": "Storlek",
+        "column_action": "Åtgärd",
+        "description": "Bläddra bland PDF- och ZIP-filer som är redo för import",
+        "button": "Ladda ner från Google Drive",
+        "connecting": "Ansluter...",
+        "picker_title": "Välj filer från Google Drive",
+        "import_count": "Importera valda ({count})",
+        "toast_success": "Importera {count} filer från Google Drive"
+      },
+      "config": {
+        "client_id": "Google Client ID",
+        "client_secret": "Google Client Secret",
+        "redirect_uri": "Redirect URI"
+      }
+    },
+    "abandoned": {
+      "title": "Återskapande av varukorgar",
+      "description": "Automatiska påminnelser till kunder som inte slutfört sitt köp",
+      "delay": "Fördröjning första e-post (timmar)",
+      "discount_code": "Rabattkod i e-post (valfritt)",
+      "enable_auto": "Aktivera automatiskt återskapande",
+      "stats": {
+        "total_recovered": "Återskapad omsättning",
+        "pending_carts": "Väntande varukorgar"
+      }
+    },
+    "guardian": {
+      "title": "AI Safety & Technical Guardian",
+      "description": "Intelligent system som övervakar fel, lagar och prestanda",
+      "legal_check": "Bevakning av lagändringar (EU E-handel)",
+      "tech_check": "Teknisk felövervakning i realtid",
+      "security_check": "Analys av obehöriga åtkomstförsök",
+      "alerts": "Aviseringar om kritiska problem",
+      "status_good": "Systemet körs felfritt",
+      "status_warning": "Potentiell juridisk avvikelse upptäckt",
+      "last_scan": "Senaste fullständiga systemskanning"
+    },
+    "affiliate": {
+      "title": "Referral- & Affiliateprogram",
+      "description": "Förvandla dina kunder till varumärkesambassadörer",
+      "commission": "Partnerprovision (%)",
+      "discount": "Referral-rabatt (%)",
+      "cookie_life": "Cookie-livslängd (dagar)",
+      "referral_links": "Generera referral-länkar",
+      "total_partners": "Aktiva partners",
+      "payouts": "Väntande utbetalningar"
+    },
+    "pricing": {
+      "title": "Purchasing Power Parity (PPP)",
+      "description": "Automatisk prisjustering efter köpkraft i 19 länder",
+      "enable_ppp": "Aktivera intelligent regional prissättning",
+      "base_currency": "Basvaluta",
+      "regions": {
+        "western": "Västeuropa (100% av priset)",
+        "central": "Centraleuropa (85% av priset)",
+        "eastern": "Östeuropa (70% av priset)",
+        "balkans": "Balkan (60% av priset)"
+      },
+      "recurring_title": "Subscriptions & Recurring Payments",
+      "recurring_visa_title": "Visa Recurring Payments",
+      "recurring_visa_desc": "Enable automatic card charging for subscription products. Supported via Stripe Billing and PayNow Recurring.",
+      "recurring_frequency": "Standard Frequency",
+      "recurring_monthly": "30 DAYS / MONTHLY",
+      "recurring_grace_period": "Grace Period / Retry",
+      "recurring_retry": "3 DAYS RETRY",
+      "paynow_title": "PayNow Integration",
+      "paynow_access_key": "Access Key",
+      "paynow_signature_key": "Signature Key",
+      "blik_title": "BLIK Support Enabled",
+      "blik_desc": "PayNow allows users to pay with BLIK codes directly on your checkout page."
+    },
+    "taxes": {
+      "title": "Skatter & Fakturering",
+      "description": "Hantera momssatser och automatisk utfärdande av EU-fakturor",
+      "eu_vat_moss": "Aktivera VAT-MOSS / OSS-systemet",
+      "invoice_provider": "Fakturaleverantör (t.ex. Fakturownia, InFakt)",
+      "infakt_api_key": "InFakt API Key",
+      "test_connection": "Testa API-anslutning",
+      "stripe_title": "Stripe Payments",
+      "stripe_publishable": "Stripe Publishable Key",
+      "stripe_secret": "Stripe Secret Key"
+    },
+    "editor": {
+      "placeholder": "Börja skriva...",
+      "prompts": {
+        "link": "Ange URL:",
+        "image": "Ange bild-URL:"
+      },
+      "toolbar": {
+        "bold": "Fet",
+        "italic": "Kursiv",
+        "h2": "Rubrik 2",
+        "h3": "Rubrik 3",
+        "list": "Punktlista",
+        "listOrdered": "Numrerad lista",
+        "link": "Infoga länk",
+        "image": "Infoga bild",
+        "quote": "Citat",
+        "code": "Kodblock"
+      }
+    }
+  },
+  "adminPanel": {
+    "sidebar": {
+      "title": "AdminPanel",
+      "subtitle": "Creative Studio",
+      "expand": "Expandera",
+      "collapse": "Minimera",
+      "logout": "Logga ut session",
+      "logoutTooltip": "Logga ut",
+      "menu": {
+        "dashboard": "Översikt",
+        "products": "Produkter",
+        "orders": "Order",
+        "coupons": "Coupons",
+        "materials": "Material",
+        "blog": "Blogg",
+        "import": "Import AI",
+        "settings": "Inställningar",
+        "chat": "AI Chat",
+        "home": "Startsida",
+        "role": "Administratör",
+        "online": "Online",
+        "abandoned": "Abandoned Carts",
+        "offers": "Offer Generator",
+        "workshop": "AI Creative Suite",
+        "landing_builder": "Landing Pages"
+      }
+    },
+    "dashboard": {
+      "title": "Översikt",
+      "subtitle": "Försäljningsöversikt och analys",
+      "periods": {
+        "7days": "7 dagar",
+        "30days": "30 dagar",
+        "90days": "90 dagar",
+        "all": "All tid"
+      },
+      "addProduct": "Lägg till produkt",
+      "currency": "$",
+      "stats": {
+        "revenue": "Omsättning",
+        "orders": "Order",
+        "customers": "Kunder",
+        "avgOrderValue": "Genomsnittligt ordervärde",
+        "vsPrevious": "jämfört med föregående period",
+        "inSelectedPeriod": "Under vald period",
+        "uniqueCustomers": "Unika köpare",
+        "perOrder": "Per order"
+      },
+      "charts": {
+        "weeklyRevenue": "Veckoomsättning",
+        "revenueByDay": "Försäljning per dag",
+        "bestsellersRanking": "Topplista över storsäljare",
+        "topSellingProducts": "Mest sålda produkter",
+        "noSalesData": "Ingen försäljningsdata tillgänglig",
+        "sold": "{count} sålda",
+        "days": {
+          "mon": "Mån",
+          "tue": "Tis",
+          "wed": "Ons",
+          "thu": "Tor",
+          "fri": "Fre",
+          "sat": "Lör",
+          "sun": "Sön"
+        }
+      },
+      "recentOrders": {
+        "title": "Senaste order",
+        "subtitle": "De senaste transaktionerna",
+        "viewAll": "Visa alla",
+        "noOrders": "Inga order än",
+        "productCount": "{count} produkter",
+        "status": {
+          "completed": "Slutförd",
+          "pending": "Väntande",
+          "processing": "Behandlas"
+        }
+      },
+      "aiInsights": {
+        "card": {
+          "monitoring": "Active Market Monitoring",
+          "strategyTitle": "Your growth strategy for {period}",
+          "periodWeek": "next week",
+          "periodMonth": "this month",
+          "description": "We analyzed your last {count} orders. We have 3 specific recommendations that could increase your revenue by approx. 18%.",
+          "generateBtn": "Generate Strategic Report"
+        },
+        "modal": {
+          "title": "AI Growth Report",
+          "subtitle": "Generated for: Administrator • Feb 2024",
+          "revenueChance": "Revenue Chance",
+          "revenueGrowth": "Possible growth in 14 days",
+          "crossSellScore": "Cross-sell Score",
+          "crossSellDesc": "High linking potential",
+          "retentionProj": "Retention Proj.",
+          "retentionDesc": "Loyal returning customers",
+          "recommendedActions": "Recommended Actions",
+          "action1Title": "Email: Abandoned Cart (New template)",
+          "action1Desc": "Customers are abandoning carts for \"Preschool - Autumn Pack\". We suggest adding a 48h timer and 5% discount.",
+          "action2Title": "Bundle: Preschool Combo Pack",
+          "action2Desc": "Combine 3 most popular products into one bundle. Suggested price: $59.99.",
+          "deploy": "Deploy",
+          "create": "Create",
+          "skip": "Skip report",
+          "apply": "Apply Recommendations",
+          "success": "Strategic report has been saved and sent for analysis."
+        },
+        "overlay": {
+          "title": "Processing Big Data...",
+          "subtitle": "\"Analyzing correlations between products and buying behaviors of your customers.\"",
+          "step1": "Clustering users...",
+          "step3": "Generating visualizations..."
+        },
+        "wordwallSync": {
+          "title": "Smart Interactive Sync",
+          "description": "Paste links to your resources (Wordwall, Genially, Canva, YouTube, Google Slides, Quizizz, NotebookLM, Vocaroo) to add them as products.",
+          "placeholder": "https://wordwall.net/...\nhttps://view.genial.ly/...\nhttps://canva.com/design/...\nhttps://youtube.com/watch?v=...\nhttps://quizizz.com/...",
+          "syncBtn": "Start Sync",
+          "syncing": "Syncing...",
+          "success": "Successfully imported {count} new games!",
+          "noNew": "All provided links have already been imported.",
+          "invalid": "No valid educational links (Wordwall/Genially/Canva/YouTube/Slides/etc) detected.",
+          "close": "Close"
+        }
+      },
+      "interactivePreview": {
+        "subtitle": "Live preview of interactive material",
+        "noPreview": "No preview available for this asset",
+        "close": "Close"
+      },
+      "activeAiLogs": {
+        "title": "Active AI Logs",
+        "live": "Live",
+        "imageGenerated": "Image Generated",
+        "socialPostReady": "Social Post Ready",
+        "flashcardCreated": "Flashcard Created",
+        "trendIdentified": "Trend identified",
+        "seoOptimized": "SEO Optimized",
+        "imagePolished": "Image Polished"
+      },
+      "studioQuickAccess": {
+        "title": "Studio Quick Access",
+        "imageStudio": "Image Studio",
+        "generate4k": "Generate 4K Visuals",
+        "socialHub": "Social Hub",
+        "viralCreation": "Viral Post Creation"
+      }
+    },
+    "products": {
+      "title": "Produkter",
+      "subtitle": "Hantera dina digitala produkter",
+      "search": "Sök produkter...",
+      "importAi": "AI-import",
+      "addProduct": "Lägg till produkt",
+      "noProducts": "Inga produkter hittades",
+      "addFirst": "Lägg till den första produkten",
+      "table": {
+        "product": "Produkt",
+        "category": "Kategori",
+        "price": "Pris",
+        "source": "Listad i",
+        "status": "Status",
+        "actions": "Åtgärder"
+      },
+      "status": {
+        "published": "Publicerad",
+        "draft": "Utkast"
+      },
+      "actions": {
+        "edit": "Redigera",
+        "viewAccess": "View Product Access",
+        "copyLink": "Kopiera länk för snabbkassa",
+        "hide": "Dölj",
+        "publish": "Publicera",
+        "delete": "Ta bort"
+      },
+      "toasts": {
+        "linkCopied": "Länk för snabbkassa kopierad:\n{link}",
+        "deleteConfirm": "Är du säker på att du vill ta bort den här produkten?"
+      },
+      "categories": {
+        "lesson-plans": "Lektionsplaner",
+        "worksheets": "Arbetsblad",
+        "flashcards": "Flashcards",
+        "games": "Onlinespel",
+        "audio": "Ljudmaterial",
+        "video": "Videomaterial",
+        "bundles": "Paket",
+        "other": "Övrigt"
+      },
+      "source_badges": {
+        "wordpress": "WordPress / Publigo",
+        "tpt": "Teachers Pay Teachers",
+        "ai_optimized": "AI-optimerad"
+      }
+    },
+    "orders": {
+      "title": "Order",
+      "subtitle": "Hantera order och spåra betalningar",
+      "exportCsv": "Exportera CSV",
+      "stats": {
+        "revenue": "Omsättning (slutförd)",
+        "pending": "Väntar på betalning",
+        "today": "Order idag"
+      },
+      "search": "Sök order...",
+      "statusFilter": "Status",
+      "allStatuses": "Alla",
+      "empty": "Inga order hittades",
+      "table": {
+        "order": "Order",
+        "customer": "Kund",
+        "products": "Produkter",
+        "total": "Totalt",
+        "status": "Status",
+        "date": "Datum"
+      },
+      "status": {
+        "pending": "Väntande",
+        "processing": "Behandlas",
+        "completed": "Slutförd",
+        "cancelled": "Avbruten",
+        "refunded": "Återbetalad"
+      },
+      "paymentMethods": {
+        "card": "Kort",
+        "transfer": "Banköverföring",
+        "blik": "BLIK",
+        "paypal": "PayPal"
+      },
+      "details": {
+        "notFound": "Ordern hittades inte",
+        "back": "Tillbaka till listan",
+        "invoice": "Skapa faktura",
+        "payment": "Betalning",
+        "summary": "Sammanfattning",
+        "sendEmail": "Skicka e-post",
+        "items": "Artiklar",
+        "paidAt": "Betald den: {date}",
+        "discount": "Rabatt",
+        "total": "Totalt",
+        "quantity": "Antal"
+      },
+      "paymentStatus": {
+        "paid": "Betald",
+        "pending": "Väntande",
+        "failed": "Misslyckad",
+        "refunded": "Återbetalad"
+      },
+      "export_headers": {
+        "order_number": "Ordernummer",
+        "date": "Datum",
+        "customer": "Kund",
+        "email": "E-post",
+        "products": "Produkter",
+        "total": "Totalt",
+        "status": "Status"
+      }
+    },
+    "coupons": {
+      "title": "Kuponger",
+      "subtitle": "Hantera rabattkoder",
+      "addCoupon": "Ny kupong",
+      "editCoupon": "Redigera kupong",
+      "createCoupon": "Skapa kupong",
+      "stats": {
+        "all": "Alla kuponger",
+        "active": "Aktiva",
+        "usage": "Totalt antal användningar"
+      },
+      "form": {
+        "code": "Kupongkod",
+        "generate": "Generera",
+        "placeholder": "t.ex. SOMMAR2024",
+        "discountType": "Typer av rabatt",
+        "percent": "Procent (%)",
+        "fixed": "Fast belopp",
+        "discountValue": "Rabattvärde",
+        "usageLimit": "Användningsgräns",
+        "minOrderValue": "Minsta ordervärde",
+        "expiresAt": "Går ut den (valfritt)"
+      },
+      "ux": {
+        "show": "Show",
+        "hide": "Hide",
+        "copy": "Copy",
+        "copied": "Copied!",
+        "secure": "Encrypted"
+      },
+      "preview": {
+        "title": "Preview & Accept",
+        "accept": "Accept Changes",
+        "reject": "Discard",
+        "bulk_title": "Review Generated Drafts",
+        "apply_all": "Accept All ({count})",
+        "diff_before": "Before Optimization",
+        "diff_after": "AI Suggestion"
+      },
+      "table": {
+        "code": "Kod",
+        "discount": "Rabatt",
+        "usage": "Användning",
+        "expires": "Går ut",
+        "status": "Status"
+      },
+      "toasts": {
+        "deleteConfirm": "Är du säker på att du vill ta bort den här kupongen?"
+      }
+    },
+    "materials": {
+      "title": "Materialhantering",
+      "subtitle": "Lägg till filer, organisera dem och koppla till produkter.",
+      "deleteSelected": "Ta bort ({count})",
+      "assignToProduct": "Koppla till produkt ({count})",
+      "dragDrop": "Dra och släpp filer här",
+      "clickToUpload": "eller klicka på knappen nedan för att välja från din enhet",
+      "selectFiles": "Välj filer",
+      "or": "- ELLER -",
+      "library": {
+        "title": "Filbibliotek ({count})",
+        "description": "Lista över allt uppladdat material.",
+        "empty": "Inga filer hittades. Ladda upp något."
+      },
+      "table": {
+        "check": "Välj",
+        "fileName": "Filnamn",
+        "size": "Storlek",
+        "source": "Källa",
+        "product": "Kopplad produkt",
+        "actions": "Åtgärder"
+      },
+      "badges": {
+        "upload": "Uppladdning",
+        "drive": "Google Drive",
+        "unassigned": "Ej kopplad"
+      },
+      "dialog": {
+        "title": "Koppla filer till produkt",
+        "selectLabel": "Välj produkt",
+        "placeholder": "Välj en produkt från listan...",
+        "cancel": "Avbryt",
+        "save": "Spara ändringar"
+      },
+      "toasts": {
+        "uploadSuccess": "Laddade upp {count} filer",
+        "deleted": "Filen borttagen",
+        "deletedSelected": "Valda filer borttagna",
+        "assigned": "Kopplade {count} filer till produkten"
+      }
+    },
+    "certificates": {
+      "title": "Certifikat & Examina",
+      "subtitle": "Hantera certifieringsprocessen",
+      "stats": {
+        "totalIssued": "Totalt utfärdade",
+        "avgScore": "Genomsnittligt provresultat"
+      },
+      "tabs": {
+        "templates": "Mallar",
+        "exams": "Prov",
+        "issued": "Utfärdade"
+      },
+      "templates": {
+        "create": "Skapa mall",
+        "preview": "Redigera mall",
+        "standardTitle": "Standarddiplom (A4)",
+        "standardDesc": "Standardmall för språkkurser",
+        "certificateTitle": "Certifikat för slutförd kurs",
+        "completedCourse": "Slutförd kurs: {course}",
+        "aiGenerate": "Generera AI-mall",
+        "aiDesc": "Beskriv stilen (t.ex. 'modern', 'för barn'), så skapar AI en unik design för diplomet.",
+        "createAi": "Skapa med AI"
+      },
+      "exams": {
+        "create": "Nytt prov",
+        "description": "Skapa en frågebank eller låt AI generera ett prov utifrån kursinnehållet.",
+        "createAi": "Skapa AI-prov"
+      },
+      "issued": {
+        "empty": "Inga certifikat utfärdade denna månad."
+      }
+    },
+    "blog": {
+      "title": "Blogg",
+      "subtitle": "Hantera blogginlägg och SEO",
+      "newPost": "Nytt inlägg",
+      "searchPlaceholder": "Sök inlägg...",
+      "empty": "Inga blogginlägg hittades",
+      "writeFirst": "Skriv det första inlägget",
+      "table": {
+        "title": "Titel",
+        "category": "Kategori",
+        "status": "Status",
+        "date": "Datum"
+      },
+      "status": {
+        "published": "Publicerad",
+        "draft": "Utkast"
+      },
+      "actions": {
+        "preview": "Förhandsgranska",
+        "delete": "Ta bort",
+        "save": "Save",
+        "edit": "Redigera",
+        "hide": "Dölj",
+        "publish": "Publicera"
+      },
+      "categories": {
+        "mega-pack": "Mega Packs",
+        "scenariusze": "Scenarios",
+        "zlobek": "Nursery",
+        "special-lessons": "Special Lessons",
+        "speakbook": "Speakbook",
+        "stories": "Stories",
+        "culture": "Culture",
+        "pory-roku": "Seasons",
+        "teatr": "Theater",
+        "flashcards": "Flashcards",
+        "gry": "Games",
+        "inne": "Övrigt",
+        "metodyka": "Undervisningsmetodik",
+        "materialy": "Studiematerial",
+        "technologia": "Teknik i utbildning",
+        "inspiracje": "Inspiration & Idéer",
+        "recenzje": "Recensioner",
+        "wydarzenia": "Händelser"
+      },
+      "toasts": {
+        "deleteConfirm": "Är du säker på att du vill ta bort det här inlägget?"
+      },
+      "form": {
+        "createTitle": "New Post",
+        "createSubtitle": "Create a new blog post",
+        "editTitle": "Edit Post",
+        "editSubtitle": "Edit existing blog post",
+        "titlePlaceholder": "Post title...",
+        "contentTitle": "Content",
+        "contentPlaceholder": "Start writing post content...",
+        "excerptTitle": "Excerpt",
+        "excerptPlaceholder": "Short description displayed on post list...",
+        "statusTitle": "Status",
+        "categoryTitle": "Category",
+        "categoryPlaceholder": "Select category",
+        "tagsTitle": "Tags",
+        "tagsPlaceholder": "tag1, tag2, tag3",
+        "imageTitle": "Featured Image",
+        "imagePlaceholder": "https://example.com/image.jpg",
+        "seoTitle": "SEO",
+        "metaTitleLabel": "Meta Title",
+        "metaTitlePlaceholder": "Search engine title",
+        "metaDescLabel": "Meta Description",
+        "metaDescPlaceholder": "Search engine description",
+        "charCount": "{count}/{max} characters",
+        "seoPreview": "Google Preview",
+        "generate": "Generate",
+        "save": "Save",
+        "saveChanges": "Save Changes",
+        "saving": "Saving...",
+        "delete": "Delete",
+        "notFound": "Post not found",
+        "backToList": "Back to list",
+        "titleRequired": "Please enter a title first"
+      }
+    },
+    "chat": {
+      "title": "AI Command Center",
+      "subtitle": "Chatta med din butik",
+      "welcome": "Välkommen till AI Center. Hur kan jag hjälpa till?",
+      "newChat": "Ny chatt",
+      "history": "Historik",
+      "placeholder": "Välj modell",
+      "capabilities": {
+        "database": "Databas",
+        "store": "Butik",
+        "web": "Internet",
+        "files": "Filer"
+      },
+      "inputPlaceholder": "Skriv ett meddelande...",
+      "disclaimer": "AI kan göra fel. Verifiera viktig information.",
+      "generatedBy": "Genererad av {model}",
+      "mockResponse": "Simulerat modellsvar för {model}. Mottaget: \"{content}\". I den fullständiga versionen ansluter detta till ett API (t.ex. OpenAI, Manus) eller en databas.",
+      "mockSessions": {
+        "s1": {
+          "title": "Försäljningsanalys Q1",
+          "date": "Idag"
+        },
+        "s2": {
+          "title": "Nya produktbeskrivningar",
+          "date": "Igår"
+        },
+        "s3": {
+          "title": "Felsökning av integration",
+          "date": "2 dagar sedan"
+        }
+      }
+    },
+    "import": {
+      "title": "AI-import",
+      "subtitle": "Importera produkter från extern katalog och förbättra beskrivningar med AI",
+      "catalogUrl": "Katalog-URL",
+      "catalogUrlDesc": "Klistra in länk till produktsidan (kamilaenglish.com)",
+      "scan": "Skanna produkter",
+      "scanning": "Skannar...",
+      "enhance": "Förbättra med AI",
+      "enhancing": "Förbättrar...",
+      "import": "Importera ({count})",
+      "importing": "Importerar...",
+      "productsFound": "Produkter ({count})",
+      "selectedCount": "{count} valda",
+      "selectAll": "Välj alla",
+      "deselectAll": "Avmarkera alla",
+      "allCategories": "Alla",
+      "openSource": "Open Source",
+      "preview": {
+        "testInteractive": "Test Interactive Game",
+        "sourceLink": "Source Link",
+        "selectToPreview": "Select a product to preview",
+        "backToList": "Back to List",
+        "acceptAndCreate": "Accept & Create {count} Drafts"
+      },
+      "configureAi": "Configure API keys in settings before using AI",
+      "selectProducts": "Select products to import",
+      "noAssetsFound": "No valid assets were found. Please ensure you are using public links (e.g. wordwall.net/resource/...) and not your private dashboard.",
+      "privateLink": "Skipped private page: {url}",
+      "errors": {
+        "enterUrl": "Ange katalog-URL",
+        "onlyKamila English": "Bara produkter från kamilaenglish.com stöds",
+        "configureAi": "Konfigurera API-nycklar i inställningarna innan du använder AI",
+        "selectProducts": "Välj produkter som ska importeras"
+      },
+      "success": {
+        "found": "Hittade {count} produkter från Kamila English!",
+        "enhanced": "Beskrivningarna har förbättrats av AI!",
+        "imported": "Importerade {count} produkter!"
+      },
+      "placeholders": {
+        "url": "https://www.sklep.kamilaenglish.com/..."
+      },
+      "categories": {
+        "mega-pack": "Mega Packs",
+        "scenariusze": "Scenarier",
+        "zlobek": "Småbarn",
+        "special-lessons": "Speciallektioner",
+        "speakbook": "Speakbook",
+        "stories": "Berättelser",
+        "culture": "Kultur",
+        "pory-roku": "Årstider",
+        "teatr": "Teater",
+        "flashcards": "Flashcards",
+        "gry": "Spel",
+        "inne": "Övrigt"
+      },
+      "enhancedText": {
+        "titlePrefix": "🎯",
+        "bestseller": "✨ BESTSELLER!",
+        "whatYouGet": "📚 Vad du får:",
+        "features": {
+          "pdf": "• Utskriftsklara PDF-material",
+          "teacher": "• Instruktioner för läraren",
+          "worksheets": "• Arbetsblad och övningar"
+        },
+        "footer": "⭐ Verifierad av hundratals lärare!"
+      }
+    },
+    "success": {
+      "found": "Found {count} products from Kamila English!",
+      "enhanced": "Descriptions enhanced by AI!",
+      "imported": "Imported {count} products!"
+    },
+    "placeholders": {
+      "url": "https://www.sklep.kamilaenglish.com/..."
+    },
+    "categories": {
+      "mega-pack": "Mega Packs",
+      "scenariusze": "Scenarios",
+      "zlobek": "Nursery",
+      "special-lessons": "Special Lessons",
+      "speakbook": "Speakbook",
+      "stories": "Stories",
+      "culture": "Culture",
+      "pory-roku": "Seasons",
+      "teatr": "Theater",
+      "flashcards": "Flashcards",
+      "gry": "Games",
+      "inne": "Others"
+    },
+    "footer": "⭐ Trusted by hundreds of teachers!",
+    "item1": "Full access to materials",
+    "item2": "SEO Optimized content",
+    "item3": "Implementation guide for students",
+    "assistant": {
+      "title": "AI Copilot",
+      "status": "Active Intelligence",
+      "welcome": "How can I help you today?",
+      "placeholder": "Ask me anything...",
+      "suggestions": {
+        "generate_visuals": "Generate 4K Visuals",
+        "social_post": "Create Social Post",
+        "avatar_script": "New AI Avatar Script",
+        "seo_optimize": "SEO Optimize Description",
+        "product_cover": "Generate Product Cover",
+        "sync_wordwall": "Sync with Wordwall",
+        "config_workshop": "Configure AI Workshop",
+        "test_api": "Test API Credentials",
+        "connect_canva": "Connect Canva Design",
+        "gen_strategy": "Generate Strategy",
+        "view_trends": "View Trends",
+        "open_workshop": "Open Workshop"
+      },
+      "responses": {
+        "processing": "I'm processing your request. As your AI Copilot, I can help you manage products, generate creative assets, and optimize your store.",
+        "products_context": "You currently have {count} products in your store. I can help you generate descriptions or images for them in the AI Workshop.",
+        "product_example": "For example, I noticed \"{title}\". Would you like to optimize it?",
+        "workshop_info": "The AI Workshop is where you can generate images, videos, and social media posts. You can find it in the 'Workshop' tab of Settings or the dedicated Studio page.",
+        "wordwall_info": "To sync with Wordwall, go to the Products page and use the 'Interactive Import' button. I can also help you scrape metadata from any educational URL!",
+        "hello": "Hello! I'm your AI Copilot. I'm currently aware of {count} products and your store settings. How can I assist you today?"
+      }
+    },
+    "offers": {
+      "title": "AI Offer Generator",
+      "subtitle": "Create high-converting offers in seconds.",
+      "beta": "Beta Growth Suite",
+      "parameters": {
+        "title": "Campaign Parameters",
+        "description": "Define the goal of your offer",
+        "promotion_type": "Promotion Type",
+        "occasional": "Occasional",
+        "evergreen": "Evergreen",
+        "product": "Product / Service",
+        "product_placeholder": "e.g. Lesson Plan Bundle A1-C1",
+        "benefit": "Main Benefit",
+        "benefit_placeholder": "What will the customer gain?",
+        "discount": "Discount (%)",
+        "generate": "Generate AI Offer",
+        "analyzing": "Analyzing market..."
+      },
+      "preview": {
+        "ai_project": "AI PROJECT",
+        "effectiveness": "Effectiveness: {score}%",
+        "title": "Special Early Bird Offer",
+        "subtitle": "Review the generated campaign before publishing",
+        "ad_copy_label": "Ad Slogan",
+        "conversion_label": "Conversion",
+        "vs_avg": "+{diff}% vs avg",
+        "discount_code_label": "Your discount code",
+        "copied": "Copied",
+        "copy": "Copy",
+        "reject": "Reject and change parameters",
+        "accept": "Accept and Publish Offer"
+      },
+      "loading": {
+        "title": "AI Magic in progress...",
+        "description": "\"Analyzing market trends and optimizing sales psychology for your products.\"",
+        "progress_label": "Competitor analysis..."
+      },
+      "toasts": {
+        "copied": "Discount code copied!",
+        "ready": "Offer ready for review!"
+      }
+    },
+    "landingBuilder": {
+      "title": "Landing Page Builder",
+      "draftVersion": "Draft Version: {name}",
+      "desktop": "Desktop",
+      "mobile": "Mobile",
+      "preview": "Preview",
+      "save": "Save changes",
+      "saving": "Saving...",
+      "elements": "Page Elements",
+      "text": "Text",
+      "image": "Image",
+      "button": "Button",
+      "aiBlock": "AI Block",
+      "canvas": "Canvas (Layers)",
+      "hero": "Hero Section",
+      "features": "Advantages & Benefits",
+      "pricing": "Pricing Section",
+      "aiMagic": {
+        "title": "Ready for magic?",
+        "desc": "Use AI to automatically match copy and colors to your product.",
+        "optimize": "Optimize with AI"
+      },
+      "mock": {
+        "newCourse": "New Course",
+        "heroTitle": "Start teaching the language {joy}",
+        "joy": "with joy",
+        "heroDesc": "Ready-made scenarios your students will love. Zero stress, 100% results.",
+        "buyNow": "Buy now and start teaching",
+        "learnMore": "Learn more",
+        "addImage": "Add main image (Drag & Drop)"
+      },
+      "optimization": {
+        "title": "AI Landing Optimization",
+        "desc": "We detected {count} areas for improvement to increase conversion by approx. {percent}%.",
+        "current": "Current Version",
+        "aiSuggestion": "AI Suggestion (Improved conversion)",
+        "recommendation": "RECOMMENDATION",
+        "skip": "Skip changes",
+        "apply": "Apply optimization",
+        "success": "AI changes have been applied to the project!",
+        "processing": "Working on the project...",
+        "processingDesc": "\"Scanning your copy for benefit language and analyzing market heatmaps.\"",
+        "analysingHeaders": "Analyzing headers...",
+        "pickingColors": "Choosing color palette...",
+        "renderingPreview": "Rendering preview...",
+        "paletteTitle": "Improved Color Palette (Ocean Night)",
+        "paletteDesc": "We will change the accents to a more professional navy and energetic blue.",
+        "suggestionTitle": "Stop wasting hours on preparation. Choose ready-made solutions.",
+        "suggestionDesc": "Join 500+ teachers who reclaimed 10 hours a week. We guarantee a smile on every student's face.",
+        "suggestionButton": "Claim your time and start now"
+      },
+      "toasts": {
+        "saved": "Landing page saved successfully!"
+      }
+    },
+    "integrations": {
+      "title": "Educational BaseLinker",
+      "subtitle": "Global försäljning av material och AI-automatisering.",
+      "loading": "Laddar översättningar...",
+      "addStore": "Lägg till butik",
+      "sync_status": "Synk: {date}",
+      "today": "Idag",
+      "tabs": {
+        "sync": "Lager & Synk",
+        "agent": "Publiceringsagent",
+        "settings": "Marketplace-inställningar"
+      },
+      "marketplaces": {
+        "groups": {
+          "poland": "Polen",
+          "usa": "USA",
+          "dach": "Tyskland (DACH)",
+          "uk": "Storbritannien",
+          "fr_es": "Frankrike/Spanien"
+        },
+        "names": {
+          "wp": "WooCommerce / Publigo",
+          "wp_full": "WordPress / Publigo",
+          "tpt": "Teachers Pay Teachers",
+          "etsy": "Etsy Education",
+          "eduki": "Eduki (Tyskland)",
+          "tes": "TES (UK)",
+          "mieux": "MieuxEnseigner (Frankrike/Spanien)"
+        }
+      },
+      "inventory": {
+        "title": "Globalt lager för material",
+        "badge": "Centrallager",
+        "description": "Hantera källfiler och deras närvaro på olika marknader.",
+        "source": "Källa: kamilaenglish.com",
+        "allFiles": "Alla PDF:er, spel och ljudfiler på ett ställe",
+        "updateBtn": "Uppdatera lager",
+        "syncBtn": "Synka lager",
+        "progress": "Synkronisering pågår",
+        "log": "Systemlogg",
+        "waiting": "Väntar på start...",
+        "logs": {
+          "init": "Initierar anslutning till externa system...",
+          "auth": "Auktoriserar Publigo (wp-idea) & WooCommerce...",
+          "fetching": "Hämtar produktlista (Multi-Channel Sourcing)...",
+          "syncing": "Synkar lagernivåer och digitala filer...",
+          "complete": "Synkronisering klar. Hittade {count} nya material.",
+          "agent_init": "Initierar miljö för {mkt}...",
+          "agent_login": "Loggar in på säljarpanelen...",
+          "agent_fill": "Fyller i formulär: {title}...",
+          "agent_optimize": "Optimerar SEO och laddar upp filer...",
+          "agent_done": "Klar! Produkten väntar på godkännande."
+        },
+        "toasts": {
+          "sync_success": "Lagret uppdaterades korrekt.",
+          "analysis_done": "AI-analys klar. Förslagsdata är redo.",
+          "no_tokens": "Otillräckligt med tokens. Fyll på ditt konto.",
+          "tokens_spent": "{count} tokens drogs för AI-operation.",
+          "test_woo": "Testar WooCommerce-anslutning...",
+          "woo_success": "Lyckad anslutning till kamilaenglish.com (API v3)",
+          "test_manus": "Verifierar Manus AI-licens...",
+          "manus_success": "Licensen är aktiv. Agenten är redo.",
+          "settings_saved": "Inställningarna har sparats lokalt.",
+          "new_channel": "Öppnar konfigurator för ny säljkanal...",
+          "edit_schedule": "Redigering av schema finns i systeminställningarna.",
+          "importing": "Importerar nya produkter..."
+        },
+        "stats": {
+          "products_short": "prod."
+        }
+      },
+      "schedule": {
+        "title": "Schema",
+        "daily02": "Dagligen kl. 02:00",
+        "active": "Aktiv",
+        "disabled": "Inaktiverad",
+        "checkOnlyChanges": "Kolla bara ändringar",
+        "changeCron": "Ändra cron-inställningar"
+      },
+      "aiTip": {
+        "title": "AI Tip",
+        "description": "Vi hittade {count} nya produkter på WordPress som du inte har i den här butiken. Vill du importera dem?",
+        "importBtn": "Importera nu"
+      },
+      "agent": {
+        "catalogTitle": "Produktkatalog",
+        "ready": "Klar",
+        "emptyState": {
+          "title": "Välj produkt och målmarknad",
+          "description": "Manus AI Agent sköter jobbet – loggar in, fyller i data och publicerar produkten på vald plattform."
+        },
+        "selectMarket": "Välj målmarknad",
+        "launchBtn": "Starta agent",
+        "launchAdmin": "Starta agent (Admin)",
+        "launchPoints": "Starta för {count} poäng",
+        "working": "Agenten arbetar...",
+        "manusMode": "Manus-läge: Aktivt",
+        "marketPrefix": "EnglishLearning: ",
+        "yourBalance": "Ditt saldo",
+        "analysisTitle": "AI-analys för {market}",
+        "regionalOptimization": "Regional optimering",
+        "suggestedTitle": "Föreslagen titel (SEO Lokal)",
+        "suggestedPrice": "Pris (PPP-konvertering)",
+        "sellingProb": "Försäljningssannolikhet",
+        "veryHigh": "MYCKET HÖG",
+        "success": {
+          "title": "Uppgiften klar!",
+          "description": "AI-agenten har besökt {market} och publicerat din produkt.",
+          "viewLogs": "VISA SESSIONSLOGGAR"
+        },
+        "toasts": {
+          "session_manager": "Öppnar sessionshanteraren...",
+          "proxy_success": "Proxy: {ip} ({location}) OK",
+          "report_title": "Agent-rapport",
+          "report_desc": "Inloggning: OK, Formulär: Ifyllt, Bilder: Uppladdade, SEO: Optimerad. Total tid: {time}"
+        },
+        "stats": {
+          "points": "poäng"
+        },
+        "mockAnalysis": {
+          "optimizedTitleSuffix": "Omfattande undervisningsmaterial för lärare",
+          "suggestedPrice": "$12.99",
+          "subject": "Engelska",
+          "seoTags": "hemskola, arbetsblad, ordförråd, flashcards, lärarresurser",
+          "description": "Lås upp potentialen i ditt klassrum med denna premium {title}. \n\nDesignad av pedagoger för pedagoger, denna resurs inkluderar:\n- Fullständiga PDF-scenarier\n- Utskriftsklara arbetsblad\n- Interaktiva visuella hjälpmedel.\n\nPerfekt för både online- och fysiska lektioner!"
+        },
+        "idle": {
+          "title": "I standby",
+          "description": "Starta agenten för att påbörja automatisering på plattformen {market}."
+        }
+      },
+      "settings": {
+        "title": "Flerkanalsanslutningar",
+        "description": "Konfigurera åtkomstdata för externa butiker.",
+        "saveAll": "Spara alla",
+        "lastSaved": "Senast sparad: {time}",
+        "woo": {
+          "title": "WooCommerce / WordPress sajt",
+          "url": "Butiks-URL (REST API)",
+          "key": "Consumer Key",
+          "secret": "Consumer Secret",
+          "connected": "Ansluten",
+          "autoSync": "AUTO-SYNK PÅ",
+          "test": "Testa"
+        },
+        "manus": {
+          "title": "Manus AI-session",
+          "description": "Agenten använder \"Browser Operator Mode\" och loggar in på dina konton. Ladda upp sessionscookies (JSON) för att undvika problem med tvåstegsverifiering.",
+          "instance": "Agent API Instance",
+          "test": "Testa Manus",
+          "manage": "Hantera session",
+          "proxy": "Testa proxy"
+        }
+      }
+    }
+  },
+  "logs": {
+    "init": "🚀 Initializing AI Scraper agent...",
+    "connect": "🔍 Connecting to API session...",
+    "extract": "🧩 Extracting mechanics and metadata...",
+    "images": "🖼️ Generating preview thumbnails...",
+    "seo": "✍️ Crafting SEO-optimized descriptions...",
+    "pricing": "💰 Calculating regional pricing...",
+    "finalize": "✨ Finalizing product drafts..."
+  },
+  "interactive": {
+    "title": "Interactive Content",
+    "subtitle": "Import and optimize Games with AI",
+    "placeholder": "Paste links (one per line)...",
+    "found": "Found {count} interactive items!",
+    "generate": "Generate drafts",
+    "createDrafts": "Accept and create drafts",
+    "success": "Successfully imported {count} products!",
+    "preview_title": "AI Draft Preview",
+    "preview_desc": "Review generated products and test interactive content.",
+    "logs": {
+      "launching": "🚀 Launching real-time scraping agent...",
+      "analyzing": "🔍 Analyzing: {url}...",
+      "private": "⚠️ Link {url} appears to be a private collection. Skipping - please use individual game links.",
+      "extracted": "✅ Extracted: {title}",
+      "dropped": "❌ Connection dropped for: {url}",
+      "complete": "Scraping complete! Successfully extracted metadata for {count} assets."
+    }
+  },
+  "integrations": {
+    "title": "Educational BaseLinker",
+    "subtitle": "Global materials sales and AI automation.",
+    "loading": "Loading translations...",
+    "addStore": "Add store",
+    "sync_status": "Sync: {date}",
+    "today": "Today",
+    "tabs": {
+      "sync": "Warehouse & Sync",
+      "agent": "Publication Agent",
+      "settings": "Marketplace Settings"
+    },
+    "marketplaces": {
+      "groups": {
+        "poland": "Poland",
+        "usa": "USA",
+        "dach": "Germany (DACH)",
+        "uk": "UK",
+        "fr_es": "France/Spain"
+      },
+      "names": {
+        "wp": "WooCommerce / Publigo",
+        "wp_full": "WordPress / Publigo",
+        "tpt": "Teachers Pay Teachers",
+        "etsy": "Etsy Education",
+        "eduki": "Eduki (Germany)",
+        "tes": "TES (UK)",
+        "mieux": "MieuxEnseigner (France/Spain)"
+      }
+    },
+    "inventory": {
+      "title": "Global Materials Inventory",
+      "badge": "Central Warehouse",
+      "description": "Manage source files and their presence in different markets.",
+      "source": "Source: kamilaenglish.com",
+      "allFiles": "All PDFs, Games and Audio in one place",
+      "updateBtn": "Update Inventory",
+      "syncBtn": "Sync Inventory",
+      "progress": "Sync progress",
+      "log": "System Log",
+      "waiting": "Waiting for start...",
+      "logs": {
+        "init": "Initializing connection with external systems...",
+        "auth": "Authorizing Publigo (wp-idea) & WooCommerce...",
+        "fetching": "Fetching product list (Multi-Channel Sourcing)...",
+        "syncing": "Syncing stock levels and digital files...",
+        "complete": "Sync complete. Detected {count} new materials.",
+        "agent_init": "Initializing environment for {mkt}...",
+        "agent_login": "Logging into seller panel...",
+        "agent_fill": "Filling form: {title}...",
+        "agent_optimize": "Optimizing SEO and uploading files...",
+        "agent_done": "Ready! Product is waiting for approval."
+      },
+      "toasts": {
+        "sync_success": "Warehouse updated successfully.",
+        "analysis_done": "AI Analysis complete. Suggested data is ready.",
+        "no_tokens": "Insufficient tokens. Top up your account.",
+        "tokens_spent": "{count} tokens deducted for AI operation.",
+        "test_woo": "Testing WooCommerce connection...",
+        "woo_success": "Connected successfully to kamilaenglish.com (API v3)",
+        "test_manus": "Verifying Manus AI license...",
+        "manus_success": "License active. Agent ready for work.",
+        "settings_saved": "Settings saved locally.",
+        "new_channel": "Opening new sales channel configurator...",
+        "edit_schedule": "Schedule editing available in system settings.",
+        "importing": "Importing new products..."
+      },
+      "stats": {
+        "products_short": "prod."
+      }
+    },
+    "schedule": {
+      "title": "Schedule",
+      "daily02": "Daily at 02:00",
+      "active": "Active",
+      "disabled": "Disabled",
+      "checkOnlyChanges": "Check only changes",
+      "changeCron": "Change cron settings"
+    },
+    "aiTip": {
+      "title": "AI Tip",
+      "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
+      "importBtn": "Import now"
+    },
+    "agent": {
+      "catalogTitle": "Product Catalog",
+      "ready": "Ready",
+      "emptyState": {
+        "title": "Select product and target market",
+        "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
+      },
+      "selectMarket": "Select target market",
+      "launchBtn": "Launch Agent",
+      "launchAdmin": "Launch Agent (Admin)",
+      "launchPoints": "Launch for {count} pts",
+      "working": "Agent Working...",
+      "manusMode": "Manus Mode: Active",
+      "marketPrefix": "EnglishLearning: ",
+      "yourBalance": "Your balance",
+      "analysisTitle": "AI Analysis for {market}",
+      "regionalOptimization": "Regional optimization",
+      "suggestedTitle": "Suggested Title (SEO Local)",
+      "suggestedPrice": "Price (PPP Conversion)",
+      "sellingProb": "Selling Probability",
+      "veryHigh": "VERY HIGH",
+      "success": {
+        "title": "Task Completed!",
+        "description": "AI Agent successfully visited {market} and published your product.",
+        "viewLogs": "VIEW SESSION LOGS"
+      },
+      "toasts": {
+        "session_manager": "Opening session manager...",
+        "proxy_success": "Proxy: {ip} ({location}) OK",
+        "report_title": "Agent Report",
+        "report_desc": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}"
+      },
+      "stats": {
+        "points": "pts"
+      },
+      "mockAnalysis": {
+        "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
+        "suggestedPrice": "$12.99",
+        "subject": "English Language Arts",
+        "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
+        "description": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!"
+      },
+      "idle": {
+        "title": "In standby",
+        "description": "Run agent to start automation process on platform {market}."
+      }
+    },
+    "settings": {
+      "title": "Multi-Channel Connections",
+      "description": "Configure access data for external stores.",
+      "saveAll": "Save all",
+      "lastSaved": "Last saved: {time}",
+      "woo": {
+        "title": "WooCommerce / WordPress Site",
+        "url": "Store URL (REST API)",
+        "key": "Consumer Key",
+        "secret": "Consumer Secret",
+        "connected": "Connected",
+        "autoSync": "AUTO-SYNC ON",
+        "test": "Test"
+      },
+      "manus": {
+        "title": "Manus AI Session",
+        "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
+        "instance": "Agent API Instance",
+        "test": "Test Manus",
+        "manage": "Manage Session",
+        "proxy": "Test Proxy"
+      },
+      "mailerlite": {
+        "title": "MailerLite Integration",
+        "api_key": "MailerLite API Key",
+        "placeholder": "ml_...",
+        "groups": "Subscriber Group ID",
+        "test": "Test Connection"
+      },
+      "manychat": {
+        "title": "ManyChat Automation",
+        "api_key": "ManyChat API Key",
+        "placeholder": "mc_...",
+        "automation_id": "Default Flow ID",
+        "test": "Test Automation"
+      }
+    }
+  },
+  "abandonedHub": {
+    "title": "Abandoned Cart Hub",
+    "subtitle": "Recover lost sales and manage leads",
+    "table": {
+      "customer": "Customer",
+      "cart": "Cart Items",
+      "value": "Value",
+      "lastActive": "Last Active",
+      "actions": "Actions"
+    },
+    "actions": {
+      "sendReminder": "Send Reminder",
+      "recoveryLink": "Copy Recovery Link",
+      "delete": "Remove lead"
+    },
+    "status": {
+      "contacted": "Contacted",
+      "pending": "Pending",
+      "recovered": "Recovered"
+    },
+    "notifications": {
+      "reminderSent": "Recovery email simulation sent to {email}",
+      "linkCopied": "Recovery link copied with discount code!"
+    }
+  }
+}
