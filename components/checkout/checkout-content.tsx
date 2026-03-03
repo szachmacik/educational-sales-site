@@ -98,7 +98,7 @@ export function CheckoutContent() {
             desc: 'Zamiast kupować pojedynczo, odblokuj PEŁEN DOSTĘP do wszystkiego na cały rok szkolny.',
             price: 249,
             regularPrice: 420,
-            image: '/products/mega-pack-2w1.png',
+            image: '/products/mega-pack-2w1.jpg',
             stars: 5,
             reviews: 184,
             badge: 'NAJLEPSZA INWESTYCJA'
@@ -111,7 +111,7 @@ export function CheckoutContent() {
             desc: 'Idealne uzupełnienie materiałów PDF. Dodaj magię storytellingu z native speakerem!',
             price: 89,
             regularPrice: 179,
-            image: '/products/Projekt-Stories-2-1200x848.png',
+            image: '/products/Projekt-Stories-2-1200x848.jpg',
             stars: 5,
             reviews: 92,
             badge: 'PAKIET UZUPEŁNIAJĄCY'
@@ -124,7 +124,7 @@ export function CheckoutContent() {
             desc: 'Bestsellerowy zbiór 100+ gier do druku ratujący lekcje bez przygotowania.',
             price: 39,
             regularPrice: 99,
-            image: '/products/Grafiki-pakietowe-7-1200x848.png',
+            image: '/products/Grafiki-pakietowe-7-1200x848.jpg',
             stars: 5,
             reviews: 312,
             badge: 'BESTSELLER'

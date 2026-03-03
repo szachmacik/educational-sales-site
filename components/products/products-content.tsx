@@ -200,6 +200,7 @@ export function ProductsContent({ lang }: { lang: string }) {
                                                     src={product.image}
                                                     alt={product.title}
                                                     fill
+                                                    loading="eager"
                                                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                                                 />
                                                 <Badge

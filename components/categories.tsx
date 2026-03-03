@@ -152,6 +152,7 @@ export function Categories() {
                     src={productImage}
                     alt={title}
                     fill
+                    loading="eager"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   {/* Gradient Overlay */}
