@@ -188,14 +188,14 @@
       "successDesc": "Дякуємо за звернення. Ми відповімо якнайшвидше.",
       "placeholders": {
         "name": "Іван Іванов",
-        "email": "ivan@example.ua",
+        "email": "contact@kamilaenglish.com",
         "subject": "Запит щодо продукту...",
         "message": "Опишіть, як ми можемо допомогти..."
       }
     },
     "info": {
       "emailValue": "contact@kamilaenglish.com",
-      "phoneValue": "+48 123 456 789"
+      "phoneValue": ""
     },
     "aiChat": {
       "title": "ШІ Помічник",
