@@ -1,3 +1,5 @@
+
+export const dynamic = 'force-dynamic';
 import PolitykaPrywatnosciPage from "../polityka-prywatnosci/page";
 
 // The cookies policy shares the exact same document structure as the privacy policy.

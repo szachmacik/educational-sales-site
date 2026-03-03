@@ -4,8 +4,20 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     unoptimized: true,
+  },
+  async redirects() {
+    return [
+      {
+        source: '/404',
+        destination: '/pl',
+        permanent: false,
+      },
+    ]
   },
   async headers() {
     return [
