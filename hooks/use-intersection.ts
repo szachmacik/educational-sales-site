@@ -9,9 +9,10 @@ interface UseIntersectionOptions {
 }
 
 export function useIntersection(options: UseIntersectionOptions = {}) {
-    const { threshold = 0.1, rootMargin = "0px", triggerOnce = true } = options;
+    const { threshold = 0, rootMargin = "200px 0px", triggerOnce = true } = options;
     const ref = useRef<HTMLDivElement>(null);
-    const [isVisible, setIsVisible] = useState(false);
+    // Start as visible to avoid flash of invisible content in proxy/iframe environments
+    const [isVisible, setIsVisible] = useState(true);
 
     useEffect(() => {
         const element = ref.current;

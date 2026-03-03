@@ -44,7 +44,7 @@ export const PRODUCTS: Product[] = [
         price: "420.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/super-pakiet-2w1-pakiet-wszystkie-scenariusze-zajec-pakiet-4-pory-roku/",
         categories: ["mega-pack", "scenariusze", "pakiety", "przedszkole"],
-        image: "/products/mega-pack-2w1.png",
+        image: "/products/mega-pack-2w1.jpg",
 
         translations: {
             en: {
@@ -71,7 +71,7 @@ export const PRODUCTS: Product[] = [
         price: "307.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/pakiet-wszystkich-scenariuszy-wrzesien-czerwiec/",
         categories: ["scenariusze", "pakiety", "przedszkole"],
-        image: "/products/scenariusze-wrzesien-czerwiec.png"
+        image: "/products/scenariusze-wrzesien-czerwiec.jpg"
     },
     {
         title: "Angielski w żłobku MEGA PACK: zestawy na cały rok szkolny",
@@ -79,7 +79,7 @@ export const PRODUCTS: Product[] = [
         price: "245.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-mega-pack-zestawy-na-caly-rok-szkolny/",
         categories: ["mega-pack", "zlobek"],
-        image: "/products/Grafiki-pakietowe-48-uh2ez6x-1200x848.png"
+        image: "/products/Grafiki-pakietowe-48-uh2ez6x-1200x848.jpg"
     },
     {
         title: "Special Lessons Pack: gotowe zajęcia na dni specjalne",
@@ -87,7 +87,7 @@ export const PRODUCTS: Product[] = [
         price: "236.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/special-lesson-pack-1-3/",
         categories: ["special-lessons", "przedszkole", "klasy-1-3"],
-        image: "/products/Szkolenie-projekty-2526-1-9662lhj-1200x675.png"
+        image: "/products/Szkolenie-projekty-2526-1-9662lhj-1200x675.jpg"
     },
     {
         title: "Speakbook Pack",
@@ -95,7 +95,7 @@ export const PRODUCTS: Product[] = [
         price: "224.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-pack/",
         categories: ["speakbook", "przedszkole", "klasy-1-3"],
-        image: "/products/Miniaturka-speakbooks-sklep-y1ru05e-1200x848.png"
+        image: "/products/Miniaturka-speakbooks-sklep-y1ru05e-1200x848.jpg"
     },
     {
         title: "Angielski w przedszkolu: materiały PDF na 4 pory roku",
@@ -103,7 +103,7 @@ export const PRODUCTS: Product[] = [
         price: "203.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/pakiet-materialow-na-4-pory-roku/",
         categories: ["pakiety", "pory-roku", "przedszkole"],
-        image: "/products/Grafiki-pakietowe-7-1200x848.png"
+        image: "/products/Grafiki-pakietowe-7-1200x848.jpg"
     },
     {
         title: "Pakiet Stories: ebooki + audio na 4 pory roku + flashcards",
@@ -111,7 +111,7 @@ export const PRODUCTS: Product[] = [
         price: "179.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/pakiet-stories-ebooki-audio-na-4-pory-roku/",
         categories: ["stories", "przedszkole", "klasy-1-3"],
-        image: "/products/Projekt-Stories-2-1200x848.png"
+        image: "/products/Projekt-Stories-2-1200x848.jpg"
     },
     {
         title: "Special Lessons Pack vol. 2",
@@ -119,7 +119,7 @@ export const PRODUCTS: Product[] = [
         price: "169.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/special-lesson-vol-2/",
         categories: ["special-lessons", "przedszkole", "klasy-1-3"],
-        image: "/products/Szkolenie-projekty-2526-iq8wss9-1200x675.png"
+        image: "/products/Szkolenie-projekty-2526-iq8wss9-1200x675.jpg"
     },
     {
         title: "Culture Corner Pack",
@@ -127,7 +127,7 @@ export const PRODUCTS: Product[] = [
         price: "155.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/the-uk-ireland-materialy-kulturowe-pakiet/",
         categories: ["culture", "klasy-4-6", "klasy-7-8"],
-        image: "/products/Grafiki-pakietowe-28-1200x848.png"
+        image: "/products/Grafiki-pakietowe-28-1200x848.jpg"
     },
     {
         title: "Angielski w przedszkolu: pakiet scenariuszy na 5 miesięcy (luty-czerwiec)",
@@ -135,7 +135,7 @@ export const PRODUCTS: Product[] = [
         price: "152.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/pakiet-scenariuszy-luty-marzec-kwiecien-maj-czerwiec/",
         categories: ["scenariusze", "przedszkole"],
-        image: "/products/special-2.png"
+        image: "/products/special-2.jpg"
     },
     {
         title: "Angielski w przedszkolu: pakiet scenariuszy na 5 miesięcy (wrzesień-styczeń)",
@@ -143,7 +143,7 @@ export const PRODUCTS: Product[] = [
         price: "152.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/pakiet-scenariuszy-wrzesien-styczen/",
         categories: ["scenariusze", "przedszkole"],
-        image: "/products/special-3.png"
+        image: "/products/special-3.jpg"
     },
     {
         title: "Pakiet Stories: ebooki + flashcards na 4 pory roku",
@@ -151,7 +151,7 @@ export const PRODUCTS: Product[] = [
         price: "143.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/pakiet-stories-e-booki-na-4-pory-roku/",
         categories: ["stories", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-68-1200x848.png"
+        image: "/products/Grafiki-pakietowe-68-1200x848.jpg"
     },
     {
         title: "Angielski w żłobku: Autumn Pack",
@@ -159,7 +159,7 @@ export const PRODUCTS: Product[] = [
         price: "97.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-autumn-pack/",
         categories: ["zlobek"],
-        image: "/products/239-2bdqq7e-1200x848.png"
+        image: "/products/239-2bdqq7e-1200x848.jpg"
     },
     {
         title: "Angielski przez teatr dla klas 0-3",
@@ -167,7 +167,7 @@ export const PRODUCTS: Product[] = [
         price: "93.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-przez-teatr-dla-zerowki-i-klas-1-3/",
         categories: ["teatr", "klasy-1-3", "przedszkole"],
-        image: "/products/Grafiki-pakietowe-1-1200x848.png"
+        image: "/products/Grafiki-pakietowe-1-1200x848.jpg"
     },
     {
         title: "Merry Christmas Pack",
@@ -175,7 +175,7 @@ export const PRODUCTS: Product[] = [
         price: "79.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/merry-christmas-pack/",
         categories: ["special-lessons"],
-        image: "/products/Grafiki-pakietowe-1200x848.png"
+        image: "/products/Grafiki-pakietowe-1200x848.jpg"
     },
     {
         title: "Interaktywne quizy kulturowe",
@@ -183,7 +183,7 @@ export const PRODUCTS: Product[] = [
         price: "59.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/interaktywne-quizy-kulturowe/",
         categories: ["culture"],
-        image: "/products/Grafiki-pakietowe-1-2-1200x848.png"
+        image: "/products/Grafiki-pakietowe-1-2-1200x848.jpg"
     },
     {
         title: "Przedszkole: zestaw materiałów na jesień",
@@ -191,7 +191,7 @@ export const PRODUCTS: Product[] = [
         price: "59.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/przedszkole-pakiet-materialow-na-jesien/",
         categories: ["pory-roku", "przedszkole"],
-        image: "/products/1-1200x848.png"
+        image: "/products/1-1200x848.jpg"
     },
     {
         title: "Przedszkole: zestaw materiałów na zimę",
@@ -200,7 +200,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/przedszkole-pakiet-materialow-na-zime/",
         categories: ["pory-roku", "przedszkole"]
         ,
-        image: "/products/Grafiki-pakietowe-2023-08-02T090202.620-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-08-02T090202.620-1200x848.jpg"
     },
     {
         title: "Przedszkole: zestaw materiałów na wiosnę",
@@ -209,7 +209,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/przedszkole-pakiet-materialow-na-wszystkie-na-wiosne/",
         categories: ["pory-roku", "przedszkole"]
         ,
-        image: "/products/5-1200x848.png"
+        image: "/products/5-1200x848.jpg"
     },
     {
         title: "Przedszkole: zestaw materiałów na lato",
@@ -218,7 +218,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/przedszkole-zestaw-materialow-na-lato/",
         categories: ["pory-roku", "przedszkole"]
         ,
-        image: "/products/Grafiki-pakietowe-4-2-1200x848.png"
+        image: "/products/Grafiki-pakietowe-4-2-1200x848.jpg"
     },
     // ŻŁOBEK MONTHLY
     {
@@ -227,7 +227,7 @@ export const PRODUCTS: Product[] = [
         price: "49.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-zestaw-february/",
         categories: ["zlobek"],
-        image: "/products/Grafiki-pakietowe-2026-01-31T193000.594-lm0t46l-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2026-01-31T193000.594-lm0t46l-1200x848.jpg"
     },
     {
         title: "Angielski w żłobku: zestaw September",
@@ -235,7 +235,7 @@ export const PRODUCTS: Product[] = [
         price: "49.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-zestaw-september/",
         categories: ["zlobek"],
-        image: "/products/236-kba8a8n-1200x848.png"
+        image: "/products/236-kba8a8n-1200x848.jpg"
     },
     {
         title: "Angielski w żłobku: zestaw October",
@@ -243,7 +243,7 @@ export const PRODUCTS: Product[] = [
         price: "49.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-zestaw-october/",
         categories: ["zlobek"],
-        image: "/products/237-rhx3tau-1200x848.png"
+        image: "/products/237-rhx3tau-1200x848.jpg"
     },
     {
         title: "Angielski w żłobku: zestaw November",
@@ -251,7 +251,7 @@ export const PRODUCTS: Product[] = [
         price: "49.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-zestaw-november/",
         categories: ["zlobek"],
-        image: "/products/238-yex7kdu-1200x848.png"
+        image: "/products/238-yex7kdu-1200x848.jpg"
     },
     {
         title: "Angielski w żłobku: zestaw December",
@@ -259,7 +259,7 @@ export const PRODUCTS: Product[] = [
         price: "49.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-zestaw-december/",
         categories: ["zlobek"],
-        image: "/products/240-9fxsnex-1200x848.png"
+        image: "/products/240-9fxsnex-1200x848.jpg"
     },
     {
         title: "Angielski w żłobku: zestaw January",
@@ -267,7 +267,7 @@ export const PRODUCTS: Product[] = [
         price: "49.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/angielski-w-zlobku-zestaw-january/",
         categories: ["zlobek"],
-        image: "/products/242-y413ae2-1200x848.png"
+        image: "/products/242-y413ae2-1200x848.jpg"
     },
     // CULTURE CORNER
     {
@@ -276,7 +276,7 @@ export const PRODUCTS: Product[] = [
         price: "43.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/wales-lekcja-kulturowa/",
         categories: ["culture", "klasy-4-6", "klasy-7-8"],
-        image: "/products/Grafiki-pakietowe-24-1200x848.png"
+        image: "/products/Grafiki-pakietowe-24-1200x848.jpg"
     },
     {
         title: "Culture corner: Ireland",
@@ -284,7 +284,7 @@ export const PRODUCTS: Product[] = [
         price: "43.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/ireland-lekcja-kulturowa-kopia/",
         categories: ["culture", "klasy-4-6", "klasy-7-8"],
-        image: "/products/Grafiki-pakietowe-25-1200x848.png"
+        image: "/products/Grafiki-pakietowe-25-1200x848.jpg"
     },
     {
         title: "Culture corner: England",
@@ -292,7 +292,7 @@ export const PRODUCTS: Product[] = [
         price: "43.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/england-lekcja-kulturowa/",
         categories: ["culture", "klasy-4-6", "klasy-7-8"],
-        image: "/products/Grafiki-pakietowe-26-1-1200x848.png"
+        image: "/products/Grafiki-pakietowe-26-1-1200x848.jpg"
     },
     {
         title: "Culture corner: Scotland",
@@ -300,7 +300,7 @@ export const PRODUCTS: Product[] = [
         price: "43.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/scotland-materialy-kulturowe/",
         categories: ["culture", "klasy-4-6", "klasy-7-8"],
-        image: "/products/Grafiki-pakietowe-27-1200x848.png"
+        image: "/products/Grafiki-pakietowe-27-1200x848.jpg"
     },
     // SCENARIUSZE MONTHLY
     {
@@ -310,7 +310,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-czerwiec/",
         categories: ["scenariusze"]
         ,
-        image: "/products/Grafiki-pakietowe-2023-08-01T183002.274-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-08-01T183002.274-1200x848.jpg"
     },
     {
         title: "Scenariusze zajęć – grudzień",
@@ -319,7 +319,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-grudzien/",
         categories: ["scenariusze"]
         ,
-        image: "/products/Grafiki-pakietowe-2023-08-01T182312.099-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-08-01T182312.099-1200x848.jpg"
     },
     {
         title: "Scenariusze zajęć – styczeń",
@@ -328,7 +328,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-styczen/",
         categories: ["scenariusze"]
         ,
-        image: "/products/Grafiki-pakietowe-2023-08-01T182405.076-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-08-01T182405.076-1200x848.jpg"
     },
     {
         title: "Scenariusze zajęć – luty",
@@ -337,7 +337,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-luty/",
         categories: ["scenariusze"]
         ,
-        image: "/products/Grafiki-pakietowe-2023-08-01T182516.087-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-08-01T182516.087-1200x848.jpg"
     },
     {
         title: "Scenariusze zajęć – marzec",
@@ -346,7 +346,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-marzec/",
         categories: ["scenariusze"]
         ,
-        image: "/products/Grafiki-pakietowe-2023-08-01T182624.131-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-08-01T182624.131-1200x848.jpg"
     },
     {
         title: "Scenariusze zajęć – wrzesień",
@@ -355,7 +355,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-wrzesien/",
         categories: ["scenariusze"]
         ,
-        image: "/products/Grafiki-pakietowe-2023-08-01T181627.096-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-08-01T181627.096-1200x848.jpg"
     },
     {
         title: "Scenariusze zajęć – kwiecień",
@@ -364,7 +364,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-kwiecien/",
         categories: ["scenariusze"]
         ,
-        image: "/products/Grafiki-pakietowe-2023-08-01T182732.043-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-08-01T182732.043-1200x848.jpg"
     },
     {
         title: "Scenariusze zajęć – październik",
@@ -373,7 +373,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-wrzesien-kopia/",
         categories: ["scenariusze"]
         ,
-        image: "/products/Grafiki-pakietowe-2023-08-01T182055.146-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-08-01T182055.146-1200x848.jpg"
     },
     {
         title: "Scenariusze zajęć – maj",
@@ -382,7 +382,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-maj/",
         categories: ["scenariusze"]
         ,
-        image: "/products/Grafiki-pakietowe-2023-08-01T182852.070-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-08-01T182852.070-1200x848.jpg"
     },
     {
         title: "Scenariusze zajęć – listopad",
@@ -391,7 +391,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/plany-zajec-listopad/",
         categories: ["scenariusze"]
         ,
-        image: "/products/Grafiki-pakietowe-2023-08-01T182159.052-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-08-01T182159.052-1200x848.jpg"
     },
     // STORIES
     {
@@ -401,7 +401,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-zime-ebook-audio/",
         categories: ["stories", "przedszkole", "klasy-1-3"]
         ,
-        image: "/products/Grafiki-pakietowe-2022-12-08T173403.951-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2022-12-08T173403.951-1200x848.jpg"
     },
     {
         title: "Stories na wiosnę: ebook + audio",
@@ -410,7 +410,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-wiosne-ebook-audio/",
         categories: ["stories", "przedszkole", "klasy-1-3"]
         ,
-        image: "/products/Projekt-Stories-2-1200x848.png"
+        image: "/products/Projekt-Stories-2-1200x848.jpg"
     },
     {
         title: "Stories na lato: ebook + audio",
@@ -419,7 +419,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-lato-ebook-audio/",
         categories: ["stories", "przedszkole", "klasy-1-3"]
         ,
-        image: "/products/Projekt-Stories-3-1200x848.png"
+        image: "/products/Projekt-Stories-3-1200x848.jpg"
     },
     {
         title: "Stories na jesień: ebook + audio",
@@ -428,7 +428,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-jesien-ebook-audio/",
         categories: ["stories", "przedszkole", "klasy-1-3"]
         ,
-        image: "/products/Projekt-Stories-9-1200x848.png"
+        image: "/products/Projekt-Stories-9-1200x848.jpg"
     },
     // SPECIAL LESSONS INDIVIDUAL
     {
@@ -437,7 +437,7 @@ export const PRODUCTS: Product[] = [
         price: "35.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/pumpking-day/",
         categories: ["special-lessons"],
-        image: "/products/Grafiki-pakietowe-25-1200x848.png"
+        image: "/products/Grafiki-pakietowe-25-1200x848.jpg"
     },
     {
         title: "Guy Fawkes Day & Bonfire Night",
@@ -445,7 +445,7 @@ export const PRODUCTS: Product[] = [
         price: "35.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/guy-fawkes-day-bonfire-night/",
         categories: ["special-lessons"],
-        image: "/products/Grafiki-pakietowe-45-8fotf4b-1200x848.png"
+        image: "/products/Grafiki-pakietowe-45-8fotf4b-1200x848.jpg"
     },
     {
         title: "Day of Languages: dekoracja i gra",
@@ -453,7 +453,7 @@ export const PRODUCTS: Product[] = [
         price: "35.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/day-of-languages-dekoracja-i-gra/",
         categories: ["special-lessons"],
-        image: "/products/Grafiki-pakietowe-o64pb66-1200x848.png"
+        image: "/products/Grafiki-pakietowe-o64pb66-1200x848.jpg"
     },
     {
         title: "Kulturowa lekcja 'London Tour'",
@@ -461,7 +461,7 @@ export const PRODUCTS: Product[] = [
         price: "35.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/kulturowa-lekcja-pokazowa-london-tour/",
         categories: ["culture"],
-        image: "/products/Grafiki-pakietowe-21-1200x848.png"
+        image: "/products/Grafiki-pakietowe-21-1200x848.jpg"
     },
     {
         title: "'Letters to Santa' Playscript",
@@ -469,7 +469,7 @@ export const PRODUCTS: Product[] = [
         price: "29.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/christmas-fun/",
         categories: ["teatr"],
-        image: "/products/Grafiki-pakietowe-2023-08-01T165841.048-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-08-01T165841.048-1200x848.jpg"
     },
     {
         title: "Special Lessons: Pizza Day",
@@ -477,7 +477,7 @@ export const PRODUCTS: Product[] = [
         price: "29.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/pizza-day/",
         categories: ["special-lessons", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-2023-08-01T171502.204-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-08-01T171502.204-1200x848.jpg"
     },
     {
         title: "Grandparents' Day Playscript",
@@ -485,7 +485,7 @@ export const PRODUCTS: Product[] = [
         price: "29.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/grandparents-day-playscript/",
         categories: ["teatr"],
-        image: "/products/Grafiki-pakietowe-1-1200x848.png"
+        image: "/products/Grafiki-pakietowe-1-1200x848.jpg"
     },
     {
         title: "Special Lessons: Thanksgiving",
@@ -493,7 +493,7 @@ export const PRODUCTS: Product[] = [
         price: "29.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/thanksgiving-fun/",
         categories: ["special-lessons", "przedszkole", "klasy-1-3"],
-        image: "/products/Thanksgiving-grafika-pakietowa-minatura-1200x848.png"
+        image: "/products/Thanksgiving-grafika-pakietowa-minatura-1200x848.jpg"
     },
     {
         title: "English Zoo Playscript",
@@ -501,7 +501,7 @@ export const PRODUCTS: Product[] = [
         price: "29.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/english-zoo-playscript/",
         categories: ["teatr"],
-        image: "/products/Grafiki-pakietowe-1200x848.png"
+        image: "/products/Grafiki-pakietowe-1200x848.jpg"
     },
     {
         title: "Special Lessons: Under the Sea",
@@ -509,7 +509,7 @@ export const PRODUCTS: Product[] = [
         price: "29.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/under-the-sea-gotowe-zajecia/",
         categories: ["special-lessons", "przedszkole", "klasy-1-3"],
-        image: "/products/under-the-sea-grafika-ibbcs66-1200x848.png"
+        image: "/products/under-the-sea-grafika-ibbcs66-1200x848.jpg"
     },
     {
         title: "Special Lessons: Saint Patrick's Day",
@@ -517,7 +517,7 @@ export const PRODUCTS: Product[] = [
         price: "29.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/st-patricks-day/",
         categories: ["special-lessons", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-2023-02-09T091256.586-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-02-09T091256.586-1200x848.jpg"
     },
     {
         title: "Special Lessons: September fun",
@@ -525,7 +525,7 @@ export const PRODUCTS: Product[] = [
         price: "29.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/powakacyjna-powtorka-klasy-1-3/",
         categories: ["special-lessons", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-2022-09-23T123941.246-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2022-09-23T123941.246-1200x848.jpg"
     },
     {
         title: "Special Lessons: Day of Languages",
@@ -533,7 +533,7 @@ export const PRODUCTS: Product[] = [
         price: "29.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/dzien-jezykow/",
         categories: ["special-lessons", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-2023-08-22T144959.964-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-08-22T144959.964-1200x848.jpg"
     },
     {
         title: "Special Lessons: Pets Day",
@@ -541,7 +541,7 @@ export const PRODUCTS: Product[] = [
         price: "29.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/dzien-zwierzat/",
         categories: ["special-lessons", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-2023-09-17T125118.388-1200x848.png"
+        image: "/products/Grafiki-pakietowe-2023-09-17T125118.388-1200x848.jpg"
     },
     {
         title: "Special Lessons: Easter",
@@ -549,7 +549,7 @@ export const PRODUCTS: Product[] = [
         price: "29.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/easter/",
         categories: ["special-lessons", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-1-1200x848.png"
+        image: "/products/Grafiki-pakietowe-1-1200x848.jpg"
     },
     {
         title: "Special Lessons: Australia Day",
@@ -557,7 +557,7 @@ export const PRODUCTS: Product[] = [
         price: "29.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/dzien-australii/",
         categories: ["special-lessons", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-3-1200x848.png"
+        image: "/products/Grafiki-pakietowe-3-1200x848.jpg"
     },
     // PAGE 2 PRODUCTS
     {
@@ -567,7 +567,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-jesien/",
         categories: ["stories", "przedszkole", "klasy-1-3"]
         ,
-        image: "/products/B-22.png"
+        image: "/products/B-22.jpg"
     },
     {
         title: "Stories na zimę: ebook",
@@ -576,7 +576,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-zime-ebook/",
         categories: ["stories", "przedszkole", "klasy-1-3"]
         ,
-        image: "/products/B-22.png"
+        image: "/products/B-22.jpg"
     },
     {
         title: "Stories na wiosnę: ebook",
@@ -585,7 +585,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-wiosne-ebook/",
         categories: ["stories", "przedszkole", "klasy-1-3"]
         ,
-        image: "/products/Projekt-Stories-1200x848.png"
+        image: "/products/Projekt-Stories-1200x848.jpg"
     },
     {
         title: "Stories na lato: ebook",
@@ -594,7 +594,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-lato-ebook/",
         categories: ["stories", "przedszkole", "klasy-1-3"]
         ,
-        image: "/products/Projekt-Stories-1-1200x848.png"
+        image: "/products/Projekt-Stories-1-1200x848.jpg"
     },
     {
         title: "Summer Playscript: scenariusz przedstawienia",
@@ -602,7 +602,7 @@ export const PRODUCTS: Product[] = [
         price: "28.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/scenariusz-przedstawienia-lato/",
         categories: ["teatr"],
-        image: "/products/Grafiki-pakietowe-1200x848.png"
+        image: "/products/Grafiki-pakietowe-1200x848.jpg"
     },
     {
         title: "Special Lessons: Let's Celebrate",
@@ -610,7 +610,7 @@ export const PRODUCTS: Product[] = [
         price: "28.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/lets-celebrate/",
         categories: ["special-lessons", "przedszkole", "klasy-1-3"],
-        image: "/products/Lets-celebrate-grafika-iinllbx-1200x848.png"
+        image: "/products/Lets-celebrate-grafika-iinllbx-1200x848.jpg"
     },
     // SPEAKBOOKS
     {
@@ -619,7 +619,7 @@ export const PRODUCTS: Product[] = [
         price: "26.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-fairy-tale-character-day/",
         categories: ["speakbook", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-2025-10-26T172923.878-yb70ayz-1024x724.png"
+        image: "/products/Grafiki-pakietowe-2025-10-26T172923.878-yb70ayz-1024x724.jpg"
     },
     {
         title: "Speakbook: My Winter",
@@ -627,7 +627,7 @@ export const PRODUCTS: Product[] = [
         price: "26.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-winter/",
         categories: ["speakbook", "przedszkole", "klasy-1-3"],
-        image: "/products/214-enfa1kj-1024x724.png"
+        image: "/products/214-enfa1kj-1024x724.jpg"
     },
     {
         title: "Speakbook: My Christmas",
@@ -635,7 +635,7 @@ export const PRODUCTS: Product[] = [
         price: "26.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-christmas/",
         categories: ["speakbook", "przedszkole", "klasy-1-3"],
-        image: "/products/215-l3bk69o-1024x724.png"
+        image: "/products/215-l3bk69o-1024x724.jpg"
     },
     {
         title: "Speakbook: My Grandparents",
@@ -643,7 +643,7 @@ export const PRODUCTS: Product[] = [
         price: "26.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-grandparents/",
         categories: ["speakbook", "przedszkole", "klasy-1-3"],
-        image: "/products/216-j50wf6k-1024x724.png"
+        image: "/products/216-j50wf6k-1024x724.jpg"
     },
     {
         title: "Speakbook: My Pizza Day",
@@ -651,7 +651,7 @@ export const PRODUCTS: Product[] = [
         price: "26.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-pizza-day/",
         categories: ["speakbook", "przedszkole", "klasy-1-3"],
-        image: "/products/217-osq9xz8-1024x724.png"
+        image: "/products/217-osq9xz8-1024x724.jpg"
     },
     {
         title: "Speakbook: My Australia Day",
@@ -659,7 +659,7 @@ export const PRODUCTS: Product[] = [
         price: "26.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-australia-day/",
         categories: ["speakbook", "przedszkole", "klasy-1-3"],
-        image: "/products/Miniaturka-speakbooks-sklep-y1ru05e-1024x724.png"
+        image: "/products/Miniaturka-speakbooks-sklep-y1ru05e-1024x724.jpg"
     },
     {
         title: "Speakbook: All About Me",
@@ -667,7 +667,7 @@ export const PRODUCTS: Product[] = [
         price: "26.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-all-about-me/",
         categories: ["speakbook", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-38-9j6ct85-1024x724.png"
+        image: "/products/Grafiki-pakietowe-38-9j6ct85-1024x724.jpg"
     },
     {
         title: "Speakbook: My Day of European Languages",
@@ -675,7 +675,7 @@ export const PRODUCTS: Product[] = [
         price: "26.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-day-of-european-languages/",
         categories: ["speakbook", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-2-rizgauq-1024x724.png"
+        image: "/products/Grafiki-pakietowe-2-rizgauq-1024x724.jpg"
     },
     {
         title: "Speakbook: My Autumn",
@@ -683,7 +683,7 @@ export const PRODUCTS: Product[] = [
         price: "26.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-autumn/",
         categories: ["speakbook", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-35-6u736sw-1024x724.png"
+        image: "/products/Grafiki-pakietowe-35-6u736sw-1024x724.jpg"
     },
     {
         title: "Speakbook: My Pumpkin Day",
@@ -691,7 +691,7 @@ export const PRODUCTS: Product[] = [
         price: "26.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/speakbook-my-pumpkin-day/",
         categories: ["speakbook", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-34-e64n0jw-1024x724.png"
+        image: "/products/Grafiki-pakietowe-34-e64n0jw-1024x724.jpg"
     },
     {
         title: "Classroom Language",
@@ -699,7 +699,7 @@ export const PRODUCTS: Product[] = [
         price: "25.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/classroom-language/",
         categories: ["inne"],
-        image: "/products/Grafiki-pakietowe-20-1-1024x724.png"
+        image: "/products/Grafiki-pakietowe-20-1-1024x724.jpg"
     },
     {
         title: "Stories: Opowiadanie 'Colours of the forest'",
@@ -707,7 +707,7 @@ export const PRODUCTS: Product[] = [
         price: "24.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/project-stories-colours-of-the-forest/",
         categories: ["stories", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-49-1eo4umu-1024x724.png"
+        image: "/products/Grafiki-pakietowe-49-1eo4umu-1024x724.jpg"
     },
     {
         title: "Angielski w przedszkolu: Mother's Day",
@@ -715,7 +715,7 @@ export const PRODUCTS: Product[] = [
         price: "23.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/mothers-day/",
         categories: ["special-lessons", "przedszkole"],
-        image: "/products/Grafiki-pakietowe-1-2rsyx5z-1024x724.png"
+        image: "/products/Grafiki-pakietowe-1-2rsyx5z-1024x724.jpg"
     },
     {
         title: "Angielski w przedszkolu: Children's Day",
@@ -723,7 +723,7 @@ export const PRODUCTS: Product[] = [
         price: "23.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/childrens-day/",
         categories: ["special-lessons", "przedszkole"],
-        image: "/products/POSTY-NOWY-FORMAT-2023-17-eo5vz0q-819x1024.png"
+        image: "/products/POSTY-NOWY-FORMAT-2023-17-eo5vz0q-819x1024.jpg"
     },
     {
         title: "Angielski w przedszkolu: Oceans Day",
@@ -731,7 +731,7 @@ export const PRODUCTS: Product[] = [
         price: "23.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/oceans-day/",
         categories: ["special-lessons", "przedszkole"],
-        image: "/products/POSTY-NOWY-FORMAT-2023-2-1uipb6m-819x1024.png"
+        image: "/products/POSTY-NOWY-FORMAT-2023-2-1uipb6m-819x1024.jpg"
     },
     {
         title: "Flashcards – Stories zima",
@@ -739,7 +739,7 @@ export const PRODUCTS: Product[] = [
         price: "22.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/flashcards-stories-zimia/",
         categories: ["flashcards", "przedszkole", "klasy-1-3"],
-        image: "/products/Grafiki-pakietowe-2022-11-08T085226.441-1-1024x724.png"
+        image: "/products/Grafiki-pakietowe-2022-11-08T085226.441-1-1024x724.jpg"
     },
     {
         title: "Flashcards – Stories jesień",
@@ -747,7 +747,7 @@ export const PRODUCTS: Product[] = [
         price: "22.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/flashcards-project-stories-jesien/",
         categories: ["flashcards", "przedszkole", "klasy-1-3"],
-        image: "/products/Flashcards-autumn-2-1024x724.png"
+        image: "/products/Flashcards-autumn-2-1024x724.jpg"
     },
     {
         title: "Culture Posters",
@@ -755,7 +755,7 @@ export const PRODUCTS: Product[] = [
         price: "22.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/culture-posters/",
         categories: ["culture", "klasy-4-6", "klasy-7-8"],
-        image: "/products/Grafiki-pakietowe-1-afc0560-1024x724.png"
+        image: "/products/Grafiki-pakietowe-1-afc0560-1024x724.jpg"
     },
     {
         title: "Dekoracja 4 Seasons",
@@ -763,7 +763,7 @@ export const PRODUCTS: Product[] = [
         price: "21.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/napisy-do-dekoracji-sali/",
         categories: ["inne"],
-        image: "/products/Grafiki-pakietowe-39-49ivcpr-1024x724.png"
+        image: "/products/Grafiki-pakietowe-39-49ivcpr-1024x724.jpg"
     },
     {
         title: "Spring & Summer English Learning Challenge",
@@ -771,7 +771,7 @@ export const PRODUCTS: Product[] = [
         price: "18.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/spring-summer-english-learning-challenge/",
         categories: ["inne"],
-        image: "/products/POSTY-NOWY-FORMAT-2023-1-0fjj08g-819x1024.png"
+        image: "/products/POSTY-NOWY-FORMAT-2023-1-0fjj08g-819x1024.jpg"
     },
     {
         title: "Stories na zimę: audio",
@@ -780,7 +780,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-zime-audio-2/",
         categories: ["stories", "przedszkole", "klasy-1-3"]
         ,
-        image: "/products/B-22.png"
+        image: "/products/B-22.jpg"
     },
     {
         title: "Dyplomy ukończenia kursu / warsztatów",
@@ -788,7 +788,7 @@ export const PRODUCTS: Product[] = [
         price: "15.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/dyplomy-na-zakonczenie-roku/",
         categories: ["inne"],
-        image: "/products/Grafiki-pakietowe-1024x724.png"
+        image: "/products/Grafiki-pakietowe-1024x724.jpg"
     },
     {
         title: "Stories na lato: audio",
@@ -797,7 +797,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-lato-audio/",
         categories: ["stories", "przedszkole", "klasy-1-3"]
         ,
-        image: "/products/B-22.png"
+        image: "/products/B-22.jpg"
     },
     {
         title: "Stories na jesień: audio",
@@ -806,7 +806,7 @@ export const PRODUCTS: Product[] = [
         url: "https://www.sklep.kamilaenglish.com/index.php/product/stories-na-jesien-audio/",
         categories: ["stories", "przedszkole", "klasy-1-3"]
         ,
-        image: "/products/B-22.png"
+        image: "/products/B-22.jpg"
     },
     {
         title: "Holiday photos warm-up",
@@ -814,7 +814,7 @@ export const PRODUCTS: Product[] = [
         price: "15.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/holiday-photos-warm-up/",
         categories: ["inne"],
-        image: "/products/HOLIDAY-PHOTOS-WARM-UP-2-p15iddx-1024x576.png"
+        image: "/products/HOLIDAY-PHOTOS-WARM-UP-2-p15iddx-1024x576.jpg"
     },
     {
         title: "Autumn I spy",
@@ -822,7 +822,7 @@ export const PRODUCTS: Product[] = [
         price: "12.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/autumn-i-spy/",
         categories: ["gry"],
-        image: "/products/Grafiki-pakietowe-22-1024x724.png"
+        image: "/products/Grafiki-pakietowe-22-1024x724.jpg"
     },
     {
         title: "Winter I spy",
@@ -830,7 +830,7 @@ export const PRODUCTS: Product[] = [
         price: "12.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/winter-i-spy/",
         categories: ["gry"],
-        image: "/products/Grafiki-pakietowe-27-1024x724.png"
+        image: "/products/Grafiki-pakietowe-27-1024x724.jpg"
     },
     {
         title: "Dzień Kropki / Dot Day",
@@ -838,7 +838,7 @@ export const PRODUCTS: Product[] = [
         price: "10.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/dzien-kropki-dot-day/",
         categories: ["special-lessons"],
-        image: "/products/B-22.png"
+        image: "/products/B-22.jpg"
     },
     {
         title: "Harry Potter: interaktywne quizy dla klas 4-6",
@@ -846,7 +846,7 @@ export const PRODUCTS: Product[] = [
         price: "10.00",
         url: "https://www.sklep.kamilaenglish.com/index.php/product/harry-potter/",
         categories: ["gry", "klasy-4-6"],
-        image: "/products/B-22.png"
+        image: "/products/B-22.jpg"
     }
 ];
 
