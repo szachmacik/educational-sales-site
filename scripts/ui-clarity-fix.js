@@ -2,7 +2,7 @@
  * UI Clarity Fix Script
  * Applies targeted fixes for the issues found in ui-clarity-audit.js:
  * 1. Replace remaining native alert() with toast.success/info
- * 2. Replace example.com demo placeholders with real values
+ * 2. Replace kamila.shor.dev demo placeholders with real values
  * 3. Add truncation to the most common dynamic text patterns in card titles/names
  */
 const fs = require('fs');

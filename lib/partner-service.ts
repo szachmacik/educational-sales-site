@@ -24,7 +24,7 @@ export const DEFAULT_PARTNERS: Partner[] = [
         name: "Educational Hub",
         logoUrl: "/partners/edu-hub.png",
         description: "Najlepsze materiały do nauk ścisłych",
-        affiliateBaseUrl: "https://eduhub.example.com",
+        affiliateBaseUrl: "https://eduhub.kamila.shor.dev",
         affiliateParamName: "ref",
         affiliateId: "kamil_english",
         voucherCostPoints: 1000
@@ -34,7 +34,7 @@ export const DEFAULT_PARTNERS: Partner[] = [
         name: "Games4Kids",
         logoUrl: "/partners/games4kids.png",
         description: "Interaktywne gry edukacyjne",
-        affiliateBaseUrl: "https://g4k.example.com/store",
+        affiliateBaseUrl: "https://g4k.kamila.shor.dev/store",
         affiliateParamName: "aid",
         affiliateId: "kamila",
         voucherCostPoints: 500

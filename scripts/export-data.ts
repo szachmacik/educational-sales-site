@@ -46,7 +46,7 @@ const users = [
     {
         id: "usr_admin",
         name: "Admin User",
-        email: "admin@example.com",
+        email: "admin@kamila.shor.dev",
         role: "admin",
         passwordHash: "$2b$10$EpOku.k7A/1Zj5n4vj.u..C7A.z/...", // placeholder
         isAdmin: true
@@ -54,7 +54,7 @@ const users = [
     {
         id: "usr_std",
         name: "Demo Teacher",
-        email: "user@example.com",
+        email: "user@kamila.shor.dev",
         role: "user",
         passwordHash: "$2b$10$EpOku.k7A/1Zj5n4vj.u..C7A.z/...",
         isAdmin: false,

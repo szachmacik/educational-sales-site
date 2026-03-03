@@ -43,7 +43,7 @@ export async function syncExternalProducts(source: 'baselinker' | 'wholesale'): 
         tags: ["physical", "new"],
         slug: ext.name.toLowerCase().replace(/ /g, '-'),
         source: {
-            url: `https://${source}.example.com/p/${ext.externalId}`,
+            url: `https://${source}.kamila.shor.dev/p/${ext.externalId}`,
             importedAt: new Date().toISOString(),
             aiEnhanced: false
         }

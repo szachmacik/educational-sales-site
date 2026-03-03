@@ -232,7 +232,7 @@ export default function SettingsContent({ dictionary }: { dictionary: any }) {
             },
             smtpConfig: {
                 enabled: false,
-                host: "smtp.example.com",
+                host: "smtp.kamila.shor.dev",
                 port: "587",
                 user: "",
                 pass: ""
@@ -316,7 +316,7 @@ export default function SettingsContent({ dictionary }: { dictionary: any }) {
         },
         automation: {
             activeAgent: "none",
-            webhookUrl: "https://api.example.com/webhooks/agent-receiver"
+            webhookUrl: "https://api.kamila.shor.dev/webhooks/agent-receiver"
         },
         publigo_features: {
             videoLimit: "25", // GB
@@ -483,7 +483,7 @@ export default function SettingsContent({ dictionary }: { dictionary: any }) {
                     },
                     market: parsed.market || { monitoringEnabled: true, targetCurriculum: "pl_mein", competitorTracking: true },
                     insights: parsed.insights || { autoSuggestions: true, auditFrequency: "weekly" },
-                    automation: parsed.automation || { activeAgent: "none", webhookUrl: "https://api.example.com/webhooks/agent-receiver" }
+                    automation: parsed.automation || { activeAgent: "none", webhookUrl: "https://api.kamila.shor.dev/webhooks/agent-receiver" }
                 });
             } catch (e) {
                 console.error("Failed to parse settings:", e);

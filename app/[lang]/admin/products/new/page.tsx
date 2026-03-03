@@ -267,7 +267,7 @@ export default function NewProductPage({ params }: { params: Promise<{ lang: str
                         <CardContent className="space-y-4">
                             <div className="flex gap-2">
                                 <Input
-                                    placeholder="https://example.com/image.jpg"
+                                    placeholder="https://kamila.shor.dev/image.jpg"
                                     value={formData.imageUrl}
                                     onChange={(e) => handleChange("imageUrl", e.target.value)}
                                 />

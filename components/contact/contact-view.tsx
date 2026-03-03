@@ -87,7 +87,7 @@ export function ContactView() {
                                             </div>
                                             <div className="space-y-2">
                                                 <Label htmlFor="email">{c.form?.email}</Label>
-                                                <Input id="email" type="email" placeholder={c.form?.placeholders?.email || "jan@example.com"} required className="rounded-xl border-slate-200 h-11" />
+                                                <Input id="email" type="email" placeholder={c.form?.placeholders?.email || "jan@kamila.shor.dev"} required className="rounded-xl border-slate-200 h-11" />
                                             </div>
                                         </div>
                                         <div className="space-y-2">

@@ -188,7 +188,7 @@
       "successDesc": "Thank you for contacting us. We will respond as soon as possible.",
       "placeholders": {
         "name": "John Doe",
-        "email": "jan@example.com",
+        "email": "jan@kamila.shor.dev",
         "subject": "Product inquiry...",
         "message": "Describe how we can help..."
       }

@@ -32,56 +32,56 @@ export async function login(email: string, password: string, role: UserRole = 's
     console.log(`[Auth] Login attempt: ${email} as ${role}/${subRole}`);
 
     // HEURISTIC: Always check demo accounts first for instant response in test mode
-    if ((email === 'demo@example.com' || email === 'student@example.com') && password === 'demo123') {
+    if ((email === 'demo@kamila.shor.dev' || email === 'student@kamila.shor.dev') && password === 'demo123') {
         return {
             user: { id: '1', email, name: 'Demo Uczeń', role: 'student', subRole: 'learner' },
             token: 'mock-jwt-token-student',
         };
     }
 
-    if (email === 'child@example.com' && password === 'demo123') {
+    if (email === 'child@kamila.shor.dev' && password === 'demo123') {
         return {
             user: { id: '1b', email, name: 'Demo Dziecko', role: 'student', subRole: 'child' },
             token: 'mock-jwt-token-child',
         };
     }
 
-    if (email === 'teacher@example.com' && password === 'demo123') {
+    if (email === 'teacher@kamila.shor.dev' && password === 'demo123') {
         return {
             user: { id: '2', email, name: 'Demo Nauczyciel Prywatny', role: 'teacher', subRole: 'teacher_private' },
             token: 'mock-jwt-token-teacher',
         };
     }
 
-    if (email === 'teacher.school@example.com' && password === 'demo123') {
+    if (email === 'teacher.school@kamila.shor.dev' && password === 'demo123') {
         return {
             user: { id: '2b', email, name: 'Demo Nauczyciel Szkolny', role: 'teacher', subRole: 'teacher_school' },
             token: 'mock-jwt-token-teacher-school',
         };
     }
 
-    if (email === 'institution@example.com' && password === 'demo123') {
+    if (email === 'institution@kamila.shor.dev' && password === 'demo123') {
         return {
             user: { id: '3', email, name: 'Demo Szkoła Publiczna', role: 'institution', subRole: 'institution_public' },
             token: 'mock-jwt-token-institution-public',
         };
     }
 
-    if (email === 'langschool@example.com' && password === 'demo123') {
+    if (email === 'langschool@kamila.shor.dev' && password === 'demo123') {
         return {
             user: { id: '3b', email, name: 'Demo Szkoła Językowa', role: 'institution', subRole: 'institution_language' },
             token: 'mock-jwt-token-institution-lang',
         };
     }
 
-    if (email === 'parent@example.com' && password === 'demo123') {
+    if (email === 'parent@kamila.shor.dev' && password === 'demo123') {
         return {
             user: { id: '4', email, name: 'Demo Rodzic', role: 'parent', subRole: 'parent_independent' },
             token: 'mock-jwt-token-parent',
         };
     }
 
-    if (email === 'admin@example.com' && password === 'demo123') {
+    if (email === 'admin@kamila.shor.dev' && password === 'demo123') {
         return {
             user: { id: '99', email, name: 'SuperAdmin', role: 'admin', subRole: null },
             token: 'mock-jwt-token-admin',
@@ -157,7 +157,7 @@ export async function loginWithMagicLink(token: string): Promise<{ user: User; t
     return {
         user: {
             id: '3',
-            email: 'magic-user@example.com',
+            email: 'magic-user@kamila.shor.dev',
             name: 'Magic Link User',
             role: 'student',
         },

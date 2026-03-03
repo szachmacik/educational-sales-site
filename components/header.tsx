@@ -297,7 +297,7 @@ export function Header() {
                     </Avatar>
                     <div className="flex-1">
                       <p className="font-medium">{userName}</p>
-                      <p className="text-sm text-muted-foreground">demo@example.com</p>
+                      <p className="text-sm text-muted-foreground">demo@kamila.shor.dev</p>
                     </div>
                     <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-700">
                       <Coins className="h-4 w-4 fill-amber-500" />

@@ -133,7 +133,7 @@ export const SAMPLE_ORDERS: Order[] = [
             { productId: "prod_1", title: "Lesson Plans: A1-A2 Bundle", price: 149, quantity: 1 },
         ],
         customer: {
-            email: "jan.kowalski@example.com",
+            email: "jan.kowalski@kamila.shor.dev",
             firstName: "Jan",
             lastName: "Kowalski",
         },
@@ -158,7 +158,7 @@ export const SAMPLE_ORDERS: Order[] = [
             { productId: "prod_3", title: "Business English Resources Pack", price: 199, quantity: 1 },
         ],
         customer: {
-            email: "anna.nowak@example.com",
+            email: "anna.nowak@kamila.shor.dev",
             firstName: "Anna",
             lastName: "Nowak",
             company: "Szkoła Językowa ABC",
@@ -183,7 +183,7 @@ export const SAMPLE_ORDERS: Order[] = [
             { productId: "prod_1", title: "Lesson Plans: A1-A2 Bundle", price: 149, quantity: 2 },
         ],
         customer: {
-            email: "maria.wisniewski@example.com",
+            email: "maria.wisniewski@kamila.shor.dev",
             firstName: "Maria",
             lastName: "Wiśniewski",
         },

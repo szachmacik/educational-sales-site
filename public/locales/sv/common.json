@@ -188,7 +188,7 @@
       "successDesc": "Tack för att du kontaktar oss. Vi svarar så snart som möjligt.",
       "placeholders": {
         "name": "John Doe",
-        "email": "jan@example.com",
+        "email": "jan@kamila.shor.dev",
         "subject": "Produktfråga...",
         "message": "Beskriv hur vi kan hjälpa till..."
       }

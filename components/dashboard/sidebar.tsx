@@ -39,7 +39,7 @@ export function Sidebar({ user, activeTab, setActiveTab, handleLogout, onRoleCha
     const [showWallet, setShowWallet] = useState(true);
 
     useEffect(() => {
-        const userEmail = "demo@example.com"; // Mock user email for the demo dashboard
+        const userEmail = "demo@kamila.shor.dev"; // Mock user email for the demo dashboard
 
         // In a real app, if localStorage is entirely empty for this key, we might want a default. 
         // For the sake of the demo, we assume if it's not set, it's ON initially, OR we can default it to OFF.

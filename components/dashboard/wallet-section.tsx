@@ -12,7 +12,7 @@ export function WalletSection() {
 
     useEffect(() => {
         // Assume default test user for now or get from context if available
-        const currentEmail = localStorage.getItem("user_email") || "test@example.com";
+        const currentEmail = localStorage.getItem("user_email") || "test@kamila.shor.dev";
         setUserPoints(getUserPoints(currentEmail));
     }, []);
 

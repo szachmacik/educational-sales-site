@@ -23,8 +23,8 @@ const MAIN_ROLES = [
         desc: 'Nauka i gry edukacyjne',
         color: 'blue',
         subtypes: [
-            { id: 'child' as UserSubRole, icon: '🧒', label: 'Dziecko', desc: 'Profil zabawowy z grami i EXP', email: 'child@example.com' },
-            { id: 'learner' as UserSubRole, icon: '📚', label: 'Uczeń Szkolny', desc: 'Przypisany przez nauczyciela do klasy', email: 'student@example.com' },
+            { id: 'child' as UserSubRole, icon: '🧒', label: 'Dziecko', desc: 'Profil zabawowy z grami i EXP', email: 'child@kamila.shor.dev' },
+            { id: 'learner' as UserSubRole, icon: '📚', label: 'Uczeń Szkolny', desc: 'Przypisany przez nauczyciela do klasy', email: 'student@kamila.shor.dev' },
         ]
     },
     {
@@ -34,8 +34,8 @@ const MAIN_ROLES = [
         desc: 'Materiały i nadzór nad dzieckiem',
         color: 'green',
         subtypes: [
-            { id: 'parent_independent' as UserSubRole, icon: '🛒', label: 'Kupuję dla dziecka', desc: 'Własne zakupy materiałów', email: 'parent@example.com' },
-            { id: 'parent_school_plan' as UserSubRole, icon: '🏫', label: 'Plan Szkolny Dziecka', desc: 'Dziecko objęte licencją placówki', email: 'parent@example.com' },
+            { id: 'parent_independent' as UserSubRole, icon: '🛒', label: 'Kupuję dla dziecka', desc: 'Własne zakupy materiałów', email: 'parent@kamila.shor.dev' },
+            { id: 'parent_school_plan' as UserSubRole, icon: '🏫', label: 'Plan Szkolny Dziecka', desc: 'Dziecko objęte licencją placówki', email: 'parent@kamila.shor.dev' },
         ]
     },
     {
@@ -45,8 +45,8 @@ const MAIN_ROLES = [
         desc: 'Zarządzanie materiałami dydaktycznymi',
         color: 'purple',
         subtypes: [
-            { id: 'teacher_private' as UserSubRole, icon: '🏠', label: 'Nauczyciel Prywatny', desc: 'Korepetytor, lekcje indywidualne', email: 'teacher@example.com' },
-            { id: 'teacher_school' as UserSubRole, icon: '🏛️', label: 'Nauczyciel Szkolny', desc: 'Licencja przyznana przez placówkę', email: 'teacher.school@example.com' },
+            { id: 'teacher_private' as UserSubRole, icon: '🏠', label: 'Nauczyciel Prywatny', desc: 'Korepetytor, lekcje indywidualne', email: 'teacher@kamila.shor.dev' },
+            { id: 'teacher_school' as UserSubRole, icon: '🏛️', label: 'Nauczyciel Szkolny', desc: 'Licencja przyznana przez placówkę', email: 'teacher.school@kamila.shor.dev' },
         ]
     },
     {
@@ -56,8 +56,8 @@ const MAIN_ROLES = [
         desc: 'Zarządzanie licencjami i dostępami',
         color: 'amber',
         subtypes: [
-            { id: 'institution_public' as UserSubRole, icon: '🏛️', label: 'Szkoła / Przedszkole Publiczne', desc: 'Placówka państwowa lub gminna', email: 'institution@example.com' },
-            { id: 'institution_language' as UserSubRole, icon: '🌍', label: 'Szkoła Językowa / Centrum', desc: 'Firma prywatna lub centrum edukacyjne', email: 'langschool@example.com' },
+            { id: 'institution_public' as UserSubRole, icon: '🏛️', label: 'Szkoła / Przedszkole Publiczne', desc: 'Placówka państwowa lub gminna', email: 'institution@kamila.shor.dev' },
+            { id: 'institution_language' as UserSubRole, icon: '🌍', label: 'Szkoła Językowa / Centrum', desc: 'Firma prywatna lub centrum edukacyjne', email: 'langschool@kamila.shor.dev' },
         ]
     },
 ] as const;
