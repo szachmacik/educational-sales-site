@@ -20,7 +20,7 @@ export interface EmailPayload {
 
 async function sendViaResend(payload: EmailPayload): Promise<boolean> {
   const apiKey = process.env.RESEND_API_KEY;
-  const from = process.env.RESEND_FROM || "noreply@kamila.ofshore.dev";
+  const from = process.env.FROM_EMAIL || process.env.RESEND_FROM || "noreply@ofshore.dev";
 
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
