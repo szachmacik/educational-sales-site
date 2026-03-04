@@ -61,10 +61,13 @@ export async function login(
         const data = await res.json();
         if (!data.success || !data.user) return null;
 
-        // Persist token in localStorage for session
+        // Persist token in localStorage AND as a cookie so middleware can read it
         if (typeof window !== 'undefined' && data.token) {
             localStorage.setItem('auth_token', data.token);
             localStorage.setItem('auth_user', JSON.stringify(data.user));
+            // Set cookie for middleware (httpOnly not possible from client, but sufficient for route guard)
+            const maxAge = 60 * 60 * 24 * 7; // 7 days
+            document.cookie = `user_token=${data.token}; path=/; max-age=${maxAge}; SameSite=Lax`;
         }
 
         return {
@@ -90,6 +93,8 @@ export async function logout() {
     if (typeof window !== 'undefined') {
         localStorage.removeItem('auth_token');
         localStorage.removeItem('auth_user');
+        // Clear the middleware cookie too
+        document.cookie = 'user_token=; path=/; max-age=0; SameSite=Lax';
     }
 }
 
