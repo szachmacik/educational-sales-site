@@ -1,4 +1,5 @@
 "use client";
+import { useParams } from "next/navigation";
 
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import Link from "next/link";
@@ -103,8 +104,9 @@ const SAMPLE_PRODUCTS: Product[] = [
     },
 ];
 
-export default function ProductsPage({ params }: { params: Promise<{ lang: string }> }) {
-    const { lang } = React.use(params);
+export default function ProductsPage() {
+    const params = useParams();
+    const lang = (params?.lang as string) || 'pl';
     const { t, language } = useLanguage();
 
     // @ts-ignore

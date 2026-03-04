@@ -1,4 +1,5 @@
 "use client";
+import { useParams } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -85,8 +86,9 @@ const generateEmbedCode = (url: string, platform: ScrapedProduct['platform']) =>
     return `<iframe src="${url}" width="100%" height="500" frameborder="0" allowfullscreen></iframe>`;
 };
 
-export default function ImportPage({ params }: { params: Promise<{ lang: string }> }) {
-    const { lang } = React.use(params);
+export default function ImportPage() {
+    const params = useParams();
+    const lang = (params?.lang as string) || 'pl';
     const { t, language } = useLanguage();
 
     // @ts-ignore

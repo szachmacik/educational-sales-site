@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useMemo } from "react";
+import { useParams } from "next/navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -85,8 +86,9 @@ function BarChart({ data, maxValue, currency }: { data: { label: string; value: 
     );
 }
 
-export default function AdminDashboard({ params }: { params: Promise<{ lang: string }> }) {
-    const { lang } = React.use(params);
+export default function AdminDashboard() {
+    const params = useParams();
+    const lang = (params?.lang as string) || 'pl';
     const { t, language } = useLanguage();
 
     // @ts-ignore

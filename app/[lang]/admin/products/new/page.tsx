@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter , useParams} from "next/navigation";
 import { useLanguage, NamespaceGuard } from "@/components/language-provider";
 import { translations } from "@/lib/translations";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -17,8 +17,9 @@ import Link from "next/link";
 
 const STORAGE_KEY = "admin_products";
 
-export default function NewProductPage({ params }: { params: Promise<{ lang: string }> }) {
-    const { lang } = React.use(params);
+export default function NewProductPage() {
+    const params = useParams();
+    const lang = (params?.lang as string) || 'pl';
     const { t, language } = useLanguage();
     const router = useRouter();
 

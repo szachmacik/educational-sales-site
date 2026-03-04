@@ -1,4 +1,5 @@
 "use client";
+import { useParams } from "next/navigation";
 
 import React from "react";
 import { AIWorkshop } from "@/components/admin/ai-workshop";
@@ -7,8 +8,9 @@ import { Sparkles, Brain } from "lucide-react";
 import { useLanguage, NamespaceGuard } from "@/components/language-provider";
 import { translations } from "@/lib/translations";
 
-export default function WorkshopPage({ params }: { params: Promise<{ lang: string }> }) {
-    const { lang } = React.use(params);
+export default function WorkshopPage() {
+    const params = useParams();
+    const lang = (params?.lang as string) || 'pl';
     const { t } = useLanguage();
 
     // @ts-ignore

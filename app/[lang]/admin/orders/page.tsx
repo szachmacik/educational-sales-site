@@ -1,4 +1,5 @@
 "use client";
+import { useParams } from "next/navigation";
 
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import Link from "next/link";
@@ -79,8 +80,9 @@ const formatDate = (dateString: string, language: string) => {
     });
 };
 
-export default function OrdersPage({ params }: { params: Promise<{ lang: string }> }) {
-    const { lang } = React.use(params);
+export default function OrdersPage() {
+    const params = useParams();
+    const lang = (params?.lang as string) || 'pl';
     const { t, language } = useLanguage();
 
     // @ts-ignore
