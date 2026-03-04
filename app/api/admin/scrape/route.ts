@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { requireAuth } from "@/lib/api-auth";
+import { requireAdmin } from "@/lib/api-auth";
 
 export async function POST(request: NextRequest) {
-    const authError = await requireAuth();
+    const authError = await requireAdmin();
     if (authError) return authError;
 
         try {

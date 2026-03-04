@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import { requireAuth } from "@/lib/api-auth";
+import { requireAdmin } from "@/lib/api-auth";
 import fs from "fs/promises";
 import path from "path";
 
 const PRODUCTS_PATH = path.join(process.cwd(), "lib", "data", "products.json");
 
 export async function GET() {
-    const authError = await requireAuth();
+    const authError = await requireAdmin();
     if (authError) return authError;
 
         try {
@@ -20,7 +20,7 @@ export async function GET() {
 }
 
 export async function POST(request: NextRequest) {
-    const authError = await requireAuth();
+    const authError = await requireAdmin();
     if (authError) return authError;
 
         try {

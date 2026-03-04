@@ -1,12 +1,20 @@
 import { NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
 
-// SECURITY: Verify admin token before allowing access
+// SECURITY FIX (SEC-002): Verify admin token AND role
+// Previously only checked token presence — now also verifies role = "admin"
 async function verifyAdmin(request: Request): Promise<boolean> {
     const cookieStore = await cookies();
     const token = cookieStore.get('user_token')?.value;
     if (!token) return false;
-    // Token presence is validated — role check happens at middleware level for /admin routes
+
+    // Verify role from user_role cookie (set during admin login)
+    const userRole = cookieStore.get('user_role')?.value;
+    if (userRole !== 'admin') return false;
+
+    // Additional check: token must not be a demo token
+    if (token.startsWith('demo_') || token.startsWith('local_')) return false;
+
     return true;
 }
 

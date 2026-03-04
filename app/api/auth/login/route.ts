@@ -15,6 +15,7 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
+import { checkRateLimit, getClientIp } from "@/lib/rate-limit";
 
 const USERS_FILE = path.join(process.cwd(), "lib", "data", "users.json");
 
@@ -47,6 +48,23 @@ function hashPassword(password: string): string {
 
 export async function POST(req: NextRequest) {
   try {
+    // SEC-003 FIX: Rate limiting — max 5 login attempts per minute per IP
+    const clientIp = getClientIp(req);
+    const rateLimitResult = checkRateLimit(`login:${clientIp}`, { limit: 5, windowSecs: 60 });
+    if (!rateLimitResult.success) {
+      return NextResponse.json(
+        { error: "Too many login attempts. Please try again later." },
+        {
+          status: 429,
+          headers: {
+            'Retry-After': String(Math.ceil((rateLimitResult.resetAt - Date.now()) / 1000)),
+            'X-RateLimit-Limit': '5',
+            'X-RateLimit-Remaining': '0',
+          },
+        }
+      );
+    }
+
     const { email, password } = await req.json();
 
     if (!email || !password) {

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { requireAuth } from "@/lib/api-auth";
+import { requireAdmin } from "@/lib/api-auth";
 
 // Centralized AI Generation route
 // Uses OPENAI_API_KEY from .env.local if available. Otherwise, falls back to demo data.
@@ -7,7 +7,7 @@ import { requireAuth } from "@/lib/api-auth";
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 export async function POST(req: Request) {
-    const authError = await requireAuth();
+    const authError = await requireAdmin();
     if (authError) return authError;
 
         try {
