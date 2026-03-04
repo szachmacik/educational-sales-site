@@ -11,7 +11,8 @@
     "contact": "Contact",
     "login": "Login",
     "dashboard": "Dashboard",
-    "adminPanel": "Admin Panel"
+    "adminPanel": "Admin Panel",
+    "verify": "Verification"
   },
   "brand": {
     "educationalMaterials": "Educational Materials",

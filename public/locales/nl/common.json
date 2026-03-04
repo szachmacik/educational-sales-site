@@ -11,7 +11,8 @@
     "contact": "Contact",
     "login": "Inloggen",
     "dashboard": "Dashboard",
-    "adminPanel": "Beheerderspaneel"
+    "adminPanel": "Beheerderspaneel",
+    "verify": "Verificatie"
   },
   "brand": {
     "educationalMaterials": "Educatieve Materialen",

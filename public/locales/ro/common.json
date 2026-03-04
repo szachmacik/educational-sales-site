@@ -11,7 +11,8 @@
     "contact": "Contact",
     "login": "Autentificare",
     "dashboard": "Panou de control",
-    "adminPanel": "Panou Admin"
+    "adminPanel": "Panou Admin",
+    "verify": "Verificare"
   },
   "brand": {
     "educationalMaterials": "Materiale Educaționale",

@@ -11,7 +11,8 @@
     "contact": "Ota yhteyttä",
     "login": "Kirjaudu",
     "dashboard": "Hallintapaneeli",
-    "adminPanel": "Ylläpitopaneeli"
+    "adminPanel": "Ylläpitopaneeli",
+    "verify": "Vahvistus"
   },
   "brand": {
     "educationalMaterials": "Oppimateriaalit",

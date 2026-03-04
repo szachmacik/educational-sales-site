@@ -11,7 +11,8 @@
     "contact": "Kontaktai",
     "login": "Prisijungti",
     "dashboard": "Skydelis",
-    "adminPanel": "Admin skydelis"
+    "adminPanel": "Admin skydelis",
+    "verify": "Patvirtinimas"
   },
   "brand": {
     "educationalMaterials": "Mokymo priemonės",

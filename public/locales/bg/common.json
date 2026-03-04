@@ -11,7 +11,8 @@
     "contact": "Контакт",
     "login": "Вход",
     "dashboard": "Панел",
-    "adminPanel": "Админ панел"
+    "adminPanel": "Админ панел",
+    "verify": "Верификация"
   },
   "brand": {
     "educationalMaterials": "Учебни материали",

@@ -11,7 +11,8 @@
     "contact": "Contacto",
     "login": "Acceso",
     "dashboard": "Panel de control",
-    "adminPanel": "Panel Admin"
+    "adminPanel": "Panel Admin",
+    "verify": "Verificación"
   },
   "brand": {
     "educationalMaterials": "Materiales Educativos",
