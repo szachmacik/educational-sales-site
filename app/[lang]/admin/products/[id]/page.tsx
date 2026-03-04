@@ -17,8 +17,10 @@ import { ArrowLeft, Save, Loader2, Wand2, Trash2, ImagePlus, X, Search, External
 
 const STORAGE_KEY = "admin_products";
 
-export default function EditProductPage({ params }: { params: Promise<{ lang: string, id: string }> }) {
-    const { lang, id: productId } = React.use(params);
+export default function EditProductPage() {
+    const params = useParams();
+    const lang = (params?.lang as string) || 'pl';
+    const productId = params?.id as string;
     const { t, language, formatPrice } = useLanguage();
     const router = useRouter();
 

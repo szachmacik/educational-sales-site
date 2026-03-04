@@ -40,8 +40,10 @@ import { toast } from "sonner";
 
 const STORAGE_KEY = "admin_orders";
 
-export default function OrderDetailsPage({ params }: { params: Promise<{ lang: string, id: string }> }) {
-    const { lang, id: orderId } = React.use(params);
+export default function OrderDetailsPage() {
+    const params = useParams();
+    const lang = (params?.lang as string) || 'pl';
+    const orderId = params?.id as string;
     const { t, language } = useLanguage();
     const router = useRouter();
 
