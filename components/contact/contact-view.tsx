@@ -19,13 +19,37 @@ export function ContactView() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-        // Simulate form submission
-        await new Promise(r => setTimeout(r, 1500));
-        toast.success(c.form?.success || "Success", {
-            description: c.form?.successDesc
-        });
-        setIsSubmitting(false);
-        (e.target as HTMLFormElement).reset();
+        const form = e.target as HTMLFormElement;
+        const data = {
+            name: (form.querySelector('#name') as HTMLInputElement)?.value || '',
+            email: (form.querySelector('#email') as HTMLInputElement)?.value || '',
+            subject: (form.querySelector('#subject') as HTMLInputElement)?.value || '',
+            message: (form.querySelector('#message') as HTMLTextAreaElement)?.value || '',
+        };
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
+            if (res.ok) {
+                toast.success(c.form?.success || "Wiadomość wysłana!", {
+                    description: c.form?.successDesc || "Odpiszemy najszybciej jak to możliwe."
+                });
+                form.reset();
+            } else {
+                const err = await res.json();
+                toast.error(c.form?.error || "Błąd wysyłania", {
+                    description: err.message || "Spróbuj ponownie za chwilę."
+                });
+            }
+        } catch {
+            toast.error(c.form?.error || "Błąd wysyłania", {
+                description: "Sprawdź połączenie internetowe i spróbuj ponownie."
+            });
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (

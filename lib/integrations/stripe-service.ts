@@ -23,6 +23,10 @@ export async function processStripePayment(
 ): Promise<{ success: boolean; transactionId?: string; redirectUrl?: string; error?: string }> {
   try {
     const resolvedOrderId = orderId || `order_${Date.now()}`;
+    // Extract current language from URL path (e.g. /pl/checkout → pl)
+    const pathLang = typeof window !== 'undefined'
+      ? (window.location.pathname.split('/')[1] || 'pl')
+      : 'pl';
 
     const res = await fetch("/api/payments/stripe", {
       method: "POST",
@@ -33,8 +37,8 @@ export async function processStripePayment(
         orderId: resolvedOrderId,
         email,
         productName,
-        successUrl: `${window.location.origin}/pl/success?order=${resolvedOrderId}`,
-        cancelUrl: `${window.location.origin}/pl/checkout?cancelled=true`,
+        successUrl: `${window.location.origin}/${pathLang}/success?order=${resolvedOrderId}`,
+        cancelUrl: `${window.location.origin}/${pathLang}/checkout?cancelled=true`,
       }),
     });
 

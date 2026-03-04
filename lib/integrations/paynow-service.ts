@@ -24,6 +24,10 @@ export async function processPayNowPayment(
   description?: string
 ): Promise<{ success: boolean; status?: string; redirectUrl?: string; paymentId?: string; error?: string }> {
   try {
+    // Extract current language from URL path (e.g. /pl/checkout → pl)
+    const pathLang = typeof window !== 'undefined'
+      ? (window.location.pathname.split('/')[1] || 'pl')
+      : 'pl';
     const res = await fetch("/api/payments/paynow", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -32,7 +36,7 @@ export async function processPayNowPayment(
         orderId,
         email,
         description,
-        continueUrl: `${window.location.origin}/pl/success?order=${orderId}`,
+        continueUrl: `${window.location.origin}/${pathLang}/success?order=${orderId}`,
       }),
     });
 

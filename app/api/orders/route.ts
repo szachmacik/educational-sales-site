@@ -58,13 +58,19 @@ export async function POST(req: NextRequest) {
         const order = await req.json();
         const orders = await readOrders();
 
+        // Normalize: checkout sends 'orderNumber', but we store as 'id'
+        // Support both field names for backwards compatibility
+        const orderId = order.id || order.orderNumber;
+
         // Validate required fields
-        if (!order.id || !order.email || !order.items) {
-            return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+        if (!orderId || !order.email || !order.items) {
+            return NextResponse.json({ error: "Missing required fields: id/orderNumber, email, items" }, { status: 400 });
         }
 
         orders.push({
             ...order,
+            id: orderId,
+            orderNumber: orderId,
             createdAt: order.createdAt || new Date().toISOString(),
         });
         await writeOrders(orders);

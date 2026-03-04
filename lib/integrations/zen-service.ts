@@ -30,6 +30,10 @@ export async function processZenPayment(
 ): Promise<{ success: boolean; redirectUrl?: string; transactionId?: string; error?: string }> {
   try {
     const resolvedOrderId = orderId || `order_${Date.now()}`;
+    // Extract current language from URL path (e.g. /pl/checkout → pl)
+    const pathLang = typeof window !== 'undefined'
+      ? (window.location.pathname.split('/')[1] || 'pl')
+      : 'pl';
 
     const res = await fetch("/api/payments/zen", {
       method: "POST",
@@ -42,8 +46,8 @@ export async function processZenPayment(
         firstName,
         lastName,
         productName,
-        successUrl: `${window.location.origin}/pl/success?order=${resolvedOrderId}`,
-        failureUrl: `${window.location.origin}/pl/checkout?failed=true&order=${resolvedOrderId}`,
+        successUrl: `${window.location.origin}/${pathLang}/success?order=${resolvedOrderId}`,
+        failureUrl: `${window.location.origin}/${pathLang}/checkout?failed=true&order=${resolvedOrderId}`,
       }),
     });
 

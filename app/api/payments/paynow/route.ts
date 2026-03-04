@@ -39,7 +39,7 @@ export async function POST(req: NextRequest) {
         simulated: true,
         paymentId: `sim_pn_${Date.now()}`,
         status: "NEW",
-        redirectUrl: `${successUrl || "/pl/success"}?order=${orderId}&payment=simulated`,
+        redirectUrl: `${continueUrl || successUrl || "/pl/success"}?payment=simulated`,
       });
     }
 
@@ -52,7 +52,7 @@ export async function POST(req: NextRequest) {
       externalId: orderId,
       description: description || `Zamówienie #${orderId}`,
       buyer: { email },
-      continueUrl: continueUrl || `${process.env.NEXT_PUBLIC_BASE_URL}/pl/success?order=${orderId}`,
+      continueUrl: continueUrl || successUrl || `${process.env.NEXT_PUBLIC_BASE_URL || ''}/pl/success?order=${orderId}`,
     };
 
     const payloadString = JSON.stringify(payload);

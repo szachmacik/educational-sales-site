@@ -15,12 +15,23 @@ export function Newsletter() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { t } = useLanguage();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      setIsSubmitted(true);
-      toast.success("Adres dodany do bazy mailingowej (wersja demonstracyjna)");
-      console.log(`[Admin Notification] New newsletter signup: ${email}`);
+    if (!email) return;
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      if (res.ok) {
+        setIsSubmitted(true);
+      } else {
+        const err = await res.json();
+        toast.error(err.message || "Błąd zapisu. Spróbuj ponownie.");
+      }
+    } catch {
+      toast.error("Błąd połączenia. Spróbuj ponownie.");
     }
   };
 

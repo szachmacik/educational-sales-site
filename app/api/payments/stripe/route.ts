@@ -47,6 +47,7 @@ export async function POST(req: NextRequest) {
       mode: "payment",
       customer_email: email || undefined,
       client_reference_id: orderId,
+      // successUrl/cancelUrl are always passed from client with correct language prefix
       success_url: successUrl || `${baseUrl}/pl/success?session_id={CHECKOUT_SESSION_ID}&order=${orderId}`,
       cancel_url: cancelUrl || `${baseUrl}/pl/checkout?cancelled=true&order=${orderId}`,
       metadata: {
