@@ -57,6 +57,48 @@
       "unlocksInDays": "Odblokuje się za {days} dni",
       "notFound": "Kurs nie został znaleziony.",
       "selectLesson": "Wybierz lekcję z menu, aby rozpocząć."
+    },
+    "wallet": {
+      "title": "Twój Portfel",
+      "subtitle": "Zbieraj punkty za aktywność i zakupy.",
+      "available": "Dostępne środki",
+      "points": "pkt",
+      "value": "Wartość w {currency}",
+      "spend": "Wydaj punkty w sklepie",
+      "history": "Ostatnia aktywność"
+    },
+    "purchases": {
+      "title": "Historia Zakupów",
+      "loading": "Ładowanie...",
+      "empty": "Brak zamówień",
+      "emptyDesc": "Nie dokonałeś jeszcze żadnych zakupów.",
+      "goToShop": "Przejdź do sklepu",
+      "moreItems": "więcej",
+      "invoice": "Faktura"
+    },
+    "team": {
+      "title": "Moja Klasa / Zespół",
+      "subtitle": "Udostępniaj materiały uczniom",
+      "create_class": "Utwórz nową klasę",
+      "created_at": "Utworzono: {date}",
+      "students_count": "{count} uczniów",
+      "access_code": "Kod dostępu dla uczniów",
+      "empty": {
+        "title": "Nowa Klasa",
+        "desc": "Utwórz grupę dla swoich uczniów.",
+        "btn": "Rozpocznij konfigurację"
+      },
+      "pro": {
+        "active": "Twój plan PRO jest aktywny",
+        "unlock": "Odblokuj nieograniczone klasy",
+        "desc": "Plan Nauczyciel PRO umożliwia tworzenie nieograniczonej liczby grup."
+      }
+    },
+    "awards": {
+      "title": "Moje Nagrody",
+      "subtitle": "Twoje osiągnięcia i odznaki",
+      "empty": "Brak nagród",
+      "emptyDesc": "Zdobywaj punkty i odblokowuj nagrody!"
     }
   }
 }

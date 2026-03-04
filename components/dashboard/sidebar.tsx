@@ -74,16 +74,16 @@ export function Sidebar({ user, activeTab, setActiveTab, handleLogout, onRoleCha
         navItems = [
             { id: "licenses", label: "Licencje Placówki", icon: BookOpen },
             { id: "team", label: "Nauczyciele / Zespół", icon: Users },
-            ...(showViewer ? [{ id: "api-embed", label: "Zewnętrzny Portal (API)", icon: Server }] : []),
+            ...(showViewer ? [{ id: "portal", label: "Zewnętrzny Portal (AI Workshop)", icon: Server }] : []),
             ...(showMarket ? [{ id: "extensions", label: "Usługi Premium B2B", icon: Sparkles }] : []),
             { id: "purchases", label: "Faktury i Dokumenty", icon: ShoppingBag },
             { id: "profile", label: "Dane Szkoły", icon: Settings },
         ];
     } else if (user.role === 'teacher') {
         navItems = [
-            { id: "learning", label: t.dashboard?.sidebar?.library || "Materials Library", icon: BookOpen },
-            { id: "team", label: t.dashboard?.sidebar?.team || "My Class / Team", icon: Users },
-            ...(showViewer ? [{ id: "api-embed", label: "Twój Portal (API)", icon: Server }] : []),
+            { id: "library", label: t.dashboard?.sidebar?.library || "Moja Biblioteka", icon: BookOpen },
+            { id: "team", label: t.dashboard?.sidebar?.team || "Moi Kursanci", icon: Users },
+            ...(showViewer ? [{ id: "portal", label: "Twój Portal (AI Workshop)", icon: Server }] : []),
             ...(showMarket ? [{ id: "extensions", label: "Narzędzia i Rozszerzenia", icon: Sparkles }] : []),
             { id: "purchases", label: t.dashboard?.sidebar?.purchases || "Invoices & Purchases", icon: ShoppingBag },
             ...(showWallet ? [{ id: "wallet", label: t.dashboard?.sidebar?.wallet || "Points Wallet", icon: Coins }] : []),
@@ -91,7 +91,7 @@ export function Sidebar({ user, activeTab, setActiveTab, handleLogout, onRoleCha
         ];
     } else {
         navItems = [
-            { id: "learning", label: t.dashboard?.sidebar?.myLessons || "My Lessons", icon: BookOpen },
+            { id: "library", label: t.dashboard?.sidebar?.myLessons || "Moje Lekcje", icon: BookOpen },
             ...(showGames ? [{ id: "games", label: t.dashboard?.sidebar?.interactiveGames || "Games & Fun", icon: Gamepad }] : []),
             ...(showAwards ? [{ id: "awards", label: t.dashboard?.sidebar?.myAwards || "My Awards", icon: Trophy }] : []),
             { id: "profile", label: t.dashboard?.sidebar?.myProfile || "My Profile", icon: User },

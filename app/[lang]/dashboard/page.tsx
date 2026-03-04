@@ -397,15 +397,19 @@ export default function DashboardPage() {
 
         trackAnonymousEvent("dashboard_visit", { role: storedRole });
 
-        // Set default tab for role
-        if (storedRole === "institution") setActiveTab("licenses");
-        else setActiveTab("home");
-
         // Load courses in background
         fetch("/api/courses").then(r => r.json()).then(data => {
             if (Array.isArray(data)) setCourses(data);
         }).catch(() => setCourses(MOCK_COURSES));
     }, [router, language]);
+
+    // Set default tab ONCE on mount — separate from language/router effect
+    // to prevent tab reset when language context re-renders after mergeTranslations
+    useEffect(() => {
+        const storedRole = (localStorage.getItem("user_role") || "student") as UserRole;
+        if (storedRole === "institution") setActiveTab("licenses");
+        // else stays "home" (initial useState value)
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     const handleLogout = useCallback(async () => {
         await logout();
