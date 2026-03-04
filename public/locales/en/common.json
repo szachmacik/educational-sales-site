@@ -400,5 +400,11 @@
   "announcement": {
     "launchOffer": "Special Launch Offer: Get 20% OFF with code \"START20\"",
     "limitedTime": "Limited time: Check our new packs!"
+  },
+  "course": {
+    "yourProgress": "Your Progress",
+    "noLessons": "No lessons.",
+    "quiz": "Quiz",
+    "unlocksInDays": "Unlocks in {days} days"
   }
 }

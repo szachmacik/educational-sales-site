@@ -76,27 +76,12 @@
       "invoice": "Invoice"
     },
     "course": {
-      "notFound": "Course not found",
-      "selectLesson": "Select a lesson from the menu to start.",
-      "backToDashboard": "Back to dashboard",
-      "prevLesson": "Previous Lesson",
-      "nextLesson": "Next Lesson",
-      "complete": "Mark as completed",
-      "completed": "Completed",
-      "backToCourses": "My Courses",
-      "playVideo": "PLAY VIDEO",
-      "gameTitle": "Interactive Online Game",
-      "gameDesc": "This material was generated automatically. Click the button below to open the game in a new window and conduct your lesson.",
-      "gameBtn": "Open Game Now",
-      "introduction": "Introduction",
-      "materialsTitle": "Lesson Materials",
-      "viewingInstructions": "Select a lesson from the menu to start.",
-      "finishCourse": "Finish Course",
-      "teachingModes": {
-        "online": "Online",
-        "stationary": "In-person",
-        "hybrid": "Hybrid"
-      }
+      "yourProgress": "Vaš Napredek",
+      "noLessons": "V tem tečaju ni lekcij.",
+      "quiz": "Kviz",
+      "unlocksInDays": "Odklene se čez {days} dni",
+      "notFound": "Tečaj ni bil najden.",
+      "selectLesson": "Izberite lekcijo iz menija za začetek."
     },
     "library": {
       "title": "Your Library",

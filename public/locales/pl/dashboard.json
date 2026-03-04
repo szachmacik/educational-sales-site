@@ -49,6 +49,14 @@
         "desc": "Przeglądaj sklep i dodawaj nowe pakiety.",
         "btn": "Idź do sklepu"
       }
+    },
+    "course": {
+      "yourProgress": "Twój Postęp",
+      "noLessons": "Brak lekcji w tym kursie.",
+      "quiz": "Quiz",
+      "unlocksInDays": "Odblokuje się za {days} dni",
+      "notFound": "Kurs nie został znaleziony.",
+      "selectLesson": "Wybierz lekcję z menu, aby rozpocząć."
     }
   }
 }

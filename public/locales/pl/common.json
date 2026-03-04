@@ -417,5 +417,11 @@
     "collect_purchase": "Kupuj produkty (1 zł = 10 pkt)",
     "collect_login": "Zaloguj się codziennie (+10 pkt)",
     "collect_review": "Wystaw opinię o produkcie (+50 pkt)"
+  },
+  "course": {
+    "yourProgress": "Twój Postęp",
+    "noLessons": "Brak lekcji.",
+    "quiz": "Quiz",
+    "unlocksInDays": "Odblokuje się za {days} dni"
   }
 }

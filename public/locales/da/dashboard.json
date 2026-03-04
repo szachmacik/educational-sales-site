@@ -76,27 +76,12 @@
       "invoice": "Faktura"
     },
     "course": {
-      "notFound": "Kursus ikke fundet",
-      "selectLesson": "Vælg en lektion fra menuen for at starte.",
-      "backToDashboard": "Tilbage til dashboard",
-      "prevLesson": "Forrige lektion",
-      "nextLesson": "Næste lektion",
-      "complete": "Markér som gennemført",
-      "completed": "Gennemført",
-      "backToCourses": "Mine kurser",
-      "playVideo": "AFSPIL VIDEO",
-      "gameTitle": "Interaktivt onlinespil",
-      "gameDesc": "Dette materiale blev genereret automatisk. Klik på knappen nedenfor for at åbne spillet i et nyt vindue.",
-      "gameBtn": "Åbn spillet nu",
-      "introduction": "Introduktion",
-      "materialsTitle": "Lektionsmaterialer",
-      "viewingInstructions": "Vælg en lektion fra menuen for at starte.",
-      "finishCourse": "Afslut kursus",
-      "teachingModes": {
-        "online": "Online",
-        "stationary": "Fysisk",
-        "hybrid": "Hybrid"
-      }
+      "yourProgress": "Din Fremgang",
+      "noLessons": "Ingen lektioner i dette kursus.",
+      "quiz": "Quiz",
+      "unlocksInDays": "Låses op om {days} dage",
+      "notFound": "Kurset blev ikke fundet.",
+      "selectLesson": "Vælg en lektion fra menuen for at starte."
     },
     "library": {
       "title": "Dit bibliotek",

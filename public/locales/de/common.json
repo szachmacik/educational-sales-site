@@ -395,5 +395,11 @@
     "description": "Melden Sie sich für unseren Newsletter an und erhalten Sie 50 kostenlose Arbeitsblätter!",
     "cta": "Ich möchte mein Geschenk",
     "noThanks": "Nein danke, ich zahle später den vollen Preis"
+  },
+  "course": {
+    "yourProgress": "Ihr Fortschritt",
+    "noLessons": "Keine Lektionen.",
+    "quiz": "Quiz",
+    "unlocksInDays": "Entsperrt in {days} Tagen"
   }
 }

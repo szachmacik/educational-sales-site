@@ -395,5 +395,11 @@
     "description": "Rejoignez notre newsletter et recevez 50 fiches d'exercices gratuites !",
     "cta": "Je veux mon cadeau",
     "noThanks": "Non merci, je paierai le plein tarif plus tard"
+  },
+  "course": {
+    "yourProgress": "Votre Progression",
+    "noLessons": "Pas de leçons.",
+    "quiz": "Quiz",
+    "unlocksInDays": "Se déverrouille dans {days} jours"
   }
 }

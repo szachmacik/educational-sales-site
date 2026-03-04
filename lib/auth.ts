@@ -63,11 +63,20 @@ export async function login(
 
         // Persist token in localStorage AND as a cookie so middleware can read it
         if (typeof window !== 'undefined' && data.token) {
-            localStorage.setItem('auth_token', data.token);
-            localStorage.setItem('auth_user', JSON.stringify(data.user));
-            // Set cookie for middleware (httpOnly not possible from client, but sufficient for route guard)
+            // FUN-016 FIX: Use consistent localStorage keys across all components
+            // login-form.tsx, header.tsx, dashboard/page.tsx all use: user_token, user_role, user_sub_role, user_email
             const maxAge = 60 * 60 * 24 * 7; // 7 days
+            localStorage.setItem('user_token', data.token);
+            localStorage.setItem('user_role', data.user.role || 'student');
+            if (data.user.subRole) localStorage.setItem('user_sub_role', data.user.subRole);
+            if (data.user.email) localStorage.setItem('user_email', data.user.email);
+            localStorage.setItem('auth_user', JSON.stringify(data.user)); // keep for backwards compat
+            // Set cookie for middleware (httpOnly not possible from client, but sufficient for route guard)
             document.cookie = `user_token=${data.token}; path=/; max-age=${maxAge}; SameSite=Lax`;
+            // SEC-FIX: Also set user_role cookie so middleware can verify admin access to /admin paths
+            // This prevents privilege escalation: non-admin users cannot access /admin even with a valid token
+            const userRole = data.user.role || 'student';
+            document.cookie = `user_role=${userRole}; path=/; max-age=${maxAge}; SameSite=Lax`;
         }
 
         return {
@@ -91,10 +100,14 @@ export async function login(
 
 export async function logout() {
     if (typeof window !== 'undefined') {
-        localStorage.removeItem('auth_token');
-        localStorage.removeItem('auth_user');
-        // Clear the middleware cookie too
+        localStorage.removeItem('user_token');
+        localStorage.removeItem('user_role');
+        localStorage.removeItem('user_sub_role');
+        localStorage.removeItem('user_email');
+        localStorage.removeItem('auth_user'); // backwards compat
+        // Clear the middleware cookies too
         document.cookie = 'user_token=; path=/; max-age=0; SameSite=Lax';
+        document.cookie = 'user_role=; path=/; max-age=0; SameSite=Lax';
     }
 }
 

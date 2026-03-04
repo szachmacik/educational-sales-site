@@ -76,27 +76,12 @@
       "invoice": "Rechnung"
     },
     "course": {
-      "notFound": "Kurs nicht gefunden",
-      "selectLesson": "Wählen Sie eine Lektion aus dem Menü.",
-      "backToDashboard": "Zurück zum Dashboard",
-      "prevLesson": "Vorherige Lektion",
-      "nextLesson": "Nächste Lektion",
-      "complete": "Als abgeschlossen markieren",
-      "completed": "Abgeschlossen",
-      "backToCourses": "Meine Kurse",
-      "playVideo": "VIDEO ABSPIELEN",
-      "gameTitle": "Interaktives Online-Spiel",
-      "gameDesc": "Dieses Material wurde automatisch generiert. Klicken Sie auf die Schaltfläche unten, um das Spiel in einem neuen Fenster zu öffnen.",
-      "gameBtn": "Spiel jetzt öffnen",
-      "introduction": "Einführung",
-      "materialsTitle": "Lektionsmaterialien",
-      "viewingInstructions": "Wählen Sie eine Lektion aus dem Menü.",
-      "finishCourse": "Kurs abschließen",
-      "teachingModes": {
-        "online": "Online",
-        "stationary": "Präsenz",
-        "hybrid": "Hybrid"
-      }
+      "yourProgress": "Ihr Fortschritt",
+      "noLessons": "Keine Lektionen in diesem Kurs.",
+      "quiz": "Quiz",
+      "unlocksInDays": "Entsperrt in {days} Tagen",
+      "notFound": "Kurs nicht gefunden.",
+      "selectLesson": "Wählen Sie eine Lektion aus dem Menü, um zu beginnen."
     },
     "library": {
       "title": "Ihre Bibliothek",

@@ -395,5 +395,11 @@
     "description": "Join our newsletter and receive 50 free worksheets!",
     "cta": "I want my gift",
     "noThanks": "No thanks, I'll pay full price later"
+  },
+  "course": {
+    "yourProgress": "Jūsų Pažanga",
+    "noLessons": "Nėra pamokų.",
+    "quiz": "Viktorina",
+    "unlocksInDays": "Atsidarys po {days} dienų"
   }
 }

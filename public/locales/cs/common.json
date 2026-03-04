@@ -399,5 +399,11 @@
     "description": "Join our newsletter and receive 50 free worksheets!",
     "cta": "I want my gift",
     "noThanks": "No thanks, I'll pay full price later"
+  },
+  "course": {
+    "yourProgress": "Váš Pokrok",
+    "noLessons": "Žádné lekce.",
+    "quiz": "Kvíz",
+    "unlocksInDays": "Odemkne se za {days} dní"
   }
 }

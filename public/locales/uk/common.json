@@ -399,5 +399,11 @@
   "announcement": {
     "launchOffer": "Спеціальна пропозиція: -20% з кодом \"START20\"",
     "limitedTime": "Тільки зараз: перевірте наші нові пакети!"
+  },
+  "course": {
+    "yourProgress": "Ваш прогрес",
+    "noLessons": "Немає уроків.",
+    "quiz": "Тест",
+    "unlocksInDays": "Відкриється через {days} днів"
   }
 }

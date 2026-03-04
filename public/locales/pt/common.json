@@ -395,5 +395,11 @@
     "description": "Assine nossa newsletter e receba 50 fichas de trabalho grátis!",
     "cta": "Eu quero meu presente",
     "noThanks": "Não, obrigado, pagarei o preço total mais tarde"
+  },
+  "course": {
+    "yourProgress": "Seu Progresso",
+    "noLessons": "Sem lições.",
+    "quiz": "Questionário",
+    "unlocksInDays": "Desbloqueia em {days} dias"
   }
 }

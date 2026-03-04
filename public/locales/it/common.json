@@ -395,5 +395,11 @@
     "description": "Iscriviti alla nostra newsletter e ricevi 50 schede didattiche gratuite!",
     "cta": "Voglio il mio regalo",
     "noThanks": "No grazie, pagherò il prezzo intero più tardi"
+  },
+  "course": {
+    "yourProgress": "Il Tuo Progresso",
+    "noLessons": "Nessuna lezione.",
+    "quiz": "Quiz",
+    "unlocksInDays": "Si sblocca tra {days} giorni"
   }
 }

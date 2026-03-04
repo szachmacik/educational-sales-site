@@ -76,27 +76,12 @@
       "invoice": "Faktura"
     },
     "course": {
-      "notFound": "Kurz nenalezen",
-      "selectLesson": "Vyberte lekci z nabídky.",
-      "backToDashboard": "Zpět na nástěnku",
-      "prevLesson": "Předchozí lekce",
-      "nextLesson": "Další lekce",
-      "complete": "Označit jako dokončené",
-      "completed": "Dokončeno",
-      "backToCourses": "Moje kurzy",
-      "playVideo": "PŘEHRÁT VIDEO",
-      "gameTitle": "Interaktivní online hra",
-      "gameDesc": "Tento materiál byl vygenerován automaticky. Klikněte na tlačítko níže pro otevření hry v novém okně.",
-      "gameBtn": "Otevřít hru nyní",
-      "introduction": "Úvod",
-      "materialsTitle": "Materiály k lekci",
-      "viewingInstructions": "Vyberte lekci z nabídky.",
-      "finishCourse": "Dokončit kurz",
-      "teachingModes": {
-        "online": "Online",
-        "stationary": "Prezenčně",
-        "hybrid": "Hybridně"
-      }
+      "yourProgress": "Váš Pokrok",
+      "noLessons": "V tomto kurzu nejsou žádné lekce.",
+      "quiz": "Kvíz",
+      "unlocksInDays": "Odemkne se za {days} dní",
+      "notFound": "Kurz nebyl nalezen.",
+      "selectLesson": "Vyberte lekci z nabídky a začněte."
     },
     "library": {
       "title": "Vaše knihovna",
