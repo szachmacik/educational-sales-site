@@ -2,13 +2,12 @@
 const nextConfig = {
   output: 'standalone',
   typescript: {
-    // TypeScript errors being fixed progressively; re-enabled to unblock deployment
-    // TODO: Remove once all TS errors resolved (30 errors tracked)
-    ignoreBuildErrors: true,
+    // All TypeScript errors fixed as of 2026-03-04
+    ignoreBuildErrors: false,
   },
   eslint: {
-    // Keep disabled during builds for now (non-security issue)
-    ignoreDuringBuilds: true,
+    // ESLint re-enabled after fixing all critical errors
+    ignoreDuringBuilds: false,
   },
   images: {
     unoptimized: true,

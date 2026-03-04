@@ -1,5 +1,6 @@
 
 import { NextRequest, NextResponse } from "next/server";
+import { requireAdmin } from "@/lib/api-auth";
 
 interface ScrapedProduct {
     title: string;
@@ -10,7 +11,11 @@ interface ScrapedProduct {
 }
 
 // This API route scrapes products from a WordPress/WP Idea store
+// SEC-FIX: Requires admin authentication to prevent SSRF abuse
 export async function POST(request: NextRequest) {
+    const authError = await requireAdmin();
+    if (authError) return authError;
+
     try {
         const { url } = await request.json();
 

@@ -1,10 +1,28 @@
 
 import { NextRequest, NextResponse } from "next/server";
+import { checkRateLimit, getClientIp } from "@/lib/rate-limit";
 
 // NIP lookup API using the public rejestr.io service
 // Alternative: you can register for official GUS API at regon_bir@stat.gov.pl
 
 export async function GET(request: NextRequest) {
+    // SEC-FIX: Rate limit NIP lookups to prevent abuse (10 req/min per IP)
+    const clientIp = getClientIp(request);
+    const rateLimitResult = checkRateLimit(`nip-lookup:${clientIp}`, { limit: 10, windowSecs: 60 });
+    if (!rateLimitResult.success) {
+        return NextResponse.json(
+            { error: "Too many requests. Please try again later." },
+            {
+                status: 429,
+                headers: {
+                    'Retry-After': String(Math.ceil((rateLimitResult.resetAt - Date.now()) / 1000)),
+                    'X-RateLimit-Limit': '10',
+                    'X-RateLimit-Remaining': '0',
+                }
+            }
+        );
+    }
+
     const nip = request.nextUrl.searchParams.get("nip");
 
     if (!nip) {
