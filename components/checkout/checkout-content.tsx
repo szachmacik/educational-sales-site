@@ -280,7 +280,7 @@ export function CheckoutContent() {
         street: "",
         city: "",
         zipCode: "",
-        paymentMethod: "blik" as "card" | "blik" | "applepay" | "school_invoice",
+        paymentMethod: "blik" as "card" | "blik" | "applepay" | "school_invoice" | "zen" | "zen",
         purchaserRole: "teacher" as "teacher" | "admin",
         isInstitutional: false,
         buyerName: "",

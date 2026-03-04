@@ -401,5 +401,59 @@
     "noLessons": "Nessuna lezione.",
     "quiz": "Quiz",
     "unlocksInDays": "Si sblocca tra {days} giorni"
+  },
+  "dashboard": {
+    "wallet": {
+      "title": "Il Tuo Portafoglio",
+      "subtitle": "Raccogli punti per attività e acquisti.",
+      "available": "Fondi disponibili",
+      "points": "pts",
+      "value": "Valore in {currency}",
+      "spend": "Spendi punti nel negozio",
+      "history": "Attività recente"
+    },
+    "awards": {
+      "title": "La Tua Hall of Fame",
+      "subtitle": "Guadagna badge per lezioni e giochi completati!",
+      "mock": {
+        "start": "Quick Start",
+        "startDesc": "Completed first lesson",
+        "vocab": "Vocab Master",
+        "vocabDesc": "100% in quiz",
+        "steady": "Systematic",
+        "steadyDesc": "Logged in 7 days",
+        "polyglot": "Polyglot",
+        "polyglotDesc": "Passed A1 level"
+      }
+    },
+    "team": {
+      "title": "La Mia Classe / Team",
+      "subtitle": "Condividi materiali con gli studenti",
+      "create_class": "Crea nuova classe",
+      "created_at": "Created: {date}",
+      "students_count": "{count} students",
+      "access_code": "Student access code",
+      "empty": {
+        "title": "New Class",
+        "desc": "Create a group for your students.",
+        "btn": "Start Setup"
+      },
+      "pro": {
+        "active": "Your PRO plan is active",
+        "unlock": "Unlock unlimited classes",
+        "desc": "Teacher PRO plan allows creating unlimited groups.",
+        "upgrade": "Upgrade to PRO",
+        "status": "Active"
+      }
+    },
+    "games": {
+      "title": "Giochi Educativi",
+      "subtitle": "Interactive exercises for your students",
+      "play": "Play now",
+      "loading": "Loading game...",
+      "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
+      "fullscreen": "Full screen",
+      "report": "Report error"
+    }
   }
 }

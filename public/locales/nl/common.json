@@ -401,5 +401,59 @@
     "noLessons": "Geen lessen.",
     "quiz": "Quiz",
     "unlocksInDays": "Wordt ontgrendeld over {days} dagen"
+  },
+  "dashboard": {
+    "wallet": {
+      "title": "Uw Portemonnee",
+      "subtitle": "Verzamel punten voor activiteiten en aankopen.",
+      "available": "Beschikbare middelen",
+      "points": "pts",
+      "value": "Waarde in {currency}",
+      "spend": "Punten uitgeven in winkel",
+      "history": "Recente activiteit"
+    },
+    "awards": {
+      "title": "Uw Erehal",
+      "subtitle": "Verdien badges voor voltooide lessen en spellen!",
+      "mock": {
+        "start": "Quick Start",
+        "startDesc": "Completed first lesson",
+        "vocab": "Vocab Master",
+        "vocabDesc": "100% in quiz",
+        "steady": "Systematic",
+        "steadyDesc": "Logged in 7 days",
+        "polyglot": "Polyglot",
+        "polyglotDesc": "Passed A1 level"
+      }
+    },
+    "team": {
+      "title": "Mijn Klas / Team",
+      "subtitle": "Materialen delen met studenten",
+      "create_class": "Nieuwe klas aanmaken",
+      "created_at": "Created: {date}",
+      "students_count": "{count} students",
+      "access_code": "Student access code",
+      "empty": {
+        "title": "New Class",
+        "desc": "Create a group for your students.",
+        "btn": "Start Setup"
+      },
+      "pro": {
+        "active": "Your PRO plan is active",
+        "unlock": "Unlock unlimited classes",
+        "desc": "Teacher PRO plan allows creating unlimited groups.",
+        "upgrade": "Upgrade to PRO",
+        "status": "Active"
+      }
+    },
+    "games": {
+      "title": "Educatieve Spellen",
+      "subtitle": "Interactive exercises for your students",
+      "play": "Play now",
+      "loading": "Loading game...",
+      "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
+      "fullscreen": "Full screen",
+      "report": "Report error"
+    }
   }
 }

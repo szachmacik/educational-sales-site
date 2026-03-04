@@ -112,8 +112,7 @@ export function Products() {
                           createdAt: new Date().toISOString(),
                           updatedAt: new Date().toISOString()
                         });
-                        toast({
-                          title: t.products?.toastAdded || "Added to cart",
+                        toastUI({ title: t.products?.toastAdded || "Added to cart",
                           description: product.title,
                         });
                       }}

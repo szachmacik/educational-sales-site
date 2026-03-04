@@ -6,7 +6,7 @@ import path from "path";
 function getStripe(): Stripe | null {
   const secretKey = process.env.STRIPE_SECRET_KEY;
   if (!secretKey) return null;
-  return new Stripe(secretKey, { apiVersion: "2025-01-27.acacia" });
+  return new Stripe(secretKey, { apiVersion: "2026-02-25.clover" });
 }
 
 async function updateOrderStatus(orderId: string, status: string, transactionId: string) {

@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import { MOCK_COURSES } from "@/lib/mock-data";
 import { trackAnonymousEvent } from "@/lib/integrations/telemetry-service";
+import { getUserPoints } from "@/lib/points-service";
 
 // Dashboard panels
 import { TeacherLibrary } from "@/components/dashboard/teacher-library";
@@ -112,9 +113,9 @@ const SUB_ROLE_LABELS: Record<string, { label: string; icon: string; color: stri
 };
 
 // ─── PANEL CONTENT ROUTER ────────────────────────────────────────────────────
-function PanelContent({ tab, role, subRole, courses, email, userName, setActiveTab }: {
+function PanelContent({ tab, role, subRole, courses, email, userName, setActiveTab, pointsBalance }: {
     tab: string; role: UserRole; subRole: UserSubRole; courses: any[]; email: string;
-    userName: string; setActiveTab: (tab: string) => void;
+    userName: string; setActiveTab: (tab: string) => void; pointsBalance: number;
 }) {
     const { language } = useLanguage();
     // Map role string for WelcomeBanner's narrower type
@@ -130,7 +131,7 @@ function PanelContent({ tab, role, subRole, courses, email, userName, setActiveT
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
                     { title: "Materiały aktywne", value: courses.length > 0 ? courses.length : 12, color: "text-indigo-600", bg: "bg-indigo-50" },
-                    { title: "Zebranych punktów", value: "250 🪙", color: "text-amber-600", bg: "bg-amber-50" },
+                    { title: "Zebranych punktów", value: `${pointsBalance.toLocaleString()} 🪙`, color: "text-amber-600", bg: "bg-amber-50" },
                     { title: "Aktywność (dni)", value: "12 z rzędu 🔥", color: "text-orange-600", bg: "bg-orange-50" },
                 ].map((stat) => (
                     <div key={stat.title} className={cn("rounded-2xl p-6 border border-white/60 shadow-sm transition-transform hover:scale-[1.02]", stat.bg)}>
@@ -368,9 +369,17 @@ export default function DashboardPage() {
     const [userName, setUserName] = useState("Demo User");
     const [email, setEmail] = useState("demo@kamilaenglish.com");
     const [activeTab, setActiveTab] = useState("home");
-    const [courses, setCourses] = useState<any[]>([]);
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [courses, setCourses] = useState<any[]>([]);
+    const [userPointsBalance, setUserPointsBalance] = useState(0);
 
+    useEffect(() => {
+        const emailKey = localStorage.getItem("user_email") || "";
+        if (emailKey) {
+            const pts = getUserPoints(emailKey);
+            setUserPointsBalance(pts?.balance ?? 0);
+        }
+    }, [email]);
     useEffect(() => {
         const token = localStorage.getItem("user_token");
         if (!token) { router.push(`/${language}/login`); return; }
@@ -514,7 +523,7 @@ export default function DashboardPage() {
                         {/* Points pill */}
                         <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-700 text-sm font-bold">
                             <Coins className="h-3.5 w-3.5 fill-amber-500" />
-                            250
+                            {userPointsBalance.toLocaleString()}
                         </div>
 
                         {/* User avatar + role — CONSISTENT with sidebar */}
@@ -531,7 +540,7 @@ export default function DashboardPage() {
                 </header>
 
                 {/* Content area */}
-                <main className="flex-1 p-4 lg:p-8 max-w-6xl mx-auto w-full">
+                <main className="flex-1 p-4 lg:p-8 pb-28 max-w-6xl mx-auto w-full">
                     <PanelContent
                         tab={activeTab}
                         role={role}
@@ -540,6 +549,7 @@ export default function DashboardPage() {
                         email={email}
                         userName={userName}
                         setActiveTab={setActiveTab}
+                        pointsBalance={userPointsBalance}
                     />
                 </main>
             </div>

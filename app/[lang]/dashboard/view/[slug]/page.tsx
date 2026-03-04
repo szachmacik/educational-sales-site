@@ -23,7 +23,9 @@ import {
 } from "lucide-react";
 
 export default function ProductAccessPage() {
-    const { slug, lang } = useParams();
+    const params = useParams();
+    const slug = params?.slug as string | undefined;
+    const lang = params?.lang as string | undefined;
     const router = useRouter();
     const { t } = useLanguage();
     const [product, setProduct] = useState<ProductWithSlug | null>(null);

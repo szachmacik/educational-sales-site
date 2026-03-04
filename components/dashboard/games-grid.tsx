@@ -19,7 +19,7 @@ export function GamesGrid() {
             <div className="flex items-center justify-between">
                 <h3 className="font-bold text-2xl flex items-center gap-2">
                     <Gamepad className="h-6 w-6 text-purple-600" />
-                    {t.dashboard?.games?.subtitle || "Educational Games"}
+                    {t.dashboard?.games?.title || "Gry Edukacyjne"}
                 </h3>
             </div>
 

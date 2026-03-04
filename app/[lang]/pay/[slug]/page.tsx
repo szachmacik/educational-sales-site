@@ -15,7 +15,8 @@ import { MOCK_COURSES } from "@/lib/mock-data";
 import { toast } from "sonner";
 
 export default function PayPage() {
-    const { slug } = useParams();
+    const params = useParams();
+    const slug = params?.slug as string | undefined;
     const { t, formatPrice } = useLanguage();
 
     // In a real app, you'd fetch product data by slug

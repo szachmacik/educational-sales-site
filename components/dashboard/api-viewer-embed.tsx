@@ -64,14 +64,14 @@ export function ApiViewerEmbed() {
             <div className="grid md:grid-cols-5 gap-6">
                 <div className="md:col-span-3 space-y-6">
                     <Card className="border-slate-200 shadow-sm relative overflow-hidden">
-                        {/* Blur overlay simulating lock for non-premium */}
-                        <div className="absolute inset-0 z-20 bg-white/60 backdrop-blur-[3px] flex flex-col items-center justify-center p-6 text-center">
-                            <div className="h-16 w-16 bg-slate-900 rounded-full flex items-center justify-center shadow-2xl mb-4">
-                                <Lock className="h-8 w-8 text-white" />
+                        {/* Premium lock overlay — readable with clear CTA */}
+                        <div className="absolute inset-0 z-20 rounded-lg flex flex-col items-center justify-center p-6 text-center" style={{background: 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(15,23,42,0.85) 60%, rgba(15,23,42,0.97) 100%)'}}>
+                            <div className="h-16 w-16 bg-white rounded-full flex items-center justify-center shadow-2xl mb-4">
+                                <Lock className="h-8 w-8 text-indigo-600" />
                             </div>
-                            <h3 className="text-xl font-black text-slate-900 mb-2">Rozszerz Licencję Szkolną</h3>
-                            <p className="text-sm font-medium text-slate-600 max-w-sm mb-6">Funkcja w pełni zautomatyzowanego klonowania asortymentu na własne domeny bez kodu wymaga statusu Premium.</p>
-                            <Button onClick={() => toast.success("Funkcja została wywołana.")} size="lg" className="bg-indigo-600 hover:bg-indigo-700 shadow-lg shadow-indigo-200">
+                            <h3 className="text-xl font-black text-white mb-2">Rozszerz Licencję Szkolną</h3>
+                            <p className="text-sm font-medium text-slate-300 max-w-sm mb-6">Funkcja w pełni zautomatyzowanego klonowania asortymentu na własne domeny bez kodu wymaga statusu Premium.</p>
+                            <Button onClick={() => toast.success("Funkcja została wywołana.")} size="lg" className="bg-indigo-500 hover:bg-indigo-400 text-white shadow-lg shadow-indigo-900/50 border border-indigo-400">
                                 Wykup Integrację Premium
                             </Button>
                         </div>

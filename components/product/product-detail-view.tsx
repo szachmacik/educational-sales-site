@@ -96,7 +96,7 @@ export function ProductDetailView({ slug }: ProductDetailViewProps) {
             updatedAt: new Date().toISOString()
         }, selectedVariant);
 
-        toast({
+        toastUI({
             title: t.products.toastAdded,
             description: `${product.title} (${selectedVariant.toUpperCase()})`,
         });
@@ -106,7 +106,7 @@ export function ProductDetailView({ slug }: ProductDetailViewProps) {
         if (typeof window === 'undefined') return;
         const url = window.location.href;
         navigator.clipboard.writeText(url).then(() => {
-            toast({
+            toastUI({
                 title: t.products.toastCopied,
                 description: t.products.toastCopiedDesc,
             });

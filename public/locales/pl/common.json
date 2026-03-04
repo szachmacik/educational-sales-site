@@ -423,5 +423,59 @@
     "noLessons": "Brak lekcji.",
     "quiz": "Quiz",
     "unlocksInDays": "Odblokuje się za {days} dni"
+  },
+  "dashboard": {
+    "wallet": {
+      "title": "Twój Portfel",
+      "subtitle": "Zbieraj punkty za aktywność i zakupy.",
+      "available": "Dostępne środki",
+      "points": "pkt",
+      "value": "Wartość w {currency}",
+      "spend": "Wydaj punkty w sklepie",
+      "history": "Ostatnia aktywność"
+    },
+    "awards": {
+      "title": "Twoja Sala Chwały",
+      "subtitle": "Zdobywaj odznaki za ukończone lekcje i gry!",
+      "mock": {
+        "start": "Szybki Start",
+        "startDesc": "Ukończono pierwszą lekcję",
+        "vocab": "Mistrz Słownictwa",
+        "vocabDesc": "100% w quizie",
+        "steady": "Systematyczny",
+        "steadyDesc": "Zalogowano przez 7 dni",
+        "polyglot": "Poliglota",
+        "polyglotDesc": "Zaliczono poziom A1"
+      }
+    },
+    "team": {
+      "title": "Moja Klasa / Zespół",
+      "subtitle": "Udostępniaj materiały uczniom",
+      "create_class": "Utwórz nową klasę",
+      "created_at": "Utworzono: {date}",
+      "students_count": "{count} uczniów",
+      "access_code": "Kod dostępu ucznia",
+      "empty": {
+        "title": "Nowa Klasa",
+        "desc": "Utwórz grupę dla swoich uczniów.",
+        "btn": "Rozpocznij konfigurację"
+      },
+      "pro": {
+        "active": "Twój plan PRO jest aktywny",
+        "unlock": "Odblokuj nieograniczone klasy",
+        "desc": "Plan Nauczyciel PRO pozwala tworzyć nieograniczoną liczbę grup.",
+        "upgrade": "Przejdź na PRO",
+        "status": "Aktywny"
+      }
+    },
+    "games": {
+      "title": "Gry Edukacyjne",
+      "subtitle": "Interaktywne ćwiczenia dla Twoich uczniów",
+      "play": "Zagraj teraz",
+      "loading": "Ładowanie gry...",
+      "notice": "W pełnej wersji aplikacji pojawi się tutaj interaktywna ramka od {provider}.",
+      "fullscreen": "Pełny ekran",
+      "report": "Zgłoś błąd"
+    }
   }
 }

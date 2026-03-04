@@ -405,5 +405,59 @@
     "noLessons": "Žádné lekce.",
     "quiz": "Kvíz",
     "unlocksInDays": "Odemkne se za {days} dní"
+  },
+  "dashboard": {
+    "wallet": {
+      "title": "Your Wallet",
+      "subtitle": "Collect points for activity and purchases.",
+      "available": "Available funds",
+      "points": "pts",
+      "value": "Value in {currency}",
+      "spend": "Spend points in shop",
+      "history": "Recent activity"
+    },
+    "awards": {
+      "title": "Your Hall of Fame",
+      "subtitle": "Earn badges for completed lessons and games!",
+      "mock": {
+        "start": "Quick Start",
+        "startDesc": "Completed first lesson",
+        "vocab": "Vocab Master",
+        "vocabDesc": "100% in quiz",
+        "steady": "Systematic",
+        "steadyDesc": "Logged in 7 days",
+        "polyglot": "Polyglot",
+        "polyglotDesc": "Passed A1 level"
+      }
+    },
+    "team": {
+      "title": "My Class / Team",
+      "subtitle": "Share materials with students",
+      "create_class": "Create new class",
+      "created_at": "Created: {date}",
+      "students_count": "{count} students",
+      "access_code": "Student access code",
+      "empty": {
+        "title": "New Class",
+        "desc": "Create a group for your students.",
+        "btn": "Start Setup"
+      },
+      "pro": {
+        "active": "Your PRO plan is active",
+        "unlock": "Unlock unlimited classes",
+        "desc": "Teacher PRO plan allows creating unlimited groups.",
+        "upgrade": "Upgrade to PRO",
+        "status": "Active"
+      }
+    },
+    "games": {
+      "title": "Educational Games",
+      "subtitle": "Interactive exercises for your students",
+      "play": "Play now",
+      "loading": "Loading game...",
+      "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
+      "fullscreen": "Full screen",
+      "report": "Report error"
+    }
   }
 }
