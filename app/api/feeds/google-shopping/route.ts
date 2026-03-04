@@ -1,3 +1,4 @@
+
 import { NextResponse } from 'next/server';
 import { getProducts } from '@/lib/product-service';
 

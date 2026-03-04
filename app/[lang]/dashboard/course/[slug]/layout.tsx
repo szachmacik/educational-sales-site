@@ -1,3 +1,4 @@
+
 import { getCourse } from "@/lib/api";
 import { CourseSidebar } from "@/components/course/course-sidebar";
 import { redirect } from "next/navigation";

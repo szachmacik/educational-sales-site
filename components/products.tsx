@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { toast } from "sonner";
+import { toast as toastSonner } from "sonner";
 import { Badge } from "@/components/ui/badge";
 import { ShoppingCart, Star, Eye, Coins } from "lucide-react";
 import { getProducts } from "@/lib/product-service";
@@ -49,7 +49,7 @@ export function Products() {
             </p>
           </div>
           <Link href={`/${language}/products`}>
-            <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} variant="outline" className="gap-2 bg-transparent">
+            <Button onClick={() => toastSonner.success(t?.common?.success || "Akcja wykonana pomyślnie.")} variant="outline" className="gap-2 bg-transparent">
               {t.products.all}
               <Eye className="h-4 w-4" />
             </Button>

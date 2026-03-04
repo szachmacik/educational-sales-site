@@ -1,6 +1,7 @@
 "use client";
 import { useParams } from "next/navigation";
 
+
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import Link from "next/link";
 import { useLanguage, NamespaceGuard } from "@/components/language-provider";

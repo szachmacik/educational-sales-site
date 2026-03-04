@@ -66,7 +66,7 @@ const labelMap: Record<Language, string> = {
 };
 
 export function LanguageSwitcher() {
-    const { language } = useLanguage();
+    const { language, t } = useLanguage();
     const router = useRouter();
     const pathname = usePathname();
 

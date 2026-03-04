@@ -1,3 +1,4 @@
+
 import { NextRequest, NextResponse } from "next/server";
 
 // NIP lookup API using the public rejestr.io service
