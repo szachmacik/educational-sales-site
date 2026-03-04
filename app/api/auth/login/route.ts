@@ -53,6 +53,34 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Email and password required" }, { status: 400 });
     }
 
+    // 0. ENV-based admin credentials (highest priority — overrides everything)
+    const adminEmail = process.env.ADMIN_EMAIL;
+    const adminPasswordHash = process.env.ADMIN_PASSWORD_HASH;
+    if (adminEmail && adminPasswordHash) {
+      if (email.toLowerCase() === adminEmail.toLowerCase()) {
+        const inputHash = hashPassword(password);
+        if (inputHash === adminPasswordHash) {
+          return NextResponse.json({
+            success: true,
+            user: {
+              id: "admin_env",
+              email: adminEmail,
+              name: "Admin",
+              role: "admin",
+              isAdmin: true,
+              purchasedProducts: [],
+              accessibleFiles: [],
+            },
+            token: `admin_${crypto.randomBytes(16).toString("hex")}`,
+            source: "env",
+          });
+        } else {
+          // Admin email matched but wrong password — reject immediately, no fallback
+          return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
+        }
+      }
+    }
+
     // 1. Check local migrated users first
     const localUser = await findLocalUser(email);
     if (localUser && localUser.passwordHash) {
@@ -104,6 +132,29 @@ export async function POST(req: NextRequest) {
         }
       } catch (err) {
         console.warn("[Login] WP JWT fallback failed:", err);
+      }
+    }
+
+    // 3. Demo accounts (only when DEMO_ACCOUNTS_ENABLED=true in ENV)
+    if (process.env.DEMO_ACCOUNTS_ENABLED === "true") {
+      const demoAccounts: Record<string, { id: string; name: string; role: string; subRole: string | null }> = {
+        "student@kamila.shor.dev": { id: "d1", name: "Demo Uczeń", role: "student", subRole: "learner" },
+        "demo@kamila.shor.dev": { id: "d1b", name: "Demo Uczeń", role: "student", subRole: "learner" },
+        "child@kamila.shor.dev": { id: "d2", name: "Demo Dziecko", role: "student", subRole: "child" },
+        "teacher@kamila.shor.dev": { id: "d3", name: "Demo Nauczyciel", role: "teacher", subRole: "teacher_private" },
+        "teacher.school@kamila.shor.dev": { id: "d4", name: "Demo Nauczyciel Szkolny", role: "teacher", subRole: "teacher_school" },
+        "institution@kamila.shor.dev": { id: "d5", name: "Demo Szkoła", role: "institution", subRole: "institution_public" },
+        "langschool@kamila.shor.dev": { id: "d6", name: "Demo Szkoła Językowa", role: "institution", subRole: "institution_language" },
+        "parent@kamila.shor.dev": { id: "d7", name: "Demo Rodzic", role: "parent", subRole: "parent_independent" },
+      };
+      const demoUser = demoAccounts[email.toLowerCase()];
+      if (demoUser && password === "demo123") {
+        return NextResponse.json({
+          success: true,
+          user: { ...demoUser, email, isAdmin: false, purchasedProducts: [], accessibleFiles: [] },
+          token: `demo_${crypto.randomBytes(8).toString("hex")}`,
+          source: "demo",
+        });
       }
     }
 

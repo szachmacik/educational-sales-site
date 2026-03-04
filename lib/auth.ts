@@ -1,18 +1,27 @@
+/**
+ * auth.ts — Client-side auth helper
+ *
+ * All credential verification is done server-side via /api/auth/login.
+ * No passwords or hashes are ever exposed to the browser.
+ *
+ * Admin credentials are stored in Coolify ENV:
+ *   ADMIN_EMAIL          — admin email address
+ *   ADMIN_PASSWORD_HASH  — SHA-256 hash of admin password
+ *
+ * Demo accounts (for development/testing only) are also handled server-side.
+ */
+
 export type UserRole = 'student' | 'teacher' | 'admin' | 'parent' | 'institution';
 
 export type UserSubRole =
-    // Student subtypes
-    | 'child'           // Dziecko (profil zabawowy, gry, EXP)
-    | 'learner'         // Uczeń szkolny (przypisany przez nauczyciela)
-    // Parent subtypes
-    | 'parent_independent'  // Rodzic kupujący samodzielnie
-    | 'parent_school_plan'  // Rodzic dziecka z planem szkolnym
-    // Teacher subtypes
-    | 'teacher_private' // Korepetytor / nauczyciel prywatny
-    | 'teacher_school'  // Nauczyciel placówki (licencja szkolna)
-    // Institution subtypes
-    | 'institution_public'    // Szkoła publiczna / przedszkole państwowe
-    | 'institution_language'  // Szkoła językowa / centrum prywatne / firma
+    | 'child'
+    | 'learner'
+    | 'parent_independent'
+    | 'parent_school_plan'
+    | 'teacher_private'
+    | 'teacher_school'
+    | 'institution_public'
+    | 'institution_language'
     | null;
 
 export interface User {
@@ -21,152 +30,107 @@ export interface User {
     name: string;
     role: UserRole;
     subRole?: UserSubRole;
+    isAdmin?: boolean;
+    purchasedProducts?: string[];
+    accessibleFiles?: string[];
 }
 
-// Simulated delay
-const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+/**
+ * Login — delegates to server-side /api/auth/login
+ * Server checks (in order):
+ *   1. ENV-based admin credentials (ADMIN_EMAIL + ADMIN_PASSWORD_HASH)
+ *   2. Migrated WP users from lib/data/users.json
+ *   3. WordPress JWT fallback (if NEXT_PUBLIC_WORDPRESS_URL is set)
+ *   4. Demo accounts (demo123 password, only if DEMO_ACCOUNTS_ENABLED=true)
+ */
+export async function login(
+    email: string,
+    password: string,
+    role: UserRole = 'student',
+    subRole?: UserSubRole
+): Promise<{ user: User; token: string } | null> {
+    try {
+        const res = await fetch('/api/auth/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, password, role, subRole }),
+        });
 
-const API_URL = process.env.NEXT_PUBLIC_WORDPRESS_URL;
+        if (!res.ok) return null;
 
-export async function login(email: string, password: string, role: UserRole = 'student', subRole?: UserSubRole): Promise<{ user: User; token: string } | null> {
-    console.log(`[Auth] Login attempt: ${email} as ${role}/${subRole}`);
+        const data = await res.json();
+        if (!data.success || !data.user) return null;
 
-    // HEURISTIC: Always check demo accounts first for instant response in test mode
-    if ((email === 'demo@kamila.shor.dev' || email === 'student@kamila.shor.dev') && password === 'demo123') {
-        return {
-            user: { id: '1', email, name: 'Demo Uczeń', role: 'student', subRole: 'learner' },
-            token: 'mock-jwt-token-student',
-        };
-    }
-
-    if (email === 'child@kamila.shor.dev' && password === 'demo123') {
-        return {
-            user: { id: '1b', email, name: 'Demo Dziecko', role: 'student', subRole: 'child' },
-            token: 'mock-jwt-token-child',
-        };
-    }
-
-    if (email === 'teacher@kamila.shor.dev' && password === 'demo123') {
-        return {
-            user: { id: '2', email, name: 'Demo Nauczyciel Prywatny', role: 'teacher', subRole: 'teacher_private' },
-            token: 'mock-jwt-token-teacher',
-        };
-    }
-
-    if (email === 'teacher.school@kamila.shor.dev' && password === 'demo123') {
-        return {
-            user: { id: '2b', email, name: 'Demo Nauczyciel Szkolny', role: 'teacher', subRole: 'teacher_school' },
-            token: 'mock-jwt-token-teacher-school',
-        };
-    }
-
-    if (email === 'institution@kamila.shor.dev' && password === 'demo123') {
-        return {
-            user: { id: '3', email, name: 'Demo Szkoła Publiczna', role: 'institution', subRole: 'institution_public' },
-            token: 'mock-jwt-token-institution-public',
-        };
-    }
-
-    if (email === 'langschool@kamila.shor.dev' && password === 'demo123') {
-        return {
-            user: { id: '3b', email, name: 'Demo Szkoła Językowa', role: 'institution', subRole: 'institution_language' },
-            token: 'mock-jwt-token-institution-lang',
-        };
-    }
-
-    if (email === 'parent@kamila.shor.dev' && password === 'demo123') {
-        return {
-            user: { id: '4', email, name: 'Demo Rodzic', role: 'parent', subRole: 'parent_independent' },
-            token: 'mock-jwt-token-parent',
-        };
-    }
-
-    if (email === 'admin@kamila.shor.dev' && password === 'demo123') {
-        return {
-            user: { id: '99', email, name: 'SuperAdmin', role: 'admin', subRole: null },
-            token: 'mock-jwt-token-admin',
-        };
-    }
-
-    // REAL JWT AUTHENTICATION ATTEMPT
-    if (API_URL && API_URL.includes('http')) {
-        try {
-            console.log(`🌐 [Auth] Attempting JWT login for ${email} at ${API_URL}`);
-            const response = await fetch(`${API_URL}/wp-json/jwt-auth/v1/token`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ username: email, password: password })
-            });
-
-            if (response.ok) {
-                const data = await response.json();
-                console.log(`✅ [Auth] JWT Login Success for ${email}`);
-                return {
-                    user: {
-                        id: data.user_id || `wp_${Date.now()}`,
-                        email: data.user_email || email,
-                        name: data.user_display_name || email.split('@')[0],
-                        role: role,
-                    },
-                    token: data.token,
-                };
-            } else {
-                console.warn(`⚠️ [Auth] JWT Login failed (${response.status}). Checking dev backdoors...`);
-            }
-        } catch (error) {
-            console.error("❌ [Auth] JWT Connection error:", error);
+        // Persist token in localStorage for session
+        if (typeof window !== 'undefined' && data.token) {
+            localStorage.setItem('auth_token', data.token);
+            localStorage.setItem('auth_user', JSON.stringify(data.user));
         }
-    }
 
-    // Dev mode / Management fallback
-    if (password === 'secret' || password === 'demo') {
-        const token = `mock-jwt-token-${role}`;
-        // In production, the cookie is set with a long expiration (e.g., 30 days)
-        if (typeof window !== 'undefined') {
-            document.cookie = `user_token=${token}; path=/; max-age=${30 * 24 * 60 * 60}`;
-        }
         return {
             user: {
-                id: '99',
-                email: email,
-                name: role === 'teacher' ? 'Test Teacher' : 'Test Student',
-                role: role,
+                id: data.user.id,
+                email: data.user.email,
+                name: data.user.name,
+                role: (data.user.role as UserRole) || role,
+                subRole: data.user.subRole || subRole || null,
+                isAdmin: data.user.isAdmin || data.user.role === 'admin',
+                purchasedProducts: data.user.purchasedProducts || [],
+                accessibleFiles: data.user.accessibleFiles || [],
             },
-            token: token,
+            token: data.token,
         };
+    } catch (err) {
+        console.error('[Auth] Login error:', err);
+        return null;
     }
-
-    return null;
 }
 
 export async function logout() {
-    await delay(500);
-    // Clear cookie here in production
+    if (typeof window !== 'undefined') {
+        localStorage.removeItem('auth_token');
+        localStorage.removeItem('auth_user');
+    }
 }
 
 export async function requestPasswordReset(email: string): Promise<boolean> {
-    console.log(`Password reset requested for: ${email}`);
-    await delay(1000);
-    return true;
+    try {
+        const res = await fetch('/api/auth/reset-password', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email }),
+        });
+        return res.ok;
+    } catch {
+        return false;
+    }
 }
 
 export async function loginWithMagicLink(token: string): Promise<{ user: User; token: string } | null> {
-    console.log(`Magic Link login with token: ${token}`);
-    await delay(1000);
-
-    return {
-        user: {
-            id: '3',
-            email: 'magic-user@kamila.shor.dev',
-            name: 'Magic Link User',
-            role: 'student',
-        },
-        token: 'mock-jwt-token-magic',
-    };
+    try {
+        const res = await fetch('/api/auth/magic-link', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ token }),
+        });
+        if (!res.ok) return null;
+        const data = await res.json();
+        if (!data.success || !data.user) return null;
+        return { user: data.user, token: data.token };
+    } catch {
+        return null;
+    }
 }
 
 export async function sendMagicLinkRequest(email: string): Promise<boolean> {
-    console.log(`Magic Link requested for: ${email}`);
-    await delay(1000);
-    return true;
+    try {
+        const res = await fetch('/api/auth/magic-link/request', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email }),
+        });
+        return res.ok;
+    } catch {
+        return false;
+    }
 }
