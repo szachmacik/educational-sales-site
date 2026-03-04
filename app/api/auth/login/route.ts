@@ -48,9 +48,15 @@ function hashPassword(password: string): string {
 
 export async function POST(req: NextRequest) {
   try {
-    // SEC-003 FIX: Rate limiting — max 5 login attempts per minute per IP
+    const body = await req.json();
+    const { email, password } = body;
+
+    // SEC-003 FIX: Rate limiting — admin gets 20 attempts/min, others get 5/min
     const clientIp = getClientIp(req);
-    const rateLimitResult = checkRateLimit(`login:${clientIp}`, { limit: 5, windowSecs: 60 });
+    const adminEmail = process.env.ADMIN_EMAIL;
+    const isAdminAttempt = adminEmail && email && email.toLowerCase() === adminEmail.toLowerCase();
+    const rateLimit = isAdminAttempt ? { limit: 20, windowSecs: 60 } : { limit: 5, windowSecs: 60 };
+    const rateLimitResult = checkRateLimit(`login:${clientIp}`, rateLimit);
     if (!rateLimitResult.success) {
       return NextResponse.json(
         { error: "Too many login attempts. Please try again later." },
@@ -58,14 +64,12 @@ export async function POST(req: NextRequest) {
           status: 429,
           headers: {
             'Retry-After': String(Math.ceil((rateLimitResult.resetAt - Date.now()) / 1000)),
-            'X-RateLimit-Limit': '5',
+            'X-RateLimit-Limit': String(rateLimit.limit),
             'X-RateLimit-Remaining': '0',
           },
         }
       );
     }
-
-    const { email, password } = await req.json();
 
     if (!email || !password) {
       return NextResponse.json({ error: "Email and password required" }, { status: 400 });
