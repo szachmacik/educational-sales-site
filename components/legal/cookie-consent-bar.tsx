@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import { Cookie, X, Info } from "lucide-react";
+import { Cookie, X, Info, ShieldCheck, Settings } from "lucide-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 

@@ -9,13 +9,11 @@ export const dynamic = 'force-dynamic';
 
 import { AdminSidebar } from '@/components/admin/admin-sidebar';
 import { AIAssistant } from '@/components/admin/ai-assistant';
-import { Button } from '@/components/ui/button';
-import { Menu, Home, Globe, User } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import Link from 'next/link';
 import { LanguageSwitcher } from '@/components/language-switcher';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
-import { toast } from "sonner";
 async function getAdminDictionary(lang: string) {
     try {
         const filePath = path.join(process.cwd(), 'public', 'locales', lang, 'admin.json');
@@ -44,11 +42,9 @@ export default async function AdminLayout({
                 <SidebarInset className="flex w-full flex-col">
                     <header className="sticky top-0 z-30 flex h-16 items-center border-b bg-white/80 backdrop-blur-md px-4 md:px-8">
                         <div className="flex items-center gap-4">
-                            <SidebarTrigger className="flex md:hidden">
-                                <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} variant="ghost" size="icon">
-                                    <Menu className="h-5 w-5" />
-                                    <span className="sr-only">Toggle Sidebar</span>
-                                </Button>
+                            <SidebarTrigger className="flex md:hidden h-9 w-9 items-center justify-center rounded-lg text-slate-600 hover:bg-slate-100 hover:text-indigo-600 transition-colors">
+                                <Menu className="h-5 w-5" />
+                                <span className="sr-only">Toggle Sidebar</span>
                             </SidebarTrigger>
                             <div className="hidden md:flex items-center text-sm font-bold text-slate-500">
                                 <Link href={`/${lang}`} className="hover:text-indigo-600 transition-colors">
