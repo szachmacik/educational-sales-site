@@ -36,10 +36,8 @@ export interface ProductWithSlug {
 
 export function getProducts(language: Language = 'pl'): ProductWithSlug[] {
     return productsData.map((product: any) => {
-        // 1. Extract consistent slug from URL or use properties
-        // Matching logic: from /product/SLUG/ or fallback
-        const match = product.url.match(/\/product\/([^\/]+)\/?$/);
-        const slug = match ? match[1] : slugify(product.title);
+        // Always generate slug from Polish title for consistency with all links
+        const slug = slugify(product.title);
 
         // 2. Handle translations
         let title = product.title;

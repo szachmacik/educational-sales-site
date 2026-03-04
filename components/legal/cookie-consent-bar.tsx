@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { toast } from "sonner";
 import { Cookie, X, Info, ShieldCheck, Settings } from "lucide-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -67,7 +66,7 @@ export function CookieConsentBar() {
                         Tylko niezbędne
                     </Button>
                     <Link href={`/${lang}/polityka-cookies`} className="w-full sm:w-auto">
-                        <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")}
+                        <Button
                             variant="outline"
                             className="w-full bg-slate-800 border-slate-700 text-white hover:bg-slate-700"
                         >

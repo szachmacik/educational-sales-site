@@ -8,7 +8,6 @@ import { ArrowRight, Sparkles, BookMarked, Users, Star, Play, Volume2, Graduatio
 import { useScrollReveal } from "@/hooks/use-intersection";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/components/language-provider";
-import { toast } from "sonner";
 
 export function Hero() {
   const heroReveal = useScrollReveal({ threshold: 0.1 });
@@ -78,13 +77,13 @@ export function Hero() {
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row animate-fade-in-up delay-300">
               <Link href={`/${language}/products`}>
-                <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} size="lg" className="gap-2 text-base hover-lift group w-full sm:w-auto">
+                <Button size="lg" className="gap-2 text-base hover-lift group w-full sm:w-auto">
                   {t.hero.cta_catalog}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
               <Link href="#how-it-works">
-                <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")}
+                <Button
                   size="lg"
                   variant="outline"
                   className="gap-2 bg-transparent text-base hover-lift w-full sm:w-auto"

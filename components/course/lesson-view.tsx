@@ -227,7 +227,7 @@ export function LessonView({ lesson, courseSlug, courseTitle, prevLesson, nextLe
                                 </Link>
                             </Button>
                         ) : (
-                            <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} className="bg-green-600 hover:bg-green-700 text-white shadow-md">
+                            <Button onClick={() => { markLessonComplete(lesson.id, courseSlug); toast.success(t?.dashboard?.course?.finishCourse || "Kurs ukończony! Gratulacje! 🎉"); }} className="bg-green-600 hover:bg-green-700 text-white shadow-md">
                                 <CheckCircle className="mr-2 h-4 w-4" /> {t.dashboard?.course?.finishCourse || "Finish Course"}
                             </Button>
                         )}

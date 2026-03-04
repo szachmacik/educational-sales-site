@@ -61,7 +61,7 @@ export function ProductDetailView({ slug }: ProductDetailViewProps) {
             <div className="min-h-screen bg-background flex flex-col items-center justify-center">
                 <h1 className="text-2xl font-bold">{t?.products?.notFound || "Produkt nie znaleziony"}</h1>
                 <Link href={`/${language}/products`}>
-                    <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} className="mt-4">{t?.products?.backToStore || "Wróć do sklepu"}</Button>
+                    <Button className="mt-4">{t?.products?.backToStore || "Wróć do sklepu"}</Button>
                 </Link>
             </div>
         );
@@ -283,7 +283,7 @@ export function ProductDetailView({ slug }: ProductDetailViewProps) {
                                                         </p>
                                                     </div>
                                                     <Link href={`/${language}/login`}>
-                                                        <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} variant="outline" className="border-indigo-500 text-indigo-400 hover:bg-indigo-500 hover:text-white rounded-xl px-10">
+                                                        <Button variant="outline" className="border-indigo-500 text-indigo-400 hover:bg-indigo-500 hover:text-white rounded-xl px-10">
                                                             {t.nav?.login || "Log in"}
                                                         </Button>
                                                     </Link>
@@ -431,9 +431,10 @@ export function ProductDetailView({ slug }: ProductDetailViewProps) {
                                             <Share2 className="h-4 w-4" />
                                             {t.products.share}
                                         </Button>
-                                        <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")}
+                                        <Button
                                             variant="outline"
                                             className="gap-2 h-14 rounded-2xl border-slate-200 text-slate-600 font-bold hover:bg-slate-50 hover:text-indigo-600 transition-colors"
+                                            onClick={() => toast(t.productDetail?.wishlist || 'Dodano do listy życzeń', { icon: '♥️' })}
                                         >
                                             <Heart className="h-4 w-4" />
                                             {t.productDetail?.wishlist || t.common?.wishlist || 'Save'}

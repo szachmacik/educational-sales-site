@@ -17,7 +17,6 @@ import {
 import { BrandLogo } from "@/components/brand-logo";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { toast } from "sonner";
 import { cn } from "@/lib/utils";
 import { logout } from "@/lib/auth";
 import { LanguageSwitcher } from "@/components/language-switcher";
@@ -158,7 +157,7 @@ export function Header() {
           {isLoggedIn && <InAppNotifications />}
 
           <Link href={`/${language}/cart`}>
-            <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} variant="ghost" size="icon" className="relative">
+            <Button variant="ghost" size="icon" className="relative">
               <ShoppingCart className="h-5 w-5" />
               {itemCount > 0 && (
                 <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-xs font-semibold text-accent-foreground">
@@ -171,7 +170,7 @@ export function Header() {
           {/* SuperAdmin Quick Access Button */}
           {isLoggedIn && isAdmin && (
             <Link href={`/${language}/admin`}>
-              <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} size="sm" className="gap-1.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold shadow-md shadow-indigo-200 rounded-lg">
+              <Button size="sm" className="gap-1.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold shadow-md shadow-indigo-200 rounded-lg">
                 <Settings className="h-3.5 w-3.5" />
                 SuperAdmin
               </Button>
@@ -196,7 +195,7 @@ export function Header() {
           {isLoggedIn ? (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} variant="ghost" className="gap-2 pl-2 pr-3 ml-1">
+                <Button variant="ghost" className="gap-2 pl-2 pr-3 ml-1">
                   <Avatar className="h-8 w-8">
                     <AvatarFallback className="bg-primary text-primary-foreground text-sm font-semibold">
                       {userName.split(" ").map((n) => n[0]).join("")}
@@ -270,7 +269,7 @@ export function Header() {
           {isLoggedIn && <InAppNotifications />}
           <LanguageSwitcher />
           <Link href={`/${language}/cart`}>
-            <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} variant="ghost" size="icon" className="relative">
+            <Button variant="ghost" size="icon" className="relative">
               <ShoppingCart className="h-5 w-5" />
               {itemCount > 0 && (
                 <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-xs font-semibold text-accent-foreground">
@@ -281,7 +280,7 @@ export function Header() {
           </Link>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} variant="ghost" size="icon">
+              <Button variant="ghost" size="icon">
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>

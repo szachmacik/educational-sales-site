@@ -3,7 +3,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { toast } from "sonner";
 import { useLanguage } from "@/components/language-provider";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
@@ -200,7 +199,7 @@ export function QuizView({ quiz, onComplete }: QuizViewProps) {
                             Try Again
                         </Button>
                         {result.passed && (
-                            <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")}>
+                            <Button onClick={() => onComplete?.(result.passed, result.score)}>
                                 Continue Learning
                                 <ArrowRight className="h-4 w-4 ml-2" />
                             </Button>
