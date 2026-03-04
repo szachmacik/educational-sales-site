@@ -36,7 +36,16 @@ async function updateOrderStatus(orderId: string, status: string, transactionId:
 export async function POST(req: NextRequest) {
   const stripe = getStripe();
   if (!stripe) {
-    return NextResponse.json({ error: "Stripe not configured" }, { status: 503 });
+    // Simulation mode — no Stripe keys configured, accept webhook gracefully
+    try {
+      const body = await req.json();
+      if (body?.type === 'checkout.session.completed' && body?.data?.object) {
+        const session = body.data.object;
+        const orderId = session.metadata?.orderId || session.client_reference_id;
+        if (orderId) await updateOrderStatus(orderId, 'completed', session.id || 'sim_webhook');
+      }
+    } catch {}
+    return NextResponse.json({ received: true, simulated: true });
   }
 
   const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;

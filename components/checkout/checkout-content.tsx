@@ -35,7 +35,8 @@ import {
     Building,
     User,
     Briefcase,
-    Camera
+    Camera,
+    Globe
 } from "lucide-react";
 
 export function CheckoutContent() {
@@ -496,6 +497,15 @@ export function CheckoutContent() {
                                 >
                                     <CreditCard className="h-5 w-5" /> Karta/ApplePay
                                     {form.paymentMethod === 'card' && <CheckCircle2 className="absolute -top-2 -right-2 h-5 w-5 text-emerald-500 bg-white rounded-full" />}
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => handleChange('paymentMethod', 'zen')}
+                                    className={`relative flex flex-col items-center justify-center gap-1.5 p-3 rounded-2xl border-2 transition-all font-bold text-sm text-center ${form.paymentMethod === 'zen' ? 'border-violet-600 bg-violet-50 text-violet-700 shadow-xl shadow-violet-600/10' : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300'}`}
+                                >
+                                    <Globe className="h-5 w-5" /> Zen.com
+                                    <span className="text-[10px] font-normal opacity-70">BLIK · Karta · GPay</span>
+                                    {form.paymentMethod === 'zen' && <CheckCircle2 className="absolute -top-2 -right-2 h-5 w-5 text-emerald-500 bg-white rounded-full" />}
                                 </button>
                                 <button
                                     type="button"
