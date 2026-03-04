@@ -58,12 +58,17 @@ export async function POST(req: NextRequest) {
     const rateLimit = isAdminAttempt ? { limit: 20, windowSecs: 60 } : { limit: 5, windowSecs: 60 };
     const rateLimitResult = checkRateLimit(`login:${clientIp}`, rateLimit);
     if (!rateLimitResult.success) {
+      const retryAfterSecs = Math.ceil((rateLimitResult.resetAt - Date.now()) / 1000);
       return NextResponse.json(
-        { error: "Too many login attempts. Please try again later." },
+        {
+          error: "too_many_attempts",
+          message: `Zbyt wiele prób logowania. Spróbuj ponownie za ${retryAfterSecs} sekund.`,
+          retryAfterSecs,
+        },
         {
           status: 429,
           headers: {
-            'Retry-After': String(Math.ceil((rateLimitResult.resetAt - Date.now()) / 1000)),
+            'Retry-After': String(retryAfterSecs),
             'X-RateLimit-Limit': String(rateLimit.limit),
             'X-RateLimit-Remaining': '0',
           },
@@ -75,8 +80,10 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Email and password required" }, { status: 400 });
     }
 
+    // Attach remaining attempts to every response for UX feedback
+    const remainingAttempts = rateLimitResult.remaining;
+
     // 0. ENV-based admin credentials (highest priority — overrides everything)
-    const adminEmail = process.env.ADMIN_EMAIL;
     const adminPasswordHash = process.env.ADMIN_PASSWORD_HASH;
     if (adminEmail && adminPasswordHash) {
       if (email.toLowerCase() === adminEmail.toLowerCase()) {
@@ -98,7 +105,10 @@ export async function POST(req: NextRequest) {
           });
         } else {
           // Admin email matched but wrong password — reject immediately, no fallback
-          return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
+          return NextResponse.json(
+            { error: "invalid_credentials", message: "Nieprawidłowy email lub hasło.", remainingAttempts },
+            { status: 401 }
+          );
         }
       }
     }
@@ -180,7 +190,10 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
+    return NextResponse.json(
+      { error: "invalid_credentials", message: "Nieprawidłowy email lub hasło.", remainingAttempts },
+      { status: 401 }
+    );
   } catch (err: any) {
     console.error("[Login] Error:", err);
     return NextResponse.json({ error: "Server error" }, { status: 500 });
