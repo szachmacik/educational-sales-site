@@ -109,8 +109,8 @@ export function AdminSidebar() {
                 <SidebarMenu className="gap-2">
                     {menuItems.map((item) => {
                         const isActive = item.href === "/admin"
-                            ? pathname.endsWith("/admin")
-                            : pathname.includes(item.href);
+                            ? (pathname?.endsWith("/admin") ?? false)
+                            : (pathname?.includes(item.href) ?? false);
 
                         return (
                             <SidebarMenuItem key={item.href}>

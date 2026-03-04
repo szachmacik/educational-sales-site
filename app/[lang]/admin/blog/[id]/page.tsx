@@ -22,7 +22,7 @@ export default function EditBlogPostPage() {
     const params = useParams();
     const { t, language } = useLanguage();
     const b = t.adminPanel?.blog?.form || {};
-    const postId = params.id as string;
+    const postId = params?.id as string;
 
     const [isLoading, setIsLoading] = useState(false);
     const [isGenerating, setIsGenerating] = useState(false);

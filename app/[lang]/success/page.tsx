@@ -9,8 +9,8 @@ import Link from "next/link";
 export default function SuccessPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const orderId = searchParams.get("order");
-  const payment = searchParams.get("payment");
+  const orderId = searchParams?.get("order");
+  const payment = searchParams?.get("payment");
   const [countdown, setCountdown] = useState(10);
 
   useEffect(() => {

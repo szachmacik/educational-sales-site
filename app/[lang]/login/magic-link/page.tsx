@@ -29,7 +29,7 @@ function MagicLinkContent() {
     const l = t.login;
     const router = useRouter();
     const searchParams = useSearchParams();
-    const token = searchParams.get("token");
+    const token = searchParams?.get("token");
 
     const [email, setEmail] = useState("");
     const [isLoading, setIsLoading] = useState(false);

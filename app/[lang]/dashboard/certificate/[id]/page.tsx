@@ -21,7 +21,7 @@ const STORAGE_KEY = "user_certificates";
 export default function CertificatePage() {
     const { t, language } = useLanguage();
     const params = useParams();
-    const certificateId = params.id as string;
+    const certificateId = params?.id as string;
     const certificateRef = useRef<HTMLDivElement>(null);
 
     const [certificate, setCertificate] = useState<Certificate | null>(null);

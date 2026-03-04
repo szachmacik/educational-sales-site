@@ -40,7 +40,7 @@ interface ProductDetailViewProps {
 }
 
 export function ProductDetailView({ slug }: ProductDetailViewProps) {
-    const { toast } = useToast();
+    const { toast: toastUI } = useToast();
     const { addItem } = useCart();
     const { t, language } = useLanguage();
     const { role, isAdmin, isLoading: loadingAuth } = useTokens();

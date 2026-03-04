@@ -18,7 +18,7 @@ export function Products() {
   const [products, setProducts] = useState<ProductWithSlug[]>([]);
   const { t, language, formatPrice } = useLanguage();
   const { addItem } = useCart();
-  const { toast } = useToast();
+  const { toast: toastUI } = useToast();
 
   const [loading, setLoading] = useState(true);
 

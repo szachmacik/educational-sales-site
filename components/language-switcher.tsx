@@ -76,7 +76,7 @@ export function LanguageSwitcher() {
 
         // 2. Calculate new path
         // current path looks like /pl/products or /en/about
-        const segments = pathname.split('/');
+        const segments = (pathname ?? "/pl").split('/');
         // segments[0] is empty, segments[1] is the current locale
         segments[1] = newLang;
         const newPath = segments.join('/');
@@ -88,7 +88,7 @@ export function LanguageSwitcher() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} variant="ghost" size="sm" className="px-1 hover:bg-slate-100 transition-colors">
+                <Button variant="ghost" size="sm" className="px-1 hover:bg-slate-100 transition-colors">
                     <img
                         src={flagMap[language]}
                         alt={labelMap[language]}

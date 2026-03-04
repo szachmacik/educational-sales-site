@@ -16,6 +16,7 @@ import {
 import { useState } from "react";
 
 export function InAppNotifications() {
+    const { t } = useLanguage();
     const [hasUnread, setHasUnread] = useState(true);
 
     return (

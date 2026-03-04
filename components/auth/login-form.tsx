@@ -74,8 +74,8 @@ export function LoginForm() {
     const l = t.login;
     const router = useRouter();
     const searchParams = useSearchParams();
-    const redirectPath = searchParams.get("redirect") || `/${language}/dashboard`;
-    const referralCode = searchParams.get("ref") || "";
+    const redirectPath = searchParams?.get("redirect") || `/${language}/dashboard`;
+    const referralCode = searchParams?.get("ref") || "";
 
     // ── step: 'role' | 'subtype' | 'credentials'
     const [step, setStep] = useState<'role' | 'subtype' | 'credentials'>('role');

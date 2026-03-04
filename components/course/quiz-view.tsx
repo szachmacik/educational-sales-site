@@ -27,6 +27,7 @@ interface QuizViewProps {
 type QuizState = "intro" | "active" | "result";
 
 export function QuizView({ quiz, onComplete }: QuizViewProps) {
+    const { t } = useLanguage();
     const [state, setState] = useState<QuizState>("intro");
     const [currentIndex, setCurrentIndex] = useState(0);
     const [answers, setAnswers] = useState<Map<string, string[]>>(new Map());

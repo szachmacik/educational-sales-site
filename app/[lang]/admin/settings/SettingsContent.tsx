@@ -173,7 +173,7 @@ const STORAGE_KEY = "admin_full_settings";
 export default function SettingsContent({ dictionary }: { dictionary: any }) {
     const { t } = useLanguage();
     const searchParams = useSearchParams();
-    const defaultTab = searchParams.get('tab') || "marketing";
+    const defaultTab = searchParams?.get('tab') || "marketing";
 
     const [settings, setSettings] = useState<SettingsState>({
         activeProvider: "openai",

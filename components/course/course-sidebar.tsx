@@ -17,7 +17,7 @@ interface CourseSidebarProps {
 
 export function CourseSidebar({ course }: CourseSidebarProps) {
     const searchParams = useSearchParams();
-    const currentLessonId = Number(searchParams.get("lessonId"));
+    const currentLessonId = Number(searchParams?.get("lessonId"));
     const { isLessonComplete, getCourseProgress } = useProgress();
     const { t, language } = useLanguage();
 

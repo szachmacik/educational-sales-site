@@ -90,21 +90,21 @@ export function AIAssistant() {
 
     // Context-aware suggestions
     const getSuggestions = () => {
-        if (pathname.includes('/admin/workshop')) {
+        if (pathname?.includes('/admin/workshop')) {
             return [
                 { icon: Sparkles, label: c.suggestions.generate_visuals },
                 { icon: ImageIcon, label: c.suggestions.social_post },
                 { icon: Bot, label: c.suggestions.flashcard_studio || "Flashcard Studio" }
             ];
         }
-        if (pathname.includes('/admin/products')) {
+        if (pathname?.includes('/admin/products')) {
             return [
                 { icon: Sparkles, label: c.suggestions.seo_optimize },
                 { icon: ImageIcon, label: c.suggestions.product_cover },
                 { icon: Zap, label: c.suggestions.sync_wordwall }
             ];
         }
-        if (pathname.includes('/admin/settings')) {
+        if (pathname?.includes('/admin/settings')) {
             return [
                 { icon: Layout, label: c.suggestions.config_workshop },
                 { icon: Bot, label: c.suggestions.test_api },
