@@ -1,31 +1,23 @@
 /**
- * WordPress → Educational Sales Site Migration API
+ * WordPress / WP Idea Migration & Sync API
  *
- * This endpoint accepts user data exported from WordPress (via WP REST API or WP-CLI)
- * and silently imports it into the local users.json + profiles DB.
+ * PULL-based: this endpoint connects directly to sklep.linguachess.com
+ * WP Idea REST API and imports users + orders into the local shop.
  *
- * SECURITY: Protected by MIGRATION_SECRET env var — must be set in Coolify.
  * NO email notifications are sent during import.
  *
- * Usage:
- *   POST /api/admin/migrate-wp
+ * POST /api/admin/migrate-wp
  *   Headers: Authorization: Bearer <MIGRATION_SECRET>
- *   Body: { users: WPUser[], dryRun?: boolean }
- *
- * WPUser shape (from WP REST API /wp/v2/users or custom export):
- * {
- *   id: number,
- *   email: string,
- *   name: string,
- *   slug: string,
- *   roles: string[],
- *   meta: {
- *     purchased_products?: string[],   // product IDs/slugs they bought
- *     accessible_files?: string[],     // file URLs/keys they can access
- *     wp_password_hash?: string,       // raw WP password hash (phpass format)
- *     plain_password?: string,         // if you export plain passwords (not recommended)
+ *   Body: {
+ *     wp_url?: string,           // default: https://sklep.linguachess.com
+ *     wp_credentials: string,    // "username:application_password"
+ *     dry_run?: boolean,         // default: true (preview only)
+ *     sync_mode?: "full" | "new_only"  // default: new_only
  *   }
- * }
+ *
+ * GET /api/admin/migrate-wp
+ *   Headers: Authorization: Bearer <MIGRATION_SECRET>
+ *   Returns: migration status + user counts
  */
 
 import { NextRequest, NextResponse } from "next/server";
@@ -33,55 +25,12 @@ import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
 
-const USERS_FILE = path.join(process.cwd(), "lib", "data", "users.json");
-const PROFILES_FILE = path.join(process.cwd(), "lib", "data", "profiles.json");
-const ACCESS_FILE = path.join(process.cwd(), "lib", "data", "user-access.json");
+const DATA_DIR = path.join(process.cwd(), "lib", "data");
+const USERS_FILE = path.join(DATA_DIR, "users.json");
+const ACCESS_FILE = path.join(DATA_DIR, "user-access.json");
+const MIGRATION_LOG = path.join(DATA_DIR, "migration-log.json");
 
-interface WPUser {
-  id: number;
-  email: string;
-  name: string;
-  slug?: string;
-  roles?: string[];
-  meta?: {
-    purchased_products?: string[];
-    accessible_files?: string[];
-    wp_password_hash?: string;
-    plain_password?: string;
-    teaching_level?: string;
-    school_name?: string;
-    nip?: string;
-  };
-}
-
-interface LocalUser {
-  id: string;
-  name: string;
-  email: string;
-  role: string;
-  passwordHash?: string;
-  wpId?: number;
-  wpPasswordHash?: string; // kept for WP-compatible login fallback
-  isAdmin: boolean;
-  purchasedProducts?: string[];
-  accessibleFiles?: string[];
-  migratedAt?: string;
-  source: "wordpress" | "local";
-}
-
-function mapWPRoleToLocal(roles: string[]): string {
-  if (roles.includes("administrator")) return "admin";
-  if (roles.includes("editor") || roles.includes("author")) return "teacher";
-  if (roles.includes("subscriber")) return "student";
-  return "student";
-}
-
-/** Generate a random secure password and return its SHA-256 hash (for local auth) */
-function generateTempPasswordHash(): { hash: string; plain: string } {
-  const plain = crypto.randomBytes(12).toString("base64url");
-  const hash = crypto.createHash("sha256").update(plain).digest("hex");
-  return { hash, plain };
-}
+// ── File helpers ────────────────────────────────────────────────────────────
 
 async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
   try {
@@ -97,181 +46,273 @@ async function writeJSON(filePath: string, data: unknown): Promise<void> {
   await fs.writeFile(filePath, JSON.stringify(data, null, 2), "utf8");
 }
 
-export async function POST(req: NextRequest) {
-  // Auth check
-  const authHeader = req.headers.get("Authorization");
-  const migrationSecret = process.env.MIGRATION_SECRET;
+// ── WP Idea API helpers ─────────────────────────────────────────────────────
 
-  if (!migrationSecret) {
-    return NextResponse.json(
-      { error: "MIGRATION_SECRET not configured on server" },
-      { status: 503 }
-    );
+async function wpGet(wpUrl: string, endpoint: string, credentials: string, params = "") {
+  const url = `${wpUrl.replace(/\/$/, "")}/wp-json${endpoint}${params}`;
+  const res = await fetch(url, {
+    headers: {
+      Authorization: `Basic ${Buffer.from(credentials).toString("base64")}`,
+      "Content-Type": "application/json",
+    },
+    // 30s timeout
+    signal: AbortSignal.timeout(30000),
+  });
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`WP API ${endpoint} → ${res.status}: ${text.slice(0, 300)}`);
   }
+  return res.json();
+}
 
-  if (!authHeader || authHeader !== `Bearer ${migrationSecret}`) {
+async function fetchAllPaged(
+  wpUrl: string,
+  endpoint: string,
+  credentials: string,
+  perPage = 100
+): Promise<any[]> {
+  const all: any[] = [];
+  let page = 1;
+  while (true) {
+    const items = await wpGet(wpUrl, endpoint, credentials, `?per_page=${perPage}&page=${page}&context=edit`);
+    if (!Array.isArray(items) || items.length === 0) break;
+    all.push(...items);
+    if (items.length < perPage) break;
+    page++;
+  }
+  return all;
+}
+
+async function fetchWPUsers(wpUrl: string, credentials: string) {
+  return fetchAllPaged(wpUrl, "/wp/v2/users", credentials);
+}
+
+async function fetchWPIdeaOrders(wpUrl: string, credentials: string) {
+  // Try v2 first, fall back to v1
+  for (const endpoint of ["/wp-idea/v2/orders", "/wp-idea/v1/orders"]) {
+    try {
+      return await fetchAllPaged(wpUrl, endpoint, credentials);
+    } catch {
+      continue;
+    }
+  }
+  return [];
+}
+
+async function fetchWPIdeaProducts(wpUrl: string, credentials: string) {
+  try {
+    return await wpGet(wpUrl, "/wp-idea/v1/products", credentials, "?per_page=100");
+  } catch {
+    return [];
+  }
+}
+
+// ── Migration logic ─────────────────────────────────────────────────────────
+
+function hashPassword(plain: string): string {
+  return crypto.createHash("sha256").update(plain).digest("hex");
+}
+
+function mapRole(roles: string[]): string {
+  if (roles.includes("administrator")) return "admin";
+  if (roles.includes("editor") || roles.includes("author")) return "teacher";
+  return "student";
+}
+
+export async function POST(req: NextRequest) {
+  // ── Auth ──────────────────────────────────────────────────────────────────
+  const authHeader = req.headers.get("Authorization") || "";
+  const secret = process.env.MIGRATION_SECRET;
+
+  if (!secret) {
+    return NextResponse.json({ error: "MIGRATION_SECRET not configured" }, { status: 503 });
+  }
+  if (authHeader !== `Bearer ${secret}`) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  let body: { users: WPUser[]; dryRun?: boolean };
+  // ── Parse body ────────────────────────────────────────────────────────────
+  let body: any;
   try {
     body = await req.json();
   } catch {
-    return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
+    return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  const { users: wpUsers, dryRun = false } = body;
+  const {
+    wp_url = "https://sklep.linguachess.com",
+    wp_credentials,
+    dry_run = true,
+    sync_mode = "new_only",
+  } = body;
 
-  if (!Array.isArray(wpUsers) || wpUsers.length === 0) {
-    return NextResponse.json({ error: "No users provided" }, { status: 400 });
+  if (!wp_credentials) {
+    return NextResponse.json(
+      { error: "wp_credentials required — format: 'username:application_password'" },
+      { status: 400 }
+    );
   }
 
-  // Load existing data
-  const existingUsers = await readJSON<LocalUser[]>(USERS_FILE, []);
+  // ── Fetch from WP Idea ────────────────────────────────────────────────────
+  let wpUsers: any[], wpOrders: any[], wpProducts: any[];
+  try {
+    [wpUsers, wpOrders, wpProducts] = await Promise.all([
+      fetchWPUsers(wp_url, wp_credentials),
+      fetchWPIdeaOrders(wp_url, wp_credentials),
+      fetchWPIdeaProducts(wp_url, wp_credentials),
+    ]);
+  } catch (err: any) {
+    return NextResponse.json(
+      { error: `Failed to connect to WP Idea: ${err.message}` },
+      { status: 502 }
+    );
+  }
+
+  // Build product slug map
+  const productSlugMap: Record<number, string> = {};
+  for (const p of wpProducts) {
+    productSlugMap[p.id] = p.slug || p.title?.rendered || String(p.id);
+  }
+
+  // Build orders by user_id
+  const ordersByUser: Record<number, any[]> = {};
+  for (const order of wpOrders) {
+    const uid = order.user_id || order.customer_id;
+    if (uid) {
+      if (!ordersByUser[uid]) ordersByUser[uid] = [];
+      ordersByUser[uid].push(order);
+    }
+  }
+
+  // ── Process users ─────────────────────────────────────────────────────────
+  const existingUsers = await readJSON<any[]>(USERS_FILE, []);
   const existingAccess = await readJSON<Record<string, string[]>>(ACCESS_FILE, {});
 
-  const results = {
-    total: wpUsers.length,
-    created: 0,
-    updated: 0,
-    skipped: 0,
-    errors: [] as string[],
-    dryRun,
-    importedUsers: [] as { email: string; action: string; tempPassword?: string }[],
-  };
-
+  const stats = { total: wpUsers.length, created: 0, updated: 0, skipped: 0 };
+  const errors: string[] = [];
+  const preview: any[] = [];
   const updatedUsers = [...existingUsers];
   const updatedAccess = { ...existingAccess };
 
   for (const wpUser of wpUsers) {
     try {
-      if (!wpUser.email) {
-        results.errors.push(`User ${wpUser.id}: missing email`);
-        results.skipped++;
-        continue;
+      const email = (wpUser.email || "").toLowerCase();
+      if (!email) { stats.skipped++; continue; }
+
+      // Collect purchased products from orders
+      const userOrders = ordersByUser[wpUser.id] || [];
+      const purchasedProducts: string[] = [];
+      for (const order of userOrders) {
+        const items = order.items || order.order_items || order.products || [];
+        for (const item of items) {
+          const pid = item.product_id || item.id;
+          const slug = productSlugMap[pid] || item.slug || item.product_slug || String(pid);
+          if (slug && !purchasedProducts.includes(slug)) purchasedProducts.push(slug);
+        }
+        if (order.product_id) {
+          const slug = productSlugMap[order.product_id] || String(order.product_id);
+          if (!purchasedProducts.includes(slug)) purchasedProducts.push(slug);
+        }
       }
 
       const existingIdx = updatedUsers.findIndex(
-        (u) => u.email.toLowerCase() === wpUser.email.toLowerCase() || u.wpId === wpUser.id
+        (u) => u.email?.toLowerCase() === email || u.wpId === wpUser.id
       );
 
-      const role = mapWPRoleToLocal(wpUser.roles || ["subscriber"]);
-      const purchasedProducts = wpUser.meta?.purchased_products || [];
-      const accessibleFiles = wpUser.meta?.accessible_files || [];
+      if (dry_run) {
+        preview.push({
+          email,
+          name: `${wpUser.first_name || ""} ${wpUser.last_name || ""}`.trim() || wpUser.name,
+          role: mapRole(wpUser.roles || []),
+          orders: userOrders.length,
+          purchasedProducts,
+          isNew: existingIdx === -1,
+        });
+        continue;
+      }
 
       if (existingIdx !== -1) {
-        // Update existing user — merge purchased products and files
+        // Merge — always update purchased products
         const existing = updatedUsers[existingIdx];
-        const mergedProducts = Array.from(
-          new Set([...(existing.purchasedProducts || []), ...purchasedProducts])
-        );
-        const mergedFiles = Array.from(
-          new Set([...(existing.accessibleFiles || []), ...accessibleFiles])
-        );
-
+        const merged = Array.from(new Set([...(existing.purchasedProducts || []), ...purchasedProducts]));
         updatedUsers[existingIdx] = {
           ...existing,
+          purchasedProducts: merged,
           wpId: wpUser.id,
-          name: wpUser.name || existing.name,
-          purchasedProducts: mergedProducts,
-          accessibleFiles: mergedFiles,
-          migratedAt: new Date().toISOString(),
+          lastSyncedAt: new Date().toISOString(),
           source: "wordpress",
-          // Keep existing password hash, add WP hash as fallback
-          wpPasswordHash: wpUser.meta?.wp_password_hash || existing.wpPasswordHash,
         };
-
-        // Update access file
-        updatedAccess[existing.email] = mergedFiles;
-
-        results.updated++;
-        results.importedUsers.push({ email: wpUser.email, action: "updated" });
-      } else {
-        // Create new user — NO email notification sent
-        const userId = `wp_${wpUser.id}_${Date.now()}`;
-        let passwordHash: string | undefined;
-        let tempPassword: string | undefined;
-
-        if (wpUser.meta?.plain_password) {
-          // Plain password provided — hash it
-          passwordHash = crypto
-            .createHash("sha256")
-            .update(wpUser.meta.plain_password)
-            .digest("hex");
-        } else {
-          // Generate a temporary password — admin can share it manually
-          const { hash, plain } = generateTempPasswordHash();
-          passwordHash = hash;
-          tempPassword = plain;
+        if (sync_mode === "full") {
+          // Also update name/role in full mode
+          updatedUsers[existingIdx].name = `${wpUser.first_name || ""} ${wpUser.last_name || ""}`.trim() || wpUser.name || existing.name;
+          updatedUsers[existingIdx].role = mapRole(wpUser.roles || []);
         }
-
-        const newUser: LocalUser = {
-          id: userId,
-          name: wpUser.name || wpUser.email.split("@")[0],
-          email: wpUser.email.toLowerCase(),
-          role,
-          passwordHash,
+        updatedAccess[email] = Array.from(new Set([...(updatedAccess[email] || []), ...purchasedProducts]));
+        stats.updated++;
+      } else {
+        // New user — NO email notification
+        const newUser = {
+          id: `wp_${wpUser.id}_${Date.now()}`,
+          email,
+          name: `${wpUser.first_name || ""} ${wpUser.last_name || ""}`.trim() || wpUser.name || email.split("@")[0],
+          role: mapRole(wpUser.roles || []),
+          // Default password = SHA-256(email) — user can reset via "forgot password"
+          passwordHash: hashPassword(email),
           wpId: wpUser.id,
-          wpPasswordHash: wpUser.meta?.wp_password_hash,
-          isAdmin: role === "admin",
+          isAdmin: (wpUser.roles || []).includes("administrator"),
           purchasedProducts,
-          accessibleFiles,
           migratedAt: new Date().toISOString(),
           source: "wordpress",
         };
-
         updatedUsers.push(newUser);
-        updatedAccess[wpUser.email.toLowerCase()] = accessibleFiles;
-
-        results.created++;
-        results.importedUsers.push({
-          email: wpUser.email,
-          action: "created",
-          ...(tempPassword ? { tempPassword } : {}),
-        });
+        updatedAccess[email] = purchasedProducts;
+        stats.created++;
       }
     } catch (err: any) {
-      results.errors.push(`User ${wpUser.email}: ${err.message}`);
-      results.skipped++;
+      errors.push(`${wpUser.email}: ${err.message}`);
+      stats.skipped++;
     }
   }
 
-  // Write to disk (unless dry run)
-  if (!dryRun) {
+  // ── Save ──────────────────────────────────────────────────────────────────
+  if (!dry_run) {
     await writeJSON(USERS_FILE, updatedUsers);
     await writeJSON(ACCESS_FILE, updatedAccess);
-  }
 
-  console.log(
-    `[WP Migration] ${dryRun ? "DRY RUN — " : ""}Created: ${results.created}, Updated: ${results.updated}, Skipped: ${results.skipped}`
-  );
+    // Append to migration log
+    const log = await readJSON<any[]>(MIGRATION_LOG, []);
+    log.push({ timestamp: new Date().toISOString(), wp_url, stats, sync_mode, errors: errors.slice(0, 10) });
+    await writeJSON(MIGRATION_LOG, log.slice(-100));
+  }
 
   return NextResponse.json({
     success: true,
-    ...results,
+    dry_run,
+    sync_mode,
+    wp_url,
+    stats,
+    errors: errors.slice(0, 20),
+    ...(dry_run ? { preview } : {}),
+    timestamp: new Date().toISOString(),
   });
 }
 
-/**
- * GET /api/admin/migrate-wp — returns migration status and user count
- */
 export async function GET(req: NextRequest) {
-  const authHeader = req.headers.get("Authorization");
-  const migrationSecret = process.env.MIGRATION_SECRET;
-
-  if (!migrationSecret || !authHeader || authHeader !== `Bearer ${migrationSecret}`) {
+  const authHeader = req.headers.get("Authorization") || "";
+  const secret = process.env.MIGRATION_SECRET;
+  if (!secret || authHeader !== `Bearer ${secret}`) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const users = await readJSON<LocalUser[]>(USERS_FILE, []);
+  const users = await readJSON<any[]>(USERS_FILE, []);
+  const log = await readJSON<any[]>(MIGRATION_LOG, []);
   const wpUsers = users.filter((u) => u.source === "wordpress");
 
   return NextResponse.json({
     totalUsers: users.length,
     wpMigratedUsers: wpUsers.length,
     localUsers: users.length - wpUsers.length,
-    lastMigration: wpUsers.sort((a, b) =>
-      (b.migratedAt || "").localeCompare(a.migratedAt || "")
-    )[0]?.migratedAt || null,
+    lastMigration: log[log.length - 1] || null,
+    recentRuns: log.slice(-5),
   });
 }

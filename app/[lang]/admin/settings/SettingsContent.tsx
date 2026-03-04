@@ -17,7 +17,7 @@ import { useSearchParams } from "next/navigation";
 import { useLanguage, NamespaceGuard } from "@/components/language-provider";
 import { AdminIntegrations } from "@/components/admin-integrations";
 import { SecureInput } from "@/components/admin/secure-input";
-import { Save, CheckCircle2, Globe, BarChart3, Search, Settings2, Facebook, Zap, Plus, Trash2, Mail, Cloud, RefreshCw, Download, Users, Percent, Receipt, ShoppingCart, ShoppingBag, ShieldCheck, Activity, Wallet, Coins, CreditCard, Trophy, Gamepad2, Wand2, Layout, FileText, Music, Mic2, BrainCircuit, Eye, TrendingUp, History, Lightbulb, Bot, Send, Sparkles, MoreHorizontal } from "lucide-react";
+import { Save, CheckCircle2, Globe, BarChart3, Search, Settings2, Facebook, Zap, Plus, Trash2, Mail, Cloud, RefreshCw, Download, Users, Percent, Receipt, ShoppingCart, ShoppingBag, ShieldCheck, Activity, Wallet, Coins, CreditCard, Trophy, Gamepad2, Wand2, Layout, FileText, Music, Mic2, BrainCircuit, Eye, TrendingUp, History, Lightbulb, Bot, Send, Sparkles, MoreHorizontal, DatabaseZap, ArrowDownToLine, CheckCircle, XCircle, Loader2 } from "lucide-react";
 
 const PROVIDER_METADATA: Record<string, { icon: any, color: string, bg: string }> = {
     openai: { icon: Bot, color: "text-emerald-600", bg: "bg-emerald-50" },
@@ -649,6 +649,9 @@ export default function SettingsContent({ dictionary }: { dictionary: any }) {
                                 </TabsTrigger>
                                 <TabsTrigger value="integrations" className="justify-start gap-3 h-10 px-4">
                                     <Zap className="h-4 w-4" /> {t.adminSettings.tabs.integrations}
+                                </TabsTrigger>
+                                <TabsTrigger value="wp_migration" className="justify-start gap-3 h-10 px-4">
+                                    <DatabaseZap className="h-4 w-4" /> Migracja WP Idea
                                 </TabsTrigger>
                             </TabsList>
                         </div>
@@ -1858,9 +1861,254 @@ export default function SettingsContent({ dictionary }: { dictionary: any }) {
                                 </CardContent>
                             </Card>
                         </TabsContent>
+                        <TabsContent value="wp_migration" className="space-y-4">
+                            <WPMigrationPanel />
+                        </TabsContent>
                     </div>
                 </Tabs>
             </div>
         </NamespaceGuard>
+    );
+}
+
+// ── WP Idea Migration Panel ──────────────────────────────────────────────────
+
+function WPMigrationPanel() {
+    const [wpUrl, setWpUrl] = useState("https://sklep.linguachess.com");
+    const [wpCredentials, setWpCredentials] = useState("");
+    const [migrationSecret, setMigrationSecret] = useState("");
+    const [syncMode, setSyncMode] = useState<"new_only" | "full">("new_only");
+    const [dryRun, setDryRun] = useState(true);
+    const [loading, setLoading] = useState(false);
+    const [result, setResult] = useState<any>(null);
+    const [status, setStatus] = useState<any>(null);
+
+    const fetchStatus = async () => {
+        if (!migrationSecret) return;
+        try {
+            const res = await fetch("/api/admin/migrate-wp", {
+                headers: { Authorization: `Bearer ${migrationSecret}` },
+            });
+            if (res.ok) setStatus(await res.json());
+        } catch {}
+    };
+
+    const runMigration = async () => {
+        if (!wpCredentials || !migrationSecret) {
+            alert("Wypełnij WP Credentials i Migration Secret");
+            return;
+        }
+        setLoading(true);
+        setResult(null);
+        try {
+            const res = await fetch("/api/admin/migrate-wp", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${migrationSecret}`,
+                },
+                body: JSON.stringify({
+                    wp_url: wpUrl,
+                    wp_credentials: wpCredentials,
+                    dry_run: dryRun,
+                    sync_mode: syncMode,
+                }),
+            });
+            const data = await res.json();
+            setResult(data);
+            if (!dryRun && data.success) fetchStatus();
+        } catch (err: any) {
+            setResult({ success: false, error: err.message });
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    return (
+        <div className="space-y-6">
+            <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                        <DatabaseZap className="h-5 w-5 text-blue-600" />
+                        Migracja z WP Idea (sklep.linguachess.com)
+                    </CardTitle>
+                    <CardDescription>
+                        Importuje użytkowników i ich zakupy bezpośrednio z WP Idea REST API.
+                        Żadne powiadomienia email nie są wysyłane do klientów.
+                    </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                    <div className="grid grid-cols-1 gap-4">
+                        <div>
+                            <Label>URL WordPress</Label>
+                            <Input
+                                value={wpUrl}
+                                onChange={(e) => setWpUrl(e.target.value)}
+                                placeholder="https://sklep.linguachess.com"
+                            />
+                        </div>
+                        <div>
+                            <Label>WP Credentials (username:application_password)</Label>
+                            <Input
+                                type="password"
+                                value={wpCredentials}
+                                onChange={(e) => setWpCredentials(e.target.value)}
+                                placeholder="admin:xxxx xxxx xxxx xxxx xxxx xxxx"
+                            />
+                            <p className="text-xs text-muted-foreground mt-1">
+                                WP Admin → Users → Profile → Application Passwords → Add New
+                            </p>
+                        </div>
+                        <div>
+                            <Label>Migration Secret (z Coolify ENV: MIGRATION_SECRET)</Label>
+                            <Input
+                                type="password"
+                                value={migrationSecret}
+                                onChange={(e) => setMigrationSecret(e.target.value)}
+                                placeholder="Wpisz wartość MIGRATION_SECRET z Coolify"
+                            />
+                        </div>
+                        <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-2">
+                                <input
+                                    type="checkbox"
+                                    id="dryRun"
+                                    checked={dryRun}
+                                    onChange={(e) => setDryRun(e.target.checked)}
+                                    className="h-4 w-4"
+                                />
+                                <Label htmlFor="dryRun">Dry Run (podgląd bez zapisu)</Label>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <Label>Tryb:</Label>
+                                <select
+                                    value={syncMode}
+                                    onChange={(e) => setSyncMode(e.target.value as any)}
+                                    className="border rounded px-2 py-1 text-sm"
+                                >
+                                    <option value="new_only">Tylko nowi + merge zakupów</option>
+                                    <option value="full">Pełna aktualizacja</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex gap-3">
+                        <Button onClick={runMigration} disabled={loading} className="gap-2">
+                            {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <ArrowDownToLine className="h-4 w-4" />}
+                            {dryRun ? "Podgląd (Dry Run)" : "Uruchom Migrację"}
+                        </Button>
+                        <Button variant="outline" onClick={fetchStatus} className="gap-2">
+                            <RefreshCw className="h-4 w-4" /> Status
+                        </Button>
+                    </div>
+                </CardContent>
+            </Card>
+
+            {status && (
+                <Card>
+                    <CardHeader><CardTitle>Status migracji</CardTitle></CardHeader>
+                    <CardContent>
+                        <div className="grid grid-cols-3 gap-4 text-center">
+                            <div className="bg-blue-50 rounded-lg p-3">
+                                <div className="text-2xl font-bold text-blue-700">{status.totalUsers}</div>
+                                <div className="text-xs text-muted-foreground">Wszystkich użytkowników</div>
+                            </div>
+                            <div className="bg-green-50 rounded-lg p-3">
+                                <div className="text-2xl font-bold text-green-700">{status.wpMigratedUsers}</div>
+                                <div className="text-xs text-muted-foreground">Zmigrowanych z WP</div>
+                            </div>
+                            <div className="bg-slate-50 rounded-lg p-3">
+                                <div className="text-2xl font-bold">{status.localUsers}</div>
+                                <div className="text-xs text-muted-foreground">Lokalnych</div>
+                            </div>
+                        </div>
+                        {status.lastMigration && (
+                            <p className="text-xs text-muted-foreground mt-3">
+                                Ostatnia migracja: {new Date(status.lastMigration.timestamp).toLocaleString("pl-PL")}
+                                {" — "}{status.lastMigration.stats?.created || 0} nowych,{" "}
+                                {status.lastMigration.stats?.updated || 0} zaktualizowanych
+                            </p>
+                        )}
+                    </CardContent>
+                </Card>
+            )}
+
+            {result && (
+                <Card className={result.success ? "border-green-200" : "border-red-200"}>
+                    <CardHeader>
+                        <CardTitle className="flex items-center gap-2">
+                            {result.success
+                                ? <CheckCircle className="h-5 w-5 text-green-600" />
+                                : <XCircle className="h-5 w-5 text-red-600" />}
+                            {result.dry_run ? "Podgląd (Dry Run)" : "Wynik migracji"}
+                        </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-3">
+                        {result.error && (
+                            <div className="bg-red-50 text-red-700 p-3 rounded text-sm">{result.error}</div>
+                        )}
+                        {result.stats && (
+                            <div className="grid grid-cols-4 gap-3 text-center">
+                                <div className="bg-slate-50 rounded p-2">
+                                    <div className="font-bold">{result.stats.total}</div>
+                                    <div className="text-xs text-muted-foreground">Znaleziono</div>
+                                </div>
+                                <div className="bg-green-50 rounded p-2">
+                                    <div className="font-bold text-green-700">{result.stats.created}</div>
+                                    <div className="text-xs text-muted-foreground">Nowych</div>
+                                </div>
+                                <div className="bg-blue-50 rounded p-2">
+                                    <div className="font-bold text-blue-700">{result.stats.updated}</div>
+                                    <div className="text-xs text-muted-foreground">Zaktualizowanych</div>
+                                </div>
+                                <div className="bg-yellow-50 rounded p-2">
+                                    <div className="font-bold text-yellow-700">{result.stats.skipped}</div>
+                                    <div className="text-xs text-muted-foreground">Pominiętych</div>
+                                </div>
+                            </div>
+                        )}
+                        {result.preview && result.preview.length > 0 && (
+                            <div>
+                                <p className="text-sm font-medium mb-2">Podgląd ({result.preview.length} użytkowników):</p>
+                                <div className="max-h-64 overflow-y-auto border rounded">
+                                    <table className="w-full text-xs">
+                                        <thead className="bg-slate-50 sticky top-0">
+                                            <tr>
+                                                <th className="text-left p-2">Email</th>
+                                                <th className="text-left p-2">Imię</th>
+                                                <th className="text-left p-2">Zamówienia</th>
+                                                <th className="text-left p-2">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {result.preview.map((u: any, i: number) => (
+                                                <tr key={i} className="border-t">
+                                                    <td className="p-2">{u.email}</td>
+                                                    <td className="p-2">{u.name}</td>
+                                                    <td className="p-2">{u.orders}</td>
+                                                    <td className="p-2">
+                                                        <span className={`px-1.5 py-0.5 rounded text-xs ${u.isNew ? "bg-green-100 text-green-700" : "bg-blue-100 text-blue-700"}`}>
+                                                            {u.isNew ? "Nowy" : "Aktualizacja"}
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        )}
+                        {result.errors && result.errors.length > 0 && (
+                            <div className="bg-yellow-50 p-3 rounded">
+                                <p className="text-sm font-medium text-yellow-800 mb-1">Błędy ({result.errors.length}):</p>
+                                {result.errors.map((e: string, i: number) => (
+                                    <p key={i} className="text-xs text-yellow-700">{e}</p>
+                                ))}
+                            </div>
+                        )}
+                    </CardContent>
+                </Card>
+            )}
+        </div>
     );
 }
