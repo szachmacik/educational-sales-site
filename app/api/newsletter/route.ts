@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sendEmail } from "@/lib/email";
 import { checkRateLimit, getClientIp } from "@/lib/rate-limit";
+import { cookies } from "next/headers";
 import fs from "fs/promises";
 import path from "path";
 
@@ -19,6 +20,16 @@ async function writeSubscribers(subscribers: { email: string; createdAt: string 
     const dir = path.join(process.cwd(), "data");
     await fs.mkdir(dir, { recursive: true });
     await fs.writeFile(SUBSCRIBERS_FILE, JSON.stringify(subscribers, null, 2), "utf8");
+}
+
+async function verifyAdmin(): Promise<boolean> {
+    const cookieStore = await cookies();
+    const token = cookieStore.get('user_token')?.value;
+    if (!token) return false;
+    const userRole = cookieStore.get('user_role')?.value;
+    if (userRole !== 'admin') return false;
+    if (token.startsWith('demo_')) return false;
+    return true;
 }
 
 export async function POST(req: NextRequest) {
@@ -84,8 +95,32 @@ export async function POST(req: NextRequest) {
 }
 
 export async function GET() {
-    // Admin-only endpoint to list subscribers — requires admin auth
-    // For now, just return count
+    const isAdmin = await verifyAdmin();
     const subscribers = await readSubscribers();
-    return NextResponse.json({ count: subscribers.length });
+    if (!isAdmin) {
+        // Public: return only count
+        return NextResponse.json({ count: subscribers.length });
+    }
+    // Admin: return full list sorted by newest first
+    const sorted = [...subscribers].sort(
+        (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+    );
+    return NextResponse.json({ count: subscribers.length, subscribers: sorted });
+}
+
+export async function DELETE(req: NextRequest) {
+    const isAdmin = await verifyAdmin();
+    if (!isAdmin) {
+        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+    try {
+        const { email } = await req.json();
+        if (!email) return NextResponse.json({ error: "Email required" }, { status: 400 });
+        const subscribers = await readSubscribers();
+        const filtered = subscribers.filter((s) => s.email.toLowerCase() !== email.toLowerCase());
+        await writeSubscribers(filtered);
+        return NextResponse.json({ success: true, removed: subscribers.length - filtered.length });
+    } catch (error: any) {
+        return NextResponse.json({ error: "Server error" }, { status: 500 });
+    }
 }

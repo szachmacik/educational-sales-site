@@ -38,7 +38,8 @@ import {
     Loader2,
     Image as ImageIcon,
     Smartphone,
-    BrainCircuit
+    BrainCircuit,
+    Mail
 } from "lucide-react";
 import { TranslationMerger, NamespaceGuard } from "@/components/language-provider";
 import { useLanguage } from "@/components/language-provider";
@@ -104,6 +105,7 @@ export default function AdminDashboard() {
     const [showPreviewDialog, setShowPreviewDialog] = useState(false);
     const [previewProduct, setPreviewProduct] = useState<any>(null);
     const [aiHistory, setAiHistory] = useState<any[]>([]);
+    const [subscriberCount, setSubscriberCount] = useState<number>(0);
 
     useEffect(() => {
         const storedOrders = localStorage.getItem(ORDERS_KEY);
@@ -132,6 +134,17 @@ export default function AdminDashboard() {
             }
         };
         fetchProducts();
+
+        // Fetch newsletter subscriber count
+        const fetchSubscribers = async () => {
+            try {
+                const res = await fetch("/api/newsletter");
+                const data = await res.json();
+                if (Array.isArray(data)) setSubscriberCount(data.length);
+                else if (data?.count) setSubscriberCount(data.count);
+            } catch {}
+        };
+        fetchSubscribers();
     }, []);
 
     // Calculate stats based on period
@@ -260,7 +273,7 @@ export default function AdminDashboard() {
                 <AdminSalesHub />
 
                 {/* Stats Grid */}
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
                     <Card className="border-none premium-card-ring glass-premium group overflow-hidden">
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 bg-slate-50/30 backdrop-blur-sm">
                             <CardTitle className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">{d.stats?.revenue}</CardTitle>
@@ -317,6 +330,20 @@ export default function AdminDashboard() {
                             <div className="text-3xl font-black text-slate-900 tracking-tight">{stats.avgOrderValue.toLocaleString()} {d.currency}</div>
                             <p className="text-[10px] font-bold text-muted-foreground mt-2 uppercase tracking-widest opacity-60">{d.stats?.perOrder}</p>
                             <div className="absolute -bottom-4 -right-4 h-24 w-24 bg-indigo-500/5 blur-2xl rounded-full" />
+                        </CardContent>
+                    </Card>
+                    {/* Newsletter subscribers card */}
+                    <Card className="border-none premium-card-ring glass-premium group overflow-hidden">
+                        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 bg-slate-50/30 backdrop-blur-sm">
+                            <CardTitle className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Newsletter</CardTitle>
+                            <div className="p-2 bg-pink-500/10 rounded-xl group-hover:scale-110 transition-transform">
+                                <Mail className="h-4 w-4 text-pink-600" />
+                            </div>
+                        </CardHeader>
+                        <CardContent className="pt-6 relative">
+                            <div className="text-3xl font-black text-slate-900 tracking-tight">{subscriberCount}</div>
+                            <p className="text-[10px] font-bold text-muted-foreground mt-2 uppercase tracking-widest opacity-60">{language === 'pl' ? 'Subskrybenci' : language === 'uk' ? 'Підписники' : 'Subscribers'}</p>
+                            <div className="absolute -bottom-4 -right-4 h-24 w-24 bg-pink-500/5 blur-2xl rounded-full" />
                         </CardContent>
                     </Card>
                 </div>

@@ -33,11 +33,12 @@ export function Footer() {
     informacje: {
       title: t.footer.groups.info,
       links: [
-        { name: t.footer.links.about, href: `/${language}/#about` },
+        { name: t.footer.links.about, href: `/${language}/o-nas` },
         { name: t.footer.links.contact, href: `/${language}/contact` },
         { name: t.footer.links.privacy, href: `/${language}/polityka-prywatnosci` },
         { name: t.footer.links.terms, href: `/${language}/regulamin` },
         { name: "Polityka Cookies", href: `/${language}/polityka-cookies` },
+        { name: language === 'pl' ? 'Mapa strony' : language === 'uk' ? 'Карта сайту' : 'Sitemap', href: `/${language}/mapa-strony` },
       ],
     },
     pomoc: {

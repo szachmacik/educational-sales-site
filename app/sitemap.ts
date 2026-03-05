@@ -1,25 +1,26 @@
 import { MetadataRoute } from 'next';
 import { getProducts } from '@/lib/product-service';
+import { SAMPLE_BLOG_POSTS } from "@/lib/blog-schema";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://kamilaenglish.ofshore.dev';
-
 const SUPPORTED_LANGS = [
     'pl', 'en', 'uk', 'de', 'es', 'fr', 'it', 'cs', 'sk', 'ro',
     'hu', 'pt', 'lt', 'lv', 'et', 'hr', 'sr', 'sl', 'bg', 'el',
     'nl', 'sv', 'fi', 'no', 'da'
 ];
-
 const STATIC_ROUTES = [
     '',
     '/products',
     '/blog',
     '/faq',
     '/contact',
+    '/o-nas',
     '/jak-kupic',
     '/polityka-prywatnosci',
     '/polityka-cookies',
     '/regulamin',
     '/zwroty',
+    '/mapa-strony',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -61,6 +62,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 });
             }
         }
+    }
+
+    // Blog posts (Polish only)
+    const publishedPosts = SAMPLE_BLOG_POSTS.filter((p) => p.status === 'published');
+    for (const post of publishedPosts) {
+        entries.push({
+            url: `${BASE_URL}/pl/blog/${post.slug}`,
+            lastModified: new Date(post.createdAt),
+            changeFrequency: 'monthly',
+            priority: 0.6,
+        });
     }
 
     return entries;

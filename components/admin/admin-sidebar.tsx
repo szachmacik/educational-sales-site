@@ -15,7 +15,8 @@ import {
     Sparkles,
     Layout,
     Ticket,
-    Zap
+    Zap,
+    Mail
 } from "lucide-react";
 
 import {
@@ -73,6 +74,7 @@ export function AdminSidebar() {
         { title: menu.offers || "Offer Generator", icon: Zap, href: `/${language}/admin/offers` },
         { title: menu.import || "Import AI", icon: Package, href: `/${language}/admin/import` },
         { title: menu.blog || "Blog", icon: FileText, href: `/${language}/admin/blog` },
+        { title: menu.newsletter || "Newsletter", icon: Mail, href: `/${language}/admin/newsletter` },
         { title: menu.settings || "Settings", icon: Settings, href: `/${language}/admin/settings` },
     ];
 

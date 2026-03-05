@@ -21,27 +21,35 @@
     "items": [
       {
         "title": "Natychmiastowy dostęp",
-        "desc": "Pobierz materiały od razu po zakupie"
+        "desc": "Pobierz materiały od razu po zakupie — bez czekania, bez rejestracji. Dostęp 24/7 z każdego urządzenia."
       },
       {
         "title": "Nagrania native speakera",
-        "desc": "Profesjonalne nagrania audio"
+        "desc": "Profesjonalne nagrania audio w wykonaniu native speakera. Idealna wymowa dla Twoich uczniów od pierwszej lekcji."
       },
       {
-        "title": "Pomysły na innowacje",
-        "desc": "Gotowe projekty do wdrożenia"
+        "title": "Gotowe do druku (PDF)",
+        "desc": "Wszystkie materiały w formacie PDF gotowym do wydruku. Wydrukuj, rozdaj i zacznij lekcję — bez żadnego przygotowania."
       },
       {
-        "title": "Gotowe konspekty",
-        "desc": "Szczegółowe scenariusze lekcji"
+        "title": "Gotowe konspekty lekcji",
+        "desc": "Szczegółowe scenariusze z celami, przebiegiem i wskazówkami metodycznymi. Oszczędzasz minimum 3 godziny tygodniowo."
       },
       {
-        "title": "Oszczędność czasu",
-        "desc": "Materiały gotowe do druku"
+        "title": "Sprawdzone w klasie",
+        "desc": "Każdy materiał przetestowany z prawdziwymi uczniami. Wiesz, że zadziała — bo już zadziałał u tysięcy nauczycieli."
       },
       {
-        "title": "Sprawdzone w praktyce",
-        "desc": "Przetestowane w klasie"
+        "title": "Regularne aktualizacje",
+        "desc": "Raz kupione materiały są aktualizowane bezpłatnie. Zawsze masz dostęp do najnowszej wersji bez dodatkowych opłat."
+      },
+      {
+        "title": "Wsparcie metodyczne",
+        "desc": "Do każdego pakietu dołączone są wskazówki metodyczne i propozycje różnicowania dla różnych poziomów uczniów."
+      },
+      {
+        "title": "Bezpieczne płatności",
+        "desc": "Płatności obsługiwane przez certyfikowane systemy PayNow, Stripe i Zen. Twoje dane są w 100% bezpieczne."
       }
     ]
   },
@@ -197,6 +205,46 @@
         "name": "Piotr Zieliński",
         "role": "Nauczyciel liceum, Poznań",
         "content": "Profesjonalne materiały, które naprawdę działają w klasie. Warto zainwestować."
+      },
+      {
+        "name": "Katarzyna Malinowska",
+        "role": "Nauczycielka przedszkola, Wrocław",
+        "content": "Scenariusze dla żłobka i przedszkola to absolutny hit! Dzieci uwielbiają te zajęcia, a ja mam wszystko gotowe w minutę. Dziękuję Kamilo!"
+      },
+      {
+        "name": "Agnieszka Dąbrowska",
+        "role": "Nauczycielka klas 1-3, Łódź",
+        "content": "Speakbook to rewolucja w moich lekcjach. Uczniowie sami proszą o więcej rozmów po angielsku. Jakość nagrań jest niesamowita!"
+      },
+      {
+        "name": "Marcin Lewandowski",
+        "role": "Nauczyciel j. angielskiego, Lublin",
+        "content": "Mega Pack to najlepsza inwestycja, jaką zrobiłem w materiały dydaktyczne. Mam wszystko na cały rok szkolny w jednym miejscu."
+      },
+      {
+        "name": "Joanna Wróbel",
+        "role": "Nauczycielka, Szczecin",
+        "content": "Teatrzyki angielskie to coś, na co czekałam od lat! Uczniowie są zachwyceni, rodzice zachwyceni, dyrekcja zachwycona. Polecam z całego serca!"
+      },
+      {
+        "name": "Beata Kamińska",
+        "role": "Nauczycielka klas 4-6, Bydgoszcz",
+        "content": "Materiały kulturowe i Stories to świetny sposób na rozszerzenie horyzontu uczniów. Bardzo dobra jakość graficzna i merytoryczna."
+      },
+      {
+        "name": "Rafał Szymański",
+        "role": "Nauczyciel w liceum, Katowice",
+        "content": "Korzystam z materiałów od 3 lat. Każdy nowy pakiet jest lepszy od poprzedniego. Widać, że autorka naprawdę słucha nauczycieli."
+      },
+      {
+        "name": "Monika Kowalczyk",
+        "role": "Nauczycielka przedszkola, Białystok",
+        "content": "Flashcardy i gry to moje ulubione materiały. Dzieci uczą się przez zabawę i nie zdają sobie sprawy, że to nauka. Genialne!"
+      },
+      {
+        "name": "Dorota Jankowska",
+        "role": "Nauczycielka, Toruń",
+        "content": "Materiały na pory roku są idealne do planowania całorocznej pracy. Estetyczne, kreatywne i gotowe do druku. Oszczędzam godziny każdego tygodnia!"
       }
     ]
   },

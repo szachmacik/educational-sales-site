@@ -10,6 +10,7 @@ import { Testimonials } from "@/components/testimonials";
 import { Newsletter } from "@/components/newsletter";
 import { Footer } from "@/components/footer";
 import { SocialProofGallery } from "@/components/social-proof-gallery";
+import { LatestBlogPosts } from "@/components/latest-blog-posts";
 import { LanguageProvider } from "@/components/language-provider";
 import fs from 'fs/promises';
 import path from 'path';
@@ -67,6 +68,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         <SocialProofGallery />
         <Features />
         <Testimonials />
+        <LatestBlogPosts />
         <AboutAuthor />
         <Newsletter />
         <Footer />

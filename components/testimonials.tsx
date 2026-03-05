@@ -31,7 +31,8 @@ export function Testimonials() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {/* Show first 6 on mobile, all 12 on desktop via 3-col grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {reviews.map((testimonial: any, index: number) => (
                         <Card
                             key={index}

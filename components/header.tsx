@@ -42,6 +42,7 @@ export function Header() {
   const navLinks = [
     { name: t.nav.products, href: `/${language}/products` },
     { name: t.nav.blog, href: `/${language}/blog` },
+    { name: t.nav.about || (language === 'pl' ? 'O nas' : language === 'uk' ? 'Про нас' : 'About'), href: `/${language}/o-nas` },
     { name: t.nav.faq || "FAQ", href: `/${language}/faq` },
     { name: t.nav.contact, href: `/${language}/contact` },
   ];

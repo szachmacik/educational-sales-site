@@ -95,14 +95,32 @@ export default function OrdersPage() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const stored = localStorage.getItem(STORAGE_KEY);
-        if (stored) {
-            setOrders(JSON.parse(stored));
-        } else {
-            setOrders(SAMPLE_ORDERS);
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(SAMPLE_ORDERS));
-        }
-        setLoading(false);
+        // Try to load real orders from API first, fallback to localStorage/sample
+        const loadOrders = async () => {
+            try {
+                const res = await fetch('/api/orders');
+                if (res.ok) {
+                    const apiOrders = await res.json();
+                    if (Array.isArray(apiOrders) && apiOrders.length > 0) {
+                        setOrders(apiOrders);
+                        localStorage.setItem(STORAGE_KEY, JSON.stringify(apiOrders));
+                        setLoading(false);
+                        return;
+                    }
+                }
+            } catch (e) {
+                // fall through to localStorage
+            }
+            const stored = localStorage.getItem(STORAGE_KEY);
+            if (stored) {
+                setOrders(JSON.parse(stored));
+            } else {
+                setOrders(SAMPLE_ORDERS);
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(SAMPLE_ORDERS));
+            }
+            setLoading(false);
+        };
+        loadOrders();
     }, []);
 
     const filteredOrders = useMemo(() => {

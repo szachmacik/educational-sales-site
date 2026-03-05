@@ -12,7 +12,8 @@
         "login": "Увійти",
         "dashboard": "Панель керування",
         "adminPanel": "Панель Адміна",
-        "verify": "Верифікація"
+        "verify": "Верифікація",
+        "about": "Про нас"
     },
     "brand": {
         "educationalMaterials": "Навчальні Матеріали",

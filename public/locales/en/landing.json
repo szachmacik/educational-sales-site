@@ -21,27 +21,35 @@
     "items": [
       {
         "title": "Instant Access",
-        "desc": "Download materials immediately after purchase"
+        "desc": "Download materials immediately after purchase — no waiting, no registration. Access 24/7 from any device."
       },
       {
         "title": "Native Speaker Recordings",
-        "desc": "Professional audio recordings"
+        "desc": "Professional audio recordings by a native speaker. Perfect pronunciation for your students from the very first lesson."
       },
       {
-        "title": "Innovation Ideas",
-        "desc": "Ready-to-implement projects"
+        "title": "Print-Ready PDFs",
+        "desc": "All materials in print-ready PDF format. Print, distribute, and start the lesson — no preparation needed."
       },
       {
-        "title": "Ready Lesson Plans",
-        "desc": "Detailed lesson scenarios"
+        "title": "Ready-Made Lesson Plans",
+        "desc": "Detailed scenarios with objectives, lesson flow, and methodological tips. Save at least 3 hours per week."
       },
       {
-        "title": "Time Saving",
-        "desc": "Ready-to-print materials"
+        "title": "Classroom-Tested",
+        "desc": "Every material tested with real students. You know it works — because it already worked for thousands of teachers."
       },
       {
-        "title": "Tested in Practice",
-        "desc": "Tested in the classroom"
+        "title": "Free Updates",
+        "desc": "Materials purchased once are updated for free. You always have access to the latest version at no extra cost."
+      },
+      {
+        "title": "Methodological Support",
+        "desc": "Each package includes methodological tips and differentiation suggestions for various student levels."
+      },
+      {
+        "title": "Secure Payments",
+        "desc": "Payments handled by certified PayNow, Stripe, and Zen systems. Your data is 100% secure."
       }
     ]
   },
@@ -179,24 +187,64 @@
     },
     "reviews": [
       {
-        "name": "Sarah Wilson",
-        "role": "English Teacher, London",
-        "content": "The materials are fantastic! My students are engaged like never before. I save a ton of time on lesson prep."
+        "name": "Anna Kowalska",
+        "role": "English Teacher, Warsaw",
+        "content": "The materials are fantastic! My students are more engaged than ever. I save so much time preparing lessons."
       },
       {
-        "name": "James Smith",
-        "role": "Primary School Teacher, Manchester",
-        "content": "Ready-to-use plans and printable materials are a hit. I recommend them to every teacher!"
+        "name": "Tomasz Nowak",
+        "role": "Primary School Teacher, Kraków",
+        "content": "Ready-made lesson plans and printable materials are a perfect choice. I recommend them to every teacher!"
       },
       {
-        "name": "Emily Brown",
-        "role": "Language Tutor, Bristol",
-        "content": "Buying my third pack and I'm delighted with the quality. Native speaker recordings are invaluable!"
+        "name": "Magdalena Wiśniewska",
+        "role": "Teacher, Gdańsk",
+        "content": "I'm buying my third package and I'm delighted with the quality. The native speaker recordings are priceless!"
       },
       {
-        "name": "David Miller",
-        "role": "Secondary Teacher, Birmingham",
-        "content": "Professional materials that really work in class. Worth the investment."
+        "name": "Piotr Zieliński",
+        "role": "High School Teacher, Poznań",
+        "content": "Professional materials that really work in the classroom. Worth every penny."
+      },
+      {
+        "name": "Katarzyna Malinowska",
+        "role": "Preschool Teacher, Wrocław",
+        "content": "The nursery and preschool scenarios are an absolute hit! Children love the classes and I have everything ready in a minute."
+      },
+      {
+        "name": "Agnieszka Dąbrowska",
+        "role": "Grades 1-3 Teacher, Łódź",
+        "content": "Speakbook is a revolution in my lessons. Students ask for more English conversations on their own. The recording quality is amazing!"
+      },
+      {
+        "name": "Marcin Lewandowski",
+        "role": "English Teacher, Lublin",
+        "content": "Mega Pack is the best investment I've made in teaching materials. I have everything for the entire school year in one place."
+      },
+      {
+        "name": "Joanna Wróbel",
+        "role": "Teacher, Szczecin",
+        "content": "English theater plays are something I've been waiting for years! Students are thrilled, parents are thrilled, management is thrilled. Highly recommended!"
+      },
+      {
+        "name": "Beata Kamińska",
+        "role": "Grades 4-6 Teacher, Bydgoszcz",
+        "content": "Cultural materials and Stories are a great way to broaden students' horizons. Very good graphic and substantive quality."
+      },
+      {
+        "name": "Rafał Szymański",
+        "role": "High School Teacher, Katowice",
+        "content": "I've been using the materials for 3 years. Each new package is better than the previous one. You can see that the author really listens to teachers."
+      },
+      {
+        "name": "Monika Kowalczyk",
+        "role": "Preschool Teacher, Białystok",
+        "content": "Flashcards and games are my favorite materials. Children learn through play without realizing it's learning. Genius!"
+      },
+      {
+        "name": "Dorota Jankowska",
+        "role": "Teacher, Toruń",
+        "content": "Seasonal materials are ideal for planning year-round work. Aesthetic, creative, and print-ready. I save hours every week!"
       }
     ]
   },

@@ -42,7 +42,7 @@ import {
 export function CheckoutContent() {
     const { formatPrice, language } = useLanguage();
     const router = useRouter();
-    const { cart, clearCart } = useCart();
+    const { cart, clearCart, applyCoupon, removeCoupon } = useCart();
     const [mounted, setMounted] = React.useState(false);
     const [isSubmitting, setIsSubmitting] = React.useState(false);
     const [isLookingUpNip, setIsLookingUpNip] = React.useState(false);
@@ -86,6 +86,9 @@ export function CheckoutContent() {
     const [userBurnoutLevel, setUserBurnoutLevel] = React.useState(5);
     const [showFomoTimer, setShowFomoTimer] = React.useState(false);
     const [b2bLink, setB2bLink] = React.useState<string | null>(null);
+    const [couponCode, setCouponCode] = React.useState("");
+    const [couponMessage, setCouponMessage] = React.useState<{ success: boolean; text: string } | null>(null);
+    const [couponLoading, setCouponLoading] = React.useState(false);
 
     // MULTI-TIER BUMP OFFERS DATABASE (Visual Authority Edition)
     // Tier 1: Aggressive Upgrade (Substitute)
@@ -949,6 +952,69 @@ export function CheckoutContent() {
                             </div>
 
                             <Separator className="my-8 bg-slate-100" />
+
+                            {/* Coupon Input */}
+                            <div className="mb-6">
+                                {cart.couponCode ? (
+                                    <div className="flex items-center justify-between bg-emerald-50 border border-emerald-200 rounded-xl px-4 py-3">
+                                        <div className="flex items-center gap-2">
+                                            <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                                            <span className="text-sm font-bold text-emerald-700">Kupon: <strong>{cart.couponCode}</strong></span>
+                                        </div>
+                                        <button
+                                            type="button"
+                                            onClick={() => { removeCoupon(); setCouponMessage(null); setCouponCode(""); }}
+                                            className="text-xs text-emerald-600 hover:text-red-600 font-bold transition-colors"
+                                        >
+                                            Usuń
+                                        </button>
+                                    </div>
+                                ) : (
+                                    <div className="space-y-2">
+                                        <div className="flex gap-2">
+                                            <Input
+                                                value={couponCode}
+                                                onChange={(e) => setCouponCode(e.target.value.toUpperCase())}
+                                                placeholder="Kod rabatowy"
+                                                className="h-10 rounded-xl text-sm font-medium uppercase tracking-wider"
+                                                onKeyDown={(e) => {
+                                                    if (e.key === 'Enter') {
+                                                        e.preventDefault();
+                                                        if (!couponCode.trim()) return;
+                                                        setCouponLoading(true);
+                                                        const result = applyCoupon(couponCode, { cart: { couponInvalid: 'Nieprawidłowy kod', couponInactive: 'Kupon nieaktywny', couponExpired: 'Kupon wygasł', couponLimitReached: 'Limit wykorzystany', couponMinOrder: 'Minimalna wartość zamówienia: {minOrderValue}', couponAppliedPercent: 'Rabat {percent}% zastosowany!', couponAppliedFixed: 'Rabat {amount} zł zastosowany!' } });
+                                                        setCouponMessage({ success: result.success, text: result.message });
+                                                        if (result.success) setCouponCode("");
+                                                        setCouponLoading(false);
+                                                    }
+                                                }}
+                                            />
+                                            <Button
+                                                type="button"
+                                                variant="outline"
+                                                size="sm"
+                                                className="h-10 px-4 rounded-xl font-bold shrink-0"
+                                                disabled={couponLoading || !couponCode.trim()}
+                                                onClick={() => {
+                                                    if (!couponCode.trim()) return;
+                                                    setCouponLoading(true);
+                                                    const result = applyCoupon(couponCode, { cart: { couponInvalid: 'Nieprawidłowy kod', couponInactive: 'Kupon nieaktywny', couponExpired: 'Kupon wygasł', couponLimitReached: 'Limit wykorzystany', couponMinOrder: 'Minimalna wartość zamówienia: {minOrderValue}', couponAppliedPercent: 'Rabat {percent}% zastosowany!', couponAppliedFixed: 'Rabat {amount} zł zastosowany!' } });
+                                                    setCouponMessage({ success: result.success, text: result.message });
+                                                    if (result.success) setCouponCode("");
+                                                    setCouponLoading(false);
+                                                }}
+                                            >
+                                                {couponLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Zastosuj"}
+                                            </Button>
+                                        </div>
+                                        {couponMessage && (
+                                            <p className={`text-xs font-medium ${couponMessage.success ? 'text-emerald-600' : 'text-red-500'}`}>
+                                                {couponMessage.success ? '✓ ' : '✗ '}{couponMessage.text}
+                                            </p>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
 
                             {/* Totals */}
                             <div className="space-y-2">

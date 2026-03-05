@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { Award, BookOpen, GraduationCap, Heart, Users } from "lucide-react";
+import Link from "next/link";
+import { Award, BookOpen, GraduationCap, Heart, Users, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/components/language-provider";
+import { Button } from "@/components/ui/button";
 
 export function AboutAuthor() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const achievements = [
     {
@@ -90,6 +92,15 @@ export function AboutAuthor() {
               {t.aboutAuthor.description2}
             </p>
 
+            {/* CTA to o-nas page */}
+            <div className="mb-8">
+              <Link href={`/${language}/o-nas`}>
+                <Button variant="outline" className="group">
+                  {language === 'pl' ? 'Dowiedz się więcej o mnie' : language === 'uk' ? 'Дізнайтесь більше про мене' : 'Learn more about me'}
+                  <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+            </div>
             {/* Achievement stats */}
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
               {achievements.map((item) => (

@@ -11,6 +11,7 @@ export interface BlogPost {
     category: string;
     tags: string[];
     status: 'draft' | 'published';
+    readingTime?: number; // minutes
     seo: {
         metaTitle: string;
         metaDescription: string;
@@ -61,6 +62,13 @@ export function generateBlogId(): string {
     return `post_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
 }
 
+// Estimate reading time from HTML content
+export function estimateReadingTime(content: string): number {
+    const text = content.replace(/<[^>]+>/g, ' ');
+    const words = text.trim().split(/\s+/).length;
+    return Math.max(1, Math.ceil(words / 200));
+}
+
 // Sample blog posts for demo
 export const SAMPLE_BLOG_POSTS: BlogPost[] = [
     {
@@ -77,21 +85,27 @@ export const SAMPLE_BLOG_POSTS: BlogPost[] = [
     <li><strong>Dbaj o regularny sen</strong> i aktywność fizyczną. Twój umysł potrzebuje tlenu i regeneracji, by pracować na najwyższych obrotach.</li>
     <li><strong>Buduj wspierającą sieć relacji</strong> z innymi nauczycielami. Współdzielenie doświadczeń i wzajemne wsparcie potrafią zdziałać cuda w trudniejszych momentach.</li>
 </ul>
+<h2>Techniki mindfulness dla nauczycieli</h2>
+<p>Coraz więcej szkół wprowadza praktyki mindfulness nie tylko dla uczniów, ale i dla kadry pedagogicznej. Nawet 5 minut świadomego oddechu przed lekcją może diametralnie zmienić Twoją energię i nastawienie.</p>
+<blockquote><p>„Nie możesz wylać z pustego kubka. Zadbaj o siebie, by móc dawać innym." — popularne powiedzenie wśród coachów edukacyjnych</p></blockquote>
+<h2>Kiedy szukać pomocy?</h2>
+<p>Wypalenie zawodowe to realne zjawisko dotykające nawet 40% nauczycieli. Jeśli czujesz chroniczne zmęczenie, cynizm wobec pracy lub brak satysfakcji z sukcesów uczniów — to sygnał, by porozmawiać ze specjalistą. Nie ma w tym nic wstydliwego. To akt odwagi i troski o siebie i swoich uczniów.</p>
 <p>Pamiętaj, że jesteś dla swoich uczniów wzorem. Pokazując im, jak dbasz o siebie, uczysz ich jednej z najważniejszych lekcji w życiu: szacunku do własnych potrzeb i zdrowia.</p>`,
         excerpt: "Praktyczne wskazówki dla nauczycieli, jak unikać wypalenia zawodowego i czerpać radość z nauczania każdego dnia. Odkryj moc balansu.",
         featuredImage: "/teacher_wellbeing_1770205785997.png",
         author: "Kamila Łobko-Koziej",
         category: "inspiracje",
         tags: ["dobrostan", "nauczyciel", "psychologia", "balans"],
+        readingTime: 5,
         status: "published",
         seo: {
             metaTitle: "Dobrostan nauczyciela - jak o niego zadbać? | Nasz Blog",
             metaDescription: "Dowiedz się jak dbać o swoje zdrowie psychiczne i fizyczne będąc nauczycielem. Sprawdzone metody Kamili Łobko-Koziej.",
             ogImage: "/teacher_wellbeing_1770205785997.png",
         },
-        createdAt: new Date().toISOString(),
-        updatedAt: new Date().toISOString(),
-        publishedAt: new Date().toISOString(),
+        createdAt: new Date(Date.now() - 0 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 0 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 0 * 24 * 60 * 60 * 1000).toISOString(),
     },
     {
         id: "post_discipline",
@@ -102,12 +116,17 @@ export const SAMPLE_BLOG_POSTS: BlogPost[] = [
 <h2>Techniki zarządzania klasą</h2>
 <p>Wprowadzenie jasnych zasad na początku roku to podstawa. Ważne jest jednak, aby te zasady były współtworzone z uczniami – daje im to poczucie sprawstwa i odpowiedzialności za atmosferę w grupie.</p>
 <h3>Metoda pozytywnej dyscypliny</h3>
-<p>Skoncentruj się na rozwiązaniach, a nie na karach. Pytaj uczniów: 'Co możemy zrobić, aby następnym razem ta sytuacja się nie powtórzyła?', zamiast szukać winnego. To buduje kompetencje społeczne i uczy rozwiązywania konfliktów w sposób konstruktywny.</p>`,
+<p>Skoncentruj się na rozwiązaniach, a nie na karach. Pytaj uczniów: <em>„Co możemy zrobić, aby następnym razem ta sytuacja się nie powtórzyła?"</em>, zamiast szukać winnego. To buduje kompetencje społeczne i uczy rozwiązywania konfliktów w sposób konstruktywny.</p>
+<h2>Sygnały ostrzegawcze i profilaktyka</h2>
+<p>Zanim sytuacja wymknie się spod kontroli, warto reagować na wczesne sygnały: rosnące napięcie w grupie, konflikty między uczniami czy narastające rozproszenie uwagi. Regularne rozmowy jeden na jeden z uczniami, którzy sprawiają trudności, mogą zdziałać cuda.</p>
+<h2>Kiedy nic nie działa</h2>
+<p>Czasem mimo najlepszych starań potrzebna jest pomoc pedagoga szkolnego lub psychologa. Nie traktuj tego jako porażkę — to profesjonalizm i troska o dobro ucznia. Budowanie sieci wsparcia wokół trudnego ucznia to najskuteczniejsza strategia długoterminowa.</p>`,
         excerpt: "Jak radzić sobie z wyzwaniami wychowawczymi w klasie? Poznaj systemowe podejście do dyscypliny oparte na szacunku i relacjach.",
         featuredImage: "/classroom_discipline_1770205801695.png",
         author: "Kamila Łobko-Koziej",
         category: "metodyka",
         tags: ["dyscyplina", "zarządzanie klasą", "pedagogika", "relacje"],
+        readingTime: 6,
         status: "published",
         seo: {
             metaTitle: "Dyscyplina i zarządzanie klasą - Skuteczne Metody | Nasz Blog",
@@ -127,12 +146,23 @@ export const SAMPLE_BLOG_POSTS: BlogPost[] = [
 <h2>Wykorzystanie piosenek i rymowanek</h2>
 <p>Muzyka pomaga w zapamiętywaniu całych fraz i struktur językowych bez wysiłku. Rytm i melodia działają jak kotwice, które pozwalają dziecku wrócić do poznanego materiału nawet po długim czasie.</p>
 <h3>Gry ruchowe w nauczaniu</h3>
-<p>Nigdy nie lekceważ mocy zwykłej piłki czy gry w berka. Zamień nudne powtarzanie w ekscytującą zabawę. 'Simon Says' czy 'What's the time, Mr. Wolf?' to klasyki, które wciąż działają magicznie, angażując każde dziecko w grupie.</p>`,
+<p>Nigdy nie lekceważ mocy zwykłej piłki czy gry w berka. Zamień nudne powtarzanie w ekscytującą zabawę. <em>Simon Says</em> czy <em>What's the time, Mr. Wolf?</em> to klasyki, które wciąż działają magicznie, angażując każde dziecko w grupie.</p>
+<h2>Materiały wizualne i manipulacyjne</h2>
+<p>Karty obrazkowe, kukiełki, kolorowe kostki — to wszystko sprawia, że język staje się namacalny. Dzieci w wieku 3–6 lat myślą konkretnie, więc im więcej zmysłów zaangażujesz, tym trwalsze będzie zapamiętanie.</p>
+<h2>Jak planować 30-minutową lekcję dla maluchów?</h2>
+<ul>
+    <li><strong>0–5 min:</strong> Powitanie i piosenka na dobry start (np. Hello Song)</li>
+    <li><strong>5–12 min:</strong> Wprowadzenie nowego słownictwa z kartami obrazkowymi</li>
+    <li><strong>12–20 min:</strong> Gra ruchowa utrwalająca materiał</li>
+    <li><strong>20–27 min:</strong> Mini-projekt plastyczny lub praca z kartą pracy</li>
+    <li><strong>27–30 min:</strong> Piosenka na pożegnanie i podsumowanie</li>
+</ul>`,
         excerpt: "Jak sprawić, by najmłodsi naturalnie przyswajali język angielski? Odkryj moc zabawy, muzyki i ruchu w nauczaniu przedszkolnym.",
         featuredImage: "/teaching_kids_english_1770205820508.png",
         author: "Kamila Łobko-Koziej",
         category: "materialy",
         tags: ["dzieci", "przedszkole", "zabawa", "TPR"],
+        readingTime: 7,
         status: "published",
         seo: {
             metaTitle: "Nauczanie angielskiego w przedszkolu - Gry i Zabawy | Nasz Blog",
@@ -152,12 +182,22 @@ export const SAMPLE_BLOG_POSTS: BlogPost[] = [
 <h2>Metoda projektowa w akcji</h2>
 <p>Pozwól uczniom tworzyć: podcasty, kampanie społeczne czy mini-projekty biznesowe. To buduje ich pewność siebie w używaniu języka i pozwala poczuć, że język angielski to narzędzie, a nie tylko przedmiot szkolny.</p>
 <h3>Komunikacja ponad wszystko</h3>
-<p>Stwarzaj sytuacje, w których komunikacja jest naturalna. Debaty na kontrowersyjne tematy (dostosowane do wieku), odgrywanie ról z życia codziennego czy wspólne rozwiązywanie problemów sprawiają, że bariera językowa znika.</p>`,
+<p>Stwarzaj sytuacje, w których komunikacja jest naturalna. Debaty na kontrowersyjne tematy (dostosowane do wieku), odgrywanie ról z życia codziennego czy wspólne rozwiązywanie problemów sprawiają, że bariera językowa znika.</p>
+<h2>Przykładowe projekty dla grup 13–17 lat</h2>
+<ul>
+    <li><strong>Podcast klasowy:</strong> Uczniowie nagrywają odcinki o swoich pasjach po angielsku</li>
+    <li><strong>Kampania społeczna:</strong> Plakaty, posty i przemówienie na temat ważny dla nich</li>
+    <li><strong>Mock interview:</strong> Symulacja rozmowy kwalifikacyjnej po angielsku</li>
+    <li><strong>Book club:</strong> Czytanie i dyskutowanie o anglojęzycznych komiksach lub YA fiction</li>
+</ul>
+<h2>Jak oceniać projekty?</h2>
+<p>Oceniaj komunikatywność, nie perfekcję. Nastolatek, który mówi z błędami, ale pewnie i zrozumiale, robi większy postęp niż ten, który milczy ze strachu przed pomyłką. Twórz środowisko, w którym błąd jest częścią procesu, a nie powodem do wstydu.</p>`,
         excerpt: "Praktyczne sposoby na budowanie zaangażowania w grupach 13+. Dowiedz się, dlaczego projekty i autentyczność działają lepiej niż podręcznik.",
         featuredImage: "/teen_english_class_1770206330732.png",
         author: "Kamila Łobko-Koziej",
         category: "metodyka",
         tags: ["nastolatki", "projekty", "komunikacja", "motywacja"],
+        readingTime: 8,
         status: "published",
         seo: {
             metaTitle: "Nauczanie nastolatków - Metody i Inspiracje | Nasz Blog",
@@ -173,16 +213,26 @@ export const SAMPLE_BLOG_POSTS: BlogPost[] = [
         title: "Jak wykorzystać AI w nauce języków obcych?",
         slug: "ai-w-nauce-jezykow",
         content: `<h2>Era sztucznej inteligencji w edukacji</h2>
-<p>Sztuczna inteligencja rewolucjonizuje sposób, w jaki uczymy i uczymy się języków. To nie jest zagrożenie, lecz potężne narzędzie, które może odciążyć nauczyciela od żmudnych zadań.</p>
+<p>Sztuczna inteligencja rewolucjonizuje sposób, w jaki uczymy i uczymy się języków. To nie jest zagrożenie, lecz potężne narzędzie, które może odciążyć nauczyciela od żmudnych zadań i dać uczniom dostęp do spersonalizowanego wsparcia 24/7.</p>
 <h2>ChatGPT jako asystent nauczyciela</h2>
 <p>Możesz używać ChatGPT do generowania dialogów na dowolny temat, tworzenia spersonalizowanych ćwiczeń gramatycznych w kilka sekund czy pisania scenariuszy konwersacyjnych dostosowanych do poziomu Twojej grupy.</p>
-<h3>AI dla uczniów</h3>
-<p>Zachęcaj uczniów do używania AI jako partnera do rozmowy lub narzędzia do korekty tekstów. Dzięki temu mogą ćwiczyć język również poza salą lekcyjną, otrzymując natychmiastową informację zwrotną.</p>`,
+<h3>Praktyczne zastosowania AI w klasie</h3>
+<ul>
+    <li><strong>Generowanie ćwiczeń:</strong> „Stwórz 10 zdań z lukami do uzupełnienia na poziomie B1 na temat podróży"</li>
+    <li><strong>Korekta tekstów:</strong> Uczniowie wklejają swoje wypracowania, AI daje feedback</li>
+    <li><strong>Scenariusze konwersacyjne:</strong> AI odgrywa rolę kelnera, lekarza czy pracodawcy</li>
+    <li><strong>Tłumaczenie i wyjaśnienia:</strong> Natychmiastowe wyjaśnienie trudnych słów w kontekście</li>
+</ul>
+<h2>AI dla uczniów</h2>
+<p>Zachęcaj uczniów do używania AI jako partnera do rozmowy lub narzędzia do korekty tekstów. Dzięki temu mogą ćwiczyć język również poza salą lekcyjną, otrzymując natychmiastową informację zwrotną.</p>
+<h2>Granice i etyka</h2>
+<p>Ważne jest, by uczniowie rozumieli, że AI to narzędzie wspomagające, a nie zastępujące myślenie. Ucz ich weryfikowania informacji i krytycznego podejścia do odpowiedzi generowanych przez AI. To cenna kompetencja na resztę życia.</p>`,
         excerpt: "Dowiedz się, jak wykorzystać sztuczną inteligencję w nauczaniu języków obcych. Praktyczny przewodnik z konkretnymi przykładami.",
         featuredImage: "/ai_education_1770206350000.png",
         author: "Kamila Łobko-Koziej",
         category: "technologia",
         tags: ["AI", "technologia", "innowacje", "ChatGPT"],
+        readingTime: 7,
         status: "published",
         seo: {
             metaTitle: "AI w nauce języków obcych - Przewodnik | Nasz Blog",
@@ -192,5 +242,276 @@ export const SAMPLE_BLOG_POSTS: BlogPost[] = [
         createdAt: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
         updatedAt: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
         publishedAt: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    // --- NEW POSTS ---
+    {
+        id: "post_gamification",
+        title: "Grywalizacja w klasie: Jak zamienić lekcję w przygodę?",
+        slug: "grywalizacja-w-klasie-lekcja-jako-gra",
+        content: `<h2>Czym jest grywalizacja?</h2>
+<p>Grywalizacja (ang. <em>gamification</em>) to zastosowanie mechanizmów znanych z gier — punktów, poziomów, odznak, rankingów — w kontekście edukacyjnym. Nie chodzi o to, by lekcja była grą, ale by miała elementy, które sprawiają, że uczniowie chcą się angażować i rozwijać.</p>
+<h2>Dlaczego to działa?</h2>
+<p>Mózg ludzki uwielbia nagrody. Dopamina wydzielana przy zdobyciu punktu czy awansie na wyższy poziom jest tym samym neuroprzekaźnikiem, który odpowiada za motywację i zapamiętywanie. Grywalizacja po prostu <strong>wykorzystuje biologię</strong> na korzyść nauki.</p>
+<h2>Proste sposoby na wdrożenie grywalizacji</h2>
+<ul>
+    <li><strong>System punktów:</strong> Za aktywność, poprawne odpowiedzi, pomoc koleżance — każdy gest ma wartość</li>
+    <li><strong>Odznaki:</strong> „Mistrz gramatyki", „Śmiałek konwersacji", „Pomocna dłoń" — uczniowie zbierają je przez cały rok</li>
+    <li><strong>Misje tygodniowe:</strong> „Użyj 5 nowych słówek w rozmowie" — krótkie, mierzalne wyzwania</li>
+    <li><strong>Tablica wyników:</strong> Nie musi być rywalizacyjna — może pokazywać postęp każdego ucznia względem siebie samego</li>
+    <li><strong>Poziomy trudności:</strong> Uczniowie sami wybierają poziom zadania — łatwy, średni, trudny — i zdobywają odpowiednio więcej punktów</li>
+</ul>
+<h2>Narzędzia cyfrowe</h2>
+<p>Platformy takie jak Kahoot!, Quizlet Live, Gimkit czy Blooket pozwalają w kilka minut stworzyć angażujące quizy i gry językowe. Wiele z nich jest bezpłatnych w wersji podstawowej i działa świetnie zarówno w klasie, jak i zdalnie.</p>
+<h2>Pułapki grywalizacji</h2>
+<p>Uważaj na nadmierną rywalizację — może ona demotywować słabszych uczniów. Najlepsze systemy grywalizacyjne nagradzają <strong>postęp i wysiłek</strong>, a nie tylko wyniki. Zadbaj o to, by każdy uczeń miał szansę na sukces.</p>`,
+        excerpt: "Odkryj, jak mechanizmy gier mogą transformować zaangażowanie uczniów. Praktyczny przewodnik po grywalizacji w nauczaniu języka angielskiego.",
+        featuredImage: "/teacher_wellbeing_1770205785997.png",
+        author: "Kamila Łobko-Koziej",
+        category: "metodyka",
+        tags: ["grywalizacja", "gamification", "motywacja", "narzędzia"],
+        readingTime: 8,
+        status: "published",
+        seo: {
+            metaTitle: "Grywalizacja w klasie - Jak wdrożyć? | Kamila English Blog",
+            metaDescription: "Grywalizacja w nauczaniu angielskiego — praktyczne metody, narzędzia i przykłady. Zamień lekcję w ekscytującą przygodę.",
+            ogImage: "/teacher_wellbeing_1770205785997.png",
+        },
+        createdAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+        id: "post_reading",
+        title: "Czytanie po angielsku: Od bajek do powieści — jak budować nawyk?",
+        slug: "czytanie-po-angielsku-jak-budowac-nawyk",
+        content: `<h2>Dlaczego czytanie jest kluczowe?</h2>
+<p>Badania językoznawcze jednoznacznie potwierdzają: osoby, które dużo czytają w języku obcym, osiągają wyższy poziom biegłości szybciej niż te, które polegają wyłącznie na ćwiczeniach gramatycznych. Czytanie buduje słownictwo, wyczucie stylu i intuicję językową w sposób, którego żaden podręcznik nie zastąpi.</p>
+<h2>Jak zacząć — dobór materiałów</h2>
+<p>Kluczem jest zasada <strong>i+1</strong> (Stephen Krashen): materiał powinien być nieznacznie powyżej aktualnego poziomu ucznia. Zbyt łatwy nie rozwija, zbyt trudny zniechęca.</p>
+<h3>Rekomendacje według poziomu</h3>
+<ul>
+    <li><strong>A1–A2:</strong> Graded readers (np. Oxford Bookworms Stage 1–2), komiksy Peppa Pig, proste bajki</li>
+    <li><strong>B1–B2:</strong> Graded readers Stage 3–5, powieści YA (np. Diary of a Wimpy Kid, Percy Jackson), artykuły z Newsela</li>
+    <li><strong>C1–C2:</strong> Oryginalne powieści (Harry Potter, The Hunger Games), artykuły z The Guardian, eseje</li>
+</ul>
+<h2>Techniki aktywnego czytania</h2>
+<p>Samo czytanie to za mało — warto wdrożyć techniki, które pogłębiają rozumienie:</p>
+<ul>
+    <li><strong>Vocabulary journal:</strong> Zapisywanie nowych słów z kontekstem (nie tylko tłumaczenia)</li>
+    <li><strong>Reading aloud:</strong> Głośne czytanie poprawia wymowę i rytm języka</li>
+    <li><strong>Retelling:</strong> Opowiadanie przeczytanego fragmentu własnymi słowami</li>
+    <li><strong>Book club:</strong> Dyskusja o przeczytanej książce w grupie</li>
+</ul>
+<h2>Budowanie nawyku — 15 minut dziennie</h2>
+<p>Zachęcaj uczniów do czytania codziennie przez 15 minut — to wystarczy, by w ciągu roku przeczytać kilka książek. Połącz to z aplikacją do śledzenia postępów (np. Goodreads) i obserwuj, jak motywacja rośnie.</p>`,
+        excerpt: "Jak zachęcić uczniów do regularnego czytania po angielsku? Dobór materiałów, techniki aktywnego czytania i budowanie trwałego nawyku.",
+        featuredImage: "/classroom_discipline_1770205801695.png",
+        author: "Kamila Łobko-Koziej",
+        category: "materialy",
+        tags: ["czytanie", "reading", "słownictwo", "nawyk"],
+        readingTime: 9,
+        status: "published",
+        seo: {
+            metaTitle: "Czytanie po angielsku - Jak budować nawyk? | Kamila English Blog",
+            metaDescription: "Praktyczny przewodnik po budowaniu nawyku czytania w języku angielskim. Dobór materiałów, techniki i motywacja dla każdego poziomu.",
+            ogImage: "/classroom_discipline_1770205801695.png",
+        },
+        createdAt: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+        id: "post_speaking",
+        title: "Mówienie bez strachu: Jak pokonać barierę komunikacyjną?",
+        slug: "mowienie-po-angielsku-bariera-komunikacyjna",
+        content: `<h2>Skąd bierze się bariera językowa?</h2>
+<p>Strach przed mówieniem w języku obcym to jeden z najczęstszych problemów, z jakimi borykają się uczniowie na każdym poziomie. Jego źródłem jest zazwyczaj lęk przed oceną, perfekcjonizm i brak okazji do praktyki w bezpiecznym środowisku.</p>
+<h2>Środowisko bezpieczne do mówienia</h2>
+<p>Pierwszym krokiem jest stworzenie atmosfery, w której błąd jest naturalną częścią procesu uczenia się. Reaguj na błędy z ciekawością, a nie krytyką. Zamiast poprawiać natychmiast, notuj błędy i omawiaj je zbiorowo po zakończeniu aktywności.</p>
+<h2>Techniki przełamywania bariery</h2>
+<h3>1. Mówienie do siebie (self-talk)</h3>
+<p>Zachęcaj uczniów do komentowania swoich codziennych czynności po angielsku — w myślach lub na głos. To buduje płynność bez presji publicznej oceny.</p>
+<h3>2. Shadowing</h3>
+<p>Naśladowanie native speakerów — powtarzanie za filmem, podcastem czy piosenką — to jedna z najskuteczniejszych metod poprawy wymowy i naturalności języka.</p>
+<h3>3. Konwersacje z AI</h3>
+<p>Chatboty takie jak ChatGPT czy Duolingo Max oferują bezpieczne środowisko do ćwiczenia rozmów bez strachu przed oceną. Idealne dla nieśmiałych uczniów.</p>
+<h3>4. Fluency activities</h3>
+<p>Ćwiczenia skupione wyłącznie na płynności (nie poprawności): 2-minutowe monologi na losowy temat, speed dating konwersacyjne, debaty z losowo przydzielonymi stronami.</p>
+<h2>Rola nauczyciela</h2>
+<p>Twój entuzjazm i cierpliwość są zaraźliwe. Uczniowie, którzy widzą, że nauczyciel sam nie boi się popełniać błędów i śmieje się z własnych wpadek językowych, szybciej otwierają się na mówienie. Bądź modelem odwagi językowej.</p>`,
+        excerpt: "Praktyczne strategie pomagające uczniom przełamać strach przed mówieniem po angielsku. Techniki, ćwiczenia i rola środowiska klasowego.",
+        featuredImage: "/teen_english_class_1770206330732.png",
+        author: "Kamila Łobko-Koziej",
+        category: "metodyka",
+        tags: ["mówienie", "speaking", "bariera językowa", "komunikacja"],
+        readingTime: 7,
+        status: "published",
+        seo: {
+            metaTitle: "Bariera komunikacyjna - Jak ją pokonać? | Kamila English Blog",
+            metaDescription: "Jak pomóc uczniom przełamać strach przed mówieniem po angielsku? Sprawdzone techniki i strategie dla nauczycieli.",
+            ogImage: "/teen_english_class_1770206330732.png",
+        },
+        createdAt: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+        id: "post_lesson_planning",
+        title: "Planowanie lekcji w 20 minut: Szablon, który działa.",
+        slug: "planowanie-lekcji-angielskiego-szablon",
+        content: `<h2>Mit idealnego konspektu</h2>
+<p>Wielu nauczycieli spędza godziny na pisaniu rozbudowanych konspektów, które i tak nie są realizowane punkt po punkcie. Tymczasem dobra lekcja potrzebuje struktury, a nie scenariusza filmowego. Oto mój sprawdzony szablon, który pozwala zaplanować efektywną lekcję w 20 minut.</p>
+<h2>Struktura PPPPP</h2>
+<p>Klasyczna struktura lekcji języka obcego opiera się na 5 fazach:</p>
+<ul>
+    <li><strong>Presentation (Prezentacja):</strong> Wprowadzenie nowego materiału w kontekście (5–10 min)</li>
+    <li><strong>Practice (Ćwiczenie kontrolowane):</strong> Ćwiczenia z dużym wsparciem nauczyciela (10–15 min)</li>
+    <li><strong>Production (Produkcja):</strong> Swobodne użycie języka przez uczniów (10–15 min)</li>
+</ul>
+<h2>Mój 20-minutowy szablon planowania</h2>
+<ol>
+    <li><strong>Cel lekcji (2 min):</strong> Co uczeń będzie umiał po lekcji? (1 zdanie: „Uczniowie będą umieli opisać swój dzień używając czasu Past Simple")</li>
+    <li><strong>Warmer (2 min):</strong> Krótka aktywność rozgrzewkowa nawiązująca do tematu</li>
+    <li><strong>Prezentacja (5 min):</strong> Jak wprowadzę nowy materiał? (kontekst, przykłady, CCQ)</li>
+    <li><strong>Ćwiczenie (5 min):</strong> Jakie ćwiczenie utrwali materiał?</li>
+    <li><strong>Produkcja (5 min):</strong> Jak uczniowie użyją języka samodzielnie?</li>
+    <li><strong>Ocena i zadanie domowe (1 min):</strong> Jak sprawdzę, czy cel został osiągnięty?</li>
+</ol>
+<h2>Gotowe szablony do pobrania</h2>
+<p>W naszym sklepie znajdziesz gotowe szablony konspektów dostosowane do różnych grup wiekowych i poziomów. Każdy szablon zawiera wskazówki metodyczne i przykładowe aktywności — wystarczy uzupełnić luki!</p>
+<h2>Elastyczność jest kluczem</h2>
+<p>Najlepszy plan to taki, który możesz zmodyfikować w locie. Zawsze miej przygotowaną jedną dodatkową aktywność na wypadek, gdy lekcja pójdzie szybciej niż planowałeś, i jedną aktywność, którą możesz skrócić lub pominąć bez straty dla całości.</p>`,
+        excerpt: "Efektywne planowanie lekcji nie musi zajmować godzin. Poznaj sprawdzony 20-minutowy szablon, który zapewnia strukturę bez ograniczania kreatywności.",
+        featuredImage: "/ai_education_1770206350000.png",
+        author: "Kamila Łobko-Koziej",
+        category: "materialy",
+        tags: ["planowanie lekcji", "konspekt", "metodyka", "efektywność"],
+        readingTime: 8,
+        status: "published",
+        seo: {
+            metaTitle: "Planowanie lekcji angielskiego - Szablon 20 min | Kamila English Blog",
+            metaDescription: "Jak zaplanować efektywną lekcję angielskiego w 20 minut? Sprawdzony szablon i struktura PPPPP dla nauczycieli.",
+            ogImage: "/ai_education_1770206350000.png",
+        },
+        createdAt: new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+        id: "post_vocabulary",
+        title: "Słownictwo bez zakuwania: Metody, które naprawdę działają.",
+        slug: "nauka-slownictwa-angielskiego-metody",
+        content: `<h2>Problem z tradycyjnym zakuwaniem</h2>
+<p>Lista 20 słówek do nauczenia na jutro — znasz to? Uczniowie uczą się ich wieczorem, zdają sprawdzian rano, a tydzień później nie pamiętają połowy. To klasyczny przykład uczenia się krótkoterminowego, które nie przekłada się na rzeczywistą znajomość języka.</p>
+<h2>Jak naprawdę działa pamięć?</h2>
+<p>Badania nad pamięcią (Hermann Ebbinghaus, krzywa zapominania) pokazują, że bez powtórek zapominamy 70% nowego materiału w ciągu 24 godzin. Klucz to <strong>powtarzanie z odstępami</strong> (spaced repetition) — powtarzanie materiału w rosnących interwałach czasowych.</p>
+<h2>Skuteczne metody nauki słownictwa</h2>
+<h3>1. Spaced Repetition (SRS)</h3>
+<p>Aplikacje takie jak Anki czy Quizlet automatycznie planują powtórki w optymalnych momentach. Zachęcaj uczniów do codziennych 10-minutowych sesji zamiast jednorazowego maratonu przed sprawdzianem.</p>
+<h3>2. Słowa w kontekście</h3>
+<p>Nigdy nie ucz słów w izolacji. Zawsze wprowadzaj je w zdaniu, historii lub dialogu. Mózg zapamiętuje znaczenie przez skojarzenia, nie przez definicje.</p>
+<h3>3. Technika słów kluczowych (keyword method)</h3>
+<p>Tworzenie wizualnych skojarzeń między nowym słowem a podobnie brzmiącym słowem w języku ojczystym. Np. <em>butterfly</em> → „masło leci" → motyl. Absurdalne skojarzenia zapamiętujemy najlepiej!</p>
+<h3>4. Word mapping</h3>
+<p>Tworzenie map myśli wokół jednego słowa: synonimy, antonimy, kolokacje, przykładowe zdania. To buduje sieć skojarzeń, która wzmacnia zapamiętywanie.</p>
+<h3>5. Aktywne użycie</h3>
+<p>Słowo jest naprawdę zapamiętane dopiero wtedy, gdy zostało użyte kilka razy w różnych kontekstach. Twórz ćwiczenia, które zmuszają uczniów do aktywnego użycia nowych słów, nie tylko ich rozpoznania.</p>
+<h2>Ile słów dziennie?</h2>
+<p>Badania sugerują, że optymalna liczba nowych słów do nauki dziennie to <strong>5–15</strong>. Mniej, ale regularnie i z powtórkami, daje znacznie lepsze efekty niż jednorazowe przyswajanie dużych list.</p>`,
+        excerpt: "Koniec z zakuwaniem list słówek! Poznaj naukowo potwierdzone metody nauki słownictwa, które budują trwałą znajomość języka.",
+        featuredImage: "/teaching_kids_english_1770205820508.png",
+        author: "Kamila Łobko-Koziej",
+        category: "metodyka",
+        tags: ["słownictwo", "vocabulary", "pamięć", "spaced repetition"],
+        readingTime: 9,
+        status: "published",
+        seo: {
+            metaTitle: "Nauka słownictwa angielskiego - Skuteczne Metody | Kamila English Blog",
+            metaDescription: "Jak uczyć słownictwa angielskiego skutecznie? Spaced repetition, kontekst i techniki pamięciowe — przewodnik dla nauczycieli.",
+            ogImage: "/teaching_kids_english_1770205820508.png",
+        },
+        createdAt: new Date(Date.now() - 18 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 18 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 18 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+        id: "post_christmas_lessons",
+        title: "Boże Narodzenie po angielsku: 10 gotowych aktywności na grudzień.",
+        slug: "bozenaroodzenie-angielski-aktywnosci-grudzien",
+        content: `<h2>Magia świąt w klasie językowej</h2>
+<p>Grudzień to wyjątkowy czas w roku szkolnym. Uczniowie są zmotywowani, atmosfera jest radosna, a temat świąt Bożego Narodzenia daje ogromne możliwości językowe — od słownictwa tematycznego, przez tradycje kulturowe, po autentyczne materiały (kolędy, filmy, reklamy).</p>
+<h2>10 aktywności na lekcje świąteczne</h2>
+<ol>
+    <li><strong>Christmas Vocabulary Bingo:</strong> Karty bingo ze słownictwem świątecznym — idealne na rozgrzewkę</li>
+    <li><strong>Secret Santa w języku angielskim:</strong> Uczniowie losują imię i piszą krótki opis prezentu, który by kupili</li>
+    <li><strong>Kolęda jako dyktando:</strong> Słuchanie <em>Jingle Bells</em> i uzupełnianie luk w tekście</li>
+    <li><strong>Christmas Around the World:</strong> Prezentacje o tradycjach świątecznych w różnych krajach</li>
+    <li><strong>Letter to Santa:</strong> Pisanie listu do Świętego Mikołaja — ćwiczenie pisania formalnego i nieformalnego</li>
+    <li><strong>Christmas Movie Trailer:</strong> Oglądanie trailera świątecznego filmu i dyskusja</li>
+    <li><strong>Recipe Exchange:</strong> Uczniowie opisują po angielsku ulubiony świąteczny przepis</li>
+    <li><strong>Christmas Debate:</strong> „Is Christmas too commercial?" — debata dla starszych grup</li>
+    <li><strong>Advent Calendar:</strong> Codzienne mini-ćwiczenie językowe przez cały grudzień</li>
+    <li><strong>Christmas Quiz:</strong> Wiedza o tradycjach anglojęzycznych krajów — Wielka Brytania, USA, Australia</li>
+</ol>
+<h2>Materiały gotowe do użycia</h2>
+<p>W naszym sklepie znajdziesz gotowe zestawy materiałów świątecznych — karty pracy, gry, scenariusze lekcji i prezentacje multimedialne. Wszystko zaprojektowane tak, by zaoszczędzić Twój czas i zapewnić uczniom niezapomniane lekcje.</p>
+<h2>Wskazówka końcowa</h2>
+<p>Pamiętaj o uczniach niechrześcijańskich w swojej grupie. Warto poszerzyć perspektywę o inne zimowe święta: Hanukkah, Kwanzaa, Diwali (jeśli wypada w tym czasie) — to świetna okazja do rozmowy o różnorodności kulturowej.</p>`,
+        excerpt: "10 gotowych aktywności na świąteczne lekcje angielskiego w grudniu. Bingo, kolędy, debaty i więcej — dla wszystkich grup wiekowych.",
+        featuredImage: "/classroom_discipline_1770205801695.png",
+        author: "Kamila Łobko-Koziej",
+        category: "materialy",
+        tags: ["Boże Narodzenie", "Christmas", "aktywności", "grudzień"],
+        readingTime: 6,
+        status: "published",
+        seo: {
+            metaTitle: "Lekcje angielskiego na Boże Narodzenie - 10 Aktywności | Kamila English Blog",
+            metaDescription: "Gotowe aktywności i pomysły na świąteczne lekcje angielskiego. Bingo, kolędy, debaty i projekty dla każdego poziomu.",
+            ogImage: "/classroom_discipline_1770205801695.png",
+        },
+        createdAt: new Date(Date.now() - 21 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 21 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 21 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+        id: "post_assessment",
+        title: "Ocenianie kształtujące: Jak dawać feedback, który naprawdę pomaga?",
+        slug: "ocenianie-ksztaltujace-feedback-angielski",
+        content: `<h2>Ocenianie sumujące vs. kształtujące</h2>
+<p>Tradycyjne ocenianie (stopień na koniec semestru) mówi uczniowi, <em>gdzie jest</em>. Ocenianie kształtujące (formative assessment) mówi mu, <em>jak tam dotrzeć</em>. To fundamentalna różnica, która zmienia podejście do nauki.</p>
+<h2>Zasady skutecznego feedbacku</h2>
+<p>Dobry feedback językowy powinien być:</p>
+<ul>
+    <li><strong>Konkretny:</strong> Nie „dobra robota", ale „świetnie użyłeś czasu Present Perfect w tym zdaniu"</li>
+    <li><strong>Ukierunkowany na działanie:</strong> Wskazuje, co konkretnie poprawić i jak</li>
+    <li><strong>Terminowy:</strong> Jak najszybciej po wykonaniu zadania</li>
+    <li><strong>Proporcjonalny:</strong> Nie poprawiaj wszystkiego naraz — wybierz 2–3 kluczowe obszary</li>
+</ul>
+<h2>Techniki oceniania kształtującego</h2>
+<h3>Exit tickets</h3>
+<p>Na koniec lekcji uczniowie odpowiadają na 1–2 pytania sprawdzające zrozumienie. Daje Ci natychmiastową informację, czy cel lekcji został osiągnięty.</p>
+<h3>Peer assessment</h3>
+<p>Uczniowie oceniają prace kolegów według jasnych kryteriów. Uczy ich myślenia krytycznego i daje im nową perspektywę na własne błędy.</p>
+<h3>Self-assessment</h3>
+<p>Regularne samooceny (np. „Co umiem po tej lekcji? Co chcę poprawić?") budują metakognycję i odpowiedzialność za własną naukę.</p>
+<h3>Traffic light system</h3>
+<p>Uczniowie sygnalizują poziom rozumienia kolorami: zielony (rozumiem), żółty (nie jestem pewien), czerwony (potrzebuję pomocy). Prosty, ale niezwykle skuteczny sposób na monitorowanie klasy.</p>
+<h2>Feedback pisemny — jak pisać, by uczniowie czytali?</h2>
+<p>Badania pokazują, że uczniowie często ignorują pisemny feedback, jeśli obok widnieje stopień. Rozważ oddzielenie feedbacku od oceny — najpierw komentarz, potem (lub wcale) stopień. Zaskakujące, jak bardzo to zmienia zaangażowanie uczniów w czytanie uwag.</p>`,
+        excerpt: "Jak dawać feedback językowy, który motywuje i prowadzi do realnej poprawy? Praktyczny przewodnik po ocenianiu kształtującym dla nauczycieli angielskiego.",
+        featuredImage: "/ai_education_1770206350000.png",
+        author: "Kamila Łobko-Koziej",
+        category: "metodyka",
+        tags: ["ocenianie", "feedback", "assessment", "metodyka"],
+        readingTime: 8,
+        status: "published",
+        seo: {
+            metaTitle: "Ocenianie kształtujące w nauczaniu angielskiego | Kamila English Blog",
+            metaDescription: "Jak dawać skuteczny feedback językowy? Ocenianie kształtujące, exit tickets, peer assessment — praktyczny przewodnik.",
+            ogImage: "/ai_education_1770206350000.png",
+        },
+        createdAt: new Date(Date.now() - 25 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 25 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 25 * 24 * 60 * 60 * 1000).toISOString(),
     },
 ];
