@@ -1,4 +1,21 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /*/admin/
+Disallow: /*/dashboard/
+Disallow: /*/verify/
+Disallow: /*/checkout/
+Disallow: /*/cart/
 
-Sitemap: https://www.kamilaenglish.com/sitemap.xml
+# Sitemaps
+Sitemap: https://kamilaenglish.ofshore.dev/sitemap.xml
+
+# Slow down aggressive crawlers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /

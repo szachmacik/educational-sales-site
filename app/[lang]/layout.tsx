@@ -12,13 +12,11 @@ import { TokenProvider } from '@/lib/token-context'
 import { FeatureProvider } from '@/lib/feature-context'
 import { Toaster } from "@/components/ui/toaster"
 import { Toaster as SonnerToaster } from "sonner"
-import { TrackingScripts } from "@/components/marketing/tracking-scripts"
-import { MarketingScripts } from "@/components/marketing-scripts"
 import { AICrawlerHints } from "@/components/seo/ai-crawler-hints"
-import { FOMOPopup } from "@/components/marketing/growth-tools"
-import { AnnouncementBar, ExitIntentPopup } from "@/components/marketing/premium-growth"
-import { MarketingTracker } from "@/components/marketing/marketing-tracker"
+import { AnnouncementBar } from "@/components/marketing/premium-growth"
+import { LazyFOMOPopup, LazyExitIntentPopup, LazyMarketingTracker, LazyTrackingScripts } from "@/components/marketing/lazy-marketing"
 import { CookieBanner } from "@/components/legal/cookie-banner"
+import { OrganizationSchema, WebSiteSchema } from "@/components/seo/json-ld"
 import '../globals.css'
 import fs from 'fs/promises';
 import path from 'path';
@@ -64,7 +62,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   return {
     title: t?.seo?.title || 'Educational Materials for English Teachers | Kamila Łobko-Koziej',
     description: t?.seo?.description || 'Creative teaching materials, lesson plans, year-round projects and ready-made packages for English language teachers.',
-    generator: 'v0.app',
+    generator: 'Next.js',
     metadataBase: new URL(baseUrl),
     icons: {
       icon: [
@@ -108,6 +106,8 @@ export default async function LocaleLayout({
   return (
     <html lang={lang}>
       <head>
+        <OrganizationSchema lang={lang} />
+        <WebSiteSchema lang={lang} />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://connect.facebook.net" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
@@ -123,15 +123,16 @@ export default async function LocaleLayout({
           <ProgressProvider>
             <LanguageProvider lang={lang} dictionary={dictionary}>
               <AnnouncementBar />
-              <TrackingScripts />
-              <MarketingScripts />
               <AICrawlerHints />
-              <FOMOPopup />
-              <ExitIntentPopup />
-              <MarketingTracker />
+              <LazyTrackingScripts />
+              <LazyFOMOPopup />
+              <LazyExitIntentPopup />
+              <LazyMarketingTracker />
               <TokenProvider>
                 <FeatureProvider>
-                  {children}
+                  <div id="main-content" tabIndex={-1} className="outline-none">
+                    {children}
+                  </div>
                   <CookieBanner />
                   <Toaster />
                   <SonnerToaster position="top-center" expand={true} richColors />

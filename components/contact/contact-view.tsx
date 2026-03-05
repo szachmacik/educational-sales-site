@@ -1,44 +1,104 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { AIChat } from "@/components/contact/ai-chat";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Send, MessageCircle, Clock, Heart } from "lucide-react";
+import { Mail, MapPin, Send, MessageCircle, Clock, Heart, AlertCircle } from "lucide-react";
 import { toast } from "sonner";
 import { useLanguage } from "@/components/language-provider";
+
+interface FormFields {
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
+}
+
+interface FormErrors {
+    name?: string;
+    email?: string;
+    subject?: string;
+    message?: string;
+}
+
+function validateEmail(email: string): boolean {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function validateForm(data: FormFields): FormErrors {
+    const errors: FormErrors = {};
+    if (!data.name.trim() || data.name.trim().length < 2) {
+        errors.name = 'Imię musi mieć co najmniej 2 znaki.';
+    }
+    if (!data.email.trim() || !validateEmail(data.email)) {
+        errors.email = 'Podaj prawidłowy adres e-mail.';
+    }
+    if (!data.subject.trim() || data.subject.trim().length < 3) {
+        errors.subject = 'Temat musi mieć co najmniej 3 znaki.';
+    }
+    if (!data.message.trim() || data.message.trim().length < 10) {
+        errors.message = 'Wiadomość musi mieć co najmniej 10 znaków.';
+    }
+    return errors;
+}
 
 export function ContactView() {
     const { t } = useLanguage();
     const c = t.contact || {};
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [formData, setFormData] = useState<FormFields>({
+        name: '', email: '', subject: '', message: ''
+    });
+    const [errors, setErrors] = useState<FormErrors>({});
+    const [touched, setTouched] = useState<Record<keyof FormFields, boolean>>({
+        name: false, email: false, subject: false, message: false
+    });
+
+    const handleChange = useCallback((field: keyof FormFields, value: string) => {
+        setFormData(prev => ({ ...prev, [field]: value }));
+        // Clear error on change if field was touched
+        if (touched[field]) {
+            const newErrors = validateForm({ ...formData, [field]: value });
+            setErrors(prev => ({ ...prev, [field]: newErrors[field] }));
+        }
+    }, [formData, touched]);
+
+    const handleBlur = useCallback((field: keyof FormFields) => {
+        setTouched(prev => ({ ...prev, [field]: true }));
+        const newErrors = validateForm(formData);
+        setErrors(prev => ({ ...prev, [field]: newErrors[field] }));
+    }, [formData]);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        // Mark all as touched
+        setTouched({ name: true, email: true, subject: true, message: true });
+        const validationErrors = validateForm(formData);
+        if (Object.keys(validationErrors).length > 0) {
+            setErrors(validationErrors);
+            toast.error('Popraw błędy w formularzu przed wysłaniem.');
+            return;
+        }
         setIsSubmitting(true);
-        const form = e.target as HTMLFormElement;
-        const data = {
-            name: (form.querySelector('#name') as HTMLInputElement)?.value || '',
-            email: (form.querySelector('#email') as HTMLInputElement)?.value || '',
-            subject: (form.querySelector('#subject') as HTMLInputElement)?.value || '',
-            message: (form.querySelector('#message') as HTMLTextAreaElement)?.value || '',
-        };
         try {
             const res = await fetch('/api/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data),
+                body: JSON.stringify(formData),
             });
             if (res.ok) {
                 toast.success(c.form?.success || "Wiadomość wysłana!", {
                     description: c.form?.successDesc || "Odpiszemy najszybciej jak to możliwe."
                 });
-                form.reset();
+                setFormData({ name: '', email: '', subject: '', message: '' });
+                setErrors({});
+                setTouched({ name: false, email: false, subject: false, message: false });
             } else {
-                const err = await res.json();
+                const err = await res.json().catch(() => ({}));
                 toast.error(c.form?.error || "Błąd wysyłania", {
                     description: err.message || "Spróbuj ponownie za chwilę."
                 });
@@ -51,6 +111,12 @@ export function ContactView() {
             setIsSubmitting(false);
         }
     };
+
+    const fieldClass = (field: keyof FormFields) =>
+        `rounded-xl h-11 transition-colors ${errors[field] && touched[field]
+            ? 'border-red-400 focus-visible:ring-red-300 bg-red-50'
+            : 'border-slate-200'
+        }`;
 
     return (
         <main className="flex-1">
@@ -94,7 +160,10 @@ export function ContactView() {
                                     </div>
                                     <h3 className="text-lg font-bold text-slate-900">{c.emailTitle}</h3>
                                     <p className="text-slate-600 text-sm">{c.emailDesc}</p>
-                                    <a href={`mailto:${c.info?.emailValue || 'kontakt@kamilaenglish.com'}`} className="text-indigo-600 font-bold hover:underline">
+                                    <a
+                                        href={`mailto:${c.info?.emailValue || 'kontakt@kamilaenglish.com'}`}
+                                        className="text-indigo-600 font-bold hover:underline"
+                                    >
                                         {c.info?.emailValue || 'kontakt@kamilaenglish.com'}
                                     </a>
                                 </div>
@@ -103,37 +172,110 @@ export function ContactView() {
                             <Card className="border-0 shadow-xl shadow-slate-200/50 overflow-hidden rounded-3xl">
                                 <CardContent className="p-8">
                                     <h3 className="text-2xl font-bold text-slate-900 mb-6">{c.formTitle}</h3>
-                                    <form onSubmit={handleSubmit} className="space-y-6">
+                                    <form onSubmit={handleSubmit} className="space-y-5" noValidate>
                                         <div className="grid sm:grid-cols-2 gap-4">
-                                            <div className="space-y-2">
-                                                <Label htmlFor="name">{c.form?.name}</Label>
-                                                <Input id="name" placeholder={c.form?.placeholders?.name || "John Doe"} required className="rounded-xl border-slate-200 h-11" />
+                                            <div className="space-y-1.5">
+                                                <Label htmlFor="name">{c.form?.name || 'Imię i nazwisko'}</Label>
+                                                <Input
+                                                    id="name"
+                                                    value={formData.name}
+                                                    onChange={e => handleChange('name', e.target.value)}
+                                                    onBlur={() => handleBlur('name')}
+                                                    placeholder={c.form?.placeholders?.name || "Jan Kowalski"}
+                                                    className={fieldClass('name')}
+                                                    aria-invalid={!!errors.name && touched.name}
+                                                    aria-describedby={errors.name ? 'name-error' : undefined}
+                                                />
+                                                {errors.name && touched.name && (
+                                                    <p id="name-error" className="text-xs text-red-500 flex items-center gap-1 mt-1">
+                                                        <AlertCircle className="h-3 w-3 flex-shrink-0" />
+                                                        {errors.name}
+                                                    </p>
+                                                )}
                                             </div>
-                                            <div className="space-y-2">
-                                                <Label htmlFor="email">{c.form?.email}</Label>
-                                                <Input id="email" type="email" placeholder={c.form?.placeholders?.email || "jan@kamila.shor.dev"} required className="rounded-xl border-slate-200 h-11" />
+                                            <div className="space-y-1.5">
+                                                <Label htmlFor="email">{c.form?.email || 'E-mail'}</Label>
+                                                <Input
+                                                    id="email"
+                                                    type="email"
+                                                    value={formData.email}
+                                                    onChange={e => handleChange('email', e.target.value)}
+                                                    onBlur={() => handleBlur('email')}
+                                                    placeholder={c.form?.placeholders?.email || "jan@example.com"}
+                                                    className={fieldClass('email')}
+                                                    aria-invalid={!!errors.email && touched.email}
+                                                    aria-describedby={errors.email ? 'email-error' : undefined}
+                                                />
+                                                {errors.email && touched.email && (
+                                                    <p id="email-error" className="text-xs text-red-500 flex items-center gap-1 mt-1">
+                                                        <AlertCircle className="h-3 w-3 flex-shrink-0" />
+                                                        {errors.email}
+                                                    </p>
+                                                )}
                                             </div>
                                         </div>
-                                        <div className="space-y-2">
-                                            <Label htmlFor="subject">{c.form?.subject}</Label>
-                                            <Input id="subject" placeholder={c.form?.placeholders?.subject || "Question about..."} required className="rounded-xl border-slate-200 h-11" />
+                                        <div className="space-y-1.5">
+                                            <Label htmlFor="subject">{c.form?.subject || 'Temat'}</Label>
+                                            <Input
+                                                id="subject"
+                                                value={formData.subject}
+                                                onChange={e => handleChange('subject', e.target.value)}
+                                                onBlur={() => handleBlur('subject')}
+                                                placeholder={c.form?.placeholders?.subject || "Pytanie o..."}
+                                                className={fieldClass('subject')}
+                                                aria-invalid={!!errors.subject && touched.subject}
+                                                aria-describedby={errors.subject ? 'subject-error' : undefined}
+                                            />
+                                            {errors.subject && touched.subject && (
+                                                <p id="subject-error" className="text-xs text-red-500 flex items-center gap-1 mt-1">
+                                                    <AlertCircle className="h-3 w-3 flex-shrink-0" />
+                                                    {errors.subject}
+                                                </p>
+                                            )}
                                         </div>
-                                        <div className="space-y-2">
-                                            <Label htmlFor="message">{c.form?.message}</Label>
+                                        <div className="space-y-1.5">
+                                            <Label htmlFor="message">{c.form?.message || 'Wiadomość'}</Label>
                                             <Textarea
                                                 id="message"
-                                                placeholder={c.form?.messagePlaceholder || "..."}
-                                                className="min-h-[150px] rounded-xl border-slate-200"
-                                                required
+                                                value={formData.message}
+                                                onChange={e => handleChange('message', e.target.value)}
+                                                onBlur={() => handleBlur('message')}
+                                                placeholder={c.form?.messagePlaceholder || "Opisz swoje pytanie lub problem..."}
+                                                className={`min-h-[150px] rounded-xl transition-colors ${errors.message && touched.message
+                                                    ? 'border-red-400 focus-visible:ring-red-300 bg-red-50'
+                                                    : 'border-slate-200'
+                                                    }`}
+                                                aria-invalid={!!errors.message && touched.message}
+                                                aria-describedby={errors.message ? 'message-error' : undefined}
                                             />
+                                            <div className="flex justify-between items-center">
+                                                {errors.message && touched.message ? (
+                                                    <p id="message-error" className="text-xs text-red-500 flex items-center gap-1">
+                                                        <AlertCircle className="h-3 w-3 flex-shrink-0" />
+                                                        {errors.message}
+                                                    </p>
+                                                ) : <span />}
+                                                <span className={`text-xs ${formData.message.length > 1000 ? 'text-red-500' : 'text-slate-400'}`}>
+                                                    {formData.message.length}/1000
+                                                </span>
+                                            </div>
                                         </div>
                                         <Button
                                             type="submit"
-                                            className="w-full bg-indigo-600 hover:bg-indigo-700 h-12 rounded-xl text-md font-bold shadow-lg shadow-indigo-100 gap-2 transition-all hover:scale-[1.02]"
-                                            disabled={isSubmitting}
+                                            className="w-full bg-indigo-600 hover:bg-indigo-700 h-12 rounded-xl text-md font-bold shadow-lg shadow-indigo-100 gap-2 transition-all hover:scale-[1.02] disabled:opacity-60 disabled:scale-100"
+                                            disabled={isSubmitting || formData.message.length > 1000}
                                         >
-                                            {isSubmitting ? c.form?.sending : c.form?.send}
-                                            {!isSubmitting && <Send className="h-4 w-4" />}
+                                            {isSubmitting ? (
+                                                <>
+                                                    <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                                                    {c.form?.sending || 'Wysyłanie...'}
+                                                </>
+                                            ) : (
+                                                <>
+                                                    {c.form?.send || 'Wyślij wiadomość'}
+                                                    <Send className="h-4 w-4" />
+                                                </>
+                                            )}
                                         </Button>
                                     </form>
                                 </CardContent>

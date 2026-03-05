@@ -118,8 +118,16 @@ export function Header() {
 
   return (
     <header className="glass-header">
+      {/* Skip to main content — accessibility */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-lg focus:font-medium"
+      >
+        Przejdź do treści
+      </a>
       {/* Scroll Progress Bar */}
       <div
+        aria-hidden="true"
         className="absolute bottom-0 left-0 h-[2px] bg-primary transition-all duration-150 ease-out"
         style={{ width: `${scrollProgress}%` }}
       />
@@ -128,7 +136,7 @@ export function Header() {
         <BrandLogo />
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-1 lg:flex">
+        <nav aria-label="Nawigacja główna" className="hidden items-center gap-1 lg:flex">
           {navLinks.map((item) => (
             <Link
               key={item.name}
@@ -156,11 +164,11 @@ export function Header() {
 
           {isLoggedIn && <InAppNotifications />}
 
-          <Link href={`/${language}/cart`}>
-            <Button variant="ghost" size="icon" className="relative">
-              <ShoppingCart className="h-5 w-5" />
+          <Link href={`/${language}/cart`} aria-label={`Koszyk${itemCount > 0 ? ` (${itemCount} produktów)` : ''}`}>
+            <Button variant="ghost" size="icon" className="relative" aria-label="Koszyk">
+              <ShoppingCart className="h-5 w-5" aria-hidden="true" />
               {itemCount > 0 && (
-                <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-xs font-semibold text-accent-foreground">
+                <span aria-hidden="true" className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-xs font-semibold text-accent-foreground">
                   {itemCount}
                 </span>
               )}

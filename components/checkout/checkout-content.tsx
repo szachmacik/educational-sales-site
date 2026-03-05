@@ -335,7 +335,24 @@ export function CheckoutContent() {
     };
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        if (!consents.main) return;
+        if (!consents.main) {
+            toast.error('Zaakceptuj wymagane zgody przed kontynuowaniem.');
+            return;
+        }
+        // Client-side validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!form.email || !emailRegex.test(form.email)) {
+            toast.error('Podaj prawidłowy adres e-mail.');
+            return;
+        }
+        if (!form.firstName || form.firstName.trim().length < 2) {
+            toast.error('Podaj imię (min. 2 znaki).');
+            return;
+        }
+        if (!form.lastName || form.lastName.trim().length < 2) {
+            toast.error('Podaj nazwisko (min. 2 znaki).');
+            return;
+        }
 
         setIsSubmitting(true);
         try {
