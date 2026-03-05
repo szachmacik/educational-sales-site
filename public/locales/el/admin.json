@@ -1,1682 +1,1752 @@
 {
-  "adminSettings": {
-    "title": "Ρυθμίσεις Συστήματος",
-    "description": "Διαχειριστείτε τη διαμόρφωση του ιστότοπου, τα αναλυτικά στοιχεία και το SEO",
-    "ai_providers": {
-      "title": "Πάροχοι AI",
-      "description": "Επιλέξτε το μοντέλο για τη δημιουργία περιεχομένου",
-      "api_key": "Κλειδί API"
-    },
-    "tabs": {
-      "ai": "Μοντέλα AI",
-      "marketing": "Μάρκετινγκ & Αναλυτικά Στοιχεία",
-      "seo": "SEO & Meta",
-      "economy": "Οικονομία & Πορτοφόλι",
-      "gamification": "Παιχνιδοποίηση & Σήματα",
-      "market": "Ανάλυση Αγοράς",
-      "insights": "Έλεγχος AI & Προτάσεις",
-      "channels": "Κανάλια Πωλήσεων",
-      "integrations": "Ενσωματώσεις & API",
-      "interactive": "Παιχνίδια & Αλληλεπιδράσεις",
-      "workshop": "AI Studio & Canva",
-      "automation": "Πράκτορες & Αυτοματισμός",
-      "emails": "Ειδοποιήσεις E-mail",
-      "google": "Google Cloud",
-      "abandoned": "Εγκαταλελειμμένα Καλάθια",
-      "guardian": "AI Guardian",
-      "affiliate": "Πρόγραμμα Συνεργατών",
-      "pricing": "Τιμολόγηση & Νομίσματα (PPP)",
-      "taxes": "Τιμολόγια & Φόροι",
-      "growth_hacks": "Growth Hacks",
-      "ai_discovery": "AI Discovery (SEO)"
-    },
-    "sections": {
-      "shopping": "Αγορές & Οικονομικά",
-      "ai": "Μοντέλα AI",
-      "growth": "Ανάπτυξη & Brand",
-      "system": "Ρυθμίσεις Συστήματος"
-    },
-    "common": {
-      "save": "Αποθήκευση αλλαγών",
-      "saved": "Αποθηκεύτηκε!",
-      "save_success": "Settings have been successfully saved.",
-      "subject": "Θέμα",
-      "content": "Περιεχόμενο",
-      "enabled_desc": "Παγκόσμιος διακόπτης για σενάρια παρακολούθησης"
-    },
-    "marketing": {
-      "ga4": "Google Analytics 4",
-      "ga4_placeholder": "G-XXXXXXXXXX",
-      "fb_pixel": "Facebook Pixel",
-      "fb_pixel_placeholder": "Pixel ID",
-      "meta_verification": "Επαλήθευση Τομέα Meta",
-      "meta_placeholder": "Κλειδί επαλήθευσης",
-      "gsc": "Google Search Console",
-      "gsc_placeholder": "Κλειδί επαλήθευσης Google",
-      "enabled": "Ενεργοποίηση Παρακολούθησης"
-    },
-    "seo": {
-      "default_title": "Προεπιλεγμένος τίτλος σελίδας",
-      "default_desc": "Προεπιλεγμένη περιγραφή meta",
-      "og_image": "Προεπιλεγμένη εικόνα κοινής χρήσης (OG Image)",
-      "site_name": "Όνομα ιστότοπου",
-      "basic_title": "Βασικό SEO",
-      "basic_desc": "Ρυθμίσεις ορατότητας στις μηχανές αναζήτησης",
-      "canonical_url": "Canonical Base URL",
-      "canonical_desc": "The base URL used for canonical and alternate (hreflang) links.",
-      "ai_discovery_title": "AI Search Optimization",
-      "ai_discovery_desc": "Configure how AI agents (Gemini, Perplexity, GPT-4) discover and interpret your site.",
-      "ai_discovery_enabled": "Enable AI Crawler Hints",
-      "ai_discovery_enabled_desc": "Injects specialized meta-data for LLM-based search engines.",
-      "ai_summary": "AI Product Summary",
-      "ai_summary_placeholder": "What should AI agents know about your store?",
-      "ai_summary_desc": "This summary helps AI agents provide accurate answers about your services.",
-      "sitemap_regenerate": "Regenerate Multi-Locale Sitemap",
-      "growth_hacks_title": "Growth & Performance Hacks",
-      "growth_hacks_desc": "Advanced tools to increase conversion and track user behavior.",
-      "fomo_title": "FOMO Elements (Scarcity)",
-      "fomo_desc": "Show 'Limited Stock' and 'Recent Purchase' alerts.",
-      "trust_title": "Trust Badges",
-      "trust_desc": "Display security and guarantee badges on product pages.",
-      "ux_tracking": "UX Tracking (Heatmaps)",
-      "clarity_id": "Microsoft Clarity ID",
-      "hotjar_id": "Hotjar Site ID"
-    },
-    "economy": {
-      "title": "Οικονομία & Πορτοφόλι",
-      "description": "Διαχειριστείτε το εικονικό νόμισμα, τις συνδρομές και την αφοσίωση πελατών",
-      "wallet": {
-        "title": "Εικονικό Πορτοφόλι",
-        "enable_wallet": "Ενεργοποίηση Πορτοφολιού Χρήστη",
-        "allow_topup": "Να επιτρέπονται οι επαναφορτίσεις",
-        "recurring_topup": "Αυτόματη περιοδική επαναφόρτιση",
-        "conversion_rate": "Ποσοστό μετατροπής (1 EUR = X πόντοι)",
-        "description": "Διαχειριστείτε το εικονικό πορτοφόλι πελατών"
-      },
-      "loyalty": {
-        "title": "Πόντοι Αφοσίωσης",
-        "enable_loyalty": "Ενεργοποίηση συλλογής πόντων",
-        "points_per_eur": "Πόντοι για κάθε 1 EUR που ξοδεύετε",
-        "min_redeem": "Ελάχιστοι πόντοι για εξαργύρωση",
-        "description": "Πόντοι για δραστηριότητα και αγορές",
-        "protip": "Συμβουλή: Οι συνδρομητές μπορούν να λαμβάνουν 2 φορές περισσότερους πόντους εάν ενεργοποιήσετε τον πολλαπλασιαστή στην ενότητα Gamification."
-      },
-      "subscriptions": {
-        "title": "Προγράμματα & Συνδρομές",
-        "description": "Δημιουργήστε μοντέλα επαναλαμβανόμενης πρόσβασης σε υλικά",
-        "status_active": "ΕΝΕΡΓΗ",
-        "per_month": "/ μήνα",
-        "perks": {
-          "all_pdfs": "Όλα τα PDF χωρίς περιορισμό",
-          "free_topup": "Δωρεάν επαναφόρτιση πορτοφολιού ({amount} κάθε μήνα)"
+    "adminSettings": {
+        "title": "Ρυθμίσεις Συστήματος",
+        "description": "Διαχειριστείτε τη διαμόρφωση του ιστότοπου, τα αναλυτικά στοιχεία και το SEO",
+        "ai_providers": {
+            "title": "Πάροχοι AI",
+            "description": "Επιλέξτε το μοντέλο για τη δημιουργία περιεχομένου",
+            "api_key": "Κλειδί API"
         },
-        "add_plan": "Προσθήκη νέου προγράμματος"
-      }
-    },
-    "gamification": {
-      "title": "Παιχνιδοποίηση",
-      "description": "Παρακινήστε τους μαθητές με επίπεδα, σήματα και ανταμοιβές.",
-      "levels": {
-        "silver": "Ασημένιο Επίπεδο",
-        "gold": "Χρυσό Επίπεδο",
-        "diamond": "Διαμαντένιο VIP"
-      },
-      "perks": {
-        "discount": "Αυτόματη Έκπτωση (%)",
-        "auto_discount": "Εφαρμόζεται αυτόματα στο ταμείο",
-        "hidden_tier": "Μόνο χειροκίνητη ανάθεση"
-      },
-      "badges_title": "Σήματα Μαθητών",
-      "badges": {
-        "early_bird": {
-          "name": "Πρωινό Πουλί",
-          "desc": "Αγορά εντός 1 ώρας από τη δημοσίευση"
+        "tabs": {
+            "ai": "Μοντέλα AI",
+            "marketing": "Μάρκετινγκ & Αναλυτικά Στοιχεία",
+            "seo": "SEO & Meta",
+            "economy": "Οικονομία & Πορτοφόλι",
+            "gamification": "Παιχνιδοποίηση & Σήματα",
+            "market": "Ανάλυση Αγοράς",
+            "insights": "Έλεγχος AI & Προτάσεις",
+            "channels": "Κανάλια Πωλήσεων",
+            "integrations": "Ενσωματώσεις & API",
+            "interactive": "Παιχνίδια & Αλληλεπιδράσεις",
+            "workshop": "AI Studio & Canva",
+            "automation": "Πράκτορες & Αυτοματισμός",
+            "emails": "Ειδοποιήσεις E-mail",
+            "google": "Google Cloud",
+            "abandoned": "Εγκαταλελειμμένα Καλάθια",
+            "guardian": "AI Guardian",
+            "affiliate": "Πρόγραμμα Συνεργατών",
+            "pricing": "Τιμολόγηση & Νομίσματα (PPP)",
+            "taxes": "Τιμολόγια & Φόροι",
+            "growth_hacks": "Growth Hacks",
+            "ai_discovery": "AI Discovery (SEO)"
         },
-        "collector": {
-          "name": "Πρωινό Πουλί",
-          "desc": "Αγορά εντός 1 ώρας από τη δημοσίευση"
+        "sections": {
+            "shopping": "Αγορές & Οικονομικά",
+            "ai": "Μοντέλα AI",
+            "growth": "Ανάπτυξη & Brand",
+            "system": "Ρυθμίσεις Συστήματος"
         },
-        "top_reviewer": {
-          "name": "Πρωινό Πουλί",
-          "desc": "Αγορά εντός 1 ώρας από τη δημοσίευση"
+        "common": {
+            "save": "Αποθήκευση αλλαγών",
+            "saved": "Αποθηκεύτηκε!",
+            "save_success": "Settings have been successfully saved.",
+            "subject": "Θέμα",
+            "content": "Περιεχόμενο",
+            "enabled_desc": "Παγκόσμιος διακόπτης για σενάρια παρακολούθησης",
+            "ux": {
+                "show": "Εμφάνιση",
+                "hide": "Απόκρυψη",
+                "copy": "Αντιγραφή",
+                "copied": "Αντιγράφηκε!",
+                "secure": "Κρυπτογραφημένο"
+            },
+            "preview": {
+                "title": "Preview and Acceptance",
+                "accept": "Accept changes",
+                "reject": "Reject",
+                "bulk_title": "Generated drafts review",
+                "apply_all": "Accept all ({count})",
+                "diff_before": "Before optimization",
+                "diff_after": "AI Suggestion"
+            }
+        },
+        "marketing": {
+            "ga4": "Google Analytics 4",
+            "ga4_placeholder": "G-XXXXXXXXXX",
+            "fb_pixel": "Facebook Pixel",
+            "fb_pixel_placeholder": "Pixel ID",
+            "meta_verification": "Επαλήθευση Τομέα Meta",
+            "meta_placeholder": "Κλειδί επαλήθευσης",
+            "gsc": "Google Search Console",
+            "gsc_placeholder": "Κλειδί επαλήθευσης Google",
+            "enabled": "Ενεργοποίηση Παρακολούθησης"
+        },
+        "seo": {
+            "default_title": "Προεπιλεγμένος τίτλος σελίδας",
+            "default_desc": "Προεπιλεγμένη περιγραφή meta",
+            "og_image": "Προεπιλεγμένη εικόνα κοινής χρήσης (OG Image)",
+            "site_name": "Όνομα ιστότοπου",
+            "basic_title": "Βασικό SEO",
+            "basic_desc": "Ρυθμίσεις ορατότητας στις μηχανές αναζήτησης",
+            "canonical_url": "Canonical Base URL",
+            "canonical_desc": "The base URL used for canonical and alternate (hreflang) links.",
+            "ai_discovery_title": "AI Search Optimization",
+            "ai_discovery_desc": "Configure how AI agents (Gemini, Perplexity, GPT-4) discover and interpret your site.",
+            "ai_discovery_enabled": "Enable AI Crawler Hints",
+            "ai_discovery_enabled_desc": "Injects specialized meta-data for LLM-based search engines.",
+            "ai_summary": "AI Product Summary",
+            "ai_summary_placeholder": "What should AI agents know about your store?",
+            "ai_summary_desc": "This summary helps AI agents provide accurate answers about your services.",
+            "sitemap_regenerate": "Regenerate Multi-Locale Sitemap",
+            "growth_hacks_title": "Growth & Performance Hacks",
+            "growth_hacks_desc": "Advanced tools to increase conversion and track user behavior.",
+            "fomo_title": "FOMO Elements (Scarcity)",
+            "fomo_desc": "Show 'Limited Stock' and 'Recent Purchase' alerts.",
+            "trust_title": "Trust Badges",
+            "trust_desc": "Display security and guarantee badges on product pages.",
+            "ux_tracking": "UX Tracking (Heatmaps)",
+            "clarity_id": "Microsoft Clarity ID",
+            "hotjar_id": "Hotjar Site ID"
+        },
+        "economy": {
+            "title": "Οικονομία & Πορτοφόλι",
+            "description": "Διαχειριστείτε το εικονικό νόμισμα, τις συνδρομές και την αφοσίωση πελατών",
+            "wallet": {
+                "title": "Εικονικό Πορτοφόλι",
+                "enable_wallet": "Ενεργοποίηση Πορτοφολιού Χρήστη",
+                "allow_topup": "Να επιτρέπονται οι επαναφορτίσεις",
+                "recurring_topup": "Αυτόματη περιοδική επαναφόρτιση",
+                "conversion_rate": "Ποσοστό μετατροπής (1 EUR = X πόντοι)",
+                "description": "Διαχειριστείτε το εικονικό πορτοφόλι πελατών"
+            },
+            "loyalty": {
+                "title": "Πόντοι Αφοσίωσης",
+                "enable_loyalty": "Ενεργοποίηση συλλογής πόντων",
+                "points_per_eur": "Πόντοι για κάθε 1 EUR που ξοδεύετε",
+                "min_redeem": "Ελάχιστοι πόντοι για εξαργύρωση",
+                "description": "Πόντοι για δραστηριότητα και αγορές",
+                "protip": "Συμβουλή: Οι συνδρομητές μπορούν να λαμβάνουν 2 φορές περισσότερους πόντους εάν ενεργοποιήσετε τον πολλαπλασιαστή στην ενότητα Gamification."
+            },
+            "subscriptions": {
+                "title": "Προγράμματα & Συνδρομές",
+                "description": "Δημιουργήστε μοντέλα επαναλαμβανόμενης πρόσβασης σε υλικά",
+                "status_active": "ΕΝΕΡΓΗ",
+                "per_month": "/ μήνα",
+                "perks": {
+                    "all_pdfs": "Όλα τα PDF χωρίς περιορισμό",
+                    "free_topup": "Δωρεάν επαναφόρτιση πορτοφολιού ({amount} κάθε μήνα)"
+                },
+                "add_plan": "Προσθήκη νέου προγράμματος"
+            }
+        },
+        "gamification": {
+            "title": "Παιχνιδοποίηση",
+            "description": "Παρακινήστε τους μαθητές με επίπεδα, σήματα και ανταμοιβές.",
+            "levels": {
+                "silver": "Ασημένιο Επίπεδο",
+                "gold": "Χρυσό Επίπεδο",
+                "diamond": "Διαμαντένιο VIP"
+            },
+            "perks": {
+                "discount": "Αυτόματη Έκπτωση (%)",
+                "auto_discount": "Εφαρμόζεται αυτόματα στο ταμείο",
+                "hidden_tier": "Μόνο χειροκίνητη ανάθεση"
+            },
+            "badges_title": "Σήματα Μαθητών",
+            "badges": {
+                "early_bird": {
+                    "name": "Πρωινό Πουλί",
+                    "desc": "Αγορά εντός 1 ώρας από τη δημοσίευση"
+                },
+                "collector": {
+                    "name": "Πρωινό Πουλί",
+                    "desc": "Αγορά εντός 1 ώρας από τη δημοσίευση"
+                },
+                "top_reviewer": {
+                    "name": "Πρωινό Πουλί",
+                    "desc": "Αγορά εντός 1 ώρας από τη δημοσίευση"
+                }
+            }
+        },
+        "market": {
+            "title": "Παρακολούθηση Αγοράς",
+            "description": "Παρακολουθήστε τον ανταγωνισμό και τις παγκόσμιες τάσεις στην εκπαίδευση.",
+            "curriculum": {
+                "title": "Παρακολούθηση Προγράμματος Σπουδών",
+                "description": "Προσαρμόστε τα υλικά στις εθνικές απαιτήσεις",
+                "monitor_label": "Παρακολουθούμενο Πρόγραμμα Σπουδών",
+                "options": {
+                    "pl_mein": "Πολωνία (MEiN)",
+                    "uk_ofsted": "Ηνωμένο Βασίλειο (Ofsted)",
+                    "us_cc": "ΗΠΑ (Common Core)"
+                },
+                "status": "Συμμόρφωση των υλικών σας: 85%",
+                "alerts": "Εντοπίστηκε αλλαγή στις απαιτήσεις για τις τάξεις 4-6"
+            },
+            "trends": {
+                "title": "Τάσεις Αγοράς",
+                "description": "Ανάλυση θεμάτων με μεγάλη ζήτηση",
+                "top_selling": "Πιο δημοφιλής μορφή: 'Interactive Escape Rooms'",
+                "competitor_bestsellers": "Best-sellers ανταγωνιστών",
+                "recommendation": "Πρόταση: Δημιουργήστε ένα πακέτο 'Easter Escape Room' (Υψηλή ζήτηση)",
+                "ai_rec": "Πρόταση AI"
+            }
+        },
+        "insights": {
+            "title": "Έλεγχος AI & Προτάσεις",
+            "description": "Ανάλυση των πόρων σας και ιδέες επέκτασης",
+            "sync": {
+                "title": "Μητρώο Συγχρονισμού",
+                "description": "Κατάσταση εισαγωγής παιχνιδιών και υλικών από εξωτερικές πλατφόρμες",
+                "last_sync": "Τελευταίος επιτυχής συγχρονισμός: πριν από 15 λεπτά",
+                "pending_drafts": "{count} νέα προσχέδια για έλεγχο"
+            },
+            "expansion": {
+                "title": "Επέκταση Υλικών (Προτάσεις)",
+                "description": "Ιδέες για την επέκταση υπαρχόντων προϊόντων με χαμηλό κόστος",
+                "item1": "Το προϊόν 'Unit 1' μπορεί να επεκταθεί με 20 κάρτες flash (το AI θα τις δημιουργήσει αυτόματα)",
+                "item2": "Δημιουργήστε ένα 'Mega Pack' από 3 από τα πιο δημοφιλή σενάριά σας (Προοπτική: +25% περιθώριο κέρδους)"
+            },
+            "audit": {
+                "title": "Έλεγχος Μετατροπών",
+                "description": "Το AI αναλύει περιγραφές και φωτογραφίες των προϊόντων σας",
+                "suggestion": "Αλλάξτε την κύρια φωτογραφία στο 'Animal Cards' – η τρέχουσα έχει χαμηλό CTR"
+            }
+        },
+        "integrations": {
+            "title": "Ενσωματώσεις & Webhooks",
+            "description": "Διαχειριστείτε εξωτερικές συνδέσεις και αυτοματισμούς",
+            "webhooks": {
+                "title": "Webhooks",
+                "description": "Αποστολή ειδοποιήσεων παραγγελιών σε εξωτερικά συστήματα",
+                "add": "Προσθήκη Webhook",
+                "url": "URL Στόχου",
+                "event": "Συμβάν",
+                "events": {
+                    "order_created": "Δημιουργία παραγγελίας",
+                    "order_paid": "Πληρωμή παραγγελίας",
+                    "user_registered": "Εγγραφή χρήστη"
+                }
+            },
+            "mcp": {
+                "title": "Συνδέσεις MCP",
+                "description": "Σύνδεση εξωτερικών μοντέλων και βάσεων γνώσεων μέσω του πρωτοκόλλου MCP",
+                "server": "Διεύθυνση διακομιστή MCP",
+                "status": "Συμμόρφωση των υλικών σας: 85%"
+            },
+            "api": {
+                "title": "Εξωτερικά Κλειδιά API",
+                "description": "Ενσωματώσεις με CRM, Mailing και άλλα συστήματα",
+                "service": "Υπηρεσία (π.χ. MailerLite, Zapier)",
+                "key": "Κλειδί API / Διακριτικό",
+                "coming_soon": "Η ενσωμάτωση με MailerLite, ActiveCampaign και Zapier υλοποιείται.",
+                "coming_soon_desc": "Μπορείτε ήδη να αποθηκεύσετε κλειδιά στην ενότητα Webhooks για δοκιμές."
+            }
+        },
+        "interactive": {
+            "title": "Διαδραστικό Περιεχόμενο",
+            "description": "Ενσωματώστε παιχνίδια από Wordwall, Genially και H5P.",
+            "auto_import": "Αυτόματη δημιουργία προϊόντος μετά την προσθήκη παιχνιδιού",
+            "auto_import_desc": "Το σύστημα θα εντοπίζει αυτόματα τους κωδικούς ενσωμάτωσης (Embed) κατά τη δημιουργία προϊόντος.",
+            "sync_status": "Τελευταίος συγχρονισμός παιχνιδιών",
+            "sync_hint": "Σας προτείνουμε να τοποθετείτε απευθείας συνδέσμους παιχνιδιών στο πάνελ επεξεργασίας προϊόντος. Το σύστημα θα τους μετατρέψει αυτόματα σε διαδραστικό παράθυρο για τον μαθητή.",
+            "other_title": "Άλλες ενσωματώσεις",
+            "platforms": {
+                "wordwall": "Κλειδί API Wordwall",
+                "wordwall_placeholder": "π.χ. kamila-lo-ko",
+                "genially": "Κλειδί API Genially",
+                "genially_placeholder": "π.χ. https://view.genial.ly/profile/nick",
+                "sync_title": "Συγχρονισμός Wordwall και Genially",
+                "h5p_desc": "Τοπική ενσωμάτωση",
+                "learningapps_desc": "Μέσω iFrame",
+                "quizizz_desc": "Συγχρονισμός API"
+            }
+        },
+        "workshop": {
+            "title": "AI Workshop",
+            "description": "Εργαλεία για γρήγορη δημιουργία νέων υλικών.",
+            "generate_btn": "Δημιουργία Υλικών",
+            "status_ready": "Έτοιμο για εργασία",
+            "rag_sources": {
+                "title": "Βάση Γνώσης AI (RAG)",
+                "description": "Επιλέξτε τη βάση γνώσης AI",
+                "main_label": "Κύρια Πηγή (RAG)",
+                "notebook_lm": "Σύνδεσμος NotebookLM / Γνωσιακή Βάση",
+                "options": {
+                    "google_drive": "Google Drive (Φάκελος: Edu-Materials)",
+                    "notebook_lm": "Σύνδεσμος NotebookLM / Γνωσιακή Βάση",
+                    "local": "Τοπική βάση δεδομένων διανυσμάτων"
+                }
+            },
+            "generators": {
+                "title": "Material Generators",
+                "reading": "Ανάγνωση (Κείμενο + Ερωτήσεις)",
+                "listening": "Ακρόαση (Σενάριο + AI Audio)",
+                "speaking": "Κάρτες ομιλίας",
+                "vocabulary": "Ασκήσεις λεξιλογίου",
+                "flashcards": "Κάρτες Flash (CSV/Anki)",
+                "tests": "Γεννήτρια τεστ",
+                "worksheets": "Φύλλα εργασίας PDF",
+                "ai_quiz": "AI Quiz Maker"
+            },
+            "canva": {
+                "title": "Ενσωμάτωση Canva",
+                "description": "Εξαγωγή υλικών απευθείας σε σχέδια Canva",
+                "api_key": "Κλειδί API",
+                "auto_export": "Αυτόματη εξαγωγή",
+                "connect": "Σύνδεση με Canva"
+            },
+            "title_prefix": "AI Creative",
+            "title_suffix": "Studio",
+            "badge": "Next-Gen",
+            "powered_by": "Powered by OpenAI & HeyGen",
+            "available_credits": "Available Credits",
+            "generations_today": "Generations Today",
+            "studio": "Studio",
+            "history": "History",
+            "studios": {
+                "images": "Image Studio",
+                "video": "Video Studio",
+                "avatars": "Avatar Studio",
+                "social": "Social Hub",
+                "flashcards": "Flashcards",
+                "canva": "Canva Studio"
+            },
+            "actions": {
+                "reuse": "Reuse Prompt",
+                "generate": "Generate Asset",
+                "processing": "Processing...",
+                "attach": "Attach",
+                "change_product": "Change Product",
+                "connect": "Connect to Product"
+            },
+            "labels": {
+                "persona": "Select AI Persona",
+                "script": "Script",
+                "prompt": "Creative Prompt",
+                "preview": "Preview",
+                "history_empty": "Your canvas awaits.",
+                "connect_desc": "Link this AI asset to your store inventory.",
+                "professional_suite": "Professional Creative Suite"
+            },
+            "social_hub": {
+                "title": "Social Media Hub",
+                "subtitle": "Post Generator & Optimization",
+                "platforms": {
+                    "instagram": "Instagram",
+                    "facebook": "Facebook",
+                    "linkedin": "LinkedIn",
+                    "youtube": "YouTube"
+                },
+                "labels": {
+                    "select_product": "Select Product to Promote",
+                    "pick_placeholder": "Pick from Product Library...",
+                    "campaign_context": "Campaign Context / Prompt",
+                    "prompt_placeholder": "What are we promoting today? (e.g., 'New Flashcard Set for Christmas')",
+                    "ai_copy": "AI Generated Copy",
+                    "thinking": "Thinking...",
+                    "regenerate": "Regenerate Copy",
+                    "copy_placeholder": "AI will generate your post content here...",
+                    "media_asset": "Media Asset",
+                    "auto_selected": "Auto-Selected",
+                    "select_asset": "Select Asset",
+                    "from_gallery": "From Product Gallery",
+                    "viral_growth": "Viral Growth",
+                    "score": "Score",
+                    "ai_expectancy": "AI expects {percent}% higher engagement on {platform}.",
+                    "live_mockup": "Live Mockup Preview",
+                    "mockup_placeholder": "Your mockup copy will appear here...",
+                    "export": "Export to Socials"
+                }
+            },
+            "flashcards": {
+                "title": "AI Flashcard Studio",
+                "subtitle": "Transform topics into beautiful, ready-to-print flashcard sets.",
+                "badge": "Smart Learning",
+                "branding_kit": "Branding Kit",
+                "export_canva": "Export to Canva",
+                "smart_generator": "Smart Generator",
+                "topic_label": "Topic or Context",
+                "topic_placeholder": "e.g. Life Cycle of a Frog",
+                "style_label": "Visual Style",
+                "styles": {
+                    "academic": "Academic",
+                    "playful": "Playful",
+                    "minimal": "Minimal",
+                    "canva_ai": "Canva AI"
+                },
+                "generate_btn": "Generate Deck",
+                "generating": "Generating...",
+                "live_preview": "Live Preview",
+                "cards_prepared": "{count} Cards Prepared",
+                "empty": "No cards generated yet",
+                "add_custom": "Add Custom Card"
+            }
+        },
+        "automation": {
+            "title": "Αυτοματισμός AI",
+            "description": "Αναθέστε εργασίες ρουτίνας σε πράκτορες AI.",
+            "agent_delivered": "Ο πράκτορας παρέδωσε {count} νέα προσχέδια!",
+            "agents": {
+                "title": "Ενεργός Πράκτορας",
+                "select_placeholder": "Επιλέξτε πράκτορα αυτοματισμού",
+                "manus": "Σύνδεση Manus AI",
+                "general": "Προσαρμοσμένος πράκτορας προγράμματος περιήγησης (Webhook)",
+                "status_idle": "Ο πράκτορας είναι έτοιμος για εργασίες",
+                "btn_send": "Αποστολή πράκτορα για συνδέσμους"
+            },
+            "receiver": {
+                "title": "Δέκτης Webhook",
+                "description": "Διεύθυνση για τη λήψη δεδομένων από εξωτερικούς περιηγητές/scrapers.",
+                "simulate_test": "(Προσομοίωση άφιξης πράκτορα / Δοκιμή Webhook)",
+                "simulate_btn": "Προσομοίωση πράκτορα"
+            },
+            "scrapers": {
+                "title": "Εργασίες Scraping Περιηγητή",
+                "card_title": "Εργασία στο πρόγραμμα περιήγησης",
+                "options": {
+                    "wordwall": "Κλειδί API Wordwall",
+                    "genially": "Κλειδί API Genially",
+                    "learningapps": "LearningApps Scraper"
+                },
+                "item1": "Το προϊόν 'Unit 1' μπορεί να επεκταθεί με 20 κάρτες flash (το AI θα τις δημιουργήσει αυτόματα)",
+                "item2": "Δημιουργήστε ένα 'Mega Pack' από 3 από τα πιο δημοφιλή σενάριά σας (Προοπτική: +25% περιθώριο κέρδους)",
+                "item3": "Λήψη κωδικών κοινής χρήσης από το Wordwall"
+            },
+            "chat": {
+                "title": "AI Agent Chat",
+                "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
+                "placeholder": "Πού να κοιτάξω σήμερα;",
+                "capabilities": "Τρέχουσες δυνατότητες: Genially, Wordwall, Canva",
+                "welcome": "Γεια σας! Είμαι έτοιμος για δουλειά. Μπορείτε να μου αναθέσετε εργασίες στους λογαριασμούς σας (Wordwall, Canva, Genially). Τι πρέπει να κάνω;"
+            }
+        },
+        "emails": {
+            "title": "Πρότυπα Μηνυμάτων Συστήματος",
+            "description": "Διαχειριστείτε το περιεχόμενο των μηνυμάτων που στέλνονται αυτόματα στους πελάτες",
+            "save": "Αποθήκευση αλλαγών",
+            "templates": {
+                "welcome": {
+                    "title": "Χαιρετισμός μετά την εγγραφή",
+                    "subject": "Θέμα",
+                    "content": "Περιεχόμενο"
+                },
+                "order_confirmed": {
+                    "title": "Επιβεβαίωση παραγγελίας",
+                    "subject": "Θέμα",
+                    "content": "Περιεχόμενο"
+                },
+                "login_details": {
+                    "title": "Δεδομένα πρόσβασης (μετά την αγορά)",
+                    "subject": "Θέμα",
+                    "content": "Περιεχόμενο"
+                }
+            },
+            "smtp": {
+                "title": "Διαμόρφωση SMTP / Πάροχος",
+                "description": "Ρυθμίσεις διακομιστή αλληλογραφίας για e-mails συστήματος",
+                "enable_system": "Ενεργοποίηση αποστολής συστήματος",
+                "enable_desc": "Χρήση διαμορφωμένου διακομιστή SMTP",
+                "host": "Διακομιστής SMTP",
+                "port": "Θύρα"
+            },
+            "variables": "Διαθέσιμες μεταβλητές: {orderNumber}, {email}, {password}, {firstName}, {total}"
+        },
+        "google": {
+            "title": "Ενσωμάτωση Google Cloud",
+            "description": "Συνδέστε το Google Drive για εισαγωγή υλικών απευθείας στο κατάστημα",
+            "auth": {
+                "title": "Εξουσιοδότηση Google",
+                "connect": "Σύνδεση με Google Drive",
+                "disconnect": "Αποσύνδεση λογαριασμού",
+                "status_connected": "Συνδεδεμένος στο λογαριασμό: {email}",
+                "status_disconnected": "Δεν υπάρχει ενεργή σύνδεση",
+                "drive_description": "Connect the 'Edu-Materials' folder from your Google Drive"
+            },
+            "drive": {
+                "title": "Περιηγητής Google Drive",
+                "import_selected": "Εισαγωγή επιλεγμένων αρχείων",
+                "refresh": "Ανανέωση λίστας",
+                "no_files": "Δεν βρέθηκαν αρχεία PDF/ZIP στο Drive σας",
+                "import_success": "Τα αρχεία εισήχθησαν με επιτυχία ως υλικά",
+                "column_name": "Όνομα αρχείου",
+                "column_size": "Μέγεθος",
+                "column_action": "Ενέργεια",
+                "description": "Configuration for drive",
+                "button": "Λήψη από το Google Drive",
+                "connecting": "Σύνδεση...",
+                "picker_title": "Επιλέξτε αρχεία από το Google Drive",
+                "import_count": "Εισαγωγή επιλεγμένων ({count})",
+                "toast_success": "Εισήχθησαν {count} αρχεία από το Google Drive"
+            },
+            "config": {
+                "client_id": "Google Client ID",
+                "client_secret": "Google Client Secret",
+                "redirect_uri": "Redirect URI"
+            }
+        },
+        "abandoned": {
+            "title": "Ανάκτηση Καλαθιού",
+            "description": "Αυτόματες υπενθυμίσεις για πελάτες που δεν ολοκλήρωσαν την αγορά τους",
+            "delay": "Καθυστέρηση πρώτου e-mail (ώρες)",
+            "discount_code": "Κωδικός έκπτωσης στο e-mail (προαιρετικό)",
+            "enable_auto": "Ενεργοποίηση αυτόματης ανάκτησης",
+            "stats": {
+                "total_recovered": "Ανακτημένα έσοδα",
+                "pending_carts": "Εκκρεμή καλάθια"
+            }
+        },
+        "guardian": {
+            "title": "AI Safety & Τεχνικός Φύλακας",
+            "description": "Έξυπνη παρακολούθηση σφαλμάτων, νομοθεσίας και απόδοσης συστήματος",
+            "legal_check": "Παρακολούθηση νομικών αλλαγών (EU E-commerce)",
+            "tech_check": "Τεχνική παρακολούθηση σφαλμάτων σε πραγματικό χρόνο",
+            "security_check": "Ανάλυση προσπαθειών μη εξουσιοδοτημένης πρόσβασης",
+            "alerts": "Εντοπίστηκε αλλαγή στις απαιτήσεις για τις τάξεις 4-6",
+            "status_good": "Το σύστημα λειτουργεί ομαλά",
+            "status_warning": "Εντοπίστηκε πιθανή μη συμμόρφωση με το νόμο",
+            "last_scan": "Τελευταία πλήρης σάρωση συστήματος"
+        },
+        "affiliate": {
+            "title": "Σύστημα Συστάσεων & Συνεργατών",
+            "description": "Μετατρέψτε τους πελάτες σας σε πρεσβευτές της μάρκας σας",
+            "commission": "Προμήθεια συνεργάτη (%)",
+            "discount": "Αυτόματη Έκπτωση (%)",
+            "cookie_life": "Διάρκεια ζωής cookie (ημέρες)",
+            "referral_links": "Δημιουργία συνδέσμων σύστασης",
+            "total_partners": "Ενεργοί συνεργάτες",
+            "payouts": "Εκκρεμείς πληρωμές"
+        },
+        "pricing": {
+            "title": "Αγοραστική Δύναμη (PPP)",
+            "description": "Αυτόματη προσαρμογή τιμών στην αγοραστική δύναμη σε 19 χώρες",
+            "enable_ppp": "Ενεργοποίηση έξυπνης περιφερειακής τιμολόγησης",
+            "base_currency": "Βασικό νόμισμα",
+            "regions": {
+                "western": "Δυτική Ευρώπη (100% τιμή)",
+                "central": "Κεντρική Ευρώπη (85% τιμή)",
+                "eastern": "Ανατολική Ευρώπη (70% τιμή)",
+                "balkans": "Βαλκάνια (60% τιμή)"
+            },
+            "recurring_title": "Subscriptions & Recurring Payments",
+            "recurring_visa_title": "Visa Recurring Payments",
+            "recurring_visa_desc": "Enable automatic card charging for subscription products. Supported via Stripe Billing and PayNow Recurring.",
+            "recurring_frequency": "Standard Frequency",
+            "recurring_monthly": "30 DAYS / MONTHLY",
+            "recurring_grace_period": "Grace Period / Retry",
+            "recurring_retry": "3 DAYS RETRY",
+            "paynow_title": "PayNow Integration",
+            "paynow_access_key": "Access Key",
+            "paynow_signature_key": "Signature Key",
+            "blik_title": "BLIK Support Enabled",
+            "blik_desc": "PayNow allows users to pay with BLIK codes directly on your checkout page."
+        },
+        "taxes": {
+            "title": "Φόροι & Τιμολόγηση",
+            "description": "Διαχειριστείτε τους συντελεστές ΦΠΑ και την αυτόματη έκδοση τιμολογίων ΕΕ",
+            "eu_vat_moss": "Ενεργοποίηση συστήματος VAT-MOSS / OSS",
+            "invoice_provider": "Πάροχος τιμολόγησης (π.χ. Fakturownia, InFakt)",
+            "infakt_api_key": "InFakt API Key",
+            "test_connection": "Δοκιμή σύνδεσης API",
+            "stripe_title": "Stripe Payments",
+            "stripe_publishable": "Stripe Publishable Key",
+            "stripe_secret": "Stripe Secret Key"
+        },
+        "editor": {
+            "placeholder": "Πού να κοιτάξω σήμερα;",
+            "prompts": {
+                "link": "Εισαγάγετε URL:",
+                "image": "Εισαγάγετε URL εικόνας:"
+            },
+            "toolbar": {
+                "bold": "Έντονη",
+                "italic": "Πλάγια",
+                "h2": "Επικεφαλίδα 2",
+                "h3": "Επικεφαλίδα 3",
+                "list": "Λίστα με κουκκίδες",
+                "listOrdered": "Αριθμημένη λίστα",
+                "link": "Εισαγάγετε URL:",
+                "image": "Εισαγάγετε URL εικόνας:",
+                "quote": "Παράθεση",
+                "code": "Μπλοκ κώδικα"
+            }
         }
-      }
     },
-    "market": {
-      "title": "Παρακολούθηση Αγοράς",
-      "description": "Παρακολουθήστε τον ανταγωνισμό και τις παγκόσμιες τάσεις στην εκπαίδευση.",
-      "curriculum": {
-        "title": "Παρακολούθηση Προγράμματος Σπουδών",
-        "description": "Προσαρμόστε τα υλικά στις εθνικές απαιτήσεις",
-        "monitor_label": "Παρακολουθούμενο Πρόγραμμα Σπουδών",
-        "options": {
-          "pl_mein": "Πολωνία (MEiN)",
-          "uk_ofsted": "Ηνωμένο Βασίλειο (Ofsted)",
-          "us_cc": "ΗΠΑ (Common Core)"
+    "adminPanel": {
+        "sidebar": {
+            "title": "Ρυθμίσεις Συστήματος",
+            "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
+            "expand": "Επέκταση",
+            "collapse": "Σύμπτυξη",
+            "logout": "Αποσύνδεση",
+            "logoutTooltip": "Έξοδος από τη συνεδρία",
+            "menu": {
+                "dashboard": "Πίνακας Ελέγχου",
+                "products": "Προϊόντα",
+                "orders": "Παραγγελίες",
+                "coupons": "Coupons",
+                "materials": "Υλικά",
+                "blog": "Ιστολόγιο",
+                "import": "Import AI",
+                "settings": "Ρυθμίσεις",
+                "chat": "AI Chat",
+                "home": "Αρχική Σελίδα",
+                "role": "Διαχειριστής",
+                "online": "Συνδεδεμένος",
+                "abandoned": "Abandoned Carts",
+                "offers": "Offer Generator",
+                "workshop": "AI Creative Suite",
+                "landing_builder": "Landing Pages"
+            }
         },
-        "status": "Συμμόρφωση των υλικών σας: 85%",
-        "alerts": "Εντοπίστηκε αλλαγή στις απαιτήσεις για τις τάξεις 4-6"
-      },
-      "trends": {
-        "title": "Τάσεις Αγοράς",
-        "description": "Ανάλυση θεμάτων με μεγάλη ζήτηση",
-        "top_selling": "Πιο δημοφιλής μορφή: 'Interactive Escape Rooms'",
-        "competitor_bestsellers": "Best-sellers ανταγωνιστών",
-        "recommendation": "Πρόταση: Δημιουργήστε ένα πακέτο 'Easter Escape Room' (Υψηλή ζήτηση)",
-        "ai_rec": "Πρόταση AI"
-      }
-    },
-    "insights": {
-      "title": "Έλεγχος AI & Προτάσεις",
-      "description": "Ανάλυση των πόρων σας και ιδέες επέκτασης",
-      "sync": {
-        "title": "Μητρώο Συγχρονισμού",
-        "description": "Κατάσταση εισαγωγής παιχνιδιών και υλικών από εξωτερικές πλατφόρμες",
-        "last_sync": "Τελευταίος επιτυχής συγχρονισμός: πριν από 15 λεπτά",
-        "pending_drafts": "{count} νέα προσχέδια για έλεγχο"
-      },
-      "expansion": {
-        "title": "Επέκταση Υλικών (Προτάσεις)",
-        "description": "Ιδέες για την επέκταση υπαρχόντων προϊόντων με χαμηλό κόστος",
-        "item1": "Το προϊόν 'Unit 1' μπορεί να επεκταθεί με 20 κάρτες flash (το AI θα τις δημιουργήσει αυτόματα)",
-        "item2": "Δημιουργήστε ένα 'Mega Pack' από 3 από τα πιο δημοφιλή σενάριά σας (Προοπτική: +25% περιθώριο κέρδους)"
-      },
-      "audit": {
-        "title": "Έλεγχος Μετατροπών",
-        "description": "Το AI αναλύει περιγραφές και φωτογραφίες των προϊόντων σας",
-        "suggestion": "Αλλάξτε την κύρια φωτογραφία στο 'Animal Cards' – η τρέχουσα έχει χαμηλό CTR"
-      }
-    },
-    "integrations": {
-      "title": "Ενσωματώσεις & Webhooks",
-      "description": "Διαχειριστείτε εξωτερικές συνδέσεις και αυτοματισμούς",
-      "webhooks": {
-        "title": "Webhooks",
-        "description": "Αποστολή ειδοποιήσεων παραγγελιών σε εξωτερικά συστήματα",
-        "add": "Προσθήκη Webhook",
-        "url": "URL Στόχου",
-        "event": "Συμβάν",
-        "events": {
-          "order_created": "Δημιουργία παραγγελίας",
-          "order_paid": "Πληρωμή παραγγελίας",
-          "user_registered": "Εγγραφή χρήστη"
+        "dashboard": {
+            "title": "Ρυθμίσεις Συστήματος",
+            "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
+            "periods": {
+                "7days": "7 ημέρες",
+                "30days": "30 ημέρες",
+                "90days": "90 ημέρες",
+                "all": "Όλο το διάστημα"
+            },
+            "addProduct": "Προσθήκη προϊόντος",
+            "currency": "€",
+            "stats": {
+                "revenue": "Έσοδα",
+                "orders": "Παραγγελίες",
+                "customers": "Πελάτες",
+                "avgOrderValue": "Μέση Αξία Παραγγελίας",
+                "vsPrevious": "έναντι προηγούμενης περιόδου",
+                "inSelectedPeriod": "Στην επιλεγμένη περίοδο",
+                "uniqueCustomers": "Μοναδικοί αγοραστές",
+                "perOrder": "Ανά παραγγελία"
+            },
+            "charts": {
+                "weeklyRevenue": "Εβδομαδιαία έσοδα",
+                "revenueByDay": "Πωλήσεις ανά ημέρα",
+                "bestsellersRanking": "Κατάταξη Best-sellers",
+                "topSellingProducts": "Προϊόντα με τις περισσότερες πωλήσεις",
+                "noSalesData": "Δεν υπάρχουν δεδομένα πωλήσεων",
+                "sold": "{count} πωλήθηκαν",
+                "days": {
+                    "mon": "Δευ",
+                    "tue": "Τρι",
+                    "wed": "Τετ",
+                    "thu": "Πεμ",
+                    "fri": "Παρ",
+                    "sat": "Σαβ",
+                    "sun": "Κυρ"
+                }
+            },
+            "recentOrders": {
+                "title": "Ρυθμίσεις Συστήματος",
+                "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
+                "viewAll": "Προβολή όλων",
+                "noOrders": "Δεν υπάρχουν ακόμη παραγγελίες",
+                "productCount": "{count} προϊόντα",
+                "status": {
+                    "completed": "Ολοκληρώθηκε",
+                    "pending": "Εκκρεμεί",
+                    "processing": "Σε επεξεργασία"
+                }
+            },
+            "aiInsights": {
+                "card": {
+                    "monitoring": "Active Market Monitoring",
+                    "strategyTitle": "Your growth strategy for {period}",
+                    "periodWeek": "next week",
+                    "periodMonth": "this month",
+                    "description": "We analyzed your last {count} orders. We have 3 specific recommendations that could increase your revenue by approx. 18%.",
+                    "generateBtn": "Generate Strategic Report"
+                },
+                "modal": {
+                    "title": "AI Growth Report",
+                    "subtitle": "Generated for: Administrator • Feb 2024",
+                    "revenueChance": "Revenue Chance",
+                    "revenueGrowth": "Possible growth in 14 days",
+                    "crossSellScore": "Cross-sell Score",
+                    "crossSellDesc": "High linking potential",
+                    "retentionProj": "Retention Proj.",
+                    "retentionDesc": "Loyal returning customers",
+                    "recommendedActions": "Recommended Actions",
+                    "action1Title": "Email: Abandoned Cart (New template)",
+                    "action1Desc": "Customers are abandoning carts for \"Preschool - Autumn Pack\". We suggest adding a 48h timer and 5% discount.",
+                    "action2Title": "Bundle: Preschool Combo Pack",
+                    "action2Desc": "Combine 3 most popular products into one bundle. Suggested price: $59.99.",
+                    "deploy": "Deploy",
+                    "create": "Create",
+                    "skip": "Skip report",
+                    "apply": "Apply Recommendations",
+                    "success": "Strategic report has been saved and sent for analysis."
+                },
+                "overlay": {
+                    "title": "Processing Big Data...",
+                    "subtitle": "\"Analyzing correlations between products and buying behaviors of your customers.\"",
+                    "step1": "Clustering users...",
+                    "step3": "Generating visualizations..."
+                },
+                "wordwallSync": {
+                    "title": "Smart Interactive Sync",
+                    "description": "Paste links to your resources (Wordwall, Genially, Canva, YouTube, Google Slides, Quizizz, NotebookLM, Vocaroo) to add them as products.",
+                    "placeholder": "https://wordwall.net/...\nhttps://view.genial.ly/...\nhttps://canva.com/design/...\nhttps://youtube.com/watch?v=...\nhttps://quizizz.com/...",
+                    "syncBtn": "Start Sync",
+                    "syncing": "Syncing...",
+                    "success": "Successfully imported {count} new games!",
+                    "noNew": "All provided links have already been imported.",
+                    "invalid": "No valid educational links (Wordwall/Genially/Canva/YouTube/Slides/etc) detected.",
+                    "close": "Close"
+                }
+            },
+            "interactivePreview": {
+                "subtitle": "Live preview of interactive material",
+                "noPreview": "No preview available for this asset",
+                "close": "Close"
+            },
+            "activeAiLogs": {
+                "title": "Active AI Logs",
+                "live": "Live",
+                "imageGenerated": "Image Generated",
+                "socialPostReady": "Social Post Ready",
+                "flashcardCreated": "Flashcard Created",
+                "trendIdentified": "Trend identified",
+                "seoOptimized": "SEO Optimized",
+                "imagePolished": "Image Polished"
+            },
+            "studioQuickAccess": {
+                "title": "Studio Quick Access",
+                "imageStudio": "Image Studio",
+                "generate4k": "Generate 4K Visuals",
+                "socialHub": "Social Hub",
+                "viralCreation": "Viral Post Creation"
+            },
+            "salesHub": {
+                "title": "Sales Hub",
+                "subtitle": "Real-time Performance Insights",
+                "totalRevenue": "Συνολικά Έσοδα",
+                "avgOrderValue": "Μέση Αξία Παραγγελίας",
+                "conversionRate": "Ποσοστό Μετατροπής",
+                "abandonedCarts": "Εγκαταλελειμμένα Καλάθια",
+                "upsellPerformance": "Upsell Performance",
+                "upsellDesc": "Post-purchase offers converted {percent}% of users",
+                "ltvLift": "LTV Lift"
+            },
+            "superAdmin": {
+                "title": "SuperAdmin: Deployment Management",
+                "subtitle": "Global Feature Toggles for new B2B modules",
+                "apiViewer": {
+                    "title": "External API Portal",
+                    "desc": "1-Click portal generator for schools (Phase 12).",
+                    "on": "Global ON",
+                    "off": "Paused",
+                    "earlyAccess": "Early Access List (Gold List)",
+                    "added": "Added {email} to early access"
+                },
+                "internalFeatures": {
+                    "title": "Internal Features & Shop Security",
+                    "desc": "Control the visibility of core modules in your B2C shop. Separately decide if these features are technically solid and should be allowed in B2B External Portals.",
+                    "ownShop": "Own Shop (B2C)",
+                    "externalExport": "External Export (B2B)",
+                    "games": "Interactive Games",
+                    "gamesDesc": "Arcade Room",
+                    "gamification": "Gamification",
+                    "gamificationDesc": "Badges, progress",
+                    "wallet": "Teacher Wallet",
+                    "walletDesc": "Points program"
+                },
+                "extensions": {
+                    "title": "B2B Extensions",
+                    "desc": "Marketplace for AI tokens and services (Phase 13)."
+                },
+                "futureCatalog": {
+                    "title": "Future B2B Module Catalog",
+                    "subtitle": "In development",
+                    "desc": "Features already existing in the mother shop, ready for future packaging and sharing with schools/teachers as paid SaaS Plugins.",
+                    "gamesApi": "Interactive Games (API)",
+                    "gamesApiDesc": "Allow schools to embed Arcade Room and board games directly on their own sites.",
+                    "gamificationEngine": "Gamification Engine",
+                    "gamificationEngineDesc": "Badges, Certificates, Proficiency Tree and Streaks sold as a motivative B2B addon.",
+                    "telemetry": "Clean Summaries",
+                    "telemetryDesc": "Simple, student-friendly summaries of completed modules exported to e-registers.",
+                    "affiliate": "B2B Affiliate Program",
+                    "affiliateDesc": "Schools dropship your courses under their own brand and share with students easily.",
+                    "ready": "Ready for deployment",
+                    "requiresPhase9": "Requires Phase 9"
+                }
+            }
+        },
+        "products": {
+            "title": "Ρυθμίσεις Συστήματος",
+            "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
+            "search": "Αναζήτηση προϊόντων...",
+            "importAi": "Εισαγωγή AI",
+            "addProduct": "Προσθήκη προϊόντος",
+            "noProducts": "Δεν βρέθηκαν προϊόντα",
+            "addFirst": "Προσθέστε το πρώτο σας προϊόν",
+            "table": {
+                "product": "Προϊόν",
+                "category": "Κατηγορία",
+                "price": "Τιμή",
+                "source": "Πηγή: kamilaenglish.com",
+                "status": "Συμμόρφωση των υλικών σας: 85%",
+                "actions": "Ενέργειες"
+            },
+            "status": {
+                "published": "Δημοσιεύτηκε",
+                "draft": "Προσχέδιο"
+            },
+            "actions": {
+                "edit": "Επεξεργασία",
+                "viewAccess": "View Product Access",
+                "copyLink": "Αντιγραφή συνδέσμου Quick Checkout",
+                "hide": "Απόκρυψη",
+                "publish": "Δημοσίευση",
+                "delete": "Διαγραφή"
+            },
+            "toasts": {
+                "linkCopied": "Ο σύνδεσμος Checkout αντιγράφηκε:\\n{link}",
+                "deleteConfirm": "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το προϊόν;"
+            },
+            "categories": {
+                "lesson-plans": "Σχέδια μαθήματος",
+                "worksheets": "Φύλλα εργασίας PDF",
+                "flashcards": "Κάρτες Flash (CSV/Anki)",
+                "games": "Online παιχνίδια",
+                "audio": "Υλικό ήχου",
+                "video": "Υλικά βίντεο",
+                "bundles": "Πακέτα",
+                "other": "Άλλα"
+            },
+            "source_badges": {
+                "wordpress": "WordPress / Publigo",
+                "tpt": "Teachers Pay Teachers",
+                "ai_optimized": "Βελτιστοποιημένο με AI"
+            }
+        },
+        "orders": {
+            "title": "Ρυθμίσεις Συστήματος",
+            "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
+            "exportCsv": "Εξαγωγή σε CSV",
+            "stats": {
+                "revenue": "Έσοδα",
+                "pending": "Εκκρεμεί",
+                "today": "Σήμερα"
+            },
+            "search": "Αναζήτηση προϊόντων...",
+            "statusFilter": "Κατάσταση",
+            "allStatuses": "Όλες",
+            "empty": "Δεν βρέθηκαν παραγγελίες",
+            "table": {
+                "order": "Παραγγελία",
+                "customer": "Πελάτης",
+                "products": "Προϊόντα",
+                "total": "Σύνολο",
+                "status": "Συμμόρφωση των υλικών σας: 85%",
+                "date": "Ημερομηνία"
+            },
+            "status": {
+                "pending": "Εκκρεμεί",
+                "processing": "Σε επεξεργασία",
+                "completed": "Ολοκληρώθηκε",
+                "cancelled": "Ακυρώθηκε",
+                "refunded": "Επιστράφηκε"
+            },
+            "paymentMethods": {
+                "card": "Κάρτα",
+                "transfer": "Τραπεζικό έμβασμα",
+                "blik": "BLIK",
+                "paypal": "PayPal"
+            },
+            "details": {
+                "notFound": "Η παραγγελία δεν βρέθηκε",
+                "back": "Πίσω στη λίστα",
+                "invoice": "Έκδοση τιμολογίου",
+                "payment": "Πληρωμή",
+                "summary": "Σύνοψη",
+                "sendEmail": "Αποστολή e-mail",
+                "items": "Είδη",
+                "paidAt": "Πληρώθηκε στις: {date}",
+                "discount": "Αυτόματη Έκπτωση (%)",
+                "total": "Σύνολο",
+                "quantity": "Ποσότητα"
+            },
+            "paymentStatus": {
+                "paid": "Πληρώθηκε",
+                "pending": "Εκκρεμεί",
+                "failed": "Απέτυχε",
+                "refunded": "Επιστράφηκε"
+            },
+            "export_headers": {
+                "order_number": "Αριθμός παραγγελίας",
+                "date": "Ημερομηνία",
+                "customer": "Πελάτης",
+                "email": "E-mail",
+                "products": "Προϊόντα",
+                "total": "Σύνολο",
+                "status": "Συμμόρφωση των υλικών σας: 85%"
+            }
+        },
+        "coupons": {
+            "title": "Ρυθμίσεις Συστήματος",
+            "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
+            "addCoupon": "Νέο κουπόνι",
+            "editCoupon": "Επεξεργασία κουπονιού",
+            "createCoupon": "Δημιουργία κουπονιού",
+            "stats": {
+                "all": "Όλο το διάστημα",
+                "active": "Ενεργό",
+                "usage": "Συνολική χρήση"
+            },
+            "form": {
+                "code": "Μπλοκ κώδικα",
+                "generate": "Δημιουργία",
+                "placeholder": "Πού να κοιτάξω σήμερα;",
+                "discountType": "Τύπος έκπτωσης",
+                "percent": "Ποσοστό (%)",
+                "fixed": "Σταθερό ποσό",
+                "discountValue": "Αξία έκπτωσης",
+                "usageLimit": "Όριο χρήσης",
+                "minOrderValue": "Ελάχιστη αξία παραγγελίας",
+                "expiresAt": "Λήγει στις (προαιρετικό)"
+            },
+            "ux": {
+                "show": "Show",
+                "hide": "Hide",
+                "copy": "Copy",
+                "copied": "Copied!",
+                "secure": "Encrypted"
+            },
+            "preview": {
+                "title": "Preview & Accept",
+                "accept": "Accept Changes",
+                "reject": "Discard",
+                "bulk_title": "Review Generated Drafts",
+                "apply_all": "Accept All ({count})",
+                "diff_before": "Before Optimization",
+                "diff_after": "AI Suggestion"
+            },
+            "table": {
+                "code": "Μπλοκ κώδικα",
+                "discount": "Αυτόματη Έκπτωση (%)",
+                "usage": "Συνολική χρήση",
+                "expires": "Λήξη",
+                "status": "Συμμόρφωση των υλικών σας: 85%"
+            },
+            "toasts": {
+                "deleteConfirm": "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το προϊόν;"
+            }
+        },
+        "materials": {
+            "title": "Ρυθμίσεις Συστήματος",
+            "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
+            "deleteSelected": "Διαγραφή ({count})",
+            "assignToProduct": "Ανάθεση σε προϊόν ({count})",
+            "dragDrop": "Σύρετε τα αρχεία εδώ",
+            "clickToUpload": "ή κάντε κλικ στο παρακάτω κουμπί για επιλογή από το δίσκο",
+            "selectFiles": "Επιλογή αρχείων",
+            "or": "- Ή -",
+            "library": {
+                "title": "Ρυθμίσεις Συστήματος",
+                "description": "Configuration for library",
+                "empty": "Δεν βρέθηκαν παραγγελίες"
+            },
+            "table": {
+                "check": "Επιλογή",
+                "fileName": "Όνομα αρχείου",
+                "size": "Μέγεθος",
+                "source": "Πηγή: kamilaenglish.com",
+                "product": "Προϊόν",
+                "actions": "Ενέργειες"
+            },
+            "badges": {
+                "upload": "Μεταφόρτωση",
+                "drive": "Google Drive",
+                "unassigned": "Μη ανατεθειμένο"
+            },
+            "dialog": {
+                "title": "Ρυθμίσεις Συστήματος",
+                "selectLabel": "Επιλογή προϊόντος",
+                "placeholder": "Πού να κοιτάξω σήμερα;",
+                "cancel": "Ακύρωση",
+                "save": "Αποθήκευση αλλαγών"
+            },
+            "toasts": {
+                "uploadSuccess": "Τα αρχεία μεταφορτώθηκαν με επιτυχία",
+                "deleted": "Το αρχείο διαγράφηκε",
+                "deletedSelected": "Τα επιλεγμένα αρχεία διαγράφηκαν",
+                "assigned": "Ανατέθηκαν {count} αρχεία στο προϊόν"
+            }
+        },
+        "certificates": {
+            "title": "Ρυθμίσεις Συστήματος",
+            "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
+            "stats": {
+                "totalIssued": "Συνολικά εκδοθέντα",
+                "avgScore": "Μέση βαθμολογία εξετάσεων"
+            },
+            "tabs": {
+                "templates": "Πρότυπα",
+                "exams": "Εξετάσεις",
+                "issued": "Εκδοθέντα"
+            },
+            "templates": {
+                "create": "Δημιουργία Προτύπου",
+                "preview": "Επεξεργασία Προτύπου",
+                "standardTitle": "Τυπικό Δίπλωμα (A4)",
+                "standardDesc": "Προεπιλεγμένο πρότυπο για μαθήματα γλωσσών",
+                "certificateTitle": "Πιστοποιητικό Ολοκλήρωσης",
+                "completedCourse": "Ολοκληρωμένο μάθημα: {course}",
+                "aiGenerate": "Δημιουργία Προτύπου AI",
+                "aiDesc": "Περιγράψτε το στυλ (π.χ. 'μοντέρνο', 'για παιδιά') και το AI θα δημιουργήσει ένα μοναδικό σχέδιο διπλώματος.",
+                "createAi": "Δημιουργία με AI"
+            },
+            "exams": {
+                "create": "Δημιουργία Προτύπου",
+                "description": "Configuration for exams",
+                "createAi": "Δημιουργία με AI"
+            },
+            "issued": {
+                "empty": "Δεν βρέθηκαν παραγγελίες"
+            }
+        },
+        "blog": {
+            "title": "Ρυθμίσεις Συστήματος",
+            "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
+            "newPost": "Νέα ανάρτηση",
+            "searchPlaceholder": "Αναζήτηση αναρτήσεων...",
+            "empty": "Δεν βρέθηκαν παραγγελίες",
+            "writeFirst": "Γράψτε την πρώτη ανάρτηση",
+            "table": {
+                "title": "Ρυθμίσεις Συστήματος",
+                "category": "Κατηγορία",
+                "status": "Συμμόρφωση των υλικών σας: 85%",
+                "date": "Ημερομηνία"
+            },
+            "status": {
+                "published": "Δημοσιεύτηκε",
+                "draft": "Προσχέδιο"
+            },
+            "actions": {
+                "preview": "Επεξεργασία Προτύπου",
+                "delete": "Διαγραφή",
+                "save": "Save",
+                "edit": "Επεξεργασία",
+                "hide": "Απόκρυψη",
+                "publish": "Δημοσίευση"
+            },
+            "categories": {
+                "mega-pack": "Mega Packs",
+                "scenariusze": "Scenarios",
+                "zlobek": "Nursery",
+                "special-lessons": "Special Lessons",
+                "speakbook": "Speakbook",
+                "stories": "Stories",
+                "culture": "Culture",
+                "pory-roku": "Seasons",
+                "teatr": "Theater",
+                "flashcards": "Flashcards",
+                "gry": "Games",
+                "inne": "Άλλα",
+                "metodyka": "Μεθοδολογία διδασκαλίας",
+                "materialy": "Εκπαιδευτικό υλικό",
+                "technologia": "Τεχνολογία στην εκπαίδευση",
+                "inspiracje": "Έμπνευση και ιδέες",
+                "recenzje": "Αξιολογήσεις",
+                "wydarzenia": "Εκδηλώσεις"
+            },
+            "toasts": {
+                "deleteConfirm": "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το προϊόν;"
+            },
+            "form": {
+                "createTitle": "New Post",
+                "createSubtitle": "Create a new blog post",
+                "editTitle": "Edit Post",
+                "editSubtitle": "Edit existing blog post",
+                "titlePlaceholder": "Post title...",
+                "contentTitle": "Content",
+                "contentPlaceholder": "Start writing post content...",
+                "excerptTitle": "Excerpt",
+                "excerptPlaceholder": "Short description displayed on post list...",
+                "statusTitle": "Status",
+                "categoryTitle": "Category",
+                "categoryPlaceholder": "Select category",
+                "tagsTitle": "Tags",
+                "tagsPlaceholder": "tag1, tag2, tag3",
+                "imageTitle": "Featured Image",
+                "imagePlaceholder": "https://kamila.shor.dev/image.jpg",
+                "seoTitle": "SEO",
+                "metaTitleLabel": "Meta Title",
+                "metaTitlePlaceholder": "Search engine title",
+                "metaDescLabel": "Meta Description",
+                "metaDescPlaceholder": "Search engine description",
+                "charCount": "{count}/{max} characters",
+                "seoPreview": "Google Preview",
+                "generate": "Generate",
+                "save": "Save",
+                "saveChanges": "Save Changes",
+                "saving": "Saving...",
+                "delete": "Delete",
+                "notFound": "Post not found",
+                "backToList": "Back to list",
+                "titleRequired": "Please enter a title first"
+            }
+        },
+        "chat": {
+            "title": "AI Agent Chat",
+            "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
+            "welcome": "Γεια σας! Είμαι έτοιμος για δουλειά. Μπορείτε να μου αναθέσετε εργασίες στους λογαριασμούς σας (Wordwall, Canva, Genially). Τι πρέπει να κάνω;",
+            "newChat": "Νέα Συνομιλία",
+            "history": "Ιστορικό",
+            "placeholder": "Πού να κοιτάξω σήμερα;",
+            "capabilities": {
+                "database": "Βάση δεδομένων",
+                "store": "Κατάστημα",
+                "web": "Internet",
+                "files": "Αρχεία"
+            },
+            "inputPlaceholder": "Πληκτρολογήστε ένα μήνυμα...",
+            "disclaimer": "Το AI μπορεί να κάνει λάθη. Επαληθεύστε τις σημαντικές πληροφορίες.",
+            "generatedBy": "Δημιουργήθηκε από {model}",
+            "mockResponse": "Προσομοιωμένη απάντηση από το μοντέλο {model}. Έλαβα: \\",
+            "mockSessions": {
+                "s1": {
+                    "title": "Ρυθμίσεις Συστήματος",
+                    "date": "Ημερομηνία"
+                },
+                "s2": {
+                    "title": "Ρυθμίσεις Συστήματος",
+                    "date": "Ημερομηνία"
+                },
+                "s3": {
+                    "title": "Ρυθμίσεις Συστήματος",
+                    "date": "Ημερομηνία"
+                }
+            }
+        },
+        "import": {
+            "title": "Ρυθμίσεις Συστήματος",
+            "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
+            "catalogUrl": "URL Καταλόγου",
+            "catalogUrlDesc": "Επικολλήστε τον σύνδεσμο στη σελίδα προϊόντων (kamilaenglish.com)",
+            "scan": "Σάρωση Προϊόντων",
+            "scanning": "Σάρωση...",
+            "enhance": "Βελτίωση με AI",
+            "enhancing": "Βελτίωση...",
+            "import": "Εισαγωγή ({count})",
+            "importing": "Εισαγωγή νέων προϊόντων...",
+            "productsFound": "Προϊόντα ({count})",
+            "selectedCount": "{count} επιλεγμένα",
+            "selectAll": "Επιλογή όλων",
+            "deselectAll": "Αποεπιλογή όλων",
+            "allCategories": "Όλα",
+            "openSource": "Ανοιχτός κώδικας",
+            "preview": {
+                "testInteractive": "Test Interactive Game",
+                "sourceLink": "Source Link",
+                "selectToPreview": "Select a product to preview",
+                "backToList": "Back to List",
+                "acceptAndCreate": "Accept & Create {count} Drafts"
+            },
+            "configureAi": "Configure API keys in settings before using AI",
+            "selectProducts": "Select products to import",
+            "noAssetsFound": "No valid assets were found. Please ensure you are using public links (e.g. wordwall.net/resource/...) and not your private dashboard.",
+            "privateLink": "Skipped private page: {url}",
+            "errors": {
+                "enterUrl": "Εισαγάγετε URL καταλόγου",
+                "onlyKamila English": "Υποστηρίζονται μόνο προϊόντα από το kamilaenglish.com",
+                "configureAi": "Διαμορφώστε τα κλειδιά API στις ρυθμίσεις πριν χρησιμοποιήσετε το AI",
+                "selectProducts": "Επιλέξτε προϊόντα προς εισαγωγή"
+            },
+            "success": {
+                "found": "Βρέθηκαν {count} προϊόντα από το Kamila English!",
+                "enhanced": "Οι περιγραφές βελτιώθηκαν από το AI!",
+                "imported": "Εισήχθησαν {count} προϊόντα!"
+            },
+            "placeholders": {
+                "url": "URL Στόχου"
+            },
+            "categories": {
+                "mega-pack": "Mega Packs",
+                "scenariusze": "Scenarios",
+                "zlobek": "Nursery",
+                "special-lessons": "Special Lessons",
+                "speakbook": "Speakbook",
+                "stories": "Stories",
+                "culture": "Culture",
+                "pory-roku": "Seasons",
+                "teatr": "Theater",
+                "flashcards": "Κάρτες Flash (CSV/Anki)",
+                "gry": "Games",
+                "inne": "Άλλα"
+            },
+            "enhancedText": {
+                "titlePrefix": "🎯",
+                "bestseller": "✨ BESTSELLER!",
+                "whatYouGet": "📚 Τι λαμβάνετε:",
+                "features": {
+                    "pdf": "• Έτοιμο προς εκτύπωση υλικό PDF",
+                    "teacher": "• Οδηγίες για τον δάσκαλο",
+                    "worksheets": "• Φύλλα εργασίας και ασκήσεις"
+                },
+                "footer": "⭐ Έμπιστο προϊόν από εκατοντάδες καθηγητές!",
+                "item1": "Πλήρης πρόσβαση στα υλικά",
+                "item2": "Βελτιστοποιημένο για SEO",
+                "item3": "Οδηγίες εφαρμογής για μαθητές"
+            },
+            "interactive": {
+                "title": "Διαδραστικό Περιεχόμενο",
+                "subtitle": "Εισαγωγή και βελτιστοποίηση παιχνιδιών από Wordwall και Genially",
+                "placeholder": "Επικολλήστε συνδέσμους (ένας ανά γραμμή)...",
+                "found": "Βρέθηκαν {count} διαδραστικά στοιχεία!",
+                "quiz": "Quiz Γνώσεων",
+                "match": "Αντιστοίχιση",
+                "wheel": "Τροχός της Τύχης",
+                "maze": "Λαβύρινθος",
+                "presentation": "Πολυμεσική Παρουσίαση",
+                "escape": "Δωμάτιο Απόδρασης",
+                "map": "Διαδραστικός Χάρτης",
+                "game": "Επιτραπέζιο Παιχνίδι",
+                "descriptions": {
+                    "wordwall": "Διαδραστικό παιχνίδι Wordwall που υποστηρίζει τη μάθηση μέσω παιχνιδιού.",
+                    "genially": "Ελκυστική παρουσίαση Genially με στοιχεία παιχνιδοποίησης."
+                },
+                "logs": {
+                    "init": "🚀 Αρχικοποίηση πράκτορα σάρωσης...",
+                    "connect": "🔍 Σύνδεση με το API συνεδρίας...",
+                    "extract": "🧩 Εξαγωγή μηχανικής και μεταδεδομένων...",
+                    "images": "🖼️ Δημιουργία μικρογραφιών προεπισκόπησης...",
+                    "seo": "✍️ Δημιουργία περιγραφών βελτιστοποιημένων για SEO...",
+                    "pricing": "💰 Υπολογισμός προτεινόμενων τιμών...",
+                    "finalize": "✨ Οριστικοποίηση προσχεδίων προϊόντων..."
+                },
+                "preview_title": "Προεπισκόπηση προσχεδίων AI",
+                "preview_desc": "Ελέγξτε τα παραγόμενα προϊόντα και δοκιμάστε το διαδραστικό περιεχόμενο.",
+                "select_to_preview": "Επιλέξτε ένα προϊόν για προεπισκόπηση",
+                "back_to_list": "Επιστροφή στη λίστα",
+                "accept_and_create": "Αποδοχή και δημιουργία {count} προσχεδίων",
+                "live_session": "Ζωντανή Διαδραστική Συνεδρία",
+                "back_to_desc": "Επιστροφή στην περιγραφή",
+                "embed_info": "Έτσι θα φαίνεται το παιχνίδι στους πελάτες σας.",
+                "test_game": "Δοκιμάστε το Παιχνίδι",
+                "source_link": "Σύνδεσμος Πηγής",
+                "generatedLabel": "ΠΑΡΑΓΕΤΑΙ ΑΠΟ AI"
+            }
+        },
+        "success": {
+            "found": "Found {count} products from Kamila English!",
+            "enhanced": "Descriptions enhanced by AI!",
+            "imported": "Imported {count} products!"
+        },
+        "placeholders": {
+            "url": "https://www.sklep.kamilaenglish.com/..."
+        },
+        "categories": {
+            "mega-pack": "Mega Packs",
+            "scenariusze": "Scenarios",
+            "zlobek": "Nursery",
+            "special-lessons": "Special Lessons",
+            "speakbook": "Speakbook",
+            "stories": "Stories",
+            "culture": "Culture",
+            "pory-roku": "Seasons",
+            "teatr": "Theater",
+            "flashcards": "Flashcards",
+            "gry": "Games",
+            "inne": "Others"
+        },
+        "footer": "⭐ Trusted by hundreds of teachers!",
+        "item1": "Full access to materials",
+        "item2": "SEO Optimized content",
+        "item3": "Implementation guide for students",
+        "assistant": {
+            "title": "AI Copilot",
+            "status": "Active Intelligence",
+            "welcome": "How can I help you today?",
+            "placeholder": "Ask me anything...",
+            "suggestions": {
+                "generate_visuals": "Generate 4K Visuals",
+                "social_post": "Create Social Post",
+                "avatar_script": "New AI Avatar Script",
+                "seo_optimize": "SEO Optimize Description",
+                "product_cover": "Generate Product Cover",
+                "sync_wordwall": "Sync with Wordwall",
+                "config_workshop": "Configure AI Workshop",
+                "test_api": "Test API Credentials",
+                "connect_canva": "Connect Canva Design",
+                "gen_strategy": "Generate Strategy",
+                "view_trends": "View Trends",
+                "open_workshop": "Open Workshop"
+            },
+            "responses": {
+                "processing": "I'm processing your request. As your AI Copilot, I can help you manage products, generate creative assets, and optimize your store.",
+                "products_context": "You currently have {count} products in your store. I can help you generate descriptions or images for them in the AI Workshop.",
+                "product_example": "For example, I noticed \"{title}\". Would you like to optimize it?",
+                "workshop_info": "The AI Workshop is where you can generate images, videos, and social media posts. You can find it in the 'Workshop' tab of Settings or the dedicated Studio page.",
+                "wordwall_info": "To sync with Wordwall, go to the Products page and use the 'Interactive Import' button. I can also help you scrape metadata from any educational URL!",
+                "hello": "Hello! I'm your AI Copilot. I'm currently aware of {count} products and your store settings. How can I assist you today?"
+            }
+        },
+        "offers": {
+            "title": "AI Offer Generator",
+            "subtitle": "Create high-converting offers in seconds.",
+            "beta": "Beta Growth Suite",
+            "parameters": {
+                "title": "Campaign Parameters",
+                "description": "Define the goal of your offer",
+                "promotion_type": "Promotion Type",
+                "occasional": "Occasional",
+                "evergreen": "Evergreen",
+                "product": "Product / Service",
+                "product_placeholder": "e.g. Lesson Plan Bundle A1-C1",
+                "benefit": "Main Benefit",
+                "benefit_placeholder": "What will the customer gain?",
+                "discount": "Discount (%)",
+                "generate": "Generate AI Offer",
+                "analyzing": "Analyzing market..."
+            },
+            "preview": {
+                "ai_project": "AI PROJECT",
+                "effectiveness": "Effectiveness: {score}%",
+                "title": "Special Early Bird Offer",
+                "subtitle": "Review the generated campaign before publishing",
+                "ad_copy_label": "Ad Slogan",
+                "conversion_label": "Conversion",
+                "vs_avg": "+{diff}% vs avg",
+                "discount_code_label": "Your discount code",
+                "copied": "Copied",
+                "copy": "Copy",
+                "reject": "Reject and change parameters",
+                "accept": "Accept and Publish Offer"
+            },
+            "loading": {
+                "title": "AI Magic in progress...",
+                "description": "\"Analyzing market trends and optimizing sales psychology for your products.\"",
+                "progress_label": "Competitor analysis..."
+            },
+            "toasts": {
+                "copied": "Discount code copied!",
+                "ready": "Offer ready for review!"
+            }
+        },
+        "landingBuilder": {
+            "title": "Landing Page Builder",
+            "draftVersion": "Draft Version: {name}",
+            "desktop": "Desktop",
+            "mobile": "Mobile",
+            "preview": "Preview",
+            "save": "Save changes",
+            "saving": "Saving...",
+            "elements": "Page Elements",
+            "text": "Text",
+            "image": "Image",
+            "button": "Button",
+            "aiBlock": "AI Block",
+            "canvas": "Canvas (Layers)",
+            "hero": "Hero Section",
+            "features": "Advantages & Benefits",
+            "pricing": "Pricing Section",
+            "aiMagic": {
+                "title": "Ready for magic?",
+                "desc": "Use AI to automatically match copy and colors to your product.",
+                "optimize": "Optimize with AI"
+            },
+            "mock": {
+                "newCourse": "New Course",
+                "heroTitle": "Start teaching the language {joy}",
+                "joy": "with joy",
+                "heroDesc": "Ready-made scenarios your students will love. Zero stress, 100% results.",
+                "buyNow": "Buy now and start teaching",
+                "learnMore": "Learn more",
+                "addImage": "Add main image (Drag & Drop)"
+            },
+            "optimization": {
+                "title": "AI Landing Optimization",
+                "desc": "We detected {count} areas for improvement to increase conversion by approx. {percent}%.",
+                "current": "Current Version",
+                "aiSuggestion": "AI Suggestion (Improved conversion)",
+                "recommendation": "RECOMMENDATION",
+                "skip": "Skip changes",
+                "apply": "Apply optimization",
+                "success": "AI changes have been applied to the project!",
+                "processing": "Working on the project...",
+                "processingDesc": "\"Scanning your copy for benefit language and analyzing market heatmaps.\"",
+                "analysingHeaders": "Analyzing headers...",
+                "pickingColors": "Choosing color palette...",
+                "renderingPreview": "Rendering preview...",
+                "paletteTitle": "Improved Color Palette (Ocean Night)",
+                "paletteDesc": "We will change the accents to a more professional navy and energetic blue.",
+                "suggestionTitle": "Stop wasting hours on preparation. Choose ready-made solutions.",
+                "suggestionDesc": "Join 500+ teachers who reclaimed 10 hours a week. We guarantee a smile on every student's face.",
+                "suggestionButton": "Claim your time and start now"
+            },
+            "toasts": {
+                "saved": "Landing page saved successfully!"
+            }
+        },
+        "integrations": {
+            "title": "BaseLinker Εκπαιδευτικό",
+            "subtitle": "Παγκόσμιες πωλήσεις υλικού και αυτοματισμός AI.",
+            "loading": "Φόρτωση μεταφράσεων...",
+            "addStore": "Προσθήκη καταστήματος",
+            "sync_status": "Τελευταίος συγχρονισμός παιχνιδιών",
+            "today": "Σήμερα",
+            "tabs": {
+                "sync": "Αποθήκη & Συγχρονισμός",
+                "agent": "Πράκτορας Δημοσίευσης",
+                "settings": "Ρυθμίσεις"
+            },
+            "marketplaces": {
+                "groups": {
+                    "poland": "Πολωνία",
+                    "usa": "ΗΠΑ",
+                    "dach": "Γερμανία (DACH)",
+                    "uk": "Ηνωμένο Βασίλειο",
+                    "fr_es": "Γαλλία/Ισπανία"
+                },
+                "names": {
+                    "wp": "WooCommerce / Publigo",
+                    "wp_full": "WordPress / Publigo",
+                    "tpt": "Teachers Pay Teachers",
+                    "etsy": "Etsy Education",
+                    "eduki": "Eduki (Γερμανία)",
+                    "tes": "TES (UK)",
+                    "mieux": "MieuxEnseigner (Γαλλία/Ισπανία)"
+                }
+            },
+            "inventory": {
+                "title": "Παγκόσμιο Απόθεμα Υλικού",
+                "badge": "Κεντρική Αποθήκη",
+                "description": "Διαχειριστείτε την κεντρική βάση των ψηφιακών υλικών σας",
+                "source": "Πηγή: kamilaenglish.com",
+                "allFiles": "Όλα τα PDF, Παιχνίδια και Ήχος σε ένα μέρος",
+                "updateBtn": "Ενημέρωση Αποθέματος",
+                "syncBtn": "Συγχρονισμός Αποθέματος",
+                "progress": "Πρόοδος συγχρονισμού",
+                "log": "Μητρώο Συστήματος",
+                "waiting": "Αναμονή για έναρξη...",
+                "logs": {
+                    "init": "Αρχικοποίηση σύνδεσης με εξωτερικά συστήματα...",
+                    "auth": "Εξουσιοδότηση Publigo (wp-idea) & WooCommerce...",
+                    "fetching": "Λήψη λίστας προϊόντων...",
+                    "syncing": "Συγχρονισμός επιπέδων αποθέματος και ψηφιακών αρχείων...",
+                    "complete": "Ο συγχρονισμός ολοκληρώθηκε. Εντοπίστηκαν {count} νέα υλικά.",
+                    "agent_init": "Αρχικοποίηση περιβάλλοντος για {mkt}...",
+                    "agent_login": "Σύνδεση στον πίνακα πωλητή...",
+                    "agent_fill": "Συμπλήρωση φόρμας: {title}...",
+                    "agent_optimize": "Βελτιστοποίηση SEO και ανέβασμα αρχείων...",
+                    "agent_done": "Έτοιμο! Το προϊόν περιμένει έγκριση."
+                },
+                "toasts": {
+                    "sync_success": "Η αποθήκη ενημερώθηκε με επιτυχία.",
+                    "analysis_done": "Η ανάλυση AI ολοκληρώθηκε. Τα προτεινόμενα δεδομένα είναι έτοιμα.",
+                    "no_tokens": "Ανεπαρκή διακριτικά. Επαναφορτίστε το λογαριασμό σας.",
+                    "tokens_spent": "Αφαιρέθηκαν {count} διακριτικά για τη λειτουργία AI.",
+                    "test_woo": "Δοκιμή σύνδεσης WooCommerce...",
+                    "woo_success": "Συνδέθηκε με επιτυχία στο kamilaenglish.com (API v3)",
+                    "test_manus": "Επαλήθευση άδειας Manus AI...",
+                    "manus_success": "Άδεια ενεργή. Ο πράκτορας είναι έτοιμος για εργασία.",
+                    "settings_saved": "Οι ρυθμίσεις αποθηκεύτηκαν τοπικά.",
+                    "new_channel": "Άνοιγμα διαμορφωτή νέου καναλιού πωλήσεων...",
+                    "edit_schedule": "Η επεξεργασία προγράμματος είναι διαθέσιμη στις ρυθμίσεις συστήματος.",
+                    "importing": "Εισαγωγή νέων προϊόντων..."
+                },
+                "stats": {
+                    "products_short": "προϊόντα"
+                }
+            },
+            "schedule": {
+                "title": "Χρονοδιάγραμμα Συγχρονισμού",
+                "daily02": "Καθημερινά στις 02:00",
+                "active": "Ενεργό",
+                "disabled": "Ανενεργό",
+                "checkOnlyChanges": "Έλεγχος μόνο αλλαγών",
+                "changeCron": "Αλλαγή ρυθμίσεων cron"
+            },
+            "aiTip": {
+                "title": "Συμβουλή AI",
+                "description": "Το AI εντόπισε νέα προϊόντα στο kamilaenglish.com που δεν έχουν εισαχθεί ακόμη.",
+                "importBtn": "Εισαγωγή τώρα"
+            },
+            "agent": {
+                "catalogTitle": "Κατάλογος Προϊόντων",
+                "ready": "Έτοιμο",
+                "emptyState": {
+                    "title": "Δεν βρέθηκαν προϊόντα",
+                    "description": "Επιλέξτε μια αγορά και κάντε κλικ στο 'Σάρωση', για να βρείτε υλικά προς δημοσίευση."
+                },
+                "selectMarket": "Επιλέξτε αγορά στόχο",
+                "launchBtn": "Εκκίνηση Πράκτορα",
+                "launchAdmin": "Εκκίνηση Πράκτορα (Admin)",
+                "launchPoints": "Εκκίνηση για {count} πόντους",
+                "working": "Ο Πράκτορας εργάζεται...",
+                "manusMode": "Λειτουργία Manus: Ενεργή",
+                "marketPrefix": "EnglishLearning: ",
+                "yourBalance": "Το υπόλοιπό σας",
+                "analysisTitle": "Ανάλυση AI για {market}",
+                "regionalOptimization": "Περιφερειακή βελτιστοποίηση",
+                "suggestedTitle": "Προτεινόμενος Τίτλος (SEO Local)",
+                "suggestedPrice": "Τιμή (Μετατροπή PPP)",
+                "sellingProb": "Πιθανότητα Πώλησης",
+                "veryHigh": "ΠΟΛΥ ΥΨΗΛΗ",
+                "success": {
+                    "title": "Η δημοσίευση ολοκληρώθηκε!",
+                    "description": "Ο πράκτορας ολοκλήρωσε την εργασία του. Δείτε τα αποτελέσματα στο πάνελ πωλητή.",
+                    "viewLogs": "ΠΡΟΒΟΛΗ ΜΗΤΡΩΩΝ ΣΥΝΕΔΡΙΑΣ"
+                },
+                "toasts": {
+                    "session_manager": "Άνοιγμα διαχειριστή συνεδρίας...",
+                    "proxy_success": "Proxy: {ip} ({location}) OK",
+                    "report_title": "Αναφορά Πράκτορα",
+                    "report_desc": "Σύνδεση: OK, Φόρμα: Συμπληρώθηκε, Εικόνες: Ανέβηκαν, SEO: Βελτιστοποιήθηκε. Συνολικός χρόνος: {time}"
+                },
+                "stats": {
+                    "points": "pts"
+                },
+                "mockAnalysis": {
+                    "optimizedTitleSuffix": "Ολοκληρωμένο εκπαιδευτικό υλικό για εκπαιδευτικούς",
+                    "suggestedPrice": "Τιμή (Μετατροπή PPP)",
+                    "subject": "Θέμα",
+                    "seoTags": "homeschool, φύλλα εργασίας, λεξιλόγιο, κάρτες flash, πόροι εκπαιδευτικών",
+                    "description": "Ξεκλειδώστε το δυναμικό της τάξης σας με αυτό το premium προϊόν {title}. \n\nΣχεδιασμένο από δασκάλους για δασκάλους, αυτός ο πόρος περιλαμβάνει:\n- Πλήρη σενάρια PDF\n- Έτοιμα φύλλα εργασίας\n- Διαδραστικά οπτικά βοηθήματα."
+                },
+                "idle": {
+                    "title": "Σε αναμονή",
+                    "description": "Εκκινήστε τον πράκτορα για να ξεκινήσετε τη διαδικασία αυτοματισμού στην πλατφόρμα {market}."
+                }
+            },
+            "settings": {
+                "title": "Πολυκαναλική Σύνδεση",
+                "description": "Ρυθμίστε τα δεδομένα πρόσβασης για εξωτερικά καταστήματα.",
+                "saveAll": "Αποθήκευση όλων",
+                "lastSaved": "Τελευταία αποθήκευση: {time}",
+                "woo": {
+                    "title": "WooCommerce / WordPress Site",
+                    "url": "URL Στόχου",
+                    "key": "Κλειδί API / Διακριτικό",
+                    "secret": "Consumer Secret",
+                    "connected": "Συνδεδεμένο",
+                    "autoSync": "ΑΥΤΟΜΑΤΟΣ ΣΥΓΧΡΟΝΙΣΜΟΣ ΕΝΕΡΓΟΣ",
+                    "test": "Δοκιμή"
+                },
+                "manus": {
+                    "title": "Συνεδρία Manus AI",
+                    "description": "Ο πράκτορας χρησιμοποιεί 'Browser Operator Mode'. Μεταφορτώστε τα cookies συνεδρίας (JSON) για να αποφύγετε προβλήματα 2FA.",
+                    "instance": "Στιγμιότυπο API Πράκτορα",
+                    "test": "Δοκιμή",
+                    "manage": "Διαχείριση Συνεδρίας",
+                    "proxy": "Δοκιμή Proxy"
+                }
+            }
         }
-      },
-      "mcp": {
-        "title": "Συνδέσεις MCP",
-        "description": "Σύνδεση εξωτερικών μοντέλων και βάσεων γνώσεων μέσω του πρωτοκόλλου MCP",
-        "server": "Διεύθυνση διακομιστή MCP",
-        "status": "Συμμόρφωση των υλικών σας: 85%"
-      },
-      "api": {
-        "title": "Εξωτερικά Κλειδιά API",
-        "description": "Ενσωματώσεις με CRM, Mailing και άλλα συστήματα",
-        "service": "Υπηρεσία (π.χ. MailerLite, Zapier)",
-        "key": "Κλειδί API / Διακριτικό",
-        "coming_soon": "Η ενσωμάτωση με MailerLite, ActiveCampaign και Zapier υλοποιείται.",
-        "coming_soon_desc": "Μπορείτε ήδη να αποθηκεύσετε κλειδιά στην ενότητα Webhooks για δοκιμές."
-      }
+    },
+    "logs": {
+        "init": "🚀 Initializing AI Scraper agent...",
+        "connect": "🔍 Connecting to API session...",
+        "extract": "🧩 Extracting mechanics and metadata...",
+        "images": "🖼️ Generating preview thumbnails...",
+        "seo": "✍️ Crafting SEO-optimized descriptions...",
+        "pricing": "💰 Calculating regional pricing...",
+        "finalize": "✨ Finalizing product drafts..."
     },
     "interactive": {
-      "title": "Διαδραστικό Περιεχόμενο",
-      "description": "Ενσωματώστε παιχνίδια από Wordwall, Genially και H5P.",
-      "auto_import": "Αυτόματη δημιουργία προϊόντος μετά την προσθήκη παιχνιδιού",
-      "auto_import_desc": "Το σύστημα θα εντοπίζει αυτόματα τους κωδικούς ενσωμάτωσης (Embed) κατά τη δημιουργία προϊόντος.",
-      "sync_status": "Τελευταίος συγχρονισμός παιχνιδιών",
-      "sync_hint": "Σας προτείνουμε να τοποθετείτε απευθείας συνδέσμους παιχνιδιών στο πάνελ επεξεργασίας προϊόντος. Το σύστημα θα τους μετατρέψει αυτόματα σε διαδραστικό παράθυρο για τον μαθητή.",
-      "other_title": "Άλλες ενσωματώσεις",
-      "platforms": {
-        "wordwall": "Κλειδί API Wordwall",
-        "wordwall_placeholder": "π.χ. kamila-lo-ko",
-        "genially": "Κλειδί API Genially",
-        "genially_placeholder": "π.χ. https://view.genial.ly/profile/nick",
-        "sync_title": "Συγχρονισμός Wordwall και Genially",
-        "h5p_desc": "Τοπική ενσωμάτωση",
-        "learningapps_desc": "Μέσω iFrame",
-        "quizizz_desc": "Συγχρονισμός API"
-      }
-    },
-    "workshop": {
-      "title": "AI Workshop",
-      "description": "Εργαλεία για γρήγορη δημιουργία νέων υλικών.",
-      "generate_btn": "Δημιουργία Υλικών",
-      "status_ready": "Έτοιμο για εργασία",
-      "rag_sources": {
-        "title": "Βάση Γνώσης AI (RAG)",
-        "description": "Επιλέξτε τη βάση γνώσης AI",
-        "main_label": "Κύρια Πηγή (RAG)",
-        "notebook_lm": "Σύνδεσμος NotebookLM / Γνωσιακή Βάση",
-        "options": {
-          "google_drive": "Google Drive (Φάκελος: Edu-Materials)",
-          "notebook_lm": "Σύνδεσμος NotebookLM / Γνωσιακή Βάση",
-          "local": "Τοπική βάση δεδομένων διανυσμάτων"
-        }
-      },
-      "generators": {
-        "title": "Material Generators",
-        "reading": "Ανάγνωση (Κείμενο + Ερωτήσεις)",
-        "listening": "Ακρόαση (Σενάριο + AI Audio)",
-        "speaking": "Κάρτες ομιλίας",
-        "vocabulary": "Ασκήσεις λεξιλογίου",
-        "flashcards": "Κάρτες Flash (CSV/Anki)",
-        "tests": "Γεννήτρια τεστ",
-        "worksheets": "Φύλλα εργασίας PDF",
-        "ai_quiz": "AI Quiz Maker"
-      },
-      "canva": {
-        "title": "Ενσωμάτωση Canva",
-        "description": "Εξαγωγή υλικών απευθείας σε σχέδια Canva",
-        "api_key": "Κλειδί API",
-        "auto_export": "Αυτόματη εξαγωγή",
-        "connect": "Σύνδεση με Canva"
-      },
-      "title_prefix": "AI Creative",
-      "title_suffix": "Studio",
-      "badge": "Next-Gen",
-      "powered_by": "Powered by OpenAI & HeyGen",
-      "available_credits": "Available Credits",
-      "generations_today": "Generations Today",
-      "studio": "Studio",
-      "history": "History",
-      "studios": {
-        "images": "Image Studio",
-        "video": "Video Studio",
-        "avatars": "Avatar Studio",
-        "social": "Social Hub",
-        "flashcards": "Flashcards",
-        "canva": "Canva Studio"
-      },
-      "actions": {
-        "reuse": "Reuse Prompt",
-        "generate": "Generate Asset",
-        "processing": "Processing...",
-        "attach": "Attach",
-        "change_product": "Change Product",
-        "connect": "Connect to Product"
-      },
-      "labels": {
-        "persona": "Select AI Persona",
-        "script": "Script",
-        "prompt": "Creative Prompt",
-        "preview": "Preview",
-        "history_empty": "Your canvas awaits.",
-        "connect_desc": "Link this AI asset to your store inventory.",
-        "professional_suite": "Professional Creative Suite"
-      },
-      "social_hub": {
-        "title": "Social Media Hub",
-        "subtitle": "Post Generator & Optimization",
-        "platforms": {
-          "instagram": "Instagram",
-          "facebook": "Facebook",
-          "linkedin": "LinkedIn",
-          "youtube": "YouTube"
-        },
-        "labels": {
-          "select_product": "Select Product to Promote",
-          "pick_placeholder": "Pick from Product Library...",
-          "campaign_context": "Campaign Context / Prompt",
-          "prompt_placeholder": "What are we promoting today? (e.g., 'New Flashcard Set for Christmas')",
-          "ai_copy": "AI Generated Copy",
-          "thinking": "Thinking...",
-          "regenerate": "Regenerate Copy",
-          "copy_placeholder": "AI will generate your post content here...",
-          "media_asset": "Media Asset",
-          "auto_selected": "Auto-Selected",
-          "select_asset": "Select Asset",
-          "from_gallery": "From Product Gallery",
-          "viral_growth": "Viral Growth",
-          "score": "Score",
-          "ai_expectancy": "AI expects {percent}% higher engagement on {platform}.",
-          "live_mockup": "Live Mockup Preview",
-          "mockup_placeholder": "Your mockup copy will appear here...",
-          "export": "Export to Socials"
-        }
-      },
-      "flashcards": {
-        "title": "AI Flashcard Studio",
-        "subtitle": "Transform topics into beautiful, ready-to-print flashcard sets.",
-        "badge": "Smart Learning",
-        "branding_kit": "Branding Kit",
-        "export_canva": "Export to Canva",
-        "smart_generator": "Smart Generator",
-        "topic_label": "Topic or Context",
-        "topic_placeholder": "e.g. Life Cycle of a Frog",
-        "style_label": "Visual Style",
-        "styles": {
-          "academic": "Academic",
-          "playful": "Playful",
-          "minimal": "Minimal",
-          "canva_ai": "Canva AI"
-        },
-        "generate_btn": "Generate Deck",
-        "generating": "Generating...",
-        "live_preview": "Live Preview",
-        "cards_prepared": "{count} Cards Prepared",
-        "empty": "No cards generated yet",
-        "add_custom": "Add Custom Card"
-      }
-    },
-    "automation": {
-      "title": "Αυτοματισμός AI",
-      "description": "Αναθέστε εργασίες ρουτίνας σε πράκτορες AI.",
-      "agent_delivered": "Ο πράκτορας παρέδωσε {count} νέα προσχέδια!",
-      "agents": {
-        "title": "Ενεργός Πράκτορας",
-        "select_placeholder": "Επιλέξτε πράκτορα αυτοματισμού",
-        "manus": "Σύνδεση Manus AI",
-        "general": "Προσαρμοσμένος πράκτορας προγράμματος περιήγησης (Webhook)",
-        "status_idle": "Ο πράκτορας είναι έτοιμος για εργασίες",
-        "btn_send": "Αποστολή πράκτορα για συνδέσμους"
-      },
-      "receiver": {
-        "title": "Δέκτης Webhook",
-        "description": "Διεύθυνση για τη λήψη δεδομένων από εξωτερικούς περιηγητές/scrapers.",
-        "simulate_test": "(Προσομοίωση άφιξης πράκτορα / Δοκιμή Webhook)",
-        "simulate_btn": "Προσομοίωση πράκτορα"
-      },
-      "scrapers": {
-        "title": "Εργασίες Scraping Περιηγητή",
-        "card_title": "Εργασία στο πρόγραμμα περιήγησης",
-        "options": {
-          "wordwall": "Κλειδί API Wordwall",
-          "genially": "Κλειδί API Genially",
-          "learningapps": "LearningApps Scraper"
-        },
-        "item1": "Το προϊόν 'Unit 1' μπορεί να επεκταθεί με 20 κάρτες flash (το AI θα τις δημιουργήσει αυτόματα)",
-        "item2": "Δημιουργήστε ένα 'Mega Pack' από 3 από τα πιο δημοφιλή σενάριά σας (Προοπτική: +25% περιθώριο κέρδους)",
-        "item3": "Λήψη κωδικών κοινής χρήσης από το Wordwall"
-      },
-      "chat": {
-        "title": "AI Agent Chat",
-        "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
-        "placeholder": "Πού να κοιτάξω σήμερα;",
-        "capabilities": "Τρέχουσες δυνατότητες: Genially, Wordwall, Canva",
-        "welcome": "Γεια σας! Είμαι έτοιμος για δουλειά. Μπορείτε να μου αναθέσετε εργασίες στους λογαριασμούς σας (Wordwall, Canva, Genially). Τι πρέπει να κάνω;"
-      }
-    },
-    "emails": {
-      "title": "Πρότυπα Μηνυμάτων Συστήματος",
-      "description": "Διαχειριστείτε το περιεχόμενο των μηνυμάτων που στέλνονται αυτόματα στους πελάτες",
-      "save": "Αποθήκευση αλλαγών",
-      "templates": {
-        "welcome": {
-          "title": "Χαιρετισμός μετά την εγγραφή",
-          "subject": "Θέμα",
-          "content": "Περιεχόμενο"
-        },
-        "order_confirmed": {
-          "title": "Επιβεβαίωση παραγγελίας",
-          "subject": "Θέμα",
-          "content": "Περιεχόμενο"
-        },
-        "login_details": {
-          "title": "Δεδομένα πρόσβασης (μετά την αγορά)",
-          "subject": "Θέμα",
-          "content": "Περιεχόμενο"
-        }
-      },
-      "smtp": {
-        "title": "Διαμόρφωση SMTP / Πάροχος",
-        "description": "Ρυθμίσεις διακομιστή αλληλογραφίας για e-mails συστήματος",
-        "enable_system": "Ενεργοποίηση αποστολής συστήματος",
-        "enable_desc": "Χρήση διαμορφωμένου διακομιστή SMTP",
-        "host": "Διακομιστής SMTP",
-        "port": "Θύρα"
-      },
-      "variables": "Διαθέσιμες μεταβλητές: {orderNumber}, {email}, {password}, {firstName}, {total}"
-    },
-    "google": {
-      "title": "Ενσωμάτωση Google Cloud",
-      "description": "Συνδέστε το Google Drive για εισαγωγή υλικών απευθείας στο κατάστημα",
-      "auth": {
-        "title": "Εξουσιοδότηση Google",
-        "connect": "Σύνδεση με Google Drive",
-        "disconnect": "Αποσύνδεση λογαριασμού",
-        "status_connected": "Συνδεδεμένος στο λογαριασμό: {email}",
-        "status_disconnected": "Δεν υπάρχει ενεργή σύνδεση",
-        "drive_description": "Connect the 'Edu-Materials' folder from your Google Drive"
-      },
-      "drive": {
-        "title": "Περιηγητής Google Drive",
-        "import_selected": "Εισαγωγή επιλεγμένων αρχείων",
-        "refresh": "Ανανέωση λίστας",
-        "no_files": "Δεν βρέθηκαν αρχεία PDF/ZIP στο Drive σας",
-        "import_success": "Τα αρχεία εισήχθησαν με επιτυχία ως υλικά",
-        "column_name": "Όνομα αρχείου",
-        "column_size": "Μέγεθος",
-        "column_action": "Ενέργεια",
-        "description": "Configuration for drive",
-        "button": "Λήψη από το Google Drive",
-        "connecting": "Σύνδεση...",
-        "picker_title": "Επιλέξτε αρχεία από το Google Drive",
-        "import_count": "Εισαγωγή επιλεγμένων ({count})",
-        "toast_success": "Εισήχθησαν {count} αρχεία από το Google Drive"
-      },
-      "config": {
-        "client_id": "Google Client ID",
-        "client_secret": "Google Client Secret",
-        "redirect_uri": "Redirect URI"
-      }
-    },
-    "abandoned": {
-      "title": "Ανάκτηση Καλαθιού",
-      "description": "Αυτόματες υπενθυμίσεις για πελάτες που δεν ολοκλήρωσαν την αγορά τους",
-      "delay": "Καθυστέρηση πρώτου e-mail (ώρες)",
-      "discount_code": "Κωδικός έκπτωσης στο e-mail (προαιρετικό)",
-      "enable_auto": "Ενεργοποίηση αυτόματης ανάκτησης",
-      "stats": {
-        "total_recovered": "Ανακτημένα έσοδα",
-        "pending_carts": "Εκκρεμή καλάθια"
-      }
-    },
-    "guardian": {
-      "title": "AI Safety & Τεχνικός Φύλακας",
-      "description": "Έξυπνη παρακολούθηση σφαλμάτων, νομοθεσίας και απόδοσης συστήματος",
-      "legal_check": "Παρακολούθηση νομικών αλλαγών (EU E-commerce)",
-      "tech_check": "Τεχνική παρακολούθηση σφαλμάτων σε πραγματικό χρόνο",
-      "security_check": "Ανάλυση προσπαθειών μη εξουσιοδοτημένης πρόσβασης",
-      "alerts": "Εντοπίστηκε αλλαγή στις απαιτήσεις για τις τάξεις 4-6",
-      "status_good": "Το σύστημα λειτουργεί ομαλά",
-      "status_warning": "Εντοπίστηκε πιθανή μη συμμόρφωση με το νόμο",
-      "last_scan": "Τελευταία πλήρης σάρωση συστήματος"
-    },
-    "affiliate": {
-      "title": "Σύστημα Συστάσεων & Συνεργατών",
-      "description": "Μετατρέψτε τους πελάτες σας σε πρεσβευτές της μάρκας σας",
-      "commission": "Προμήθεια συνεργάτη (%)",
-      "discount": "Αυτόματη Έκπτωση (%)",
-      "cookie_life": "Διάρκεια ζωής cookie (ημέρες)",
-      "referral_links": "Δημιουργία συνδέσμων σύστασης",
-      "total_partners": "Ενεργοί συνεργάτες",
-      "payouts": "Εκκρεμείς πληρωμές"
-    },
-    "pricing": {
-      "title": "Αγοραστική Δύναμη (PPP)",
-      "description": "Αυτόματη προσαρμογή τιμών στην αγοραστική δύναμη σε 19 χώρες",
-      "enable_ppp": "Ενεργοποίηση έξυπνης περιφερειακής τιμολόγησης",
-      "base_currency": "Βασικό νόμισμα",
-      "regions": {
-        "western": "Δυτική Ευρώπη (100% τιμή)",
-        "central": "Κεντρική Ευρώπη (85% τιμή)",
-        "eastern": "Ανατολική Ευρώπη (70% τιμή)",
-        "balkans": "Βαλκάνια (60% τιμή)"
-      },
-      "recurring_title": "Subscriptions & Recurring Payments",
-      "recurring_visa_title": "Visa Recurring Payments",
-      "recurring_visa_desc": "Enable automatic card charging for subscription products. Supported via Stripe Billing and PayNow Recurring.",
-      "recurring_frequency": "Standard Frequency",
-      "recurring_monthly": "30 DAYS / MONTHLY",
-      "recurring_grace_period": "Grace Period / Retry",
-      "recurring_retry": "3 DAYS RETRY",
-      "paynow_title": "PayNow Integration",
-      "paynow_access_key": "Access Key",
-      "paynow_signature_key": "Signature Key",
-      "blik_title": "BLIK Support Enabled",
-      "blik_desc": "PayNow allows users to pay with BLIK codes directly on your checkout page."
-    },
-    "taxes": {
-      "title": "Φόροι & Τιμολόγηση",
-      "description": "Διαχειριστείτε τους συντελεστές ΦΠΑ και την αυτόματη έκδοση τιμολογίων ΕΕ",
-      "eu_vat_moss": "Ενεργοποίηση συστήματος VAT-MOSS / OSS",
-      "invoice_provider": "Πάροχος τιμολόγησης (π.χ. Fakturownia, InFakt)",
-      "infakt_api_key": "InFakt API Key",
-      "test_connection": "Δοκιμή σύνδεσης API",
-      "stripe_title": "Stripe Payments",
-      "stripe_publishable": "Stripe Publishable Key",
-      "stripe_secret": "Stripe Secret Key"
-    },
-    "editor": {
-      "placeholder": "Πού να κοιτάξω σήμερα;",
-      "prompts": {
-        "link": "Εισαγάγετε URL:",
-        "image": "Εισαγάγετε URL εικόνας:"
-      },
-      "toolbar": {
-        "bold": "Έντονη",
-        "italic": "Πλάγια",
-        "h2": "Επικεφαλίδα 2",
-        "h3": "Επικεφαλίδα 3",
-        "list": "Λίστα με κουκκίδες",
-        "listOrdered": "Αριθμημένη λίστα",
-        "link": "Εισαγάγετε URL:",
-        "image": "Εισαγάγετε URL εικόνας:",
-        "quote": "Παράθεση",
-        "code": "Μπλοκ κώδικα"
-      }
-    }
-  },
-  "adminPanel": {
-    "sidebar": {
-      "title": "Ρυθμίσεις Συστήματος",
-      "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
-      "expand": "Επέκταση",
-      "collapse": "Σύμπτυξη",
-      "logout": "Αποσύνδεση",
-      "logoutTooltip": "Έξοδος από τη συνεδρία",
-      "menu": {
-        "dashboard": "Πίνακας Ελέγχου",
-        "products": "Προϊόντα",
-        "orders": "Παραγγελίες",
-        "coupons": "Coupons",
-        "materials": "Υλικά",
-        "blog": "Ιστολόγιο",
-        "import": "Import AI",
-        "settings": "Ρυθμίσεις",
-        "chat": "AI Chat",
-        "home": "Αρχική Σελίδα",
-        "role": "Διαχειριστής",
-        "online": "Συνδεδεμένος",
-        "abandoned": "Abandoned Carts",
-        "offers": "Offer Generator",
-        "workshop": "AI Creative Suite",
-        "landing_builder": "Landing Pages"
-      }
-    },
-    "dashboard": {
-      "title": "Ρυθμίσεις Συστήματος",
-      "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
-      "periods": {
-        "7days": "7 ημέρες",
-        "30days": "30 ημέρες",
-        "90days": "90 ημέρες",
-        "all": "Όλο το διάστημα"
-      },
-      "addProduct": "Προσθήκη προϊόντος",
-      "currency": "€",
-      "stats": {
-        "revenue": "Έσοδα",
-        "orders": "Παραγγελίες",
-        "customers": "Πελάτες",
-        "avgOrderValue": "Μέση Αξία Παραγγελίας",
-        "vsPrevious": "έναντι προηγούμενης περιόδου",
-        "inSelectedPeriod": "Στην επιλεγμένη περίοδο",
-        "uniqueCustomers": "Μοναδικοί αγοραστές",
-        "perOrder": "Ανά παραγγελία"
-      },
-      "charts": {
-        "weeklyRevenue": "Εβδομαδιαία έσοδα",
-        "revenueByDay": "Πωλήσεις ανά ημέρα",
-        "bestsellersRanking": "Κατάταξη Best-sellers",
-        "topSellingProducts": "Προϊόντα με τις περισσότερες πωλήσεις",
-        "noSalesData": "Δεν υπάρχουν δεδομένα πωλήσεων",
-        "sold": "{count} πωλήθηκαν",
-        "days": {
-          "mon": "Δευ",
-          "tue": "Τρι",
-          "wed": "Τετ",
-          "thu": "Πεμ",
-          "fri": "Παρ",
-          "sat": "Σαβ",
-          "sun": "Κυρ"
-        }
-      },
-      "recentOrders": {
-        "title": "Ρυθμίσεις Συστήματος",
-        "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
-        "viewAll": "Προβολή όλων",
-        "noOrders": "Δεν υπάρχουν ακόμη παραγγελίες",
-        "productCount": "{count} προϊόντα",
-        "status": {
-          "completed": "Ολοκληρώθηκε",
-          "pending": "Εκκρεμεί",
-          "processing": "Σε επεξεργασία"
-        }
-      },
-      "aiInsights": {
-        "card": {
-          "monitoring": "Active Market Monitoring",
-          "strategyTitle": "Your growth strategy for {period}",
-          "periodWeek": "next week",
-          "periodMonth": "this month",
-          "description": "We analyzed your last {count} orders. We have 3 specific recommendations that could increase your revenue by approx. 18%.",
-          "generateBtn": "Generate Strategic Report"
-        },
-        "modal": {
-          "title": "AI Growth Report",
-          "subtitle": "Generated for: Administrator • Feb 2024",
-          "revenueChance": "Revenue Chance",
-          "revenueGrowth": "Possible growth in 14 days",
-          "crossSellScore": "Cross-sell Score",
-          "crossSellDesc": "High linking potential",
-          "retentionProj": "Retention Proj.",
-          "retentionDesc": "Loyal returning customers",
-          "recommendedActions": "Recommended Actions",
-          "action1Title": "Email: Abandoned Cart (New template)",
-          "action1Desc": "Customers are abandoning carts for \"Preschool - Autumn Pack\". We suggest adding a 48h timer and 5% discount.",
-          "action2Title": "Bundle: Preschool Combo Pack",
-          "action2Desc": "Combine 3 most popular products into one bundle. Suggested price: $59.99.",
-          "deploy": "Deploy",
-          "create": "Create",
-          "skip": "Skip report",
-          "apply": "Apply Recommendations",
-          "success": "Strategic report has been saved and sent for analysis."
-        },
-        "overlay": {
-          "title": "Processing Big Data...",
-          "subtitle": "\"Analyzing correlations between products and buying behaviors of your customers.\"",
-          "step1": "Clustering users...",
-          "step3": "Generating visualizations..."
-        },
-        "wordwallSync": {
-          "title": "Smart Interactive Sync",
-          "description": "Paste links to your resources (Wordwall, Genially, Canva, YouTube, Google Slides, Quizizz, NotebookLM, Vocaroo) to add them as products.",
-          "placeholder": "https://wordwall.net/...\nhttps://view.genial.ly/...\nhttps://canva.com/design/...\nhttps://youtube.com/watch?v=...\nhttps://quizizz.com/...",
-          "syncBtn": "Start Sync",
-          "syncing": "Syncing...",
-          "success": "Successfully imported {count} new games!",
-          "noNew": "All provided links have already been imported.",
-          "invalid": "No valid educational links (Wordwall/Genially/Canva/YouTube/Slides/etc) detected.",
-          "close": "Close"
-        }
-      },
-      "interactivePreview": {
-        "subtitle": "Live preview of interactive material",
-        "noPreview": "No preview available for this asset",
-        "close": "Close"
-      },
-      "activeAiLogs": {
-        "title": "Active AI Logs",
-        "live": "Live",
-        "imageGenerated": "Image Generated",
-        "socialPostReady": "Social Post Ready",
-        "flashcardCreated": "Flashcard Created",
-        "trendIdentified": "Trend identified",
-        "seoOptimized": "SEO Optimized",
-        "imagePolished": "Image Polished"
-      },
-      "studioQuickAccess": {
-        "title": "Studio Quick Access",
-        "imageStudio": "Image Studio",
-        "generate4k": "Generate 4K Visuals",
-        "socialHub": "Social Hub",
-        "viralCreation": "Viral Post Creation"
-      }
-    },
-    "products": {
-      "title": "Ρυθμίσεις Συστήματος",
-      "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
-      "search": "Αναζήτηση προϊόντων...",
-      "importAi": "Εισαγωγή AI",
-      "addProduct": "Προσθήκη προϊόντος",
-      "noProducts": "Δεν βρέθηκαν προϊόντα",
-      "addFirst": "Προσθέστε το πρώτο σας προϊόν",
-      "table": {
-        "product": "Προϊόν",
-        "category": "Κατηγορία",
-        "price": "Τιμή",
-        "source": "Πηγή: kamilaenglish.com",
-        "status": "Συμμόρφωση των υλικών σας: 85%",
-        "actions": "Ενέργειες"
-      },
-      "status": {
-        "published": "Δημοσιεύτηκε",
-        "draft": "Προσχέδιο"
-      },
-      "actions": {
-        "edit": "Επεξεργασία",
-        "viewAccess": "View Product Access",
-        "copyLink": "Αντιγραφή συνδέσμου Quick Checkout",
-        "hide": "Απόκρυψη",
-        "publish": "Δημοσίευση",
-        "delete": "Διαγραφή"
-      },
-      "toasts": {
-        "linkCopied": "Ο σύνδεσμος Checkout αντιγράφηκε:\\n{link}",
-        "deleteConfirm": "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το προϊόν;"
-      },
-      "categories": {
-        "lesson-plans": "Σχέδια μαθήματος",
-        "worksheets": "Φύλλα εργασίας PDF",
-        "flashcards": "Κάρτες Flash (CSV/Anki)",
-        "games": "Online παιχνίδια",
-        "audio": "Υλικό ήχου",
-        "video": "Υλικά βίντεο",
-        "bundles": "Πακέτα",
-        "other": "Άλλα"
-      },
-      "source_badges": {
-        "wordpress": "WordPress / Publigo",
-        "tpt": "Teachers Pay Teachers",
-        "ai_optimized": "Βελτιστοποιημένο με AI"
-      }
-    },
-    "orders": {
-      "title": "Ρυθμίσεις Συστήματος",
-      "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
-      "exportCsv": "Εξαγωγή σε CSV",
-      "stats": {
-        "revenue": "Έσοδα",
-        "pending": "Εκκρεμεί",
-        "today": "Σήμερα"
-      },
-      "search": "Αναζήτηση προϊόντων...",
-      "statusFilter": "Κατάσταση",
-      "allStatuses": "Όλες",
-      "empty": "Δεν βρέθηκαν παραγγελίες",
-      "table": {
-        "order": "Παραγγελία",
-        "customer": "Πελάτης",
-        "products": "Προϊόντα",
-        "total": "Σύνολο",
-        "status": "Συμμόρφωση των υλικών σας: 85%",
-        "date": "Ημερομηνία"
-      },
-      "status": {
-        "pending": "Εκκρεμεί",
-        "processing": "Σε επεξεργασία",
-        "completed": "Ολοκληρώθηκε",
-        "cancelled": "Ακυρώθηκε",
-        "refunded": "Επιστράφηκε"
-      },
-      "paymentMethods": {
-        "card": "Κάρτα",
-        "transfer": "Τραπεζικό έμβασμα",
-        "blik": "BLIK",
-        "paypal": "PayPal"
-      },
-      "details": {
-        "notFound": "Η παραγγελία δεν βρέθηκε",
-        "back": "Πίσω στη λίστα",
-        "invoice": "Έκδοση τιμολογίου",
-        "payment": "Πληρωμή",
-        "summary": "Σύνοψη",
-        "sendEmail": "Αποστολή e-mail",
-        "items": "Είδη",
-        "paidAt": "Πληρώθηκε στις: {date}",
-        "discount": "Αυτόματη Έκπτωση (%)",
-        "total": "Σύνολο",
-        "quantity": "Ποσότητα"
-      },
-      "paymentStatus": {
-        "paid": "Πληρώθηκε",
-        "pending": "Εκκρεμεί",
-        "failed": "Απέτυχε",
-        "refunded": "Επιστράφηκε"
-      },
-      "export_headers": {
-        "order_number": "Αριθμός παραγγελίας",
-        "date": "Ημερομηνία",
-        "customer": "Πελάτης",
-        "email": "E-mail",
-        "products": "Προϊόντα",
-        "total": "Σύνολο",
-        "status": "Συμμόρφωση των υλικών σας: 85%"
-      }
-    },
-    "coupons": {
-      "title": "Ρυθμίσεις Συστήματος",
-      "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
-      "addCoupon": "Νέο κουπόνι",
-      "editCoupon": "Επεξεργασία κουπονιού",
-      "createCoupon": "Δημιουργία κουπονιού",
-      "stats": {
-        "all": "Όλο το διάστημα",
-        "active": "Ενεργό",
-        "usage": "Συνολική χρήση"
-      },
-      "form": {
-        "code": "Μπλοκ κώδικα",
-        "generate": "Δημιουργία",
-        "placeholder": "Πού να κοιτάξω σήμερα;",
-        "discountType": "Τύπος έκπτωσης",
-        "percent": "Ποσοστό (%)",
-        "fixed": "Σταθερό ποσό",
-        "discountValue": "Αξία έκπτωσης",
-        "usageLimit": "Όριο χρήσης",
-        "minOrderValue": "Ελάχιστη αξία παραγγελίας",
-        "expiresAt": "Λήγει στις (προαιρετικό)"
-      },
-      "ux": {
-        "show": "Show",
-        "hide": "Hide",
-        "copy": "Copy",
-        "copied": "Copied!",
-        "secure": "Encrypted"
-      },
-      "preview": {
-        "title": "Preview & Accept",
-        "accept": "Accept Changes",
-        "reject": "Discard",
-        "bulk_title": "Review Generated Drafts",
-        "apply_all": "Accept All ({count})",
-        "diff_before": "Before Optimization",
-        "diff_after": "AI Suggestion"
-      },
-      "table": {
-        "code": "Μπλοκ κώδικα",
-        "discount": "Αυτόματη Έκπτωση (%)",
-        "usage": "Συνολική χρήση",
-        "expires": "Λήξη",
-        "status": "Συμμόρφωση των υλικών σας: 85%"
-      },
-      "toasts": {
-        "deleteConfirm": "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το προϊόν;"
-      }
-    },
-    "materials": {
-      "title": "Ρυθμίσεις Συστήματος",
-      "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
-      "deleteSelected": "Διαγραφή ({count})",
-      "assignToProduct": "Ανάθεση σε προϊόν ({count})",
-      "dragDrop": "Σύρετε τα αρχεία εδώ",
-      "clickToUpload": "ή κάντε κλικ στο παρακάτω κουμπί για επιλογή από το δίσκο",
-      "selectFiles": "Επιλογή αρχείων",
-      "or": "- Ή -",
-      "library": {
-        "title": "Ρυθμίσεις Συστήματος",
-        "description": "Configuration for library",
-        "empty": "Δεν βρέθηκαν παραγγελίες"
-      },
-      "table": {
-        "check": "Επιλογή",
-        "fileName": "Όνομα αρχείου",
-        "size": "Μέγεθος",
-        "source": "Πηγή: kamilaenglish.com",
-        "product": "Προϊόν",
-        "actions": "Ενέργειες"
-      },
-      "badges": {
-        "upload": "Μεταφόρτωση",
-        "drive": "Google Drive",
-        "unassigned": "Μη ανατεθειμένο"
-      },
-      "dialog": {
-        "title": "Ρυθμίσεις Συστήματος",
-        "selectLabel": "Επιλογή προϊόντος",
-        "placeholder": "Πού να κοιτάξω σήμερα;",
-        "cancel": "Ακύρωση",
-        "save": "Αποθήκευση αλλαγών"
-      },
-      "toasts": {
-        "uploadSuccess": "Τα αρχεία μεταφορτώθηκαν με επιτυχία",
-        "deleted": "Το αρχείο διαγράφηκε",
-        "deletedSelected": "Τα επιλεγμένα αρχεία διαγράφηκαν",
-        "assigned": "Ανατέθηκαν {count} αρχεία στο προϊόν"
-      }
-    },
-    "certificates": {
-      "title": "Ρυθμίσεις Συστήματος",
-      "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
-      "stats": {
-        "totalIssued": "Συνολικά εκδοθέντα",
-        "avgScore": "Μέση βαθμολογία εξετάσεων"
-      },
-      "tabs": {
-        "templates": "Πρότυπα",
-        "exams": "Εξετάσεις",
-        "issued": "Εκδοθέντα"
-      },
-      "templates": {
-        "create": "Δημιουργία Προτύπου",
-        "preview": "Επεξεργασία Προτύπου",
-        "standardTitle": "Τυπικό Δίπλωμα (A4)",
-        "standardDesc": "Προεπιλεγμένο πρότυπο για μαθήματα γλωσσών",
-        "certificateTitle": "Πιστοποιητικό Ολοκλήρωσης",
-        "completedCourse": "Ολοκληρωμένο μάθημα: {course}",
-        "aiGenerate": "Δημιουργία Προτύπου AI",
-        "aiDesc": "Περιγράψτε το στυλ (π.χ. 'μοντέρνο', 'για παιδιά') και το AI θα δημιουργήσει ένα μοναδικό σχέδιο διπλώματος.",
-        "createAi": "Δημιουργία με AI"
-      },
-      "exams": {
-        "create": "Δημιουργία Προτύπου",
-        "description": "Configuration for exams",
-        "createAi": "Δημιουργία με AI"
-      },
-      "issued": {
-        "empty": "Δεν βρέθηκαν παραγγελίες"
-      }
-    },
-    "blog": {
-      "title": "Ρυθμίσεις Συστήματος",
-      "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
-      "newPost": "Νέα ανάρτηση",
-      "searchPlaceholder": "Αναζήτηση αναρτήσεων...",
-      "empty": "Δεν βρέθηκαν παραγγελίες",
-      "writeFirst": "Γράψτε την πρώτη ανάρτηση",
-      "table": {
-        "title": "Ρυθμίσεις Συστήματος",
-        "category": "Κατηγορία",
-        "status": "Συμμόρφωση των υλικών σας: 85%",
-        "date": "Ημερομηνία"
-      },
-      "status": {
-        "published": "Δημοσιεύτηκε",
-        "draft": "Προσχέδιο"
-      },
-      "actions": {
-        "preview": "Επεξεργασία Προτύπου",
-        "delete": "Διαγραφή",
-        "save": "Save",
-        "edit": "Επεξεργασία",
-        "hide": "Απόκρυψη",
-        "publish": "Δημοσίευση"
-      },
-      "categories": {
-        "mega-pack": "Mega Packs",
-        "scenariusze": "Scenarios",
-        "zlobek": "Nursery",
-        "special-lessons": "Special Lessons",
-        "speakbook": "Speakbook",
-        "stories": "Stories",
-        "culture": "Culture",
-        "pory-roku": "Seasons",
-        "teatr": "Theater",
-        "flashcards": "Flashcards",
-        "gry": "Games",
-        "inne": "Άλλα",
-        "metodyka": "Μεθοδολογία διδασκαλίας",
-        "materialy": "Εκπαιδευτικό υλικό",
-        "technologia": "Τεχνολογία στην εκπαίδευση",
-        "inspiracje": "Έμπνευση και ιδέες",
-        "recenzje": "Αξιολογήσεις",
-        "wydarzenia": "Εκδηλώσεις"
-      },
-      "toasts": {
-        "deleteConfirm": "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το προϊόν;"
-      },
-      "form": {
-        "createTitle": "New Post",
-        "createSubtitle": "Create a new blog post",
-        "editTitle": "Edit Post",
-        "editSubtitle": "Edit existing blog post",
-        "titlePlaceholder": "Post title...",
-        "contentTitle": "Content",
-        "contentPlaceholder": "Start writing post content...",
-        "excerptTitle": "Excerpt",
-        "excerptPlaceholder": "Short description displayed on post list...",
-        "statusTitle": "Status",
-        "categoryTitle": "Category",
-        "categoryPlaceholder": "Select category",
-        "tagsTitle": "Tags",
-        "tagsPlaceholder": "tag1, tag2, tag3",
-        "imageTitle": "Featured Image",
-        "imagePlaceholder": "https://kamila.shor.dev/image.jpg",
-        "seoTitle": "SEO",
-        "metaTitleLabel": "Meta Title",
-        "metaTitlePlaceholder": "Search engine title",
-        "metaDescLabel": "Meta Description",
-        "metaDescPlaceholder": "Search engine description",
-        "charCount": "{count}/{max} characters",
-        "seoPreview": "Google Preview",
-        "generate": "Generate",
-        "save": "Save",
-        "saveChanges": "Save Changes",
-        "saving": "Saving...",
-        "delete": "Delete",
-        "notFound": "Post not found",
-        "backToList": "Back to list",
-        "titleRequired": "Please enter a title first"
-      }
-    },
-    "chat": {
-      "title": "AI Agent Chat",
-      "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
-      "welcome": "Γεια σας! Είμαι έτοιμος για δουλειά. Μπορείτε να μου αναθέσετε εργασίες στους λογαριασμούς σας (Wordwall, Canva, Genially). Τι πρέπει να κάνω;",
-      "newChat": "Νέα Συνομιλία",
-      "history": "Ιστορικό",
-      "placeholder": "Πού να κοιτάξω σήμερα;",
-      "capabilities": {
-        "database": "Βάση δεδομένων",
-        "store": "Κατάστημα",
-        "web": "Internet",
-        "files": "Αρχεία"
-      },
-      "inputPlaceholder": "Πληκτρολογήστε ένα μήνυμα...",
-      "disclaimer": "Το AI μπορεί να κάνει λάθη. Επαληθεύστε τις σημαντικές πληροφορίες.",
-      "generatedBy": "Δημιουργήθηκε από {model}",
-      "mockResponse": "Προσομοιωμένη απάντηση από το μοντέλο {model}. Έλαβα: \\",
-      "mockSessions": {
-        "s1": {
-          "title": "Ρυθμίσεις Συστήματος",
-          "date": "Ημερομηνία"
-        },
-        "s2": {
-          "title": "Ρυθμίσεις Συστήματος",
-          "date": "Ημερομηνία"
-        },
-        "s3": {
-          "title": "Ρυθμίσεις Συστήματος",
-          "date": "Ημερομηνία"
-        }
-      }
-    },
-    "import": {
-      "title": "Ρυθμίσεις Συστήματος",
-      "subtitle": "Άμεση επικοινωνία με τον πράκτορα προγράμματος περιήγησης",
-      "catalogUrl": "URL Καταλόγου",
-      "catalogUrlDesc": "Επικολλήστε τον σύνδεσμο στη σελίδα προϊόντων (kamilaenglish.com)",
-      "scan": "Σάρωση Προϊόντων",
-      "scanning": "Σάρωση...",
-      "enhance": "Βελτίωση με AI",
-      "enhancing": "Βελτίωση...",
-      "import": "Εισαγωγή ({count})",
-      "importing": "Εισαγωγή νέων προϊόντων...",
-      "productsFound": "Προϊόντα ({count})",
-      "selectedCount": "{count} επιλεγμένα",
-      "selectAll": "Επιλογή όλων",
-      "deselectAll": "Αποεπιλογή όλων",
-      "allCategories": "Όλα",
-      "openSource": "Ανοιχτός κώδικας",
-      "preview": {
-        "testInteractive": "Test Interactive Game",
-        "sourceLink": "Source Link",
-        "selectToPreview": "Select a product to preview",
-        "backToList": "Back to List",
-        "acceptAndCreate": "Accept & Create {count} Drafts"
-      },
-      "configureAi": "Configure API keys in settings before using AI",
-      "selectProducts": "Select products to import",
-      "noAssetsFound": "No valid assets were found. Please ensure you are using public links (e.g. wordwall.net/resource/...) and not your private dashboard.",
-      "privateLink": "Skipped private page: {url}",
-      "errors": {
-        "enterUrl": "Εισαγάγετε URL καταλόγου",
-        "onlyKamila English": "Υποστηρίζονται μόνο προϊόντα από το kamilaenglish.com",
-        "configureAi": "Διαμορφώστε τα κλειδιά API στις ρυθμίσεις πριν χρησιμοποιήσετε το AI",
-        "selectProducts": "Επιλέξτε προϊόντα προς εισαγωγή"
-      },
-      "success": {
-        "found": "Βρέθηκαν {count} προϊόντα από το Kamila English!",
-        "enhanced": "Οι περιγραφές βελτιώθηκαν από το AI!",
-        "imported": "Εισήχθησαν {count} προϊόντα!"
-      },
-      "placeholders": {
-        "url": "URL Στόχου"
-      },
-      "categories": {
-        "mega-pack": "Mega Packs",
-        "scenariusze": "Scenarios",
-        "zlobek": "Nursery",
-        "special-lessons": "Special Lessons",
-        "speakbook": "Speakbook",
-        "stories": "Stories",
-        "culture": "Culture",
-        "pory-roku": "Seasons",
-        "teatr": "Theater",
-        "flashcards": "Κάρτες Flash (CSV/Anki)",
-        "gry": "Games",
-        "inne": "Άλλα"
-      },
-      "enhancedText": {
-        "titlePrefix": "🎯",
-        "bestseller": "✨ BESTSELLER!",
-        "whatYouGet": "📚 Τι λαμβάνετε:",
-        "features": {
-          "pdf": "• Έτοιμο προς εκτύπωση υλικό PDF",
-          "teacher": "• Οδηγίες για τον δάσκαλο",
-          "worksheets": "• Φύλλα εργασίας και ασκήσεις"
-        },
-        "footer": "⭐ Έμπιστο προϊόν από εκατοντάδες καθηγητές!",
-        "item1": "Πλήρης πρόσβαση στα υλικά",
-        "item2": "Βελτιστοποιημένο για SEO",
-        "item3": "Οδηγίες εφαρμογής για μαθητές"
-      },
-      "interactive": {
-        "title": "Διαδραστικό Περιεχόμενο",
-        "subtitle": "Εισαγωγή και βελτιστοποίηση παιχνιδιών από Wordwall και Genially",
-        "placeholder": "Επικολλήστε συνδέσμους (ένας ανά γραμμή)...",
-        "found": "Βρέθηκαν {count} διαδραστικά στοιχεία!",
-        "quiz": "Quiz Γνώσεων",
-        "match": "Αντιστοίχιση",
-        "wheel": "Τροχός της Τύχης",
-        "maze": "Λαβύρινθος",
-        "presentation": "Πολυμεσική Παρουσίαση",
-        "escape": "Δωμάτιο Απόδρασης",
-        "map": "Διαδραστικός Χάρτης",
-        "game": "Επιτραπέζιο Παιχνίδι",
-        "descriptions": {
-          "wordwall": "Διαδραστικό παιχνίδι Wordwall που υποστηρίζει τη μάθηση μέσω παιχνιδιού.",
-          "genially": "Ελκυστική παρουσίαση Genially με στοιχεία παιχνιδοποίησης."
-        },
+        "title": "Interactive Content",
+        "subtitle": "Import and optimize Games with AI",
+        "placeholder": "Paste links (one per line)...",
+        "found": "Found {count} interactive items!",
+        "generate": "Generate drafts",
+        "createDrafts": "Accept and create drafts",
+        "success": "Successfully imported {count} products!",
+        "preview_title": "AI Draft Preview",
+        "preview_desc": "Review generated products and test interactive content.",
         "logs": {
-          "init": "🚀 Αρχικοποίηση πράκτορα σάρωσης...",
-          "connect": "🔍 Σύνδεση με το API συνεδρίας...",
-          "extract": "🧩 Εξαγωγή μηχανικής και μεταδεδομένων...",
-          "images": "🖼️ Δημιουργία μικρογραφιών προεπισκόπησης...",
-          "seo": "✍️ Δημιουργία περιγραφών βελτιστοποιημένων για SEO...",
-          "pricing": "💰 Υπολογισμός προτεινόμενων τιμών...",
-          "finalize": "✨ Οριστικοποίηση προσχεδίων προϊόντων..."
-        },
-        "preview_title": "Προεπισκόπηση προσχεδίων AI",
-        "preview_desc": "Ελέγξτε τα παραγόμενα προϊόντα και δοκιμάστε το διαδραστικό περιεχόμενο.",
-        "select_to_preview": "Επιλέξτε ένα προϊόν για προεπισκόπηση",
-        "back_to_list": "Επιστροφή στη λίστα",
-        "accept_and_create": "Αποδοχή και δημιουργία {count} προσχεδίων",
-        "live_session": "Ζωντανή Διαδραστική Συνεδρία",
-        "back_to_desc": "Επιστροφή στην περιγραφή",
-        "embed_info": "Έτσι θα φαίνεται το παιχνίδι στους πελάτες σας.",
-        "test_game": "Δοκιμάστε το Παιχνίδι",
-        "source_link": "Σύνδεσμος Πηγής",
-        "generatedLabel": "ΠΑΡΑΓΕΤΑΙ ΑΠΟ AI"
-      }
-    },
-    "success": {
-      "found": "Found {count} products from Kamila English!",
-      "enhanced": "Descriptions enhanced by AI!",
-      "imported": "Imported {count} products!"
-    },
-    "placeholders": {
-      "url": "https://www.sklep.kamilaenglish.com/..."
-    },
-    "categories": {
-      "mega-pack": "Mega Packs",
-      "scenariusze": "Scenarios",
-      "zlobek": "Nursery",
-      "special-lessons": "Special Lessons",
-      "speakbook": "Speakbook",
-      "stories": "Stories",
-      "culture": "Culture",
-      "pory-roku": "Seasons",
-      "teatr": "Theater",
-      "flashcards": "Flashcards",
-      "gry": "Games",
-      "inne": "Others"
-    },
-    "footer": "⭐ Trusted by hundreds of teachers!",
-    "item1": "Full access to materials",
-    "item2": "SEO Optimized content",
-    "item3": "Implementation guide for students",
-    "assistant": {
-      "title": "AI Copilot",
-      "status": "Active Intelligence",
-      "welcome": "How can I help you today?",
-      "placeholder": "Ask me anything...",
-      "suggestions": {
-        "generate_visuals": "Generate 4K Visuals",
-        "social_post": "Create Social Post",
-        "avatar_script": "New AI Avatar Script",
-        "seo_optimize": "SEO Optimize Description",
-        "product_cover": "Generate Product Cover",
-        "sync_wordwall": "Sync with Wordwall",
-        "config_workshop": "Configure AI Workshop",
-        "test_api": "Test API Credentials",
-        "connect_canva": "Connect Canva Design",
-        "gen_strategy": "Generate Strategy",
-        "view_trends": "View Trends",
-        "open_workshop": "Open Workshop"
-      },
-      "responses": {
-        "processing": "I'm processing your request. As your AI Copilot, I can help you manage products, generate creative assets, and optimize your store.",
-        "products_context": "You currently have {count} products in your store. I can help you generate descriptions or images for them in the AI Workshop.",
-        "product_example": "For example, I noticed \"{title}\". Would you like to optimize it?",
-        "workshop_info": "The AI Workshop is where you can generate images, videos, and social media posts. You can find it in the 'Workshop' tab of Settings or the dedicated Studio page.",
-        "wordwall_info": "To sync with Wordwall, go to the Products page and use the 'Interactive Import' button. I can also help you scrape metadata from any educational URL!",
-        "hello": "Hello! I'm your AI Copilot. I'm currently aware of {count} products and your store settings. How can I assist you today?"
-      }
-    },
-    "offers": {
-      "title": "AI Offer Generator",
-      "subtitle": "Create high-converting offers in seconds.",
-      "beta": "Beta Growth Suite",
-      "parameters": {
-        "title": "Campaign Parameters",
-        "description": "Define the goal of your offer",
-        "promotion_type": "Promotion Type",
-        "occasional": "Occasional",
-        "evergreen": "Evergreen",
-        "product": "Product / Service",
-        "product_placeholder": "e.g. Lesson Plan Bundle A1-C1",
-        "benefit": "Main Benefit",
-        "benefit_placeholder": "What will the customer gain?",
-        "discount": "Discount (%)",
-        "generate": "Generate AI Offer",
-        "analyzing": "Analyzing market..."
-      },
-      "preview": {
-        "ai_project": "AI PROJECT",
-        "effectiveness": "Effectiveness: {score}%",
-        "title": "Special Early Bird Offer",
-        "subtitle": "Review the generated campaign before publishing",
-        "ad_copy_label": "Ad Slogan",
-        "conversion_label": "Conversion",
-        "vs_avg": "+{diff}% vs avg",
-        "discount_code_label": "Your discount code",
-        "copied": "Copied",
-        "copy": "Copy",
-        "reject": "Reject and change parameters",
-        "accept": "Accept and Publish Offer"
-      },
-      "loading": {
-        "title": "AI Magic in progress...",
-        "description": "\"Analyzing market trends and optimizing sales psychology for your products.\"",
-        "progress_label": "Competitor analysis..."
-      },
-      "toasts": {
-        "copied": "Discount code copied!",
-        "ready": "Offer ready for review!"
-      }
-    },
-    "landingBuilder": {
-      "title": "Landing Page Builder",
-      "draftVersion": "Draft Version: {name}",
-      "desktop": "Desktop",
-      "mobile": "Mobile",
-      "preview": "Preview",
-      "save": "Save changes",
-      "saving": "Saving...",
-      "elements": "Page Elements",
-      "text": "Text",
-      "image": "Image",
-      "button": "Button",
-      "aiBlock": "AI Block",
-      "canvas": "Canvas (Layers)",
-      "hero": "Hero Section",
-      "features": "Advantages & Benefits",
-      "pricing": "Pricing Section",
-      "aiMagic": {
-        "title": "Ready for magic?",
-        "desc": "Use AI to automatically match copy and colors to your product.",
-        "optimize": "Optimize with AI"
-      },
-      "mock": {
-        "newCourse": "New Course",
-        "heroTitle": "Start teaching the language {joy}",
-        "joy": "with joy",
-        "heroDesc": "Ready-made scenarios your students will love. Zero stress, 100% results.",
-        "buyNow": "Buy now and start teaching",
-        "learnMore": "Learn more",
-        "addImage": "Add main image (Drag & Drop)"
-      },
-      "optimization": {
-        "title": "AI Landing Optimization",
-        "desc": "We detected {count} areas for improvement to increase conversion by approx. {percent}%.",
-        "current": "Current Version",
-        "aiSuggestion": "AI Suggestion (Improved conversion)",
-        "recommendation": "RECOMMENDATION",
-        "skip": "Skip changes",
-        "apply": "Apply optimization",
-        "success": "AI changes have been applied to the project!",
-        "processing": "Working on the project...",
-        "processingDesc": "\"Scanning your copy for benefit language and analyzing market heatmaps.\"",
-        "analysingHeaders": "Analyzing headers...",
-        "pickingColors": "Choosing color palette...",
-        "renderingPreview": "Rendering preview...",
-        "paletteTitle": "Improved Color Palette (Ocean Night)",
-        "paletteDesc": "We will change the accents to a more professional navy and energetic blue.",
-        "suggestionTitle": "Stop wasting hours on preparation. Choose ready-made solutions.",
-        "suggestionDesc": "Join 500+ teachers who reclaimed 10 hours a week. We guarantee a smile on every student's face.",
-        "suggestionButton": "Claim your time and start now"
-      },
-      "toasts": {
-        "saved": "Landing page saved successfully!"
-      }
+            "launching": "🚀 Launching real-time scraping agent...",
+            "analyzing": "🔍 Analyzing: {url}...",
+            "private": "⚠️ Link {url} appears to be a private collection. Skipping - please use individual game links.",
+            "extracted": "✅ Extracted: {title}",
+            "dropped": "❌ Connection dropped for: {url}",
+            "complete": "Scraping complete! Successfully extracted metadata for {count} assets."
+        }
     },
     "integrations": {
-      "title": "BaseLinker Εκπαιδευτικό",
-      "subtitle": "Παγκόσμιες πωλήσεις υλικού και αυτοματισμός AI.",
-      "loading": "Φόρτωση μεταφράσεων...",
-      "addStore": "Προσθήκη καταστήματος",
-      "sync_status": "Τελευταίος συγχρονισμός παιχνιδιών",
-      "today": "Σήμερα",
-      "tabs": {
-        "sync": "Αποθήκη & Συγχρονισμός",
-        "agent": "Πράκτορας Δημοσίευσης",
-        "settings": "Ρυθμίσεις"
-      },
-      "marketplaces": {
-        "groups": {
-          "poland": "Πολωνία",
-          "usa": "ΗΠΑ",
-          "dach": "Γερμανία (DACH)",
-          "uk": "Ηνωμένο Βασίλειο",
-          "fr_es": "Γαλλία/Ισπανία"
+        "title": "Educational BaseLinker",
+        "subtitle": "Global materials sales and AI automation.",
+        "loading": "Loading translations...",
+        "addStore": "Add store",
+        "sync_status": "Sync: {date}",
+        "today": "Today",
+        "tabs": {
+            "sync": "Warehouse & Sync",
+            "agent": "Publication Agent",
+            "settings": "Marketplace Settings"
         },
-        "names": {
-          "wp": "WooCommerce / Publigo",
-          "wp_full": "WordPress / Publigo",
-          "tpt": "Teachers Pay Teachers",
-          "etsy": "Etsy Education",
-          "eduki": "Eduki (Γερμανία)",
-          "tes": "TES (UK)",
-          "mieux": "MieuxEnseigner (Γαλλία/Ισπανία)"
+        "marketplaces": {
+            "groups": {
+                "poland": "Poland",
+                "usa": "USA",
+                "dach": "Germany (DACH)",
+                "uk": "UK",
+                "fr_es": "France/Spain"
+            },
+            "names": {
+                "wp": "WooCommerce / Publigo",
+                "wp_full": "WordPress / Publigo",
+                "tpt": "Teachers Pay Teachers",
+                "etsy": "Etsy Education",
+                "eduki": "Eduki (Germany)",
+                "tes": "TES (UK)",
+                "mieux": "MieuxEnseigner (France/Spain)"
+            }
+        },
+        "inventory": {
+            "title": "Global Materials Inventory",
+            "badge": "Central Warehouse",
+            "description": "Manage source files and their presence in different markets.",
+            "source": "Source: kamilaenglish.com",
+            "allFiles": "All PDFs, Games and Audio in one place",
+            "updateBtn": "Update Inventory",
+            "syncBtn": "Sync Inventory",
+            "progress": "Sync progress",
+            "log": "System Log",
+            "waiting": "Waiting for start...",
+            "logs": {
+                "init": "Initializing connection with external systems...",
+                "auth": "Authorizing Publigo (wp-idea) & WooCommerce...",
+                "fetching": "Fetching product list (Multi-Channel Sourcing)...",
+                "syncing": "Syncing stock levels and digital files...",
+                "complete": "Sync complete. Detected {count} new materials.",
+                "agent_init": "Initializing environment for {mkt}...",
+                "agent_login": "Logging into seller panel...",
+                "agent_fill": "Filling form: {title}...",
+                "agent_optimize": "Optimizing SEO and uploading files...",
+                "agent_done": "Ready! Product is waiting for approval."
+            },
+            "toasts": {
+                "sync_success": "Warehouse updated successfully.",
+                "analysis_done": "AI Analysis complete. Suggested data is ready.",
+                "no_tokens": "Insufficient tokens. Top up your account.",
+                "tokens_spent": "{count} tokens deducted for AI operation.",
+                "test_woo": "Testing WooCommerce connection...",
+                "woo_success": "Connected successfully to kamilaenglish.com (API v3)",
+                "test_manus": "Verifying Manus AI license...",
+                "manus_success": "License active. Agent ready for work.",
+                "settings_saved": "Settings saved locally.",
+                "new_channel": "Opening new sales channel configurator...",
+                "edit_schedule": "Schedule editing available in system settings.",
+                "importing": "Importing new products..."
+            },
+            "stats": {
+                "products_short": "prod."
+            }
+        },
+        "schedule": {
+            "title": "Schedule",
+            "daily02": "Daily at 02:00",
+            "active": "Active",
+            "disabled": "Disabled",
+            "checkOnlyChanges": "Check only changes",
+            "changeCron": "Change cron settings"
+        },
+        "aiTip": {
+            "title": "AI Tip",
+            "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
+            "importBtn": "Import now"
+        },
+        "agent": {
+            "catalogTitle": "Product Catalog",
+            "ready": "Ready",
+            "emptyState": {
+                "title": "Select product and target market",
+                "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
+            },
+            "selectMarket": "Select target market",
+            "launchBtn": "Launch Agent",
+            "launchAdmin": "Launch Agent (Admin)",
+            "launchPoints": "Launch for {count} pts",
+            "working": "Agent Working...",
+            "manusMode": "Manus Mode: Active",
+            "marketPrefix": "EnglishLearning: ",
+            "yourBalance": "Your balance",
+            "analysisTitle": "AI Analysis for {market}",
+            "regionalOptimization": "Regional optimization",
+            "suggestedTitle": "Suggested Title (SEO Local)",
+            "suggestedPrice": "Price (PPP Conversion)",
+            "sellingProb": "Selling Probability",
+            "veryHigh": "VERY HIGH",
+            "success": {
+                "title": "Task Completed!",
+                "description": "AI Agent successfully visited {market} and published your product.",
+                "viewLogs": "VIEW SESSION LOGS"
+            },
+            "toasts": {
+                "session_manager": "Opening session manager...",
+                "proxy_success": "Proxy: {ip} ({location}) OK",
+                "report_title": "Agent Report",
+                "report_desc": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}"
+            },
+            "stats": {
+                "points": "pts"
+            },
+            "mockAnalysis": {
+                "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
+                "suggestedPrice": "$12.99",
+                "subject": "English Language Arts",
+                "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
+                "description": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!"
+            },
+            "idle": {
+                "title": "In standby",
+                "description": "Run agent to start automation process on platform {market}."
+            }
+        },
+        "settings": {
+            "title": "Multi-Channel Connections",
+            "description": "Configure access data for external stores.",
+            "saveAll": "Save all",
+            "lastSaved": "Last saved: {time}",
+            "woo": {
+                "title": "WooCommerce / WordPress Site",
+                "url": "Store URL (REST API)",
+                "key": "Consumer Key",
+                "secret": "Consumer Secret",
+                "connected": "Connected",
+                "autoSync": "AUTO-SYNC ON",
+                "test": "Test"
+            },
+            "manus": {
+                "title": "Manus AI Session",
+                "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
+                "instance": "Agent API Instance",
+                "test": "Test Manus",
+                "manage": "Manage Session",
+                "proxy": "Test Proxy"
+            },
+            "mailerlite": {
+                "title": "MailerLite Integration",
+                "api_key": "MailerLite API Key",
+                "placeholder": "ml_...",
+                "groups": "Subscriber Group ID",
+                "test": "Test Connection"
+            },
+            "manychat": {
+                "title": "ManyChat Automation",
+                "api_key": "ManyChat API Key",
+                "placeholder": "mc_...",
+                "automation_id": "Default Flow ID",
+                "test": "Test Automation"
+            }
         }
-      },
-      "inventory": {
-        "title": "Παγκόσμιο Απόθεμα Υλικού",
-        "badge": "Κεντρική Αποθήκη",
-        "description": "Διαχειριστείτε την κεντρική βάση των ψηφιακών υλικών σας",
-        "source": "Πηγή: kamilaenglish.com",
-        "allFiles": "Όλα τα PDF, Παιχνίδια και Ήχος σε ένα μέρος",
-        "updateBtn": "Ενημέρωση Αποθέματος",
-        "syncBtn": "Συγχρονισμός Αποθέματος",
-        "progress": "Πρόοδος συγχρονισμού",
-        "log": "Μητρώο Συστήματος",
-        "waiting": "Αναμονή για έναρξη...",
-        "logs": {
-          "init": "Αρχικοποίηση σύνδεσης με εξωτερικά συστήματα...",
-          "auth": "Εξουσιοδότηση Publigo (wp-idea) & WooCommerce...",
-          "fetching": "Λήψη λίστας προϊόντων...",
-          "syncing": "Συγχρονισμός επιπέδων αποθέματος και ψηφιακών αρχείων...",
-          "complete": "Ο συγχρονισμός ολοκληρώθηκε. Εντοπίστηκαν {count} νέα υλικά.",
-          "agent_init": "Αρχικοποίηση περιβάλλοντος για {mkt}...",
-          "agent_login": "Σύνδεση στον πίνακα πωλητή...",
-          "agent_fill": "Συμπλήρωση φόρμας: {title}...",
-          "agent_optimize": "Βελτιστοποίηση SEO και ανέβασμα αρχείων...",
-          "agent_done": "Έτοιμο! Το προϊόν περιμένει έγκριση."
+    },
+    "abandonedHub": {
+        "title": "Abandoned Cart Hub",
+        "subtitle": "Recover lost sales and manage leads",
+        "table": {
+            "customer": "Customer",
+            "cart": "Cart Items",
+            "value": "Value",
+            "lastActive": "Last Active",
+            "actions": "Actions"
         },
-        "toasts": {
-          "sync_success": "Η αποθήκη ενημερώθηκε με επιτυχία.",
-          "analysis_done": "Η ανάλυση AI ολοκληρώθηκε. Τα προτεινόμενα δεδομένα είναι έτοιμα.",
-          "no_tokens": "Ανεπαρκή διακριτικά. Επαναφορτίστε το λογαριασμό σας.",
-          "tokens_spent": "Αφαιρέθηκαν {count} διακριτικά για τη λειτουργία AI.",
-          "test_woo": "Δοκιμή σύνδεσης WooCommerce...",
-          "woo_success": "Συνδέθηκε με επιτυχία στο kamilaenglish.com (API v3)",
-          "test_manus": "Επαλήθευση άδειας Manus AI...",
-          "manus_success": "Άδεια ενεργή. Ο πράκτορας είναι έτοιμος για εργασία.",
-          "settings_saved": "Οι ρυθμίσεις αποθηκεύτηκαν τοπικά.",
-          "new_channel": "Άνοιγμα διαμορφωτή νέου καναλιού πωλήσεων...",
-          "edit_schedule": "Η επεξεργασία προγράμματος είναι διαθέσιμη στις ρυθμίσεις συστήματος.",
-          "importing": "Εισαγωγή νέων προϊόντων..."
+        "actions": {
+            "sendReminder": "Send Reminder",
+            "recoveryLink": "Copy Recovery Link",
+            "delete": "Remove lead"
         },
-        "stats": {
-          "products_short": "προϊόντα"
+        "status": {
+            "contacted": "Contacted",
+            "pending": "Pending",
+            "recovered": "Recovered"
+        },
+        "notifications": {
+            "reminderSent": "Recovery email simulation sent to {email}",
+            "linkCopied": "Recovery link copied with discount code!"
         }
-      },
-      "schedule": {
-        "title": "Χρονοδιάγραμμα Συγχρονισμού",
-        "daily02": "Καθημερινά στις 02:00",
-        "active": "Ενεργό",
-        "disabled": "Ανενεργό",
-        "checkOnlyChanges": "Έλεγχος μόνο αλλαγών",
-        "changeCron": "Αλλαγή ρυθμίσεων cron"
-      },
-      "aiTip": {
-        "title": "Συμβουλή AI",
-        "description": "Το AI εντόπισε νέα προϊόντα στο kamilaenglish.com που δεν έχουν εισαχθεί ακόμη.",
-        "importBtn": "Εισαγωγή τώρα"
-      },
-      "agent": {
-        "catalogTitle": "Κατάλογος Προϊόντων",
-        "ready": "Έτοιμο",
-        "emptyState": {
-          "title": "Δεν βρέθηκαν προϊόντα",
-          "description": "Επιλέξτε μια αγορά και κάντε κλικ στο 'Σάρωση', για να βρείτε υλικά προς δημοσίευση."
-        },
-        "selectMarket": "Επιλέξτε αγορά στόχο",
-        "launchBtn": "Εκκίνηση Πράκτορα",
-        "launchAdmin": "Εκκίνηση Πράκτορα (Admin)",
-        "launchPoints": "Εκκίνηση για {count} πόντους",
-        "working": "Ο Πράκτορας εργάζεται...",
-        "manusMode": "Λειτουργία Manus: Ενεργή",
-        "marketPrefix": "EnglishLearning: ",
-        "yourBalance": "Το υπόλοιπό σας",
-        "analysisTitle": "Ανάλυση AI για {market}",
-        "regionalOptimization": "Περιφερειακή βελτιστοποίηση",
-        "suggestedTitle": "Προτεινόμενος Τίτλος (SEO Local)",
-        "suggestedPrice": "Τιμή (Μετατροπή PPP)",
-        "sellingProb": "Πιθανότητα Πώλησης",
-        "veryHigh": "ΠΟΛΥ ΥΨΗΛΗ",
-        "success": {
-          "title": "Η δημοσίευση ολοκληρώθηκε!",
-          "description": "Ο πράκτορας ολοκλήρωσε την εργασία του. Δείτε τα αποτελέσματα στο πάνελ πωλητή.",
-          "viewLogs": "ΠΡΟΒΟΛΗ ΜΗΤΡΩΩΝ ΣΥΝΕΔΡΙΑΣ"
-        },
-        "toasts": {
-          "session_manager": "Άνοιγμα διαχειριστή συνεδρίας...",
-          "proxy_success": "Proxy: {ip} ({location}) OK",
-          "report_title": "Αναφορά Πράκτορα",
-          "report_desc": "Σύνδεση: OK, Φόρμα: Συμπληρώθηκε, Εικόνες: Ανέβηκαν, SEO: Βελτιστοποιήθηκε. Συνολικός χρόνος: {time}"
-        },
-        "stats": {
-          "points": "pts"
-        },
-        "mockAnalysis": {
-          "optimizedTitleSuffix": "Ολοκληρωμένο εκπαιδευτικό υλικό για εκπαιδευτικούς",
-          "suggestedPrice": "Τιμή (Μετατροπή PPP)",
-          "subject": "Θέμα",
-          "seoTags": "homeschool, φύλλα εργασίας, λεξιλόγιο, κάρτες flash, πόροι εκπαιδευτικών",
-          "description": "Ξεκλειδώστε το δυναμικό της τάξης σας με αυτό το premium προϊόν {title}. \n\nΣχεδιασμένο από δασκάλους για δασκάλους, αυτός ο πόρος περιλαμβάνει:\n- Πλήρη σενάρια PDF\n- Έτοιμα φύλλα εργασίας\n- Διαδραστικά οπτικά βοηθήματα."
-        },
-        "idle": {
-          "title": "Σε αναμονή",
-          "description": "Εκκινήστε τον πράκτορα για να ξεκινήσετε τη διαδικασία αυτοματισμού στην πλατφόρμα {market}."
-        }
-      },
-      "settings": {
-        "title": "Πολυκαναλική Σύνδεση",
-        "description": "Ρυθμίστε τα δεδομένα πρόσβασης για εξωτερικά καταστήματα.",
-        "saveAll": "Αποθήκευση όλων",
-        "lastSaved": "Τελευταία αποθήκευση: {time}",
-        "woo": {
-          "title": "WooCommerce / WordPress Site",
-          "url": "URL Στόχου",
-          "key": "Κλειδί API / Διακριτικό",
-          "secret": "Consumer Secret",
-          "connected": "Συνδεδεμένο",
-          "autoSync": "ΑΥΤΟΜΑΤΟΣ ΣΥΓΧΡΟΝΙΣΜΟΣ ΕΝΕΡΓΟΣ",
-          "test": "Δοκιμή"
-        },
-        "manus": {
-          "title": "Συνεδρία Manus AI",
-          "description": "Ο πράκτορας χρησιμοποιεί 'Browser Operator Mode'. Μεταφορτώστε τα cookies συνεδρίας (JSON) για να αποφύγετε προβλήματα 2FA.",
-          "instance": "Στιγμιότυπο API Πράκτορα",
-          "test": "Δοκιμή",
-          "manage": "Διαχείριση Συνεδρίας",
-          "proxy": "Δοκιμή Proxy"
-        }
-      }
     }
-  },
-  "logs": {
-    "init": "🚀 Initializing AI Scraper agent...",
-    "connect": "🔍 Connecting to API session...",
-    "extract": "🧩 Extracting mechanics and metadata...",
-    "images": "🖼️ Generating preview thumbnails...",
-    "seo": "✍️ Crafting SEO-optimized descriptions...",
-    "pricing": "💰 Calculating regional pricing...",
-    "finalize": "✨ Finalizing product drafts..."
-  },
-  "interactive": {
-    "title": "Interactive Content",
-    "subtitle": "Import and optimize Games with AI",
-    "placeholder": "Paste links (one per line)...",
-    "found": "Found {count} interactive items!",
-    "generate": "Generate drafts",
-    "createDrafts": "Accept and create drafts",
-    "success": "Successfully imported {count} products!",
-    "preview_title": "AI Draft Preview",
-    "preview_desc": "Review generated products and test interactive content.",
-    "logs": {
-      "launching": "🚀 Launching real-time scraping agent...",
-      "analyzing": "🔍 Analyzing: {url}...",
-      "private": "⚠️ Link {url} appears to be a private collection. Skipping - please use individual game links.",
-      "extracted": "✅ Extracted: {title}",
-      "dropped": "❌ Connection dropped for: {url}",
-      "complete": "Scraping complete! Successfully extracted metadata for {count} assets."
-    }
-  },
-  "integrations": {
-    "title": "Educational BaseLinker",
-    "subtitle": "Global materials sales and AI automation.",
-    "loading": "Loading translations...",
-    "addStore": "Add store",
-    "sync_status": "Sync: {date}",
-    "today": "Today",
-    "tabs": {
-      "sync": "Warehouse & Sync",
-      "agent": "Publication Agent",
-      "settings": "Marketplace Settings"
-    },
-    "marketplaces": {
-      "groups": {
-        "poland": "Poland",
-        "usa": "USA",
-        "dach": "Germany (DACH)",
-        "uk": "UK",
-        "fr_es": "France/Spain"
-      },
-      "names": {
-        "wp": "WooCommerce / Publigo",
-        "wp_full": "WordPress / Publigo",
-        "tpt": "Teachers Pay Teachers",
-        "etsy": "Etsy Education",
-        "eduki": "Eduki (Germany)",
-        "tes": "TES (UK)",
-        "mieux": "MieuxEnseigner (France/Spain)"
-      }
-    },
-    "inventory": {
-      "title": "Global Materials Inventory",
-      "badge": "Central Warehouse",
-      "description": "Manage source files and their presence in different markets.",
-      "source": "Source: kamilaenglish.com",
-      "allFiles": "All PDFs, Games and Audio in one place",
-      "updateBtn": "Update Inventory",
-      "syncBtn": "Sync Inventory",
-      "progress": "Sync progress",
-      "log": "System Log",
-      "waiting": "Waiting for start...",
-      "logs": {
-        "init": "Initializing connection with external systems...",
-        "auth": "Authorizing Publigo (wp-idea) & WooCommerce...",
-        "fetching": "Fetching product list (Multi-Channel Sourcing)...",
-        "syncing": "Syncing stock levels and digital files...",
-        "complete": "Sync complete. Detected {count} new materials.",
-        "agent_init": "Initializing environment for {mkt}...",
-        "agent_login": "Logging into seller panel...",
-        "agent_fill": "Filling form: {title}...",
-        "agent_optimize": "Optimizing SEO and uploading files...",
-        "agent_done": "Ready! Product is waiting for approval."
-      },
-      "toasts": {
-        "sync_success": "Warehouse updated successfully.",
-        "analysis_done": "AI Analysis complete. Suggested data is ready.",
-        "no_tokens": "Insufficient tokens. Top up your account.",
-        "tokens_spent": "{count} tokens deducted for AI operation.",
-        "test_woo": "Testing WooCommerce connection...",
-        "woo_success": "Connected successfully to kamilaenglish.com (API v3)",
-        "test_manus": "Verifying Manus AI license...",
-        "manus_success": "License active. Agent ready for work.",
-        "settings_saved": "Settings saved locally.",
-        "new_channel": "Opening new sales channel configurator...",
-        "edit_schedule": "Schedule editing available in system settings.",
-        "importing": "Importing new products..."
-      },
-      "stats": {
-        "products_short": "prod."
-      }
-    },
-    "schedule": {
-      "title": "Schedule",
-      "daily02": "Daily at 02:00",
-      "active": "Active",
-      "disabled": "Disabled",
-      "checkOnlyChanges": "Check only changes",
-      "changeCron": "Change cron settings"
-    },
-    "aiTip": {
-      "title": "AI Tip",
-      "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
-      "importBtn": "Import now"
-    },
-    "agent": {
-      "catalogTitle": "Product Catalog",
-      "ready": "Ready",
-      "emptyState": {
-        "title": "Select product and target market",
-        "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
-      },
-      "selectMarket": "Select target market",
-      "launchBtn": "Launch Agent",
-      "launchAdmin": "Launch Agent (Admin)",
-      "launchPoints": "Launch for {count} pts",
-      "working": "Agent Working...",
-      "manusMode": "Manus Mode: Active",
-      "marketPrefix": "EnglishLearning: ",
-      "yourBalance": "Your balance",
-      "analysisTitle": "AI Analysis for {market}",
-      "regionalOptimization": "Regional optimization",
-      "suggestedTitle": "Suggested Title (SEO Local)",
-      "suggestedPrice": "Price (PPP Conversion)",
-      "sellingProb": "Selling Probability",
-      "veryHigh": "VERY HIGH",
-      "success": {
-        "title": "Task Completed!",
-        "description": "AI Agent successfully visited {market} and published your product.",
-        "viewLogs": "VIEW SESSION LOGS"
-      },
-      "toasts": {
-        "session_manager": "Opening session manager...",
-        "proxy_success": "Proxy: {ip} ({location}) OK",
-        "report_title": "Agent Report",
-        "report_desc": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}"
-      },
-      "stats": {
-        "points": "pts"
-      },
-      "mockAnalysis": {
-        "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
-        "suggestedPrice": "$12.99",
-        "subject": "English Language Arts",
-        "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
-        "description": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!"
-      },
-      "idle": {
-        "title": "In standby",
-        "description": "Run agent to start automation process on platform {market}."
-      }
-    },
-    "settings": {
-      "title": "Multi-Channel Connections",
-      "description": "Configure access data for external stores.",
-      "saveAll": "Save all",
-      "lastSaved": "Last saved: {time}",
-      "woo": {
-        "title": "WooCommerce / WordPress Site",
-        "url": "Store URL (REST API)",
-        "key": "Consumer Key",
-        "secret": "Consumer Secret",
-        "connected": "Connected",
-        "autoSync": "AUTO-SYNC ON",
-        "test": "Test"
-      },
-      "manus": {
-        "title": "Manus AI Session",
-        "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
-        "instance": "Agent API Instance",
-        "test": "Test Manus",
-        "manage": "Manage Session",
-        "proxy": "Test Proxy"
-      },
-      "mailerlite": {
-        "title": "MailerLite Integration",
-        "api_key": "MailerLite API Key",
-        "placeholder": "ml_...",
-        "groups": "Subscriber Group ID",
-        "test": "Test Connection"
-      },
-      "manychat": {
-        "title": "ManyChat Automation",
-        "api_key": "ManyChat API Key",
-        "placeholder": "mc_...",
-        "automation_id": "Default Flow ID",
-        "test": "Test Automation"
-      }
-    }
-  },
-  "abandonedHub": {
-    "title": "Abandoned Cart Hub",
-    "subtitle": "Recover lost sales and manage leads",
-    "table": {
-      "customer": "Customer",
-      "cart": "Cart Items",
-      "value": "Value",
-      "lastActive": "Last Active",
-      "actions": "Actions"
-    },
-    "actions": {
-      "sendReminder": "Send Reminder",
-      "recoveryLink": "Copy Recovery Link",
-      "delete": "Remove lead"
-    },
-    "status": {
-      "contacted": "Contacted",
-      "pending": "Pending",
-      "recovered": "Recovered"
-    },
-    "notifications": {
-      "reminderSent": "Recovery email simulation sent to {email}",
-      "linkCopied": "Recovery link copied with discount code!"
-    }
-  }
 }

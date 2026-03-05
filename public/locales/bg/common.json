@@ -1,460 +1,465 @@
 {
-  "seo": {
-    "title": "Учебни материали за учители по английски | Kamila Łobko-Koziej",
-    "description": "Креативни учебни материали, планове на уроци, целогодишни проекти и готови пакети за учители по английски.",
-    "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
-  },
-  "nav": {
-    "products": "Продукти",
-    "materialy": "Материали",
-    "blog": "Блог",
-    "contact": "Контакт",
-    "login": "Вход",
-    "dashboard": "Панел",
-    "adminPanel": "Админ панел",
-    "verify": "Верификация"
-  },
-  "brand": {
-    "educationalMaterials": "Учебни материали",
-    "byKamila": "от Kamila Łobko-Koziej"
-  },
-  "hero": {
-    "badge": "Материали за учители",
-    "title": "Преподавайте английски с пасия и лекота",
-    "subtitle": "Креативни учебни материали, които ще променят вашите уроци. Спестете време за подготовка и вдъхновявайте учениците си всеки ден.",
-    "cta_main": "Разгледайте материалите",
-    "cta_secondary": "За автора",
-    "demoText": "Вижте демо на панела:",
-    "teacherProfile": "Профил на учител",
-    "studentProfile": "Профил на ученик"
-  },
-  "footer": {
-    "rights": "Всички права запазени.",
-    "description": "Оригинални, креативни учебни материали за учители по английски. Вдъхновете се!",
-    "groups": {
-      "shop": "Магазин",
-      "info": "Информация",
-      "help": "Помощ"
+    "seo": {
+        "title": "Учебни материали за учители по английски | Kamila Łobko-Koziej",
+        "description": "Креативни учебни материали, планове на уроци, целогодишни проекти и готови пакети за учители по английски.",
+        "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
     },
-    "links": {
-      "catalog": "Каталог",
-      "materials": "Учебни материали",
-      "projects": "Целогодишни проекти",
-      "scenarios": "Планове на уроци",
-      "packs": "Тематични пакети",
-      "about": "За автора",
-      "contact": "Контакт",
-      "privacy": "Политика за поверителност",
-      "terms": "Условия за ползване",
-      "howToBuy": "Как да купя?",
-      "faq": "ЧЗВ",
-      "returns": "Връщания",
-      "account": "Моят акаунт",
-      "admin": "Учителски панел (Админ)"
+    "nav": {
+        "products": "Продукти",
+        "materialy": "Материали",
+        "blog": "Блог",
+        "contact": "Контакт",
+        "login": "Вход",
+        "dashboard": "Панел",
+        "adminPanel": "Админ панел",
+        "verify": "Верификация"
+    },
+    "brand": {
+        "educationalMaterials": "Учебни материали",
+        "byKamila": "от Kamila Łobko-Koziej"
+    },
+    "hero": {
+        "badge": "Материали за учители",
+        "title": "Преподавайте английски с пасия и лекота",
+        "subtitle": "Креативни учебни материали, които ще променят вашите уроци. Спестете време за подготовка и вдъхновявайте учениците си всеки ден.",
+        "cta_main": "Разгледайте материалите",
+        "cta_secondary": "За автора",
+        "demoText": "Вижте демо на панела:",
+        "teacherProfile": "Профил на учител",
+        "studentProfile": "Профил на ученик"
+    },
+    "footer": {
+        "rights": "Всички права запазени.",
+        "description": "Оригинални, креативни учебни материали за учители по английски. Вдъхновете се!",
+        "groups": {
+            "shop": "Магазин",
+            "info": "Информация",
+            "help": "Помощ"
+        },
+        "links": {
+            "catalog": "Каталог",
+            "materials": "Учебни материали",
+            "projects": "Целогодишни проекти",
+            "scenarios": "Планове на уроци",
+            "packs": "Тематични пакети",
+            "about": "За автора",
+            "contact": "Контакт",
+            "privacy": "Политика за поверителност",
+            "terms": "Условия за ползване",
+            "howToBuy": "Как да купя?",
+            "faq": "ЧЗВ",
+            "returns": "Връщания",
+            "account": "Моят акаунт",
+            "admin": "Учителски панел (Админ)"
+        }
+    },
+    "auth": {
+        "logout": "Изход",
+        "myCourses": "Моите курсове",
+        "studentPanel": "Ученически панел",
+        "roleAdmin": "Administrator",
+        "roleTeacher": "Teacher",
+        "roleStudent": "Student"
+    },
+    "cart": {
+        "empty": "Количката ви е празна",
+        "emptySub": "Добавете продукти, за да продължите пазаруването",
+        "browse": "Разгледайте продуктите",
+        "reserved": "Количката ви е резервирана за:",
+        "header": "Количка ({count})",
+        "remove": "Премахни",
+        "specialOffer": "СПЕЦИАЛНА ОФЕРТА",
+        "orderBump": "Добави пакет шаблони за имейли (+29 лв.)",
+        "orderBumpDesc": "20 готови за ползване шаблона за комуникация с родители. Спестете 70%!",
+        "summary": "Обобщение",
+        "couponPlaceholder": "Код за отстъпка",
+        "apply": "Приложи",
+        "couponHeader": "Купон:",
+        "products": "Продукти",
+        "discount": "Отстъпка",
+        "total": "Общо",
+        "checkout": "Към плащане",
+        "secure": "Сигурно плащане",
+        "couponInvalid": "Invalid coupon code",
+        "couponInactive": "This coupon is no longer active",
+        "couponExpired": "This coupon has expired",
+        "couponLimitReached": "This coupon has reached its usage limit",
+        "couponMinOrder": "Minimum order value: {minOrderValue} {currency}",
+        "couponAppliedPercent": "Discount {percent}% has been applied!",
+        "couponAppliedFixed": "Discount {amount} {currency} has been applied!",
+        "currencySymbol": "€"
+    },
+    "socialProof": {
+        "header": "Facebook общност",
+        "sub": "Бъдете в крак с новините и се присъединете към дискусията!",
+        "cta": "Вижте нашия профил, пълен с вдъхновение",
+        "madeWithLove": "Създадено с любов",
+        "polishQuality": "и полско качество"
+    },
+    "newsletter": {
+        "header": "Бъдете в течение!",
+        "sub": "Абонирайте се за нашия бюлетин и получавайте информация за нови материали, промоции и ексклузивни отстъпки.",
+        "placeholder": "Вашият имейл адрес",
+        "button": "Абонирай се",
+        "success": "Благодарим ви, че се абонирахте за бюлетина!",
+        "privacy": "Ние уважаваме вашата поверителност. Можете да се отпишете по всяко време."
+    },
+    "checkout": {
+        "acceptTermsError": "Трябва да приемете условията и правилата",
+        "successTitle": "Благодарим ви за поръчката!",
+        "successOrder": "Вашата поръчка №{orderNumber} беше приета.",
+        "successEmail": "Изпратихме детайлите за поръчката на посочения имейл адрес.",
+        "backToStore": "Обратно към магазина",
+        "myCourses": "Моите курсове",
+        "backToCart": "Обратно към количката",
+        "steps": {
+            "cart": "Количка",
+            "payment": "Плащане",
+            "access": "Достъп"
+        },
+        "trust": {
+            "secure": "Сигурно плащане",
+            "ssl": "SSL криптиране",
+            "instant": "Незабавен достъп"
+        },
+        "header": "Завършете поръчката",
+        "contactTitle": "Данни за контакт",
+        "email": "Имейл *",
+        "firstName": "Име *",
+        "lastName": "Фамилия *",
+        "phone": "Телефон (по желание)",
+        "invoiceTitle": "Фактура",
+        "wantInvoice": "Искам да получа фактура с ДДС",
+        "nip": "Булстат / ЕИК",
+        "nipError": "Въведете валиден Булстат",
+        "lookup": "Изтегли данни",
+        "lookupSuccess": "Данните на фирмата са изтеглени!",
+        "nipNotFound": "Фирмата не е намерена",
+        "nipSearchError": "Грешка при търсенето. Моля, опитайте отново.",
+        "companyName": "Име на фирмата",
+        "companyAddress": "Адрес на фирмата",
+        "addressPlaceholder": "Ще се попълни автоматично",
+        "paymentTitle": "Метод на плащане",
+        "paymentMethods": {
+            "card": "Платежна карта",
+            "cardSub": "Visa, Mastercard, American Express",
+            "blik": "BLIK",
+            "blikSub": "Бързо плащане с BLIK код",
+            "transfer": "Банков превод",
+            "transferSub": "Традиционен банков превод"
+        },
+        "yourOrder": "Вашата поръчка",
+        "summaryProducts": "Продукти",
+        "summaryDiscount": "Отстъпка ({code})",
+        "summaryTotal": "Общо",
+        "terms": "Приемам условията на магазина и политиката за поверителност",
+        "termsRequired": "Задължително за завършване на поръчката",
+        "processing": "Обработка...",
+        "pay": "Плати {total}",
+        "instantAccessInfo": "След плащане, материалите са незабавно достъпни в панела",
+        "socialProof": "+2 500 учители вече са купили",
+        "toPayMobile": "За плащане",
+        "paymentFailed": "Payment failed. Please try again.",
+        "paymentSystemError": "Payment system error."
+    },
+    "contact": {
+        "title": "Свържете се с нас",
+        "subtitle": "Имате въпрос относно материалите? Нуждаете се от помощ при избора на пакет? Пишете ни или говорете с нашия AI асистент. Ние сме тук за вас!",
+        "aiBadge": "Обикновено отговаряме до 2 часа",
+        "trustBadge": "Над 12 000 доволни учители",
+        "emailTitle": "Напишете имейл",
+        "emailDesc": "Нашата пощенска кутия е отворена 24/7 за вас.",
+        "phoneTitle": "Обадете ни се",
+        "phoneDesc": "Пн-Пт от 9:00 до 17:00 сме на линия.",
+        "formTitle": "Контактна форма",
+        "addressTitle": "Седалище",
+        "addressValue": "Варшава, ул. Образователна 123",
+        "aiHelp": "Нуждаете се от бърз отговор?",
+        "aiHelpDesc": "Нашият интелигентен асистент знае отговорите на повечето често задавани въпроси. Попитайте за продукти, методи на преподаване или наличност на материали.",
+        "aiHelpMobile": "AI асистентът е достъпен в долния ъгъл на екрана.",
+        "form": {
+            "name": "Име и Фамилия",
+            "email": "Имейл",
+            "subject": "Тема",
+            "message": "Вашето съобщение",
+            "messagePlaceholder": "С какво можем да ви помогнем?",
+            "sending": "Изпращане...",
+            "send": "Изпрати съобщение",
+            "success": "Съобщението е изпратено!",
+            "successDesc": "Благодарим ви, че се свързахте с нас. Ще ви отговорим възможно най-скоро.",
+            "placeholders": {
+                "name": "Иван Иванов",
+                "email": "ivan@kamila.shor.dev",
+                "subject": "Запитване за продукт...",
+                "message": "Опишете с какво можем да помогнем..."
+            }
+        },
+        "info": {
+            "emailValue": "contact@kamilaenglish.com",
+            "phoneValue": "+48 123 456 789"
+        },
+        "aiChat": {
+            "title": "AI Асистент",
+            "status": "Онлайн и Готов",
+            "thinking": "Мисля...",
+            "inputPlaceholder": "Задайте въпрос...",
+            "dataInputPlaceholder": "Въведете име и имейл...",
+            "welcome": "Здравейте! Аз съм вашият интелигентен асистент. Преди да започнем, вие наш клиент ли сте вече?",
+            "options": {
+                "yes": "Да, аз съм клиент",
+                "no": "Не, все още не"
+            },
+            "responses": {
+                "clientYes": "Чудесно! С какво мога да ви помогна днес?",
+                "clientNo": "Разбирам. С удоволствие ще ви помогна да опознаете нашите материали. Как се казвате и на кой имейл мога да ви изпратя безплатни мостри?",
+                "dataSaved": "Благодаря! Запазих данните ви. Сега не се колебайте да попитате каквото и да е.",
+                "fallback": "Съжалявам, не разбрах напълно. Можете ли да перифразирате? Можете да попитате за цени, доставка или методи на преподаване."
+            },
+            "knowledge": {
+                "price": "Нашите PDF материали започват от 29 лв. Годишните пакети (Mega Pack) в момента са на промоция за 149 лв.",
+                "delivery": "Всички материали са цифрови. Ще получите линк за изтегляне веднага след плащането.",
+                "preschool": "Имаме страхотна секция 'Английски в детската градина'. Особено препоръчвам нашия пакет 4 Сезона.",
+                "contact": "Можете да ни пишете на имейл или да ни се обадите на посочения номер (Пн-Пт 9:00-17:00).",
+                "invoice": "Да, издаваме фактури. Можете да предоставите данните в количката.",
+                "methods": "Kamila Łobko-Koziej популяризира подход, базиран на играта (TPR, комуникативни игри). Проверете нашия блог за повече информация!"
+            }
+        }
+    },
+    "login": {
+        "title": "Добре дошли отново!",
+        "desc": "Въведете вашия имейл, за да влезете в студентската зона.",
+        "student": "Ученик",
+        "teacher": "Учител",
+        "email": "Имейл",
+        "emailTeacher": "Служебен имейл",
+        "password": "Парола",
+        "loggingIn": "Влизане...",
+        "success": "Влязохте успешно!",
+        "submit": "Влез",
+        "successMessage": "Успешно влизане! Пренасочване...",
+        "errorDefault": "Невалиден имейл или парола.",
+        "errorSystem": "Възникна грешка при влизане. Моля, опитайте отново.",
+        "emailRequired": "Имейлът е задължителен",
+        "emailInvalid": "Невалиден формат на имейла",
+        "passwordRequired": "Паролата е задължителна",
+        "passwordMin": "Паролата трябва да бъде поне 4 знака",
+        "forgotPassword": "Forgot your password?",
+        "magicLink": "Login with Magic Link",
+        "magicLinkDesc": "We'll send you a one-time login link to your email address.",
+        "sendMagicLink": "Send Magic Link",
+        "backToLogin": "Back to login",
+        "checkEmail": "Check your inbox",
+        "resetPassword": "Reset password",
+        "magicLinkSent": "A login link has been sent to your email address.",
+        "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
+        "resetSuccess": "Your password has been changed successfully."
+    },
+    "quickSale": {
+        "title": "БЪРЗО ПЛАЩАНЕ",
+        "demoProduct": {
+            "title": "Примерен премиум електронен учебник",
+            "excerpt": "Това е демонстрационен продукт. В пълната версия данните ще бъдат извлечени от базата данни."
+        },
+        "page": {
+            "guarantee": "30-дневна гаранция за удовлетворение",
+            "totalLabel": "Общо за плащане:",
+            "email_label": "Вашият имейл",
+            "email_placeholder": "address@email.com",
+            "payment_method": "Метод на плащане",
+            "payment_card": "Карта",
+            "blik_code": "BLIK код",
+            "terms": "Приемам условията на магазина",
+            "pay_btn": "Купувам и плащам",
+            "secure_checkout": "SSL криптирана връзка"
+        },
+        "optimization": {
+            "timer": {
+                "text": "Вашата оферта изтича след:"
+            },
+            "social_proof": {
+                "viewing": "{count} души разглеждат тази оферта в момента"
+            },
+            "savings": "Спестявате"
+        },
+        "bump": {
+            "yes_btn": "ДА, добави към поръчката ми",
+            "price_prefix": "само за",
+            "description": "Еднократна оферта! Добавете комплект готови за ползване работни листове (PDF)."
+        }
+    },
+    "verify": {
+        "title": "Проверка на сертификат",
+        "subtitle": "Въведете кода за проверка на сертификата, за да потвърдите неговата автентичност.",
+        "placeholder": "XXXX-XXXX-XXXX",
+        "success": {
+            "title": "Сертификатът е потвърден",
+            "desc": "Този сертификат е автентичен и е издаден от нашата платформа.",
+            "user": "Участник",
+            "course": "Курс",
+            "date": "Дата на завършване",
+            "code": "Код",
+            "view": "Виж сертификата"
+        },
+        "error": {
+            "title": "Сертификатът не е намерен",
+            "desc": "Не намерихме сертификат с дадения код. Моля, проверете дали кодът е правилен."
+        }
+    },
+    "errors": {
+        "404": {
+            "title": "404",
+            "message": "Страницата не е намерена.",
+            "back": "Обратно към началната страница"
+        }
+    },
+    "blog": {
+        "title": "Блог",
+        "subtitle": "Статии, съвети и вдъхновение за учители по английски. Научете как да преподавате по-ефективно и с повече пасия.",
+        "empty": "Няма намерени публикации в блога.",
+        "readMore": "Прочетете повече",
+        "backToBlog": "Обратно към блога",
+        "share": "Сподели:",
+        "notFound": "Не е намерено"
+    },
+    "common": {
+        "loading": "Зареждане...",
+        "success": "Действието е завършено успешно."
+    },
+    "certificates": {
+        "title": "Сертификат за завършване",
+        "subtitle": "С настоящото се удостоверява, че",
+        "completedCourse": "завърши курса",
+        "completionDate": "Дата на завършване:",
+        "verificationCode": "Код за проверка:",
+        "downloadPdf": "Изтегли PDF",
+        "share": "Сподели",
+        "backToDashboard": "Обратно към панела",
+        "styleTitle": "Промяна на стила на сертификата",
+        "verifiedTitle": "Сертификатът е потвърден",
+        "verifiedDesc": "Този сертификат е издаден от нашата платформа.",
+        "notFound": "Сертификатът не е намерен",
+        "copySuccess": "Линкът е копиран в клипборда!"
+    },
+    "languages": {
+        "pl": "Polish",
+        "en": "English",
+        "uk": "Ukrainian",
+        "de": "German",
+        "es": "Spanish",
+        "fr": "French",
+        "it": "Italian",
+        "cs": "Czech",
+        "sk": "Slovak",
+        "ro": "Romanian",
+        "hu": "Hungarian",
+        "pt": "Portuguese",
+        "lt": "Lithuanian",
+        "lv": "Latvian",
+        "et": "Estonian",
+        "hr": "Croatian",
+        "sr": "Serbian",
+        "sl": "Slovenian",
+        "bg": "Bulgarian",
+        "el": "Greek",
+        "nl": "Dutch",
+        "sv": "Swedish",
+        "fi": "Finnish",
+        "no": "Norwegian",
+        "da": "Danish"
+    },
+    "fomo": {
+        "names": [
+            "John",
+            "Emily",
+            "Michael",
+            "Sarah",
+            "David",
+            "Jessica",
+            "Robert"
+        ],
+        "cities": [
+            "London",
+            "New York",
+            "Chicago",
+            "Toronto",
+            "Sydney",
+            "Dublin",
+            "Berlin"
+        ],
+        "purchaseMessage": "{name} from {city}",
+        "productMessage": "Just bought \"{product}\"",
+        "timeAgo": "{time} min ago"
+    },
+    "exitIntent": {
+        "title": "WAIT!",
+        "subtitle": "Before you leave...",
+        "header": "Get your free \"Starter Pack\"",
+        "description": "Join our newsletter and receive 50 free worksheets!",
+        "cta": "I want my gift",
+        "noThanks": "No thanks, I'll pay full price later"
+    },
+    "course": {
+        "yourProgress": "Вашият Напредък",
+        "noLessons": "Няма уроци.",
+        "quiz": "Тест",
+        "unlocksInDays": "Отключва се след {days} дни"
+    },
+    "dashboard": {
+        "wallet": {
+            "title": "Your Wallet",
+            "subtitle": "Collect points for activity and purchases.",
+            "available": "Available funds",
+            "points": "pts",
+            "value": "Value in {currency}",
+            "spend": "Spend points in shop",
+            "history": "Recent activity"
+        },
+        "awards": {
+            "title": "Your Hall of Fame",
+            "subtitle": "Earn badges for completed lessons and games!",
+            "mock": {
+                "start": "Quick Start",
+                "startDesc": "Completed first lesson",
+                "vocab": "Vocab Master",
+                "vocabDesc": "100% in quiz",
+                "steady": "Systematic",
+                "steadyDesc": "Logged in 7 days",
+                "polyglot": "Polyglot",
+                "polyglotDesc": "Passed A1 level"
+            }
+        },
+        "team": {
+            "title": "My Class / Team",
+            "subtitle": "Share materials with students",
+            "create_class": "Create new class",
+            "created_at": "Created: {date}",
+            "students_count": "{count} students",
+            "access_code": "Student access code",
+            "empty": {
+                "title": "New Class",
+                "desc": "Create a group for your students.",
+                "btn": "Start Setup"
+            },
+            "pro": {
+                "active": "Your PRO plan is active",
+                "unlock": "Unlock unlimited classes",
+                "desc": "Teacher PRO plan allows creating unlimited groups.",
+                "upgrade": "Upgrade to PRO",
+                "status": "Active"
+            }
+        },
+        "games": {
+            "title": "Educational Games",
+            "subtitle": "Interactive exercises for your students",
+            "play": "Play now",
+            "loading": "Loading game...",
+            "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
+            "fullscreen": "Full screen",
+            "report": "Report error"
+        }
+    },
+    "announcement": {
+        "launchOffer": "Специална оферта за старт: Вземете 20% ОТСТЪПКА с код \"START20\"",
+        "limitedTime": "Ограничено време: Вижте нашите нови пакети!"
     }
-  },
-  "auth": {
-    "logout": "Изход",
-    "myCourses": "Моите курсове",
-    "studentPanel": "Ученически панел",
-    "roleAdmin": "Administrator",
-    "roleTeacher": "Teacher",
-    "roleStudent": "Student"
-  },
-  "cart": {
-    "empty": "Количката ви е празна",
-    "emptySub": "Добавете продукти, за да продължите пазаруването",
-    "browse": "Разгледайте продуктите",
-    "reserved": "Количката ви е резервирана за:",
-    "header": "Количка ({count})",
-    "remove": "Премахни",
-    "specialOffer": "СПЕЦИАЛНА ОФЕРТА",
-    "orderBump": "Добави пакет шаблони за имейли (+29 лв.)",
-    "orderBumpDesc": "20 готови за ползване шаблона за комуникация с родители. Спестете 70%!",
-    "summary": "Обобщение",
-    "couponPlaceholder": "Код за отстъпка",
-    "apply": "Приложи",
-    "couponHeader": "Купон:",
-    "products": "Продукти",
-    "discount": "Отстъпка",
-    "total": "Общо",
-    "checkout": "Към плащане",
-    "secure": "Сигурно плащане",
-    "couponInvalid": "Invalid coupon code",
-    "couponInactive": "This coupon is no longer active",
-    "couponExpired": "This coupon has expired",
-    "couponLimitReached": "This coupon has reached its usage limit",
-    "couponMinOrder": "Minimum order value: {minOrderValue} {currency}",
-    "couponAppliedPercent": "Discount {percent}% has been applied!",
-    "couponAppliedFixed": "Discount {amount} {currency} has been applied!",
-    "currencySymbol": "€"
-  },
-  "socialProof": {
-    "header": "Facebook общност",
-    "sub": "Бъдете в крак с новините и се присъединете към дискусията!",
-    "cta": "Вижте нашия профил, пълен с вдъхновение",
-    "madeWithLove": "Създадено с любов",
-    "polishQuality": "и полско качество"
-  },
-  "newsletter": {
-    "header": "Бъдете в течение!",
-    "sub": "Абонирайте се за нашия бюлетин и получавайте информация за нови материали, промоции и ексклузивни отстъпки.",
-    "placeholder": "Вашият имейл адрес",
-    "button": "Абонирай се",
-    "success": "Благодарим ви, че се абонирахте за бюлетина!",
-    "privacy": "Ние уважаваме вашата поверителност. Можете да се отпишете по всяко време."
-  },
-  "checkout": {
-    "acceptTermsError": "Трябва да приемете условията и правилата",
-    "successTitle": "Благодарим ви за поръчката!",
-    "successOrder": "Вашата поръчка №{orderNumber} беше приета.",
-    "successEmail": "Изпратихме детайлите за поръчката на посочения имейл адрес.",
-    "backToStore": "Обратно към магазина",
-    "myCourses": "Моите курсове",
-    "backToCart": "Обратно към количката",
-    "steps": {
-      "cart": "Количка",
-      "payment": "Плащане",
-      "access": "Достъп"
-    },
-    "trust": {
-      "secure": "Сигурно плащане",
-      "ssl": "SSL криптиране",
-      "instant": "Незабавен достъп"
-    },
-    "header": "Завършете поръчката",
-    "contactTitle": "Данни за контакт",
-    "email": "Имейл *",
-    "firstName": "Име *",
-    "lastName": "Фамилия *",
-    "phone": "Телефон (по желание)",
-    "invoiceTitle": "Фактура",
-    "wantInvoice": "Искам да получа фактура с ДДС",
-    "nip": "Булстат / ЕИК",
-    "nipError": "Въведете валиден Булстат",
-    "lookup": "Изтегли данни",
-    "lookupSuccess": "Данните на фирмата са изтеглени!",
-    "nipNotFound": "Фирмата не е намерена",
-    "nipSearchError": "Грешка при търсенето. Моля, опитайте отново.",
-    "companyName": "Име на фирмата",
-    "companyAddress": "Адрес на фирмата",
-    "addressPlaceholder": "Ще се попълни автоматично",
-    "paymentTitle": "Метод на плащане",
-    "paymentMethods": {
-      "card": "Платежна карта",
-      "cardSub": "Visa, Mastercard, American Express",
-      "blik": "BLIK",
-      "blikSub": "Бързо плащане с BLIK код",
-      "transfer": "Банков превод",
-      "transferSub": "Традиционен банков превод"
-    },
-    "yourOrder": "Вашата поръчка",
-    "summaryProducts": "Продукти",
-    "summaryDiscount": "Отстъпка ({code})",
-    "summaryTotal": "Общо",
-    "terms": "Приемам условията на магазина и политиката за поверителност",
-    "termsRequired": "Задължително за завършване на поръчката",
-    "processing": "Обработка...",
-    "pay": "Плати {total}",
-    "instantAccessInfo": "След плащане, материалите са незабавно достъпни в панела",
-    "socialProof": "+2 500 учители вече са купили",
-    "toPayMobile": "За плащане",
-    "paymentFailed": "Payment failed. Please try again.",
-    "paymentSystemError": "Payment system error."
-  },
-  "contact": {
-    "title": "Свържете се с нас",
-    "subtitle": "Имате въпрос относно материалите? Нуждаете се от помощ при избора на пакет? Пишете ни или говорете с нашия AI асистент. Ние сме тук за вас!",
-    "aiBadge": "Обикновено отговаряме до 2 часа",
-    "trustBadge": "Над 12 000 доволни учители",
-    "emailTitle": "Напишете имейл",
-    "emailDesc": "Нашата пощенска кутия е отворена 24/7 за вас.",
-    "phoneTitle": "Обадете ни се",
-    "phoneDesc": "Пн-Пт от 9:00 до 17:00 сме на линия.",
-    "formTitle": "Контактна форма",
-    "addressTitle": "Седалище",
-    "addressValue": "Варшава, ул. Образователна 123",
-    "aiHelp": "Нуждаете се от бърз отговор?",
-    "aiHelpDesc": "Нашият интелигентен асистент знае отговорите на повечето често задавани въпроси. Попитайте за продукти, методи на преподаване или наличност на материали.",
-    "aiHelpMobile": "AI асистентът е достъпен в долния ъгъл на екрана.",
-    "form": {
-      "name": "Име и Фамилия",
-      "email": "Имейл",
-      "subject": "Тема",
-      "message": "Вашето съобщение",
-      "messagePlaceholder": "С какво можем да ви помогнем?",
-      "sending": "Изпращане...",
-      "send": "Изпрати съобщение",
-      "success": "Съобщението е изпратено!",
-      "successDesc": "Благодарим ви, че се свързахте с нас. Ще ви отговорим възможно най-скоро.",
-      "placeholders": {
-        "name": "Иван Иванов",
-        "email": "ivan@kamila.shor.dev",
-        "subject": "Запитване за продукт...",
-        "message": "Опишете с какво можем да помогнем..."
-      }
-    },
-    "info": {
-      "emailValue": "contact@kamilaenglish.com",
-      "phoneValue": "+48 123 456 789"
-    },
-    "aiChat": {
-      "title": "AI Асистент",
-      "status": "Онлайн и Готов",
-      "thinking": "Мисля...",
-      "inputPlaceholder": "Задайте въпрос...",
-      "dataInputPlaceholder": "Въведете име и имейл...",
-      "welcome": "Здравейте! Аз съм вашият интелигентен асистент. Преди да започнем, вие наш клиент ли сте вече?",
-      "options": {
-        "yes": "Да, аз съм клиент",
-        "no": "Не, все още не"
-      },
-      "responses": {
-        "clientYes": "Чудесно! С какво мога да ви помогна днес?",
-        "clientNo": "Разбирам. С удоволствие ще ви помогна да опознаете нашите материали. Как се казвате и на кой имейл мога да ви изпратя безплатни мостри?",
-        "dataSaved": "Благодаря! Запазих данните ви. Сега не се колебайте да попитате каквото и да е.",
-        "fallback": "Съжалявам, не разбрах напълно. Можете ли да перифразирате? Можете да попитате за цени, доставка или методи на преподаване."
-      },
-      "knowledge": {
-        "price": "Нашите PDF материали започват от 29 лв. Годишните пакети (Mega Pack) в момента са на промоция за 149 лв.",
-        "delivery": "Всички материали са цифрови. Ще получите линк за изтегляне веднага след плащането.",
-        "preschool": "Имаме страхотна секция 'Английски в детската градина'. Особено препоръчвам нашия пакет 4 Сезона.",
-        "contact": "Можете да ни пишете на имейл или да ни се обадите на посочения номер (Пн-Пт 9:00-17:00).",
-        "invoice": "Да, издаваме фактури. Можете да предоставите данните в количката.",
-        "methods": "Kamila Łobko-Koziej популяризира подход, базиран на играта (TPR, комуникативни игри). Проверете нашия блог за повече информация!"
-      }
-    }
-  },
-  "login": {
-    "title": "Добре дошли отново!",
-    "desc": "Въведете вашия имейл, за да влезете в студентската зона.",
-    "student": "Ученик",
-    "teacher": "Учител",
-    "email": "Имейл",
-    "emailTeacher": "Служебен имейл",
-    "password": "Парола",
-    "loggingIn": "Влизане...",
-    "success": "Влязохте успешно!",
-    "submit": "Влез",
-    "successMessage": "Успешно влизане! Пренасочване...",
-    "errorDefault": "Невалиден имейл или парола.",
-    "errorSystem": "Възникна грешка при влизане. Моля, опитайте отново.",
-    "emailRequired": "Имейлът е задължителен",
-    "emailInvalid": "Невалиден формат на имейла",
-    "passwordRequired": "Паролата е задължителна",
-    "passwordMin": "Паролата трябва да бъде поне 4 знака",
-    "forgotPassword": "Forgot your password?",
-    "magicLink": "Login with Magic Link",
-    "magicLinkDesc": "We'll send you a one-time login link to your email address.",
-    "sendMagicLink": "Send Magic Link",
-    "backToLogin": "Back to login",
-    "checkEmail": "Check your inbox",
-    "resetPassword": "Reset password",
-    "magicLinkSent": "A login link has been sent to your email address.",
-    "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
-    "resetSuccess": "Your password has been changed successfully."
-  },
-  "quickSale": {
-    "title": "БЪРЗО ПЛАЩАНЕ",
-    "demoProduct": {
-      "title": "Примерен премиум електронен учебник",
-      "excerpt": "Това е демонстрационен продукт. В пълната версия данните ще бъдат извлечени от базата данни."
-    },
-    "page": {
-      "guarantee": "30-дневна гаранция за удовлетворение",
-      "totalLabel": "Общо за плащане:",
-      "email_label": "Вашият имейл",
-      "email_placeholder": "address@email.com",
-      "payment_method": "Метод на плащане",
-      "payment_card": "Карта",
-      "blik_code": "BLIK код",
-      "terms": "Приемам условията на магазина",
-      "pay_btn": "Купувам и плащам",
-      "secure_checkout": "SSL криптирана връзка"
-    },
-    "optimization": {
-      "timer": {
-        "text": "Вашата оферта изтича след:"
-      },
-      "social_proof": {
-        "viewing": "{count} души разглеждат тази оферта в момента"
-      },
-      "savings": "Спестявате"
-    },
-    "bump": {
-      "yes_btn": "ДА, добави към поръчката ми",
-      "price_prefix": "само за",
-      "description": "Еднократна оферта! Добавете комплект готови за ползване работни листове (PDF)."
-    }
-  },
-  "verify": {
-    "title": "Проверка на сертификат",
-    "subtitle": "Въведете кода за проверка на сертификата, за да потвърдите неговата автентичност.",
-    "placeholder": "XXXX-XXXX-XXXX",
-    "success": {
-      "title": "Сертификатът е потвърден",
-      "desc": "Този сертификат е автентичен и е издаден от нашата платформа.",
-      "user": "Участник",
-      "course": "Курс",
-      "date": "Дата на завършване",
-      "code": "Код",
-      "view": "Виж сертификата"
-    },
-    "error": {
-      "title": "Сертификатът не е намерен",
-      "desc": "Не намерихме сертификат с дадения код. Моля, проверете дали кодът е правилен."
-    }
-  },
-  "errors": {
-    "404": {
-      "title": "404",
-      "message": "Страницата не е намерена.",
-      "back": "Обратно към началната страница"
-    }
-  },
-  "blog": {
-    "title": "Блог",
-    "subtitle": "Статии, съвети и вдъхновение за учители по английски. Научете как да преподавате по-ефективно и с повече пасия.",
-    "empty": "Няма намерени публикации в блога.",
-    "readMore": "Прочетете повече",
-    "backToBlog": "Обратно към блога",
-    "share": "Сподели:",
-    "notFound": "Не е намерено"
-  },
-  "common": {
-    "loading": "Зареждане..."
-  },
-  "certificates": {
-    "title": "Сертификат за завършване",
-    "subtitle": "С настоящото се удостоверява, че",
-    "completedCourse": "завърши курса",
-    "completionDate": "Дата на завършване:",
-    "verificationCode": "Код за проверка:",
-    "downloadPdf": "Изтегли PDF",
-    "share": "Сподели",
-    "backToDashboard": "Обратно към панела",
-    "styleTitle": "Промяна на стила на сертификата",
-    "verifiedTitle": "Сертификатът е потвърден",
-    "verifiedDesc": "Този сертификат е издаден от нашата платформа.",
-    "notFound": "Сертификатът не е намерен",
-    "copySuccess": "Линкът е копиран в клипборда!"
-  },
-  "languages": {
-    "pl": "Polish",
-    "en": "English",
-    "uk": "Ukrainian",
-    "de": "German",
-    "es": "Spanish",
-    "fr": "French",
-    "it": "Italian",
-    "cs": "Czech",
-    "sk": "Slovak",
-    "ro": "Romanian",
-    "hu": "Hungarian",
-    "pt": "Portuguese",
-    "lt": "Lithuanian",
-    "lv": "Latvian",
-    "et": "Estonian",
-    "hr": "Croatian",
-    "sr": "Serbian",
-    "sl": "Slovenian",
-    "bg": "Bulgarian",
-    "el": "Greek",
-    "nl": "Dutch",
-    "sv": "Swedish",
-    "fi": "Finnish",
-    "no": "Norwegian",
-    "da": "Danish"
-  },
-  "fomo": {
-    "names": [
-      "John",
-      "Emily",
-      "Michael",
-      "Sarah",
-      "David",
-      "Jessica",
-      "Robert"
-    ],
-    "cities": [
-      "London",
-      "New York",
-      "Chicago",
-      "Toronto",
-      "Sydney",
-      "Dublin",
-      "Berlin"
-    ],
-    "purchaseMessage": "{name} from {city}",
-    "productMessage": "Just bought \"{product}\"",
-    "timeAgo": "{time} min ago"
-  },
-  "exitIntent": {
-    "title": "WAIT!",
-    "subtitle": "Before you leave...",
-    "header": "Get your free \"Starter Pack\"",
-    "description": "Join our newsletter and receive 50 free worksheets!",
-    "cta": "I want my gift",
-    "noThanks": "No thanks, I'll pay full price later"
-  },
-  "course": {
-    "yourProgress": "Вашият Напредък",
-    "noLessons": "Няма уроци.",
-    "quiz": "Тест",
-    "unlocksInDays": "Отключва се след {days} дни"
-  },
-  "dashboard": {
-    "wallet": {
-      "title": "Your Wallet",
-      "subtitle": "Collect points for activity and purchases.",
-      "available": "Available funds",
-      "points": "pts",
-      "value": "Value in {currency}",
-      "spend": "Spend points in shop",
-      "history": "Recent activity"
-    },
-    "awards": {
-      "title": "Your Hall of Fame",
-      "subtitle": "Earn badges for completed lessons and games!",
-      "mock": {
-        "start": "Quick Start",
-        "startDesc": "Completed first lesson",
-        "vocab": "Vocab Master",
-        "vocabDesc": "100% in quiz",
-        "steady": "Systematic",
-        "steadyDesc": "Logged in 7 days",
-        "polyglot": "Polyglot",
-        "polyglotDesc": "Passed A1 level"
-      }
-    },
-    "team": {
-      "title": "My Class / Team",
-      "subtitle": "Share materials with students",
-      "create_class": "Create new class",
-      "created_at": "Created: {date}",
-      "students_count": "{count} students",
-      "access_code": "Student access code",
-      "empty": {
-        "title": "New Class",
-        "desc": "Create a group for your students.",
-        "btn": "Start Setup"
-      },
-      "pro": {
-        "active": "Your PRO plan is active",
-        "unlock": "Unlock unlimited classes",
-        "desc": "Teacher PRO plan allows creating unlimited groups.",
-        "upgrade": "Upgrade to PRO",
-        "status": "Active"
-      }
-    },
-    "games": {
-      "title": "Educational Games",
-      "subtitle": "Interactive exercises for your students",
-      "play": "Play now",
-      "loading": "Loading game...",
-      "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
-      "fullscreen": "Full screen",
-      "report": "Report error"
-    }
-  }
 }

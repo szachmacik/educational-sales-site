@@ -1,460 +1,465 @@
 {
-  "seo": {
-    "title": "Educatief Materiaal voor Engelse Docenten | Kamila Łobko-Koziej",
-    "description": "Creatief lesmateriaal, lesplannen, jaarprojecten en kant-en-klare pakketten voor docenten Engels.",
-    "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
-  },
-  "nav": {
-    "products": "Producten",
-    "materialy": "Materialen",
-    "blog": "Blog",
-    "contact": "Contact",
-    "login": "Inloggen",
-    "dashboard": "Dashboard",
-    "adminPanel": "Beheerderspaneel",
-    "verify": "Verificatie"
-  },
-  "brand": {
-    "educationalMaterials": "Educatieve Materialen",
-    "byKamila": "door Kamila Łobko-Koziej"
-  },
-  "hero": {
-    "badge": "Materialen voor Docenten",
-    "title": "Geef Engels met Passie en Gemak",
-    "subtitle": "Creatief lesmateriaal dat je lessen zal transformeren. Bespaar tijd op voorbereiding en inspireer je leerlingen elke dag.",
-    "cta_main": "Blader door materialen",
-    "cta_secondary": "Over de auteur",
-    "demoText": "Zie paneel demo:",
-    "teacherProfile": "Docentenprofiel",
-    "studentProfile": "Leerlingprofiel"
-  },
-  "footer": {
-    "rights": "Alle rechten voorbehouden.",
-    "description": "Origineel, creatief lesmateriaal voor docenten Engels. Laat je inspireren!",
-    "groups": {
-      "shop": "Winkel",
-      "info": "Informatie",
-      "help": "Help"
+    "seo": {
+        "title": "Educatief Materiaal voor Engelse Docenten | Kamila Łobko-Koziej",
+        "description": "Creatief lesmateriaal, lesplannen, jaarprojecten en kant-en-klare pakketten voor docenten Engels.",
+        "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
     },
-    "links": {
-      "catalog": "Catalogus",
-      "materials": "Lesmateriaal",
-      "projects": "Jaarprojecten",
-      "scenarios": "Lesplannen",
-      "packs": "Thematische Pakketten",
-      "about": "Over de Auteur",
-      "contact": "Contact",
-      "privacy": "Privacybeleid",
-      "terms": "Algemene Voorwaarden",
-      "howToBuy": "Hoe te kopen?",
-      "faq": "Veelgestelde Vragen",
-      "returns": "Retourneren",
-      "account": "Mijn Account",
-      "admin": "Docentenpaneel (Admin)"
+    "nav": {
+        "products": "Producten",
+        "materialy": "Materialen",
+        "blog": "Blog",
+        "contact": "Contact",
+        "login": "Inloggen",
+        "dashboard": "Dashboard",
+        "adminPanel": "Beheerderspaneel",
+        "verify": "Verificatie"
+    },
+    "brand": {
+        "educationalMaterials": "Educatieve Materialen",
+        "byKamila": "door Kamila Łobko-Koziej"
+    },
+    "hero": {
+        "badge": "Materialen voor Docenten",
+        "title": "Geef Engels met Passie en Gemak",
+        "subtitle": "Creatief lesmateriaal dat je lessen zal transformeren. Bespaar tijd op voorbereiding en inspireer je leerlingen elke dag.",
+        "cta_main": "Blader door materialen",
+        "cta_secondary": "Over de auteur",
+        "demoText": "Zie paneel demo:",
+        "teacherProfile": "Docentenprofiel",
+        "studentProfile": "Leerlingprofiel"
+    },
+    "footer": {
+        "rights": "Alle rechten voorbehouden.",
+        "description": "Origineel, creatief lesmateriaal voor docenten Engels. Laat je inspireren!",
+        "groups": {
+            "shop": "Winkel",
+            "info": "Informatie",
+            "help": "Help"
+        },
+        "links": {
+            "catalog": "Catalogus",
+            "materials": "Lesmateriaal",
+            "projects": "Jaarprojecten",
+            "scenarios": "Lesplannen",
+            "packs": "Thematische Pakketten",
+            "about": "Over de Auteur",
+            "contact": "Contact",
+            "privacy": "Privacybeleid",
+            "terms": "Algemene Voorwaarden",
+            "howToBuy": "Hoe te kopen?",
+            "faq": "Veelgestelde Vragen",
+            "returns": "Retourneren",
+            "account": "Mijn Account",
+            "admin": "Docentenpaneel (Admin)"
+        }
+    },
+    "auth": {
+        "logout": "Uitloggen",
+        "myCourses": "Mijn Cursussen",
+        "studentPanel": "Leerlingenpaneel",
+        "roleAdmin": "Beheerder",
+        "roleTeacher": "Docent",
+        "roleStudent": "Leerling"
+    },
+    "cart": {
+        "empty": "Je winkelwagen is leeg",
+        "emptySub": "Voeg producten toe om verder te winkelen",
+        "browse": "Blader door producten",
+        "reserved": "Je winkelwagen is gereserveerd voor:",
+        "header": "Winkelwagen ({count})",
+        "remove": "Verwijderen",
+        "specialOffer": "SPECIALE AANBIEDING",
+        "orderBump": "Voeg e-mailsjabloonpakket toe (+29)",
+        "orderBumpDesc": "20 kant-en-klare sjablonen voor communicatie met ouders. Bespaar 70%!",
+        "summary": "Samenvatting",
+        "couponPlaceholder": "Kortingscode",
+        "apply": "Toepassen",
+        "couponHeader": "Coupon:",
+        "products": "Producten",
+        "discount": "Korting",
+        "total": "Totaal",
+        "checkout": "Afrekenen",
+        "secure": "Veilig betalen",
+        "couponInvalid": "Ongeldige couponcode",
+        "couponInactive": "Coupon is niet meer actief",
+        "couponExpired": "Coupon is verlopen",
+        "couponLimitReached": "Gebruikslimiet coupon bereikt",
+        "couponMinOrder": "Minimale bestelwaarde: {minOrderValue} {currency}",
+        "couponAppliedPercent": "Korting {percent}% toegepast!",
+        "couponAppliedFixed": "Korting {amount} {currency} toegepast!",
+        "currencySymbol": "€"
+    },
+    "socialProof": {
+        "header": "Facebook-community",
+        "sub": "Blijf op de hoogte van nieuws en praat mee!",
+        "cta": "Bekijk ons profiel vol inspiratie",
+        "madeWithLove": "Gemaakt met Liefde",
+        "polishQuality": "en Poolse Kwaliteit"
+    },
+    "newsletter": {
+        "header": "Blijf op de hoogte!",
+        "sub": "Meld je aan voor onze nieuwsbrief en ontvang informatie over nieuwe materialen, promoties en exclusieve kortingen.",
+        "placeholder": "Je e-mailadres",
+        "button": "Aanmelden",
+        "success": "Bedankt voor je aanmelding voor de nieuwsbrief!",
+        "privacy": "We respecteren je privacy. Je kunt je op elk moment afmelden."
+    },
+    "checkout": {
+        "acceptTermsError": "Je moet de algemene voorwaarden accepteren",
+        "successTitle": "Bedankt voor je bestelling!",
+        "successOrder": "Je bestelling #{orderNumber} is ontvangen.",
+        "successEmail": "Bestelgegevens zijn naar je e-mailadres gestuurd.",
+        "backToStore": "Terug naar de winkel",
+        "myCourses": "Mijn cursussen",
+        "backToCart": "Terug naar winkelwagen",
+        "steps": {
+            "cart": "Winkelwagen",
+            "payment": "Betaling",
+            "access": "Toegang"
+        },
+        "trust": {
+            "secure": "Veilig Betalen",
+            "ssl": "SSL-encryptie",
+            "instant": "Direct Toegang"
+        },
+        "header": "Voltooi je bestelling",
+        "contactTitle": "Contactinformatie",
+        "email": "E-mail *",
+        "firstName": "Voornaam *",
+        "lastName": "Achternaam *",
+        "phone": "Telefoon (optioneel)",
+        "invoiceTitle": "Factuur",
+        "wantInvoice": "Ik wil een BTW-factuur ontvangen",
+        "nip": "BTW-nummer / Fiscaal nr. *",
+        "nipError": "Voer een geldig BTW-nummer in",
+        "lookup": "Gegevens ophalen",
+        "lookupSuccess": "Bedrijfsgegevens succesvol opgehaald!",
+        "nipNotFound": "Bedrijf niet gevonden",
+        "nipSearchError": "Fout tijdens zoeken. Probeer het opnieuw.",
+        "companyName": "Bedrijfsnaam *",
+        "companyAddress": "Bedrijfsadres",
+        "addressPlaceholder": "Wordt automatisch ingevuld",
+        "paymentTitle": "Betaalmethode",
+        "paymentMethods": {
+            "card": "Creditcard",
+            "cardSub": "Visa, Mastercard, American Express",
+            "blik": "BLIK",
+            "blikSub": "Snelle betaling met BLIK-code",
+            "transfer": "Bankoverschrijving",
+            "transferSub": "Traditionele bankoverschrijving"
+        },
+        "yourOrder": "Je bestelling",
+        "summaryProducts": "Producten",
+        "summaryDiscount": "Korting ({code})",
+        "summaryTotal": "Totaal",
+        "terms": "Ik accepteer de winkelvoorwaarden en het privacybeleid",
+        "termsRequired": "Vereist voor orderverwerking",
+        "processing": "Verwerken...",
+        "pay": "Betaal {total}",
+        "instantAccessInfo": "Materialen direct na betaling beschikbaar in het paneel",
+        "socialProof": "Meer dan 2.500 docenten hebben zich al aangesloten",
+        "toPayMobile": "Te betalen",
+        "paymentFailed": "Payment failed. Please try again.",
+        "paymentSystemError": "Payment system error."
+    },
+    "contact": {
+        "title": "Neem contact op",
+        "subtitle": "Heb je een vraag over materialen? Ondersteuning nodig bij het kiezen van een pakket? Schrijf ons of praat met onze AI-assistent. We staan voor je klaar!",
+        "aiBadge": "We reageren meestal binnen 2 uur",
+        "trustBadge": "Meer dan 12.000 tevreden docenten",
+        "emailTitle": "Schrijf een e-mail",
+        "emailDesc": "Onze inbox is 24/7 geopend voor jou.",
+        "phoneTitle": "Bel ons",
+        "phoneDesc": "Ma-vr van 9:00 tot 17:00 zijn we telefonisch bereikbaar.",
+        "formTitle": "Contactformulier",
+        "addressTitle": "Hoofdkantoor",
+        "addressValue": "Warschau, Educational St 123",
+        "aiHelp": "Snel een antwoord nodig?",
+        "aiHelpDesc": "Onze slimme assistent kent de antwoorden op de meeste veelgestelde vragen. Vraag naar producten, lesmethoden of beschikbaarheid van materiaal.",
+        "aiHelpMobile": "AI-assistent is beschikbaar in de benedenhoek van het scherm.",
+        "form": {
+            "name": "Naam & Achternaam",
+            "email": "E-mail",
+            "subject": "Onderwerp",
+            "message": "Je bericht",
+            "messagePlaceholder": "Hoe kunnen we je helpen?",
+            "sending": "Verzenden...",
+            "send": "Bericht verzenden",
+            "success": "Bericht verzonden!",
+            "successDesc": "Bedankt voor je contactopname. We zullen zo snel mogelijk reageren.",
+            "placeholders": {
+                "name": "John Doe",
+                "email": "jan@kamila.shor.dev",
+                "subject": "Productaanvraag...",
+                "message": "Beschrijf hoe we kunnen helpen..."
+            }
+        },
+        "info": {
+            "emailValue": "contact@kamilaenglish.com",
+            "phoneValue": "+48 123 456 789"
+        },
+        "aiChat": {
+            "title": "AI-assistent",
+            "status": "Online & Klaar",
+            "thinking": "Nadenken...",
+            "inputPlaceholder": "Stel een vraag...",
+            "dataInputPlaceholder": "Voer naam en e-mail in...",
+            "welcome": "Hoi! Ik ben je slimme assistent. Voordat we beginnen, ben je al klant bij ons?",
+            "options": {
+                "yes": "Ja, ik ben klant",
+                "no": "Nee, nog niet"
+            },
+            "responses": {
+                "clientYes": "Geweldig! Hoe kan ik je vandaag helpen?",
+                "clientNo": "Ik begrijp het. Ik help je graag om onze materialen te ontdekken. Wat is je naam en e-mail, zodat ik je wat gratis monsters kan sturen?",
+                "dataSaved": "Bedankt! Ik heb je gegevens opgeslagen. Stel nu gerust je vraag.",
+                "fallback": "Het spijt me, ik begrijp het niet helemaal. Kun je het anders formuleren? Je kunt vragen naar prijzen, levering of lesmethoden."
+            },
+            "knowledge": {
+                "price": "Onze PDF-materialen beginnen bij $29. Jaarpakketten (Mega Pack) zijn momenteel in de aanbieding voor $149.",
+                "delivery": "Alle materialen zijn digitaal. Je ontvangt direct na betaling een downloadlink.",
+                "preschool": "We hebben een geweldige sectie 'Engels in de Kleuterklas'. Ik raad vooral ons 4 Seizoenenpakket aan.",
+                "contact": "Je kunt ons e-mailen of bellen naar +1 234 567 890 (ma-vr 9:00-17:00).",
+                "invoice": "Ja, we verstrekken BTW-facturen. Je kunt factuurgegevens opgeven in de winkelwagen.",
+                "methods": "Kamila Łobko-Koziej promoot een spelgerichte aanpak (TPR, communicatieve spellen). Bekijk onze blog om meer te leren!"
+            }
+        }
+    },
+    "login": {
+        "title": "Welkom terug!",
+        "desc": "Voer je e-mailadres in om de leerlingenzone te betreden.",
+        "student": "Leerling",
+        "teacher": "Docent",
+        "email": "E-mail",
+        "emailTeacher": "Zakelijke E-mail",
+        "password": "Wachtwoord",
+        "loggingIn": "Inloggen...",
+        "success": "Ingelogd!",
+        "submit": "Inloggen",
+        "successMessage": "Succesvol ingelogd! Doorsturen...",
+        "errorDefault": "Ongeldige e-mail of wachtwoord.",
+        "errorSystem": "Er is een inlogfout opgetreden. Probeer het opnieuw.",
+        "emailRequired": "E-mail is verplicht",
+        "emailInvalid": "Ongeldig e-mailformaat",
+        "passwordRequired": "Wachtwoord is verplicht",
+        "passwordMin": "Wachtwoord moet minimaal 4 tekens bevatten",
+        "forgotPassword": "Forgot your password?",
+        "magicLink": "Login with Magic Link",
+        "magicLinkDesc": "We'll send you a one-time login link to your email address.",
+        "sendMagicLink": "Send Magic Link",
+        "backToLogin": "Back to login",
+        "checkEmail": "Check your inbox",
+        "resetPassword": "Reset password",
+        "magicLinkSent": "A login link has been sent to your email address.",
+        "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
+        "resetSuccess": "Your password has been changed successfully."
+    },
+    "quickSale": {
+        "title": "SNELLE BETALING",
+        "demoProduct": {
+            "title": "Voorbeeld Premium E-book",
+            "excerpt": "Dit is een demonstratieproduct. In de volledige versie zouden de gegevens uit de database worden opgehaald."
+        },
+        "page": {
+            "guarantee": "30 dagen tevredenheidsgarantie",
+            "totalLabel": "Totaal te betalen:",
+            "email_label": "Je e-mail",
+            "email_placeholder": "adres@email.com",
+            "payment_method": "Betaalmethode",
+            "payment_card": "Kaart",
+            "blik_code": "BLIK-code",
+            "terms": "Ik accepteer de winkelvoorwaarden",
+            "pay_btn": "Ik koop en betaal",
+            "secure_checkout": "SSL-beveiligde verbinding"
+        },
+        "optimization": {
+            "timer": {
+                "text": "Je aanbieding verloopt over:"
+            },
+            "social_proof": {
+                "viewing": "{count} mensen bekijken deze aanbieding"
+            },
+            "savings": "Je bespaart"
+        },
+        "bump": {
+            "yes_btn": "JA, toevoegen aan mijn bestelling",
+            "price_prefix": "slechts",
+            "description": "Eenmalige aanbieding! Voeg een set kant-en-klare werkbladen (PDF) toe."
+        }
+    },
+    "verify": {
+        "title": "Certificaatverificatie",
+        "subtitle": "Voer de certificaatverificatiecode in om de echtheid te bevestigen.",
+        "placeholder": "XXXX-XXXX-XXXX",
+        "success": {
+            "title": "Certificaat Geverifieerd",
+            "desc": "Dit certificaat is authentiek en is uitgegeven door ons platform.",
+            "user": "Deelnemer",
+            "course": "Cursus",
+            "date": "Datum van voltooiing",
+            "code": "Code",
+            "view": "Bekijk Certificaat"
+        },
+        "error": {
+            "title": "Certificaat Niet Gevonden",
+            "desc": "We hebben geen certificaat gevonden met de opgegeven code. Controleer of de code correct is."
+        }
+    },
+    "errors": {
+        "404": {
+            "title": "404",
+            "message": "Pagina niet gevonden.",
+            "back": "Terug naar startpagina"
+        }
+    },
+    "blog": {
+        "title": "Blog",
+        "subtitle": "Artikelen, tips en inspiratie voor docenten Engels. Leer hoe je effectiever en met meer passie lesgeeft.",
+        "empty": "Geen blogposts gevonden.",
+        "readMore": "Lees meer",
+        "backToBlog": "Terug naar blog",
+        "share": "Delen:",
+        "notFound": "Niet gevonden"
+    },
+    "common": {
+        "loading": "Laden...",
+        "success": "Actie succesvol voltooid."
+    },
+    "certificates": {
+        "title": "Certificaat van Voltooiing",
+        "subtitle": "Hierbij wordt verklaard dat",
+        "completedCourse": "de cursus heeft voltooid",
+        "completionDate": "Datum van voltooiing:",
+        "verificationCode": "Verificatiecode:",
+        "downloadPdf": "PDF Downloaden",
+        "share": "Delen",
+        "backToDashboard": "Terug naar dashboard",
+        "styleTitle": "Certificaatstijl wijzigen",
+        "verifiedTitle": "Certificaat Geverifieerd",
+        "verifiedDesc": "Dit certificaat is uitgegeven door ons platform.",
+        "notFound": "Certificaat niet gevonden",
+        "copySuccess": "Link gekopieerd naar klembord!"
+    },
+    "languages": {
+        "pl": "Polish",
+        "en": "English",
+        "uk": "Ukrainian",
+        "de": "German",
+        "es": "Spanish",
+        "fr": "French",
+        "it": "Italian",
+        "cs": "Czech",
+        "sk": "Slovak",
+        "ro": "Romanian",
+        "hu": "Hungarian",
+        "pt": "Portuguese",
+        "lt": "Lithuanian",
+        "lv": "Latvian",
+        "et": "Estonian",
+        "hr": "Croatian",
+        "sr": "Serbian",
+        "sl": "Slovenian",
+        "bg": "Bulgarian",
+        "el": "Greek",
+        "nl": "Dutch",
+        "sv": "Swedish",
+        "fi": "Finnish",
+        "no": "Norwegian",
+        "da": "Danish"
+    },
+    "fomo": {
+        "names": [
+            "John",
+            "Emily",
+            "Michael",
+            "Sarah",
+            "David",
+            "Jessica",
+            "Robert"
+        ],
+        "cities": [
+            "London",
+            "New York",
+            "Chicago",
+            "Toronto",
+            "Sydney",
+            "Dublin",
+            "Berlin"
+        ],
+        "purchaseMessage": "{name} from {city}",
+        "productMessage": "Just bought \"{product}\"",
+        "timeAgo": "{time} min ago"
+    },
+    "exitIntent": {
+        "title": "WAIT!",
+        "subtitle": "Before you leave...",
+        "header": "Get your free \"Starter Pack\"",
+        "description": "Join our newsletter and receive 50 free worksheets!",
+        "cta": "I want my gift",
+        "noThanks": "No thanks, I'll pay full price later"
+    },
+    "course": {
+        "yourProgress": "Uw Voortgang",
+        "noLessons": "Geen lessen.",
+        "quiz": "Quiz",
+        "unlocksInDays": "Wordt ontgrendeld over {days} dagen"
+    },
+    "dashboard": {
+        "wallet": {
+            "title": "Uw Portemonnee",
+            "subtitle": "Verzamel punten voor activiteiten en aankopen.",
+            "available": "Beschikbare middelen",
+            "points": "pts",
+            "value": "Waarde in {currency}",
+            "spend": "Punten uitgeven in winkel",
+            "history": "Recente activiteit"
+        },
+        "awards": {
+            "title": "Uw Erehal",
+            "subtitle": "Verdien badges voor voltooide lessen en spellen!",
+            "mock": {
+                "start": "Quick Start",
+                "startDesc": "Completed first lesson",
+                "vocab": "Vocab Master",
+                "vocabDesc": "100% in quiz",
+                "steady": "Systematic",
+                "steadyDesc": "Logged in 7 days",
+                "polyglot": "Polyglot",
+                "polyglotDesc": "Passed A1 level"
+            }
+        },
+        "team": {
+            "title": "Mijn Klas / Team",
+            "subtitle": "Materialen delen met studenten",
+            "create_class": "Nieuwe klas aanmaken",
+            "created_at": "Created: {date}",
+            "students_count": "{count} students",
+            "access_code": "Student access code",
+            "empty": {
+                "title": "New Class",
+                "desc": "Create a group for your students.",
+                "btn": "Start Setup"
+            },
+            "pro": {
+                "active": "Your PRO plan is active",
+                "unlock": "Unlock unlimited classes",
+                "desc": "Teacher PRO plan allows creating unlimited groups.",
+                "upgrade": "Upgrade to PRO",
+                "status": "Active"
+            }
+        },
+        "games": {
+            "title": "Educatieve Spellen",
+            "subtitle": "Interactive exercises for your students",
+            "play": "Play now",
+            "loading": "Loading game...",
+            "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
+            "fullscreen": "Full screen",
+            "report": "Report error"
+        }
+    },
+    "announcement": {
+        "launchOffer": "Speciaal lanceringaanbod: Krijg 20% KORTING met code \"START20\"",
+        "limitedTime": "Beperkte tijd: Bekijk onze nieuwe pakketten!"
     }
-  },
-  "auth": {
-    "logout": "Uitloggen",
-    "myCourses": "Mijn Cursussen",
-    "studentPanel": "Leerlingenpaneel",
-    "roleAdmin": "Beheerder",
-    "roleTeacher": "Docent",
-    "roleStudent": "Leerling"
-  },
-  "cart": {
-    "empty": "Je winkelwagen is leeg",
-    "emptySub": "Voeg producten toe om verder te winkelen",
-    "browse": "Blader door producten",
-    "reserved": "Je winkelwagen is gereserveerd voor:",
-    "header": "Winkelwagen ({count})",
-    "remove": "Verwijderen",
-    "specialOffer": "SPECIALE AANBIEDING",
-    "orderBump": "Voeg e-mailsjabloonpakket toe (+29)",
-    "orderBumpDesc": "20 kant-en-klare sjablonen voor communicatie met ouders. Bespaar 70%!",
-    "summary": "Samenvatting",
-    "couponPlaceholder": "Kortingscode",
-    "apply": "Toepassen",
-    "couponHeader": "Coupon:",
-    "products": "Producten",
-    "discount": "Korting",
-    "total": "Totaal",
-    "checkout": "Afrekenen",
-    "secure": "Veilig betalen",
-    "couponInvalid": "Ongeldige couponcode",
-    "couponInactive": "Coupon is niet meer actief",
-    "couponExpired": "Coupon is verlopen",
-    "couponLimitReached": "Gebruikslimiet coupon bereikt",
-    "couponMinOrder": "Minimale bestelwaarde: {minOrderValue} {currency}",
-    "couponAppliedPercent": "Korting {percent}% toegepast!",
-    "couponAppliedFixed": "Korting {amount} {currency} toegepast!",
-    "currencySymbol": "€"
-  },
-  "socialProof": {
-    "header": "Facebook-community",
-    "sub": "Blijf op de hoogte van nieuws en praat mee!",
-    "cta": "Bekijk ons profiel vol inspiratie",
-    "madeWithLove": "Gemaakt met Liefde",
-    "polishQuality": "en Poolse Kwaliteit"
-  },
-  "newsletter": {
-    "header": "Blijf op de hoogte!",
-    "sub": "Meld je aan voor onze nieuwsbrief en ontvang informatie over nieuwe materialen, promoties en exclusieve kortingen.",
-    "placeholder": "Je e-mailadres",
-    "button": "Aanmelden",
-    "success": "Bedankt voor je aanmelding voor de nieuwsbrief!",
-    "privacy": "We respecteren je privacy. Je kunt je op elk moment afmelden."
-  },
-  "checkout": {
-    "acceptTermsError": "Je moet de algemene voorwaarden accepteren",
-    "successTitle": "Bedankt voor je bestelling!",
-    "successOrder": "Je bestelling #{orderNumber} is ontvangen.",
-    "successEmail": "Bestelgegevens zijn naar je e-mailadres gestuurd.",
-    "backToStore": "Terug naar de winkel",
-    "myCourses": "Mijn cursussen",
-    "backToCart": "Terug naar winkelwagen",
-    "steps": {
-      "cart": "Winkelwagen",
-      "payment": "Betaling",
-      "access": "Toegang"
-    },
-    "trust": {
-      "secure": "Veilig Betalen",
-      "ssl": "SSL-encryptie",
-      "instant": "Direct Toegang"
-    },
-    "header": "Voltooi je bestelling",
-    "contactTitle": "Contactinformatie",
-    "email": "E-mail *",
-    "firstName": "Voornaam *",
-    "lastName": "Achternaam *",
-    "phone": "Telefoon (optioneel)",
-    "invoiceTitle": "Factuur",
-    "wantInvoice": "Ik wil een BTW-factuur ontvangen",
-    "nip": "BTW-nummer / Fiscaal nr. *",
-    "nipError": "Voer een geldig BTW-nummer in",
-    "lookup": "Gegevens ophalen",
-    "lookupSuccess": "Bedrijfsgegevens succesvol opgehaald!",
-    "nipNotFound": "Bedrijf niet gevonden",
-    "nipSearchError": "Fout tijdens zoeken. Probeer het opnieuw.",
-    "companyName": "Bedrijfsnaam *",
-    "companyAddress": "Bedrijfsadres",
-    "addressPlaceholder": "Wordt automatisch ingevuld",
-    "paymentTitle": "Betaalmethode",
-    "paymentMethods": {
-      "card": "Creditcard",
-      "cardSub": "Visa, Mastercard, American Express",
-      "blik": "BLIK",
-      "blikSub": "Snelle betaling met BLIK-code",
-      "transfer": "Bankoverschrijving",
-      "transferSub": "Traditionele bankoverschrijving"
-    },
-    "yourOrder": "Je bestelling",
-    "summaryProducts": "Producten",
-    "summaryDiscount": "Korting ({code})",
-    "summaryTotal": "Totaal",
-    "terms": "Ik accepteer de winkelvoorwaarden en het privacybeleid",
-    "termsRequired": "Vereist voor orderverwerking",
-    "processing": "Verwerken...",
-    "pay": "Betaal {total}",
-    "instantAccessInfo": "Materialen direct na betaling beschikbaar in het paneel",
-    "socialProof": "Meer dan 2.500 docenten hebben zich al aangesloten",
-    "toPayMobile": "Te betalen",
-    "paymentFailed": "Payment failed. Please try again.",
-    "paymentSystemError": "Payment system error."
-  },
-  "contact": {
-    "title": "Neem contact op",
-    "subtitle": "Heb je een vraag over materialen? Ondersteuning nodig bij het kiezen van een pakket? Schrijf ons of praat met onze AI-assistent. We staan voor je klaar!",
-    "aiBadge": "We reageren meestal binnen 2 uur",
-    "trustBadge": "Meer dan 12.000 tevreden docenten",
-    "emailTitle": "Schrijf een e-mail",
-    "emailDesc": "Onze inbox is 24/7 geopend voor jou.",
-    "phoneTitle": "Bel ons",
-    "phoneDesc": "Ma-vr van 9:00 tot 17:00 zijn we telefonisch bereikbaar.",
-    "formTitle": "Contactformulier",
-    "addressTitle": "Hoofdkantoor",
-    "addressValue": "Warschau, Educational St 123",
-    "aiHelp": "Snel een antwoord nodig?",
-    "aiHelpDesc": "Onze slimme assistent kent de antwoorden op de meeste veelgestelde vragen. Vraag naar producten, lesmethoden of beschikbaarheid van materiaal.",
-    "aiHelpMobile": "AI-assistent is beschikbaar in de benedenhoek van het scherm.",
-    "form": {
-      "name": "Naam & Achternaam",
-      "email": "E-mail",
-      "subject": "Onderwerp",
-      "message": "Je bericht",
-      "messagePlaceholder": "Hoe kunnen we je helpen?",
-      "sending": "Verzenden...",
-      "send": "Bericht verzenden",
-      "success": "Bericht verzonden!",
-      "successDesc": "Bedankt voor je contactopname. We zullen zo snel mogelijk reageren.",
-      "placeholders": {
-        "name": "John Doe",
-        "email": "jan@kamila.shor.dev",
-        "subject": "Productaanvraag...",
-        "message": "Beschrijf hoe we kunnen helpen..."
-      }
-    },
-    "info": {
-      "emailValue": "contact@kamilaenglish.com",
-      "phoneValue": "+48 123 456 789"
-    },
-    "aiChat": {
-      "title": "AI-assistent",
-      "status": "Online & Klaar",
-      "thinking": "Nadenken...",
-      "inputPlaceholder": "Stel een vraag...",
-      "dataInputPlaceholder": "Voer naam en e-mail in...",
-      "welcome": "Hoi! Ik ben je slimme assistent. Voordat we beginnen, ben je al klant bij ons?",
-      "options": {
-        "yes": "Ja, ik ben klant",
-        "no": "Nee, nog niet"
-      },
-      "responses": {
-        "clientYes": "Geweldig! Hoe kan ik je vandaag helpen?",
-        "clientNo": "Ik begrijp het. Ik help je graag om onze materialen te ontdekken. Wat is je naam en e-mail, zodat ik je wat gratis monsters kan sturen?",
-        "dataSaved": "Bedankt! Ik heb je gegevens opgeslagen. Stel nu gerust je vraag.",
-        "fallback": "Het spijt me, ik begrijp het niet helemaal. Kun je het anders formuleren? Je kunt vragen naar prijzen, levering of lesmethoden."
-      },
-      "knowledge": {
-        "price": "Onze PDF-materialen beginnen bij $29. Jaarpakketten (Mega Pack) zijn momenteel in de aanbieding voor $149.",
-        "delivery": "Alle materialen zijn digitaal. Je ontvangt direct na betaling een downloadlink.",
-        "preschool": "We hebben een geweldige sectie 'Engels in de Kleuterklas'. Ik raad vooral ons 4 Seizoenenpakket aan.",
-        "contact": "Je kunt ons e-mailen of bellen naar +1 234 567 890 (ma-vr 9:00-17:00).",
-        "invoice": "Ja, we verstrekken BTW-facturen. Je kunt factuurgegevens opgeven in de winkelwagen.",
-        "methods": "Kamila Łobko-Koziej promoot een spelgerichte aanpak (TPR, communicatieve spellen). Bekijk onze blog om meer te leren!"
-      }
-    }
-  },
-  "login": {
-    "title": "Welkom terug!",
-    "desc": "Voer je e-mailadres in om de leerlingenzone te betreden.",
-    "student": "Leerling",
-    "teacher": "Docent",
-    "email": "E-mail",
-    "emailTeacher": "Zakelijke E-mail",
-    "password": "Wachtwoord",
-    "loggingIn": "Inloggen...",
-    "success": "Ingelogd!",
-    "submit": "Inloggen",
-    "successMessage": "Succesvol ingelogd! Doorsturen...",
-    "errorDefault": "Ongeldige e-mail of wachtwoord.",
-    "errorSystem": "Er is een inlogfout opgetreden. Probeer het opnieuw.",
-    "emailRequired": "E-mail is verplicht",
-    "emailInvalid": "Ongeldig e-mailformaat",
-    "passwordRequired": "Wachtwoord is verplicht",
-    "passwordMin": "Wachtwoord moet minimaal 4 tekens bevatten",
-    "forgotPassword": "Forgot your password?",
-    "magicLink": "Login with Magic Link",
-    "magicLinkDesc": "We'll send you a one-time login link to your email address.",
-    "sendMagicLink": "Send Magic Link",
-    "backToLogin": "Back to login",
-    "checkEmail": "Check your inbox",
-    "resetPassword": "Reset password",
-    "magicLinkSent": "A login link has been sent to your email address.",
-    "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
-    "resetSuccess": "Your password has been changed successfully."
-  },
-  "quickSale": {
-    "title": "SNELLE BETALING",
-    "demoProduct": {
-      "title": "Voorbeeld Premium E-book",
-      "excerpt": "Dit is een demonstratieproduct. In de volledige versie zouden de gegevens uit de database worden opgehaald."
-    },
-    "page": {
-      "guarantee": "30 dagen tevredenheidsgarantie",
-      "totalLabel": "Totaal te betalen:",
-      "email_label": "Je e-mail",
-      "email_placeholder": "adres@email.com",
-      "payment_method": "Betaalmethode",
-      "payment_card": "Kaart",
-      "blik_code": "BLIK-code",
-      "terms": "Ik accepteer de winkelvoorwaarden",
-      "pay_btn": "Ik koop en betaal",
-      "secure_checkout": "SSL-beveiligde verbinding"
-    },
-    "optimization": {
-      "timer": {
-        "text": "Je aanbieding verloopt over:"
-      },
-      "social_proof": {
-        "viewing": "{count} mensen bekijken deze aanbieding"
-      },
-      "savings": "Je bespaart"
-    },
-    "bump": {
-      "yes_btn": "JA, toevoegen aan mijn bestelling",
-      "price_prefix": "slechts",
-      "description": "Eenmalige aanbieding! Voeg een set kant-en-klare werkbladen (PDF) toe."
-    }
-  },
-  "verify": {
-    "title": "Certificaatverificatie",
-    "subtitle": "Voer de certificaatverificatiecode in om de echtheid te bevestigen.",
-    "placeholder": "XXXX-XXXX-XXXX",
-    "success": {
-      "title": "Certificaat Geverifieerd",
-      "desc": "Dit certificaat is authentiek en is uitgegeven door ons platform.",
-      "user": "Deelnemer",
-      "course": "Cursus",
-      "date": "Datum van voltooiing",
-      "code": "Code",
-      "view": "Bekijk Certificaat"
-    },
-    "error": {
-      "title": "Certificaat Niet Gevonden",
-      "desc": "We hebben geen certificaat gevonden met de opgegeven code. Controleer of de code correct is."
-    }
-  },
-  "errors": {
-    "404": {
-      "title": "404",
-      "message": "Pagina niet gevonden.",
-      "back": "Terug naar startpagina"
-    }
-  },
-  "blog": {
-    "title": "Blog",
-    "subtitle": "Artikelen, tips en inspiratie voor docenten Engels. Leer hoe je effectiever en met meer passie lesgeeft.",
-    "empty": "Geen blogposts gevonden.",
-    "readMore": "Lees meer",
-    "backToBlog": "Terug naar blog",
-    "share": "Delen:",
-    "notFound": "Niet gevonden"
-  },
-  "common": {
-    "loading": "Laden..."
-  },
-  "certificates": {
-    "title": "Certificaat van Voltooiing",
-    "subtitle": "Hierbij wordt verklaard dat",
-    "completedCourse": "de cursus heeft voltooid",
-    "completionDate": "Datum van voltooiing:",
-    "verificationCode": "Verificatiecode:",
-    "downloadPdf": "PDF Downloaden",
-    "share": "Delen",
-    "backToDashboard": "Terug naar dashboard",
-    "styleTitle": "Certificaatstijl wijzigen",
-    "verifiedTitle": "Certificaat Geverifieerd",
-    "verifiedDesc": "Dit certificaat is uitgegeven door ons platform.",
-    "notFound": "Certificaat niet gevonden",
-    "copySuccess": "Link gekopieerd naar klembord!"
-  },
-  "languages": {
-    "pl": "Polish",
-    "en": "English",
-    "uk": "Ukrainian",
-    "de": "German",
-    "es": "Spanish",
-    "fr": "French",
-    "it": "Italian",
-    "cs": "Czech",
-    "sk": "Slovak",
-    "ro": "Romanian",
-    "hu": "Hungarian",
-    "pt": "Portuguese",
-    "lt": "Lithuanian",
-    "lv": "Latvian",
-    "et": "Estonian",
-    "hr": "Croatian",
-    "sr": "Serbian",
-    "sl": "Slovenian",
-    "bg": "Bulgarian",
-    "el": "Greek",
-    "nl": "Dutch",
-    "sv": "Swedish",
-    "fi": "Finnish",
-    "no": "Norwegian",
-    "da": "Danish"
-  },
-  "fomo": {
-    "names": [
-      "John",
-      "Emily",
-      "Michael",
-      "Sarah",
-      "David",
-      "Jessica",
-      "Robert"
-    ],
-    "cities": [
-      "London",
-      "New York",
-      "Chicago",
-      "Toronto",
-      "Sydney",
-      "Dublin",
-      "Berlin"
-    ],
-    "purchaseMessage": "{name} from {city}",
-    "productMessage": "Just bought \"{product}\"",
-    "timeAgo": "{time} min ago"
-  },
-  "exitIntent": {
-    "title": "WAIT!",
-    "subtitle": "Before you leave...",
-    "header": "Get your free \"Starter Pack\"",
-    "description": "Join our newsletter and receive 50 free worksheets!",
-    "cta": "I want my gift",
-    "noThanks": "No thanks, I'll pay full price later"
-  },
-  "course": {
-    "yourProgress": "Uw Voortgang",
-    "noLessons": "Geen lessen.",
-    "quiz": "Quiz",
-    "unlocksInDays": "Wordt ontgrendeld over {days} dagen"
-  },
-  "dashboard": {
-    "wallet": {
-      "title": "Uw Portemonnee",
-      "subtitle": "Verzamel punten voor activiteiten en aankopen.",
-      "available": "Beschikbare middelen",
-      "points": "pts",
-      "value": "Waarde in {currency}",
-      "spend": "Punten uitgeven in winkel",
-      "history": "Recente activiteit"
-    },
-    "awards": {
-      "title": "Uw Erehal",
-      "subtitle": "Verdien badges voor voltooide lessen en spellen!",
-      "mock": {
-        "start": "Quick Start",
-        "startDesc": "Completed first lesson",
-        "vocab": "Vocab Master",
-        "vocabDesc": "100% in quiz",
-        "steady": "Systematic",
-        "steadyDesc": "Logged in 7 days",
-        "polyglot": "Polyglot",
-        "polyglotDesc": "Passed A1 level"
-      }
-    },
-    "team": {
-      "title": "Mijn Klas / Team",
-      "subtitle": "Materialen delen met studenten",
-      "create_class": "Nieuwe klas aanmaken",
-      "created_at": "Created: {date}",
-      "students_count": "{count} students",
-      "access_code": "Student access code",
-      "empty": {
-        "title": "New Class",
-        "desc": "Create a group for your students.",
-        "btn": "Start Setup"
-      },
-      "pro": {
-        "active": "Your PRO plan is active",
-        "unlock": "Unlock unlimited classes",
-        "desc": "Teacher PRO plan allows creating unlimited groups.",
-        "upgrade": "Upgrade to PRO",
-        "status": "Active"
-      }
-    },
-    "games": {
-      "title": "Educatieve Spellen",
-      "subtitle": "Interactive exercises for your students",
-      "play": "Play now",
-      "loading": "Loading game...",
-      "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
-      "fullscreen": "Full screen",
-      "report": "Report error"
-    }
-  }
 }

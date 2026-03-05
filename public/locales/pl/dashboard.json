@@ -1,104 +1,186 @@
 {
-  "dashboard": {
-    "tabs": {
-      "courses": "Moje Kursy",
-      "materials": "Materiały PDF/ZIP",
-      "games": "Gry Interaktywne",
-      "wallet": "Mój Portfel"
+    "dashboard": {
+        "tabs": {
+            "courses": "Moje Kursy",
+            "materials": "Materiały PDF/ZIP",
+            "games": "Gry Interaktywne",
+            "wallet": "Mój Portfel"
+        },
+        "materials": {
+            "title": "Twoje Materiały Cyfrowe",
+            "download": "Pobierz plik",
+            "print": "Drukuj materiały",
+            "no_files": "Nie posiadasz jeszcze żadnych materiałów do pobrania."
+        },
+        "games": {
+            "title": "Centrum Gier Online",
+            "play": "Zagraj teraz",
+            "provider": "Platforma",
+            "no_games": "Brak dostępnych gier interaktywnych.",
+            "subtitle": "Educational Games",
+            "loading": "Loading game...",
+            "notice": "Gry są dostępne dla uczniów zalogowanych na platformie.",
+            "fullscreen": "Full screen",
+            "report": "Report error"
+        },
+        "library": {
+            "title": "Twoja Biblioteka",
+            "recent": "Ostatnio zakupione",
+            "packDesc": "Kompletny zestaw materiałów na cały rok szkolny.",
+            "downloadZip": "Pobierz wszystko (ZIP)",
+            "browseFiles": "Przeglądaj pliki",
+            "progress": "Twój Postęp",
+            "progressDesc": "Ukończono {percent}% materiałów z pakietu {pack}.",
+            "level": "Poziom",
+            "open": "Otwórz Pakiet",
+            "preview": "Podgląd interaktywny",
+            "previewGame": "Podgląd gry",
+            "stats": {
+                "files": "plików",
+                "more": "więcej"
+            },
+            "filters": {
+                "all": "Wszystkie",
+                "pdf": "E-Booki i PDF",
+                "audio": "Audio",
+                "courses": "Kursy Online"
+            },
+            "badges": {
+                "game": "Gra Edukacyjna",
+                "pack": "Pakiet"
+            },
+            "discover": {
+                "title": "Odkryj więcej materiałów",
+                "desc": "Przeglądaj sklep i dodawaj nowe pakiety.",
+                "btn": "Idź do sklepu"
+            }
+        },
+        "course": {
+            "yourProgress": "Twój Postęp",
+            "noLessons": "Brak lekcji w tym kursie.",
+            "quiz": "Quiz",
+            "unlocksInDays": "Odblokuje się za {days} dni",
+            "notFound": "Kurs nie został znaleziony.",
+            "selectLesson": "Wybierz lekcję z menu, aby rozpocząć."
+        },
+        "wallet": {
+            "title": "Twój Portfel",
+            "subtitle": "Zbieraj punkty za aktywność i zakupy.",
+            "available": "Dostępne środki",
+            "points": "pkt",
+            "value": "Wartość w {currency}",
+            "spend": "Wydaj punkty w sklepie",
+            "history": "Ostatnia aktywność",
+            "mock": {
+                "purchase": "Purchase: Mega Pack A1-A2",
+                "bonus": "Welcome bonus",
+                "today": "Today",
+                "daysAgo": "{count} days ago"
+            }
+        },
+        "purchases": {
+            "title": "Historia Zakupów",
+            "loading": "Ładowanie...",
+            "empty": "Brak zamówień",
+            "emptyDesc": "Nie dokonałeś jeszcze żadnych zakupów.",
+            "goToShop": "Przejdź do sklepu",
+            "moreItems": "więcej",
+            "invoice": "Faktura"
+        },
+        "team": {
+            "title": "Moja Klasa / Zespół",
+            "subtitle": "Udostępniaj materiały uczniom",
+            "create_class": "Utwórz nową klasę",
+            "created_at": "Utworzono: {date}",
+            "students_count": "{count} uczniów",
+            "access_code": "Kod dostępu dla uczniów",
+            "empty": {
+                "title": "Nowa Klasa",
+                "desc": "Utwórz grupę dla swoich uczniów.",
+                "btn": "Rozpocznij konfigurację"
+            },
+            "pro": {
+                "active": "Twój plan PRO jest aktywny",
+                "unlock": "Odblokuj nieograniczone klasy",
+                "desc": "Plan Nauczyciel PRO umożliwia tworzenie nieograniczonej liczby grup.",
+                "upgrade": "Upgrade to PRO for $12",
+                "status": "Active"
+            },
+            "shared_materials": "Udostępnione materiały",
+            "manage_btn": "Manage access"
+        },
+        "awards": {
+            "title": "Moje Nagrody",
+            "subtitle": "Twoje osiągnięcia i odznaki",
+            "empty": "Brak nagród",
+            "emptyDesc": "Zdobywaj punkty i odblokowuj nagrody!",
+            "mock": {
+                "start": "Quick Start",
+                "startDesc": "Completed the first lesson",
+                "vocab": "Vocabulary Master",
+                "vocabDesc": "100% in a quiz",
+                "steady": "Systematic",
+                "steadyDesc": "Logged in 7 days in a row",
+                "polyglot": "Polyglot",
+                "polyglotDesc": "Passed A1 level"
+            }
+        },
+        "sidebar": {
+            "library": "Biblioteka",
+            "team": "Zespół",
+            "purchases": "Invoices & Purchases",
+            "wallet": "Points Wallet",
+            "settings": "Account Settings",
+            "myLessons": "My Lessons",
+            "interactiveGames": "Games & Fun",
+            "myAwards": "My Awards",
+            "myProfile": "My Profile",
+            "rank": "Beginner Teacher",
+            "points": "pts",
+            "nextRank": "To Expert level"
+        },
+        "subscription": {
+            "title": "Your Plan",
+            "activeClasses": "Active Classes",
+            "unlimited": "Nieograniczony dostęp",
+            "export": "Material Export",
+            "active": "Active",
+            "aiCredits": "AI Credits",
+            "classes": "Classes",
+            "limitReached": "Free plan limit reached",
+            "upgrade": "Upgrade Plan"
+        },
+        "studentTasks": {
+            "title": "Zadania dla uczniów",
+            "assignee": "Teacher",
+            "due": "Due",
+            "status": {
+                "todo": "To do",
+                "inProgress": "W toku",
+                "available": "Available"
+            },
+            "actions": {
+                "start": "Start",
+                "open": "Otwórz"
+            },
+            "mock": {
+                "homework": "Praca domowa",
+                "teacher": "Teacher Jane",
+                "tomorrow": "Tomorrow, 14:00",
+                "quiz": "Quiz: Animals",
+                "friday": "Piątkowy quiz",
+                "ebook": "E-book: Grammar Basics",
+                "system": "System"
+            }
+        },
+        "certificates": {
+            "none": "No certificates",
+            "teacher_desc": "Certyfikaty wystawione przez Ciebie dla uczniów.",
+            "student_desc": "Complete the course in 100% to collect your diploma!"
+        }
     },
-    "materials": {
-      "title": "Twoje Materiały Cyfrowe",
-      "download": "Pobierz plik",
-      "print": "Drukuj materiały",
-      "no_files": "Nie posiadasz jeszcze żadnych materiałów do pobrania."
-    },
-    "games": {
-      "title": "Centrum Gier Online",
-      "play": "Zagraj teraz",
-      "provider": "Platforma",
-      "no_games": "Brak dostępnych gier interaktywnych."
-    },
-    "library": {
-      "title": "Twoja Biblioteka",
-      "recent": "Ostatnio zakupione",
-      "packDesc": "Kompletny zestaw materiałów na cały rok szkolny.",
-      "downloadZip": "Pobierz wszystko (ZIP)",
-      "browseFiles": "Przeglądaj pliki",
-      "progress": "Twój Postęp",
-      "progressDesc": "Ukończono {percent}% materiałów z pakietu {pack}.",
-      "level": "Poziom",
-      "open": "Otwórz Pakiet",
-      "preview": "Podgląd interaktywny",
-      "previewGame": "Podgląd gry",
-      "stats": {
-        "files": "plików",
-        "more": "więcej"
-      },
-      "filters": {
-        "all": "Wszystkie",
-        "pdf": "E-Booki i PDF",
-        "audio": "Audio",
-        "courses": "Kursy Online"
-      },
-      "badges": {
-        "game": "Gra Edukacyjna",
-        "pack": "Pakiet"
-      },
-      "discover": {
-        "title": "Odkryj więcej materiałów",
-        "desc": "Przeglądaj sklep i dodawaj nowe pakiety.",
-        "btn": "Idź do sklepu"
-      }
-    },
-    "course": {
-      "yourProgress": "Twój Postęp",
-      "noLessons": "Brak lekcji w tym kursie.",
-      "quiz": "Quiz",
-      "unlocksInDays": "Odblokuje się za {days} dni",
-      "notFound": "Kurs nie został znaleziony.",
-      "selectLesson": "Wybierz lekcję z menu, aby rozpocząć."
-    },
-    "wallet": {
-      "title": "Twój Portfel",
-      "subtitle": "Zbieraj punkty za aktywność i zakupy.",
-      "available": "Dostępne środki",
-      "points": "pkt",
-      "value": "Wartość w {currency}",
-      "spend": "Wydaj punkty w sklepie",
-      "history": "Ostatnia aktywność"
-    },
-    "purchases": {
-      "title": "Historia Zakupów",
-      "loading": "Ładowanie...",
-      "empty": "Brak zamówień",
-      "emptyDesc": "Nie dokonałeś jeszcze żadnych zakupów.",
-      "goToShop": "Przejdź do sklepu",
-      "moreItems": "więcej",
-      "invoice": "Faktura"
-    },
-    "team": {
-      "title": "Moja Klasa / Zespół",
-      "subtitle": "Udostępniaj materiały uczniom",
-      "create_class": "Utwórz nową klasę",
-      "created_at": "Utworzono: {date}",
-      "students_count": "{count} uczniów",
-      "access_code": "Kod dostępu dla uczniów",
-      "empty": {
-        "title": "Nowa Klasa",
-        "desc": "Utwórz grupę dla swoich uczniów.",
-        "btn": "Rozpocznij konfigurację"
-      },
-      "pro": {
-        "active": "Twój plan PRO jest aktywny",
-        "unlock": "Odblokuj nieograniczone klasy",
-        "desc": "Plan Nauczyciel PRO umożliwia tworzenie nieograniczonej liczby grup."
-      }
-    },
-    "awards": {
-      "title": "Moje Nagrody",
-      "subtitle": "Twoje osiągnięcia i odznaki",
-      "empty": "Brak nagród",
-      "emptyDesc": "Zdobywaj punkty i odblokowuj nagrody!"
-    }
-  }
+    "welcome": "Witaj, {name}!",
+    "teacher_welcome": "Manage your materials and classes in one place.",
+    "student_welcome": "Ready for another dose of knowledge? See what we have for you!",
+    "add_materials": "Add Materials"
 }

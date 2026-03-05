@@ -1,461 +1,466 @@
 {
-  "seo": {
-    "title": "Materiale educaționale pentru profesorii de engleză | Kamila Łobko-Koziej",
-    "description": "Materiale didactice creative, planuri de lecție, proiecte anuale și pachete gata făcute pentru profesorii de engleză.",
-    "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
-  },
-  "nav": {
-    "products": "Produse",
-    "materialy": "Materiale",
-    "blog": "Blog",
-    "contact": "Contact",
-    "login": "Autentificare",
-    "dashboard": "Panou de control",
-    "adminPanel": "Panou Admin",
-    "verify": "Verificare"
-  },
-  "brand": {
-    "educationalMaterials": "Materiale Educaționale",
-    "byKamila": "de Kamila Łobko-Koziej"
-  },
-  "hero": {
-    "badge": "Materiale pentru profesori",
-    "title": "Predați engleza cu pasiune și ușurință",
-    "subtitle": "Materiale didactice creative care vă vor transforma lecțiile. Economisiți timp cu pregătirea și inspirați-vă elevii în fiecare zi.",
-    "cta_main": "Răsfoiește materialele",
-    "cta_secondary": "Despre autoare",
-    "demoText": "Vezi demo panou:",
-    "teacherProfile": "Profil Profesor",
-    "studentProfile": "Profil Student"
-  },
-  "footer": {
-    "rights": "Toate drepturile rezervate.",
-    "description": "Materiale didactice originale și creative pentru profesorii de engleză. Lăsați-vă inspirați!",
-    "groups": {
-      "shop": "Magazin",
-      "info": "Informații",
-      "help": "Ajutor"
+    "seo": {
+        "title": "Materiale educaționale pentru profesorii de engleză | Kamila Łobko-Koziej",
+        "description": "Materiale didactice creative, planuri de lecție, proiecte anuale și pachete gata făcute pentru profesorii de engleză.",
+        "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
     },
-    "links": {
-      "catalog": "Catalog",
-      "materials": "Materiale Didactice",
-      "projects": "Proiecte Anuale",
-      "scenarios": "Planuri de Lecție",
-      "packs": "Pachete Tematice",
-      "about": "Despre Autoare",
-      "contact": "Contact",
-      "privacy": "Politica de Confidențialitate",
-      "terms": "Termeni și Condiții",
-      "howToBuy": "Cum cumpăr?",
-      "faq": "Întrebări Frecvente",
-      "returns": "Returnări",
-      "account": "Contul Meu",
-      "admin": "Panou Profesor (Admin)"
+    "nav": {
+        "products": "Produse",
+        "materialy": "Materiale",
+        "blog": "Blog",
+        "contact": "Contact",
+        "login": "Autentificare",
+        "dashboard": "Panou de control",
+        "adminPanel": "Panou Admin",
+        "verify": "Verificare"
+    },
+    "brand": {
+        "educationalMaterials": "Materiale Educaționale",
+        "byKamila": "de Kamila Łobko-Koziej"
+    },
+    "hero": {
+        "badge": "Materiale pentru profesori",
+        "title": "Predați engleza cu pasiune și ușurință",
+        "subtitle": "Materiale didactice creative care vă vor transforma lecțiile. Economisiți timp cu pregătirea și inspirați-vă elevii în fiecare zi.",
+        "cta_main": "Răsfoiește materialele",
+        "cta_secondary": "Despre autoare",
+        "demoText": "Vezi demo panou:",
+        "teacherProfile": "Profil Profesor",
+        "studentProfile": "Profil Student"
+    },
+    "footer": {
+        "rights": "Toate drepturile rezervate.",
+        "description": "Materiale didactice originale și creative pentru profesorii de engleză. Lăsați-vă inspirați!",
+        "groups": {
+            "shop": "Magazin",
+            "info": "Informații",
+            "help": "Ajutor"
+        },
+        "links": {
+            "catalog": "Catalog",
+            "materials": "Materiale Didactice",
+            "projects": "Proiecte Anuale",
+            "scenarios": "Planuri de Lecție",
+            "packs": "Pachete Tematice",
+            "about": "Despre Autoare",
+            "contact": "Contact",
+            "privacy": "Politica de Confidențialitate",
+            "terms": "Termeni și Condiții",
+            "howToBuy": "Cum cumpăr?",
+            "faq": "Întrebări Frecvente",
+            "returns": "Returnări",
+            "account": "Contul Meu",
+            "admin": "Panou Profesor (Admin)"
+        }
+    },
+    "auth": {
+        "logout": "Deconectare",
+        "myCourses": "Cursurile Mele",
+        "studentPanel": "Panou Student",
+        "roleAdmin": "Administrator",
+        "roleTeacher": "Teacher",
+        "roleStudent": "Student"
+    },
+    "cart": {
+        "empty": "Coșul tău este gol",
+        "emptySub": "Adaugă produse pentru a continua cumpărăturile",
+        "browse": "Răsfoiește produse",
+        "reserved": "Coșul tău este rezervat pentru:",
+        "header": "Coș ({count})",
+        "remove": "Elimină",
+        "specialOffer": "OFERTĂ SPECIALĂ",
+        "orderBump": "Adaugă pachet șabloane email (+29 €)",
+        "orderBumpDesc": "20 șabloane gata de utilizat pentru comunicarea cu părinții. Economisește 70%!",
+        "summary": "Rezumat",
+        "couponPlaceholder": "Cod de reducere",
+        "apply": "Aplică",
+        "couponHeader": "Cupon:",
+        "products": "Produse",
+        "discount": "Reducere",
+        "total": "Total",
+        "checkout": "Finalizează comanda",
+        "secure": "Plată sigură",
+        "couponInvalid": "Invalid coupon code",
+        "couponInactive": "This coupon is no longer active",
+        "couponExpired": "This coupon has expired",
+        "couponLimitReached": "This coupon has reached its usage limit",
+        "couponMinOrder": "Minimum order value: {minOrderValue} {currency}",
+        "couponAppliedPercent": "Discount {percent}% has been applied!",
+        "couponAppliedFixed": "Discount {amount} {currency} has been applied!",
+        "currencySymbol": "€"
+    },
+    "socialProof": {
+        "header": "Comunitate Facebook",
+        "sub": "Fii la curent cu noutățile și alătură-te discuției!",
+        "cta": "Vezi profilul nostru plin de inspirație",
+        "madeWithLove": "Creat cu dragoste",
+        "polishQuality": "și calitate poloneză"
+    },
+    "newsletter": {
+        "header": "Fii la curent!",
+        "sub": "Abonează-te la newsletter-ul nostru și primește informații despre materiale noi, promoții și reduceri exclusive.",
+        "placeholder": "Adresa ta de email",
+        "button": "Abonează-te",
+        "success": "Mulțumim pentru abonarea la newsletter!",
+        "privacy": "Vă respectăm confidențialitatea. Vă puteți dezabona în orice moment."
+    },
+    "checkout": {
+        "acceptTermsError": "Trebuie să acceptați termenii și condițiile",
+        "successTitle": "Vă mulțumim pentru comandă!",
+        "successOrder": "Comanda dvs. nr. #{orderNumber} a fost primită.",
+        "successEmail": "Am trimis detaliile comenzii la adresa de e-mail furnizată.",
+        "backToStore": "Înapoi la magazin",
+        "myCourses": "Cursurile mele",
+        "backToCart": "Înapoi la coș",
+        "steps": {
+            "cart": "Coș",
+            "payment": "Plată",
+            "access": "Acces"
+        },
+        "trust": {
+            "secure": "Plată sigură",
+            "ssl": "Criptare SSL",
+            "instant": "Acces instant"
+        },
+        "header": "Finalizați comanda",
+        "contactTitle": "Informații de contact",
+        "email": "Email *",
+        "firstName": "Prenume *",
+        "lastName": "Nume *",
+        "phone": "Telefon (opțional)",
+        "invoiceTitle": "Factură",
+        "wantInvoice": "Doresc să primesc o factură cu TVA",
+        "nip": "Cod de identificare fiscală",
+        "nipError": "Introduceți un cod fiscal valid",
+        "lookup": "Preia date",
+        "lookupSuccess": "Datele companiei preluate!",
+        "nipNotFound": "Companie negăsită",
+        "nipSearchError": "Eroare în timpul căutării. Vă rugăm să încercați din nou.",
+        "companyName": "Numele companiei",
+        "companyAddress": "Adresa companiei",
+        "addressPlaceholder": "Se va completa automat",
+        "paymentTitle": "Metoda de plată",
+        "paymentMethods": {
+            "card": "Card de plată",
+            "cardSub": "Visa, Mastercard, American Express",
+            "blik": "BLIK",
+            "blikSub": "Plată rapidă cu cod BLIK",
+            "transfer": "Transfer bancar",
+            "transferSub": "Transfer bancar tradițional"
+        },
+        "yourOrder": "Comanda dvs.",
+        "summaryProducts": "Produse",
+        "summaryDiscount": "Reducere ({code})",
+        "summaryTotal": "Total",
+        "terms": "Accept termenii și condițiile magazinului și politica de confidențialitate",
+        "termsRequired": "Necesar pentru finalizarea comenzii",
+        "processing": "Procesare...",
+        "pay": "Plătește {total}",
+        "instantAccessInfo": "După plată, materialele sunt disponibile imediat în panou",
+        "socialProof": "+2.500 de profesori au cumpărat deja",
+        "toPayMobile": "De plată",
+        "paymentFailed": "Payment failed. Please try again.",
+        "paymentSystemError": "Payment system error."
+    },
+    "contact": {
+        "title": "Contactați-ne",
+        "subtitle": "Aveți o întrebare despre materiale? Aveți nevoie de sprijin în alegerea unui pachet? Scrieți-ne sau vorbiți cu asistentul nostru AI. Suntem aici pentru dvs.!",
+        "aiBadge": "De regulă răspundem în 2 ore",
+        "trustBadge": "Peste 12.000 de profesori mulțumiți",
+        "emailTitle": "Scrieți un e-mail",
+        "emailDesc": "Căsuța noastră poștală este deschisă 24/7 pentru dvs.",
+        "phoneTitle": "Sunați-ne",
+        "phoneDesc": "De luni până vineri, între 9:00 și 17:00, suntem la telefon.",
+        "formTitle": "Formular de Contact",
+        "addressTitle": "Sediu",
+        "addressValue": "Varșovia, str. Educației 123",
+        "aiHelp": "Aveți nevoie de un răspuns rapid?",
+        "aiHelpDesc": "Asistentul nostru inteligent știe răspunsurile la cele mai frecvente întrebări. Întrebați despre produse, metode de predare sau disponibilitatea materialelor.",
+        "aiHelpMobile": "Asistentul AI este disponibil în colțul de jos al ecranului.",
+        "form": {
+            "name": "Nume și Prenume",
+            "email": "E-mail",
+            "subject": "Subiect",
+            "message": "Mesajul dvs.",
+            "messagePlaceholder": "Cum vă putem ajuta?",
+            "sending": "Se trimite...",
+            "send": "Trimite Mesaj",
+            "success": "Mesaj trimis!",
+            "successDesc": "Vă mulțumim că ne-ați contactat. Vă vom răspunde cât mai curând posibil.",
+            "placeholders": {
+                "name": "Ion Popescu",
+                "email": "ion@exemplu.ro",
+                "subject": "Întrebare despre produs...",
+                "message": "Descrieți cum vă putem ajuta..."
+            }
+        },
+        "info": {
+            "emailValue": "contact@kamilaenglish.com",
+            "phoneValue": "+48 123 456 789"
+        },
+        "aiChat": {
+            "title": "Asistent AI",
+            "status": "Online și Pregătit",
+            "thinking": "Se gândește...",
+            "inputPlaceholder": "Pune o întrebare...",
+            "dataInputPlaceholder": "Introduceți numele și e-mailul...",
+            "welcome": "Bună! Sunt asistentul tău inteligent. Înainte de a începe, ești deja clientul nostru?",
+            "options": {
+                "yes": "Da, sunt client",
+                "no": "Nu, încă nu"
+            },
+            "responses": {
+                "clientYes": "Excelent! Cu ce te pot ajuta astăzi?",
+                "clientNo": "Înțeleg. Mi-ar plăcea să te ajut să explorezi materialele noastre. Care este numele și e-mailul tău, astfel încât să îți pot trimite câteva mostre gratuite?",
+                "dataSaved": "Mulțumesc! Ți-am salvat detaliile. Acum simte-te liber să întrebi orice.",
+                "fallback": "Îmi pare rău, nu înțeleg prea bine. Poți reformula? Poți întreba despre prețuri, livrare sau metode de predare."
+            },
+            "knowledge": {
+                "price": "Materialele noastre PDF încep de la 29 €. Pachetele anuale (Mega Pack) sunt momentan la reducere la 149 €.",
+                "delivery": "Toate materialele sunt digitale. Veți primi un link de descărcare imediat după plată.",
+                "preschool": "Avem o secțiune grozavă 'Engleza în grădiniță'. Recomand în special pachetul nostru Cele 4 Anotimpuri.",
+                "contact": "Ne puteți trimite un e-mail sau ne puteți suna la +1 234 567 890 (Luni-Vineri 9:00-17:00).",
+                "invoice": "Da, emitem facturi cu TVA. Puteți furniza detaliile facturii în coș.",
+                "methods": "Kamila Łobko-Koziej promovează o abordare bazată pe joc (TPR, jocuri comunicative). Consultați blogul nostru pentru a afla mai multe!"
+            }
+        }
+    },
+    "login": {
+        "title": "Bine ai revenit!",
+        "desc": "Introduceți e-mailul pentru a intra în zona studenților.",
+        "student": "Student",
+        "teacher": "Profesor",
+        "email": "Email",
+        "emailTeacher": "Email de serviciu",
+        "password": "Parolă",
+        "loggingIn": "Autentificare...",
+        "success": "Autentificat!",
+        "submit": "Conectare",
+        "successMessage": "Autentificare reușită! Se redirecționează...",
+        "errorDefault": "E-mail sau parolă nevalidă.",
+        "errorSystem": "A apărut o eroare de autentificare. Vă rugăm să încercați din nou.",
+        "emailRequired": "E-mailul este obligatoriu",
+        "emailInvalid": "Adresă de e-mail nevalidă",
+        "passwordRequired": "Parola este obligatorie",
+        "passwordMin": "Parola trebuie să aibă cel puțin 4 caractere",
+        "forgotPassword": "Forgot your password?",
+        "magicLink": "Login with Magic Link",
+        "magicLinkDesc": "We'll send you a one-time login link to your email address.",
+        "sendMagicLink": "Send Magic Link",
+        "backToLogin": "Back to login",
+        "checkEmail": "Check your inbox",
+        "resetPassword": "Reset password",
+        "magicLinkSent": "A login link has been sent to your email address.",
+        "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
+        "resetSuccess": "Your password has been changed successfully."
+    },
+    "quickSale": {
+        "title": "PLATĂ RAPIDĂ",
+        "demoProduct": {
+            "title": "Exemplu E-book Premium",
+            "excerpt": "Acesta este un produs demonstrativ. În versiunea completă, datele ar fi preluate din baza de date."
+        },
+        "page": {
+            "guarantee": "Garanție de satisfacție de 30 de zile",
+            "totalLabel": "Total de plată:",
+            "email_label": "E-mailul tău",
+            "email_placeholder": "adresa@email.com",
+            "payment_method": "Metoda de plată",
+            "payment_card": "Card",
+            "blik_code": "Cod BLIK",
+            "terms": "Accept termenii magazinului",
+            "pay_btn": "Cumpăr și plătesc",
+            "secure_checkout": "Conexiune criptată SSL"
+        },
+        "optimization": {
+            "timer": {
+                "text": "Oferta ta expiră în:"
+            },
+            "social_proof": {
+                "viewing": "{count} persoane vizualizează această ofertă"
+            },
+            "savings": "Economisești"
+        },
+        "bump": {
+            "yes_btn": "DA, adaugă la comanda mea",
+            "price_prefix": "doar",
+            "description": "Ofertă unică! Adaugă un set de fișe de lucru gata de utilizat (PDF)."
+        }
+    },
+    "verify": {
+        "title": "Verificare Certificat",
+        "subtitle": "Introduceți codul de verificare al certificatului pentru a confirma autenticitatea acestuia.",
+        "placeholder": "XXXX-XXXX-XXXX",
+        "success": {
+            "title": "Certificat Verificat",
+            "desc": "Acest certificat este autentic și a fost emis de platforma noastră.",
+            "user": "Participant",
+            "course": "Curs",
+            "date": "Data finalizării",
+            "code": "Cod",
+            "view": "Vezi Certificat"
+        },
+        "error": {
+            "title": "Certificat Negăsit",
+            "desc": "Nu am găsit un certificat cu codul furnizat. Vă rugăm să verificați dacă codul este corect."
+        }
+    },
+    "errors": {
+        "404": {
+            "title": "404",
+            "message": "Pagina nu a fost găsită.",
+            "back": "Înapoi la pagina principală"
+        }
+    },
+    "blog": {
+        "title": "Blog",
+        "subtitle": "Articole, sfaturi și inspirație pentru profesorii de engleză. Învață cum să predai mai eficient și cu mai multă pasiune.",
+        "empty": "Nu au fost găsite postări pe blog.",
+        "readMore": "Citește mai mult",
+        "backToBlog": "Înapoi la blog",
+        "share": "Partajează:",
+        "notFound": "Negăsit"
+    },
+    "common": {
+        "loading": "Se încarcă...",
+        "success": "Acțiunea a fost finalizată cu succes."
+    },
+    "certificates": {
+        "title": "Certificat de Absolvire",
+        "subtitle": "Prin prezenta se certifică faptul că",
+        "completedCourse": "a absolvit cursul",
+        "completionDate": "Data Finalizării:",
+        "verificationCode": "Cod de Verificare:",
+        "downloadPdf": "Descarcă PDF",
+        "share": "Partajează",
+        "backToDashboard": "Înapoi la panou",
+        "styleTitle": "Schimbă stilul certificatului",
+        "verifiedTitle": "Certificat verificat",
+        "verifiedDesc": "Acest certificat a fost emis de platforma noastră.",
+        "notFound": "Certificat negăsit",
+        "copySuccess": "Link copiat în clipboard!",
+        "completionTitle": "Certificat Verificat"
+    },
+    "languages": {
+        "pl": "Polish",
+        "en": "English",
+        "uk": "Ukrainian",
+        "de": "German",
+        "es": "Spanish",
+        "fr": "French",
+        "it": "Italian",
+        "cs": "Czech",
+        "sk": "Slovak",
+        "ro": "Romanian",
+        "hu": "Hungarian",
+        "pt": "Portuguese",
+        "lt": "Lithuanian",
+        "lv": "Latvian",
+        "et": "Estonian",
+        "hr": "Croatian",
+        "sr": "Serbian",
+        "sl": "Slovenian",
+        "bg": "Bulgarian",
+        "el": "Greek",
+        "nl": "Dutch",
+        "sv": "Swedish",
+        "fi": "Finnish",
+        "no": "Norwegian",
+        "da": "Danish"
+    },
+    "fomo": {
+        "names": [
+            "John",
+            "Emily",
+            "Michael",
+            "Sarah",
+            "David",
+            "Jessica",
+            "Robert"
+        ],
+        "cities": [
+            "London",
+            "New York",
+            "Chicago",
+            "Toronto",
+            "Sydney",
+            "Dublin",
+            "Berlin"
+        ],
+        "purchaseMessage": "{name} from {city}",
+        "productMessage": "Just bought \"{product}\"",
+        "timeAgo": "{time} min ago"
+    },
+    "exitIntent": {
+        "title": "WAIT!",
+        "subtitle": "Before you leave...",
+        "header": "Get your free \"Starter Pack\"",
+        "description": "Join our newsletter and receive 50 free worksheets!",
+        "cta": "I want my gift",
+        "noThanks": "No thanks, I'll pay full price later"
+    },
+    "course": {
+        "yourProgress": "Progresul Tău",
+        "noLessons": "Fără lecții.",
+        "quiz": "Test",
+        "unlocksInDays": "Se deblochează în {days} zile"
+    },
+    "dashboard": {
+        "wallet": {
+            "title": "Your Wallet",
+            "subtitle": "Collect points for activity and purchases.",
+            "available": "Available funds",
+            "points": "pts",
+            "value": "Value in {currency}",
+            "spend": "Spend points in shop",
+            "history": "Recent activity"
+        },
+        "awards": {
+            "title": "Your Hall of Fame",
+            "subtitle": "Earn badges for completed lessons and games!",
+            "mock": {
+                "start": "Quick Start",
+                "startDesc": "Completed first lesson",
+                "vocab": "Vocab Master",
+                "vocabDesc": "100% in quiz",
+                "steady": "Systematic",
+                "steadyDesc": "Logged in 7 days",
+                "polyglot": "Polyglot",
+                "polyglotDesc": "Passed A1 level"
+            }
+        },
+        "team": {
+            "title": "My Class / Team",
+            "subtitle": "Share materials with students",
+            "create_class": "Create new class",
+            "created_at": "Created: {date}",
+            "students_count": "{count} students",
+            "access_code": "Student access code",
+            "empty": {
+                "title": "New Class",
+                "desc": "Create a group for your students.",
+                "btn": "Start Setup"
+            },
+            "pro": {
+                "active": "Your PRO plan is active",
+                "unlock": "Unlock unlimited classes",
+                "desc": "Teacher PRO plan allows creating unlimited groups.",
+                "upgrade": "Upgrade to PRO",
+                "status": "Active"
+            }
+        },
+        "games": {
+            "title": "Educational Games",
+            "subtitle": "Interactive exercises for your students",
+            "play": "Play now",
+            "loading": "Loading game...",
+            "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
+            "fullscreen": "Full screen",
+            "report": "Report error"
+        }
+    },
+    "announcement": {
+        "launchOffer": "Ofertă specială de lansare: Obțineți 20% REDUCERE cu codul \"START20\"",
+        "limitedTime": "Timp limitat: Verificați noile noastre pachete!"
     }
-  },
-  "auth": {
-    "logout": "Deconectare",
-    "myCourses": "Cursurile Mele",
-    "studentPanel": "Panou Student",
-    "roleAdmin": "Administrator",
-    "roleTeacher": "Teacher",
-    "roleStudent": "Student"
-  },
-  "cart": {
-    "empty": "Coșul tău este gol",
-    "emptySub": "Adaugă produse pentru a continua cumpărăturile",
-    "browse": "Răsfoiește produse",
-    "reserved": "Coșul tău este rezervat pentru:",
-    "header": "Coș ({count})",
-    "remove": "Elimină",
-    "specialOffer": "OFERTĂ SPECIALĂ",
-    "orderBump": "Adaugă pachet șabloane email (+29 €)",
-    "orderBumpDesc": "20 șabloane gata de utilizat pentru comunicarea cu părinții. Economisește 70%!",
-    "summary": "Rezumat",
-    "couponPlaceholder": "Cod de reducere",
-    "apply": "Aplică",
-    "couponHeader": "Cupon:",
-    "products": "Produse",
-    "discount": "Reducere",
-    "total": "Total",
-    "checkout": "Finalizează comanda",
-    "secure": "Plată sigură",
-    "couponInvalid": "Invalid coupon code",
-    "couponInactive": "This coupon is no longer active",
-    "couponExpired": "This coupon has expired",
-    "couponLimitReached": "This coupon has reached its usage limit",
-    "couponMinOrder": "Minimum order value: {minOrderValue} {currency}",
-    "couponAppliedPercent": "Discount {percent}% has been applied!",
-    "couponAppliedFixed": "Discount {amount} {currency} has been applied!",
-    "currencySymbol": "€"
-  },
-  "socialProof": {
-    "header": "Comunitate Facebook",
-    "sub": "Fii la curent cu noutățile și alătură-te discuției!",
-    "cta": "Vezi profilul nostru plin de inspirație",
-    "madeWithLove": "Creat cu dragoste",
-    "polishQuality": "și calitate poloneză"
-  },
-  "newsletter": {
-    "header": "Fii la curent!",
-    "sub": "Abonează-te la newsletter-ul nostru și primește informații despre materiale noi, promoții și reduceri exclusive.",
-    "placeholder": "Adresa ta de email",
-    "button": "Abonează-te",
-    "success": "Mulțumim pentru abonarea la newsletter!",
-    "privacy": "Vă respectăm confidențialitatea. Vă puteți dezabona în orice moment."
-  },
-  "checkout": {
-    "acceptTermsError": "Trebuie să acceptați termenii și condițiile",
-    "successTitle": "Vă mulțumim pentru comandă!",
-    "successOrder": "Comanda dvs. nr. #{orderNumber} a fost primită.",
-    "successEmail": "Am trimis detaliile comenzii la adresa de e-mail furnizată.",
-    "backToStore": "Înapoi la magazin",
-    "myCourses": "Cursurile mele",
-    "backToCart": "Înapoi la coș",
-    "steps": {
-      "cart": "Coș",
-      "payment": "Plată",
-      "access": "Acces"
-    },
-    "trust": {
-      "secure": "Plată sigură",
-      "ssl": "Criptare SSL",
-      "instant": "Acces instant"
-    },
-    "header": "Finalizați comanda",
-    "contactTitle": "Informații de contact",
-    "email": "Email *",
-    "firstName": "Prenume *",
-    "lastName": "Nume *",
-    "phone": "Telefon (opțional)",
-    "invoiceTitle": "Factură",
-    "wantInvoice": "Doresc să primesc o factură cu TVA",
-    "nip": "Cod de identificare fiscală",
-    "nipError": "Introduceți un cod fiscal valid",
-    "lookup": "Preia date",
-    "lookupSuccess": "Datele companiei preluate!",
-    "nipNotFound": "Companie negăsită",
-    "nipSearchError": "Eroare în timpul căutării. Vă rugăm să încercați din nou.",
-    "companyName": "Numele companiei",
-    "companyAddress": "Adresa companiei",
-    "addressPlaceholder": "Se va completa automat",
-    "paymentTitle": "Metoda de plată",
-    "paymentMethods": {
-      "card": "Card de plată",
-      "cardSub": "Visa, Mastercard, American Express",
-      "blik": "BLIK",
-      "blikSub": "Plată rapidă cu cod BLIK",
-      "transfer": "Transfer bancar",
-      "transferSub": "Transfer bancar tradițional"
-    },
-    "yourOrder": "Comanda dvs.",
-    "summaryProducts": "Produse",
-    "summaryDiscount": "Reducere ({code})",
-    "summaryTotal": "Total",
-    "terms": "Accept termenii și condițiile magazinului și politica de confidențialitate",
-    "termsRequired": "Necesar pentru finalizarea comenzii",
-    "processing": "Procesare...",
-    "pay": "Plătește {total}",
-    "instantAccessInfo": "După plată, materialele sunt disponibile imediat în panou",
-    "socialProof": "+2.500 de profesori au cumpărat deja",
-    "toPayMobile": "De plată",
-    "paymentFailed": "Payment failed. Please try again.",
-    "paymentSystemError": "Payment system error."
-  },
-  "contact": {
-    "title": "Contactați-ne",
-    "subtitle": "Aveți o întrebare despre materiale? Aveți nevoie de sprijin în alegerea unui pachet? Scrieți-ne sau vorbiți cu asistentul nostru AI. Suntem aici pentru dvs.!",
-    "aiBadge": "De regulă răspundem în 2 ore",
-    "trustBadge": "Peste 12.000 de profesori mulțumiți",
-    "emailTitle": "Scrieți un e-mail",
-    "emailDesc": "Căsuța noastră poștală este deschisă 24/7 pentru dvs.",
-    "phoneTitle": "Sunați-ne",
-    "phoneDesc": "De luni până vineri, între 9:00 și 17:00, suntem la telefon.",
-    "formTitle": "Formular de Contact",
-    "addressTitle": "Sediu",
-    "addressValue": "Varșovia, str. Educației 123",
-    "aiHelp": "Aveți nevoie de un răspuns rapid?",
-    "aiHelpDesc": "Asistentul nostru inteligent știe răspunsurile la cele mai frecvente întrebări. Întrebați despre produse, metode de predare sau disponibilitatea materialelor.",
-    "aiHelpMobile": "Asistentul AI este disponibil în colțul de jos al ecranului.",
-    "form": {
-      "name": "Nume și Prenume",
-      "email": "E-mail",
-      "subject": "Subiect",
-      "message": "Mesajul dvs.",
-      "messagePlaceholder": "Cum vă putem ajuta?",
-      "sending": "Se trimite...",
-      "send": "Trimite Mesaj",
-      "success": "Mesaj trimis!",
-      "successDesc": "Vă mulțumim că ne-ați contactat. Vă vom răspunde cât mai curând posibil.",
-      "placeholders": {
-        "name": "Ion Popescu",
-        "email": "ion@exemplu.ro",
-        "subject": "Întrebare despre produs...",
-        "message": "Descrieți cum vă putem ajuta..."
-      }
-    },
-    "info": {
-      "emailValue": "contact@kamilaenglish.com",
-      "phoneValue": "+48 123 456 789"
-    },
-    "aiChat": {
-      "title": "Asistent AI",
-      "status": "Online și Pregătit",
-      "thinking": "Se gândește...",
-      "inputPlaceholder": "Pune o întrebare...",
-      "dataInputPlaceholder": "Introduceți numele și e-mailul...",
-      "welcome": "Bună! Sunt asistentul tău inteligent. Înainte de a începe, ești deja clientul nostru?",
-      "options": {
-        "yes": "Da, sunt client",
-        "no": "Nu, încă nu"
-      },
-      "responses": {
-        "clientYes": "Excelent! Cu ce te pot ajuta astăzi?",
-        "clientNo": "Înțeleg. Mi-ar plăcea să te ajut să explorezi materialele noastre. Care este numele și e-mailul tău, astfel încât să îți pot trimite câteva mostre gratuite?",
-        "dataSaved": "Mulțumesc! Ți-am salvat detaliile. Acum simte-te liber să întrebi orice.",
-        "fallback": "Îmi pare rău, nu înțeleg prea bine. Poți reformula? Poți întreba despre prețuri, livrare sau metode de predare."
-      },
-      "knowledge": {
-        "price": "Materialele noastre PDF încep de la 29 €. Pachetele anuale (Mega Pack) sunt momentan la reducere la 149 €.",
-        "delivery": "Toate materialele sunt digitale. Veți primi un link de descărcare imediat după plată.",
-        "preschool": "Avem o secțiune grozavă 'Engleza în grădiniță'. Recomand în special pachetul nostru Cele 4 Anotimpuri.",
-        "contact": "Ne puteți trimite un e-mail sau ne puteți suna la +1 234 567 890 (Luni-Vineri 9:00-17:00).",
-        "invoice": "Da, emitem facturi cu TVA. Puteți furniza detaliile facturii în coș.",
-        "methods": "Kamila Łobko-Koziej promovează o abordare bazată pe joc (TPR, jocuri comunicative). Consultați blogul nostru pentru a afla mai multe!"
-      }
-    }
-  },
-  "login": {
-    "title": "Bine ai revenit!",
-    "desc": "Introduceți e-mailul pentru a intra în zona studenților.",
-    "student": "Student",
-    "teacher": "Profesor",
-    "email": "Email",
-    "emailTeacher": "Email de serviciu",
-    "password": "Parolă",
-    "loggingIn": "Autentificare...",
-    "success": "Autentificat!",
-    "submit": "Conectare",
-    "successMessage": "Autentificare reușită! Se redirecționează...",
-    "errorDefault": "E-mail sau parolă nevalidă.",
-    "errorSystem": "A apărut o eroare de autentificare. Vă rugăm să încercați din nou.",
-    "emailRequired": "E-mailul este obligatoriu",
-    "emailInvalid": "Adresă de e-mail nevalidă",
-    "passwordRequired": "Parola este obligatorie",
-    "passwordMin": "Parola trebuie să aibă cel puțin 4 caractere",
-    "forgotPassword": "Forgot your password?",
-    "magicLink": "Login with Magic Link",
-    "magicLinkDesc": "We'll send you a one-time login link to your email address.",
-    "sendMagicLink": "Send Magic Link",
-    "backToLogin": "Back to login",
-    "checkEmail": "Check your inbox",
-    "resetPassword": "Reset password",
-    "magicLinkSent": "A login link has been sent to your email address.",
-    "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
-    "resetSuccess": "Your password has been changed successfully."
-  },
-  "quickSale": {
-    "title": "PLATĂ RAPIDĂ",
-    "demoProduct": {
-      "title": "Exemplu E-book Premium",
-      "excerpt": "Acesta este un produs demonstrativ. În versiunea completă, datele ar fi preluate din baza de date."
-    },
-    "page": {
-      "guarantee": "Garanție de satisfacție de 30 de zile",
-      "totalLabel": "Total de plată:",
-      "email_label": "E-mailul tău",
-      "email_placeholder": "adresa@email.com",
-      "payment_method": "Metoda de plată",
-      "payment_card": "Card",
-      "blik_code": "Cod BLIK",
-      "terms": "Accept termenii magazinului",
-      "pay_btn": "Cumpăr și plătesc",
-      "secure_checkout": "Conexiune criptată SSL"
-    },
-    "optimization": {
-      "timer": {
-        "text": "Oferta ta expiră în:"
-      },
-      "social_proof": {
-        "viewing": "{count} persoane vizualizează această ofertă"
-      },
-      "savings": "Economisești"
-    },
-    "bump": {
-      "yes_btn": "DA, adaugă la comanda mea",
-      "price_prefix": "doar",
-      "description": "Ofertă unică! Adaugă un set de fișe de lucru gata de utilizat (PDF)."
-    }
-  },
-  "verify": {
-    "title": "Verificare Certificat",
-    "subtitle": "Introduceți codul de verificare al certificatului pentru a confirma autenticitatea acestuia.",
-    "placeholder": "XXXX-XXXX-XXXX",
-    "success": {
-      "title": "Certificat Verificat",
-      "desc": "Acest certificat este autentic și a fost emis de platforma noastră.",
-      "user": "Participant",
-      "course": "Curs",
-      "date": "Data finalizării",
-      "code": "Cod",
-      "view": "Vezi Certificat"
-    },
-    "error": {
-      "title": "Certificat Negăsit",
-      "desc": "Nu am găsit un certificat cu codul furnizat. Vă rugăm să verificați dacă codul este corect."
-    }
-  },
-  "errors": {
-    "404": {
-      "title": "404",
-      "message": "Pagina nu a fost găsită.",
-      "back": "Înapoi la pagina principală"
-    }
-  },
-  "blog": {
-    "title": "Blog",
-    "subtitle": "Articole, sfaturi și inspirație pentru profesorii de engleză. Învață cum să predai mai eficient și cu mai multă pasiune.",
-    "empty": "Nu au fost găsite postări pe blog.",
-    "readMore": "Citește mai mult",
-    "backToBlog": "Înapoi la blog",
-    "share": "Partajează:",
-    "notFound": "Negăsit"
-  },
-  "common": {
-    "loading": "Se încarcă..."
-  },
-  "certificates": {
-    "title": "Certificat de Absolvire",
-    "subtitle": "Prin prezenta se certifică faptul că",
-    "completedCourse": "a absolvit cursul",
-    "completionDate": "Data Finalizării:",
-    "verificationCode": "Cod de Verificare:",
-    "downloadPdf": "Descarcă PDF",
-    "share": "Partajează",
-    "backToDashboard": "Înapoi la panou",
-    "styleTitle": "Schimbă stilul certificatului",
-    "verifiedTitle": "Certificat verificat",
-    "verifiedDesc": "Acest certificat a fost emis de platforma noastră.",
-    "notFound": "Certificat negăsit",
-    "copySuccess": "Link copiat în clipboard!",
-    "completionTitle": "Certificat Verificat"
-  },
-  "languages": {
-    "pl": "Polish",
-    "en": "English",
-    "uk": "Ukrainian",
-    "de": "German",
-    "es": "Spanish",
-    "fr": "French",
-    "it": "Italian",
-    "cs": "Czech",
-    "sk": "Slovak",
-    "ro": "Romanian",
-    "hu": "Hungarian",
-    "pt": "Portuguese",
-    "lt": "Lithuanian",
-    "lv": "Latvian",
-    "et": "Estonian",
-    "hr": "Croatian",
-    "sr": "Serbian",
-    "sl": "Slovenian",
-    "bg": "Bulgarian",
-    "el": "Greek",
-    "nl": "Dutch",
-    "sv": "Swedish",
-    "fi": "Finnish",
-    "no": "Norwegian",
-    "da": "Danish"
-  },
-  "fomo": {
-    "names": [
-      "John",
-      "Emily",
-      "Michael",
-      "Sarah",
-      "David",
-      "Jessica",
-      "Robert"
-    ],
-    "cities": [
-      "London",
-      "New York",
-      "Chicago",
-      "Toronto",
-      "Sydney",
-      "Dublin",
-      "Berlin"
-    ],
-    "purchaseMessage": "{name} from {city}",
-    "productMessage": "Just bought \"{product}\"",
-    "timeAgo": "{time} min ago"
-  },
-  "exitIntent": {
-    "title": "WAIT!",
-    "subtitle": "Before you leave...",
-    "header": "Get your free \"Starter Pack\"",
-    "description": "Join our newsletter and receive 50 free worksheets!",
-    "cta": "I want my gift",
-    "noThanks": "No thanks, I'll pay full price later"
-  },
-  "course": {
-    "yourProgress": "Progresul Tău",
-    "noLessons": "Fără lecții.",
-    "quiz": "Test",
-    "unlocksInDays": "Se deblochează în {days} zile"
-  },
-  "dashboard": {
-    "wallet": {
-      "title": "Your Wallet",
-      "subtitle": "Collect points for activity and purchases.",
-      "available": "Available funds",
-      "points": "pts",
-      "value": "Value in {currency}",
-      "spend": "Spend points in shop",
-      "history": "Recent activity"
-    },
-    "awards": {
-      "title": "Your Hall of Fame",
-      "subtitle": "Earn badges for completed lessons and games!",
-      "mock": {
-        "start": "Quick Start",
-        "startDesc": "Completed first lesson",
-        "vocab": "Vocab Master",
-        "vocabDesc": "100% in quiz",
-        "steady": "Systematic",
-        "steadyDesc": "Logged in 7 days",
-        "polyglot": "Polyglot",
-        "polyglotDesc": "Passed A1 level"
-      }
-    },
-    "team": {
-      "title": "My Class / Team",
-      "subtitle": "Share materials with students",
-      "create_class": "Create new class",
-      "created_at": "Created: {date}",
-      "students_count": "{count} students",
-      "access_code": "Student access code",
-      "empty": {
-        "title": "New Class",
-        "desc": "Create a group for your students.",
-        "btn": "Start Setup"
-      },
-      "pro": {
-        "active": "Your PRO plan is active",
-        "unlock": "Unlock unlimited classes",
-        "desc": "Teacher PRO plan allows creating unlimited groups.",
-        "upgrade": "Upgrade to PRO",
-        "status": "Active"
-      }
-    },
-    "games": {
-      "title": "Educational Games",
-      "subtitle": "Interactive exercises for your students",
-      "play": "Play now",
-      "loading": "Loading game...",
-      "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
-      "fullscreen": "Full screen",
-      "report": "Report error"
-    }
-  }
 }

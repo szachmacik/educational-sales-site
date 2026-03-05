@@ -1,464 +1,465 @@
 {
-  "seo": {
-    "title": "Навчальні матеріали для вчителів англійської | Каміла Лобко-Козей",
-    "description": "Креативні навчальні матеріали, плани уроків, річні проекти та готові пакети для вчителів англійської мови.",
-    "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
-  },
-  "nav": {
-    "products": "Продукти",
-    "materialy": "Матеріали",
-    "blog": "Блог",
-    "contact": "Контакти",
-    "login": "Увійти",
-    "dashboard": "Панель керування",
-    "adminPanel": "Панель Адміна",
-    "verify": "Верифікація"
-  },
-  "brand": {
-    "educationalMaterials": "Навчальні Матеріали",
-    "byKamila": "від Каміли Лобко-Козей"
-  },
-  "hero": {
-    "badge": "Матеріали для вчителів",
-    "title": "Викладайте англійську з пристрастю та легкістю",
-    "subtitle": "Креативні навчальні матеріали, які змінять ваші уроки. Заощаджуйте час на підготовці та надихайте своїх учнів щодня.",
-    "cta_main": "Переглянути матеріали",
-    "cta_secondary": "Про авторку",
-    "demoText": "Дивитися демо панелі:",
-    "teacherProfile": "Профіль Вчителя",
-    "studentProfile": "Профіль Учня"
-  },
-  "footer": {
-    "rights": "Усі права захищені.",
-    "description": "Оригінальні та креативні навчальні матеріали для вчителів англійської. Надихайтеся!",
-    "groups": {
-      "shop": "Магазин",
-      "info": "Інформація",
-      "help": "Допомога"
+    "seo": {
+        "title": "Навчальні матеріали для вчителів англійської | Каміла Лобко-Козей",
+        "description": "Креативні навчальні матеріали, плани уроків, річні проекти та готові пакети для вчителів англійської мови.",
+        "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
     },
-    "links": {
-      "catalog": "Каталог",
-      "materials": "Навчальні Матеріали",
-      "projects": "Річні Проекти",
-      "scenarios": "Плани Уроків",
-      "packs": "Тематичні Пакети",
-      "about": "Про Авторку",
-      "contact": "Контакти",
-      "privacy": "Політика Конфіденційності",
-      "terms": "Умови Використання",
-      "howToBuy": "Як купити?",
-      "faq": "Часті запитання",
-      "returns": "Повернення",
-      "account": "Мій Акаунт",
-      "admin": "Панель Вчителя (Адмін)"
+    "nav": {
+        "products": "Продукти",
+        "materialy": "Матеріали",
+        "blog": "Блог",
+        "contact": "Контакти",
+        "login": "Увійти",
+        "dashboard": "Панель керування",
+        "adminPanel": "Панель Адміна",
+        "verify": "Верифікація"
+    },
+    "brand": {
+        "educationalMaterials": "Навчальні Матеріали",
+        "byKamila": "від Каміли Лобко-Козей"
+    },
+    "hero": {
+        "badge": "Матеріали для вчителів",
+        "title": "Викладайте англійську з пристрастю та легкістю",
+        "subtitle": "Креативні навчальні матеріали, які змінять ваші уроки. Заощаджуйте час на підготовці та надихайте своїх учнів щодня.",
+        "cta_main": "Переглянути матеріали",
+        "cta_secondary": "Про авторку",
+        "demoText": "Дивитися демо панелі:",
+        "teacherProfile": "Профіль Вчителя",
+        "studentProfile": "Профіль Учня"
+    },
+    "footer": {
+        "rights": "Усі права захищені.",
+        "description": "Оригінальні та креативні навчальні матеріали для вчителів англійської. Надихайтеся!",
+        "groups": {
+            "shop": "Магазин",
+            "info": "Інформація",
+            "help": "Допомога"
+        },
+        "links": {
+            "catalog": "Каталог",
+            "materials": "Навчальні Матеріали",
+            "projects": "Річні Проекти",
+            "scenarios": "Плани Уроків",
+            "packs": "Тематичні Пакети",
+            "about": "Про Авторку",
+            "contact": "Контакти",
+            "privacy": "Політика Конфіденційності",
+            "terms": "Умови Використання",
+            "howToBuy": "Як купити?",
+            "faq": "Часті запитання",
+            "returns": "Повернення",
+            "account": "Мій Акаунт",
+            "admin": "Панель Вчителя (Адмін)"
+        }
+    },
+    "auth": {
+        "logout": "Вийти",
+        "myCourses": "Мої Курси",
+        "studentPanel": "Панель Учня",
+        "roleAdmin": "Адміністратор",
+        "roleTeacher": "Вчитель",
+        "roleStudent": "Учень"
+    },
+    "cart": {
+        "empty": "Ваш кошик порожній",
+        "emptySub": "Додайте продукти, щоб продовжити покупки",
+        "browse": "Переглянути продукти",
+        "reserved": "Ваш кошик зарезервовано на:",
+        "header": "Кошик ({count})",
+        "remove": "Видалити",
+        "specialOffer": "СПЕЦІАЛЬНА ПРОПОЗИЦІЯ",
+        "orderBump": "Додати набір шаблонів листів (+29 €)",
+        "orderBumpDesc": "20 готових шаблонів для спілкування з батьками. Зекономте 70%!",
+        "summary": "Підсумок",
+        "couponPlaceholder": "Код знижки",
+        "apply": "Застосувати",
+        "couponHeader": "Купон:",
+        "products": "Продукти",
+        "discount": "Знижка",
+        "total": "Всього",
+        "checkout": "Оформити замовлення",
+        "secure": "Безпечна оплата",
+        "couponInvalid": "Недійсний код купона",
+        "couponInactive": "Цей купон більше не активний",
+        "couponExpired": "Термін дії цього купона закінчився",
+        "couponLimitReached": "Цей купон вичерпав ліміт використання",
+        "couponMinOrder": "Мінімальна сума замовлення: {minOrderValue} {currency}",
+        "couponAppliedPercent": "Знижку {percent}% застосовано!",
+        "couponAppliedFixed": "Знижку {amount} {currency} застосовано!",
+        "currencySymbol": "€"
+    },
+    "socialProof": {
+        "header": "Спільнота у Facebook",
+        "sub": "Будьте в курсі новин та приєднуйтесь до дискусії!",
+        "cta": "Перегляньте наш профіль, сповнений натхнення",
+        "madeWithLove": "Створено з любов'ю",
+        "polishQuality": "та польською якістю"
+    },
+    "newsletter": {
+        "header": "Будьте в курсі!",
+        "sub": "Підпишіться на нашу розсилку та отримуйте інформацію про нові матеріали, акції та ексклюзивні знижки.",
+        "placeholder": "Ваша електронна адреса",
+        "button": "Підписатися",
+        "success": "Дякуємо за підписку на розсилку!",
+        "privacy": "Ми поважаємо вашу конфіденційність. Ви можете відписатися в будь-який момент."
+    },
+    "checkout": {
+        "acceptTermsError": "Ви повинні прийняти умови та положення",
+        "successTitle": "Дякуємо за ваше замовлення!",
+        "successOrder": "Ваше замовлення №{orderNumber} отримано.",
+        "successEmail": "Ми надіслали деталі замовлення на вказану електронну адресу.",
+        "backToStore": "Назад до магазину",
+        "myCourses": "Мої курси",
+        "backToCart": "Назад до кошика",
+        "steps": {
+            "cart": "Кошик",
+            "payment": "Оплата",
+            "access": "Доступ"
+        },
+        "trust": {
+            "secure": "Безпечна оплата",
+            "ssl": "Шифрування SSL",
+            "instant": "Миттєвий доступ"
+        },
+        "header": "Оформлення замовлення",
+        "contactTitle": "Контактна інформація",
+        "email": "Email *",
+        "firstName": "Ім'я *",
+        "lastName": "Прізвище *",
+        "phone": "Телефон (необов'язково)",
+        "invoiceTitle": "Рахунок",
+        "wantInvoice": "Я хочу отримати рахунок-фактуру з ПДВ",
+        "nip": "ІПН / Код платника податку",
+        "nipError": "Введіть коректний податковий номер",
+        "lookup": "Отримати дані",
+        "lookupSuccess": "Дані компанії отримано!",
+        "nipNotFound": "Компанію не знайдено",
+        "nipSearchError": "Помилка під час пошуку. Будь ласка, спробуйте ще раз.",
+        "companyName": "Назва компанії",
+        "companyAddress": "Адреса компанії",
+        "addressPlaceholder": "Буде заповнено автоматично",
+        "paymentTitle": "Спосіб оплати",
+        "paymentMethods": {
+            "card": "Платіжна картка",
+            "cardSub": "Visa, Mastercard, American Express",
+            "blik": "BLIK",
+            "blikSub": "Швидка оплата кодом BLIK",
+            "transfer": "Банківський переказ",
+            "transferSub": "Традиційний банківський переказ"
+        },
+        "yourOrder": "Ваше замовлення",
+        "summaryProducts": "Продукти",
+        "summaryDiscount": "Знижка ({code})",
+        "summaryTotal": "Всього",
+        "terms": "Я приймаю умови магазину та політику конфіденційності",
+        "termsRequired": "Необхідно для завершення замовлення",
+        "processing": "Обробка...",
+        "pay": "Сплатити {total}",
+        "instantAccessInfo": "Після оплати матеріали доступні миттєво в кабінеті",
+        "socialProof": "+2 500 вчителів вже купили",
+        "toPayMobile": "До сплати",
+        "paymentFailed": "Платіж не вдався. Будь ласка, спробуйте ще раз.",
+        "paymentSystemError": "Помилка платіжної системи."
+    },
+    "contact": {
+        "title": "Зв'яжіться з нами",
+        "subtitle": "Маєте запитання щодо матеріалів? Потрібна допомога у виборі пакету? Напишіть нам або поспілкуйтеся з нашим ШІ-помічником. Ми тут для вас!",
+        "aiBadge": "Зазвичай ми відповідаємо протягом 2 годин",
+        "trustBadge": "Понад 12 000 задоволених вчителів",
+        "emailTitle": "Написати листа",
+        "emailDesc": "Наша пошта відкрита для вас 24/7.",
+        "phoneTitle": "Зателефонувати нам",
+        "phoneDesc": "Пн-Пт з 9:00 do 17:00 ми на зв'язку.",
+        "formTitle": "Контактна форма",
+        "addressTitle": "Головний офіс",
+        "addressValue": "Варшава, Польща",
+        "aiHelp": "Потрібна швидка відповідь?",
+        "aiHelpDesc": "Наш розумний помічник знає відповіді на більшість поширених запитань. Запитуйте про продукти, методи навчання або наявність матеріалів.",
+        "aiHelpMobile": "ШІ-помічник доступний у нижньому куті екрана.",
+        "form": {
+            "name": "Ім'я та Прізвище",
+            "email": "E-mail",
+            "subject": "Тема",
+            "message": "Ваше повідомлення",
+            "messagePlaceholder": "Чим ми можемо вам допомогти?",
+            "sending": "Надсилання...",
+            "send": "Надіслати повідомлення",
+            "success": "Повідомлення надіслано!",
+            "successDesc": "Дякуємо за звернення. Ми відповімо якнайшвидше.",
+            "placeholders": {
+                "name": "Іван Іванов",
+                "email": "contact@kamilaenglish.com",
+                "subject": "Запит щодо продукту...",
+                "message": "Опишіть, як ми можемо допомогти..."
+            }
+        },
+        "info": {
+            "emailValue": "contact@kamilaenglish.com",
+            "phoneValue": ""
+        },
+        "aiChat": {
+            "title": "ШІ Помічник",
+            "status": "В мережі та готовий допомогти",
+            "thinking": "Думаю...",
+            "inputPlaceholder": "Запитуйте...",
+            "dataInputPlaceholder": "Введіть ім'я та email...",
+            "welcome": "Привіт! Я ваш розумний помічник. Перш ніж ми почнемо, чи є ви вже нашим клієнтом?",
+            "options": {
+                "yes": "Так, я клієнт",
+                "no": "Ні, ще ні"
+            },
+            "responses": {
+                "clientYes": "Чудово! Чим я можу допомогти вам сьогодні?",
+                "clientNo": "Розумію. Я б із задоволенням допоміг вам ознайомитися з нашими матеріалами. Як вас звати та який ваш email, щоб я міг надіслати вам кілька безкоштовних зразків?",
+                "dataSaved": "Дякую! Я зберіг ваші дані. Тепер можете запитувати що завгодно.",
+                "fallback": "Вибачте, я не зовсім розумію. Могли б ви перефразувати? Ви можете запитати про ціни, доставку або методи навчання."
+            },
+            "knowledge": {
+                "price": "Наші PDF-матеріали коштують від 29 €. Річні пакети (Mega Pack) зараз на розпродажі за 149 €.",
+                "delivery": "Всі матеріали цифрові. Ви отримаєте посилання на завантаження одразу після оплати.",
+                "preschool": "У нас є чудовий розділ 'Англійська в садочку'. Я особливо рекомендую наш пакет '4 Пори Року'.",
+                "contact": "Ви можете написати нам на email або зателефонувати +380 44 123 4567 (Пн-Пт 9:00-17:00).",
+                "invoice": "Так, ми виставляємо рахунки-фактури з ПДВ. Ви можете вказати дані для рахунку в кошику.",
+                "methods": "Каміла Лобко-Козей просуває ігровий підхід (TPR, комунікативні ігри). Перегляньте наш блог, щоб дізнатися більше!"
+            }
+        }
+    },
+    "login": {
+        "title": "Ласкаво просимо назад!",
+        "desc": "Введіть свій email, щоб увійти в зону учня.",
+        "student": "Учень",
+        "teacher": "Вчитель",
+        "email": "Email",
+        "emailTeacher": "Робочий Email",
+        "password": "Пароль",
+        "loggingIn": "Вхід...",
+        "success": "Успішний вхід!",
+        "submit": "Увійти",
+        "successMessage": "Ви успішно увійшли! Перенаправлення...",
+        "errorDefault": "Неправильний email або пароль.",
+        "errorSystem": "Сталася помилка входу. Будь ласка, спробуйте ще раз.",
+        "emailRequired": "Email обов'язковий",
+        "emailInvalid": "Некоректний формат email",
+        "passwordRequired": "Пароль обов'язковий",
+        "passwordMin": "Пароль має містити мінімум 4 символи",
+        "forgotPassword": "Забули пароль?",
+        "magicLink": "Увійти за допомогою Magic Link",
+        "magicLinkDesc": "Ми надішлемо вам одноразове посилання для входу на вашу електронну адресу.",
+        "sendMagicLink": "Надіслати Magic Link",
+        "backToLogin": "Назад до входу",
+        "checkEmail": "Перевірте свою пошту",
+        "resetPassword": "Скинути пароль",
+        "magicLinkSent": "Посилання для входу надіслано на вашу електронну адресу.",
+        "emailCheckDesc": "Якщо акаунт із цією поштою існує, ми надіслали інструкції.",
+        "resetSuccess": "Ваш пароль успішно змінено."
+    },
+    "quickSale": {
+        "title": "ШВИДКА ОПЛАТА",
+        "demoProduct": {
+            "title": "Приклад Premium E-book",
+            "excerpt": "Це демонстраційний продукт. У повній версії дані будуть завантажені з бази даних."
+        },
+        "page": {
+            "guarantee": "30-денна гарантія задоволення",
+            "totalLabel": "Всього до сплати:",
+            "email_label": "Ваш e-mail",
+            "email_placeholder": "address@email.com",
+            "payment_method": "Спосіб оплати",
+            "payment_card": "Картка",
+            "blik_code": "Код BLIK",
+            "terms": "Я приймаю умови магазину",
+            "pay_btn": "Kupuję i płacę",
+            "secure_checkout": "SSL-зашифроване з'єднання"
+        },
+        "optimization": {
+            "timer": {
+                "text": "Термін дії вашої пропозиції закінчується через:"
+            },
+            "social_proof": {
+                "viewing": "{count} осіб переглядають цю пропозицію"
+            },
+            "savings": "Ви заощаджуєте"
+        },
+        "bump": {
+            "yes_btn": "ТАК, додати до мого замовлення",
+            "price_prefix": "лише за",
+            "description": "Одноразова пропозиція! Додайте набір готових робочих аркушів (PDF)."
+        }
+    },
+    "verify": {
+        "title": "Перевірка сертифіката",
+        "subtitle": "Введіть код перевірки сертифіката, щоб підтвердити його автентичність.",
+        "placeholder": "XXXX-XXXX-XXXX",
+        "success": {
+            "title": "Сертифікат підтверджено",
+            "desc": "Цей сертифікат є автентичним і був виданий нашою платформою.",
+            "user": "Учасник",
+            "course": "Курс",
+            "date": "Дата завершення",
+            "code": "Код",
+            "view": "Переглянути сертифікат"
+        },
+        "error": {
+            "title": "Сертифікат не знайдено",
+            "desc": "Ми не знайшли сертифікат із вказаним кодом. Будь ласка, перевірте правильність коду."
+        }
+    },
+    "errors": {
+        "404": {
+            "title": "404",
+            "message": "Сторінку не знайдено.",
+            "back": "Повернутися на головну сторінку"
+        }
+    },
+    "blog": {
+        "title": "Блог",
+        "subtitle": "Статті, поради та натхнення для вчителів англійської. Дізнайтеся, як викладати ефективніше та з більшою пристрастю.",
+        "empty": "Записів у блозі не знайдено.",
+        "readMore": "Читати далі",
+        "backToBlog": "Назад до блогу",
+        "share": "Поділитися:",
+        "notFound": "Не знайдено"
+    },
+    "common": {
+        "loading": "Завантаження...",
+        "success": "Дію успішно завершено."
+    },
+    "certificates": {
+        "title": "Сертифікат про завершення",
+        "subtitle": "Цим підтверджується, що",
+        "completedCourse": "завершив(ла) курс",
+        "completionDate": "Дата завершення:",
+        "verificationCode": "Код перевірки:",
+        "downloadPdf": "Завантажити PDF",
+        "share": "Поділитися",
+        "backToDashboard": "Назад до панелі",
+        "styleTitle": "Змінити стиль сертифіката",
+        "verifiedTitle": "Сертифікат підтверджено",
+        "verifiedDesc": "Цей сертифікат був виданий нашою платформою.",
+        "notFound": "Сертифікат не знайдено",
+        "copySuccess": "Посилання скопійовано в буфер обміну!"
+    },
+    "languages": {
+        "pl": "Polish",
+        "en": "English",
+        "uk": "Ukrainian",
+        "de": "German",
+        "es": "Spanish",
+        "fr": "French",
+        "it": "Italian",
+        "cs": "Czech",
+        "sk": "Slovak",
+        "ro": "Romanian",
+        "hu": "Hungarian",
+        "pt": "Portuguese",
+        "lt": "Lithuanian",
+        "lv": "Latvian",
+        "et": "Estonian",
+        "hr": "Croatian",
+        "sr": "Serbian",
+        "sl": "Slovenian",
+        "bg": "Bulgarian",
+        "el": "Greek",
+        "nl": "Dutch",
+        "sv": "Swedish",
+        "fi": "Finnish",
+        "no": "Norwegian",
+        "da": "Danish"
+    },
+    "fomo": {
+        "names": [
+            "Anna",
+            "Marek",
+            "Sara",
+            "Elena",
+            "Krzysztof",
+            "Joanna",
+            "Łukasz"
+        ],
+        "cities": [
+            "Warszawa",
+            "Kraków",
+            "Wrocław",
+            "Poznań",
+            "Gdańsk",
+            "Łódź",
+            "Katowice"
+        ],
+        "purchaseMessage": "{name} з {city}",
+        "productMessage": "Вже купив(ла) \"{product}\"",
+        "timeAgo": "{time} хв тому"
+    },
+    "exitIntent": {
+        "title": "ЗАЧЕКАЙТЕ!",
+        "subtitle": "Перш ніж ви підете...",
+        "header": "Отримайте безкоштовний \"Стартовий пакет\"",
+        "description": "Підпишіться на нашу розсилку та отримайте 50 безкоштовних карток!",
+        "cta": "Я хочу свій подарунок",
+        "noThanks": "Ні, дякую, я заплачу повну ціну пізніше"
+    },
+    "announcement": {
+        "launchOffer": "Спеціальна пропозиція: -20% з кодом \"START20\"",
+        "limitedTime": "Тільки зараз: перевірте наші нові пакети!"
+    },
+    "course": {
+        "yourProgress": "Ваш прогрес",
+        "noLessons": "Немає уроків.",
+        "quiz": "Тест",
+        "unlocksInDays": "Відкриється через {days} днів"
+    },
+    "dashboard": {
+        "wallet": {
+            "title": "Ваш Гаманець",
+            "subtitle": "Збирайте бали за активність та покупки.",
+            "available": "Доступні кошти",
+            "points": "бал",
+            "value": "Вартість у {currency}",
+            "spend": "Витратити бали в магазині",
+            "history": "Остання активність"
+        },
+        "awards": {
+            "title": "Ваш Зал Слави",
+            "subtitle": "Заробляйте значки за пройдені уроки та ігри!",
+            "mock": {
+                "start": "Quick Start",
+                "startDesc": "Completed first lesson",
+                "vocab": "Vocab Master",
+                "vocabDesc": "100% in quiz",
+                "steady": "Systematic",
+                "steadyDesc": "Logged in 7 days",
+                "polyglot": "Polyglot",
+                "polyglotDesc": "Passed A1 level"
+            }
+        },
+        "team": {
+            "title": "Мій Клас / Команда",
+            "subtitle": "Діліться матеріалами з учнями",
+            "create_class": "Створити новий клас",
+            "created_at": "Created: {date}",
+            "students_count": "{count} students",
+            "access_code": "Student access code",
+            "empty": {
+                "title": "New Class",
+                "desc": "Create a group for your students.",
+                "btn": "Start Setup"
+            },
+            "pro": {
+                "active": "Your PRO plan is active",
+                "unlock": "Unlock unlimited classes",
+                "desc": "Teacher PRO plan allows creating unlimited groups.",
+                "upgrade": "Upgrade to PRO",
+                "status": "Active"
+            }
+        },
+        "games": {
+            "title": "Освітні ігри",
+            "subtitle": "Interactive exercises for your students",
+            "play": "Play now",
+            "loading": "Loading game...",
+            "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
+            "fullscreen": "Full screen",
+            "report": "Report error"
+        }
     }
-  },
-  "auth": {
-    "logout": "Вийти",
-    "myCourses": "Мої Курси",
-    "studentPanel": "Панель Учня",
-    "roleAdmin": "Адміністратор",
-    "roleTeacher": "Вчитель",
-    "roleStudent": "Учень"
-  },
-  "cart": {
-    "empty": "Ваш кошик порожній",
-    "emptySub": "Додайте продукти, щоб продовжити покупки",
-    "browse": "Переглянути продукти",
-    "reserved": "Ваш кошик зарезервовано на:",
-    "header": "Кошик ({count})",
-    "remove": "Видалити",
-    "specialOffer": "СПЕЦІАЛЬНА ПРОПОЗИЦІЯ",
-    "orderBump": "Додати набір шаблонів листів (+29 €)",
-    "orderBumpDesc": "20 готових шаблонів для спілкування з батьками. Зекономте 70%!",
-    "summary": "Підсумок",
-    "couponPlaceholder": "Код знижки",
-    "apply": "Застосувати",
-    "couponHeader": "Купон:",
-    "products": "Продукти",
-    "discount": "Знижка",
-    "total": "Всього",
-    "checkout": "Оформити замовлення",
-    "secure": "Безпечна оплата",
-    "couponInvalid": "Недійсний код купона",
-    "couponInactive": "Цей купон більше не активний",
-    "couponExpired": "Термін дії цього купона закінчився",
-    "couponLimitReached": "Цей купон вичерпав ліміт використання",
-    "couponMinOrder": "Мінімальна сума замовлення: {minOrderValue} {currency}",
-    "couponAppliedPercent": "Знижку {percent}% застосовано!",
-    "couponAppliedFixed": "Знижку {amount} {currency} застосовано!",
-    "currencySymbol": "€"
-  },
-  "socialProof": {
-    "header": "Спільнота у Facebook",
-    "sub": "Будьте в курсі новин та приєднуйтесь до дискусії!",
-    "cta": "Перегляньте наш профіль, сповнений натхнення",
-    "madeWithLove": "Створено з любов'ю",
-    "polishQuality": "та польською якістю"
-  },
-  "newsletter": {
-    "header": "Будьте в курсі!",
-    "sub": "Підпишіться на нашу розсилку та отримуйте інформацію про нові матеріали, акції та ексклюзивні знижки.",
-    "placeholder": "Ваша електронна адреса",
-    "button": "Підписатися",
-    "success": "Дякуємо за підписку на розсилку!",
-    "privacy": "Ми поважаємо вашу конфіденційність. Ви можете відписатися в будь-який момент."
-  },
-  "checkout": {
-    "acceptTermsError": "Ви повинні прийняти умови та положення",
-    "successTitle": "Дякуємо за ваше замовлення!",
-    "successOrder": "Ваше замовлення №{orderNumber} отримано.",
-    "successEmail": "Ми надіслали деталі замовлення на вказану електронну адресу.",
-    "backToStore": "Назад до магазину",
-    "myCourses": "Мої курси",
-    "backToCart": "Назад до кошика",
-    "steps": {
-      "cart": "Кошик",
-      "payment": "Оплата",
-      "access": "Доступ"
-    },
-    "trust": {
-      "secure": "Безпечна оплата",
-      "ssl": "Шифрування SSL",
-      "instant": "Миттєвий доступ"
-    },
-    "header": "Оформлення замовлення",
-    "contactTitle": "Контактна інформація",
-    "email": "Email *",
-    "firstName": "Ім'я *",
-    "lastName": "Прізвище *",
-    "phone": "Телефон (необов'язково)",
-    "invoiceTitle": "Рахунок",
-    "wantInvoice": "Я хочу отримати рахунок-фактуру з ПДВ",
-    "nip": "ІПН / Код платника податку",
-    "nipError": "Введіть коректний податковий номер",
-    "lookup": "Отримати дані",
-    "lookupSuccess": "Дані компанії отримано!",
-    "nipNotFound": "Компанію не знайдено",
-    "nipSearchError": "Помилка під час пошуку. Будь ласка, спробуйте ще раз.",
-    "companyName": "Назва компанії",
-    "companyAddress": "Адреса компанії",
-    "addressPlaceholder": "Буде заповнено автоматично",
-    "paymentTitle": "Спосіб оплати",
-    "paymentMethods": {
-      "card": "Платіжна картка",
-      "cardSub": "Visa, Mastercard, American Express",
-      "blik": "BLIK",
-      "blikSub": "Швидка оплата кодом BLIK",
-      "transfer": "Банківський переказ",
-      "transferSub": "Традиційний банківський переказ"
-    },
-    "yourOrder": "Ваше замовлення",
-    "summaryProducts": "Продукти",
-    "summaryDiscount": "Знижка ({code})",
-    "summaryTotal": "Всього",
-    "terms": "Я приймаю умови магазину та політику конфіденційності",
-    "termsRequired": "Необхідно для завершення замовлення",
-    "processing": "Обробка...",
-    "pay": "Сплатити {total}",
-    "instantAccessInfo": "Після оплати матеріали доступні миттєво в кабінеті",
-    "socialProof": "+2 500 вчителів вже купили",
-    "toPayMobile": "До сплати",
-    "paymentFailed": "Платіж не вдався. Будь ласка, спробуйте ще раз.",
-    "paymentSystemError": "Помилка платіжної системи."
-  },
-  "contact": {
-    "title": "Зв'яжіться з нами",
-    "subtitle": "Маєте запитання щодо матеріалів? Потрібна допомога у виборі пакету? Напишіть нам або поспілкуйтеся з нашим ШІ-помічником. Ми тут для вас!",
-    "aiBadge": "Зазвичай ми відповідаємо протягом 2 годин",
-    "trustBadge": "Понад 12 000 задоволених вчителів",
-    "emailTitle": "Написати листа",
-    "emailDesc": "Наша пошта відкрита для вас 24/7.",
-    "phoneTitle": "Зателефонувати нам",
-    "phoneDesc": "Пн-Пт з 9:00 do 17:00 ми на зв'язку.",
-    "formTitle": "Контактна форма",
-    "addressTitle": "Головний офіс",
-    "addressValue": "Варшава, Польща",
-    "aiHelp": "Потрібна швидка відповідь?",
-    "aiHelpDesc": "Наш розумний помічник знає відповіді на більшість поширених запитань. Запитуйте про продукти, методи навчання або наявність матеріалів.",
-    "aiHelpMobile": "ШІ-помічник доступний у нижньому куті екрана.",
-    "form": {
-      "name": "Ім'я та Прізвище",
-      "email": "E-mail",
-      "subject": "Тема",
-      "message": "Ваше повідомлення",
-      "messagePlaceholder": "Чим ми можемо вам допомогти?",
-      "sending": "Надсилання...",
-      "send": "Надіслати повідомлення",
-      "success": "Повідомлення надіслано!",
-      "successDesc": "Дякуємо за звернення. Ми відповімо якнайшвидше.",
-      "placeholders": {
-        "name": "Іван Іванов",
-        "email": "contact@kamilaenglish.com",
-        "subject": "Запит щодо продукту...",
-        "message": "Опишіть, як ми можемо допомогти..."
-      }
-    },
-    "info": {
-      "emailValue": "contact@kamilaenglish.com",
-      "phoneValue": ""
-    },
-    "aiChat": {
-      "title": "ШІ Помічник",
-      "status": "В мережі та готовий допомогти",
-      "thinking": "Думаю...",
-      "inputPlaceholder": "Запитуйте...",
-      "dataInputPlaceholder": "Введіть ім'я та email...",
-      "welcome": "Привіт! Я ваш розумний помічник. Перш ніж ми почнемо, чи є ви вже нашим клієнтом?",
-      "options": {
-        "yes": "Так, я клієнт",
-        "no": "Ні, ще ні"
-      },
-      "responses": {
-        "clientYes": "Чудово! Чим я можу допомогти вам сьогодні?",
-        "clientNo": "Розумію. Я б із задоволенням допоміг вам ознайомитися з нашими матеріалами. Як вас звати та який ваш email, щоб я міг надіслати вам кілька безкоштовних зразків?",
-        "dataSaved": "Дякую! Я зберіг ваші дані. Тепер можете запитувати що завгодно.",
-        "fallback": "Вибачте, я не зовсім розумію. Могли б ви перефразувати? Ви можете запитати про ціни, доставку або методи навчання."
-      },
-      "knowledge": {
-        "price": "Наші PDF-матеріали коштують від 29 €. Річні пакети (Mega Pack) зараз на розпродажі за 149 €.",
-        "delivery": "Всі матеріали цифрові. Ви отримаєте посилання на завантаження одразу після оплати.",
-        "preschool": "У нас є чудовий розділ 'Англійська в садочку'. Я особливо рекомендую наш пакет '4 Пори Року'.",
-        "contact": "Ви можете написати нам на email або зателефонувати +380 44 123 4567 (Пн-Пт 9:00-17:00).",
-        "invoice": "Так, ми виставляємо рахунки-фактури з ПДВ. Ви можете вказати дані для рахунку в кошику.",
-        "methods": "Каміла Лобко-Козей просуває ігровий підхід (TPR, комунікативні ігри). Перегляньте наш блог, щоб дізнатися більше!"
-      }
-    }
-  },
-  "login": {
-    "title": "Ласкаво просимо назад!",
-    "desc": "Введіть свій email, щоб увійти в зону учня.",
-    "student": "Учень",
-    "teacher": "Вчитель",
-    "email": "Email",
-    "emailTeacher": "Робочий Email",
-    "password": "Пароль",
-    "loggingIn": "Вхід...",
-    "success": "Успішний вхід!",
-    "submit": "Увійти",
-    "successMessage": "Ви успішно увійшли! Перенаправлення...",
-    "errorDefault": "Неправильний email або пароль.",
-    "errorSystem": "Сталася помилка входу. Будь ласка, спробуйте ще раз.",
-    "emailRequired": "Email обов'язковий",
-    "emailInvalid": "Некоректний формат email",
-    "passwordRequired": "Пароль обов'язковий",
-    "passwordMin": "Пароль має містити мінімум 4 символи",
-    "forgotPassword": "Забули пароль?",
-    "magicLink": "Увійти за допомогою Magic Link",
-    "magicLinkDesc": "Ми надішлемо вам одноразове посилання для входу на вашу електронну адресу.",
-    "sendMagicLink": "Надіслати Magic Link",
-    "backToLogin": "Назад до входу",
-    "checkEmail": "Перевірте свою пошту",
-    "resetPassword": "Скинути пароль",
-    "magicLinkSent": "Посилання для входу надіслано на вашу електронну адресу.",
-    "emailCheckDesc": "Якщо акаунт із цією поштою існує, ми надіслали інструкції.",
-    "resetSuccess": "Ваш пароль успішно змінено."
-  },
-  "quickSale": {
-    "title": "ШВИДКА ОПЛАТА",
-    "demoProduct": {
-      "title": "Приклад Premium E-book",
-      "excerpt": "Це демонстраційний продукт. У повній версії дані будуть завантажені з бази даних."
-    },
-    "page": {
-      "guarantee": "30-денна гарантія задоволення",
-      "totalLabel": "Всього до сплати:",
-      "email_label": "Ваш e-mail",
-      "email_placeholder": "address@email.com",
-      "payment_method": "Спосіб оплати",
-      "payment_card": "Картка",
-      "blik_code": "Код BLIK",
-      "terms": "Я приймаю умови магазину",
-      "pay_btn": "Kupuję i płacę",
-      "secure_checkout": "SSL-зашифроване з'єднання"
-    },
-    "optimization": {
-      "timer": {
-        "text": "Термін дії вашої пропозиції закінчується через:"
-      },
-      "social_proof": {
-        "viewing": "{count} осіб переглядають цю пропозицію"
-      },
-      "savings": "Ви заощаджуєте"
-    },
-    "bump": {
-      "yes_btn": "ТАК, додати до мого замовлення",
-      "price_prefix": "лише за",
-      "description": "Одноразова пропозиція! Додайте набір готових робочих аркушів (PDF)."
-    }
-  },
-  "verify": {
-    "title": "Перевірка сертифіката",
-    "subtitle": "Введіть код перевірки сертифіката, щоб підтвердити його автентичність.",
-    "placeholder": "XXXX-XXXX-XXXX",
-    "success": {
-      "title": "Сертифікат підтверджено",
-      "desc": "Цей сертифікат є автентичним і був виданий нашою платформою.",
-      "user": "Учасник",
-      "course": "Курс",
-      "date": "Дата завершення",
-      "code": "Код",
-      "view": "Переглянути сертифікат"
-    },
-    "error": {
-      "title": "Сертифікат не знайдено",
-      "desc": "Ми не знайшли сертифікат із вказаним кодом. Будь ласка, перевірте правильність коду."
-    }
-  },
-  "errors": {
-    "404": {
-      "title": "404",
-      "message": "Сторінку не знайдено.",
-      "back": "Повернутися на головну сторінку"
-    }
-  },
-  "blog": {
-    "title": "Блог",
-    "subtitle": "Статті, поради та натхнення для вчителів англійської. Дізнайтеся, як викладати ефективніше та з більшою пристрастю.",
-    "empty": "Записів у блозі не знайдено.",
-    "readMore": "Читати далі",
-    "backToBlog": "Назад до блогу",
-    "share": "Поділитися:",
-    "notFound": "Не знайдено"
-  },
-  "common": {
-    "loading": "Завантаження..."
-  },
-  "certificates": {
-    "title": "Сертифікат про завершення",
-    "subtitle": "Цим підтверджується, що",
-    "completedCourse": "завершив(ла) курс",
-    "completionDate": "Дата завершення:",
-    "verificationCode": "Код перевірки:",
-    "downloadPdf": "Завантажити PDF",
-    "share": "Поділитися",
-    "backToDashboard": "Назад до панелі",
-    "styleTitle": "Змінити стиль сертифіката",
-    "verifiedTitle": "Сертифікат підтверджено",
-    "verifiedDesc": "Цей сертифікат був виданий нашою платформою.",
-    "notFound": "Сертифікат не знайдено",
-    "copySuccess": "Посилання скопійовано в буфер обміну!"
-  },
-  "languages": {
-    "pl": "Polish",
-    "en": "English",
-    "uk": "Ukrainian",
-    "de": "German",
-    "es": "Spanish",
-    "fr": "French",
-    "it": "Italian",
-    "cs": "Czech",
-    "sk": "Slovak",
-    "ro": "Romanian",
-    "hu": "Hungarian",
-    "pt": "Portuguese",
-    "lt": "Lithuanian",
-    "lv": "Latvian",
-    "et": "Estonian",
-    "hr": "Croatian",
-    "sr": "Serbian",
-    "sl": "Slovenian",
-    "bg": "Bulgarian",
-    "el": "Greek",
-    "nl": "Dutch",
-    "sv": "Swedish",
-    "fi": "Finnish",
-    "no": "Norwegian",
-    "da": "Danish"
-  },
-  "fomo": {
-    "names": [
-      "Anna",
-      "Marek",
-      "Sara",
-      "Elena",
-      "Krzysztof",
-      "Joanna",
-      "Łukasz"
-    ],
-    "cities": [
-      "Warszawa",
-      "Kraków",
-      "Wrocław",
-      "Poznań",
-      "Gdańsk",
-      "Łódź",
-      "Katowice"
-    ],
-    "purchaseMessage": "{name} з {city}",
-    "productMessage": "Вже купив(ла) \"{product}\"",
-    "timeAgo": "{time} хв тому"
-  },
-  "exitIntent": {
-    "title": "ЗАЧЕКАЙТЕ!",
-    "subtitle": "Перш ніж ви підете...",
-    "header": "Отримайте безкоштовний \"Стартовий пакет\"",
-    "description": "Підпишіться на нашу розсилку та отримайте 50 безкоштовних карток!",
-    "cta": "Я хочу свій подарунок",
-    "noThanks": "Ні, дякую, я заплачу повну ціну пізніше"
-  },
-  "announcement": {
-    "launchOffer": "Спеціальна пропозиція: -20% з кодом \"START20\"",
-    "limitedTime": "Тільки зараз: перевірте наші нові пакети!"
-  },
-  "course": {
-    "yourProgress": "Ваш прогрес",
-    "noLessons": "Немає уроків.",
-    "quiz": "Тест",
-    "unlocksInDays": "Відкриється через {days} днів"
-  },
-  "dashboard": {
-    "wallet": {
-      "title": "Ваш Гаманець",
-      "subtitle": "Збирайте бали за активність та покупки.",
-      "available": "Доступні кошти",
-      "points": "бал",
-      "value": "Вартість у {currency}",
-      "spend": "Витратити бали в магазині",
-      "history": "Остання активність"
-    },
-    "awards": {
-      "title": "Ваш Зал Слави",
-      "subtitle": "Заробляйте значки за пройдені уроки та ігри!",
-      "mock": {
-        "start": "Quick Start",
-        "startDesc": "Completed first lesson",
-        "vocab": "Vocab Master",
-        "vocabDesc": "100% in quiz",
-        "steady": "Systematic",
-        "steadyDesc": "Logged in 7 days",
-        "polyglot": "Polyglot",
-        "polyglotDesc": "Passed A1 level"
-      }
-    },
-    "team": {
-      "title": "Мій Клас / Команда",
-      "subtitle": "Діліться матеріалами з учнями",
-      "create_class": "Створити новий клас",
-      "created_at": "Created: {date}",
-      "students_count": "{count} students",
-      "access_code": "Student access code",
-      "empty": {
-        "title": "New Class",
-        "desc": "Create a group for your students.",
-        "btn": "Start Setup"
-      },
-      "pro": {
-        "active": "Your PRO plan is active",
-        "unlock": "Unlock unlimited classes",
-        "desc": "Teacher PRO plan allows creating unlimited groups.",
-        "upgrade": "Upgrade to PRO",
-        "status": "Active"
-      }
-    },
-    "games": {
-      "title": "Освітні ігри",
-      "subtitle": "Interactive exercises for your students",
-      "play": "Play now",
-      "loading": "Loading game...",
-      "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
-      "fullscreen": "Full screen",
-      "report": "Report error"
-    }
-  }
 }

@@ -1,1648 +1,1718 @@
 {
-  "adminSettings": {
-    "title": "Sistemos nustatymai",
-    "description": "Valdykite svetainės konfigūraciją, analitiką ir SEO",
-    "ai_providers": {
-      "title": "Aktyvus AI teikėjas",
-      "description": "Pasirinkite modelį turinio generavimui",
-      "api_key": "API raktas"
-    },
-    "tabs": {
-      "ai": "AI modeliai",
-      "marketing": "Marketingas ir analitika",
-      "seo": "SEO ir meta duomenys",
-      "economy": "Ekonomika ir piniginė",
-      "gamification": "Žaidybinimas ir ženkleliai",
-      "market": "Rinkos ir programų analizė",
-      "insights": "AI auditas ir pasiūlymai",
-      "channels": "Pardavimo kanalai",
-      "integrations": "Integracijos ir API",
-      "interactive": "Žaidimai ir interakcijos",
-      "workshop": "AI studija ir Canva",
-      "automation": "Agentai ir automatizavimas",
-      "emails": "El. pašto pranešimai",
-      "google": "Google Cloud",
-      "abandoned": "Palikti krepšeliai",
-      "guardian": "AI Guardian",
-      "affiliate": "Partnerių programa",
-      "pricing": "Kainos ir valiutos (PPP)",
-      "taxes": "Sąskaitos ir mokesčiai",
-      "growth_hacks": "Growth Hacks",
-      "ai_discovery": "AI Discovery (SEO)"
-    },
-    "sections": {
-      "shopping": "Pirkimai ir finansai",
-      "ai": "AI ir interakcijos",
-      "growth": "Augimas ir prekės ženklas",
-      "system": "Sistemos nustatymai"
-    },
-    "common": {
-      "save": "Išsaugoti pakeitimus",
-      "saved": "Išsaugota!",
-      "save_success": "Settings have been successfully saved.",
-      "subject": "Tema",
-      "content": "Turinys",
-      "enabled_desc": "Globalus sekimo scenarijų jungiklis"
-    },
-    "marketing": {
-      "ga4": "Google Analytics 4",
-      "ga4_placeholder": "G-XXXXXXXXXX",
-      "fb_pixel": "Facebook Pixel",
-      "fb_pixel_placeholder": "Pikselio ID",
-      "meta_verification": "Meta domeno patvirtinimas",
-      "meta_placeholder": "Patvirtinimo raktas",
-      "gsc": "Google Search Console",
-      "gsc_placeholder": "Google patvirtinimo raktas",
-      "enabled": "Įjungti sekimą"
-    },
-    "seo": {
-      "default_title": "Numatytasis puslapio pavadinimas",
-      "default_desc": "Numatytasis meta aprašymas",
-      "og_image": "Numatytasis bendrinimo vaizdas (OG Image)",
-      "site_name": "Svetainės pavadinimas",
-      "basic_title": "Pagrindinis SEO",
-      "basic_desc": "Paieškos sistemų matomumo nustatymai",
-      "canonical_url": "Canonical Base URL",
-      "canonical_desc": "The base URL used for canonical and alternate (hreflang) links.",
-      "ai_discovery_title": "AI Search Optimization",
-      "ai_discovery_desc": "Configure how AI agents (Gemini, Perplexity, GPT-4) discover and interpret your site.",
-      "ai_discovery_enabled": "Enable AI Crawler Hints",
-      "ai_discovery_enabled_desc": "Injects specialized meta-data for LLM-based search engines.",
-      "ai_summary": "AI Product Summary",
-      "ai_summary_placeholder": "What should AI agents know about your store?",
-      "ai_summary_desc": "This summary helps AI agents provide accurate answers about your services.",
-      "sitemap_regenerate": "Regenerate Multi-Locale Sitemap",
-      "growth_hacks_title": "Growth & Performance Hacks",
-      "growth_hacks_desc": "Advanced tools to increase conversion and track user behavior.",
-      "fomo_title": "FOMO Elements (Scarcity)",
-      "fomo_desc": "Show 'Limited Stock' and 'Recent Purchase' alerts.",
-      "trust_title": "Trust Badges",
-      "trust_desc": "Display security and guarantee badges on product pages.",
-      "ux_tracking": "UX Tracking (Heatmaps)",
-      "clarity_id": "Microsoft Clarity ID",
-      "hotjar_id": "Hotjar Site ID"
-    },
-    "economy": {
-      "title": "Taškų ir piniginės sistema",
-      "description": "Valdykite virtualią valiutą, prenumeratas ir klientų lojalumą",
-      "wallet": {
-        "title": "Virtuali piniginė",
-        "enable_wallet": "Įjungti vartotojo piniginę",
-        "allow_topup": "Leisti papildymus",
-        "recurring_topup": "Automatiniai periodiniai papildymai",
-        "conversion_rate": "Papildymo kursas (1 EUR = X taškų)",
-        "description": "Valdykite kliento virtualią piniginę"
-      },
-      "loyalty": {
-        "title": "Lojalumo taškai",
-        "enable_loyalty": "Įjungti taškų rinkimą",
-        "points_per_eur": "Taškai už kiekvieną išleistą 1 EUR",
-        "min_redeem": "Minimalus taškų kiekis naudojimui",
-        "description": "Taškai už aktyvumą ir pirkinius",
-        "protip": "Patarimas: Prenumeratoriai gali gauti 2x daugiau taškų, jei įjungsite daugiklį Žaidybinimo skiltyje."
-      },
-      "subscriptions": {
-        "title": "Prenumeratos",
-        "description": "Daugkartinės prieigos modelių valdymas",
-        "status_active": "AKTYVU",
-        "per_month": "/ mėn.",
-        "perks": {
-          "all_pdfs": "Visi PDF be apribojimų",
-          "free_topup": "Nemokamas piniginės papildymas ({amount} kiekvieną mėnesį)"
+    "adminSettings": {
+        "title": "Sistemos nustatymai",
+        "description": "Valdykite svetainės konfigūraciją, analitiką ir SEO",
+        "ai_providers": {
+            "title": "Aktyvus AI teikėjas",
+            "description": "Pasirinkite modelį turinio generavimui",
+            "api_key": "API raktas"
         },
-        "add_plan": "Pridėti naują planą"
-      }
-    },
-    "gamification": {
-      "title": "Žaidybinimas",
-      "description": "Motyvuokite mokinius lygiais ir ženkleliais",
-      "levels": {
-        "silver": "Sidabrinis lygis",
-        "gold": "Auksinis lygis",
-        "diamond": "Deimantinis VIP"
-      },
-      "perks": {
-        "discount": "Automatinė nuolaida (%)",
-        "auto_discount": "Taikoma automatiškai apmokėjimo metu",
-        "hidden_tier": "Tik rankinis priskyrimas"
-      },
-      "badges_title": "Studentų ženkleliai",
-      "badges": {
-        "early_bird": {
-          "name": "Anstyvasis paukštis",
-          "desc": "Pirkimas per 1 val. nuo paskelbimo"
+        "tabs": {
+            "ai": "AI modeliai",
+            "marketing": "Marketingas ir analitika",
+            "seo": "SEO ir meta duomenys",
+            "economy": "Ekonomika ir piniginė",
+            "gamification": "Žaidybinimas ir ženkleliai",
+            "market": "Rinkos ir programų analizė",
+            "insights": "AI auditas ir pasiūlymai",
+            "channels": "Pardavimo kanalai",
+            "integrations": "Integracijos ir API",
+            "interactive": "Žaidimai ir interakcijos",
+            "workshop": "AI studija ir Canva",
+            "automation": "Agentai ir automatizavimas",
+            "emails": "El. pašto pranešimai",
+            "google": "Google Cloud",
+            "abandoned": "Palikti krepšeliai",
+            "guardian": "AI Guardian",
+            "affiliate": "Partnerių programa",
+            "pricing": "Kainos ir valiutos (PPP)",
+            "taxes": "Sąskaitos ir mokesčiai",
+            "growth_hacks": "Growth Hacks",
+            "ai_discovery": "AI Discovery (SEO)"
         },
-        "collector": {
-          "name": "Kolekcionierius",
-          "desc": "Turi 50+ medžiagų"
+        "sections": {
+            "shopping": "Pirkimai ir finansai",
+            "ai": "AI ir interakcijos",
+            "growth": "Augimas ir prekės ženklas",
+            "system": "Sistemos nustatymai"
         },
-        "top_reviewer": {
-          "name": "Geriausias apžvalgininkas",
-          "desc": "10 patikimų apžvalgų"
+        "common": {
+            "save": "Išsaugoti pakeitimus",
+            "saved": "Išsaugota!",
+            "save_success": "Settings have been successfully saved.",
+            "subject": "Tema",
+            "content": "Turinys",
+            "enabled_desc": "Globalus sekimo scenarijų jungiklis",
+            "ux": {
+                "show": "Rodyti",
+                "hide": "Slėpti",
+                "copy": "Kopijuoti",
+                "copied": "Nukopijuota!",
+                "secure": "Užšifruota"
+            },
+            "preview": {
+                "title": "Preview and Acceptance",
+                "accept": "Accept changes",
+                "reject": "Reject",
+                "bulk_title": "Generated drafts review",
+                "apply_all": "Accept all ({count})",
+                "diff_before": "Before optimization",
+                "diff_after": "AI Suggestion"
+            }
+        },
+        "marketing": {
+            "ga4": "Google Analytics 4",
+            "ga4_placeholder": "G-XXXXXXXXXX",
+            "fb_pixel": "Facebook Pixel",
+            "fb_pixel_placeholder": "Pikselio ID",
+            "meta_verification": "Meta domeno patvirtinimas",
+            "meta_placeholder": "Patvirtinimo raktas",
+            "gsc": "Google Search Console",
+            "gsc_placeholder": "Google patvirtinimo raktas",
+            "enabled": "Įjungti sekimą"
+        },
+        "seo": {
+            "default_title": "Numatytasis puslapio pavadinimas",
+            "default_desc": "Numatytasis meta aprašymas",
+            "og_image": "Numatytasis bendrinimo vaizdas (OG Image)",
+            "site_name": "Svetainės pavadinimas",
+            "basic_title": "Pagrindinis SEO",
+            "basic_desc": "Paieškos sistemų matomumo nustatymai",
+            "canonical_url": "Canonical Base URL",
+            "canonical_desc": "The base URL used for canonical and alternate (hreflang) links.",
+            "ai_discovery_title": "AI Search Optimization",
+            "ai_discovery_desc": "Configure how AI agents (Gemini, Perplexity, GPT-4) discover and interpret your site.",
+            "ai_discovery_enabled": "Enable AI Crawler Hints",
+            "ai_discovery_enabled_desc": "Injects specialized meta-data for LLM-based search engines.",
+            "ai_summary": "AI Product Summary",
+            "ai_summary_placeholder": "What should AI agents know about your store?",
+            "ai_summary_desc": "This summary helps AI agents provide accurate answers about your services.",
+            "sitemap_regenerate": "Regenerate Multi-Locale Sitemap",
+            "growth_hacks_title": "Growth & Performance Hacks",
+            "growth_hacks_desc": "Advanced tools to increase conversion and track user behavior.",
+            "fomo_title": "FOMO Elements (Scarcity)",
+            "fomo_desc": "Show 'Limited Stock' and 'Recent Purchase' alerts.",
+            "trust_title": "Trust Badges",
+            "trust_desc": "Display security and guarantee badges on product pages.",
+            "ux_tracking": "UX Tracking (Heatmaps)",
+            "clarity_id": "Microsoft Clarity ID",
+            "hotjar_id": "Hotjar Site ID"
+        },
+        "economy": {
+            "title": "Taškų ir piniginės sistema",
+            "description": "Valdykite virtualią valiutą, prenumeratas ir klientų lojalumą",
+            "wallet": {
+                "title": "Virtuali piniginė",
+                "enable_wallet": "Įjungti vartotojo piniginę",
+                "allow_topup": "Leisti papildymus",
+                "recurring_topup": "Automatiniai periodiniai papildymai",
+                "conversion_rate": "Papildymo kursas (1 EUR = X taškų)",
+                "description": "Valdykite kliento virtualią piniginę"
+            },
+            "loyalty": {
+                "title": "Lojalumo taškai",
+                "enable_loyalty": "Įjungti taškų rinkimą",
+                "points_per_eur": "Taškai už kiekvieną išleistą 1 EUR",
+                "min_redeem": "Minimalus taškų kiekis naudojimui",
+                "description": "Taškai už aktyvumą ir pirkinius",
+                "protip": "Patarimas: Prenumeratoriai gali gauti 2x daugiau taškų, jei įjungsite daugiklį Žaidybinimo skiltyje."
+            },
+            "subscriptions": {
+                "title": "Prenumeratos",
+                "description": "Daugkartinės prieigos modelių valdymas",
+                "status_active": "AKTYVU",
+                "per_month": "/ mėn.",
+                "perks": {
+                    "all_pdfs": "Visi PDF be apribojimų",
+                    "free_topup": "Nemokamas piniginės papildymas ({amount} kiekvieną mėnesį)"
+                },
+                "add_plan": "Pridėti naują planą"
+            }
+        },
+        "gamification": {
+            "title": "Žaidybinimas",
+            "description": "Motyvuokite mokinius lygiais ir ženkleliais",
+            "levels": {
+                "silver": "Sidabrinis lygis",
+                "gold": "Auksinis lygis",
+                "diamond": "Deimantinis VIP"
+            },
+            "perks": {
+                "discount": "Automatinė nuolaida (%)",
+                "auto_discount": "Taikoma automatiškai apmokėjimo metu",
+                "hidden_tier": "Tik rankinis priskyrimas"
+            },
+            "badges_title": "Studentų ženkleliai",
+            "badges": {
+                "early_bird": {
+                    "name": "Anstyvasis paukštis",
+                    "desc": "Pirkimas per 1 val. nuo paskelbimo"
+                },
+                "collector": {
+                    "name": "Kolekcionierius",
+                    "desc": "Turi 50+ medžiagų"
+                },
+                "top_reviewer": {
+                    "name": "Geriausias apžvalgininkas",
+                    "desc": "10 patikimų apžvalgų"
+                }
+            }
+        },
+        "market": {
+            "title": "Rinkos ir programų analizė",
+            "description": "Stebėkite rinkos tendencijas ir švietimo reikalavimus",
+            "curriculum": {
+                "title": "Programos stebėjimas",
+                "description": "AI tikrina atitiktį galiojantiems reikalavimams (ŠMSM / Ofsted / kiti)",
+                "monitor_label": "Stebima programa",
+                "options": {
+                    "pl_mein": "Lenkija (MEiN)",
+                    "uk_ofsted": "JK (Ofsted)",
+                    "us_cc": "JAV (Common Core)"
+                },
+                "status": "Jūsų medžiagos atitiktis: 85%",
+                "alerts": "Aptiktas reikalavimų pasikeitimas 4-6 klasėms"
+            },
+            "trends": {
+                "title": "Tendencijų seklys",
+                "description": "Populiarūs produktai tokiose platformose kaip TPT jūsų kategorijose",
+                "top_selling": "Populiariausias formatas: „Interaktyvūs pabėgimo kambariai“",
+                "competitor_bestsellers": "Konkurentų geriausiai parduodami",
+                "recommendation": "Pasiūlymas: Sukurkite „Velykų pabėgimo kambario“ rinkinį (didelė paklausa)",
+                "ai_rec": "AI rekomendacija"
+            }
+        },
+        "insights": {
+            "title": "AI auditas ir pasiūlymai",
+            "description": "Jūsų išteklių analizė ir plėtros idėjos",
+            "sync": {
+                "title": "Sinchronizavimo registras",
+                "description": "Žaidimų ir medžiagos importo iš išorinių platformų būsena",
+                "last_sync": "Paskutinis sėkmingas sinchronizavimas: prieš 15 min.",
+                "pending_drafts": "{count} nauji juodraščiai peržiūrai"
+            },
+            "expansion": {
+                "title": "Medžiagų gamykla (pasiūlymai)",
+                "description": "Idėjos esamų produktų plėtrai mažomis sąnaudomis",
+                "item1": "Produktas „Unit 1“ gali būti papildytas 20 kortelių (AI sugeneruos jas automatiškai)",
+                "item2": "Sukurkite „Mega paketą“ iš 3 populiariausių scenarijų (Potencialas: +25% marža)"
+            },
+            "audit": {
+                "title": "Konversijos auditas",
+                "description": "AI analizuoja jūsų produktų aprašymus ir nuotraukas",
+                "suggestion": "Pakeiskite pagrindinę nuotrauką „Flashcards Animals“ – dabartinė turi mažą CTR"
+            }
+        },
+        "integrations": {
+            "title": "Integracijos",
+            "description": "Jungtys su išorinėmis sistemomis",
+            "webhooks": {
+                "title": "Webhooks",
+                "description": "Siųsti užsakymų pranešimus į išorines sistemas",
+                "add": "Pridėti Webhook",
+                "url": "Tikslinis URL",
+                "event": "Įvykis",
+                "events": {
+                    "order_created": "Užsakymas sukurtas",
+                    "order_paid": "Užsakymas apmokėtas",
+                    "user_registered": "Vartotojas užsiregistravo"
+                }
+            },
+            "mcp": {
+                "title": "MCP Connectors",
+                "description": "Connect external models and knowledge bases via MCP protocol",
+                "server": "MCP Server Address",
+                "status": "Connection status"
+            },
+            "api": {
+                "title": "External API Keys",
+                "description": "Integrations with CRM, Mailing, and other systems",
+                "service": "Service (e.g., MailerLite, Zapier)",
+                "key": "API Key / Token",
+                "coming_soon": "Integration with MailerLite, ActiveCampaign and Zapier is being implemented.",
+                "coming_soon_desc": "You can already save keys in the Webhooks section for testing."
+            }
+        },
+        "interactive": {
+            "title": "Internetinių žaidimų integracija",
+            "description": "Prijunkite „Wordwall“, „Genially“ ir kitas platformas prie savo parduotuvės",
+            "auto_import": "Automatiškai sukurti produktą pridėjus žaidimą platformoje",
+            "auto_import_desc": "Sistema automatiškai aptiks įterpimo kodus (Embed) kuriant produktą.",
+            "sync_status": "Paskutinis žaidimų sinchronizavimas",
+            "sync_hint": "Siūlome produktų redagavimo skydelyje įklijuoti tiesiogines nuorodas į žaidimus. Sistema automatiškai pavers jas interaktyviu langu studentui.",
+            "other_title": "Kitos integracijos",
+            "platforms": {
+                "wordwall": "Wordwall API raktas",
+                "wordwall_placeholder": "pvz. kamila-lo-ko",
+                "genially": "Genially API raktas",
+                "genially_placeholder": "pvz. https://view.genial.ly/profile/nick",
+                "sync_title": "„Wordwall“ ir „Genially“ sinchronizavimas",
+                "h5p_desc": "Įterpti lokaliai",
+                "learningapps_desc": "Per iFrame",
+                "quizizz_desc": "API sinchronizavimas"
+            }
+        },
+        "workshop": {
+            "title": "AI studija (RAG variklis)",
+            "description": "Generuokite išvestinę medžiagą pagal savo žinių bazę",
+            "generate_btn": "Generuoti medžiagą",
+            "status_ready": "Pasiruošta generavimui",
+            "rag_sources": {
+                "title": "Žinių šaltiniai (RAG)",
+                "description": "Pasirinkite savo AI žinių bazę",
+                "main_label": "Pagrindinis šaltinis (RAG)",
+                "notebook_lm": "Nuoroda į „NotebookLM“ / žinių bazę",
+                "options": {
+                    "google_drive": "„Google Drive“ (Aplankas: Edu-Materials)",
+                    "notebook_lm": "„NotebookLM“ jungtis",
+                    "local": "Vietinė vektorių duomenų bazė"
+                }
+            },
+            "generators": {
+                "title": "Medžiagų generatorius",
+                "reading": "Skaitymas (tekstas + klausimai)",
+                "listening": "Klausymas (scenarijus + AI garsas)",
+                "speaking": "Kalbėjimo kortelės",
+                "vocabulary": "Žodyno pratimai",
+                "flashcards": "Mokomosios kortelės (CSV/Anki)",
+                "tests": "Testų generatorius",
+                "worksheets": "PDF darbo lapai",
+                "ai_quiz": "AI viktorinos kūrėjas"
+            },
+            "canva": {
+                "title": "Canva jungtis",
+                "description": "Eksportuokite sugeneruotą turinį tiesiai į Canva projektus",
+                "api_key": "Canva dizaino raktas",
+                "auto_export": "Automatinis eksportas",
+                "connect": "Prisijungti prie Canva"
+            },
+            "title_prefix": "AI Creative",
+            "title_suffix": "Studio",
+            "badge": "Next-Gen",
+            "powered_by": "Powered by OpenAI & HeyGen",
+            "available_credits": "Available Credits",
+            "generations_today": "Generations Today",
+            "studio": "Studio",
+            "history": "History",
+            "studios": {
+                "images": "Image Studio",
+                "video": "Video Studio",
+                "avatars": "Avatar Studio",
+                "social": "Social Hub",
+                "flashcards": "Flashcards",
+                "canva": "Canva Studio"
+            },
+            "actions": {
+                "reuse": "Reuse Prompt",
+                "generate": "Generate Asset",
+                "processing": "Processing...",
+                "attach": "Attach",
+                "change_product": "Change Product",
+                "connect": "Connect to Product"
+            },
+            "labels": {
+                "persona": "Select AI Persona",
+                "script": "Script",
+                "prompt": "Creative Prompt",
+                "preview": "Preview",
+                "history_empty": "Your canvas awaits.",
+                "connect_desc": "Link this AI asset to your store inventory.",
+                "professional_suite": "Professional Creative Suite"
+            },
+            "social_hub": {
+                "title": "Social Media Hub",
+                "subtitle": "Post Generator & Optimization",
+                "platforms": {
+                    "instagram": "Instagram",
+                    "facebook": "Facebook",
+                    "linkedin": "LinkedIn",
+                    "youtube": "YouTube"
+                },
+                "labels": {
+                    "select_product": "Select Product to Promote",
+                    "pick_placeholder": "Pick from Product Library...",
+                    "campaign_context": "Campaign Context / Prompt",
+                    "prompt_placeholder": "What are we promoting today? (e.g., 'New Flashcard Set for Christmas')",
+                    "ai_copy": "AI Generated Copy",
+                    "thinking": "Thinking...",
+                    "regenerate": "Regenerate Copy",
+                    "copy_placeholder": "AI will generate your post content here...",
+                    "media_asset": "Media Asset",
+                    "auto_selected": "Auto-Selected",
+                    "select_asset": "Select Asset",
+                    "from_gallery": "From Product Gallery",
+                    "viral_growth": "Viral Growth",
+                    "score": "Score",
+                    "ai_expectancy": "AI expects {percent}% higher engagement on {platform}.",
+                    "live_mockup": "Live Mockup Preview",
+                    "mockup_placeholder": "Your mockup copy will appear here...",
+                    "export": "Export to Socials"
+                }
+            },
+            "flashcards": {
+                "title": "AI Flashcard Studio",
+                "subtitle": "Transform topics into beautiful, ready-to-print flashcard sets.",
+                "badge": "Smart Learning",
+                "branding_kit": "Branding Kit",
+                "export_canva": "Export to Canva",
+                "smart_generator": "Smart Generator",
+                "topic_label": "Topic or Context",
+                "topic_placeholder": "e.g. Life Cycle of a Frog",
+                "style_label": "Visual Style",
+                "styles": {
+                    "academic": "Academic",
+                    "playful": "Playful",
+                    "minimal": "Minimal",
+                    "canva_ai": "Canva AI"
+                },
+                "generate_btn": "Generate Deck",
+                "generating": "Generating...",
+                "live_preview": "Live Preview",
+                "cards_prepared": "{count} Cards Prepared",
+                "empty": "No cards generated yet",
+                "add_custom": "Add Custom Card"
+            }
+        },
+        "automation": {
+            "title": "AI agentų jungtys",
+            "description": "Prijunkite tokius agentus kaip „Manus AI“, „GPT-4o“ su naršykle arba „Playwright/Selenium“ užklausas",
+            "agent_delivered": "Agentas pateikė {count} naujus juodraščius!",
+            "agents": {
+                "title": "Galimi naršykliniai agentai",
+                "select_placeholder": "Pasirinkite automatizavimo agentą",
+                "manus": "„Manus AI“ jungtis",
+                "general": "Pasirinktinis naršyklės agentas (Webhook)",
+                "status_idle": "Agentas paruoštas užduotims",
+                "btn_send": "Siųsti agentą nuorodų"
+            },
+            "receiver": {
+                "title": "Imtuvo adresas (Endpoint)",
+                "description": "Įveskite šį URL į „Manus AI“, kad agentas galėtų rasti nuorodas tiesiai į jūsų juodraščius",
+                "simulate_test": "(Simuliuoti agento atvykimą / Testuoti Webhook)",
+                "simulate_btn": "Simuliuoti agentą"
+            },
+            "scrapers": {
+                "title": "Agento užduotys",
+                "card_title": "Naršyklės darbai",
+                "options": {
+                    "wordwall": "Wordwall Scraper",
+                    "genially": "Genially Scraper",
+                    "learningapps": "LearningApps Scraper"
+                },
+                "item1": "Rasti Embed nuorodas į žaidimus mano Genially profilyje",
+                "item2": "Patikrinti naujų Canva šablonų prieinamumą",
+                "item3": "Atsisiųsti bendrinimo kodus iš Wordwall"
+            },
+            "chat": {
+                "title": "AI agentų pokalbis",
+                "subtitle": "Tiesioginis bendravimas su naršyklės agentu",
+                "placeholder": "Kur man šiandien ieškoti?",
+                "capabilities": "Dabartinės galimybės: Genially, Wordwall, Canva",
+                "welcome": "Sveiki! Esu pasiruošęs dirbti. Galite priskirti man užduotis savo paskyrose (Wordwall, Canva, Genially). Ką turėčiau daryti?"
+            }
+        },
+        "emails": {
+            "title": "System Message Templates",
+            "description": "Manage content of messages sent automatically to customers",
+            "save": "Išsaugoti šablonus",
+            "templates": {
+                "welcome": {
+                    "title": "Sveikinimas po registracijos",
+                    "subject": "Sveiki atvykę į bendruomenę!",
+                    "content": "Džiaugiamės, kad esate su mumis. Jūsų prisijungimo duomenys yra..."
+                },
+                "order_confirmed": {
+                    "title": "Užsakymo patvirtinimas",
+                    "subject": "Jūsų užsakymas #{orderNumber} gautas",
+                    "content": "Dėkojame už pirkinį! Jūsų medžiaga dabar pasiekiama skydelyje."
+                },
+                "login_details": {
+                    "title": "Prieigos duomenys (po pirkimo)",
+                    "subject": "Jūsų kurso prieigos duomenys",
+                    "content": "Štai jūsų prisijungimo duomenys: El. paštas: {email}, Slaptažodis: {password}"
+                }
+            },
+            "smtp": {
+                "title": "SMTP Configuration / Provider",
+                "description": "Mail server settings for system emails",
+                "enable_system": "Enable System Sending",
+                "enable_desc": "Use configured SMTP server",
+                "host": "SMTP Host",
+                "port": "Port"
+            },
+            "variables": "Available variables: {orderNumber}, {email}, {password}, {firstName}, {total}"
+        },
+        "google": {
+            "title": "Integracija su Google Cloud",
+            "description": "Prijunkite Google Drive, kad galėtumėte importuoti medžiagą tiesiai į parduotuvę",
+            "auth": {
+                "title": "Google autorizacija",
+                "connect": "Prijungti Google Drive",
+                "disconnect": "Atjungti paskyrą",
+                "status_connected": "Prijungta prie: {email}",
+                "status_disconnected": "No active connection",
+                "drive_description": "Connect the 'Edu-Materials' folder from your Google Drive"
+            },
+            "drive": {
+                "title": "„Google Drive“ naršyklė",
+                "import_selected": "Importuoti pasirinktus failus",
+                "refresh": "Atnaujinti sąrašą",
+                "no_files": "Jūsų diske nerasta jokių PDF/ZIP failų",
+                "import_success": "Failai sėkmingai importuoti kaip medžiaga",
+                "column_name": "Failo pavadinimas",
+                "column_size": "Dydis",
+                "column_action": "Veiksmas",
+                "description": "Naršykite PDF ir ZIP failus, paruoštus importui",
+                "button": "Atsisiųsti iš „Google Drive“",
+                "connecting": "Jungiamasi...",
+                "picker_title": "Pasirinkite failus iš „Google Drive“",
+                "import_count": "Importuoti pasirinktus ({count})",
+                "toast_success": "Importuota {count} failų iš „Google Drive“"
+            },
+            "config": {
+                "client_id": "Google Client ID",
+                "client_secret": "Google Client Secret",
+                "redirect_uri": "Redirect URI"
+            }
+        },
+        "abandoned": {
+            "title": "Cart Recovery",
+            "description": "Automatic reminders for customers who haven't finished their purchase",
+            "delay": "First email delay (hours)",
+            "discount_code": "Discount code in email (optional)",
+            "enable_auto": "Enable automatic recovery",
+            "stats": {
+                "total_recovered": "Recovered revenue",
+                "pending_carts": "Pending carts"
+            }
+        },
+        "guardian": {
+            "title": "AI saugumas ir techninis globėjas",
+            "description": "Išmanioji sistema, stebinti klaidas, teisę ir našumą",
+            "legal_check": "Teisinių pokyčių stebėjimas (ES el. prekyba)",
+            "tech_check": "Techninių klaidų stebėjimas realiu laiku",
+            "security_check": "Neteisėtos prieigos bandymų analizė",
+            "alerts": "Kritinių problemų įspėjimai",
+            "status_good": "Sistema veikia sklandžiai",
+            "status_warning": "Aptiktas potencialus teinis neatitikimas",
+            "last_scan": "Paskutinis pilnas sistemos nuskaitymas"
+        },
+        "affiliate": {
+            "title": "Referral & Affiliate System",
+            "description": "Turn your customers into brand ambassadors",
+            "commission": "Partner commission (%)",
+            "discount": "Referral discount (%)",
+            "cookie_life": "Cookie life (days)",
+            "referral_links": "Generate referral links",
+            "total_partners": "Active partners",
+            "payouts": "Pending payouts"
+        },
+        "pricing": {
+            "title": "Perkamosios galios paritetas (PPP)",
+            "description": "Automatinis kainų pritaikymas prie perkamosios galios 19 šalių",
+            "enable_ppp": "Įjungti išmanųjį regioninį kainų nustatymą",
+            "base_currency": "Bazinė valiuta",
+            "regions": {
+                "western": "Vakarų Europa (100% kainos)",
+                "central": "Vidurio Europa (85% kainos)",
+                "eastern": "Rytų Europa (70% kainos)",
+                "balkans": "Balkanai (60% kainos)"
+            },
+            "recurring_title": "Subscriptions & Recurring Payments",
+            "recurring_visa_title": "Visa Recurring Payments",
+            "recurring_visa_desc": "Enable automatic card charging for subscription products. Supported via Stripe Billing and PayNow Recurring.",
+            "recurring_frequency": "Standard Frequency",
+            "recurring_monthly": "30 DAYS / MONTHLY",
+            "recurring_grace_period": "Grace Period / Retry",
+            "recurring_retry": "3 DAYS RETRY",
+            "paynow_title": "PayNow Integration",
+            "paynow_access_key": "Access Key",
+            "paynow_signature_key": "Signature Key",
+            "blik_title": "BLIK Support Enabled",
+            "blik_desc": "PayNow allows users to pay with BLIK codes directly on your checkout page."
+        },
+        "taxes": {
+            "title": "Tax & Invoice Handling",
+            "description": "Manage VAT rates and automatic EU invoice issuance",
+            "eu_vat_moss": "Enable VAT-MOSS / OSS system",
+            "invoice_provider": "Invoice provider (e.g., Fakturownia, InFakt)",
+            "infakt_api_key": "InFakt API Key",
+            "test_connection": "Test API connection",
+            "stripe_title": "Stripe Payments",
+            "stripe_publishable": "Stripe Publishable Key",
+            "stripe_secret": "Stripe Secret Key"
+        },
+        "editor": {
+            "placeholder": "Start typing...",
+            "prompts": {
+                "link": "Enter URL:",
+                "image": "Enter image URL:"
+            },
+            "toolbar": {
+                "bold": "Bold",
+                "italic": "Italic",
+                "h2": "Heading 2",
+                "h3": "Heading 3",
+                "list": "Unordered List",
+                "listOrdered": "Ordered List",
+                "link": "Insert Link",
+                "image": "Insert Image",
+                "quote": "Quote",
+                "code": "Code Block"
+            }
         }
-      }
     },
-    "market": {
-      "title": "Rinkos ir programų analizė",
-      "description": "Stebėkite rinkos tendencijas ir švietimo reikalavimus",
-      "curriculum": {
-        "title": "Programos stebėjimas",
-        "description": "AI tikrina atitiktį galiojantiems reikalavimams (ŠMSM / Ofsted / kiti)",
-        "monitor_label": "Stebima programa",
-        "options": {
-          "pl_mein": "Lenkija (MEiN)",
-          "uk_ofsted": "JK (Ofsted)",
-          "us_cc": "JAV (Common Core)"
+    "adminPanel": {
+        "sidebar": {
+            "title": "AdminPanel",
+            "subtitle": "Kūrybinė studija",
+            "expand": "Išskleisti",
+            "collapse": "Suskleisti",
+            "logout": "Atsijungti",
+            "logoutTooltip": "Išeiti iš sesijos",
+            "menu": {
+                "dashboard": "Valdymas",
+                "products": "Produktai",
+                "orders": "Užsakymai",
+                "coupons": "Coupons",
+                "materials": "Medžiagos",
+                "blog": "Tinklaraštis",
+                "import": "Import AI",
+                "settings": "Nustatymai",
+                "chat": "AI Chat",
+                "home": "Pradinis",
+                "role": "Administratorius",
+                "online": "Prisijungęs",
+                "abandoned": "Abandoned Carts",
+                "offers": "Offer Generator",
+                "workshop": "AI Creative Suite",
+                "landing_builder": "Landing Pages"
+            }
         },
-        "status": "Jūsų medžiagos atitiktis: 85%",
-        "alerts": "Aptiktas reikalavimų pasikeitimas 4-6 klasėms"
-      },
-      "trends": {
-        "title": "Tendencijų seklys",
-        "description": "Populiarūs produktai tokiose platformose kaip TPT jūsų kategorijose",
-        "top_selling": "Populiariausias formatas: „Interaktyvūs pabėgimo kambariai“",
-        "competitor_bestsellers": "Konkurentų geriausiai parduodami",
-        "recommendation": "Pasiūlymas: Sukurkite „Velykų pabėgimo kambario“ rinkinį (didelė paklausa)",
-        "ai_rec": "AI rekomendacija"
-      }
-    },
-    "insights": {
-      "title": "AI auditas ir pasiūlymai",
-      "description": "Jūsų išteklių analizė ir plėtros idėjos",
-      "sync": {
-        "title": "Sinchronizavimo registras",
-        "description": "Žaidimų ir medžiagos importo iš išorinių platformų būsena",
-        "last_sync": "Paskutinis sėkmingas sinchronizavimas: prieš 15 min.",
-        "pending_drafts": "{count} nauji juodraščiai peržiūrai"
-      },
-      "expansion": {
-        "title": "Medžiagų gamykla (pasiūlymai)",
-        "description": "Idėjos esamų produktų plėtrai mažomis sąnaudomis",
-        "item1": "Produktas „Unit 1“ gali būti papildytas 20 kortelių (AI sugeneruos jas automatiškai)",
-        "item2": "Sukurkite „Mega paketą“ iš 3 populiariausių scenarijų (Potencialas: +25% marža)"
-      },
-      "audit": {
-        "title": "Konversijos auditas",
-        "description": "AI analizuoja jūsų produktų aprašymus ir nuotraukas",
-        "suggestion": "Pakeiskite pagrindinę nuotrauką „Flashcards Animals“ – dabartinė turi mažą CTR"
-      }
-    },
-    "integrations": {
-      "title": "Integracijos",
-      "description": "Jungtys su išorinėmis sistemomis",
-      "webhooks": {
-        "title": "Webhooks",
-        "description": "Siųsti užsakymų pranešimus į išorines sistemas",
-        "add": "Pridėti Webhook",
-        "url": "Tikslinis URL",
-        "event": "Įvykis",
-        "events": {
-          "order_created": "Užsakymas sukurtas",
-          "order_paid": "Užsakymas apmokėtas",
-          "user_registered": "Vartotojas užsiregistravo"
+        "dashboard": {
+            "title": "Prietaisų skydelis",
+            "subtitle": "Pardavimų apžvalga ir analizė",
+            "periods": {
+                "7days": "Paskutinės 7 dienos",
+                "30days": "Paskutinės 30 dienų",
+                "90days": "Paskutinės 90 dienų",
+                "all": "Visas laikotarpis"
+            },
+            "addProduct": "Add product",
+            "currency": "$",
+            "stats": {
+                "revenue": "Pajamos",
+                "orders": "Užsakymai",
+                "customers": "Klientai",
+                "avgOrderValue": "Vid. užsakymo vertė",
+                "vsPrevious": "palyginti su ankstesniu laikotarpiu",
+                "inSelectedPeriod": "Pasirinktu laikotarpiu",
+                "uniqueCustomers": "Unikalūs pirkėjai",
+                "perOrder": "Už užsakymą"
+            },
+            "charts": {
+                "weeklyRevenue": "Savaitės pajamos",
+                "revenueByDay": "Pardavimai atskiromis dienomis",
+                "bestsellersRanking": "Geriausiai parduodamų prekių reitingas",
+                "topSellingProducts": "Geriausiai parduodami produktai",
+                "noSalesData": "Nėra pardavimų duomenų",
+                "sold": "Parduota {count}",
+                "days": {
+                    "mon": "Pr",
+                    "tue": "An",
+                    "wed": "Tr",
+                    "thu": "Kt",
+                    "fri": "Pn",
+                    "sat": "Še",
+                    "sun": "Se"
+                }
+            },
+            "recentOrders": {
+                "title": "Naujausi užsakymai",
+                "subtitle": "Naujausios transakcijos",
+                "viewAll": "Peržiūrėti visus",
+                "noOrders": "Kol kas nėra užsakymų",
+                "productCount": "{count} produktai",
+                "status": {
+                    "completed": "Užbaigta",
+                    "pending": "Laukia",
+                    "processing": "Apdorojama",
+                    "cancelled": "Atšaukta",
+                    "refunded": "Grąžinta"
+                }
+            },
+            "aiInsights": {
+                "card": {
+                    "monitoring": "Active Market Monitoring",
+                    "strategyTitle": "Your growth strategy for {period}",
+                    "periodWeek": "next week",
+                    "periodMonth": "this month",
+                    "description": "We analyzed your last {count} orders. We have 3 specific recommendations that could increase your revenue by approx. 18%.",
+                    "generateBtn": "Generate Strategic Report"
+                },
+                "modal": {
+                    "title": "AI Growth Report",
+                    "subtitle": "Generated for: Administrator • Feb 2024",
+                    "revenueChance": "Revenue Chance",
+                    "revenueGrowth": "Possible growth in 14 days",
+                    "crossSellScore": "Cross-sell Score",
+                    "crossSellDesc": "High linking potential",
+                    "retentionProj": "Retention Proj.",
+                    "retentionDesc": "Loyal returning customers",
+                    "recommendedActions": "Recommended Actions",
+                    "action1Title": "Email: Abandoned Cart (New template)",
+                    "action1Desc": "Customers are abandoning carts for \"Preschool - Autumn Pack\". We suggest adding a 48h timer and 5% discount.",
+                    "action2Title": "Bundle: Preschool Combo Pack",
+                    "action2Desc": "Combine 3 most popular products into one bundle. Suggested price: $59.99.",
+                    "deploy": "Deploy",
+                    "create": "Create",
+                    "skip": "Skip report",
+                    "apply": "Apply Recommendations",
+                    "success": "Strategic report has been saved and sent for analysis."
+                },
+                "overlay": {
+                    "title": "Processing Big Data...",
+                    "subtitle": "\"Analyzing correlations between products and buying behaviors of your customers.\"",
+                    "step1": "Clustering users...",
+                    "step3": "Generating visualizations..."
+                },
+                "wordwallSync": {
+                    "title": "Smart Interactive Sync",
+                    "description": "Paste links to your resources (Wordwall, Genially, Canva, YouTube, Google Slides, Quizizz, NotebookLM, Vocaroo) to add them as products.",
+                    "placeholder": "https://wordwall.net/...\nhttps://view.genial.ly/...\nhttps://canva.com/design/...\nhttps://youtube.com/watch?v=...\nhttps://quizizz.com/...",
+                    "syncBtn": "Start Sync",
+                    "syncing": "Syncing...",
+                    "success": "Successfully imported {count} new games!",
+                    "noNew": "All provided links have already been imported.",
+                    "invalid": "No valid educational links (Wordwall/Genially/Canva/YouTube/Slides/etc) detected.",
+                    "close": "Close"
+                }
+            },
+            "interactivePreview": {
+                "subtitle": "Live preview of interactive material",
+                "noPreview": "No preview available for this asset",
+                "close": "Close"
+            },
+            "activeAiLogs": {
+                "title": "Active AI Logs",
+                "live": "Live",
+                "imageGenerated": "Image Generated",
+                "socialPostReady": "Social Post Ready",
+                "flashcardCreated": "Flashcard Created",
+                "trendIdentified": "Trend identified",
+                "seoOptimized": "SEO Optimized",
+                "imagePolished": "Image Polished"
+            },
+            "studioQuickAccess": {
+                "title": "Studio Quick Access",
+                "imageStudio": "Image Studio",
+                "generate4k": "Generate 4K Visuals",
+                "socialHub": "Social Hub",
+                "viralCreation": "Viral Post Creation"
+            },
+            "salesHub": {
+                "title": "Sales Hub",
+                "subtitle": "Real-time Performance Insights",
+                "totalRevenue": "Bendros pajamos",
+                "avgOrderValue": "Vidutinė užsakymo vertė",
+                "conversionRate": "Konversijos rodiklis",
+                "abandonedCarts": "Apleisti krepšeliai",
+                "upsellPerformance": "Upsell Performance",
+                "upsellDesc": "Post-purchase offers converted {percent}% of users",
+                "ltvLift": "LTV Lift"
+            },
+            "superAdmin": {
+                "title": "SuperAdmin: Deployment Management",
+                "subtitle": "Global Feature Toggles for new B2B modules",
+                "apiViewer": {
+                    "title": "External API Portal",
+                    "desc": "1-Click portal generator for schools (Phase 12).",
+                    "on": "Global ON",
+                    "off": "Paused",
+                    "earlyAccess": "Early Access List (Gold List)",
+                    "added": "Added {email} to early access"
+                },
+                "internalFeatures": {
+                    "title": "Internal Features & Shop Security",
+                    "desc": "Control the visibility of core modules in your B2C shop. Separately decide if these features are technically solid and should be allowed in B2B External Portals.",
+                    "ownShop": "Own Shop (B2C)",
+                    "externalExport": "External Export (B2B)",
+                    "games": "Interactive Games",
+                    "gamesDesc": "Arcade Room",
+                    "gamification": "Gamification",
+                    "gamificationDesc": "Badges, progress",
+                    "wallet": "Teacher Wallet",
+                    "walletDesc": "Points program"
+                },
+                "extensions": {
+                    "title": "B2B Extensions",
+                    "desc": "Marketplace for AI tokens and services (Phase 13)."
+                },
+                "futureCatalog": {
+                    "title": "Future B2B Module Catalog",
+                    "subtitle": "In development",
+                    "desc": "Features already existing in the mother shop, ready for future packaging and sharing with schools/teachers as paid SaaS Plugins.",
+                    "gamesApi": "Interactive Games (API)",
+                    "gamesApiDesc": "Allow schools to embed Arcade Room and board games directly on their own sites.",
+                    "gamificationEngine": "Gamification Engine",
+                    "gamificationEngineDesc": "Badges, Certificates, Proficiency Tree and Streaks sold as a motivative B2B addon.",
+                    "telemetry": "Clean Summaries",
+                    "telemetryDesc": "Simple, student-friendly summaries of completed modules exported to e-registers.",
+                    "affiliate": "B2B Affiliate Program",
+                    "affiliateDesc": "Schools dropship your courses under their own brand and share with students easily.",
+                    "ready": "Ready for deployment",
+                    "requiresPhase9": "Requires Phase 9"
+                }
+            }
+        },
+        "products": {
+            "title": "Products",
+            "subtitle": "Manage your digital products",
+            "search": "Search products...",
+            "importAi": "Import AI",
+            "addProduct": "Add product",
+            "noProducts": "No products found",
+            "addFirst": "Add first product",
+            "table": {
+                "product": "Produktas",
+                "category": "Kategorija",
+                "price": "Kaina",
+                "source": "Šaltinis",
+                "status": "Būsena",
+                "actions": "Veiksmai"
+            },
+            "status": {
+                "published": "Paskelbta",
+                "draft": "Juodraštis"
+            },
+            "actions": {
+                "edit": "Redaguoti",
+                "viewAccess": "View Product Access",
+                "copyLink": "Kopijuoti greito atsiskaitymo nuorodą",
+                "hide": "Slėpti",
+                "publish": "Publikuoti",
+                "delete": "Ištrinti"
+            },
+            "toasts": {
+                "linkCopied": "Greito atsiskaitymo nuoroda nukopijuota (Naffy Style):\n{link}",
+                "deleteConfirm": "Ar tikrai norite ištrinti šį produktą?"
+            },
+            "categories": {
+                "lesson-plans": "Pamokų planai",
+                "worksheets": "Darbo lapai",
+                "flashcards": "Mokomosios kortelės",
+                "games": "Internetiniai žaidimai",
+                "audio": "Garso medžiaga",
+                "video": "Vaizdo medžiaga",
+                "bundles": "Rinkiniai",
+                "other": "Kita"
+            },
+            "source_badges": {
+                "wordpress": "WordPress / Publigo",
+                "tpt": "Teachers Pay Teachers",
+                "ai_optimized": "AI optimizuota"
+            }
+        },
+        "orders": {
+            "title": "Užsakymai",
+            "subtitle": "Tvarkykite užsakymus ir stebėkite mokėjimus",
+            "exportCsv": "Export CSV",
+            "stats": {
+                "revenue": "Pajamos (užbaigta)",
+                "pending": "Laukia apmokėjimo",
+                "today": "Užsakymai šiandien"
+            },
+            "search": "Ieškoti užsakymų...",
+            "statusFilter": "Būsena",
+            "allStatuses": "Visi",
+            "empty": "Užsakymų nerasta",
+            "table": {
+                "order": "Užsakymas",
+                "customer": "Klientas",
+                "products": "Produktai",
+                "total": "Suma",
+                "status": "Būsena",
+                "date": "Data"
+            },
+            "status": {
+                "pending": "Laukia",
+                "processing": "Apdorojama",
+                "completed": "Užbaigta",
+                "cancelled": "Atšaukta",
+                "refunded": "Grąžinta"
+            },
+            "paymentMethods": {
+                "card": "Kortelė",
+                "transfer": "Banko pavedimas",
+                "blik": "BLIK",
+                "paypal": "PayPal"
+            },
+            "details": {
+                "notFound": "Užsakymas nerastas",
+                "back": "Grįžti į sąrašą",
+                "invoice": "Išrašyti sąskaitą faktūrą",
+                "payment": "Mokėjimas",
+                "summary": "Santrauka",
+                "sendEmail": "Siųsti el. laišką",
+                "items": "Prekės",
+                "paidAt": "Apmokėta: {date}",
+                "discount": "Nuolaida",
+                "total": "Iš viso",
+                "quantity": "Kiekis",
+                "title": "Užsakymo informacija",
+                "customer": "Klientas"
+            },
+            "paymentStatus": {
+                "paid": "Apmokėta",
+                "pending": "Laukia",
+                "failed": "Nepavyko",
+                "refunded": "Grąžinta"
+            },
+            "export_headers": {
+                "order_number": "Užsakymo Nr.",
+                "date": "Data",
+                "customer": "Klientas",
+                "email": "El. paštas",
+                "products": "Produktai",
+                "total": "Iš viso",
+                "status": "Būsena"
+            }
+        },
+        "coupons": {
+            "title": "Kuponai",
+            "subtitle": "Valdykite nuolaidų kodus",
+            "addCoupon": "Naujas kuponas",
+            "editCoupon": "Redaguoti kuponą",
+            "createCoupon": "Sukurti kuponą",
+            "stats": {
+                "all": "Visi kuponai",
+                "active": "Aktyvūs",
+                "usage": "Iš viso panaudota"
+            },
+            "form": {
+                "code": "Kupono kodas",
+                "generate": "Generuoti",
+                "placeholder": "pvz. VASARA2024",
+                "discountType": "Nuolaidos tipas",
+                "percent": "Procentinė (%)",
+                "fixed": "Fiksuota suma",
+                "discountValue": "Nuolaidos vertė",
+                "usageLimit": "Panaudojimo limitas",
+                "minOrderValue": "Min. užsakymo suma",
+                "expiresAt": "Galioja iki (neprivaloma)"
+            },
+            "ux": {
+                "show": "Show",
+                "hide": "Hide",
+                "copy": "Copy",
+                "copied": "Copied!",
+                "secure": "Encrypted"
+            },
+            "preview": {
+                "title": "Preview & Accept",
+                "accept": "Accept Changes",
+                "reject": "Discard",
+                "bulk_title": "Review Generated Drafts",
+                "apply_all": "Accept All ({count})",
+                "diff_before": "Before Optimization",
+                "diff_after": "AI Suggestion"
+            },
+            "table": {
+                "code": "Kodas",
+                "discount": "Nuolaida",
+                "usage": "Panaudojimas",
+                "expires": "Galioja iki",
+                "status": "Būsena"
+            },
+            "toasts": {
+                "deleteConfirm": "Are you sure you want to delete this coupon?"
+            }
+        },
+        "materials": {
+            "title": "Material Management",
+            "subtitle": "Add files, organize them, and assign to products.",
+            "deleteSelected": "Delete ({count})",
+            "assignToProduct": "Assign to product ({count})",
+            "dragDrop": "Drag and drop files here",
+            "clickToUpload": "or click the button below to select from disk",
+            "selectFiles": "Select files",
+            "or": "- OR -",
+            "library": {
+                "title": "File Library ({count})",
+                "description": "List of all uploaded materials.",
+                "empty": "No files found. Upload something."
+            },
+            "table": {
+                "check": "Pasirinkti",
+                "fileName": "Failo pavadinimas",
+                "size": "Dydis",
+                "source": "Šaltinis",
+                "product": "Priskirtas produktas",
+                "actions": "Veiksmai"
+            },
+            "badges": {
+                "upload": "Įkelta",
+                "drive": "Google Drive",
+                "unassigned": "Nepriskirta"
+            },
+            "dialog": {
+                "title": "Priskirti failus produktui",
+                "selectLabel": "Pasirinkite produktą",
+                "placeholder": "Pasirinkite produktą iš sąrašo...",
+                "cancel": "Atšaukti",
+                "save": "Išsaugoti pakeitimus"
+            },
+            "toasts": {
+                "uploadSuccess": "Uploaded {count} files",
+                "deleted": "File deleted",
+                "deletedSelected": "Deleted selected files",
+                "assigned": "Assigned {count} files to product"
+            }
+        },
+        "certificates": {
+            "title": "Sertifikatai ir egzaminai",
+            "subtitle": "Valdykite sertifikavimo procesą",
+            "stats": {
+                "totalIssued": "Iš viso išduota",
+                "avgScore": "Vidutinis egzamino balas"
+            },
+            "tabs": {
+                "templates": "Šablonai",
+                "exams": "Egzaminai",
+                "issued": "Išduota"
+            },
+            "templates": {
+                "create": "Sukurti šabloną",
+                "preview": "Redaguoti šabloną",
+                "standardTitle": "Standartinis diplomas (A4)",
+                "standardDesc": "Numatytasis kalbų kursų šablonas",
+                "certificateTitle": "Baigimo sertifikatas",
+                "completedCourse": "Baigtas kursas: {course}",
+                "aiGenerate": "Generuoti AI šabloną",
+                "aiDesc": "Aprašykite stilių (pvz., „modernus“, „vaikams“) ir AI sukurs unikalų diplomo dizainą.",
+                "createAi": "Sukurti su AI"
+            },
+            "exams": {
+                "create": "Naujas egzaminas",
+                "description": "Sukurkite klausimų banką arba leiskite AI sugeneruoti testą iš kurso turinio.",
+                "createAi": "Sukurti AI egzaminą"
+            },
+            "issued": {
+                "empty": "Šį mėnesį sertifikatų neišduota."
+            }
+        },
+        "blog": {
+            "title": "Blog",
+            "subtitle": "Manage blog posts and SEO",
+            "newPost": "New post",
+            "searchPlaceholder": "Search posts...",
+            "empty": "No blog posts found",
+            "writeFirst": "Write first post",
+            "table": {
+                "title": "Title",
+                "category": "Category",
+                "status": "Status",
+                "date": "Date"
+            },
+            "status": {
+                "published": "Published",
+                "draft": "Draft"
+            },
+            "actions": {
+                "preview": "Preview",
+                "delete": "Delete",
+                "save": "Save",
+                "edit": "Edit",
+                "hide": "Hide",
+                "publish": "Publish"
+            },
+            "categories": {
+                "mega-pack": "Mega Packs",
+                "scenariusze": "Scenarios",
+                "zlobek": "Nursery",
+                "special-lessons": "Special Lessons",
+                "speakbook": "Speakbook",
+                "stories": "Stories",
+                "culture": "Culture",
+                "pory-roku": "Seasons",
+                "teatr": "Theater",
+                "flashcards": "Flashcards",
+                "gry": "Games",
+                "inne": "Kita",
+                "metodyka": "Mokymo metodika",
+                "materialy": "Mokomoji medžiaga",
+                "technologia": "Technologijos švietime",
+                "inspiracijos": "Inspiracijos ir idėjos",
+                "recenzje": "Apžvalgos",
+                "wydarzenia": "Renginiai",
+                "inspiracje": "Inspiracijos ir idėjos"
+            },
+            "toasts": {
+                "deleteConfirm": "Are you sure you want to delete this post?"
+            },
+            "form": {
+                "createTitle": "New Post",
+                "createSubtitle": "Create a new blog post",
+                "editTitle": "Edit Post",
+                "editSubtitle": "Edit existing blog post",
+                "titlePlaceholder": "Post title...",
+                "contentTitle": "Content",
+                "contentPlaceholder": "Start writing post content...",
+                "excerptTitle": "Excerpt",
+                "excerptPlaceholder": "Short description displayed on post list...",
+                "statusTitle": "Status",
+                "categoryTitle": "Category",
+                "categoryPlaceholder": "Select category",
+                "tagsTitle": "Tags",
+                "tagsPlaceholder": "tag1, tag2, tag3",
+                "imageTitle": "Featured Image",
+                "imagePlaceholder": "https://kamila.shor.dev/image.jpg",
+                "seoTitle": "SEO",
+                "metaTitleLabel": "Meta Title",
+                "metaTitlePlaceholder": "Search engine title",
+                "metaDescLabel": "Meta Description",
+                "metaDescPlaceholder": "Search engine description",
+                "charCount": "{count}/{max} characters",
+                "seoPreview": "Google Preview",
+                "generate": "Generate",
+                "save": "Save",
+                "saveChanges": "Save Changes",
+                "saving": "Saving...",
+                "delete": "Delete",
+                "notFound": "Post not found",
+                "backToList": "Back to list",
+                "titleRequired": "Please enter a title first"
+            }
+        },
+        "chat": {
+            "title": "AI komandų centras",
+            "subtitle": "Kalbėkitės su savo parduotuve",
+            "welcome": "Sveiki atvykę į AI centrą. Kaip galiu padėti?",
+            "newChat": "Naujas pokalbis",
+            "history": "Istorija",
+            "placeholder": "Pasirinkite modelį",
+            "capabilities": {
+                "database": "Duomenų bazė",
+                "store": "Parduotuvė",
+                "web": "Internetas",
+                "files": "Failai"
+            },
+            "inputPlaceholder": "Įveskite žinutę...",
+            "disclaimer": "AI gali daryti klaidų. Patikrinkite svarbią informaciją.",
+            "generatedBy": "Sugeneravo {model}",
+            "mockResponse": "Simuliuojamas modelio {model} atsakymas. Gavau: „{content}“. Pilnoje versijoje čia įvyktų prisijungimas prie API (pvz., OpenAI, Manus) arba duomenų bazės.",
+            "mockSessions": {
+                "s1": {
+                    "title": "Pardavimų analizė Q1",
+                    "date": "Šiandien"
+                },
+                "s2": {
+                    "title": "Nauji produktų aprašymai",
+                    "date": "Vakar"
+                },
+                "s3": {
+                    "title": "Integracijų derinimas",
+                    "date": "Prieš 2 dienas"
+                }
+            }
+        },
+        "import": {
+            "title": "AI importas",
+            "subtitle": "Importuokite produktus iš išorinio katalogo ir papildykite aprašymus naudodami AI",
+            "catalogUrl": "Katalogo URL",
+            "catalogUrlDesc": "Įklijuokite nuorodą į produktų puslapį (kamilaenglish.com)",
+            "scan": "Skenuoti produktus",
+            "scanning": "Skenuojama...",
+            "enhance": "Papildyti naudojant AI",
+            "enhancing": "Papildoma...",
+            "import": "Importuoti ({count})",
+            "importing": "Importuojama...",
+            "productsFound": "Rasta produktų ({count})",
+            "selectedCount": "Pasirinkta: {count}",
+            "selectAll": "Pasirinkti viską",
+            "deselectAll": "Atšaukti viską",
+            "allCategories": "Visi",
+            "openSource": "Atidaryti šaltinį",
+            "preview": {
+                "testInteractive": "Test Interactive Game",
+                "sourceLink": "Source Link",
+                "selectToPreview": "Select a product to preview",
+                "backToList": "Back to List",
+                "acceptAndCreate": "Accept & Create {count} Drafts"
+            },
+            "configureAi": "Configure API keys in settings before using AI",
+            "selectProducts": "Select products to import",
+            "noAssetsFound": "No valid assets were found. Please ensure you are using public links (e.g. wordwall.net/resource/...) and not your private dashboard.",
+            "privateLink": "Skipped private page: {url}",
+            "errors": {
+                "enterUrl": "Įveskite katalogo URL",
+                "onlyKamila English": "Palaikomi tik kamilaenglish.com produktai",
+                "configureAi": "Konfigūruokite API raktus nustatymuose prieš naudodami AI",
+                "selectProducts": "Pasirinkite produktus importavimui"
+            },
+            "success": {
+                "found": "Rasta {count} produktų iš Kamila English!",
+                "enhanced": "Aprašymai papildyti AI!",
+                "imported": "Importuota {count} produktų!"
+            },
+            "placeholders": {
+                "url": "https://www.sklep.kamilaenglish.com/..."
+            },
+            "categories": {
+                "mega-pack": "Mega paketas",
+                "scenariusze": "Scenarijai",
+                "zlobek": "Lopšelis",
+                "special-lessons": "Specialios pamokos",
+                "speakbook": "Speakbook",
+                "stories": "Istorijos",
+                "culture": "Kultūra",
+                "pory-roku": "Metų laikai",
+                "teatr": "Teatras",
+                "flashcards": "Mokomosios kortelės",
+                "gry": "Žaidimai",
+                "inne": "Kita"
+            },
+            "enhancedText": {
+                "titlePrefix": "🎯",
+                "bestseller": "✨ PERKAMIAUSIAS!",
+                "whatYouGet": "📚 Ką gausite:",
+                "features": {
+                    "pdf": "• Spausdinimui paruošta PDF medžiaga",
+                    "teacher": "• Instrukcijos mokytojui",
+                    "worksheets": "• Darbo lapai ir užduotys"
+                },
+                "footer": "⭐ Patvirtinta šimtų mokytojų!"
+            }
+        },
+        "success": {
+            "found": "Found {count} products from Kamila English!",
+            "enhanced": "Descriptions enhanced by AI!",
+            "imported": "Imported {count} products!"
+        },
+        "placeholders": {
+            "url": "https://www.sklep.kamilaenglish.com/..."
+        },
+        "categories": {
+            "mega-pack": "Mega Packs",
+            "scenariusze": "Scenarios",
+            "zlobek": "Nursery",
+            "special-lessons": "Special Lessons",
+            "speakbook": "Speakbook",
+            "stories": "Stories",
+            "culture": "Culture",
+            "pory-roku": "Seasons",
+            "teatr": "Theater",
+            "flashcards": "Flashcards",
+            "gry": "Games",
+            "inne": "Others"
+        },
+        "footer": "⭐ Trusted by hundreds of teachers!",
+        "item1": "Full access to materials",
+        "item2": "SEO Optimized content",
+        "item3": "Implementation guide for students",
+        "assistant": {
+            "title": "AI Copilot",
+            "status": "Active Intelligence",
+            "welcome": "How can I help you today?",
+            "placeholder": "Ask me anything...",
+            "suggestions": {
+                "generate_visuals": "Generate 4K Visuals",
+                "social_post": "Create Social Post",
+                "avatar_script": "New AI Avatar Script",
+                "seo_optimize": "SEO Optimize Description",
+                "product_cover": "Generate Product Cover",
+                "sync_wordwall": "Sync with Wordwall",
+                "config_workshop": "Configure AI Workshop",
+                "test_api": "Test API Credentials",
+                "connect_canva": "Connect Canva Design",
+                "gen_strategy": "Generate Strategy",
+                "view_trends": "View Trends",
+                "open_workshop": "Open Workshop"
+            },
+            "responses": {
+                "processing": "I'm processing your request. As your AI Copilot, I can help you manage products, generate creative assets, and optimize your store.",
+                "products_context": "You currently have {count} products in your store. I can help you generate descriptions or images for them in the AI Workshop.",
+                "product_example": "For example, I noticed \"{title}\". Would you like to optimize it?",
+                "workshop_info": "The AI Workshop is where you can generate images, videos, and social media posts. You can find it in the 'Workshop' tab of Settings or the dedicated Studio page.",
+                "wordwall_info": "To sync with Wordwall, go to the Products page and use the 'Interactive Import' button. I can also help you scrape metadata from any educational URL!",
+                "hello": "Hello! I'm your AI Copilot. I'm currently aware of {count} products and your store settings. How can I assist you today?"
+            }
+        },
+        "offers": {
+            "title": "AI Offer Generator",
+            "subtitle": "Create high-converting offers in seconds.",
+            "beta": "Beta Growth Suite",
+            "parameters": {
+                "title": "Campaign Parameters",
+                "description": "Define the goal of your offer",
+                "promotion_type": "Promotion Type",
+                "occasional": "Occasional",
+                "evergreen": "Evergreen",
+                "product": "Product / Service",
+                "product_placeholder": "e.g. Lesson Plan Bundle A1-C1",
+                "benefit": "Main Benefit",
+                "benefit_placeholder": "What will the customer gain?",
+                "discount": "Discount (%)",
+                "generate": "Generate AI Offer",
+                "analyzing": "Analyzing market..."
+            },
+            "preview": {
+                "ai_project": "AI PROJECT",
+                "effectiveness": "Effectiveness: {score}%",
+                "title": "Special Early Bird Offer",
+                "subtitle": "Review the generated campaign before publishing",
+                "ad_copy_label": "Ad Slogan",
+                "conversion_label": "Conversion",
+                "vs_avg": "+{diff}% vs avg",
+                "discount_code_label": "Your discount code",
+                "copied": "Copied",
+                "copy": "Copy",
+                "reject": "Reject and change parameters",
+                "accept": "Accept and Publish Offer"
+            },
+            "loading": {
+                "title": "AI Magic in progress...",
+                "description": "\"Analyzing market trends and optimizing sales psychology for your products.\"",
+                "progress_label": "Competitor analysis..."
+            },
+            "toasts": {
+                "copied": "Discount code copied!",
+                "ready": "Offer ready for review!"
+            }
+        },
+        "landingBuilder": {
+            "title": "Landing Page Builder",
+            "draftVersion": "Draft Version: {name}",
+            "desktop": "Desktop",
+            "mobile": "Mobile",
+            "preview": "Preview",
+            "save": "Save changes",
+            "saving": "Saving...",
+            "elements": "Page Elements",
+            "text": "Text",
+            "image": "Image",
+            "button": "Button",
+            "aiBlock": "AI Block",
+            "canvas": "Canvas (Layers)",
+            "hero": "Hero Section",
+            "features": "Advantages & Benefits",
+            "pricing": "Pricing Section",
+            "aiMagic": {
+                "title": "Ready for magic?",
+                "desc": "Use AI to automatically match copy and colors to your product.",
+                "optimize": "Optimize with AI"
+            },
+            "mock": {
+                "newCourse": "New Course",
+                "heroTitle": "Start teaching the language {joy}",
+                "joy": "with joy",
+                "heroDesc": "Ready-made scenarios your students will love. Zero stress, 100% results.",
+                "buyNow": "Buy now and start teaching",
+                "learnMore": "Learn more",
+                "addImage": "Add main image (Drag & Drop)"
+            },
+            "optimization": {
+                "title": "AI Landing Optimization",
+                "desc": "We detected {count} areas for improvement to increase conversion by approx. {percent}%.",
+                "current": "Current Version",
+                "aiSuggestion": "AI Suggestion (Improved conversion)",
+                "recommendation": "RECOMMENDATION",
+                "skip": "Skip changes",
+                "apply": "Apply optimization",
+                "success": "AI changes have been applied to the project!",
+                "processing": "Working on the project...",
+                "processingDesc": "\"Scanning your copy for benefit language and analyzing market heatmaps.\"",
+                "analysingHeaders": "Analyzing headers...",
+                "pickingColors": "Choosing color palette...",
+                "renderingPreview": "Rendering preview...",
+                "paletteTitle": "Improved Color Palette (Ocean Night)",
+                "paletteDesc": "We will change the accents to a more professional navy and energetic blue.",
+                "suggestionTitle": "Stop wasting hours on preparation. Choose ready-made solutions.",
+                "suggestionDesc": "Join 500+ teachers who reclaimed 10 hours a week. We guarantee a smile on every student's face.",
+                "suggestionButton": "Claim your time and start now"
+            },
+            "toasts": {
+                "saved": "Landing page saved successfully!"
+            }
+        },
+        "integrations": {
+            "title": "Educational BaseLinker",
+            "subtitle": "Global materials sales and AI automation.",
+            "loading": "Loading translations...",
+            "addStore": "Add store",
+            "sync_status": "Sync: {date}",
+            "today": "Today",
+            "tabs": {
+                "sync": "Warehouse & Sync",
+                "agent": "Publication Agent",
+                "settings": "Marketplace Settings"
+            },
+            "marketplaces": {
+                "groups": {
+                    "poland": "Poland",
+                    "usa": "USA",
+                    "dach": "Germany (DACH)",
+                    "uk": "UK",
+                    "fr_es": "France/Spain"
+                },
+                "names": {
+                    "wp": "WooCommerce / Publigo",
+                    "wp_full": "WordPress / Publigo",
+                    "tpt": "Teachers Pay Teachers",
+                    "etsy": "Etsy Education",
+                    "eduki": "Eduki (Germany)",
+                    "tes": "TES (UK)",
+                    "mieux": "MieuxEnseigner (France/Spain)"
+                }
+            },
+            "inventory": {
+                "title": "Global Materials Inventory",
+                "badge": "Central Warehouse",
+                "description": "Manage source files and their presence in different markets.",
+                "source": "Source: kamilaenglish.com",
+                "allFiles": "All PDFs, Games and Audio in one place",
+                "updateBtn": "Update Inventory",
+                "syncBtn": "Sync Inventory",
+                "progress": "Sync progress",
+                "log": "System Log",
+                "waiting": "Waiting for start...",
+                "logs": {
+                    "init": "Inicijuojamas ryšys su išorinėmis sistemomis...",
+                    "auth": "Autorizuojama „Publigo“ (wp-idea) ir „WooCommerce“...",
+                    "fetching": "Gaunamas produktų sąrašas (kelių kanalų paieška)...",
+                    "syncing": "Sinchronizuojami atsargų lygiai ir skaitmeniniai failai...",
+                    "complete": "Sinchronizavimas baigtas. Aptikta {count} naujų medžiagų.",
+                    "agent_init": "Ruošiama aplinka {mkt} rinkai...",
+                    "agent_login": "Prisijungiama prie pardavėjo skydelio...",
+                    "agent_fill": "Pildoma forma: {title}...",
+                    "agent_optimize": "Optimizuojama SEO ir įkeliami failai...",
+                    "agent_done": "Paruošta! Produktas laukia patvirtinimo."
+                },
+                "toasts": {
+                    "sync_success": "Sandėlis sėkmingai atnaujintas.",
+                    "analysis_done": "AI analizė baigta. Siūlomi duomenys paruošti.",
+                    "no_tokens": "Nepakanka žetonų. Pasipildykite sąskaitą.",
+                    "tokens_spent": "Išskaičiuota {count} žetonų už AI operaciją.",
+                    "test_woo": "Tikrinamas „WooCommerce“ ryšys...",
+                    "woo_success": "Sėkmingai prisijungta prie kamilaenglish.com (API v3)",
+                    "test_manus": "Tikrinama „Manus AI“ licencija...",
+                    "manus_success": "Licencija aktyvi. Agentas paruoštas darbui.",
+                    "settings_saved": "Nustatymai išsaugoti lokaliai.",
+                    "new_channel": "Atdaromas naujo pardavimo kanalo konfigūratorius...",
+                    "edit_schedule": "Tvarkaraščio redagavimas galimas sistemos nustatymuose.",
+                    "importing": "Importuojami nauji produktai..."
+                },
+                "stats": {
+                    "products_short": "prod."
+                }
+            },
+            "schedule": {
+                "title": "Schedule",
+                "daily02": "Daily at 02:00",
+                "active": "Active",
+                "disabled": "Disabled",
+                "checkOnlyChanges": "Check only changes",
+                "changeCron": "Change cron settings"
+            },
+            "aiTip": {
+                "title": "AI Tip",
+                "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
+                "importBtn": "Import now"
+            },
+            "agent": {
+                "catalogTitle": "Product Catalog",
+                "ready": "Ready",
+                "emptyState": {
+                    "title": "Select product and target market",
+                    "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
+                },
+                "selectMarket": "Select target market",
+                "launchBtn": "Launch Agent",
+                "launchAdmin": "Launch Agent (Admin)",
+                "launchPoints": "Launch for {count} pts",
+                "working": "Agent Working...",
+                "manusMode": "Manus Mode: Active",
+                "marketPrefix": "EnglishLearning: ",
+                "yourBalance": "Your balance",
+                "analysisTitle": "AI Analysis for {market}",
+                "regionalOptimization": "Regional optimization",
+                "suggestedTitle": "Suggested Title (SEO Local)",
+                "suggestedPrice": "Price (PPP Conversion)",
+                "sellingProb": "Selling Probability",
+                "veryHigh": "VERY HIGH",
+                "success": {
+                    "title": "Task Completed!",
+                    "description": "AI Agent successfully visited {market} and published your product.",
+                    "viewLogs": "PERŽIŪRĖTI SESIJOS ŽURNALUS"
+                },
+                "toasts": {
+                    "session_manager": "Opening session manager...",
+                    "ready": "Paruošta",
+                    "proxy_success": "Proxy: {ip} ({location}) OK",
+                    "report_title": "Agent Report",
+                    "report_desc": "Prisijungta: OK, Forma: Užpildyta, Vaizdai: Įkelti, SEO: Optimizuota. Bendras laikas: {time}"
+                },
+                "stats": {
+                    "points": "pts"
+                },
+                "mockAnalysis": {
+                    "title": "AI analizė",
+                    "optimizedTitleSuffix": "Visapusiška mokomoji medžiaga mokytojams",
+                    "suggestedPrice": "$12.99",
+                    "subject": "Anglų kalbos menai",
+                    "seoTags": "mokymas namuose, darbo lapai, žodynas, mokomosios kortelės, mokytojų ištekliai",
+                    "description": "Atskleiskite savo klasės potencialą su šiuo aukščiausios kokybės resursu: {title}. \n\nSukurtas pedagogų pedagogams, šis išteklius apima:\n- Pilnus PDF scenarijus\n- Spausdinimui paruoštus darbo lapus\n- Interaktyvias vaizdines priemones.\n\nPuikiai tinka tiek internetinėms, tiek stacionarioms pamokoms!"
+                },
+                "idle": {
+                    "title": "In standby",
+                    "description": "Run agent to start automation process on platform {market}."
+                }
+            },
+            "settings": {
+                "title": "Multi-Channel Connections",
+                "description": "Configure access data for external stores.",
+                "saveAll": "Save all",
+                "lastSaved": "Last saved: {time}",
+                "woo": {
+                    "title": "WooCommerce / WordPress Site",
+                    "url": "Store URL (REST API)",
+                    "key": "Consumer Key",
+                    "secret": "Consumer Secret",
+                    "connected": "Connected",
+                    "autoSync": "AUTO-SYNC ON",
+                    "test": "Test"
+                },
+                "manus": {
+                    "title": "Manus AI Session",
+                    "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
+                    "instance": "Agent API Instance",
+                    "test": "Test Manus",
+                    "manage": "Manage Session",
+                    "proxy": "Test Proxy"
+                }
+            }
         }
-      },
-      "mcp": {
-        "title": "MCP Connectors",
-        "description": "Connect external models and knowledge bases via MCP protocol",
-        "server": "MCP Server Address",
-        "status": "Connection status"
-      },
-      "api": {
-        "title": "External API Keys",
-        "description": "Integrations with CRM, Mailing, and other systems",
-        "service": "Service (e.g., MailerLite, Zapier)",
-        "key": "API Key / Token",
-        "coming_soon": "Integration with MailerLite, ActiveCampaign and Zapier is being implemented.",
-        "coming_soon_desc": "You can already save keys in the Webhooks section for testing."
-      }
+    },
+    "logs": {
+        "init": "🚀 Initializing AI Scraper agent...",
+        "connect": "🔍 Connecting to API session...",
+        "extract": "🧩 Extracting mechanics and metadata...",
+        "images": "🖼️ Generating preview thumbnails...",
+        "seo": "✍️ Crafting SEO-optimized descriptions...",
+        "pricing": "💰 Calculating regional pricing...",
+        "finalize": "✨ Finalizing product drafts..."
     },
     "interactive": {
-      "title": "Internetinių žaidimų integracija",
-      "description": "Prijunkite „Wordwall“, „Genially“ ir kitas platformas prie savo parduotuvės",
-      "auto_import": "Automatiškai sukurti produktą pridėjus žaidimą platformoje",
-      "auto_import_desc": "Sistema automatiškai aptiks įterpimo kodus (Embed) kuriant produktą.",
-      "sync_status": "Paskutinis žaidimų sinchronizavimas",
-      "sync_hint": "Siūlome produktų redagavimo skydelyje įklijuoti tiesiogines nuorodas į žaidimus. Sistema automatiškai pavers jas interaktyviu langu studentui.",
-      "other_title": "Kitos integracijos",
-      "platforms": {
-        "wordwall": "Wordwall API raktas",
-        "wordwall_placeholder": "pvz. kamila-lo-ko",
-        "genially": "Genially API raktas",
-        "genially_placeholder": "pvz. https://view.genial.ly/profile/nick",
-        "sync_title": "„Wordwall“ ir „Genially“ sinchronizavimas",
-        "h5p_desc": "Įterpti lokaliai",
-        "learningapps_desc": "Per iFrame",
-        "quizizz_desc": "API sinchronizavimas"
-      }
-    },
-    "workshop": {
-      "title": "AI studija (RAG variklis)",
-      "description": "Generuokite išvestinę medžiagą pagal savo žinių bazę",
-      "generate_btn": "Generuoti medžiagą",
-      "status_ready": "Pasiruošta generavimui",
-      "rag_sources": {
-        "title": "Žinių šaltiniai (RAG)",
-        "description": "Pasirinkite savo AI žinių bazę",
-        "main_label": "Pagrindinis šaltinis (RAG)",
-        "notebook_lm": "Nuoroda į „NotebookLM“ / žinių bazę",
-        "options": {
-          "google_drive": "„Google Drive“ (Aplankas: Edu-Materials)",
-          "notebook_lm": "„NotebookLM“ jungtis",
-          "local": "Vietinė vektorių duomenų bazė"
+        "title": "Interactive Content",
+        "subtitle": "Import and optimize Games with AI",
+        "placeholder": "Paste links (one per line)...",
+        "found": "Found {count} interactive items!",
+        "generate": "Generate drafts",
+        "createDrafts": "Accept and create drafts",
+        "success": "Successfully imported {count} products!",
+        "preview_title": "AI Draft Preview",
+        "preview_desc": "Review generated products and test interactive content.",
+        "logs": {
+            "launching": "🚀 Launching real-time scraping agent...",
+            "analyzing": "🔍 Analyzing: {url}...",
+            "private": "⚠️ Link {url} appears to be a private collection. Skipping - please use individual game links.",
+            "extracted": "✅ Extracted: {title}",
+            "dropped": "❌ Connection dropped for: {url}",
+            "complete": "Scraping complete! Successfully extracted metadata for {count} assets."
         }
-      },
-      "generators": {
-        "title": "Medžiagų generatorius",
-        "reading": "Skaitymas (tekstas + klausimai)",
-        "listening": "Klausymas (scenarijus + AI garsas)",
-        "speaking": "Kalbėjimo kortelės",
-        "vocabulary": "Žodyno pratimai",
-        "flashcards": "Mokomosios kortelės (CSV/Anki)",
-        "tests": "Testų generatorius",
-        "worksheets": "PDF darbo lapai",
-        "ai_quiz": "AI viktorinos kūrėjas"
-      },
-      "canva": {
-        "title": "Canva jungtis",
-        "description": "Eksportuokite sugeneruotą turinį tiesiai į Canva projektus",
-        "api_key": "Canva dizaino raktas",
-        "auto_export": "Automatinis eksportas",
-        "connect": "Prisijungti prie Canva"
-      },
-      "title_prefix": "AI Creative",
-      "title_suffix": "Studio",
-      "badge": "Next-Gen",
-      "powered_by": "Powered by OpenAI & HeyGen",
-      "available_credits": "Available Credits",
-      "generations_today": "Generations Today",
-      "studio": "Studio",
-      "history": "History",
-      "studios": {
-        "images": "Image Studio",
-        "video": "Video Studio",
-        "avatars": "Avatar Studio",
-        "social": "Social Hub",
-        "flashcards": "Flashcards",
-        "canva": "Canva Studio"
-      },
-      "actions": {
-        "reuse": "Reuse Prompt",
-        "generate": "Generate Asset",
-        "processing": "Processing...",
-        "attach": "Attach",
-        "change_product": "Change Product",
-        "connect": "Connect to Product"
-      },
-      "labels": {
-        "persona": "Select AI Persona",
-        "script": "Script",
-        "prompt": "Creative Prompt",
-        "preview": "Preview",
-        "history_empty": "Your canvas awaits.",
-        "connect_desc": "Link this AI asset to your store inventory.",
-        "professional_suite": "Professional Creative Suite"
-      },
-      "social_hub": {
-        "title": "Social Media Hub",
-        "subtitle": "Post Generator & Optimization",
-        "platforms": {
-          "instagram": "Instagram",
-          "facebook": "Facebook",
-          "linkedin": "LinkedIn",
-          "youtube": "YouTube"
-        },
-        "labels": {
-          "select_product": "Select Product to Promote",
-          "pick_placeholder": "Pick from Product Library...",
-          "campaign_context": "Campaign Context / Prompt",
-          "prompt_placeholder": "What are we promoting today? (e.g., 'New Flashcard Set for Christmas')",
-          "ai_copy": "AI Generated Copy",
-          "thinking": "Thinking...",
-          "regenerate": "Regenerate Copy",
-          "copy_placeholder": "AI will generate your post content here...",
-          "media_asset": "Media Asset",
-          "auto_selected": "Auto-Selected",
-          "select_asset": "Select Asset",
-          "from_gallery": "From Product Gallery",
-          "viral_growth": "Viral Growth",
-          "score": "Score",
-          "ai_expectancy": "AI expects {percent}% higher engagement on {platform}.",
-          "live_mockup": "Live Mockup Preview",
-          "mockup_placeholder": "Your mockup copy will appear here...",
-          "export": "Export to Socials"
-        }
-      },
-      "flashcards": {
-        "title": "AI Flashcard Studio",
-        "subtitle": "Transform topics into beautiful, ready-to-print flashcard sets.",
-        "badge": "Smart Learning",
-        "branding_kit": "Branding Kit",
-        "export_canva": "Export to Canva",
-        "smart_generator": "Smart Generator",
-        "topic_label": "Topic or Context",
-        "topic_placeholder": "e.g. Life Cycle of a Frog",
-        "style_label": "Visual Style",
-        "styles": {
-          "academic": "Academic",
-          "playful": "Playful",
-          "minimal": "Minimal",
-          "canva_ai": "Canva AI"
-        },
-        "generate_btn": "Generate Deck",
-        "generating": "Generating...",
-        "live_preview": "Live Preview",
-        "cards_prepared": "{count} Cards Prepared",
-        "empty": "No cards generated yet",
-        "add_custom": "Add Custom Card"
-      }
-    },
-    "automation": {
-      "title": "AI agentų jungtys",
-      "description": "Prijunkite tokius agentus kaip „Manus AI“, „GPT-4o“ su naršykle arba „Playwright/Selenium“ užklausas",
-      "agent_delivered": "Agentas pateikė {count} naujus juodraščius!",
-      "agents": {
-        "title": "Galimi naršykliniai agentai",
-        "select_placeholder": "Pasirinkite automatizavimo agentą",
-        "manus": "„Manus AI“ jungtis",
-        "general": "Pasirinktinis naršyklės agentas (Webhook)",
-        "status_idle": "Agentas paruoštas užduotims",
-        "btn_send": "Siųsti agentą nuorodų"
-      },
-      "receiver": {
-        "title": "Imtuvo adresas (Endpoint)",
-        "description": "Įveskite šį URL į „Manus AI“, kad agentas galėtų rasti nuorodas tiesiai į jūsų juodraščius",
-        "simulate_test": "(Simuliuoti agento atvykimą / Testuoti Webhook)",
-        "simulate_btn": "Simuliuoti agentą"
-      },
-      "scrapers": {
-        "title": "Agento užduotys",
-        "card_title": "Naršyklės darbai",
-        "options": {
-          "wordwall": "Wordwall Scraper",
-          "genially": "Genially Scraper",
-          "learningapps": "LearningApps Scraper"
-        },
-        "item1": "Rasti Embed nuorodas į žaidimus mano Genially profilyje",
-        "item2": "Patikrinti naujų Canva šablonų prieinamumą",
-        "item3": "Atsisiųsti bendrinimo kodus iš Wordwall"
-      },
-      "chat": {
-        "title": "AI agentų pokalbis",
-        "subtitle": "Tiesioginis bendravimas su naršyklės agentu",
-        "placeholder": "Kur man šiandien ieškoti?",
-        "capabilities": "Dabartinės galimybės: Genially, Wordwall, Canva",
-        "welcome": "Sveiki! Esu pasiruošęs dirbti. Galite priskirti man užduotis savo paskyrose (Wordwall, Canva, Genially). Ką turėčiau daryti?"
-      }
-    },
-    "emails": {
-      "title": "System Message Templates",
-      "description": "Manage content of messages sent automatically to customers",
-      "save": "Išsaugoti šablonus",
-      "templates": {
-        "welcome": {
-          "title": "Sveikinimas po registracijos",
-          "subject": "Sveiki atvykę į bendruomenę!",
-          "content": "Džiaugiamės, kad esate su mumis. Jūsų prisijungimo duomenys yra..."
-        },
-        "order_confirmed": {
-          "title": "Užsakymo patvirtinimas",
-          "subject": "Jūsų užsakymas #{orderNumber} gautas",
-          "content": "Dėkojame už pirkinį! Jūsų medžiaga dabar pasiekiama skydelyje."
-        },
-        "login_details": {
-          "title": "Prieigos duomenys (po pirkimo)",
-          "subject": "Jūsų kurso prieigos duomenys",
-          "content": "Štai jūsų prisijungimo duomenys: El. paštas: {email}, Slaptažodis: {password}"
-        }
-      },
-      "smtp": {
-        "title": "SMTP Configuration / Provider",
-        "description": "Mail server settings for system emails",
-        "enable_system": "Enable System Sending",
-        "enable_desc": "Use configured SMTP server",
-        "host": "SMTP Host",
-        "port": "Port"
-      },
-      "variables": "Available variables: {orderNumber}, {email}, {password}, {firstName}, {total}"
-    },
-    "google": {
-      "title": "Integracija su Google Cloud",
-      "description": "Prijunkite Google Drive, kad galėtumėte importuoti medžiagą tiesiai į parduotuvę",
-      "auth": {
-        "title": "Google autorizacija",
-        "connect": "Prijungti Google Drive",
-        "disconnect": "Atjungti paskyrą",
-        "status_connected": "Prijungta prie: {email}",
-        "status_disconnected": "No active connection",
-        "drive_description": "Connect the 'Edu-Materials' folder from your Google Drive"
-      },
-      "drive": {
-        "title": "„Google Drive“ naršyklė",
-        "import_selected": "Importuoti pasirinktus failus",
-        "refresh": "Atnaujinti sąrašą",
-        "no_files": "Jūsų diske nerasta jokių PDF/ZIP failų",
-        "import_success": "Failai sėkmingai importuoti kaip medžiaga",
-        "column_name": "Failo pavadinimas",
-        "column_size": "Dydis",
-        "column_action": "Veiksmas",
-        "description": "Naršykite PDF ir ZIP failus, paruoštus importui",
-        "button": "Atsisiųsti iš „Google Drive“",
-        "connecting": "Jungiamasi...",
-        "picker_title": "Pasirinkite failus iš „Google Drive“",
-        "import_count": "Importuoti pasirinktus ({count})",
-        "toast_success": "Importuota {count} failų iš „Google Drive“"
-      },
-      "config": {
-        "client_id": "Google Client ID",
-        "client_secret": "Google Client Secret",
-        "redirect_uri": "Redirect URI"
-      }
-    },
-    "abandoned": {
-      "title": "Cart Recovery",
-      "description": "Automatic reminders for customers who haven't finished their purchase",
-      "delay": "First email delay (hours)",
-      "discount_code": "Discount code in email (optional)",
-      "enable_auto": "Enable automatic recovery",
-      "stats": {
-        "total_recovered": "Recovered revenue",
-        "pending_carts": "Pending carts"
-      }
-    },
-    "guardian": {
-      "title": "AI saugumas ir techninis globėjas",
-      "description": "Išmanioji sistema, stebinti klaidas, teisę ir našumą",
-      "legal_check": "Teisinių pokyčių stebėjimas (ES el. prekyba)",
-      "tech_check": "Techninių klaidų stebėjimas realiu laiku",
-      "security_check": "Neteisėtos prieigos bandymų analizė",
-      "alerts": "Kritinių problemų įspėjimai",
-      "status_good": "Sistema veikia sklandžiai",
-      "status_warning": "Aptiktas potencialus teinis neatitikimas",
-      "last_scan": "Paskutinis pilnas sistemos nuskaitymas"
-    },
-    "affiliate": {
-      "title": "Referral & Affiliate System",
-      "description": "Turn your customers into brand ambassadors",
-      "commission": "Partner commission (%)",
-      "discount": "Referral discount (%)",
-      "cookie_life": "Cookie life (days)",
-      "referral_links": "Generate referral links",
-      "total_partners": "Active partners",
-      "payouts": "Pending payouts"
-    },
-    "pricing": {
-      "title": "Perkamosios galios paritetas (PPP)",
-      "description": "Automatinis kainų pritaikymas prie perkamosios galios 19 šalių",
-      "enable_ppp": "Įjungti išmanųjį regioninį kainų nustatymą",
-      "base_currency": "Bazinė valiuta",
-      "regions": {
-        "western": "Vakarų Europa (100% kainos)",
-        "central": "Vidurio Europa (85% kainos)",
-        "eastern": "Rytų Europa (70% kainos)",
-        "balkans": "Balkanai (60% kainos)"
-      },
-      "recurring_title": "Subscriptions & Recurring Payments",
-      "recurring_visa_title": "Visa Recurring Payments",
-      "recurring_visa_desc": "Enable automatic card charging for subscription products. Supported via Stripe Billing and PayNow Recurring.",
-      "recurring_frequency": "Standard Frequency",
-      "recurring_monthly": "30 DAYS / MONTHLY",
-      "recurring_grace_period": "Grace Period / Retry",
-      "recurring_retry": "3 DAYS RETRY",
-      "paynow_title": "PayNow Integration",
-      "paynow_access_key": "Access Key",
-      "paynow_signature_key": "Signature Key",
-      "blik_title": "BLIK Support Enabled",
-      "blik_desc": "PayNow allows users to pay with BLIK codes directly on your checkout page."
-    },
-    "taxes": {
-      "title": "Tax & Invoice Handling",
-      "description": "Manage VAT rates and automatic EU invoice issuance",
-      "eu_vat_moss": "Enable VAT-MOSS / OSS system",
-      "invoice_provider": "Invoice provider (e.g., Fakturownia, InFakt)",
-      "infakt_api_key": "InFakt API Key",
-      "test_connection": "Test API connection",
-      "stripe_title": "Stripe Payments",
-      "stripe_publishable": "Stripe Publishable Key",
-      "stripe_secret": "Stripe Secret Key"
-    },
-    "editor": {
-      "placeholder": "Start typing...",
-      "prompts": {
-        "link": "Enter URL:",
-        "image": "Enter image URL:"
-      },
-      "toolbar": {
-        "bold": "Bold",
-        "italic": "Italic",
-        "h2": "Heading 2",
-        "h3": "Heading 3",
-        "list": "Unordered List",
-        "listOrdered": "Ordered List",
-        "link": "Insert Link",
-        "image": "Insert Image",
-        "quote": "Quote",
-        "code": "Code Block"
-      }
-    }
-  },
-  "adminPanel": {
-    "sidebar": {
-      "title": "AdminPanel",
-      "subtitle": "Kūrybinė studija",
-      "expand": "Išskleisti",
-      "collapse": "Suskleisti",
-      "logout": "Atsijungti",
-      "logoutTooltip": "Išeiti iš sesijos",
-      "menu": {
-        "dashboard": "Valdymas",
-        "products": "Produktai",
-        "orders": "Užsakymai",
-        "coupons": "Coupons",
-        "materials": "Medžiagos",
-        "blog": "Tinklaraštis",
-        "import": "Import AI",
-        "settings": "Nustatymai",
-        "chat": "AI Chat",
-        "home": "Pradinis",
-        "role": "Administratorius",
-        "online": "Prisijungęs",
-        "abandoned": "Abandoned Carts",
-        "offers": "Offer Generator",
-        "workshop": "AI Creative Suite",
-        "landing_builder": "Landing Pages"
-      }
-    },
-    "dashboard": {
-      "title": "Prietaisų skydelis",
-      "subtitle": "Pardavimų apžvalga ir analizė",
-      "periods": {
-        "7days": "Paskutinės 7 dienos",
-        "30days": "Paskutinės 30 dienų",
-        "90days": "Paskutinės 90 dienų",
-        "all": "Visas laikotarpis"
-      },
-      "addProduct": "Add product",
-      "currency": "$",
-      "stats": {
-        "revenue": "Pajamos",
-        "orders": "Užsakymai",
-        "customers": "Klientai",
-        "avgOrderValue": "Vid. užsakymo vertė",
-        "vsPrevious": "palyginti su ankstesniu laikotarpiu",
-        "inSelectedPeriod": "Pasirinktu laikotarpiu",
-        "uniqueCustomers": "Unikalūs pirkėjai",
-        "perOrder": "Už užsakymą"
-      },
-      "charts": {
-        "weeklyRevenue": "Savaitės pajamos",
-        "revenueByDay": "Pardavimai atskiromis dienomis",
-        "bestsellersRanking": "Geriausiai parduodamų prekių reitingas",
-        "topSellingProducts": "Geriausiai parduodami produktai",
-        "noSalesData": "Nėra pardavimų duomenų",
-        "sold": "Parduota {count}",
-        "days": {
-          "mon": "Pr",
-          "tue": "An",
-          "wed": "Tr",
-          "thu": "Kt",
-          "fri": "Pn",
-          "sat": "Še",
-          "sun": "Se"
-        }
-      },
-      "recentOrders": {
-        "title": "Naujausi užsakymai",
-        "subtitle": "Naujausios transakcijos",
-        "viewAll": "Peržiūrėti visus",
-        "noOrders": "Kol kas nėra užsakymų",
-        "productCount": "{count} produktai",
-        "status": {
-          "completed": "Užbaigta",
-          "pending": "Laukia",
-          "processing": "Apdorojama",
-          "cancelled": "Atšaukta",
-          "refunded": "Grąžinta"
-        }
-      },
-      "aiInsights": {
-        "card": {
-          "monitoring": "Active Market Monitoring",
-          "strategyTitle": "Your growth strategy for {period}",
-          "periodWeek": "next week",
-          "periodMonth": "this month",
-          "description": "We analyzed your last {count} orders. We have 3 specific recommendations that could increase your revenue by approx. 18%.",
-          "generateBtn": "Generate Strategic Report"
-        },
-        "modal": {
-          "title": "AI Growth Report",
-          "subtitle": "Generated for: Administrator • Feb 2024",
-          "revenueChance": "Revenue Chance",
-          "revenueGrowth": "Possible growth in 14 days",
-          "crossSellScore": "Cross-sell Score",
-          "crossSellDesc": "High linking potential",
-          "retentionProj": "Retention Proj.",
-          "retentionDesc": "Loyal returning customers",
-          "recommendedActions": "Recommended Actions",
-          "action1Title": "Email: Abandoned Cart (New template)",
-          "action1Desc": "Customers are abandoning carts for \"Preschool - Autumn Pack\". We suggest adding a 48h timer and 5% discount.",
-          "action2Title": "Bundle: Preschool Combo Pack",
-          "action2Desc": "Combine 3 most popular products into one bundle. Suggested price: $59.99.",
-          "deploy": "Deploy",
-          "create": "Create",
-          "skip": "Skip report",
-          "apply": "Apply Recommendations",
-          "success": "Strategic report has been saved and sent for analysis."
-        },
-        "overlay": {
-          "title": "Processing Big Data...",
-          "subtitle": "\"Analyzing correlations between products and buying behaviors of your customers.\"",
-          "step1": "Clustering users...",
-          "step3": "Generating visualizations..."
-        },
-        "wordwallSync": {
-          "title": "Smart Interactive Sync",
-          "description": "Paste links to your resources (Wordwall, Genially, Canva, YouTube, Google Slides, Quizizz, NotebookLM, Vocaroo) to add them as products.",
-          "placeholder": "https://wordwall.net/...\nhttps://view.genial.ly/...\nhttps://canva.com/design/...\nhttps://youtube.com/watch?v=...\nhttps://quizizz.com/...",
-          "syncBtn": "Start Sync",
-          "syncing": "Syncing...",
-          "success": "Successfully imported {count} new games!",
-          "noNew": "All provided links have already been imported.",
-          "invalid": "No valid educational links (Wordwall/Genially/Canva/YouTube/Slides/etc) detected.",
-          "close": "Close"
-        }
-      },
-      "interactivePreview": {
-        "subtitle": "Live preview of interactive material",
-        "noPreview": "No preview available for this asset",
-        "close": "Close"
-      },
-      "activeAiLogs": {
-        "title": "Active AI Logs",
-        "live": "Live",
-        "imageGenerated": "Image Generated",
-        "socialPostReady": "Social Post Ready",
-        "flashcardCreated": "Flashcard Created",
-        "trendIdentified": "Trend identified",
-        "seoOptimized": "SEO Optimized",
-        "imagePolished": "Image Polished"
-      },
-      "studioQuickAccess": {
-        "title": "Studio Quick Access",
-        "imageStudio": "Image Studio",
-        "generate4k": "Generate 4K Visuals",
-        "socialHub": "Social Hub",
-        "viralCreation": "Viral Post Creation"
-      }
-    },
-    "products": {
-      "title": "Products",
-      "subtitle": "Manage your digital products",
-      "search": "Search products...",
-      "importAi": "Import AI",
-      "addProduct": "Add product",
-      "noProducts": "No products found",
-      "addFirst": "Add first product",
-      "table": {
-        "product": "Produktas",
-        "category": "Kategorija",
-        "price": "Kaina",
-        "source": "Šaltinis",
-        "status": "Būsena",
-        "actions": "Veiksmai"
-      },
-      "status": {
-        "published": "Paskelbta",
-        "draft": "Juodraštis"
-      },
-      "actions": {
-        "edit": "Redaguoti",
-        "viewAccess": "View Product Access",
-        "copyLink": "Kopijuoti greito atsiskaitymo nuorodą",
-        "hide": "Slėpti",
-        "publish": "Publikuoti",
-        "delete": "Ištrinti"
-      },
-      "toasts": {
-        "linkCopied": "Greito atsiskaitymo nuoroda nukopijuota (Naffy Style):\n{link}",
-        "deleteConfirm": "Ar tikrai norite ištrinti šį produktą?"
-      },
-      "categories": {
-        "lesson-plans": "Pamokų planai",
-        "worksheets": "Darbo lapai",
-        "flashcards": "Mokomosios kortelės",
-        "games": "Internetiniai žaidimai",
-        "audio": "Garso medžiaga",
-        "video": "Vaizdo medžiaga",
-        "bundles": "Rinkiniai",
-        "other": "Kita"
-      },
-      "source_badges": {
-        "wordpress": "WordPress / Publigo",
-        "tpt": "Teachers Pay Teachers",
-        "ai_optimized": "AI optimizuota"
-      }
-    },
-    "orders": {
-      "title": "Užsakymai",
-      "subtitle": "Tvarkykite užsakymus ir stebėkite mokėjimus",
-      "exportCsv": "Export CSV",
-      "stats": {
-        "revenue": "Pajamos (užbaigta)",
-        "pending": "Laukia apmokėjimo",
-        "today": "Užsakymai šiandien"
-      },
-      "search": "Ieškoti užsakymų...",
-      "statusFilter": "Būsena",
-      "allStatuses": "Visi",
-      "empty": "Užsakymų nerasta",
-      "table": {
-        "order": "Užsakymas",
-        "customer": "Klientas",
-        "products": "Produktai",
-        "total": "Suma",
-        "status": "Būsena",
-        "date": "Data"
-      },
-      "status": {
-        "pending": "Laukia",
-        "processing": "Apdorojama",
-        "completed": "Užbaigta",
-        "cancelled": "Atšaukta",
-        "refunded": "Grąžinta"
-      },
-      "paymentMethods": {
-        "card": "Kortelė",
-        "transfer": "Banko pavedimas",
-        "blik": "BLIK",
-        "paypal": "PayPal"
-      },
-      "details": {
-        "notFound": "Užsakymas nerastas",
-        "back": "Grįžti į sąrašą",
-        "invoice": "Išrašyti sąskaitą faktūrą",
-        "payment": "Mokėjimas",
-        "summary": "Santrauka",
-        "sendEmail": "Siųsti el. laišką",
-        "items": "Prekės",
-        "paidAt": "Apmokėta: {date}",
-        "discount": "Nuolaida",
-        "total": "Iš viso",
-        "quantity": "Kiekis",
-        "title": "Užsakymo informacija",
-        "customer": "Klientas"
-      },
-      "paymentStatus": {
-        "paid": "Apmokėta",
-        "pending": "Laukia",
-        "failed": "Nepavyko",
-        "refunded": "Grąžinta"
-      },
-      "export_headers": {
-        "order_number": "Užsakymo Nr.",
-        "date": "Data",
-        "customer": "Klientas",
-        "email": "El. paštas",
-        "products": "Produktai",
-        "total": "Iš viso",
-        "status": "Būsena"
-      }
-    },
-    "coupons": {
-      "title": "Kuponai",
-      "subtitle": "Valdykite nuolaidų kodus",
-      "addCoupon": "Naujas kuponas",
-      "editCoupon": "Redaguoti kuponą",
-      "createCoupon": "Sukurti kuponą",
-      "stats": {
-        "all": "Visi kuponai",
-        "active": "Aktyvūs",
-        "usage": "Iš viso panaudota"
-      },
-      "form": {
-        "code": "Kupono kodas",
-        "generate": "Generuoti",
-        "placeholder": "pvz. VASARA2024",
-        "discountType": "Nuolaidos tipas",
-        "percent": "Procentinė (%)",
-        "fixed": "Fiksuota suma",
-        "discountValue": "Nuolaidos vertė",
-        "usageLimit": "Panaudojimo limitas",
-        "minOrderValue": "Min. užsakymo suma",
-        "expiresAt": "Galioja iki (neprivaloma)"
-      },
-      "ux": {
-        "show": "Show",
-        "hide": "Hide",
-        "copy": "Copy",
-        "copied": "Copied!",
-        "secure": "Encrypted"
-      },
-      "preview": {
-        "title": "Preview & Accept",
-        "accept": "Accept Changes",
-        "reject": "Discard",
-        "bulk_title": "Review Generated Drafts",
-        "apply_all": "Accept All ({count})",
-        "diff_before": "Before Optimization",
-        "diff_after": "AI Suggestion"
-      },
-      "table": {
-        "code": "Kodas",
-        "discount": "Nuolaida",
-        "usage": "Panaudojimas",
-        "expires": "Galioja iki",
-        "status": "Būsena"
-      },
-      "toasts": {
-        "deleteConfirm": "Are you sure you want to delete this coupon?"
-      }
-    },
-    "materials": {
-      "title": "Material Management",
-      "subtitle": "Add files, organize them, and assign to products.",
-      "deleteSelected": "Delete ({count})",
-      "assignToProduct": "Assign to product ({count})",
-      "dragDrop": "Drag and drop files here",
-      "clickToUpload": "or click the button below to select from disk",
-      "selectFiles": "Select files",
-      "or": "- OR -",
-      "library": {
-        "title": "File Library ({count})",
-        "description": "List of all uploaded materials.",
-        "empty": "No files found. Upload something."
-      },
-      "table": {
-        "check": "Pasirinkti",
-        "fileName": "Failo pavadinimas",
-        "size": "Dydis",
-        "source": "Šaltinis",
-        "product": "Priskirtas produktas",
-        "actions": "Veiksmai"
-      },
-      "badges": {
-        "upload": "Įkelta",
-        "drive": "Google Drive",
-        "unassigned": "Nepriskirta"
-      },
-      "dialog": {
-        "title": "Priskirti failus produktui",
-        "selectLabel": "Pasirinkite produktą",
-        "placeholder": "Pasirinkite produktą iš sąrašo...",
-        "cancel": "Atšaukti",
-        "save": "Išsaugoti pakeitimus"
-      },
-      "toasts": {
-        "uploadSuccess": "Uploaded {count} files",
-        "deleted": "File deleted",
-        "deletedSelected": "Deleted selected files",
-        "assigned": "Assigned {count} files to product"
-      }
-    },
-    "certificates": {
-      "title": "Sertifikatai ir egzaminai",
-      "subtitle": "Valdykite sertifikavimo procesą",
-      "stats": {
-        "totalIssued": "Iš viso išduota",
-        "avgScore": "Vidutinis egzamino balas"
-      },
-      "tabs": {
-        "templates": "Šablonai",
-        "exams": "Egzaminai",
-        "issued": "Išduota"
-      },
-      "templates": {
-        "create": "Sukurti šabloną",
-        "preview": "Redaguoti šabloną",
-        "standardTitle": "Standartinis diplomas (A4)",
-        "standardDesc": "Numatytasis kalbų kursų šablonas",
-        "certificateTitle": "Baigimo sertifikatas",
-        "completedCourse": "Baigtas kursas: {course}",
-        "aiGenerate": "Generuoti AI šabloną",
-        "aiDesc": "Aprašykite stilių (pvz., „modernus“, „vaikams“) ir AI sukurs unikalų diplomo dizainą.",
-        "createAi": "Sukurti su AI"
-      },
-      "exams": {
-        "create": "Naujas egzaminas",
-        "description": "Sukurkite klausimų banką arba leiskite AI sugeneruoti testą iš kurso turinio.",
-        "createAi": "Sukurti AI egzaminą"
-      },
-      "issued": {
-        "empty": "Šį mėnesį sertifikatų neišduota."
-      }
-    },
-    "blog": {
-      "title": "Blog",
-      "subtitle": "Manage blog posts and SEO",
-      "newPost": "New post",
-      "searchPlaceholder": "Search posts...",
-      "empty": "No blog posts found",
-      "writeFirst": "Write first post",
-      "table": {
-        "title": "Title",
-        "category": "Category",
-        "status": "Status",
-        "date": "Date"
-      },
-      "status": {
-        "published": "Published",
-        "draft": "Draft"
-      },
-      "actions": {
-        "preview": "Preview",
-        "delete": "Delete",
-        "save": "Save",
-        "edit": "Edit",
-        "hide": "Hide",
-        "publish": "Publish"
-      },
-      "categories": {
-        "mega-pack": "Mega Packs",
-        "scenariusze": "Scenarios",
-        "zlobek": "Nursery",
-        "special-lessons": "Special Lessons",
-        "speakbook": "Speakbook",
-        "stories": "Stories",
-        "culture": "Culture",
-        "pory-roku": "Seasons",
-        "teatr": "Theater",
-        "flashcards": "Flashcards",
-        "gry": "Games",
-        "inne": "Kita",
-        "metodyka": "Mokymo metodika",
-        "materialy": "Mokomoji medžiaga",
-        "technologia": "Technologijos švietime",
-        "inspiracijos": "Inspiracijos ir idėjos",
-        "recenzje": "Apžvalgos",
-        "wydarzenia": "Renginiai",
-        "inspiracje": "Inspiracijos ir idėjos"
-      },
-      "toasts": {
-        "deleteConfirm": "Are you sure you want to delete this post?"
-      },
-      "form": {
-        "createTitle": "New Post",
-        "createSubtitle": "Create a new blog post",
-        "editTitle": "Edit Post",
-        "editSubtitle": "Edit existing blog post",
-        "titlePlaceholder": "Post title...",
-        "contentTitle": "Content",
-        "contentPlaceholder": "Start writing post content...",
-        "excerptTitle": "Excerpt",
-        "excerptPlaceholder": "Short description displayed on post list...",
-        "statusTitle": "Status",
-        "categoryTitle": "Category",
-        "categoryPlaceholder": "Select category",
-        "tagsTitle": "Tags",
-        "tagsPlaceholder": "tag1, tag2, tag3",
-        "imageTitle": "Featured Image",
-        "imagePlaceholder": "https://kamila.shor.dev/image.jpg",
-        "seoTitle": "SEO",
-        "metaTitleLabel": "Meta Title",
-        "metaTitlePlaceholder": "Search engine title",
-        "metaDescLabel": "Meta Description",
-        "metaDescPlaceholder": "Search engine description",
-        "charCount": "{count}/{max} characters",
-        "seoPreview": "Google Preview",
-        "generate": "Generate",
-        "save": "Save",
-        "saveChanges": "Save Changes",
-        "saving": "Saving...",
-        "delete": "Delete",
-        "notFound": "Post not found",
-        "backToList": "Back to list",
-        "titleRequired": "Please enter a title first"
-      }
-    },
-    "chat": {
-      "title": "AI komandų centras",
-      "subtitle": "Kalbėkitės su savo parduotuve",
-      "welcome": "Sveiki atvykę į AI centrą. Kaip galiu padėti?",
-      "newChat": "Naujas pokalbis",
-      "history": "Istorija",
-      "placeholder": "Pasirinkite modelį",
-      "capabilities": {
-        "database": "Duomenų bazė",
-        "store": "Parduotuvė",
-        "web": "Internetas",
-        "files": "Failai"
-      },
-      "inputPlaceholder": "Įveskite žinutę...",
-      "disclaimer": "AI gali daryti klaidų. Patikrinkite svarbią informaciją.",
-      "generatedBy": "Sugeneravo {model}",
-      "mockResponse": "Simuliuojamas modelio {model} atsakymas. Gavau: „{content}“. Pilnoje versijoje čia įvyktų prisijungimas prie API (pvz., OpenAI, Manus) arba duomenų bazės.",
-      "mockSessions": {
-        "s1": {
-          "title": "Pardavimų analizė Q1",
-          "date": "Šiandien"
-        },
-        "s2": {
-          "title": "Nauji produktų aprašymai",
-          "date": "Vakar"
-        },
-        "s3": {
-          "title": "Integracijų derinimas",
-          "date": "Prieš 2 dienas"
-        }
-      }
-    },
-    "import": {
-      "title": "AI importas",
-      "subtitle": "Importuokite produktus iš išorinio katalogo ir papildykite aprašymus naudodami AI",
-      "catalogUrl": "Katalogo URL",
-      "catalogUrlDesc": "Įklijuokite nuorodą į produktų puslapį (kamilaenglish.com)",
-      "scan": "Skenuoti produktus",
-      "scanning": "Skenuojama...",
-      "enhance": "Papildyti naudojant AI",
-      "enhancing": "Papildoma...",
-      "import": "Importuoti ({count})",
-      "importing": "Importuojama...",
-      "productsFound": "Rasta produktų ({count})",
-      "selectedCount": "Pasirinkta: {count}",
-      "selectAll": "Pasirinkti viską",
-      "deselectAll": "Atšaukti viską",
-      "allCategories": "Visi",
-      "openSource": "Atidaryti šaltinį",
-      "preview": {
-        "testInteractive": "Test Interactive Game",
-        "sourceLink": "Source Link",
-        "selectToPreview": "Select a product to preview",
-        "backToList": "Back to List",
-        "acceptAndCreate": "Accept & Create {count} Drafts"
-      },
-      "configureAi": "Configure API keys in settings before using AI",
-      "selectProducts": "Select products to import",
-      "noAssetsFound": "No valid assets were found. Please ensure you are using public links (e.g. wordwall.net/resource/...) and not your private dashboard.",
-      "privateLink": "Skipped private page: {url}",
-      "errors": {
-        "enterUrl": "Įveskite katalogo URL",
-        "onlyKamila English": "Palaikomi tik kamilaenglish.com produktai",
-        "configureAi": "Konfigūruokite API raktus nustatymuose prieš naudodami AI",
-        "selectProducts": "Pasirinkite produktus importavimui"
-      },
-      "success": {
-        "found": "Rasta {count} produktų iš Kamila English!",
-        "enhanced": "Aprašymai papildyti AI!",
-        "imported": "Importuota {count} produktų!"
-      },
-      "placeholders": {
-        "url": "https://www.sklep.kamilaenglish.com/..."
-      },
-      "categories": {
-        "mega-pack": "Mega paketas",
-        "scenariusze": "Scenarijai",
-        "zlobek": "Lopšelis",
-        "special-lessons": "Specialios pamokos",
-        "speakbook": "Speakbook",
-        "stories": "Istorijos",
-        "culture": "Kultūra",
-        "pory-roku": "Metų laikai",
-        "teatr": "Teatras",
-        "flashcards": "Mokomosios kortelės",
-        "gry": "Žaidimai",
-        "inne": "Kita"
-      },
-      "enhancedText": {
-        "titlePrefix": "🎯",
-        "bestseller": "✨ PERKAMIAUSIAS!",
-        "whatYouGet": "📚 Ką gausite:",
-        "features": {
-          "pdf": "• Spausdinimui paruošta PDF medžiaga",
-          "teacher": "• Instrukcijos mokytojui",
-          "worksheets": "• Darbo lapai ir užduotys"
-        },
-        "footer": "⭐ Patvirtinta šimtų mokytojų!"
-      }
-    },
-    "success": {
-      "found": "Found {count} products from Kamila English!",
-      "enhanced": "Descriptions enhanced by AI!",
-      "imported": "Imported {count} products!"
-    },
-    "placeholders": {
-      "url": "https://www.sklep.kamilaenglish.com/..."
-    },
-    "categories": {
-      "mega-pack": "Mega Packs",
-      "scenariusze": "Scenarios",
-      "zlobek": "Nursery",
-      "special-lessons": "Special Lessons",
-      "speakbook": "Speakbook",
-      "stories": "Stories",
-      "culture": "Culture",
-      "pory-roku": "Seasons",
-      "teatr": "Theater",
-      "flashcards": "Flashcards",
-      "gry": "Games",
-      "inne": "Others"
-    },
-    "footer": "⭐ Trusted by hundreds of teachers!",
-    "item1": "Full access to materials",
-    "item2": "SEO Optimized content",
-    "item3": "Implementation guide for students",
-    "assistant": {
-      "title": "AI Copilot",
-      "status": "Active Intelligence",
-      "welcome": "How can I help you today?",
-      "placeholder": "Ask me anything...",
-      "suggestions": {
-        "generate_visuals": "Generate 4K Visuals",
-        "social_post": "Create Social Post",
-        "avatar_script": "New AI Avatar Script",
-        "seo_optimize": "SEO Optimize Description",
-        "product_cover": "Generate Product Cover",
-        "sync_wordwall": "Sync with Wordwall",
-        "config_workshop": "Configure AI Workshop",
-        "test_api": "Test API Credentials",
-        "connect_canva": "Connect Canva Design",
-        "gen_strategy": "Generate Strategy",
-        "view_trends": "View Trends",
-        "open_workshop": "Open Workshop"
-      },
-      "responses": {
-        "processing": "I'm processing your request. As your AI Copilot, I can help you manage products, generate creative assets, and optimize your store.",
-        "products_context": "You currently have {count} products in your store. I can help you generate descriptions or images for them in the AI Workshop.",
-        "product_example": "For example, I noticed \"{title}\". Would you like to optimize it?",
-        "workshop_info": "The AI Workshop is where you can generate images, videos, and social media posts. You can find it in the 'Workshop' tab of Settings or the dedicated Studio page.",
-        "wordwall_info": "To sync with Wordwall, go to the Products page and use the 'Interactive Import' button. I can also help you scrape metadata from any educational URL!",
-        "hello": "Hello! I'm your AI Copilot. I'm currently aware of {count} products and your store settings. How can I assist you today?"
-      }
-    },
-    "offers": {
-      "title": "AI Offer Generator",
-      "subtitle": "Create high-converting offers in seconds.",
-      "beta": "Beta Growth Suite",
-      "parameters": {
-        "title": "Campaign Parameters",
-        "description": "Define the goal of your offer",
-        "promotion_type": "Promotion Type",
-        "occasional": "Occasional",
-        "evergreen": "Evergreen",
-        "product": "Product / Service",
-        "product_placeholder": "e.g. Lesson Plan Bundle A1-C1",
-        "benefit": "Main Benefit",
-        "benefit_placeholder": "What will the customer gain?",
-        "discount": "Discount (%)",
-        "generate": "Generate AI Offer",
-        "analyzing": "Analyzing market..."
-      },
-      "preview": {
-        "ai_project": "AI PROJECT",
-        "effectiveness": "Effectiveness: {score}%",
-        "title": "Special Early Bird Offer",
-        "subtitle": "Review the generated campaign before publishing",
-        "ad_copy_label": "Ad Slogan",
-        "conversion_label": "Conversion",
-        "vs_avg": "+{diff}% vs avg",
-        "discount_code_label": "Your discount code",
-        "copied": "Copied",
-        "copy": "Copy",
-        "reject": "Reject and change parameters",
-        "accept": "Accept and Publish Offer"
-      },
-      "loading": {
-        "title": "AI Magic in progress...",
-        "description": "\"Analyzing market trends and optimizing sales psychology for your products.\"",
-        "progress_label": "Competitor analysis..."
-      },
-      "toasts": {
-        "copied": "Discount code copied!",
-        "ready": "Offer ready for review!"
-      }
-    },
-    "landingBuilder": {
-      "title": "Landing Page Builder",
-      "draftVersion": "Draft Version: {name}",
-      "desktop": "Desktop",
-      "mobile": "Mobile",
-      "preview": "Preview",
-      "save": "Save changes",
-      "saving": "Saving...",
-      "elements": "Page Elements",
-      "text": "Text",
-      "image": "Image",
-      "button": "Button",
-      "aiBlock": "AI Block",
-      "canvas": "Canvas (Layers)",
-      "hero": "Hero Section",
-      "features": "Advantages & Benefits",
-      "pricing": "Pricing Section",
-      "aiMagic": {
-        "title": "Ready for magic?",
-        "desc": "Use AI to automatically match copy and colors to your product.",
-        "optimize": "Optimize with AI"
-      },
-      "mock": {
-        "newCourse": "New Course",
-        "heroTitle": "Start teaching the language {joy}",
-        "joy": "with joy",
-        "heroDesc": "Ready-made scenarios your students will love. Zero stress, 100% results.",
-        "buyNow": "Buy now and start teaching",
-        "learnMore": "Learn more",
-        "addImage": "Add main image (Drag & Drop)"
-      },
-      "optimization": {
-        "title": "AI Landing Optimization",
-        "desc": "We detected {count} areas for improvement to increase conversion by approx. {percent}%.",
-        "current": "Current Version",
-        "aiSuggestion": "AI Suggestion (Improved conversion)",
-        "recommendation": "RECOMMENDATION",
-        "skip": "Skip changes",
-        "apply": "Apply optimization",
-        "success": "AI changes have been applied to the project!",
-        "processing": "Working on the project...",
-        "processingDesc": "\"Scanning your copy for benefit language and analyzing market heatmaps.\"",
-        "analysingHeaders": "Analyzing headers...",
-        "pickingColors": "Choosing color palette...",
-        "renderingPreview": "Rendering preview...",
-        "paletteTitle": "Improved Color Palette (Ocean Night)",
-        "paletteDesc": "We will change the accents to a more professional navy and energetic blue.",
-        "suggestionTitle": "Stop wasting hours on preparation. Choose ready-made solutions.",
-        "suggestionDesc": "Join 500+ teachers who reclaimed 10 hours a week. We guarantee a smile on every student's face.",
-        "suggestionButton": "Claim your time and start now"
-      },
-      "toasts": {
-        "saved": "Landing page saved successfully!"
-      }
     },
     "integrations": {
-      "title": "Educational BaseLinker",
-      "subtitle": "Global materials sales and AI automation.",
-      "loading": "Loading translations...",
-      "addStore": "Add store",
-      "sync_status": "Sync: {date}",
-      "today": "Today",
-      "tabs": {
-        "sync": "Warehouse & Sync",
-        "agent": "Publication Agent",
-        "settings": "Marketplace Settings"
-      },
-      "marketplaces": {
-        "groups": {
-          "poland": "Poland",
-          "usa": "USA",
-          "dach": "Germany (DACH)",
-          "uk": "UK",
-          "fr_es": "France/Spain"
+        "title": "Educational BaseLinker",
+        "subtitle": "Global materials sales and AI automation.",
+        "loading": "Loading translations...",
+        "addStore": "Add store",
+        "sync_status": "Sync: {date}",
+        "today": "Today",
+        "tabs": {
+            "sync": "Warehouse & Sync",
+            "agent": "Publication Agent",
+            "settings": "Marketplace Settings"
         },
-        "names": {
-          "wp": "WooCommerce / Publigo",
-          "wp_full": "WordPress / Publigo",
-          "tpt": "Teachers Pay Teachers",
-          "etsy": "Etsy Education",
-          "eduki": "Eduki (Germany)",
-          "tes": "TES (UK)",
-          "mieux": "MieuxEnseigner (France/Spain)"
+        "marketplaces": {
+            "groups": {
+                "poland": "Poland",
+                "usa": "USA",
+                "dach": "Germany (DACH)",
+                "uk": "UK",
+                "fr_es": "France/Spain"
+            },
+            "names": {
+                "wp": "WooCommerce / Publigo",
+                "wp_full": "WordPress / Publigo",
+                "tpt": "Teachers Pay Teachers",
+                "etsy": "Etsy Education",
+                "eduki": "Eduki (Germany)",
+                "tes": "TES (UK)",
+                "mieux": "MieuxEnseigner (France/Spain)"
+            }
+        },
+        "inventory": {
+            "title": "Global Materials Inventory",
+            "badge": "Central Warehouse",
+            "description": "Manage source files and their presence in different markets.",
+            "source": "Source: kamilaenglish.com",
+            "allFiles": "All PDFs, Games and Audio in one place",
+            "updateBtn": "Update Inventory",
+            "syncBtn": "Sync Inventory",
+            "progress": "Sync progress",
+            "log": "System Log",
+            "waiting": "Waiting for start...",
+            "logs": {
+                "init": "Initializing connection with external systems...",
+                "auth": "Authorizing Publigo (wp-idea) & WooCommerce...",
+                "fetching": "Fetching product list (Multi-Channel Sourcing)...",
+                "syncing": "Syncing stock levels and digital files...",
+                "complete": "Sync complete. Detected {count} new materials.",
+                "agent_init": "Initializing environment for {mkt}...",
+                "agent_login": "Logging into seller panel...",
+                "agent_fill": "Filling form: {title}...",
+                "agent_optimize": "Optimizing SEO and uploading files...",
+                "agent_done": "Ready! Product is waiting for approval."
+            },
+            "toasts": {
+                "sync_success": "Warehouse updated successfully.",
+                "analysis_done": "AI Analysis complete. Suggested data is ready.",
+                "no_tokens": "Insufficient tokens. Top up your account.",
+                "tokens_spent": "{count} tokens deducted for AI operation.",
+                "test_woo": "Testing WooCommerce connection...",
+                "woo_success": "Connected successfully to kamilaenglish.com (API v3)",
+                "test_manus": "Verifying Manus AI license...",
+                "manus_success": "License active. Agent ready for work.",
+                "settings_saved": "Settings saved locally.",
+                "new_channel": "Opening new sales channel configurator...",
+                "edit_schedule": "Schedule editing available in system settings.",
+                "importing": "Importing new products..."
+            },
+            "stats": {
+                "products_short": "prod."
+            }
+        },
+        "schedule": {
+            "title": "Schedule",
+            "daily02": "Daily at 02:00",
+            "active": "Active",
+            "disabled": "Disabled",
+            "checkOnlyChanges": "Check only changes",
+            "changeCron": "Change cron settings"
+        },
+        "aiTip": {
+            "title": "AI Tip",
+            "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
+            "importBtn": "Import now"
+        },
+        "agent": {
+            "catalogTitle": "Product Catalog",
+            "ready": "Ready",
+            "emptyState": {
+                "title": "Select product and target market",
+                "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
+            },
+            "selectMarket": "Select target market",
+            "launchBtn": "Launch Agent",
+            "launchAdmin": "Launch Agent (Admin)",
+            "launchPoints": "Launch for {count} pts",
+            "working": "Agent Working...",
+            "manusMode": "Manus Mode: Active",
+            "marketPrefix": "EnglishLearning: ",
+            "yourBalance": "Your balance",
+            "analysisTitle": "AI Analysis for {market}",
+            "regionalOptimization": "Regional optimization",
+            "suggestedTitle": "Suggested Title (SEO Local)",
+            "suggestedPrice": "Price (PPP Conversion)",
+            "sellingProb": "Selling Probability",
+            "veryHigh": "VERY HIGH",
+            "success": {
+                "title": "Task Completed!",
+                "description": "AI Agent successfully visited {market} and published your product.",
+                "viewLogs": "VIEW SESSION LOGS"
+            },
+            "toasts": {
+                "session_manager": "Opening session manager...",
+                "proxy_success": "Proxy: {ip} ({location}) OK",
+                "report_title": "Agent Report",
+                "report_desc": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}"
+            },
+            "stats": {
+                "points": "pts"
+            },
+            "mockAnalysis": {
+                "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
+                "suggestedPrice": "$12.99",
+                "subject": "English Language Arts",
+                "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
+                "description": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!"
+            },
+            "idle": {
+                "title": "In standby",
+                "description": "Run agent to start automation process on platform {market}."
+            }
+        },
+        "settings": {
+            "title": "Multi-Channel Connections",
+            "description": "Configure access data for external stores.",
+            "saveAll": "Save all",
+            "lastSaved": "Last saved: {time}",
+            "woo": {
+                "title": "WooCommerce / WordPress Site",
+                "url": "Store URL (REST API)",
+                "key": "Consumer Key",
+                "secret": "Consumer Secret",
+                "connected": "Connected",
+                "autoSync": "AUTO-SYNC ON",
+                "test": "Test"
+            },
+            "manus": {
+                "title": "Manus AI Session",
+                "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
+                "instance": "Agent API Instance",
+                "test": "Test Manus",
+                "manage": "Manage Session",
+                "proxy": "Test Proxy"
+            },
+            "mailerlite": {
+                "title": "MailerLite Integration",
+                "api_key": "MailerLite API Key",
+                "placeholder": "ml_...",
+                "groups": "Subscriber Group ID",
+                "test": "Test Connection"
+            },
+            "manychat": {
+                "title": "ManyChat Automation",
+                "api_key": "ManyChat API Key",
+                "placeholder": "mc_...",
+                "automation_id": "Default Flow ID",
+                "test": "Test Automation"
+            }
         }
-      },
-      "inventory": {
-        "title": "Global Materials Inventory",
-        "badge": "Central Warehouse",
-        "description": "Manage source files and their presence in different markets.",
-        "source": "Source: kamilaenglish.com",
-        "allFiles": "All PDFs, Games and Audio in one place",
-        "updateBtn": "Update Inventory",
-        "syncBtn": "Sync Inventory",
-        "progress": "Sync progress",
-        "log": "System Log",
-        "waiting": "Waiting for start...",
-        "logs": {
-          "init": "Inicijuojamas ryšys su išorinėmis sistemomis...",
-          "auth": "Autorizuojama „Publigo“ (wp-idea) ir „WooCommerce“...",
-          "fetching": "Gaunamas produktų sąrašas (kelių kanalų paieška)...",
-          "syncing": "Sinchronizuojami atsargų lygiai ir skaitmeniniai failai...",
-          "complete": "Sinchronizavimas baigtas. Aptikta {count} naujų medžiagų.",
-          "agent_init": "Ruošiama aplinka {mkt} rinkai...",
-          "agent_login": "Prisijungiama prie pardavėjo skydelio...",
-          "agent_fill": "Pildoma forma: {title}...",
-          "agent_optimize": "Optimizuojama SEO ir įkeliami failai...",
-          "agent_done": "Paruošta! Produktas laukia patvirtinimo."
+    },
+    "abandonedHub": {
+        "title": "Abandoned Cart Hub",
+        "subtitle": "Recover lost sales and manage leads",
+        "table": {
+            "customer": "Customer",
+            "cart": "Cart Items",
+            "value": "Value",
+            "lastActive": "Last Active",
+            "actions": "Actions"
         },
-        "toasts": {
-          "sync_success": "Sandėlis sėkmingai atnaujintas.",
-          "analysis_done": "AI analizė baigta. Siūlomi duomenys paruošti.",
-          "no_tokens": "Nepakanka žetonų. Pasipildykite sąskaitą.",
-          "tokens_spent": "Išskaičiuota {count} žetonų už AI operaciją.",
-          "test_woo": "Tikrinamas „WooCommerce“ ryšys...",
-          "woo_success": "Sėkmingai prisijungta prie kamilaenglish.com (API v3)",
-          "test_manus": "Tikrinama „Manus AI“ licencija...",
-          "manus_success": "Licencija aktyvi. Agentas paruoštas darbui.",
-          "settings_saved": "Nustatymai išsaugoti lokaliai.",
-          "new_channel": "Atdaromas naujo pardavimo kanalo konfigūratorius...",
-          "edit_schedule": "Tvarkaraščio redagavimas galimas sistemos nustatymuose.",
-          "importing": "Importuojami nauji produktai..."
+        "actions": {
+            "sendReminder": "Send Reminder",
+            "recoveryLink": "Copy Recovery Link",
+            "delete": "Remove lead"
         },
-        "stats": {
-          "products_short": "prod."
+        "status": {
+            "contacted": "Contacted",
+            "pending": "Pending",
+            "recovered": "Recovered"
+        },
+        "notifications": {
+            "reminderSent": "Recovery email simulation sent to {email}",
+            "linkCopied": "Recovery link copied with discount code!"
         }
-      },
-      "schedule": {
-        "title": "Schedule",
-        "daily02": "Daily at 02:00",
-        "active": "Active",
-        "disabled": "Disabled",
-        "checkOnlyChanges": "Check only changes",
-        "changeCron": "Change cron settings"
-      },
-      "aiTip": {
-        "title": "AI Tip",
-        "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
-        "importBtn": "Import now"
-      },
-      "agent": {
-        "catalogTitle": "Product Catalog",
-        "ready": "Ready",
-        "emptyState": {
-          "title": "Select product and target market",
-          "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
-        },
-        "selectMarket": "Select target market",
-        "launchBtn": "Launch Agent",
-        "launchAdmin": "Launch Agent (Admin)",
-        "launchPoints": "Launch for {count} pts",
-        "working": "Agent Working...",
-        "manusMode": "Manus Mode: Active",
-        "marketPrefix": "EnglishLearning: ",
-        "yourBalance": "Your balance",
-        "analysisTitle": "AI Analysis for {market}",
-        "regionalOptimization": "Regional optimization",
-        "suggestedTitle": "Suggested Title (SEO Local)",
-        "suggestedPrice": "Price (PPP Conversion)",
-        "sellingProb": "Selling Probability",
-        "veryHigh": "VERY HIGH",
-        "success": {
-          "title": "Task Completed!",
-          "description": "AI Agent successfully visited {market} and published your product.",
-          "viewLogs": "PERŽIŪRĖTI SESIJOS ŽURNALUS"
-        },
-        "toasts": {
-          "session_manager": "Opening session manager...",
-          "ready": "Paruošta",
-          "proxy_success": "Proxy: {ip} ({location}) OK",
-          "report_title": "Agent Report",
-          "report_desc": "Prisijungta: OK, Forma: Užpildyta, Vaizdai: Įkelti, SEO: Optimizuota. Bendras laikas: {time}"
-        },
-        "stats": {
-          "points": "pts"
-        },
-        "mockAnalysis": {
-          "title": "AI analizė",
-          "optimizedTitleSuffix": "Visapusiška mokomoji medžiaga mokytojams",
-          "suggestedPrice": "$12.99",
-          "subject": "Anglų kalbos menai",
-          "seoTags": "mokymas namuose, darbo lapai, žodynas, mokomosios kortelės, mokytojų ištekliai",
-          "description": "Atskleiskite savo klasės potencialą su šiuo aukščiausios kokybės resursu: {title}. \n\nSukurtas pedagogų pedagogams, šis išteklius apima:\n- Pilnus PDF scenarijus\n- Spausdinimui paruoštus darbo lapus\n- Interaktyvias vaizdines priemones.\n\nPuikiai tinka tiek internetinėms, tiek stacionarioms pamokoms!"
-        },
-        "idle": {
-          "title": "In standby",
-          "description": "Run agent to start automation process on platform {market}."
-        }
-      },
-      "settings": {
-        "title": "Multi-Channel Connections",
-        "description": "Configure access data for external stores.",
-        "saveAll": "Save all",
-        "lastSaved": "Last saved: {time}",
-        "woo": {
-          "title": "WooCommerce / WordPress Site",
-          "url": "Store URL (REST API)",
-          "key": "Consumer Key",
-          "secret": "Consumer Secret",
-          "connected": "Connected",
-          "autoSync": "AUTO-SYNC ON",
-          "test": "Test"
-        },
-        "manus": {
-          "title": "Manus AI Session",
-          "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
-          "instance": "Agent API Instance",
-          "test": "Test Manus",
-          "manage": "Manage Session",
-          "proxy": "Test Proxy"
-        }
-      }
     }
-  },
-  "logs": {
-    "init": "🚀 Initializing AI Scraper agent...",
-    "connect": "🔍 Connecting to API session...",
-    "extract": "🧩 Extracting mechanics and metadata...",
-    "images": "🖼️ Generating preview thumbnails...",
-    "seo": "✍️ Crafting SEO-optimized descriptions...",
-    "pricing": "💰 Calculating regional pricing...",
-    "finalize": "✨ Finalizing product drafts..."
-  },
-  "interactive": {
-    "title": "Interactive Content",
-    "subtitle": "Import and optimize Games with AI",
-    "placeholder": "Paste links (one per line)...",
-    "found": "Found {count} interactive items!",
-    "generate": "Generate drafts",
-    "createDrafts": "Accept and create drafts",
-    "success": "Successfully imported {count} products!",
-    "preview_title": "AI Draft Preview",
-    "preview_desc": "Review generated products and test interactive content.",
-    "logs": {
-      "launching": "🚀 Launching real-time scraping agent...",
-      "analyzing": "🔍 Analyzing: {url}...",
-      "private": "⚠️ Link {url} appears to be a private collection. Skipping - please use individual game links.",
-      "extracted": "✅ Extracted: {title}",
-      "dropped": "❌ Connection dropped for: {url}",
-      "complete": "Scraping complete! Successfully extracted metadata for {count} assets."
-    }
-  },
-  "integrations": {
-    "title": "Educational BaseLinker",
-    "subtitle": "Global materials sales and AI automation.",
-    "loading": "Loading translations...",
-    "addStore": "Add store",
-    "sync_status": "Sync: {date}",
-    "today": "Today",
-    "tabs": {
-      "sync": "Warehouse & Sync",
-      "agent": "Publication Agent",
-      "settings": "Marketplace Settings"
-    },
-    "marketplaces": {
-      "groups": {
-        "poland": "Poland",
-        "usa": "USA",
-        "dach": "Germany (DACH)",
-        "uk": "UK",
-        "fr_es": "France/Spain"
-      },
-      "names": {
-        "wp": "WooCommerce / Publigo",
-        "wp_full": "WordPress / Publigo",
-        "tpt": "Teachers Pay Teachers",
-        "etsy": "Etsy Education",
-        "eduki": "Eduki (Germany)",
-        "tes": "TES (UK)",
-        "mieux": "MieuxEnseigner (France/Spain)"
-      }
-    },
-    "inventory": {
-      "title": "Global Materials Inventory",
-      "badge": "Central Warehouse",
-      "description": "Manage source files and their presence in different markets.",
-      "source": "Source: kamilaenglish.com",
-      "allFiles": "All PDFs, Games and Audio in one place",
-      "updateBtn": "Update Inventory",
-      "syncBtn": "Sync Inventory",
-      "progress": "Sync progress",
-      "log": "System Log",
-      "waiting": "Waiting for start...",
-      "logs": {
-        "init": "Initializing connection with external systems...",
-        "auth": "Authorizing Publigo (wp-idea) & WooCommerce...",
-        "fetching": "Fetching product list (Multi-Channel Sourcing)...",
-        "syncing": "Syncing stock levels and digital files...",
-        "complete": "Sync complete. Detected {count} new materials.",
-        "agent_init": "Initializing environment for {mkt}...",
-        "agent_login": "Logging into seller panel...",
-        "agent_fill": "Filling form: {title}...",
-        "agent_optimize": "Optimizing SEO and uploading files...",
-        "agent_done": "Ready! Product is waiting for approval."
-      },
-      "toasts": {
-        "sync_success": "Warehouse updated successfully.",
-        "analysis_done": "AI Analysis complete. Suggested data is ready.",
-        "no_tokens": "Insufficient tokens. Top up your account.",
-        "tokens_spent": "{count} tokens deducted for AI operation.",
-        "test_woo": "Testing WooCommerce connection...",
-        "woo_success": "Connected successfully to kamilaenglish.com (API v3)",
-        "test_manus": "Verifying Manus AI license...",
-        "manus_success": "License active. Agent ready for work.",
-        "settings_saved": "Settings saved locally.",
-        "new_channel": "Opening new sales channel configurator...",
-        "edit_schedule": "Schedule editing available in system settings.",
-        "importing": "Importing new products..."
-      },
-      "stats": {
-        "products_short": "prod."
-      }
-    },
-    "schedule": {
-      "title": "Schedule",
-      "daily02": "Daily at 02:00",
-      "active": "Active",
-      "disabled": "Disabled",
-      "checkOnlyChanges": "Check only changes",
-      "changeCron": "Change cron settings"
-    },
-    "aiTip": {
-      "title": "AI Tip",
-      "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
-      "importBtn": "Import now"
-    },
-    "agent": {
-      "catalogTitle": "Product Catalog",
-      "ready": "Ready",
-      "emptyState": {
-        "title": "Select product and target market",
-        "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
-      },
-      "selectMarket": "Select target market",
-      "launchBtn": "Launch Agent",
-      "launchAdmin": "Launch Agent (Admin)",
-      "launchPoints": "Launch for {count} pts",
-      "working": "Agent Working...",
-      "manusMode": "Manus Mode: Active",
-      "marketPrefix": "EnglishLearning: ",
-      "yourBalance": "Your balance",
-      "analysisTitle": "AI Analysis for {market}",
-      "regionalOptimization": "Regional optimization",
-      "suggestedTitle": "Suggested Title (SEO Local)",
-      "suggestedPrice": "Price (PPP Conversion)",
-      "sellingProb": "Selling Probability",
-      "veryHigh": "VERY HIGH",
-      "success": {
-        "title": "Task Completed!",
-        "description": "AI Agent successfully visited {market} and published your product.",
-        "viewLogs": "VIEW SESSION LOGS"
-      },
-      "toasts": {
-        "session_manager": "Opening session manager...",
-        "proxy_success": "Proxy: {ip} ({location}) OK",
-        "report_title": "Agent Report",
-        "report_desc": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}"
-      },
-      "stats": {
-        "points": "pts"
-      },
-      "mockAnalysis": {
-        "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
-        "suggestedPrice": "$12.99",
-        "subject": "English Language Arts",
-        "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
-        "description": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!"
-      },
-      "idle": {
-        "title": "In standby",
-        "description": "Run agent to start automation process on platform {market}."
-      }
-    },
-    "settings": {
-      "title": "Multi-Channel Connections",
-      "description": "Configure access data for external stores.",
-      "saveAll": "Save all",
-      "lastSaved": "Last saved: {time}",
-      "woo": {
-        "title": "WooCommerce / WordPress Site",
-        "url": "Store URL (REST API)",
-        "key": "Consumer Key",
-        "secret": "Consumer Secret",
-        "connected": "Connected",
-        "autoSync": "AUTO-SYNC ON",
-        "test": "Test"
-      },
-      "manus": {
-        "title": "Manus AI Session",
-        "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
-        "instance": "Agent API Instance",
-        "test": "Test Manus",
-        "manage": "Manage Session",
-        "proxy": "Test Proxy"
-      },
-      "mailerlite": {
-        "title": "MailerLite Integration",
-        "api_key": "MailerLite API Key",
-        "placeholder": "ml_...",
-        "groups": "Subscriber Group ID",
-        "test": "Test Connection"
-      },
-      "manychat": {
-        "title": "ManyChat Automation",
-        "api_key": "ManyChat API Key",
-        "placeholder": "mc_...",
-        "automation_id": "Default Flow ID",
-        "test": "Test Automation"
-      }
-    }
-  },
-  "abandonedHub": {
-    "title": "Abandoned Cart Hub",
-    "subtitle": "Recover lost sales and manage leads",
-    "table": {
-      "customer": "Customer",
-      "cart": "Cart Items",
-      "value": "Value",
-      "lastActive": "Last Active",
-      "actions": "Actions"
-    },
-    "actions": {
-      "sendReminder": "Send Reminder",
-      "recoveryLink": "Copy Recovery Link",
-      "delete": "Remove lead"
-    },
-    "status": {
-      "contacted": "Contacted",
-      "pending": "Pending",
-      "recovered": "Recovered"
-    },
-    "notifications": {
-      "reminderSent": "Recovery email simulation sent to {email}",
-      "linkCopied": "Recovery link copied with discount code!"
-    }
-  }
 }

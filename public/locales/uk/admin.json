@@ -1,1641 +1,1711 @@
 {
-  "adminSettings": {
-    "title": "Налаштування системи",
-    "description": "Керування конфігурацією сайту, аналітикою та SEO",
-    "ai_providers": {
-      "title": "Active AI Provider",
-      "description": "Configuration for ai_providers",
-      "api_key": "Ключ API"
-    },
-    "tabs": {
-      "ai": "Моделі ШІ",
-      "marketing": "Маркетинг та аналітика",
-      "seo": "SEO та мета-теги",
-      "economy": "Економіка та гаманець",
-      "gamification": "Гейміфікація та значки",
-      "market": "Аналіз ринку та навчальних програм",
-      "insights": "Аудит ШІ та пропозиції",
-      "channels": "Канали продажу",
-      "integrations": "Інтеграції та API",
-      "interactive": "Ігри та інтерактив",
-      "workshop": "Студія ШІ та Canva",
-      "automation": "Агенти та автоматизація",
-      "emails": "Email-сповіщення",
-      "google": "Google Cloud",
-      "abandoned": "Покинуті кошики",
-      "guardian": "ШІ Охоронець",
-      "affiliate": "Партнерська програма",
-      "pricing": "Ціни та валюти (PPP)",
-      "taxes": "Рахунки та податки",
-      "growth_hacks": "Growth Hacks",
-      "ai_discovery": "AI Discovery (SEO)"
-    },
-    "sections": {
-      "shopping": "Покупки та фінанси",
-      "ai": "Моделі ШІ",
-      "growth": "Ріст та бренд",
-      "system": "Системні налаштування"
-    },
-    "common": {
-      "save": "Зберегти зміни",
-      "saved": "Збережено!",
-      "save_success": "Settings have been successfully saved.",
-      "subject": "Тема",
-      "content": "Зміст",
-      "enabled_desc": "Глобальний перемикач для скриптів відстеження"
-    },
-    "marketing": {
-      "ga4": "Google Analytics 4",
-      "ga4_placeholder": "G-XXXXXXXXXX",
-      "fb_pixel": "Facebook Pixel",
-      "fb_pixel_placeholder": "ID пікселя",
-      "meta_verification": "Підтвердження домену Meta",
-      "meta_placeholder": "Ключ підтвердження",
-      "gsc": "Google Search Console",
-      "gsc_placeholder": "Ключ підтвердження Google",
-      "enabled": "Увімкнути відстеження"
-    },
-    "seo": {
-      "default_title": "Заголовок сторінки за замовчуванням",
-      "default_desc": "Мета-опис за замовчуванням",
-      "og_image": "Зображення для соцмереж (OG Image)",
-      "site_name": "Назва сайту",
-      "basic_title": "Базове SEO",
-      "basic_desc": "Налаштування видимості в пошукових системах",
-      "canonical_url": "Canonical Base URL",
-      "canonical_desc": "The base URL used for canonical and alternate (hreflang) links.",
-      "ai_discovery_title": "AI Search Optimization",
-      "ai_discovery_desc": "Configure how AI agents (Gemini, Perplexity, GPT-4) discover and interpret your site.",
-      "ai_discovery_enabled": "Enable AI Crawler Hints",
-      "ai_discovery_enabled_desc": "Injects specialized meta-data for LLM-based search engines.",
-      "ai_summary": "AI Product Summary",
-      "ai_summary_placeholder": "What should AI agents know about your store?",
-      "ai_summary_desc": "This summary helps AI agents provide accurate answers about your services.",
-      "sitemap_regenerate": "Regenerate Multi-Locale Sitemap",
-      "growth_hacks_title": "Growth & Performance Hacks",
-      "growth_hacks_desc": "Advanced tools to increase conversion and track user behavior.",
-      "fomo_title": "FOMO Elements (Scarcity)",
-      "fomo_desc": "Show 'Limited Stock' and 'Recent Purchase' alerts.",
-      "trust_title": "Trust Badges",
-      "trust_desc": "Display security and guarantee badges on product pages.",
-      "ux_tracking": "UX Tracking (Heatmaps)",
-      "clarity_id": "Microsoft Clarity ID",
-      "hotjar_id": "Hotjar Site ID"
-    },
-    "economy": {
-      "title": "Points & Wallet System",
-      "description": "Configuration for economy",
-      "wallet": {
-        "title": "Virtual Wallet",
-        "enable_wallet": "Увімкнути гаманець користувача",
-        "allow_topup": "Дозволити поповнення",
-        "recurring_topup": "Автоматичні регулярні поповнення",
-        "conversion_rate": "Курс поповнення (1 EUR = X балів)",
-        "description": "Configuration for wallet"
-      },
-      "loyalty": {
-        "title": "Loyalty Points",
-        "enable_loyalty": "Увімкнути збір балів",
-        "points_per_eur": "Балів за кожен витрачений 1 EUR",
-        "min_redeem": "Мінімум балів для використання",
-        "description": "Configuration for loyalty",
-        "protip": "Порада: Підписники можуть отримувати вдвічі більше балів, якщо ви увімкнете множник у розділі гейміфікації."
-      },
-      "subscriptions": {
+    "adminSettings": {
         "title": "Налаштування системи",
-        "description": "Configuration for subscriptions",
-        "status_active": "АКТИВНА",
-        "per_month": "/ місяць",
-        "perks": {
-          "all_pdfs": "Усі PDF без обмежень",
-          "free_topup": "Безкоштовне поповнення ({amount} щомісяця)"
+        "description": "Керування конфігурацією сайту, аналітикою та SEO",
+        "ai_providers": {
+            "title": "Active AI Provider",
+            "description": "Configuration for ai_providers",
+            "api_key": "Ключ API"
         },
-        "add_plan": "Додати новий план"
-      }
-    },
-    "gamification": {
-      "title": "Gamification",
-      "description": "Configuration for gamification",
-      "levels": {
-        "silver": "Срібний рівень",
-        "gold": "Золотий рівень",
-        "diamond": "Діамантовий VIP"
-      },
-      "perks": {
-        "discount": "Авто-знижка (%)",
-        "auto_discount": "Нараховується автоматично в кошику",
-        "hidden_tier": "Тільки ручне призначення"
-      },
-      "badges_title": "Значки учня",
-      "badges": {
-        "early_bird": {
-          "name": "Рання пташка",
-          "desc": "Покупка протягом першої години після публікації"
+        "tabs": {
+            "ai": "Моделі ШІ",
+            "marketing": "Маркетинг та аналітика",
+            "seo": "SEO та мета-теги",
+            "economy": "Економіка та гаманець",
+            "gamification": "Гейміфікація та значки",
+            "market": "Аналіз ринку та навчальних програм",
+            "insights": "Аудит ШІ та пропозиції",
+            "channels": "Канали продажу",
+            "integrations": "Інтеграції та API",
+            "interactive": "Ігри та інтерактив",
+            "workshop": "Студія ШІ та Canva",
+            "automation": "Агенти та автоматизація",
+            "emails": "Email-сповіщення",
+            "google": "Google Cloud",
+            "abandoned": "Покинуті кошики",
+            "guardian": "ШІ Охоронець",
+            "affiliate": "Партнерська програма",
+            "pricing": "Ціни та валюти (PPP)",
+            "taxes": "Рахунки та податки",
+            "growth_hacks": "Growth Hacks",
+            "ai_discovery": "AI Discovery (SEO)"
         },
-        "collector": {
-          "name": "Рання пташка",
-          "desc": "Покупка протягом першої години після публікації"
+        "sections": {
+            "shopping": "Покупки та фінанси",
+            "ai": "Моделі ШІ",
+            "growth": "Ріст та бренд",
+            "system": "Системні налаштування"
         },
-        "top_reviewer": {
-          "name": "Рання пташка",
-          "desc": "Покупка протягом першої години після публікації"
+        "common": {
+            "save": "Зберегти зміни",
+            "saved": "Збережено!",
+            "save_success": "Settings have been successfully saved.",
+            "subject": "Тема",
+            "content": "Зміст",
+            "enabled_desc": "Глобальний перемикач для скриптів відстеження",
+            "ux": {
+                "show": "Показати",
+                "hide": "Приховати",
+                "copy": "Копіювати",
+                "copied": "Скопійовано!",
+                "secure": "Зашифровано"
+            },
+            "preview": {
+                "title": "Preview and Acceptance",
+                "accept": "Accept changes",
+                "reject": "Reject",
+                "bulk_title": "Generated drafts review",
+                "apply_all": "Accept all ({count})",
+                "diff_before": "Before optimization",
+                "diff_after": "AI Suggestion"
+            }
+        },
+        "marketing": {
+            "ga4": "Google Analytics 4",
+            "ga4_placeholder": "G-XXXXXXXXXX",
+            "fb_pixel": "Facebook Pixel",
+            "fb_pixel_placeholder": "ID пікселя",
+            "meta_verification": "Підтвердження домену Meta",
+            "meta_placeholder": "Ключ підтвердження",
+            "gsc": "Google Search Console",
+            "gsc_placeholder": "Ключ підтвердження Google",
+            "enabled": "Увімкнути відстеження"
+        },
+        "seo": {
+            "default_title": "Заголовок сторінки за замовчуванням",
+            "default_desc": "Мета-опис за замовчуванням",
+            "og_image": "Зображення для соцмереж (OG Image)",
+            "site_name": "Назва сайту",
+            "basic_title": "Базове SEO",
+            "basic_desc": "Налаштування видимості в пошукових системах",
+            "canonical_url": "Canonical Base URL",
+            "canonical_desc": "The base URL used for canonical and alternate (hreflang) links.",
+            "ai_discovery_title": "AI Search Optimization",
+            "ai_discovery_desc": "Configure how AI agents (Gemini, Perplexity, GPT-4) discover and interpret your site.",
+            "ai_discovery_enabled": "Enable AI Crawler Hints",
+            "ai_discovery_enabled_desc": "Injects specialized meta-data for LLM-based search engines.",
+            "ai_summary": "AI Product Summary",
+            "ai_summary_placeholder": "What should AI agents know about your store?",
+            "ai_summary_desc": "This summary helps AI agents provide accurate answers about your services.",
+            "sitemap_regenerate": "Regenerate Multi-Locale Sitemap",
+            "growth_hacks_title": "Growth & Performance Hacks",
+            "growth_hacks_desc": "Advanced tools to increase conversion and track user behavior.",
+            "fomo_title": "FOMO Elements (Scarcity)",
+            "fomo_desc": "Show 'Limited Stock' and 'Recent Purchase' alerts.",
+            "trust_title": "Trust Badges",
+            "trust_desc": "Display security and guarantee badges on product pages.",
+            "ux_tracking": "UX Tracking (Heatmaps)",
+            "clarity_id": "Microsoft Clarity ID",
+            "hotjar_id": "Hotjar Site ID"
+        },
+        "economy": {
+            "title": "Points & Wallet System",
+            "description": "Configuration for economy",
+            "wallet": {
+                "title": "Virtual Wallet",
+                "enable_wallet": "Увімкнути гаманець користувача",
+                "allow_topup": "Дозволити поповнення",
+                "recurring_topup": "Автоматичні регулярні поповнення",
+                "conversion_rate": "Курс поповнення (1 EUR = X балів)",
+                "description": "Configuration for wallet"
+            },
+            "loyalty": {
+                "title": "Loyalty Points",
+                "enable_loyalty": "Увімкнути збір балів",
+                "points_per_eur": "Балів за кожен витрачений 1 EUR",
+                "min_redeem": "Мінімум балів для використання",
+                "description": "Configuration for loyalty",
+                "protip": "Порада: Підписники можуть отримувати вдвічі більше балів, якщо ви увімкнете множник у розділі гейміфікації."
+            },
+            "subscriptions": {
+                "title": "Налаштування системи",
+                "description": "Configuration for subscriptions",
+                "status_active": "АКТИВНА",
+                "per_month": "/ місяць",
+                "perks": {
+                    "all_pdfs": "Усі PDF без обмежень",
+                    "free_topup": "Безкоштовне поповнення ({amount} щомісяця)"
+                },
+                "add_plan": "Додати новий план"
+            }
+        },
+        "gamification": {
+            "title": "Gamification",
+            "description": "Configuration for gamification",
+            "levels": {
+                "silver": "Срібний рівень",
+                "gold": "Золотий рівень",
+                "diamond": "Діамантовий VIP"
+            },
+            "perks": {
+                "discount": "Авто-знижка (%)",
+                "auto_discount": "Нараховується автоматично в кошику",
+                "hidden_tier": "Тільки ручне призначення"
+            },
+            "badges_title": "Значки учня",
+            "badges": {
+                "early_bird": {
+                    "name": "Рання пташка",
+                    "desc": "Покупка протягом першої години після публікації"
+                },
+                "collector": {
+                    "name": "Рання пташка",
+                    "desc": "Покупка протягом першої години після публікації"
+                },
+                "top_reviewer": {
+                    "name": "Рання пташка",
+                    "desc": "Покупка протягом першої години після публікації"
+                }
+            }
+        },
+        "market": {
+            "title": "Market Monitoring",
+            "description": "Configuration for market",
+            "curriculum": {
+                "title": "Curriculum Monitoring",
+                "description": "Configuration for curriculum",
+                "monitor_label": "Навчальна програма",
+                "options": {
+                    "pl_mein": "Польща (MEiN)",
+                    "uk_ofsted": "Великобританія (Ofsted)",
+                    "us_cc": "США (Common Core)"
+                },
+                "status": "Відповідність ваших матеріалів: 85%",
+                "alerts": "Виявлено зміни у вимогах для 4-6 класів"
+            },
+            "trends": {
+                "title": "Market Trends",
+                "description": "Configuration for trends",
+                "top_selling": "Найпопулярніший формат: 'Інтерактивні квести'",
+                "competitor_bestsellers": "Бестселери конкурентів",
+                "recommendation": "Порада: Створіть набір 'Easter Escape Room' (Високий попит)",
+                "ai_rec": "Рекомендація ШІ"
+            }
+        },
+        "insights": {
+            "title": "AI Audit & Product Insights",
+            "description": "Configuration for insights",
+            "sync": {
+                "title": "Sync Register",
+                "description": "Configuration for sync",
+                "last_sync": "Остання успішна синхронізація: 15 хв тому",
+                "pending_drafts": "{count} нових чернеток для перевірки"
+            },
+            "expansion": {
+                "title": "Materials Factory (Suggestions)",
+                "description": "Configuration for expansion",
+                "item1": "Продукт 'Unit 1' можна розширити 20 картками (ШІ згенерує їх автоматично)",
+                "item2": "Створіть 'Mega Pack' із трьох ваших найпопулярніших сценаріїв (Потенціал: +25% маржі)"
+            },
+            "audit": {
+                "title": "Conversion Audit",
+                "description": "Configuration for audit",
+                "suggestion": "Змініть головне фото в 'Flashcards Animals' – поточне має низький CTR"
+            }
+        },
+        "integrations": {
+            "title": "Connectors & Webhooks",
+            "description": "Configuration for integrations",
+            "webhooks": {
+                "title": "Webhooks",
+                "description": "Configuration for webhooks",
+                "add": "Add Webhook",
+                "url": "https://www.sklep.kamilaenglish.com/...",
+                "event": "Event",
+                "events": {
+                    "order_created": "Order created",
+                    "order_paid": "Order paid",
+                    "user_registered": "User registered"
+                }
+            },
+            "mcp": {
+                "title": "MCP Connectors",
+                "description": "Configuration for mcp",
+                "server": "MCP Server Address",
+                "status": "Відповідність ваших матеріалів: 85%"
+            },
+            "api": {
+                "title": "External API Keys",
+                "description": "Configuration for api",
+                "service": "Service (e.g., MailerLite, Zapier)",
+                "key": "Consumer Key",
+                "coming_soon": "Integration with MailerLite, ActiveCampaign and Zapier is being implemented.",
+                "coming_soon_desc": "You can already save keys in the Webhooks section for testing."
+            }
+        },
+        "interactive": {
+            "title": "Interactive Content",
+            "description": "Configuration for interactive",
+            "auto_import": "Автоматично створювати продукт після додавання гри на платформу",
+            "auto_import_desc": "Система автоматично виявить коди вставки (Embed) при створенні продукту.",
+            "sync_status": "Остання синхронізація ігор",
+            "sync_hint": "Ми радимо вставляти прямі посилання на ігри в панелі редагування продукту. Система автоматично перетворить їх на інтерактивне вікно для учня.",
+            "other_title": "Інші інтеграції",
+            "platforms": {
+                "wordwall": "Ключ API Wordwall",
+                "wordwall_placeholder": "наприклад: kamila-lo-ko",
+                "genially": "Ключ API Genially",
+                "genially_placeholder": "наприклад: https://view.genial.ly/profile/nick",
+                "sync_title": "Синхронізація Wordwall та Genially",
+                "h5p_desc": "Локальна вставка",
+                "learningapps_desc": "Через iFrame",
+                "quizizz_desc": "Синхронізація через API"
+            }
+        },
+        "workshop": {
+            "title": "AI Workshop",
+            "description": "Configuration for workshop",
+            "generate_btn": "Згенерувати аудит усіх продуктів",
+            "status_ready": "Готово до генерації",
+            "rag_sources": {
+                "title": "AI Knowledge Base (RAG)",
+                "description": "Configuration for rag_sources",
+                "main_label": "Основне джерело (RAG)",
+                "notebook_lm": "Посилання на NotebookLM / Базу знань",
+                "options": {
+                    "google_drive": "Google Drive (Папка: Edu-Materials)",
+                    "notebook_lm": "Посилання на NotebookLM / Базу знань",
+                    "local": "Локальна векторна база даних"
+                }
+            },
+            "generators": {
+                "title": "Material Generators",
+                "reading": "Читання (Текст + Питання)",
+                "listening": "Аудіювання (Скрипт + ШІ аудіо)",
+                "speaking": "Картки для говоріння",
+                "vocabulary": "Вправи на словниковий запас",
+                "flashcards": "Картки (CSV/Anki)",
+                "tests": "Генератор тестів",
+                "worksheets": "Робочі аркуші PDF",
+                "ai_quiz": "ШІ конструктор квізів"
+            },
+            "canva": {
+                "title": "Canva Integration",
+                "description": "Configuration for canva",
+                "api_key": "Ключ API",
+                "auto_export": "Авто-експорт",
+                "connect": "Підключити Canva"
+            },
+            "title_prefix": "AI Creative",
+            "title_suffix": "Studio",
+            "badge": "Next-Gen",
+            "powered_by": "Powered by OpenAI & HeyGen",
+            "available_credits": "Available Credits",
+            "generations_today": "Generations Today",
+            "studio": "Studio",
+            "history": "History",
+            "studios": {
+                "images": "Image Studio",
+                "video": "Video Studio",
+                "avatars": "Avatar Studio",
+                "social": "Social Hub",
+                "flashcards": "Flashcards",
+                "canva": "Canva Studio"
+            },
+            "actions": {
+                "reuse": "Reuse Prompt",
+                "generate": "Generate Asset",
+                "processing": "Processing...",
+                "attach": "Attach",
+                "change_product": "Change Product",
+                "connect": "Connect to Product"
+            },
+            "labels": {
+                "persona": "Select AI Persona",
+                "script": "Script",
+                "prompt": "Creative Prompt",
+                "preview": "Preview",
+                "history_empty": "Your canvas awaits.",
+                "connect_desc": "Link this AI asset to your store inventory.",
+                "professional_suite": "Professional Creative Suite"
+            },
+            "social_hub": {
+                "title": "Social Media Hub",
+                "subtitle": "Post Generator & Optimization",
+                "platforms": {
+                    "instagram": "Instagram",
+                    "facebook": "Facebook",
+                    "linkedin": "LinkedIn",
+                    "youtube": "YouTube"
+                },
+                "labels": {
+                    "select_product": "Select Product to Promote",
+                    "pick_placeholder": "Pick from Product Library...",
+                    "campaign_context": "Campaign Context / Prompt",
+                    "prompt_placeholder": "What are we promoting today? (e.g., 'New Flashcard Set for Christmas')",
+                    "ai_copy": "AI Generated Copy",
+                    "thinking": "Thinking...",
+                    "regenerate": "Regenerate Copy",
+                    "copy_placeholder": "AI will generate your post content here...",
+                    "media_asset": "Media Asset",
+                    "auto_selected": "Auto-Selected",
+                    "select_asset": "Select Asset",
+                    "from_gallery": "From Product Gallery",
+                    "viral_growth": "Viral Growth",
+                    "score": "Score",
+                    "ai_expectancy": "AI expects {percent}% higher engagement on {platform}.",
+                    "live_mockup": "Live Mockup Preview",
+                    "mockup_placeholder": "Your mockup copy will appear here...",
+                    "export": "Export to Socials"
+                }
+            },
+            "flashcards": {
+                "title": "AI Flashcard Studio",
+                "subtitle": "Transform topics into beautiful, ready-to-print flashcard sets.",
+                "badge": "Smart Learning",
+                "branding_kit": "Branding Kit",
+                "export_canva": "Export to Canva",
+                "smart_generator": "Smart Generator",
+                "topic_label": "Topic or Context",
+                "topic_placeholder": "e.g. Life Cycle of a Frog",
+                "style_label": "Visual Style",
+                "styles": {
+                    "academic": "Academic",
+                    "playful": "Playful",
+                    "minimal": "Minimal",
+                    "canva_ai": "Canva AI"
+                },
+                "generate_btn": "Generate Deck",
+                "generating": "Generating...",
+                "live_preview": "Live Preview",
+                "cards_prepared": "{count} Cards Prepared",
+                "empty": "No cards generated yet",
+                "add_custom": "Add Custom Card"
+            }
+        },
+        "automation": {
+            "title": "AI Automation",
+            "description": "Configuration for automation",
+            "agent_delivered": "Агент доставив {count} нових чернеток!",
+            "agents": {
+                "title": "Active Agent",
+                "select_placeholder": "Вибрати агента автоматизації",
+                "manus": "Конектор Manus AI",
+                "general": "Власний браузерний агент (Webhook)",
+                "status_idle": "Агент готовий до завдань",
+                "btn_send": "Відправити агента за посиланнями"
+            },
+            "receiver": {
+                "title": "Webhook Receiver",
+                "description": "Configuration for receiver",
+                "simulate_test": "(Симулювати прибуття агента / Тестувати Webhook)",
+                "simulate_btn": "Симулювати роботу агента"
+            },
+            "scrapers": {
+                "title": "Browser Scraping Tasks",
+                "card_title": "Браузерні роботи",
+                "options": {
+                    "wordwall": "Ключ API Wordwall",
+                    "genially": "Ключ API Genially",
+                    "learningapps": "Скрейпер LearningApps"
+                },
+                "item1": "Продукт 'Unit 1' можна розширити 20 картками (ШІ згенерує їх автоматично)",
+                "item2": "Створіть 'Mega Pack' із трьох ваших найпопулярніших сценаріїв (Потенціал: +25% маржі)",
+                "item3": "Завантажити коди для поширення з Wordwall"
+            },
+            "chat": {
+                "title": "AI Agent Chat",
+                "subtitle": "Пряме спілкування з браузерним агентом",
+                "placeholder": "Де мені шукати сьогодні?",
+                "capabilities": "Поточні можливості: Genially, Wordwall, Canva",
+                "welcome": "Привіт! Я готовий до роботи. Ви можете давати мені завдання у ваших акаунтах (Wordwall, Canva, Genially). Що мені зробити?"
+            }
+        },
+        "emails": {
+            "title": "System Message Templates",
+            "description": "Configuration for emails",
+            "save": "Зберегти зміни",
+            "templates": {
+                "welcome": {
+                    "title": "Welcome Email",
+                    "subject": "Тема",
+                    "content": "Зміст"
+                },
+                "order_confirmed": {
+                    "title": "Order Confirmation",
+                    "subject": "Тема",
+                    "content": "Зміст"
+                },
+                "login_details": {
+                    "title": "Login Details",
+                    "subject": "Тема",
+                    "content": "Зміст"
+                }
+            },
+            "smtp": {
+                "title": "Налаштування системи",
+                "description": "Configuration for smtp",
+                "enable_system": "Увімкнути системну розсилку",
+                "enable_desc": "Використовувати налаштований SMTP-сервер",
+                "host": "SMTP Хост",
+                "port": "Порт"
+            },
+            "variables": "Доступні змінні: {orderNumber}, {email}, {password}, {firstName}, {total}"
+        },
+        "google": {
+            "title": "Google Cloud Integration",
+            "description": "Configuration for google",
+            "auth": {
+                "title": "Google Authorization",
+                "connect": "Підключити Canva",
+                "disconnect": "Відключити акаунт",
+                "status_connected": "Підключено до акаунта: {email}",
+                "status_disconnected": "Немає активних підключень",
+                "drive_description": "Connect the 'Edu-Materials' folder from your Google Drive"
+            },
+            "drive": {
+                "title": "Google Drive Browser",
+                "import_selected": "Імпортувати вибрані файли",
+                "refresh": "Оновити список",
+                "no_files": "Файлів PDF/ZIP на вашому диску не знайдено",
+                "import_success": "Файли успішно імпортовані як матеріали",
+                "column_name": "Назва файлу",
+                "column_size": "Розмір",
+                "column_action": "Дія",
+                "description": "Configuration for drive",
+                "button": "Завантажити з Google Drive",
+                "connecting": "Підключення...",
+                "picker_title": "Виберіть файли з Google Drive",
+                "import_count": "Імпортувати вибрані ({count})",
+                "toast_success": "Імпортовано {count} файлів з Google Drive"
+            },
+            "config": {
+                "client_id": "Google Client ID",
+                "client_secret": "Google Client Secret",
+                "redirect_uri": "Redirect URI"
+            }
+        },
+        "abandoned": {
+            "title": "Cart Recovery",
+            "description": "Configuration for abandoned",
+            "delay": "Затримка першого листа (години)",
+            "discount_code": "Код знижки в листі (опціонально)",
+            "enable_auto": "Увімкнути автоматичне відновлення",
+            "stats": {
+                "total_recovered": "Відновлений дохід",
+                "pending_carts": "Очікувані кошики"
+            }
+        },
+        "guardian": {
+            "title": "AI Safety & Technical Guardian",
+            "description": "Configuration for guardian",
+            "legal_check": "Моніторинг законодавчих змін (E-commerce ЄС)",
+            "tech_check": "Технічний моніторинг помилок у реальному часі",
+            "security_check": "Аналіз спроб несанкціонованого доступу",
+            "alerts": "Виявлено зміни у вимогах для 4-6 класів",
+            "status_good": "Система працює справно",
+            "status_warning": "Виявлено потенційну невідповідність законодавству",
+            "last_scan": "Останнє повне сканування системи"
+        },
+        "affiliate": {
+            "title": "Referral & Affiliate System",
+            "description": "Configuration for affiliate",
+            "commission": "Комісія партнера (%)",
+            "discount": "Авто-знижка (%)",
+            "cookie_life": "Час життя cookie (дні)",
+            "referral_links": "Генерувати реферальні посилання",
+            "total_partners": "Активні партнери",
+            "payouts": "Очікувані виплати"
+        },
+        "pricing": {
+            "title": "Purchasing Power Parity (PPP)",
+            "description": "Configuration for pricing",
+            "enable_ppp": "Увімкнути інтелектуальне регіональне ціноутворення",
+            "base_currency": "Базова валюта",
+            "regions": {
+                "western": "Західна Європа (100% ціни)",
+                "central": "Центральна Європа (85% ціни)",
+                "eastern": "Східна Європа (70% ціни)",
+                "balkans": "Балкани (60% ціни)"
+            },
+            "recurring_title": "Subscriptions & Recurring Payments",
+            "recurring_visa_title": "Visa Recurring Payments",
+            "recurring_visa_desc": "Enable automatic card charging for subscription products. Supported via Stripe Billing and PayNow Recurring.",
+            "recurring_frequency": "Standard Frequency",
+            "recurring_monthly": "30 DAYS / MONTHLY",
+            "recurring_grace_period": "Grace Period / Retry",
+            "recurring_retry": "3 DAYS RETRY",
+            "paynow_title": "PayNow Integration",
+            "paynow_access_key": "Access Key",
+            "paynow_signature_key": "Signature Key",
+            "blik_title": "BLIK Support Enabled",
+            "blik_desc": "PayNow allows users to pay with BLIK codes directly on your checkout page."
+        },
+        "taxes": {
+            "title": "Tax & Invoice Handling",
+            "description": "Configuration for taxes",
+            "eu_vat_moss": "Увімкнути систему VAT-MOSS / OSS",
+            "invoice_provider": "Провайдер інвойсів (напр., Fakturownia, InFakt)",
+            "infakt_api_key": "API ключ InFakt",
+            "test_connection": "Тестувати API з'єднання",
+            "stripe_title": "Платежі Stripe",
+            "stripe_publishable": "Публічний ключ Stripe",
+            "stripe_secret": "Секретний ключ Stripe"
+        },
+        "editor": {
+            "placeholder": "Де мені шукати сьогодні?",
+            "prompts": {
+                "link": "Enter URL:",
+                "image": "Enter image URL:"
+            },
+            "toolbar": {
+                "bold": "Bold",
+                "italic": "Italic",
+                "h2": "Heading 2",
+                "h3": "Heading 3",
+                "list": "Unordered List",
+                "listOrdered": "Нумерований список",
+                "link": "Enter URL:",
+                "image": "Enter image URL:",
+                "quote": "Цитата",
+                "code": "Блок коду"
+            }
         }
-      }
     },
-    "market": {
-      "title": "Market Monitoring",
-      "description": "Configuration for market",
-      "curriculum": {
-        "title": "Curriculum Monitoring",
-        "description": "Configuration for curriculum",
-        "monitor_label": "Навчальна програма",
-        "options": {
-          "pl_mein": "Польща (MEiN)",
-          "uk_ofsted": "Великобританія (Ofsted)",
-          "us_cc": "США (Common Core)"
+    "adminPanel": {
+        "sidebar": {
+            "title": "Налаштування системи",
+            "subtitle": "Пряме спілкування з браузерним агентом",
+            "expand": "Розгорнути",
+            "collapse": "Згорнути",
+            "logout": "Вийти з сесії",
+            "logoutTooltip": "Вийти",
+            "menu": {
+                "dashboard": "Панель приладів",
+                "products": "Продукти",
+                "orders": "Замовлення",
+                "coupons": "Coupons",
+                "materials": "Матеріали",
+                "blog": "Блог",
+                "import": "Import AI",
+                "settings": "Налаштування",
+                "chat": "AI Chat",
+                "home": "Головна сторінка",
+                "role": "Адміністратор",
+                "online": "Онлайн",
+                "abandoned": "Abandoned Carts",
+                "offers": "Offer Generator",
+                "workshop": "AI Creative Suite",
+                "landing_builder": "Landing Pages"
+            }
         },
-        "status": "Відповідність ваших матеріалів: 85%",
-        "alerts": "Виявлено зміни у вимогах для 4-6 класів"
-      },
-      "trends": {
-        "title": "Market Trends",
-        "description": "Configuration for trends",
-        "top_selling": "Найпопулярніший формат: 'Інтерактивні квести'",
-        "competitor_bestsellers": "Бестселери конкурентів",
-        "recommendation": "Порада: Створіть набір 'Easter Escape Room' (Високий попит)",
-        "ai_rec": "Рекомендація ШІ"
-      }
-    },
-    "insights": {
-      "title": "AI Audit & Product Insights",
-      "description": "Configuration for insights",
-      "sync": {
-        "title": "Sync Register",
-        "description": "Configuration for sync",
-        "last_sync": "Остання успішна синхронізація: 15 хв тому",
-        "pending_drafts": "{count} нових чернеток для перевірки"
-      },
-      "expansion": {
-        "title": "Materials Factory (Suggestions)",
-        "description": "Configuration for expansion",
-        "item1": "Продукт 'Unit 1' можна розширити 20 картками (ШІ згенерує їх автоматично)",
-        "item2": "Створіть 'Mega Pack' із трьох ваших найпопулярніших сценаріїв (Потенціал: +25% маржі)"
-      },
-      "audit": {
-        "title": "Conversion Audit",
-        "description": "Configuration for audit",
-        "suggestion": "Змініть головне фото в 'Flashcards Animals' – поточне має низький CTR"
-      }
-    },
-    "integrations": {
-      "title": "Connectors & Webhooks",
-      "description": "Configuration for integrations",
-      "webhooks": {
-        "title": "Webhooks",
-        "description": "Configuration for webhooks",
-        "add": "Add Webhook",
-        "url": "https://www.sklep.kamilaenglish.com/...",
-        "event": "Event",
-        "events": {
-          "order_created": "Order created",
-          "order_paid": "Order paid",
-          "user_registered": "User registered"
+        "dashboard": {
+            "title": "Налаштування системи",
+            "subtitle": "Пряме спілкування з браузерним агентом",
+            "periods": {
+                "7days": "7 днів",
+                "30days": "30 днів",
+                "90days": "90 днів",
+                "all": "Весь час"
+            },
+            "addProduct": "Додати продукт",
+            "currency": "$",
+            "stats": {
+                "revenue": "Дохід",
+                "orders": "Замовлення",
+                "customers": "Клієнти",
+                "avgOrderValue": "Середня вартість замовлення",
+                "vsPrevious": "порівняно з попереднім періодом",
+                "inSelectedPeriod": "За вибраний період",
+                "uniqueCustomers": "Унікальні покупці",
+                "perOrder": "За замовлення"
+            },
+            "charts": {
+                "weeklyRevenue": "Тижневий дохід",
+                "revenueByDay": "Продажі за окремими днями",
+                "bestsellersRanking": "Рейтинг бестселерів",
+                "topSellingProducts": "Найпопулярніші продукти",
+                "noSalesData": "Немає даних про продажі",
+                "sold": "Продано: {count}",
+                "days": {
+                    "mon": "Пн",
+                    "tue": "Вт",
+                    "wed": "Ср",
+                    "thu": "Чт",
+                    "fri": "Пт",
+                    "sat": "Сб",
+                    "sun": "Нд"
+                }
+            },
+            "recentOrders": {
+                "title": "Налаштування системи",
+                "subtitle": "Пряме спілкування з браузерним агентом",
+                "viewAll": "Переглянути всі",
+                "noOrders": "Поки немає замовлень",
+                "productCount": "{count} продуктів",
+                "status": {
+                    "completed": "Завершено",
+                    "pending": "Очікується",
+                    "processing": "Обробляється"
+                }
+            },
+            "aiInsights": {
+                "card": {
+                    "monitoring": "Active Market Monitoring",
+                    "strategyTitle": "Your growth strategy for {period}",
+                    "periodWeek": "next week",
+                    "periodMonth": "this month",
+                    "description": "We analyzed your last {count} orders. We have 3 specific recommendations that could increase your revenue by approx. 18%.",
+                    "generateBtn": "Generate Strategic Report"
+                },
+                "modal": {
+                    "title": "AI Growth Report",
+                    "subtitle": "Generated for: Administrator • Feb 2024",
+                    "revenueChance": "Revenue Chance",
+                    "revenueGrowth": "Possible growth in 14 days",
+                    "crossSellScore": "Cross-sell Score",
+                    "crossSellDesc": "High linking potential",
+                    "retentionProj": "Retention Proj.",
+                    "retentionDesc": "Loyal returning customers",
+                    "recommendedActions": "Recommended Actions",
+                    "action1Title": "Email: Abandoned Cart (New template)",
+                    "action1Desc": "Customers are abandoning carts for \"Preschool - Autumn Pack\". We suggest adding a 48h timer and 5% discount.",
+                    "action2Title": "Bundle: Preschool Combo Pack",
+                    "action2Desc": "Combine 3 most popular products into one bundle. Suggested price: $59.99.",
+                    "deploy": "Deploy",
+                    "create": "Create",
+                    "skip": "Skip report",
+                    "apply": "Apply Recommendations",
+                    "success": "Strategic report has been saved and sent for analysis."
+                },
+                "overlay": {
+                    "title": "Processing Big Data...",
+                    "subtitle": "\"Analyzing correlations between products and buying behaviors of your customers.\"",
+                    "step1": "Clustering users...",
+                    "step3": "Generating visualizations..."
+                },
+                "wordwallSync": {
+                    "title": "Smart Interactive Sync",
+                    "description": "Paste links to your resources (Wordwall, Genially, Canva, YouTube, Google Slides, Quizizz, NotebookLM, Vocaroo) to add them as products.",
+                    "placeholder": "https://wordwall.net/...\nhttps://view.genial.ly/...\nhttps://canva.com/design/...\nhttps://youtube.com/watch?v=...\nhttps://quizizz.com/...",
+                    "syncBtn": "Start Sync",
+                    "syncing": "Syncing...",
+                    "success": "Successfully imported {count} new games!",
+                    "noNew": "All provided links have already been imported.",
+                    "invalid": "No valid educational links (Wordwall/Genially/Canva/YouTube/Slides/etc) detected.",
+                    "close": "Close"
+                }
+            },
+            "interactivePreview": {
+                "subtitle": "Live preview of interactive material",
+                "noPreview": "No preview available for this asset",
+                "close": "Close"
+            },
+            "activeAiLogs": {
+                "title": "Active AI Logs",
+                "live": "Live",
+                "imageGenerated": "Image Generated",
+                "socialPostReady": "Social Post Ready",
+                "flashcardCreated": "Flashcard Created",
+                "trendIdentified": "Trend identified",
+                "seoOptimized": "SEO Optimized",
+                "imagePolished": "Image Polished"
+            },
+            "studioQuickAccess": {
+                "title": "Studio Quick Access",
+                "imageStudio": "Image Studio",
+                "generate4k": "Generate 4K Visuals",
+                "socialHub": "Social Hub",
+                "viralCreation": "Viral Post Creation"
+            },
+            "salesHub": {
+                "title": "Sales Hub",
+                "subtitle": "Real-time Performance Insights",
+                "totalRevenue": "Загальний дохід",
+                "avgOrderValue": "Середня вартість замовлення",
+                "conversionRate": "Коефіцієнт конверсії",
+                "abandonedCarts": "Покинуті кошики",
+                "upsellPerformance": "Upsell Performance",
+                "upsellDesc": "Post-purchase offers converted {percent}% of users",
+                "ltvLift": "LTV Lift"
+            },
+            "superAdmin": {
+                "title": "SuperAdmin: Deployment Management",
+                "subtitle": "Global Feature Toggles for new B2B modules",
+                "apiViewer": {
+                    "title": "External API Portal",
+                    "desc": "1-Click portal generator for schools (Phase 12).",
+                    "on": "Global ON",
+                    "off": "Paused",
+                    "earlyAccess": "Early Access List (Gold List)",
+                    "added": "Added {email} to early access"
+                },
+                "internalFeatures": {
+                    "title": "Internal Features & Shop Security",
+                    "desc": "Control the visibility of core modules in your B2C shop. Separately decide if these features are technically solid and should be allowed in B2B External Portals.",
+                    "ownShop": "Own Shop (B2C)",
+                    "externalExport": "External Export (B2B)",
+                    "games": "Interactive Games",
+                    "gamesDesc": "Arcade Room",
+                    "gamification": "Gamification",
+                    "gamificationDesc": "Badges, progress",
+                    "wallet": "Teacher Wallet",
+                    "walletDesc": "Points program"
+                },
+                "extensions": {
+                    "title": "B2B Extensions",
+                    "desc": "Marketplace for AI tokens and services (Phase 13)."
+                },
+                "futureCatalog": {
+                    "title": "Future B2B Module Catalog",
+                    "subtitle": "In development",
+                    "desc": "Features already existing in the mother shop, ready for future packaging and sharing with schools/teachers as paid SaaS Plugins.",
+                    "gamesApi": "Interactive Games (API)",
+                    "gamesApiDesc": "Allow schools to embed Arcade Room and board games directly on their own sites.",
+                    "gamificationEngine": "Gamification Engine",
+                    "gamificationEngineDesc": "Badges, Certificates, Proficiency Tree and Streaks sold as a motivative B2B addon.",
+                    "telemetry": "Clean Summaries",
+                    "telemetryDesc": "Simple, student-friendly summaries of completed modules exported to e-registers.",
+                    "affiliate": "B2B Affiliate Program",
+                    "affiliateDesc": "Schools dropship your courses under their own brand and share with students easily.",
+                    "ready": "Ready for deployment",
+                    "requiresPhase9": "Requires Phase 9"
+                }
+            }
+        },
+        "products": {
+            "title": "Налаштування системи",
+            "subtitle": "Пряме спілкування з браузерним агентом",
+            "search": "Пошук продуктів...",
+            "importAi": "Імпорт ШІ",
+            "addProduct": "Додати продукт",
+            "noProducts": "Продуктів не знайдено",
+            "addFirst": "Додайте перший продукт",
+            "table": {
+                "product": "Продукт",
+                "category": "Категорія",
+                "price": "Ціна",
+                "source": "Розміщено в",
+                "status": "Відповідність ваших матеріалів: 85%",
+                "actions": "Дії"
+            },
+            "status": {
+                "published": "Опубліковано",
+                "draft": "Чернетка"
+            },
+            "actions": {
+                "edit": "Редагувати",
+                "viewAccess": "View Product Access",
+                "copyLink": "Копіювати посилання (Fast Checkout)",
+                "hide": "Приховати",
+                "publish": "Опублікувати",
+                "delete": "Видалити"
+            },
+            "toasts": {
+                "linkCopied": "Посилання на швидку оплату скопійовано:\\n{link}",
+                "deleteConfirm": "Ви впевнені, що хочете видалити цей продукт?"
+            },
+            "categories": {
+                "lesson-plans": "Плани уроків",
+                "worksheets": "Робочі аркуші PDF",
+                "flashcards": "Картки (CSV/Anki)",
+                "games": "Онлайн ігри",
+                "audio": "Аудіоматеріали",
+                "video": "Відеоматеріали",
+                "bundles": "Набори (Bundles)",
+                "other": "Інше"
+            },
+            "source_badges": {
+                "wordpress": "WordPress / Publigo",
+                "tpt": "Teachers Pay Teachers",
+                "ai_optimized": "Оптимізовано ШІ"
+            }
+        },
+        "orders": {
+            "title": "Налаштування системи",
+            "subtitle": "Пряме спілкування з браузерним агентом",
+            "exportCsv": "Експорт у CSV",
+            "stats": {
+                "revenue": "Дохід",
+                "pending": "Очікується",
+                "today": "Замовлень сьогодні"
+            },
+            "search": "Пошук продуктів...",
+            "statusFilter": "Статус",
+            "allStatuses": "Усі",
+            "empty": "Замовлень не знайдено",
+            "table": {
+                "order": "Замовлення",
+                "customer": "Клієнт",
+                "products": "Продукти",
+                "total": "Разом",
+                "status": "Відповідність ваших матеріалів: 85%",
+                "date": "Дата"
+            },
+            "status": {
+                "pending": "Очікується",
+                "processing": "Обробляється",
+                "completed": "Завершено",
+                "cancelled": "Скасовано",
+                "refunded": "Повернуто"
+            },
+            "paymentMethods": {
+                "card": "Картка",
+                "transfer": "Переказ",
+                "blik": "BLIK/Швидка оплата",
+                "paypal": "PayPal"
+            },
+            "details": {
+                "notFound": "Замовлення не знайдено",
+                "back": "Назад до списку",
+                "invoice": "Виставити рахунок",
+                "payment": "Оплата",
+                "summary": "Підсумок",
+                "sendEmail": "Надіслати email",
+                "items": "Товари",
+                "paidAt": "Оплачено: {date}",
+                "discount": "Авто-знижка (%)",
+                "total": "Разом",
+                "quantity": "Кількість"
+            },
+            "paymentStatus": {
+                "paid": "Paid",
+                "pending": "Очікується",
+                "failed": "Failed",
+                "refunded": "Повернуто"
+            },
+            "export_headers": {
+                "order_number": "№ замовлення",
+                "date": "Дата",
+                "customer": "Клієнт",
+                "email": "Email",
+                "products": "Продукти",
+                "total": "Разом",
+                "status": "Відповідність ваших матеріалів: 85%"
+            }
+        },
+        "coupons": {
+            "title": "Налаштування системи",
+            "subtitle": "Пряме спілкування з браузерним агентом",
+            "addCoupon": "Новий купон",
+            "editCoupon": "Редагувати купон",
+            "createCoupon": "Створити купон",
+            "stats": {
+                "all": "Весь час",
+                "active": "Активні",
+                "usage": "Загальне використання"
+            },
+            "form": {
+                "code": "Блок коду",
+                "generate": "Згенерувати",
+                "placeholder": "Де мені шукати сьогодні?",
+                "discountType": "Тип знижки",
+                "percent": "Відсоткова (%)",
+                "fixed": "Фіксована сума",
+                "discountValue": "Значення знижки",
+                "usageLimit": "Ліміт використання",
+                "minOrderValue": "Мін. сума замовлення",
+                "expiresAt": "Діє до (опціонально)"
+            },
+            "ux": {
+                "show": "Show",
+                "hide": "Hide",
+                "copy": "Copy",
+                "copied": "Copied!",
+                "secure": "Encrypted"
+            },
+            "preview": {
+                "title": "Preview & Accept",
+                "accept": "Accept Changes",
+                "reject": "Discard",
+                "bulk_title": "Review Generated Drafts",
+                "apply_all": "Accept All ({count})",
+                "diff_before": "Before Optimization",
+                "diff_after": "AI Suggestion"
+            },
+            "table": {
+                "code": "Блок коду",
+                "discount": "Авто-знижка (%)",
+                "usage": "Загальне використання",
+                "expires": "Діє до",
+                "status": "Відповідність ваших матеріалів: 85%"
+            },
+            "toasts": {
+                "deleteConfirm": "Ви впевнені, що хочете видалити цей продукт?"
+            }
+        },
+        "materials": {
+            "title": "Налаштування системи",
+            "subtitle": "Пряме спілкування з браузерним агентом",
+            "deleteSelected": "Видалити ({count})",
+            "assignToProduct": "Призначити продукту ({count})",
+            "dragDrop": "Перетягніть файли сюди",
+            "clickToUpload": "або натисніть кнопку нижче, щоб вибрати з диска",
+            "selectFiles": "Вибрати файли",
+            "or": "- АБО -",
+            "library": {
+                "title": "Налаштування системи",
+                "description": "Configuration for library",
+                "empty": "Замовлень не знайдено"
+            },
+            "table": {
+                "check": "Вибрати",
+                "fileName": "Назва файлу",
+                "size": "Розмір",
+                "source": "Розміщено в",
+                "product": "Продукт",
+                "actions": "Дії"
+            },
+            "badges": {
+                "upload": "Завантаження",
+                "drive": "Google Drive",
+                "unassigned": "Не призначено"
+            },
+            "dialog": {
+                "title": "Налаштування системи",
+                "selectLabel": "Виберіть продукт",
+                "placeholder": "Де мені шукати сьогодні?",
+                "cancel": "Скасувати",
+                "save": "Зберегти зміни"
+            },
+            "toasts": {
+                "uploadSuccess": "Завантажено {count} файлів",
+                "deleted": "Файл видалено",
+                "deletedSelected": "Видалено вибрані файли",
+                "assigned": "Призначено {count} файлів продукту"
+            }
+        },
+        "certificates": {
+            "title": "Налаштування системи",
+            "subtitle": "Пряме спілкування з браузерним агентом",
+            "stats": {
+                "totalIssued": "Всього видано",
+                "avgScore": "Сер. бал іспиту"
+            },
+            "tabs": {
+                "templates": "Шаблони",
+                "exams": "Іспити",
+                "issued": "Видані"
+            },
+            "templates": {
+                "create": "Створити шаблон",
+                "preview": "Редагувати шаблон",
+                "standardTitle": "Стандартний диплом (A4)",
+                "standardDesc": "Шаблон за замовчуванням для мовних курсів",
+                "certificateTitle": "Сертифікат про завершення",
+                "completedCourse": "Завершив курс: {course}",
+                "aiGenerate": "Згенерувати ШІ-шаблон",
+                "aiDesc": "Опишіть стиль (напр. 'сучасний', 'для дітей'), і ШІ створить унікальний дизайн диплома.",
+                "createAi": "Створити за допомогою ШІ"
+            },
+            "exams": {
+                "create": "Створити шаблон",
+                "description": "Configuration for exams",
+                "createAi": "Створити за допомогою ШІ"
+            },
+            "issued": {
+                "empty": "Замовлень не знайдено"
+            }
+        },
+        "blog": {
+            "title": "Налаштування системи",
+            "subtitle": "Пряме спілкування з браузерним агентом",
+            "newPost": "Нова публікація",
+            "searchPlaceholder": "Пошук статтей...",
+            "empty": "Замовлень не знайдено",
+            "writeFirst": "Написати першу статтю",
+            "table": {
+                "title": "Налаштування системи",
+                "category": "Категорія",
+                "status": "Відповідність ваших матеріалів: 85%",
+                "date": "Дата"
+            },
+            "status": {
+                "published": "Опубліковано",
+                "draft": "Чернетка"
+            },
+            "actions": {
+                "preview": "Редагувати шаблон",
+                "delete": "Видалити",
+                "save": "Save",
+                "edit": "Редагувати",
+                "hide": "Приховати",
+                "publish": "Опублікувати"
+            },
+            "categories": {
+                "mega-pack": "Mega Packs",
+                "scenariusze": "Scenarios",
+                "zlobek": "Nursery",
+                "special-lessons": "Special Lessons",
+                "speakbook": "Speakbook",
+                "stories": "Stories",
+                "culture": "Culture",
+                "pory-roku": "Seasons",
+                "teatr": "Theater",
+                "flashcards": "Flashcards",
+                "gry": "Games",
+                "inne": "Інше",
+                "metodyka": "Методика викладання",
+                "materialy": "Дидактичні матеріали",
+                "technologia": "Технології в освіті",
+                "inspiracje": "Натхнення та ідеї",
+                "recenzje": "Рецензії",
+                "wydarzenia": "Події"
+            },
+            "toasts": {
+                "deleteConfirm": "Ви впевнені, що хочете видалити цей продукт?"
+            },
+            "form": {
+                "createTitle": "New Post",
+                "createSubtitle": "Create a new blog post",
+                "editTitle": "Edit Post",
+                "editSubtitle": "Edit existing blog post",
+                "titlePlaceholder": "Post title...",
+                "contentTitle": "Content",
+                "contentPlaceholder": "Start writing post content...",
+                "excerptTitle": "Excerpt",
+                "excerptPlaceholder": "Short description displayed on post list...",
+                "statusTitle": "Status",
+                "categoryTitle": "Category",
+                "categoryPlaceholder": "Select category",
+                "tagsTitle": "Tags",
+                "tagsPlaceholder": "tag1, tag2, tag3",
+                "imageTitle": "Featured Image",
+                "imagePlaceholder": "https://kamila.shor.dev/image.jpg",
+                "seoTitle": "SEO",
+                "metaTitleLabel": "Meta Title",
+                "metaTitlePlaceholder": "Search engine title",
+                "metaDescLabel": "Meta Description",
+                "metaDescPlaceholder": "Search engine description",
+                "charCount": "{count}/{max} characters",
+                "seoPreview": "Google Preview",
+                "generate": "Generate",
+                "save": "Save",
+                "saveChanges": "Save Changes",
+                "saving": "Saving...",
+                "delete": "Delete",
+                "notFound": "Post not found",
+                "backToList": "Back to list",
+                "titleRequired": "Please enter a title first"
+            }
+        },
+        "chat": {
+            "title": "AI Agent Chat",
+            "subtitle": "Пряме спілкування з браузерним агентом",
+            "welcome": "Привіт! Я готовий до роботи. Ви можете давати мені завдання у ваших акаунтах (Wordwall, Canva, Genially). Що мені зробити?",
+            "newChat": "Новий чат",
+            "history": "Історія",
+            "placeholder": "Де мені шукати сьогодні?",
+            "capabilities": {
+                "database": "База даних",
+                "store": "Магазин",
+                "web": "Інтернет",
+                "files": "Файли"
+            },
+            "inputPlaceholder": "Введіть повідомлення...",
+            "disclaimer": "ШІ може припускатися помилок. Перевіряйте важливу інформацію.",
+            "generatedBy": "Згенеровано {model}",
+            "mockResponse": "Симульована відповідь моделі {model}. Отримано: \\",
+            "mockSessions": {
+                "s1": {
+                    "title": "Налаштування системи",
+                    "date": "Дата"
+                },
+                "s2": {
+                    "title": "Налаштування системи",
+                    "date": "Дата"
+                },
+                "s3": {
+                    "title": "Налаштування системи",
+                    "date": "Дата"
+                }
+            }
+        },
+        "import": {
+            "title": "Налаштування системи",
+            "subtitle": "Пряме спілкування з браузерним агентом",
+            "catalogUrl": "URL каталогу",
+            "catalogUrlDesc": "Вставте посилання на сторінку продуктів (kamilaenglish.com)",
+            "scan": "Сканувати продукти",
+            "scanning": "Сканування...",
+            "enhance": "Покращити з ШІ",
+            "enhancing": "Покращення...",
+            "import": "Імпортувати ({count})",
+            "importing": "Імпортування...",
+            "productsFound": "Знайдено продуктів ({count})",
+            "selectedCount": "Вибрано: {count}",
+            "selectAll": "Вибрати всі",
+            "deselectAll": "Зняти вибір",
+            "allCategories": "Усі",
+            "openSource": "Відкрити джерело",
+            "preview": {
+                "testInteractive": "Test Interactive Game",
+                "sourceLink": "Source Link",
+                "selectToPreview": "Select a product to preview",
+                "backToList": "Back to List",
+                "acceptAndCreate": "Accept & Create {count} Drafts"
+            },
+            "configureAi": "Configure API keys in settings before using AI",
+            "selectProducts": "Select products to import",
+            "noAssetsFound": "No valid assets were found. Please ensure you are using public links (e.g. wordwall.net/resource/...) and not your private dashboard.",
+            "privateLink": "Skipped private page: {url}",
+            "errors": {
+                "enterUrl": "Введіть URL каталогу",
+                "onlyKamila English": "Підтримуються лише продукти з kamilaenglish.com",
+                "configureAi": "Налаштуйте ключі API перед використанням ШІ",
+                "selectProducts": "Виберіть продукти для імпорту"
+            },
+            "success": {
+                "found": "Знайдено {count} продуктів на Kamila English!",
+                "enhanced": "Описи покращено за допомогою ШІ!",
+                "imported": "Імпортовано {count} продуктів!"
+            },
+            "placeholders": {
+                "url": "https://www.sklep.kamilaenglish.com/..."
+            },
+            "categories": {
+                "mega-pack": "Мега-пакети",
+                "scenariusze": "Сценарії",
+                "zlobek": "Ясла",
+                "special-lessons": "Спеціальні уроки",
+                "speakbook": "Speakbook",
+                "stories": "Історії",
+                "culture": "Культура",
+                "pory-roku": "Пори року",
+                "teatr": "Театр",
+                "flashcards": "Картки (CSV/Anki)",
+                "gry": "Ігри",
+                "inne": "Інше"
+            },
+            "enhancedText": {
+                "titlePrefix": "🎯",
+                "bestseller": "✨ БЕСТСЕЛЕР!",
+                "whatYouGet": "📚 Що ви отримуєте:",
+                "features": {
+                    "pdf": "• Готові до друку PDF-матеріали",
+                    "teacher": "• Інструкції для викладача",
+                    "worksheets": "Робочі аркуші PDF"
+                },
+                "footer": "⭐ Перевірено сотнями вчителів!"
+            }
+        },
+        "success": {
+            "found": "Found {count} products from Kamila English!",
+            "enhanced": "Descriptions enhanced by AI!",
+            "imported": "Imported {count} products!"
+        },
+        "placeholders": {
+            "url": "https://www.sklep.kamilaenglish.com/..."
+        },
+        "categories": {
+            "mega-pack": "Mega Packs",
+            "scenariusze": "Scenarios",
+            "zlobek": "Nursery",
+            "special-lessons": "Special Lessons",
+            "speakbook": "Speakbook",
+            "stories": "Stories",
+            "culture": "Culture",
+            "pory-roku": "Seasons",
+            "teatr": "Theater",
+            "flashcards": "Flashcards",
+            "gry": "Games",
+            "inne": "Others"
+        },
+        "footer": "⭐ Trusted by hundreds of teachers!",
+        "item1": "Full access to materials",
+        "item2": "SEO Optimized content",
+        "item3": "Implementation guide for students",
+        "assistant": {
+            "title": "AI Copilot",
+            "status": "Active Intelligence",
+            "welcome": "How can I help you today?",
+            "placeholder": "Ask me anything...",
+            "suggestions": {
+                "generate_visuals": "Generate 4K Visuals",
+                "social_post": "Create Social Post",
+                "avatar_script": "New AI Avatar Script",
+                "seo_optimize": "SEO Optimize Description",
+                "product_cover": "Generate Product Cover",
+                "sync_wordwall": "Sync with Wordwall",
+                "config_workshop": "Configure AI Workshop",
+                "test_api": "Test API Credentials",
+                "connect_canva": "Connect Canva Design",
+                "gen_strategy": "Generate Strategy",
+                "view_trends": "View Trends",
+                "open_workshop": "Open Workshop"
+            },
+            "responses": {
+                "processing": "I'm processing your request. As your AI Copilot, I can help you manage products, generate creative assets, and optimize your store.",
+                "products_context": "You currently have {count} products in your store. I can help you generate descriptions or images for them in the AI Workshop.",
+                "product_example": "For example, I noticed \"{title}\". Would you like to optimize it?",
+                "workshop_info": "The AI Workshop is where you can generate images, videos, and social media posts. You can find it in the 'Workshop' tab of Settings or the dedicated Studio page.",
+                "wordwall_info": "To sync with Wordwall, go to the Products page and use the 'Interactive Import' button. I can also help you scrape metadata from any educational URL!",
+                "hello": "Hello! I'm your AI Copilot. I'm currently aware of {count} products and your store settings. How can I assist you today?"
+            }
+        },
+        "offers": {
+            "title": "AI Offer Generator",
+            "subtitle": "Create high-converting offers in seconds.",
+            "beta": "Beta Growth Suite",
+            "parameters": {
+                "title": "Campaign Parameters",
+                "description": "Define the goal of your offer",
+                "promotion_type": "Promotion Type",
+                "occasional": "Occasional",
+                "evergreen": "Evergreen",
+                "product": "Product / Service",
+                "product_placeholder": "e.g. Lesson Plan Bundle A1-C1",
+                "benefit": "Main Benefit",
+                "benefit_placeholder": "What will the customer gain?",
+                "discount": "Discount (%)",
+                "generate": "Generate AI Offer",
+                "analyzing": "Analyzing market..."
+            },
+            "preview": {
+                "ai_project": "AI PROJECT",
+                "effectiveness": "Effectiveness: {score}%",
+                "title": "Special Early Bird Offer",
+                "subtitle": "Review the generated campaign before publishing",
+                "ad_copy_label": "Ad Slogan",
+                "conversion_label": "Conversion",
+                "vs_avg": "+{diff}% vs avg",
+                "discount_code_label": "Your discount code",
+                "copied": "Copied",
+                "copy": "Copy",
+                "reject": "Reject and change parameters",
+                "accept": "Accept and Publish Offer"
+            },
+            "loading": {
+                "title": "AI Magic in progress...",
+                "description": "\"Analyzing market trends and optimizing sales psychology for your products.\"",
+                "progress_label": "Competitor analysis..."
+            },
+            "toasts": {
+                "copied": "Discount code copied!",
+                "ready": "Offer ready for review!"
+            }
+        },
+        "landingBuilder": {
+            "title": "Landing Page Builder",
+            "draftVersion": "Draft Version: {name}",
+            "desktop": "Desktop",
+            "mobile": "Mobile",
+            "preview": "Preview",
+            "save": "Save changes",
+            "saving": "Saving...",
+            "elements": "Page Elements",
+            "text": "Text",
+            "image": "Image",
+            "button": "Button",
+            "aiBlock": "AI Block",
+            "canvas": "Canvas (Layers)",
+            "hero": "Hero Section",
+            "features": "Advantages & Benefits",
+            "pricing": "Pricing Section",
+            "aiMagic": {
+                "title": "Ready for magic?",
+                "desc": "Use AI to automatically match copy and colors to your product.",
+                "optimize": "Optimize with AI"
+            },
+            "mock": {
+                "newCourse": "New Course",
+                "heroTitle": "Start teaching the language {joy}",
+                "joy": "with joy",
+                "heroDesc": "Ready-made scenarios your students will love. Zero stress, 100% results.",
+                "buyNow": "Buy now and start teaching",
+                "learnMore": "Learn more",
+                "addImage": "Add main image (Drag & Drop)"
+            },
+            "optimization": {
+                "title": "AI Landing Optimization",
+                "desc": "We detected {count} areas for improvement to increase conversion by approx. {percent}%.",
+                "current": "Current Version",
+                "aiSuggestion": "AI Suggestion (Improved conversion)",
+                "recommendation": "RECOMMENDATION",
+                "skip": "Skip changes",
+                "apply": "Apply optimization",
+                "success": "AI changes have been applied to the project!",
+                "processing": "Working on the project...",
+                "processingDesc": "\"Scanning your copy for benefit language and analyzing market heatmaps.\"",
+                "analysingHeaders": "Analyzing headers...",
+                "pickingColors": "Choosing color palette...",
+                "renderingPreview": "Rendering preview...",
+                "paletteTitle": "Improved Color Palette (Ocean Night)",
+                "paletteDesc": "We will change the accents to a more professional navy and energetic blue.",
+                "suggestionTitle": "Stop wasting hours on preparation. Choose ready-made solutions.",
+                "suggestionDesc": "Join 500+ teachers who reclaimed 10 hours a week. We guarantee a smile on every student's face.",
+                "suggestionButton": "Claim your time and start now"
+            },
+            "toasts": {
+                "saved": "Landing page saved successfully!"
+            }
+        },
+        "integrations": {
+            "title": "Connectors & Webhooks",
+            "subtitle": "Пряме спілкування з браузерним агентом",
+            "loading": "Завантаження перекладів...",
+            "addStore": "Додати магазин",
+            "sync_status": "Остання синхронізація ігор",
+            "today": "Замовлень сьогодні",
+            "tabs": {
+                "sync": "Склад та синхронізація",
+                "agent": "Агент публікацій",
+                "settings": "Налаштування"
+            },
+            "marketplaces": {
+                "groups": {
+                    "poland": "Польща",
+                    "usa": "США",
+                    "dach": "Німеччина (DACH)",
+                    "uk": "Великобританія",
+                    "fr_es": "Франція/Іспанія"
+                },
+                "names": {
+                    "wp": "WooCommerce / Publigo",
+                    "wp_full": "WordPress / Publigo",
+                    "tpt": "Teachers Pay Teachers",
+                    "etsy": "Etsy Education",
+                    "eduki": "Eduki (Німеччина)",
+                    "tes": "TES (Великобританія)",
+                    "mieux": "MieuxEnseigner (Франція/Іспанія)"
+                }
+            },
+            "inventory": {
+                "title": "Налаштування системи",
+                "badge": "Центральний склад",
+                "description": "Configuration for inventory",
+                "source": "Розміщено в",
+                "allFiles": "Усі PDF, ігри та аудіо в одному місці",
+                "updateBtn": "Оновити інвентар",
+                "syncBtn": "Синхронізувати склад",
+                "progress": "Прогрес синхронізації",
+                "log": "Системний лог",
+                "waiting": "Очікування запуску...",
+                "logs": {
+                    "init": "Ініціалізація з'єднання із зовнішніми системами...",
+                    "auth": "Авторизація Publigo (wp-idea) та WooCommerce...",
+                    "fetching": "Отримання списку продуктів...",
+                    "syncing": "Синхронізація запасів та файлів...",
+                    "complete": "Синхронізацію завершено. Виявлено {count} нових матеріалів.",
+                    "agent_init": "Підготовка середовища для {mkt}...",
+                    "agent_login": "Вхід у панель продавця...",
+                    "agent_fill": "Заповнення форми: {title}...",
+                    "agent_optimize": "Оптимізація SEO та завантаження файлів...",
+                    "agent_done": "Готово! Продукт очікує підтвердження."
+                },
+                "toasts": {
+                    "sync_success": "Склад успішно оновлено.",
+                    "analysis_done": "Аналіз ШІ завершено. Дані готові.",
+                    "no_tokens": "Недостатньо токенів. Поповніть рахунок.",
+                    "tokens_spent": "Списано {count} токенів за операцію ШІ.",
+                    "test_woo": "Тестування з'єднання WooCommerce...",
+                    "woo_success": "Успішно підключено до kamilaenglish.com (API v3)",
+                    "test_manus": "Перевірка ліцензії Manus AI...",
+                    "manus_success": "Ліцензія активна. Агент готовий до роботи.",
+                    "settings_saved": "Налаштування збережено локально.",
+                    "new_channel": "Відкриття конфігуратора нового каналу продажів...",
+                    "edit_schedule": "Редагування розкладу доступне в налаштуваннях.",
+                    "importing": "Імпортування..."
+                },
+                "stats": {
+                    "products_short": "прод."
+                }
+            },
+            "schedule": {
+                "title": "Налаштування системи",
+                "daily02": "Щодня о 02:00",
+                "active": "Активні",
+                "disabled": "Вимкнено",
+                "checkOnlyChanges": "Перевіряти лише зміни",
+                "changeCron": "Змінити налаштування cron"
+            },
+            "aiTip": {
+                "title": "Налаштування системи",
+                "description": "Configuration for aiTip",
+                "importBtn": "Імпортувати зараз"
+            },
+            "agent": {
+                "catalogTitle": "Каталог продуктів",
+                "ready": "Готово",
+                "emptyState": {
+                    "title": "Налаштування системи",
+                    "description": "Configuration for emptyState"
+                },
+                "selectMarket": "Виберіть цільовий ринок",
+                "launchBtn": "Запустити агента",
+                "launchAdmin": "Запустити (Адмін)",
+                "launchPoints": "Запустити за {count} балів",
+                "working": "Агент працює...",
+                "manusMode": "Режим Manus: Активний",
+                "marketPrefix": "EnglishLearning: ",
+                "yourBalance": "Ваш баланс",
+                "analysisTitle": "Аналіз ШІ для {market}",
+                "regionalOptimization": "Регіональна оптимізація",
+                "suggestedTitle": "Пропонований заголовок (Локальне SEO)",
+                "suggestedPrice": "Ціна (конверсія PPP)",
+                "sellingProb": "Ймовірність продажу",
+                "veryHigh": "ДУЖЕ ВИСОКА",
+                "success": {
+                    "title": "Налаштування системи",
+                    "description": "Configuration for success",
+                    "viewLogs": "ПЕРЕГЛЯНУТИ ЛОГИ СЕСІЇ"
+                },
+                "toasts": {
+                    "session_manager": "Відкриття менеджера сесій...",
+                    "proxy_success": "Proxy: {ip} ({location}) OK",
+                    "report_title": "Звіт агента",
+                    "report_desc": "Вхід: OK, Форма: Заповнена, Зображення: Завантажені, SEO: Оптимізовано. Час: {time}"
+                },
+                "stats": {
+                    "points": "балів"
+                },
+                "mockAnalysis": {
+                    "optimizedTitleSuffix": "Комплексні матеріали для вчителів",
+                    "suggestedPrice": "Ціна (конверсія PPP)",
+                    "subject": "Тема",
+                    "seoTags": "домашнє навчання, робочі аркуші, словниковий запас, картки, ресурси для вчителів",
+                    "description": "Configuration for mockAnalysis"
+                },
+                "idle": {
+                    "title": "Налаштування системи",
+                    "description": "Configuration for idle"
+                }
+            },
+            "settings": {
+                "title": "Налаштування системи",
+                "description": "Configuration for settings",
+                "saveAll": "Зберегти все",
+                "lastSaved": "Востаннє збережено: {time}",
+                "woo": {
+                    "title": "Налаштування системи",
+                    "url": "https://www.sklep.kamilaenglish.com/...",
+                    "key": "Consumer Key",
+                    "secret": "Consumer Secret",
+                    "connected": "Підключено",
+                    "autoSync": "АВТОСИНХРОНІЗАЦІЯ УВІМК.",
+                    "test": "Тест"
+                },
+                "manus": {
+                    "title": "Налаштування системи",
+                    "description": "Configuration for manus",
+                    "instance": "API Instance агента",
+                    "test": "Тест",
+                    "manage": "Керувати сесією",
+                    "proxy": "Тест Proxy"
+                }
+            }
         }
-      },
-      "mcp": {
-        "title": "MCP Connectors",
-        "description": "Configuration for mcp",
-        "server": "MCP Server Address",
-        "status": "Відповідність ваших матеріалів: 85%"
-      },
-      "api": {
-        "title": "External API Keys",
-        "description": "Configuration for api",
-        "service": "Service (e.g., MailerLite, Zapier)",
-        "key": "Consumer Key",
-        "coming_soon": "Integration with MailerLite, ActiveCampaign and Zapier is being implemented.",
-        "coming_soon_desc": "You can already save keys in the Webhooks section for testing."
-      }
+    },
+    "logs": {
+        "init": "🚀 Initializing AI Scraper agent...",
+        "connect": "🔍 Connecting to API session...",
+        "extract": "🧩 Extracting mechanics and metadata...",
+        "images": "🖼️ Generating preview thumbnails...",
+        "seo": "✍️ Crafting SEO-optimized descriptions...",
+        "pricing": "💰 Calculating regional pricing...",
+        "finalize": "✨ Finalizing product drafts..."
     },
     "interactive": {
-      "title": "Interactive Content",
-      "description": "Configuration for interactive",
-      "auto_import": "Автоматично створювати продукт після додавання гри на платформу",
-      "auto_import_desc": "Система автоматично виявить коди вставки (Embed) при створенні продукту.",
-      "sync_status": "Остання синхронізація ігор",
-      "sync_hint": "Ми радимо вставляти прямі посилання на ігри в панелі редагування продукту. Система автоматично перетворить їх на інтерактивне вікно для учня.",
-      "other_title": "Інші інтеграції",
-      "platforms": {
-        "wordwall": "Ключ API Wordwall",
-        "wordwall_placeholder": "наприклад: kamila-lo-ko",
-        "genially": "Ключ API Genially",
-        "genially_placeholder": "наприклад: https://view.genial.ly/profile/nick",
-        "sync_title": "Синхронізація Wordwall та Genially",
-        "h5p_desc": "Локальна вставка",
-        "learningapps_desc": "Через iFrame",
-        "quizizz_desc": "Синхронізація через API"
-      }
-    },
-    "workshop": {
-      "title": "AI Workshop",
-      "description": "Configuration for workshop",
-      "generate_btn": "Згенерувати аудит усіх продуктів",
-      "status_ready": "Готово до генерації",
-      "rag_sources": {
-        "title": "AI Knowledge Base (RAG)",
-        "description": "Configuration for rag_sources",
-        "main_label": "Основне джерело (RAG)",
-        "notebook_lm": "Посилання на NotebookLM / Базу знань",
-        "options": {
-          "google_drive": "Google Drive (Папка: Edu-Materials)",
-          "notebook_lm": "Посилання на NotebookLM / Базу знань",
-          "local": "Локальна векторна база даних"
+        "title": "Interactive Content",
+        "subtitle": "Import and optimize Games with AI",
+        "placeholder": "Paste links (one per line)...",
+        "found": "Found {count} interactive items!",
+        "generate": "Generate drafts",
+        "createDrafts": "Accept and create drafts",
+        "success": "Successfully imported {count} products!",
+        "preview_title": "AI Draft Preview",
+        "preview_desc": "Review generated products and test interactive content.",
+        "logs": {
+            "launching": "🚀 Launching real-time scraping agent...",
+            "analyzing": "🔍 Analyzing: {url}...",
+            "private": "⚠️ Link {url} appears to be a private collection. Skipping - please use individual game links.",
+            "extracted": "✅ Extracted: {title}",
+            "dropped": "❌ Connection dropped for: {url}",
+            "complete": "Scraping complete! Successfully extracted metadata for {count} assets."
         }
-      },
-      "generators": {
-        "title": "Material Generators",
-        "reading": "Читання (Текст + Питання)",
-        "listening": "Аудіювання (Скрипт + ШІ аудіо)",
-        "speaking": "Картки для говоріння",
-        "vocabulary": "Вправи на словниковий запас",
-        "flashcards": "Картки (CSV/Anki)",
-        "tests": "Генератор тестів",
-        "worksheets": "Робочі аркуші PDF",
-        "ai_quiz": "ШІ конструктор квізів"
-      },
-      "canva": {
-        "title": "Canva Integration",
-        "description": "Configuration for canva",
-        "api_key": "Ключ API",
-        "auto_export": "Авто-експорт",
-        "connect": "Підключити Canva"
-      },
-      "title_prefix": "AI Creative",
-      "title_suffix": "Studio",
-      "badge": "Next-Gen",
-      "powered_by": "Powered by OpenAI & HeyGen",
-      "available_credits": "Available Credits",
-      "generations_today": "Generations Today",
-      "studio": "Studio",
-      "history": "History",
-      "studios": {
-        "images": "Image Studio",
-        "video": "Video Studio",
-        "avatars": "Avatar Studio",
-        "social": "Social Hub",
-        "flashcards": "Flashcards",
-        "canva": "Canva Studio"
-      },
-      "actions": {
-        "reuse": "Reuse Prompt",
-        "generate": "Generate Asset",
-        "processing": "Processing...",
-        "attach": "Attach",
-        "change_product": "Change Product",
-        "connect": "Connect to Product"
-      },
-      "labels": {
-        "persona": "Select AI Persona",
-        "script": "Script",
-        "prompt": "Creative Prompt",
-        "preview": "Preview",
-        "history_empty": "Your canvas awaits.",
-        "connect_desc": "Link this AI asset to your store inventory.",
-        "professional_suite": "Professional Creative Suite"
-      },
-      "social_hub": {
-        "title": "Social Media Hub",
-        "subtitle": "Post Generator & Optimization",
-        "platforms": {
-          "instagram": "Instagram",
-          "facebook": "Facebook",
-          "linkedin": "LinkedIn",
-          "youtube": "YouTube"
-        },
-        "labels": {
-          "select_product": "Select Product to Promote",
-          "pick_placeholder": "Pick from Product Library...",
-          "campaign_context": "Campaign Context / Prompt",
-          "prompt_placeholder": "What are we promoting today? (e.g., 'New Flashcard Set for Christmas')",
-          "ai_copy": "AI Generated Copy",
-          "thinking": "Thinking...",
-          "regenerate": "Regenerate Copy",
-          "copy_placeholder": "AI will generate your post content here...",
-          "media_asset": "Media Asset",
-          "auto_selected": "Auto-Selected",
-          "select_asset": "Select Asset",
-          "from_gallery": "From Product Gallery",
-          "viral_growth": "Viral Growth",
-          "score": "Score",
-          "ai_expectancy": "AI expects {percent}% higher engagement on {platform}.",
-          "live_mockup": "Live Mockup Preview",
-          "mockup_placeholder": "Your mockup copy will appear here...",
-          "export": "Export to Socials"
-        }
-      },
-      "flashcards": {
-        "title": "AI Flashcard Studio",
-        "subtitle": "Transform topics into beautiful, ready-to-print flashcard sets.",
-        "badge": "Smart Learning",
-        "branding_kit": "Branding Kit",
-        "export_canva": "Export to Canva",
-        "smart_generator": "Smart Generator",
-        "topic_label": "Topic or Context",
-        "topic_placeholder": "e.g. Life Cycle of a Frog",
-        "style_label": "Visual Style",
-        "styles": {
-          "academic": "Academic",
-          "playful": "Playful",
-          "minimal": "Minimal",
-          "canva_ai": "Canva AI"
-        },
-        "generate_btn": "Generate Deck",
-        "generating": "Generating...",
-        "live_preview": "Live Preview",
-        "cards_prepared": "{count} Cards Prepared",
-        "empty": "No cards generated yet",
-        "add_custom": "Add Custom Card"
-      }
-    },
-    "automation": {
-      "title": "AI Automation",
-      "description": "Configuration for automation",
-      "agent_delivered": "Агент доставив {count} нових чернеток!",
-      "agents": {
-        "title": "Active Agent",
-        "select_placeholder": "Вибрати агента автоматизації",
-        "manus": "Конектор Manus AI",
-        "general": "Власний браузерний агент (Webhook)",
-        "status_idle": "Агент готовий до завдань",
-        "btn_send": "Відправити агента за посиланнями"
-      },
-      "receiver": {
-        "title": "Webhook Receiver",
-        "description": "Configuration for receiver",
-        "simulate_test": "(Симулювати прибуття агента / Тестувати Webhook)",
-        "simulate_btn": "Симулювати роботу агента"
-      },
-      "scrapers": {
-        "title": "Browser Scraping Tasks",
-        "card_title": "Браузерні роботи",
-        "options": {
-          "wordwall": "Ключ API Wordwall",
-          "genially": "Ключ API Genially",
-          "learningapps": "Скрейпер LearningApps"
-        },
-        "item1": "Продукт 'Unit 1' можна розширити 20 картками (ШІ згенерує їх автоматично)",
-        "item2": "Створіть 'Mega Pack' із трьох ваших найпопулярніших сценаріїв (Потенціал: +25% маржі)",
-        "item3": "Завантажити коди для поширення з Wordwall"
-      },
-      "chat": {
-        "title": "AI Agent Chat",
-        "subtitle": "Пряме спілкування з браузерним агентом",
-        "placeholder": "Де мені шукати сьогодні?",
-        "capabilities": "Поточні можливості: Genially, Wordwall, Canva",
-        "welcome": "Привіт! Я готовий до роботи. Ви можете давати мені завдання у ваших акаунтах (Wordwall, Canva, Genially). Що мені зробити?"
-      }
-    },
-    "emails": {
-      "title": "System Message Templates",
-      "description": "Configuration for emails",
-      "save": "Зберегти зміни",
-      "templates": {
-        "welcome": {
-          "title": "Welcome Email",
-          "subject": "Тема",
-          "content": "Зміст"
-        },
-        "order_confirmed": {
-          "title": "Order Confirmation",
-          "subject": "Тема",
-          "content": "Зміст"
-        },
-        "login_details": {
-          "title": "Login Details",
-          "subject": "Тема",
-          "content": "Зміст"
-        }
-      },
-      "smtp": {
-        "title": "Налаштування системи",
-        "description": "Configuration for smtp",
-        "enable_system": "Увімкнути системну розсилку",
-        "enable_desc": "Використовувати налаштований SMTP-сервер",
-        "host": "SMTP Хост",
-        "port": "Порт"
-      },
-      "variables": "Доступні змінні: {orderNumber}, {email}, {password}, {firstName}, {total}"
-    },
-    "google": {
-      "title": "Google Cloud Integration",
-      "description": "Configuration for google",
-      "auth": {
-        "title": "Google Authorization",
-        "connect": "Підключити Canva",
-        "disconnect": "Відключити акаунт",
-        "status_connected": "Підключено до акаунта: {email}",
-        "status_disconnected": "Немає активних підключень",
-        "drive_description": "Connect the 'Edu-Materials' folder from your Google Drive"
-      },
-      "drive": {
-        "title": "Google Drive Browser",
-        "import_selected": "Імпортувати вибрані файли",
-        "refresh": "Оновити список",
-        "no_files": "Файлів PDF/ZIP на вашому диску не знайдено",
-        "import_success": "Файли успішно імпортовані як матеріали",
-        "column_name": "Назва файлу",
-        "column_size": "Розмір",
-        "column_action": "Дія",
-        "description": "Configuration for drive",
-        "button": "Завантажити з Google Drive",
-        "connecting": "Підключення...",
-        "picker_title": "Виберіть файли з Google Drive",
-        "import_count": "Імпортувати вибрані ({count})",
-        "toast_success": "Імпортовано {count} файлів з Google Drive"
-      },
-      "config": {
-        "client_id": "Google Client ID",
-        "client_secret": "Google Client Secret",
-        "redirect_uri": "Redirect URI"
-      }
-    },
-    "abandoned": {
-      "title": "Cart Recovery",
-      "description": "Configuration for abandoned",
-      "delay": "Затримка першого листа (години)",
-      "discount_code": "Код знижки в листі (опціонально)",
-      "enable_auto": "Увімкнути автоматичне відновлення",
-      "stats": {
-        "total_recovered": "Відновлений дохід",
-        "pending_carts": "Очікувані кошики"
-      }
-    },
-    "guardian": {
-      "title": "AI Safety & Technical Guardian",
-      "description": "Configuration for guardian",
-      "legal_check": "Моніторинг законодавчих змін (E-commerce ЄС)",
-      "tech_check": "Технічний моніторинг помилок у реальному часі",
-      "security_check": "Аналіз спроб несанкціонованого доступу",
-      "alerts": "Виявлено зміни у вимогах для 4-6 класів",
-      "status_good": "Система працює справно",
-      "status_warning": "Виявлено потенційну невідповідність законодавству",
-      "last_scan": "Останнє повне сканування системи"
-    },
-    "affiliate": {
-      "title": "Referral & Affiliate System",
-      "description": "Configuration for affiliate",
-      "commission": "Комісія партнера (%)",
-      "discount": "Авто-знижка (%)",
-      "cookie_life": "Час життя cookie (дні)",
-      "referral_links": "Генерувати реферальні посилання",
-      "total_partners": "Активні партнери",
-      "payouts": "Очікувані виплати"
-    },
-    "pricing": {
-      "title": "Purchasing Power Parity (PPP)",
-      "description": "Configuration for pricing",
-      "enable_ppp": "Увімкнути інтелектуальне регіональне ціноутворення",
-      "base_currency": "Базова валюта",
-      "regions": {
-        "western": "Західна Європа (100% ціни)",
-        "central": "Центральна Європа (85% ціни)",
-        "eastern": "Східна Європа (70% ціни)",
-        "balkans": "Балкани (60% ціни)"
-      },
-      "recurring_title": "Subscriptions & Recurring Payments",
-      "recurring_visa_title": "Visa Recurring Payments",
-      "recurring_visa_desc": "Enable automatic card charging for subscription products. Supported via Stripe Billing and PayNow Recurring.",
-      "recurring_frequency": "Standard Frequency",
-      "recurring_monthly": "30 DAYS / MONTHLY",
-      "recurring_grace_period": "Grace Period / Retry",
-      "recurring_retry": "3 DAYS RETRY",
-      "paynow_title": "PayNow Integration",
-      "paynow_access_key": "Access Key",
-      "paynow_signature_key": "Signature Key",
-      "blik_title": "BLIK Support Enabled",
-      "blik_desc": "PayNow allows users to pay with BLIK codes directly on your checkout page."
-    },
-    "taxes": {
-      "title": "Tax & Invoice Handling",
-      "description": "Configuration for taxes",
-      "eu_vat_moss": "Увімкнути систему VAT-MOSS / OSS",
-      "invoice_provider": "Провайдер інвойсів (напр., Fakturownia, InFakt)",
-      "infakt_api_key": "API ключ InFakt",
-      "test_connection": "Тестувати API з'єднання",
-      "stripe_title": "Платежі Stripe",
-      "stripe_publishable": "Публічний ключ Stripe",
-      "stripe_secret": "Секретний ключ Stripe"
-    },
-    "editor": {
-      "placeholder": "Де мені шукати сьогодні?",
-      "prompts": {
-        "link": "Enter URL:",
-        "image": "Enter image URL:"
-      },
-      "toolbar": {
-        "bold": "Bold",
-        "italic": "Italic",
-        "h2": "Heading 2",
-        "h3": "Heading 3",
-        "list": "Unordered List",
-        "listOrdered": "Нумерований список",
-        "link": "Enter URL:",
-        "image": "Enter image URL:",
-        "quote": "Цитата",
-        "code": "Блок коду"
-      }
-    }
-  },
-  "adminPanel": {
-    "sidebar": {
-      "title": "Налаштування системи",
-      "subtitle": "Пряме спілкування з браузерним агентом",
-      "expand": "Розгорнути",
-      "collapse": "Згорнути",
-      "logout": "Вийти з сесії",
-      "logoutTooltip": "Вийти",
-      "menu": {
-        "dashboard": "Панель приладів",
-        "products": "Продукти",
-        "orders": "Замовлення",
-        "coupons": "Coupons",
-        "materials": "Матеріали",
-        "blog": "Блог",
-        "import": "Import AI",
-        "settings": "Налаштування",
-        "chat": "AI Chat",
-        "home": "Головна сторінка",
-        "role": "Адміністратор",
-        "online": "Онлайн",
-        "abandoned": "Abandoned Carts",
-        "offers": "Offer Generator",
-        "workshop": "AI Creative Suite",
-        "landing_builder": "Landing Pages"
-      }
-    },
-    "dashboard": {
-      "title": "Налаштування системи",
-      "subtitle": "Пряме спілкування з браузерним агентом",
-      "periods": {
-        "7days": "7 днів",
-        "30days": "30 днів",
-        "90days": "90 днів",
-        "all": "Весь час"
-      },
-      "addProduct": "Додати продукт",
-      "currency": "$",
-      "stats": {
-        "revenue": "Дохід",
-        "orders": "Замовлення",
-        "customers": "Клієнти",
-        "avgOrderValue": "Середня вартість замовлення",
-        "vsPrevious": "порівняно з попереднім періодом",
-        "inSelectedPeriod": "За вибраний період",
-        "uniqueCustomers": "Унікальні покупці",
-        "perOrder": "За замовлення"
-      },
-      "charts": {
-        "weeklyRevenue": "Тижневий дохід",
-        "revenueByDay": "Продажі за окремими днями",
-        "bestsellersRanking": "Рейтинг бестселерів",
-        "topSellingProducts": "Найпопулярніші продукти",
-        "noSalesData": "Немає даних про продажі",
-        "sold": "Продано: {count}",
-        "days": {
-          "mon": "Пн",
-          "tue": "Вт",
-          "wed": "Ср",
-          "thu": "Чт",
-          "fri": "Пт",
-          "sat": "Сб",
-          "sun": "Нд"
-        }
-      },
-      "recentOrders": {
-        "title": "Налаштування системи",
-        "subtitle": "Пряме спілкування з браузерним агентом",
-        "viewAll": "Переглянути всі",
-        "noOrders": "Поки немає замовлень",
-        "productCount": "{count} продуктів",
-        "status": {
-          "completed": "Завершено",
-          "pending": "Очікується",
-          "processing": "Обробляється"
-        }
-      },
-      "aiInsights": {
-        "card": {
-          "monitoring": "Active Market Monitoring",
-          "strategyTitle": "Your growth strategy for {period}",
-          "periodWeek": "next week",
-          "periodMonth": "this month",
-          "description": "We analyzed your last {count} orders. We have 3 specific recommendations that could increase your revenue by approx. 18%.",
-          "generateBtn": "Generate Strategic Report"
-        },
-        "modal": {
-          "title": "AI Growth Report",
-          "subtitle": "Generated for: Administrator • Feb 2024",
-          "revenueChance": "Revenue Chance",
-          "revenueGrowth": "Possible growth in 14 days",
-          "crossSellScore": "Cross-sell Score",
-          "crossSellDesc": "High linking potential",
-          "retentionProj": "Retention Proj.",
-          "retentionDesc": "Loyal returning customers",
-          "recommendedActions": "Recommended Actions",
-          "action1Title": "Email: Abandoned Cart (New template)",
-          "action1Desc": "Customers are abandoning carts for \"Preschool - Autumn Pack\". We suggest adding a 48h timer and 5% discount.",
-          "action2Title": "Bundle: Preschool Combo Pack",
-          "action2Desc": "Combine 3 most popular products into one bundle. Suggested price: $59.99.",
-          "deploy": "Deploy",
-          "create": "Create",
-          "skip": "Skip report",
-          "apply": "Apply Recommendations",
-          "success": "Strategic report has been saved and sent for analysis."
-        },
-        "overlay": {
-          "title": "Processing Big Data...",
-          "subtitle": "\"Analyzing correlations between products and buying behaviors of your customers.\"",
-          "step1": "Clustering users...",
-          "step3": "Generating visualizations..."
-        },
-        "wordwallSync": {
-          "title": "Smart Interactive Sync",
-          "description": "Paste links to your resources (Wordwall, Genially, Canva, YouTube, Google Slides, Quizizz, NotebookLM, Vocaroo) to add them as products.",
-          "placeholder": "https://wordwall.net/...\nhttps://view.genial.ly/...\nhttps://canva.com/design/...\nhttps://youtube.com/watch?v=...\nhttps://quizizz.com/...",
-          "syncBtn": "Start Sync",
-          "syncing": "Syncing...",
-          "success": "Successfully imported {count} new games!",
-          "noNew": "All provided links have already been imported.",
-          "invalid": "No valid educational links (Wordwall/Genially/Canva/YouTube/Slides/etc) detected.",
-          "close": "Close"
-        }
-      },
-      "interactivePreview": {
-        "subtitle": "Live preview of interactive material",
-        "noPreview": "No preview available for this asset",
-        "close": "Close"
-      },
-      "activeAiLogs": {
-        "title": "Active AI Logs",
-        "live": "Live",
-        "imageGenerated": "Image Generated",
-        "socialPostReady": "Social Post Ready",
-        "flashcardCreated": "Flashcard Created",
-        "trendIdentified": "Trend identified",
-        "seoOptimized": "SEO Optimized",
-        "imagePolished": "Image Polished"
-      },
-      "studioQuickAccess": {
-        "title": "Studio Quick Access",
-        "imageStudio": "Image Studio",
-        "generate4k": "Generate 4K Visuals",
-        "socialHub": "Social Hub",
-        "viralCreation": "Viral Post Creation"
-      }
-    },
-    "products": {
-      "title": "Налаштування системи",
-      "subtitle": "Пряме спілкування з браузерним агентом",
-      "search": "Пошук продуктів...",
-      "importAi": "Імпорт ШІ",
-      "addProduct": "Додати продукт",
-      "noProducts": "Продуктів не знайдено",
-      "addFirst": "Додайте перший продукт",
-      "table": {
-        "product": "Продукт",
-        "category": "Категорія",
-        "price": "Ціна",
-        "source": "Розміщено в",
-        "status": "Відповідність ваших матеріалів: 85%",
-        "actions": "Дії"
-      },
-      "status": {
-        "published": "Опубліковано",
-        "draft": "Чернетка"
-      },
-      "actions": {
-        "edit": "Редагувати",
-        "viewAccess": "View Product Access",
-        "copyLink": "Копіювати посилання (Fast Checkout)",
-        "hide": "Приховати",
-        "publish": "Опублікувати",
-        "delete": "Видалити"
-      },
-      "toasts": {
-        "linkCopied": "Посилання на швидку оплату скопійовано:\\n{link}",
-        "deleteConfirm": "Ви впевнені, що хочете видалити цей продукт?"
-      },
-      "categories": {
-        "lesson-plans": "Плани уроків",
-        "worksheets": "Робочі аркуші PDF",
-        "flashcards": "Картки (CSV/Anki)",
-        "games": "Онлайн ігри",
-        "audio": "Аудіоматеріали",
-        "video": "Відеоматеріали",
-        "bundles": "Набори (Bundles)",
-        "other": "Інше"
-      },
-      "source_badges": {
-        "wordpress": "WordPress / Publigo",
-        "tpt": "Teachers Pay Teachers",
-        "ai_optimized": "Оптимізовано ШІ"
-      }
-    },
-    "orders": {
-      "title": "Налаштування системи",
-      "subtitle": "Пряме спілкування з браузерним агентом",
-      "exportCsv": "Експорт у CSV",
-      "stats": {
-        "revenue": "Дохід",
-        "pending": "Очікується",
-        "today": "Замовлень сьогодні"
-      },
-      "search": "Пошук продуктів...",
-      "statusFilter": "Статус",
-      "allStatuses": "Усі",
-      "empty": "Замовлень не знайдено",
-      "table": {
-        "order": "Замовлення",
-        "customer": "Клієнт",
-        "products": "Продукти",
-        "total": "Разом",
-        "status": "Відповідність ваших матеріалів: 85%",
-        "date": "Дата"
-      },
-      "status": {
-        "pending": "Очікується",
-        "processing": "Обробляється",
-        "completed": "Завершено",
-        "cancelled": "Скасовано",
-        "refunded": "Повернуто"
-      },
-      "paymentMethods": {
-        "card": "Картка",
-        "transfer": "Переказ",
-        "blik": "BLIK/Швидка оплата",
-        "paypal": "PayPal"
-      },
-      "details": {
-        "notFound": "Замовлення не знайдено",
-        "back": "Назад до списку",
-        "invoice": "Виставити рахунок",
-        "payment": "Оплата",
-        "summary": "Підсумок",
-        "sendEmail": "Надіслати email",
-        "items": "Товари",
-        "paidAt": "Оплачено: {date}",
-        "discount": "Авто-знижка (%)",
-        "total": "Разом",
-        "quantity": "Кількість"
-      },
-      "paymentStatus": {
-        "paid": "Paid",
-        "pending": "Очікується",
-        "failed": "Failed",
-        "refunded": "Повернуто"
-      },
-      "export_headers": {
-        "order_number": "№ замовлення",
-        "date": "Дата",
-        "customer": "Клієнт",
-        "email": "Email",
-        "products": "Продукти",
-        "total": "Разом",
-        "status": "Відповідність ваших матеріалів: 85%"
-      }
-    },
-    "coupons": {
-      "title": "Налаштування системи",
-      "subtitle": "Пряме спілкування з браузерним агентом",
-      "addCoupon": "Новий купон",
-      "editCoupon": "Редагувати купон",
-      "createCoupon": "Створити купон",
-      "stats": {
-        "all": "Весь час",
-        "active": "Активні",
-        "usage": "Загальне використання"
-      },
-      "form": {
-        "code": "Блок коду",
-        "generate": "Згенерувати",
-        "placeholder": "Де мені шукати сьогодні?",
-        "discountType": "Тип знижки",
-        "percent": "Відсоткова (%)",
-        "fixed": "Фіксована сума",
-        "discountValue": "Значення знижки",
-        "usageLimit": "Ліміт використання",
-        "minOrderValue": "Мін. сума замовлення",
-        "expiresAt": "Діє до (опціонально)"
-      },
-      "ux": {
-        "show": "Show",
-        "hide": "Hide",
-        "copy": "Copy",
-        "copied": "Copied!",
-        "secure": "Encrypted"
-      },
-      "preview": {
-        "title": "Preview & Accept",
-        "accept": "Accept Changes",
-        "reject": "Discard",
-        "bulk_title": "Review Generated Drafts",
-        "apply_all": "Accept All ({count})",
-        "diff_before": "Before Optimization",
-        "diff_after": "AI Suggestion"
-      },
-      "table": {
-        "code": "Блок коду",
-        "discount": "Авто-знижка (%)",
-        "usage": "Загальне використання",
-        "expires": "Діє до",
-        "status": "Відповідність ваших матеріалів: 85%"
-      },
-      "toasts": {
-        "deleteConfirm": "Ви впевнені, що хочете видалити цей продукт?"
-      }
-    },
-    "materials": {
-      "title": "Налаштування системи",
-      "subtitle": "Пряме спілкування з браузерним агентом",
-      "deleteSelected": "Видалити ({count})",
-      "assignToProduct": "Призначити продукту ({count})",
-      "dragDrop": "Перетягніть файли сюди",
-      "clickToUpload": "або натисніть кнопку нижче, щоб вибрати з диска",
-      "selectFiles": "Вибрати файли",
-      "or": "- АБО -",
-      "library": {
-        "title": "Налаштування системи",
-        "description": "Configuration for library",
-        "empty": "Замовлень не знайдено"
-      },
-      "table": {
-        "check": "Вибрати",
-        "fileName": "Назва файлу",
-        "size": "Розмір",
-        "source": "Розміщено в",
-        "product": "Продукт",
-        "actions": "Дії"
-      },
-      "badges": {
-        "upload": "Завантаження",
-        "drive": "Google Drive",
-        "unassigned": "Не призначено"
-      },
-      "dialog": {
-        "title": "Налаштування системи",
-        "selectLabel": "Виберіть продукт",
-        "placeholder": "Де мені шукати сьогодні?",
-        "cancel": "Скасувати",
-        "save": "Зберегти зміни"
-      },
-      "toasts": {
-        "uploadSuccess": "Завантажено {count} файлів",
-        "deleted": "Файл видалено",
-        "deletedSelected": "Видалено вибрані файли",
-        "assigned": "Призначено {count} файлів продукту"
-      }
-    },
-    "certificates": {
-      "title": "Налаштування системи",
-      "subtitle": "Пряме спілкування з браузерним агентом",
-      "stats": {
-        "totalIssued": "Всього видано",
-        "avgScore": "Сер. бал іспиту"
-      },
-      "tabs": {
-        "templates": "Шаблони",
-        "exams": "Іспити",
-        "issued": "Видані"
-      },
-      "templates": {
-        "create": "Створити шаблон",
-        "preview": "Редагувати шаблон",
-        "standardTitle": "Стандартний диплом (A4)",
-        "standardDesc": "Шаблон за замовчуванням для мовних курсів",
-        "certificateTitle": "Сертифікат про завершення",
-        "completedCourse": "Завершив курс: {course}",
-        "aiGenerate": "Згенерувати ШІ-шаблон",
-        "aiDesc": "Опишіть стиль (напр. 'сучасний', 'для дітей'), і ШІ створить унікальний дизайн диплома.",
-        "createAi": "Створити за допомогою ШІ"
-      },
-      "exams": {
-        "create": "Створити шаблон",
-        "description": "Configuration for exams",
-        "createAi": "Створити за допомогою ШІ"
-      },
-      "issued": {
-        "empty": "Замовлень не знайдено"
-      }
-    },
-    "blog": {
-      "title": "Налаштування системи",
-      "subtitle": "Пряме спілкування з браузерним агентом",
-      "newPost": "Нова публікація",
-      "searchPlaceholder": "Пошук статтей...",
-      "empty": "Замовлень не знайдено",
-      "writeFirst": "Написати першу статтю",
-      "table": {
-        "title": "Налаштування системи",
-        "category": "Категорія",
-        "status": "Відповідність ваших матеріалів: 85%",
-        "date": "Дата"
-      },
-      "status": {
-        "published": "Опубліковано",
-        "draft": "Чернетка"
-      },
-      "actions": {
-        "preview": "Редагувати шаблон",
-        "delete": "Видалити",
-        "save": "Save",
-        "edit": "Редагувати",
-        "hide": "Приховати",
-        "publish": "Опублікувати"
-      },
-      "categories": {
-        "mega-pack": "Mega Packs",
-        "scenariusze": "Scenarios",
-        "zlobek": "Nursery",
-        "special-lessons": "Special Lessons",
-        "speakbook": "Speakbook",
-        "stories": "Stories",
-        "culture": "Culture",
-        "pory-roku": "Seasons",
-        "teatr": "Theater",
-        "flashcards": "Flashcards",
-        "gry": "Games",
-        "inne": "Інше",
-        "metodyka": "Методика викладання",
-        "materialy": "Дидактичні матеріали",
-        "technologia": "Технології в освіті",
-        "inspiracje": "Натхнення та ідеї",
-        "recenzje": "Рецензії",
-        "wydarzenia": "Події"
-      },
-      "toasts": {
-        "deleteConfirm": "Ви впевнені, що хочете видалити цей продукт?"
-      },
-      "form": {
-        "createTitle": "New Post",
-        "createSubtitle": "Create a new blog post",
-        "editTitle": "Edit Post",
-        "editSubtitle": "Edit existing blog post",
-        "titlePlaceholder": "Post title...",
-        "contentTitle": "Content",
-        "contentPlaceholder": "Start writing post content...",
-        "excerptTitle": "Excerpt",
-        "excerptPlaceholder": "Short description displayed on post list...",
-        "statusTitle": "Status",
-        "categoryTitle": "Category",
-        "categoryPlaceholder": "Select category",
-        "tagsTitle": "Tags",
-        "tagsPlaceholder": "tag1, tag2, tag3",
-        "imageTitle": "Featured Image",
-        "imagePlaceholder": "https://kamila.shor.dev/image.jpg",
-        "seoTitle": "SEO",
-        "metaTitleLabel": "Meta Title",
-        "metaTitlePlaceholder": "Search engine title",
-        "metaDescLabel": "Meta Description",
-        "metaDescPlaceholder": "Search engine description",
-        "charCount": "{count}/{max} characters",
-        "seoPreview": "Google Preview",
-        "generate": "Generate",
-        "save": "Save",
-        "saveChanges": "Save Changes",
-        "saving": "Saving...",
-        "delete": "Delete",
-        "notFound": "Post not found",
-        "backToList": "Back to list",
-        "titleRequired": "Please enter a title first"
-      }
-    },
-    "chat": {
-      "title": "AI Agent Chat",
-      "subtitle": "Пряме спілкування з браузерним агентом",
-      "welcome": "Привіт! Я готовий до роботи. Ви можете давати мені завдання у ваших акаунтах (Wordwall, Canva, Genially). Що мені зробити?",
-      "newChat": "Новий чат",
-      "history": "Історія",
-      "placeholder": "Де мені шукати сьогодні?",
-      "capabilities": {
-        "database": "База даних",
-        "store": "Магазин",
-        "web": "Інтернет",
-        "files": "Файли"
-      },
-      "inputPlaceholder": "Введіть повідомлення...",
-      "disclaimer": "ШІ може припускатися помилок. Перевіряйте важливу інформацію.",
-      "generatedBy": "Згенеровано {model}",
-      "mockResponse": "Симульована відповідь моделі {model}. Отримано: \\",
-      "mockSessions": {
-        "s1": {
-          "title": "Налаштування системи",
-          "date": "Дата"
-        },
-        "s2": {
-          "title": "Налаштування системи",
-          "date": "Дата"
-        },
-        "s3": {
-          "title": "Налаштування системи",
-          "date": "Дата"
-        }
-      }
-    },
-    "import": {
-      "title": "Налаштування системи",
-      "subtitle": "Пряме спілкування з браузерним агентом",
-      "catalogUrl": "URL каталогу",
-      "catalogUrlDesc": "Вставте посилання на сторінку продуктів (kamilaenglish.com)",
-      "scan": "Сканувати продукти",
-      "scanning": "Сканування...",
-      "enhance": "Покращити з ШІ",
-      "enhancing": "Покращення...",
-      "import": "Імпортувати ({count})",
-      "importing": "Імпортування...",
-      "productsFound": "Знайдено продуктів ({count})",
-      "selectedCount": "Вибрано: {count}",
-      "selectAll": "Вибрати всі",
-      "deselectAll": "Зняти вибір",
-      "allCategories": "Усі",
-      "openSource": "Відкрити джерело",
-      "preview": {
-        "testInteractive": "Test Interactive Game",
-        "sourceLink": "Source Link",
-        "selectToPreview": "Select a product to preview",
-        "backToList": "Back to List",
-        "acceptAndCreate": "Accept & Create {count} Drafts"
-      },
-      "configureAi": "Configure API keys in settings before using AI",
-      "selectProducts": "Select products to import",
-      "noAssetsFound": "No valid assets were found. Please ensure you are using public links (e.g. wordwall.net/resource/...) and not your private dashboard.",
-      "privateLink": "Skipped private page: {url}",
-      "errors": {
-        "enterUrl": "Введіть URL каталогу",
-        "onlyKamila English": "Підтримуються лише продукти з kamilaenglish.com",
-        "configureAi": "Налаштуйте ключі API перед використанням ШІ",
-        "selectProducts": "Виберіть продукти для імпорту"
-      },
-      "success": {
-        "found": "Знайдено {count} продуктів на Kamila English!",
-        "enhanced": "Описи покращено за допомогою ШІ!",
-        "imported": "Імпортовано {count} продуктів!"
-      },
-      "placeholders": {
-        "url": "https://www.sklep.kamilaenglish.com/..."
-      },
-      "categories": {
-        "mega-pack": "Мега-пакети",
-        "scenariusze": "Сценарії",
-        "zlobek": "Ясла",
-        "special-lessons": "Спеціальні уроки",
-        "speakbook": "Speakbook",
-        "stories": "Історії",
-        "culture": "Культура",
-        "pory-roku": "Пори року",
-        "teatr": "Театр",
-        "flashcards": "Картки (CSV/Anki)",
-        "gry": "Ігри",
-        "inne": "Інше"
-      },
-      "enhancedText": {
-        "titlePrefix": "🎯",
-        "bestseller": "✨ БЕСТСЕЛЕР!",
-        "whatYouGet": "📚 Що ви отримуєте:",
-        "features": {
-          "pdf": "• Готові до друку PDF-матеріали",
-          "teacher": "• Інструкції для викладача",
-          "worksheets": "Робочі аркуші PDF"
-        },
-        "footer": "⭐ Перевірено сотнями вчителів!"
-      }
-    },
-    "success": {
-      "found": "Found {count} products from Kamila English!",
-      "enhanced": "Descriptions enhanced by AI!",
-      "imported": "Imported {count} products!"
-    },
-    "placeholders": {
-      "url": "https://www.sklep.kamilaenglish.com/..."
-    },
-    "categories": {
-      "mega-pack": "Mega Packs",
-      "scenariusze": "Scenarios",
-      "zlobek": "Nursery",
-      "special-lessons": "Special Lessons",
-      "speakbook": "Speakbook",
-      "stories": "Stories",
-      "culture": "Culture",
-      "pory-roku": "Seasons",
-      "teatr": "Theater",
-      "flashcards": "Flashcards",
-      "gry": "Games",
-      "inne": "Others"
-    },
-    "footer": "⭐ Trusted by hundreds of teachers!",
-    "item1": "Full access to materials",
-    "item2": "SEO Optimized content",
-    "item3": "Implementation guide for students",
-    "assistant": {
-      "title": "AI Copilot",
-      "status": "Active Intelligence",
-      "welcome": "How can I help you today?",
-      "placeholder": "Ask me anything...",
-      "suggestions": {
-        "generate_visuals": "Generate 4K Visuals",
-        "social_post": "Create Social Post",
-        "avatar_script": "New AI Avatar Script",
-        "seo_optimize": "SEO Optimize Description",
-        "product_cover": "Generate Product Cover",
-        "sync_wordwall": "Sync with Wordwall",
-        "config_workshop": "Configure AI Workshop",
-        "test_api": "Test API Credentials",
-        "connect_canva": "Connect Canva Design",
-        "gen_strategy": "Generate Strategy",
-        "view_trends": "View Trends",
-        "open_workshop": "Open Workshop"
-      },
-      "responses": {
-        "processing": "I'm processing your request. As your AI Copilot, I can help you manage products, generate creative assets, and optimize your store.",
-        "products_context": "You currently have {count} products in your store. I can help you generate descriptions or images for them in the AI Workshop.",
-        "product_example": "For example, I noticed \"{title}\". Would you like to optimize it?",
-        "workshop_info": "The AI Workshop is where you can generate images, videos, and social media posts. You can find it in the 'Workshop' tab of Settings or the dedicated Studio page.",
-        "wordwall_info": "To sync with Wordwall, go to the Products page and use the 'Interactive Import' button. I can also help you scrape metadata from any educational URL!",
-        "hello": "Hello! I'm your AI Copilot. I'm currently aware of {count} products and your store settings. How can I assist you today?"
-      }
-    },
-    "offers": {
-      "title": "AI Offer Generator",
-      "subtitle": "Create high-converting offers in seconds.",
-      "beta": "Beta Growth Suite",
-      "parameters": {
-        "title": "Campaign Parameters",
-        "description": "Define the goal of your offer",
-        "promotion_type": "Promotion Type",
-        "occasional": "Occasional",
-        "evergreen": "Evergreen",
-        "product": "Product / Service",
-        "product_placeholder": "e.g. Lesson Plan Bundle A1-C1",
-        "benefit": "Main Benefit",
-        "benefit_placeholder": "What will the customer gain?",
-        "discount": "Discount (%)",
-        "generate": "Generate AI Offer",
-        "analyzing": "Analyzing market..."
-      },
-      "preview": {
-        "ai_project": "AI PROJECT",
-        "effectiveness": "Effectiveness: {score}%",
-        "title": "Special Early Bird Offer",
-        "subtitle": "Review the generated campaign before publishing",
-        "ad_copy_label": "Ad Slogan",
-        "conversion_label": "Conversion",
-        "vs_avg": "+{diff}% vs avg",
-        "discount_code_label": "Your discount code",
-        "copied": "Copied",
-        "copy": "Copy",
-        "reject": "Reject and change parameters",
-        "accept": "Accept and Publish Offer"
-      },
-      "loading": {
-        "title": "AI Magic in progress...",
-        "description": "\"Analyzing market trends and optimizing sales psychology for your products.\"",
-        "progress_label": "Competitor analysis..."
-      },
-      "toasts": {
-        "copied": "Discount code copied!",
-        "ready": "Offer ready for review!"
-      }
-    },
-    "landingBuilder": {
-      "title": "Landing Page Builder",
-      "draftVersion": "Draft Version: {name}",
-      "desktop": "Desktop",
-      "mobile": "Mobile",
-      "preview": "Preview",
-      "save": "Save changes",
-      "saving": "Saving...",
-      "elements": "Page Elements",
-      "text": "Text",
-      "image": "Image",
-      "button": "Button",
-      "aiBlock": "AI Block",
-      "canvas": "Canvas (Layers)",
-      "hero": "Hero Section",
-      "features": "Advantages & Benefits",
-      "pricing": "Pricing Section",
-      "aiMagic": {
-        "title": "Ready for magic?",
-        "desc": "Use AI to automatically match copy and colors to your product.",
-        "optimize": "Optimize with AI"
-      },
-      "mock": {
-        "newCourse": "New Course",
-        "heroTitle": "Start teaching the language {joy}",
-        "joy": "with joy",
-        "heroDesc": "Ready-made scenarios your students will love. Zero stress, 100% results.",
-        "buyNow": "Buy now and start teaching",
-        "learnMore": "Learn more",
-        "addImage": "Add main image (Drag & Drop)"
-      },
-      "optimization": {
-        "title": "AI Landing Optimization",
-        "desc": "We detected {count} areas for improvement to increase conversion by approx. {percent}%.",
-        "current": "Current Version",
-        "aiSuggestion": "AI Suggestion (Improved conversion)",
-        "recommendation": "RECOMMENDATION",
-        "skip": "Skip changes",
-        "apply": "Apply optimization",
-        "success": "AI changes have been applied to the project!",
-        "processing": "Working on the project...",
-        "processingDesc": "\"Scanning your copy for benefit language and analyzing market heatmaps.\"",
-        "analysingHeaders": "Analyzing headers...",
-        "pickingColors": "Choosing color palette...",
-        "renderingPreview": "Rendering preview...",
-        "paletteTitle": "Improved Color Palette (Ocean Night)",
-        "paletteDesc": "We will change the accents to a more professional navy and energetic blue.",
-        "suggestionTitle": "Stop wasting hours on preparation. Choose ready-made solutions.",
-        "suggestionDesc": "Join 500+ teachers who reclaimed 10 hours a week. We guarantee a smile on every student's face.",
-        "suggestionButton": "Claim your time and start now"
-      },
-      "toasts": {
-        "saved": "Landing page saved successfully!"
-      }
     },
     "integrations": {
-      "title": "Connectors & Webhooks",
-      "subtitle": "Пряме спілкування з браузерним агентом",
-      "loading": "Завантаження перекладів...",
-      "addStore": "Додати магазин",
-      "sync_status": "Остання синхронізація ігор",
-      "today": "Замовлень сьогодні",
-      "tabs": {
-        "sync": "Склад та синхронізація",
-        "agent": "Агент публікацій",
-        "settings": "Налаштування"
-      },
-      "marketplaces": {
-        "groups": {
-          "poland": "Польща",
-          "usa": "США",
-          "dach": "Німеччина (DACH)",
-          "uk": "Великобританія",
-          "fr_es": "Франція/Іспанія"
+        "title": "Educational BaseLinker",
+        "subtitle": "Global materials sales and AI automation.",
+        "loading": "Loading translations...",
+        "addStore": "Add store",
+        "sync_status": "Sync: {date}",
+        "today": "Today",
+        "tabs": {
+            "sync": "Warehouse & Sync",
+            "agent": "Publication Agent",
+            "settings": "Marketplace Settings"
         },
-        "names": {
-          "wp": "WooCommerce / Publigo",
-          "wp_full": "WordPress / Publigo",
-          "tpt": "Teachers Pay Teachers",
-          "etsy": "Etsy Education",
-          "eduki": "Eduki (Німеччина)",
-          "tes": "TES (Великобританія)",
-          "mieux": "MieuxEnseigner (Франція/Іспанія)"
+        "marketplaces": {
+            "groups": {
+                "poland": "Poland",
+                "usa": "USA",
+                "dach": "Germany (DACH)",
+                "uk": "UK",
+                "fr_es": "France/Spain"
+            },
+            "names": {
+                "wp": "WooCommerce / Publigo",
+                "wp_full": "WordPress / Publigo",
+                "tpt": "Teachers Pay Teachers",
+                "etsy": "Etsy Education",
+                "eduki": "Eduki (Germany)",
+                "tes": "TES (UK)",
+                "mieux": "MieuxEnseigner (France/Spain)"
+            }
+        },
+        "inventory": {
+            "title": "Global Materials Inventory",
+            "badge": "Central Warehouse",
+            "description": "Manage source files and their presence in different markets.",
+            "source": "Source: kamilaenglish.com",
+            "allFiles": "All PDFs, Games and Audio in one place",
+            "updateBtn": "Update Inventory",
+            "syncBtn": "Sync Inventory",
+            "progress": "Sync progress",
+            "log": "System Log",
+            "waiting": "Waiting for start...",
+            "logs": {
+                "init": "Initializing connection with external systems...",
+                "auth": "Authorizing Publigo (wp-idea) & WooCommerce...",
+                "fetching": "Fetching product list (Multi-Channel Sourcing)...",
+                "syncing": "Syncing stock levels and digital files...",
+                "complete": "Sync complete. Detected {count} new materials.",
+                "agent_init": "Initializing environment for {mkt}...",
+                "agent_login": "Logging into seller panel...",
+                "agent_fill": "Filling form: {title}...",
+                "agent_optimize": "Optimizing SEO and uploading files...",
+                "agent_done": "Ready! Product is waiting for approval."
+            },
+            "toasts": {
+                "sync_success": "Warehouse updated successfully.",
+                "analysis_done": "AI Analysis complete. Suggested data is ready.",
+                "no_tokens": "Insufficient tokens. Top up your account.",
+                "tokens_spent": "{count} tokens deducted for AI operation.",
+                "test_woo": "Testing WooCommerce connection...",
+                "woo_success": "Connected successfully to kamilaenglish.com (API v3)",
+                "test_manus": "Verifying Manus AI license...",
+                "manus_success": "License active. Agent ready for work.",
+                "settings_saved": "Settings saved locally.",
+                "new_channel": "Opening new sales channel configurator...",
+                "edit_schedule": "Schedule editing available in system settings.",
+                "importing": "Importing new products..."
+            },
+            "stats": {
+                "products_short": "prod."
+            }
+        },
+        "schedule": {
+            "title": "Schedule",
+            "daily02": "Daily at 02:00",
+            "active": "Active",
+            "disabled": "Disabled",
+            "checkOnlyChanges": "Check only changes",
+            "changeCron": "Change cron settings"
+        },
+        "aiTip": {
+            "title": "AI Tip",
+            "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
+            "importBtn": "Import now"
+        },
+        "agent": {
+            "catalogTitle": "Product Catalog",
+            "ready": "Ready",
+            "emptyState": {
+                "title": "Select product and target market",
+                "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
+            },
+            "selectMarket": "Select target market",
+            "launchBtn": "Launch Agent",
+            "launchAdmin": "Launch Agent (Admin)",
+            "launchPoints": "Launch for {count} pts",
+            "working": "Agent Working...",
+            "manusMode": "Manus Mode: Active",
+            "marketPrefix": "EnglishLearning: ",
+            "yourBalance": "Your balance",
+            "analysisTitle": "AI Analysis for {market}",
+            "regionalOptimization": "Regional optimization",
+            "suggestedTitle": "Suggested Title (SEO Local)",
+            "suggestedPrice": "Price (PPP Conversion)",
+            "sellingProb": "Selling Probability",
+            "veryHigh": "VERY HIGH",
+            "success": {
+                "title": "Task Completed!",
+                "description": "AI Agent successfully visited {market} and published your product.",
+                "viewLogs": "VIEW SESSION LOGS"
+            },
+            "toasts": {
+                "session_manager": "Opening session manager...",
+                "proxy_success": "Proxy: {ip} ({location}) OK",
+                "report_title": "Agent Report",
+                "report_desc": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}"
+            },
+            "stats": {
+                "points": "pts"
+            },
+            "mockAnalysis": {
+                "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
+                "suggestedPrice": "$12.99",
+                "subject": "English Language Arts",
+                "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
+                "description": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!"
+            },
+            "idle": {
+                "title": "In standby",
+                "description": "Run agent to start automation process on platform {market}."
+            }
+        },
+        "settings": {
+            "title": "Multi-Channel Connections",
+            "description": "Configure access data for external stores.",
+            "saveAll": "Save all",
+            "lastSaved": "Last saved: {time}",
+            "woo": {
+                "title": "WooCommerce / WordPress Site",
+                "url": "Store URL (REST API)",
+                "key": "Consumer Key",
+                "secret": "Consumer Secret",
+                "connected": "Connected",
+                "autoSync": "AUTO-SYNC ON",
+                "test": "Test"
+            },
+            "manus": {
+                "title": "Manus AI Session",
+                "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
+                "instance": "Agent API Instance",
+                "test": "Test Manus",
+                "manage": "Manage Session",
+                "proxy": "Test Proxy"
+            },
+            "mailerlite": {
+                "title": "MailerLite Integration",
+                "api_key": "MailerLite API Key",
+                "placeholder": "ml_...",
+                "groups": "Subscriber Group ID",
+                "test": "Test Connection"
+            },
+            "manychat": {
+                "title": "ManyChat Automation",
+                "api_key": "ManyChat API Key",
+                "placeholder": "mc_...",
+                "automation_id": "Default Flow ID",
+                "test": "Test Automation"
+            }
         }
-      },
-      "inventory": {
-        "title": "Налаштування системи",
-        "badge": "Центральний склад",
-        "description": "Configuration for inventory",
-        "source": "Розміщено в",
-        "allFiles": "Усі PDF, ігри та аудіо в одному місці",
-        "updateBtn": "Оновити інвентар",
-        "syncBtn": "Синхронізувати склад",
-        "progress": "Прогрес синхронізації",
-        "log": "Системний лог",
-        "waiting": "Очікування запуску...",
-        "logs": {
-          "init": "Ініціалізація з'єднання із зовнішніми системами...",
-          "auth": "Авторизація Publigo (wp-idea) та WooCommerce...",
-          "fetching": "Отримання списку продуктів...",
-          "syncing": "Синхронізація запасів та файлів...",
-          "complete": "Синхронізацію завершено. Виявлено {count} нових матеріалів.",
-          "agent_init": "Підготовка середовища для {mkt}...",
-          "agent_login": "Вхід у панель продавця...",
-          "agent_fill": "Заповнення форми: {title}...",
-          "agent_optimize": "Оптимізація SEO та завантаження файлів...",
-          "agent_done": "Готово! Продукт очікує підтвердження."
+    },
+    "abandonedHub": {
+        "title": "Abandoned Cart Hub",
+        "subtitle": "Recover lost sales and manage leads",
+        "table": {
+            "customer": "Customer",
+            "cart": "Cart Items",
+            "value": "Value",
+            "lastActive": "Last Active",
+            "actions": "Actions"
         },
-        "toasts": {
-          "sync_success": "Склад успішно оновлено.",
-          "analysis_done": "Аналіз ШІ завершено. Дані готові.",
-          "no_tokens": "Недостатньо токенів. Поповніть рахунок.",
-          "tokens_spent": "Списано {count} токенів за операцію ШІ.",
-          "test_woo": "Тестування з'єднання WooCommerce...",
-          "woo_success": "Успішно підключено до kamilaenglish.com (API v3)",
-          "test_manus": "Перевірка ліцензії Manus AI...",
-          "manus_success": "Ліцензія активна. Агент готовий до роботи.",
-          "settings_saved": "Налаштування збережено локально.",
-          "new_channel": "Відкриття конфігуратора нового каналу продажів...",
-          "edit_schedule": "Редагування розкладу доступне в налаштуваннях.",
-          "importing": "Імпортування..."
+        "actions": {
+            "sendReminder": "Send Reminder",
+            "recoveryLink": "Copy Recovery Link",
+            "delete": "Remove lead"
         },
-        "stats": {
-          "products_short": "прод."
+        "status": {
+            "contacted": "Contacted",
+            "pending": "Pending",
+            "recovered": "Recovered"
+        },
+        "notifications": {
+            "reminderSent": "Recovery email simulation sent to {email}",
+            "linkCopied": "Recovery link copied with discount code!"
         }
-      },
-      "schedule": {
-        "title": "Налаштування системи",
-        "daily02": "Щодня о 02:00",
-        "active": "Активні",
-        "disabled": "Вимкнено",
-        "checkOnlyChanges": "Перевіряти лише зміни",
-        "changeCron": "Змінити налаштування cron"
-      },
-      "aiTip": {
-        "title": "Налаштування системи",
-        "description": "Configuration for aiTip",
-        "importBtn": "Імпортувати зараз"
-      },
-      "agent": {
-        "catalogTitle": "Каталог продуктів",
-        "ready": "Готово",
-        "emptyState": {
-          "title": "Налаштування системи",
-          "description": "Configuration for emptyState"
-        },
-        "selectMarket": "Виберіть цільовий ринок",
-        "launchBtn": "Запустити агента",
-        "launchAdmin": "Запустити (Адмін)",
-        "launchPoints": "Запустити за {count} балів",
-        "working": "Агент працює...",
-        "manusMode": "Режим Manus: Активний",
-        "marketPrefix": "EnglishLearning: ",
-        "yourBalance": "Ваш баланс",
-        "analysisTitle": "Аналіз ШІ для {market}",
-        "regionalOptimization": "Регіональна оптимізація",
-        "suggestedTitle": "Пропонований заголовок (Локальне SEO)",
-        "suggestedPrice": "Ціна (конверсія PPP)",
-        "sellingProb": "Ймовірність продажу",
-        "veryHigh": "ДУЖЕ ВИСОКА",
-        "success": {
-          "title": "Налаштування системи",
-          "description": "Configuration for success",
-          "viewLogs": "ПЕРЕГЛЯНУТИ ЛОГИ СЕСІЇ"
-        },
-        "toasts": {
-          "session_manager": "Відкриття менеджера сесій...",
-          "proxy_success": "Proxy: {ip} ({location}) OK",
-          "report_title": "Звіт агента",
-          "report_desc": "Вхід: OK, Форма: Заповнена, Зображення: Завантажені, SEO: Оптимізовано. Час: {time}"
-        },
-        "stats": {
-          "points": "балів"
-        },
-        "mockAnalysis": {
-          "optimizedTitleSuffix": "Комплексні матеріали для вчителів",
-          "suggestedPrice": "Ціна (конверсія PPP)",
-          "subject": "Тема",
-          "seoTags": "домашнє навчання, робочі аркуші, словниковий запас, картки, ресурси для вчителів",
-          "description": "Configuration for mockAnalysis"
-        },
-        "idle": {
-          "title": "Налаштування системи",
-          "description": "Configuration for idle"
-        }
-      },
-      "settings": {
-        "title": "Налаштування системи",
-        "description": "Configuration for settings",
-        "saveAll": "Зберегти все",
-        "lastSaved": "Востаннє збережено: {time}",
-        "woo": {
-          "title": "Налаштування системи",
-          "url": "https://www.sklep.kamilaenglish.com/...",
-          "key": "Consumer Key",
-          "secret": "Consumer Secret",
-          "connected": "Підключено",
-          "autoSync": "АВТОСИНХРОНІЗАЦІЯ УВІМК.",
-          "test": "Тест"
-        },
-        "manus": {
-          "title": "Налаштування системи",
-          "description": "Configuration for manus",
-          "instance": "API Instance агента",
-          "test": "Тест",
-          "manage": "Керувати сесією",
-          "proxy": "Тест Proxy"
-        }
-      }
     }
-  },
-  "logs": {
-    "init": "🚀 Initializing AI Scraper agent...",
-    "connect": "🔍 Connecting to API session...",
-    "extract": "🧩 Extracting mechanics and metadata...",
-    "images": "🖼️ Generating preview thumbnails...",
-    "seo": "✍️ Crafting SEO-optimized descriptions...",
-    "pricing": "💰 Calculating regional pricing...",
-    "finalize": "✨ Finalizing product drafts..."
-  },
-  "interactive": {
-    "title": "Interactive Content",
-    "subtitle": "Import and optimize Games with AI",
-    "placeholder": "Paste links (one per line)...",
-    "found": "Found {count} interactive items!",
-    "generate": "Generate drafts",
-    "createDrafts": "Accept and create drafts",
-    "success": "Successfully imported {count} products!",
-    "preview_title": "AI Draft Preview",
-    "preview_desc": "Review generated products and test interactive content.",
-    "logs": {
-      "launching": "🚀 Launching real-time scraping agent...",
-      "analyzing": "🔍 Analyzing: {url}...",
-      "private": "⚠️ Link {url} appears to be a private collection. Skipping - please use individual game links.",
-      "extracted": "✅ Extracted: {title}",
-      "dropped": "❌ Connection dropped for: {url}",
-      "complete": "Scraping complete! Successfully extracted metadata for {count} assets."
-    }
-  },
-  "integrations": {
-    "title": "Educational BaseLinker",
-    "subtitle": "Global materials sales and AI automation.",
-    "loading": "Loading translations...",
-    "addStore": "Add store",
-    "sync_status": "Sync: {date}",
-    "today": "Today",
-    "tabs": {
-      "sync": "Warehouse & Sync",
-      "agent": "Publication Agent",
-      "settings": "Marketplace Settings"
-    },
-    "marketplaces": {
-      "groups": {
-        "poland": "Poland",
-        "usa": "USA",
-        "dach": "Germany (DACH)",
-        "uk": "UK",
-        "fr_es": "France/Spain"
-      },
-      "names": {
-        "wp": "WooCommerce / Publigo",
-        "wp_full": "WordPress / Publigo",
-        "tpt": "Teachers Pay Teachers",
-        "etsy": "Etsy Education",
-        "eduki": "Eduki (Germany)",
-        "tes": "TES (UK)",
-        "mieux": "MieuxEnseigner (France/Spain)"
-      }
-    },
-    "inventory": {
-      "title": "Global Materials Inventory",
-      "badge": "Central Warehouse",
-      "description": "Manage source files and their presence in different markets.",
-      "source": "Source: kamilaenglish.com",
-      "allFiles": "All PDFs, Games and Audio in one place",
-      "updateBtn": "Update Inventory",
-      "syncBtn": "Sync Inventory",
-      "progress": "Sync progress",
-      "log": "System Log",
-      "waiting": "Waiting for start...",
-      "logs": {
-        "init": "Initializing connection with external systems...",
-        "auth": "Authorizing Publigo (wp-idea) & WooCommerce...",
-        "fetching": "Fetching product list (Multi-Channel Sourcing)...",
-        "syncing": "Syncing stock levels and digital files...",
-        "complete": "Sync complete. Detected {count} new materials.",
-        "agent_init": "Initializing environment for {mkt}...",
-        "agent_login": "Logging into seller panel...",
-        "agent_fill": "Filling form: {title}...",
-        "agent_optimize": "Optimizing SEO and uploading files...",
-        "agent_done": "Ready! Product is waiting for approval."
-      },
-      "toasts": {
-        "sync_success": "Warehouse updated successfully.",
-        "analysis_done": "AI Analysis complete. Suggested data is ready.",
-        "no_tokens": "Insufficient tokens. Top up your account.",
-        "tokens_spent": "{count} tokens deducted for AI operation.",
-        "test_woo": "Testing WooCommerce connection...",
-        "woo_success": "Connected successfully to kamilaenglish.com (API v3)",
-        "test_manus": "Verifying Manus AI license...",
-        "manus_success": "License active. Agent ready for work.",
-        "settings_saved": "Settings saved locally.",
-        "new_channel": "Opening new sales channel configurator...",
-        "edit_schedule": "Schedule editing available in system settings.",
-        "importing": "Importing new products..."
-      },
-      "stats": {
-        "products_short": "prod."
-      }
-    },
-    "schedule": {
-      "title": "Schedule",
-      "daily02": "Daily at 02:00",
-      "active": "Active",
-      "disabled": "Disabled",
-      "checkOnlyChanges": "Check only changes",
-      "changeCron": "Change cron settings"
-    },
-    "aiTip": {
-      "title": "AI Tip",
-      "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
-      "importBtn": "Import now"
-    },
-    "agent": {
-      "catalogTitle": "Product Catalog",
-      "ready": "Ready",
-      "emptyState": {
-        "title": "Select product and target market",
-        "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
-      },
-      "selectMarket": "Select target market",
-      "launchBtn": "Launch Agent",
-      "launchAdmin": "Launch Agent (Admin)",
-      "launchPoints": "Launch for {count} pts",
-      "working": "Agent Working...",
-      "manusMode": "Manus Mode: Active",
-      "marketPrefix": "EnglishLearning: ",
-      "yourBalance": "Your balance",
-      "analysisTitle": "AI Analysis for {market}",
-      "regionalOptimization": "Regional optimization",
-      "suggestedTitle": "Suggested Title (SEO Local)",
-      "suggestedPrice": "Price (PPP Conversion)",
-      "sellingProb": "Selling Probability",
-      "veryHigh": "VERY HIGH",
-      "success": {
-        "title": "Task Completed!",
-        "description": "AI Agent successfully visited {market} and published your product.",
-        "viewLogs": "VIEW SESSION LOGS"
-      },
-      "toasts": {
-        "session_manager": "Opening session manager...",
-        "proxy_success": "Proxy: {ip} ({location}) OK",
-        "report_title": "Agent Report",
-        "report_desc": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}"
-      },
-      "stats": {
-        "points": "pts"
-      },
-      "mockAnalysis": {
-        "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
-        "suggestedPrice": "$12.99",
-        "subject": "English Language Arts",
-        "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
-        "description": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!"
-      },
-      "idle": {
-        "title": "In standby",
-        "description": "Run agent to start automation process on platform {market}."
-      }
-    },
-    "settings": {
-      "title": "Multi-Channel Connections",
-      "description": "Configure access data for external stores.",
-      "saveAll": "Save all",
-      "lastSaved": "Last saved: {time}",
-      "woo": {
-        "title": "WooCommerce / WordPress Site",
-        "url": "Store URL (REST API)",
-        "key": "Consumer Key",
-        "secret": "Consumer Secret",
-        "connected": "Connected",
-        "autoSync": "AUTO-SYNC ON",
-        "test": "Test"
-      },
-      "manus": {
-        "title": "Manus AI Session",
-        "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
-        "instance": "Agent API Instance",
-        "test": "Test Manus",
-        "manage": "Manage Session",
-        "proxy": "Test Proxy"
-      },
-      "mailerlite": {
-        "title": "MailerLite Integration",
-        "api_key": "MailerLite API Key",
-        "placeholder": "ml_...",
-        "groups": "Subscriber Group ID",
-        "test": "Test Connection"
-      },
-      "manychat": {
-        "title": "ManyChat Automation",
-        "api_key": "ManyChat API Key",
-        "placeholder": "mc_...",
-        "automation_id": "Default Flow ID",
-        "test": "Test Automation"
-      }
-    }
-  },
-  "abandonedHub": {
-    "title": "Abandoned Cart Hub",
-    "subtitle": "Recover lost sales and manage leads",
-    "table": {
-      "customer": "Customer",
-      "cart": "Cart Items",
-      "value": "Value",
-      "lastActive": "Last Active",
-      "actions": "Actions"
-    },
-    "actions": {
-      "sendReminder": "Send Reminder",
-      "recoveryLink": "Copy Recovery Link",
-      "delete": "Remove lead"
-    },
-    "status": {
-      "contacted": "Contacted",
-      "pending": "Pending",
-      "recovered": "Recovered"
-    },
-    "notifications": {
-      "reminderSent": "Recovery email simulation sent to {email}",
-      "linkCopied": "Recovery link copied with discount code!"
-    }
-  }
 }

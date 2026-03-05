@@ -1,460 +1,465 @@
 {
-  "seo": {
-    "title": "Õppematerjalid inglise keele õpetajatele | Kamila Łobko-Koziej",
-    "description": "Loovad õppematerjalid, tunnikavad, aastaprojektid ja valmis paketid inglise keele õpetajatele.",
-    "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
-  },
-  "nav": {
-    "products": "Tooted",
-    "materialy": "Materjalid",
-    "blog": "Blogi",
-    "contact": "Kontakt",
-    "login": "Logi sisse",
-    "dashboard": "Paneel",
-    "adminPanel": "Admin paneel",
-    "verify": "Kinnitamine"
-  },
-  "brand": {
-    "educationalMaterials": "Õppematerjalid",
-    "byKamila": "Kamila Łobko-Koziej"
-  },
-  "hero": {
-    "badge": "Materjalid õpetajatele",
-    "title": "Õpetage inglise keelt kire ja kergusega",
-    "subtitle": "Loovad õppematerjalid, mis muudavad teie tunde. Säästke aega ettevalmistuseks ja inspireerige oma õpilasi iga päev.",
-    "cta_main": "Sirvi materjale",
-    "cta_secondary": "Autorist",
-    "demoText": "Vaata paneeli demo:",
-    "teacherProfile": "Õpetaja profiil",
-    "studentProfile": "Õpilase profiil"
-  },
-  "footer": {
-    "rights": "Kõik õigused kaitstud.",
-    "description": "Originaalsed, loovad õppematerjalid inglise keele õpetajatele. Saa inspiratsiooni!",
-    "groups": {
-      "shop": "Pood",
-      "info": "Informatsioon",
-      "help": "Abi"
+    "seo": {
+        "title": "Õppematerjalid inglise keele õpetajatele | Kamila Łobko-Koziej",
+        "description": "Loovad õppematerjalid, tunnikavad, aastaprojektid ja valmis paketid inglise keele õpetajatele.",
+        "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
     },
-    "links": {
-      "catalog": "Kataloog",
-      "materials": "Õppematerjalid",
-      "projects": "Aastaprojektid",
-      "scenarios": "Tunnikavad",
-      "packs": "Teemapakk",
-      "about": "Autorist",
-      "contact": "Kontakt",
-      "privacy": "Privaatsuspoliitika",
-      "terms": "Kasutustingimused",
-      "howToBuy": "Kuidas osta?",
-      "faq": "KKK",
-      "returns": "Tagastused",
-      "account": "Minu konto",
-      "admin": "Õpetaja paneel (Admin)"
+    "nav": {
+        "products": "Tooted",
+        "materialy": "Materjalid",
+        "blog": "Blogi",
+        "contact": "Kontakt",
+        "login": "Logi sisse",
+        "dashboard": "Paneel",
+        "adminPanel": "Admin paneel",
+        "verify": "Kinnitamine"
+    },
+    "brand": {
+        "educationalMaterials": "Õppematerjalid",
+        "byKamila": "Kamila Łobko-Koziej"
+    },
+    "hero": {
+        "badge": "Materjalid õpetajatele",
+        "title": "Õpetage inglise keelt kire ja kergusega",
+        "subtitle": "Loovad õppematerjalid, mis muudavad teie tunde. Säästke aega ettevalmistuseks ja inspireerige oma õpilasi iga päev.",
+        "cta_main": "Sirvi materjale",
+        "cta_secondary": "Autorist",
+        "demoText": "Vaata paneeli demo:",
+        "teacherProfile": "Õpetaja profiil",
+        "studentProfile": "Õpilase profiil"
+    },
+    "footer": {
+        "rights": "Kõik õigused kaitstud.",
+        "description": "Originaalsed, loovad õppematerjalid inglise keele õpetajatele. Saa inspiratsiooni!",
+        "groups": {
+            "shop": "Pood",
+            "info": "Informatsioon",
+            "help": "Abi"
+        },
+        "links": {
+            "catalog": "Kataloog",
+            "materials": "Õppematerjalid",
+            "projects": "Aastaprojektid",
+            "scenarios": "Tunnikavad",
+            "packs": "Teemapakk",
+            "about": "Autorist",
+            "contact": "Kontakt",
+            "privacy": "Privaatsuspoliitika",
+            "terms": "Kasutustingimused",
+            "howToBuy": "Kuidas osta?",
+            "faq": "KKK",
+            "returns": "Tagastused",
+            "account": "Minu konto",
+            "admin": "Õpetaja paneel (Admin)"
+        }
+    },
+    "auth": {
+        "logout": "Logi välja",
+        "myCourses": "Minu kursused",
+        "studentPanel": "Õpilase paneel",
+        "roleAdmin": "Administrator",
+        "roleTeacher": "Teacher",
+        "roleStudent": "Student"
+    },
+    "cart": {
+        "empty": "Sinu ostukorv on tühi",
+        "emptySub": "Lisa tooteid ostlemise jätkamiseks",
+        "browse": "Sirvi tooteid",
+        "reserved": "Sinu ostukorv on reserveeritud:",
+        "header": "Ostukorv ({count})",
+        "remove": "Eemalda",
+        "specialOffer": "ERIPAKKUMINE",
+        "orderBump": "Lisa meilisablonide pakk (+29 €)",
+        "orderBumpDesc": "20 kasutusvalmis malli vanematega suhtlemiseks. Säästa 70%!",
+        "summary": "Kokkuvõte",
+        "couponPlaceholder": "Sooduskood",
+        "apply": "Rakenda",
+        "couponHeader": "Kupong:",
+        "products": "Tooted",
+        "discount": "Allahindlus",
+        "total": "Kokku",
+        "checkout": "Mine kassasse",
+        "secure": "Turvaline makse",
+        "couponInvalid": "Vale sooduskood",
+        "couponInactive": "See kupong ei ole enam aktiivne",
+        "couponExpired": "See kupong on aegunud",
+        "couponLimitReached": "See kupong on saavutanut oma kasutuslimiidi",
+        "couponMinOrder": "Minimaalne tellimuse väärtus: {minOrderValue} {currency}",
+        "couponAppliedPercent": "Allahindlus {percent}% on rakendatud!",
+        "couponAppliedFixed": "Allahindlus {amount} {currency} on rakendatud!",
+        "currencySymbol": "€"
+    },
+    "socialProof": {
+        "header": "Facebooki kogukond",
+        "sub": "Olge uudistega kursis ja liituge aruteluga!",
+        "cta": "Vaadake meie inspiratsiooni täis profiili",
+        "madeWithLove": "Loodud armastusega",
+        "polishQuality": "ja Poola kvaliteediga"
+    },
+    "newsletter": {
+        "header": "Ole kursis!",
+        "sub": "Telli meie uudiskiri ja saa infot uute materjalide, pakkumiste ja eksklusiivsete allahindluste kohta.",
+        "placeholder": "Sinu e-posti aadress",
+        "button": "Telli",
+        "success": "Aitäh uudiskirja tellimise eest!",
+        "privacy": "Austame sinu privaatsust. Võid igal ajal loobuda."
+    },
+    "checkout": {
+        "acceptTermsError": "Pead nõustuma tingimustega",
+        "successTitle": "Aitäh tellimuse eest!",
+        "successOrder": "Sinu tellimus Nr. {orderNumber} on vastu võetud.",
+        "successEmail": "Saatsime tellimuse andmed antud e-posti aadressile.",
+        "backToStore": "Tagasi poodi",
+        "myCourses": "Minu kursused",
+        "backToCart": "Tagasi ostukorvi",
+        "steps": {
+            "cart": "Ostukorv",
+            "payment": "Makse",
+            "access": "Juurdepääs"
+        },
+        "trust": {
+            "secure": "Turvaline makse",
+            "ssl": "SSL krüpteerimine",
+            "instant": "Kohene juurdepääs"
+        },
+        "header": "Vii tellimus lõpule",
+        "contactTitle": "Kontaktandmed",
+        "email": "E-post *",
+        "firstName": "Eesnimi *",
+        "lastName": "Perekonnanimi *",
+        "phone": "Telefon (valikuline)",
+        "invoiceTitle": "Arve",
+        "wantInvoice": "Soovin saada käibemaksuga arvet",
+        "nip": "KMKR nr / Registrikood",
+        "nipError": "Sisestage kehtiv kood",
+        "lookup": "Hangi andmed",
+        "lookupSuccess": "Ettevõtte andmed hangitud!",
+        "nipNotFound": "Ettevõtet ei leitud",
+        "nipSearchError": "Viga otsimisel. Palun proovige uuesti.",
+        "companyName": "Ettevõtte nimi",
+        "companyAddress": "Ettevõtte aadress",
+        "addressPlaceholder": "Täidetakse automaatselt",
+        "paymentTitle": "Makseviis",
+        "paymentMethods": {
+            "card": "Maksekaart",
+            "cardSub": "Visa, Mastercard, American Express",
+            "blik": "BLIK",
+            "blikSub": "Kiire makse BLIK koodiga",
+            "transfer": "Pangaülekanne",
+            "transferSub": "Tavaline pangaülekanne"
+        },
+        "yourOrder": "Sinu tellimus",
+        "summaryProducts": "Tooted",
+        "summaryDiscount": "Allahindlus ({code})",
+        "summaryTotal": "Kokku",
+        "terms": "Nõustun poe tingimuste ja privaatsuspoliitikaga",
+        "termsRequired": "Vajalik tellimuse lõpuleviimiseks",
+        "processing": "Töötlemine...",
+        "pay": "Maksa {total}",
+        "instantAccessInfo": "Pärast maksmist on materjalid paneelis kohe kättesaadavad",
+        "socialProof": "+2 500 õpetajat on juba ostnud",
+        "toPayMobile": "Maksmiseks",
+        "paymentFailed": "Makse ebaõnnestus. Palun proovi uuesti.",
+        "paymentSystemError": "Maksesüsteemi viga."
+    },
+    "contact": {
+        "title": "Võta ühendust",
+        "subtitle": "Kas teil on küsimus materjalide kohta? Vajate abi paketi valimisel? Kirjutage meile või rääkige meie AI-assistendiga. Oleme teie jaoks olemas!",
+        "aiBadge": "Vastame tavaliselt 2 tunni jooksul",
+        "trustBadge": "Üle 12 000 rahuloleva õpetaja",
+        "emailTitle": "Kirjuta e-kiri",
+        "emailDesc": "Meie postkast on teile avatud 24/7.",
+        "phoneTitle": "Helista meile",
+        "phoneDesc": "E-R kell 9:00-17:00 oleme telefoni otsas.",
+        "formTitle": "Kontaktivorm",
+        "addressTitle": "Peakontor",
+        "addressValue": "Varssavi, Education tn 123",
+        "aiHelp": "Vajate kiiret vastust?",
+        "aiHelpDesc": "Meie nutikas assistent teab vastuseid enamikule korduma kippuvatele küsimustele. Küsige toodete, õppemeetodite või materjalide kättesaadavuse kohta.",
+        "aiHelpMobile": "AI-assistent on saadaval ekraani alumises nurgas.",
+        "form": {
+            "name": "Ees- ja perekonnanimi",
+            "email": "E-post",
+            "subject": "Teema",
+            "message": "Teie sõnum",
+            "messagePlaceholder": "Kuidas saame teid aidata?",
+            "sending": "Saatmine...",
+            "send": "Saada sõnum",
+            "success": "Sõnum saadetud!",
+            "successDesc": "Täname meiega ühendust võtmast. Vastame niipea kui võimalik.",
+            "placeholders": {
+                "name": "Mari Tamm",
+                "email": "mari@kamila.shor.dev",
+                "subject": "Toote päring...",
+                "message": "Kirjeldage, kuidas saame teid aidata..."
+            }
+        },
+        "info": {
+            "emailValue": "contact@kamilaenglish.com",
+            "phoneValue": "+48 123 456 789"
+        },
+        "aiChat": {
+            "title": "AI-assistent",
+            "status": "Sees ja valmis",
+            "thinking": "Mõtlen...",
+            "inputPlaceholder": "Küsi küsimus...",
+            "dataInputPlaceholder": "Sisesta nimi ja e-post...",
+            "welcome": "Tere! Olen teie nutikas assistent. Enne alustamist, kas olete juba meie klient?",
+            "options": {
+                "yes": "Jah, olen klient",
+                "no": "Ei, veel mitte"
+            },
+            "responses": {
+                "clientYes": "Suurepärane! Kuidas saan teid täna aidata?",
+                "clientNo": "Saan aru. Aitaksin teil meeleldi meie materjalidega tutvuda. Mis on teie nimi ja e-post, et saaksin teile tasuta näidiseid saata?",
+                "dataSaved": "Aitäh! Salvestasin teie andmed. Nüüd võite vabalt kõike küsida.",
+                "fallback": "Vabandust, ma ei saa päris hästi aru. Kas saaksite seda ümber sõnastada? Võite küsida hindade, kohaletoimetamise või õppemeetodite kohta."
+            },
+            "knowledge": {
+                "price": "Meie PDF-materjalid algavad 29 €. Aastapaketid (Mega Pack) on praegu müügil hinnaga 149 €.",
+                "delivery": "Kõik materjalid on digitaalsed. Saate allalaadimislingi e-postiga kohe pärast maksmist.",
+                "preschool": "Meil on suurepärane jaotis 'Inglise keel lasteaias'. Eriti soovitan meie paketti '4 aastaaega'.",
+                "contact": "Võite meile meilida või helistada +48 123 456 789 (E-R 9:00-17:00).",
+                "invoice": "Jah, väljastame käibemaksuga arveid. Arve rekvisiidid saate sisestada ostukorvis.",
+                "methods": "Kamila Łobko-Koziej pooldab mängupõhist lähenemist (TPR, kommunikatiivsed mängud). Vaadake meie blogi, et rohkem teada saada!"
+            }
+        }
+    },
+    "login": {
+        "title": "Tere tulemast tagasi!",
+        "desc": "Õpilastsooni sisenemiseks sisestage oma e-post.",
+        "student": "Õpilane",
+        "teacher": "Õpetaja",
+        "email": "E-post",
+        "emailTeacher": "Töö e-post",
+        "password": "Parool",
+        "loggingIn": "Sisselogimine...",
+        "success": "Sisse logitud!",
+        "submit": "Logi sisse",
+        "successMessage": "Sisselogimine õnnestus! Ümbersuunamine...",
+        "errorDefault": "Vale e-post või parool.",
+        "errorSystem": "Sisselogimisel tekkis viga. Palun proovi uuesti.",
+        "emailRequired": "E-post on kohustuslik",
+        "emailInvalid": "Vale e-posti vorming",
+        "passwordRequired": "Parool on kohustuslik",
+        "passwordMin": "Parool peab olema vähemalt 4 tähemärki pikk",
+        "forgotPassword": "Forgot your password?",
+        "magicLink": "Login with Magic Link",
+        "magicLinkDesc": "We'll send you a one-time login link to your email address.",
+        "sendMagicLink": "Send Magic Link",
+        "backToLogin": "Back to login",
+        "checkEmail": "Check your inbox",
+        "resetPassword": "Reset password",
+        "magicLinkSent": "A login link has been sent to your email address.",
+        "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
+        "resetSuccess": "Your password has been changed successfully."
+    },
+    "quickSale": {
+        "title": "KIIRE MAKSE",
+        "demoProduct": {
+            "title": "Näidis Premium e-raamat",
+            "excerpt": "See on demonstratsioonitoode. Täisversioonis hangitakse andmed andmebaasist."
+        },
+        "page": {
+            "guarantee": "30-päevane rahulolu garantii",
+            "totalLabel": "Kokku tasumiseks:",
+            "email_label": "Teie e-post",
+            "email_placeholder": "aadress@email.com",
+            "payment_method": "Makseviis",
+            "payment_card": "Kaart",
+            "blik_code": "BLIK kood",
+            "terms": "Nõustun poe tingimustega",
+            "pay_btn": "Ostan ja maksan",
+            "secure_checkout": "SSL krüpteeritud ühendus"
+        },
+        "optimization": {
+            "timer": {
+                "text": "Teie pakkumine aegub:"
+            },
+            "social_proof": {
+                "viewing": "Seda pakkumist vaatab praegu {count} inimest"
+            },
+            "savings": "Säästategi"
+        },
+        "bump": {
+            "yes_btn": "JAH, lisa minu tellimusele",
+            "price_prefix": "vaid",
+            "description": "Ühekordne pakkumine! Lisa kasutusvalmis töölehtede komplekt (PDF)."
+        }
+    },
+    "verify": {
+        "title": "Sertifikaadi kontrollimine",
+        "subtitle": "Sisestage sertifikaadi kontrollkood selle ehtsuse kinnitamiseks.",
+        "placeholder": "XXXX-XXXX-XXXX",
+        "success": {
+            "title": "Sertifikaat kinnitatud",
+            "desc": "See sertifikaat on ehtne ja selle on väljastanud meie platvorm.",
+            "user": "Osaleja",
+            "course": "Kursus",
+            "date": "Lõpetamise kuupäev",
+            "code": "Kood",
+            "view": "Vaata sertifikaati"
+        },
+        "error": {
+            "title": "Sertifikaati ei leitud",
+            "desc": "Me ei leidnud antud koodiga sertifikaati. Palun kontrollige, kas kood on õige."
+        }
+    },
+    "errors": {
+        "404": {
+            "title": "404",
+            "message": "Lehte ei leitud.",
+            "back": "Tagasi kodulehele"
+        }
+    },
+    "blog": {
+        "title": "Blogi",
+        "subtitle": "Artiklid, näpunäited ja inspiratsioon inglise keele õpetajatele. Õppige, kuidas õpetada tõhusamalt ja suurema kirega.",
+        "empty": "Blogipostitusi ei leitud.",
+        "readMore": "Loe edasi",
+        "backToBlog": "Tagasi blogisse",
+        "share": "Jaga:",
+        "notFound": "Ei leitud"
+    },
+    "common": {
+        "loading": "Laadimine...",
+        "success": "Toiming edukalt lõpetatud."
+    },
+    "certificates": {
+        "title": "Lõputunnistus",
+        "subtitle": "Käesolevaga kinnitatakse, et",
+        "completedCourse": "on läbinud kursuse",
+        "completionDate": "Lõpetamise kuupäev:",
+        "verificationCode": "Kontrollkood:",
+        "downloadPdf": "Laadi alla PDF",
+        "share": "Jaga",
+        "backToDashboard": "Tagasi paneelile",
+        "styleTitle": "Muuda sertifikaadi stiili",
+        "verifiedTitle": "Sertifikaat kinnitatud",
+        "verifiedDesc": "Selle sertifikaadi on väljastanud meie platvorm.",
+        "notFound": "Sertifikaati ei leitud",
+        "copySuccess": "Link kopeeritud!"
+    },
+    "languages": {
+        "pl": "Poola",
+        "en": "Inglise",
+        "uk": "Ukraina",
+        "de": "Saksa",
+        "es": "Hispaania",
+        "fr": "Prantsuse",
+        "it": "Itaalia",
+        "cs": "Tšehhi",
+        "sk": "Slovaki",
+        "ro": "Rumeenia",
+        "hu": "Ungari",
+        "pt": "Portugali",
+        "lt": "Leedu",
+        "lv": "Läti",
+        "et": "Eesti",
+        "hr": "Horvaadi",
+        "sr": "Serbia",
+        "sl": "Sloveenia",
+        "bg": "Bulgaaria",
+        "el": "Kreeka",
+        "nl": "Hollandi",
+        "sv": "Rootsi",
+        "fi": "Soome",
+        "no": "Norra",
+        "da": "Taani"
+    },
+    "fomo": {
+        "names": [
+            "John",
+            "Emily",
+            "Michael",
+            "Sarah",
+            "David",
+            "Jessica",
+            "Robert"
+        ],
+        "cities": [
+            "London",
+            "New York",
+            "Chicago",
+            "Toronto",
+            "Sydney",
+            "Dublin",
+            "Berlin"
+        ],
+        "purchaseMessage": "{name} from {city}",
+        "productMessage": "Just bought \"{product}\"",
+        "timeAgo": "{time} min ago"
+    },
+    "exitIntent": {
+        "title": "WAIT!",
+        "subtitle": "Before you leave...",
+        "header": "Get your free \"Starter Pack\"",
+        "description": "Join our newsletter and receive 50 free worksheets!",
+        "cta": "I want my gift",
+        "noThanks": "No thanks, I'll pay full price later"
+    },
+    "course": {
+        "yourProgress": "Teie Edenemist",
+        "noLessons": "Tunde pole.",
+        "quiz": "Viktoriini",
+        "unlocksInDays": "Avaneb {days} päeva pärast"
+    },
+    "dashboard": {
+        "wallet": {
+            "title": "Your Wallet",
+            "subtitle": "Collect points for activity and purchases.",
+            "available": "Available funds",
+            "points": "pts",
+            "value": "Value in {currency}",
+            "spend": "Spend points in shop",
+            "history": "Recent activity"
+        },
+        "awards": {
+            "title": "Your Hall of Fame",
+            "subtitle": "Earn badges for completed lessons and games!",
+            "mock": {
+                "start": "Quick Start",
+                "startDesc": "Completed first lesson",
+                "vocab": "Vocab Master",
+                "vocabDesc": "100% in quiz",
+                "steady": "Systematic",
+                "steadyDesc": "Logged in 7 days",
+                "polyglot": "Polyglot",
+                "polyglotDesc": "Passed A1 level"
+            }
+        },
+        "team": {
+            "title": "My Class / Team",
+            "subtitle": "Share materials with students",
+            "create_class": "Create new class",
+            "created_at": "Created: {date}",
+            "students_count": "{count} students",
+            "access_code": "Student access code",
+            "empty": {
+                "title": "New Class",
+                "desc": "Create a group for your students.",
+                "btn": "Start Setup"
+            },
+            "pro": {
+                "active": "Your PRO plan is active",
+                "unlock": "Unlock unlimited classes",
+                "desc": "Teacher PRO plan allows creating unlimited groups.",
+                "upgrade": "Upgrade to PRO",
+                "status": "Active"
+            }
+        },
+        "games": {
+            "title": "Educational Games",
+            "subtitle": "Interactive exercises for your students",
+            "play": "Play now",
+            "loading": "Loading game...",
+            "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
+            "fullscreen": "Full screen",
+            "report": "Report error"
+        }
+    },
+    "announcement": {
+        "launchOffer": "Eriline käivituspakkumine: Saa 20% SOODUSTUST koodiga \"START20\"",
+        "limitedTime": "Piiratud aeg: Vaata meie uusi pakette!"
     }
-  },
-  "auth": {
-    "logout": "Logi välja",
-    "myCourses": "Minu kursused",
-    "studentPanel": "Õpilase paneel",
-    "roleAdmin": "Administrator",
-    "roleTeacher": "Teacher",
-    "roleStudent": "Student"
-  },
-  "cart": {
-    "empty": "Sinu ostukorv on tühi",
-    "emptySub": "Lisa tooteid ostlemise jätkamiseks",
-    "browse": "Sirvi tooteid",
-    "reserved": "Sinu ostukorv on reserveeritud:",
-    "header": "Ostukorv ({count})",
-    "remove": "Eemalda",
-    "specialOffer": "ERIPAKKUMINE",
-    "orderBump": "Lisa meilisablonide pakk (+29 €)",
-    "orderBumpDesc": "20 kasutusvalmis malli vanematega suhtlemiseks. Säästa 70%!",
-    "summary": "Kokkuvõte",
-    "couponPlaceholder": "Sooduskood",
-    "apply": "Rakenda",
-    "couponHeader": "Kupong:",
-    "products": "Tooted",
-    "discount": "Allahindlus",
-    "total": "Kokku",
-    "checkout": "Mine kassasse",
-    "secure": "Turvaline makse",
-    "couponInvalid": "Vale sooduskood",
-    "couponInactive": "See kupong ei ole enam aktiivne",
-    "couponExpired": "See kupong on aegunud",
-    "couponLimitReached": "See kupong on saavutanut oma kasutuslimiidi",
-    "couponMinOrder": "Minimaalne tellimuse väärtus: {minOrderValue} {currency}",
-    "couponAppliedPercent": "Allahindlus {percent}% on rakendatud!",
-    "couponAppliedFixed": "Allahindlus {amount} {currency} on rakendatud!",
-    "currencySymbol": "€"
-  },
-  "socialProof": {
-    "header": "Facebooki kogukond",
-    "sub": "Olge uudistega kursis ja liituge aruteluga!",
-    "cta": "Vaadake meie inspiratsiooni täis profiili",
-    "madeWithLove": "Loodud armastusega",
-    "polishQuality": "ja Poola kvaliteediga"
-  },
-  "newsletter": {
-    "header": "Ole kursis!",
-    "sub": "Telli meie uudiskiri ja saa infot uute materjalide, pakkumiste ja eksklusiivsete allahindluste kohta.",
-    "placeholder": "Sinu e-posti aadress",
-    "button": "Telli",
-    "success": "Aitäh uudiskirja tellimise eest!",
-    "privacy": "Austame sinu privaatsust. Võid igal ajal loobuda."
-  },
-  "checkout": {
-    "acceptTermsError": "Pead nõustuma tingimustega",
-    "successTitle": "Aitäh tellimuse eest!",
-    "successOrder": "Sinu tellimus Nr. {orderNumber} on vastu võetud.",
-    "successEmail": "Saatsime tellimuse andmed antud e-posti aadressile.",
-    "backToStore": "Tagasi poodi",
-    "myCourses": "Minu kursused",
-    "backToCart": "Tagasi ostukorvi",
-    "steps": {
-      "cart": "Ostukorv",
-      "payment": "Makse",
-      "access": "Juurdepääs"
-    },
-    "trust": {
-      "secure": "Turvaline makse",
-      "ssl": "SSL krüpteerimine",
-      "instant": "Kohene juurdepääs"
-    },
-    "header": "Vii tellimus lõpule",
-    "contactTitle": "Kontaktandmed",
-    "email": "E-post *",
-    "firstName": "Eesnimi *",
-    "lastName": "Perekonnanimi *",
-    "phone": "Telefon (valikuline)",
-    "invoiceTitle": "Arve",
-    "wantInvoice": "Soovin saada käibemaksuga arvet",
-    "nip": "KMKR nr / Registrikood",
-    "nipError": "Sisestage kehtiv kood",
-    "lookup": "Hangi andmed",
-    "lookupSuccess": "Ettevõtte andmed hangitud!",
-    "nipNotFound": "Ettevõtet ei leitud",
-    "nipSearchError": "Viga otsimisel. Palun proovige uuesti.",
-    "companyName": "Ettevõtte nimi",
-    "companyAddress": "Ettevõtte aadress",
-    "addressPlaceholder": "Täidetakse automaatselt",
-    "paymentTitle": "Makseviis",
-    "paymentMethods": {
-      "card": "Maksekaart",
-      "cardSub": "Visa, Mastercard, American Express",
-      "blik": "BLIK",
-      "blikSub": "Kiire makse BLIK koodiga",
-      "transfer": "Pangaülekanne",
-      "transferSub": "Tavaline pangaülekanne"
-    },
-    "yourOrder": "Sinu tellimus",
-    "summaryProducts": "Tooted",
-    "summaryDiscount": "Allahindlus ({code})",
-    "summaryTotal": "Kokku",
-    "terms": "Nõustun poe tingimuste ja privaatsuspoliitikaga",
-    "termsRequired": "Vajalik tellimuse lõpuleviimiseks",
-    "processing": "Töötlemine...",
-    "pay": "Maksa {total}",
-    "instantAccessInfo": "Pärast maksmist on materjalid paneelis kohe kättesaadavad",
-    "socialProof": "+2 500 õpetajat on juba ostnud",
-    "toPayMobile": "Maksmiseks",
-    "paymentFailed": "Makse ebaõnnestus. Palun proovi uuesti.",
-    "paymentSystemError": "Maksesüsteemi viga."
-  },
-  "contact": {
-    "title": "Võta ühendust",
-    "subtitle": "Kas teil on küsimus materjalide kohta? Vajate abi paketi valimisel? Kirjutage meile või rääkige meie AI-assistendiga. Oleme teie jaoks olemas!",
-    "aiBadge": "Vastame tavaliselt 2 tunni jooksul",
-    "trustBadge": "Üle 12 000 rahuloleva õpetaja",
-    "emailTitle": "Kirjuta e-kiri",
-    "emailDesc": "Meie postkast on teile avatud 24/7.",
-    "phoneTitle": "Helista meile",
-    "phoneDesc": "E-R kell 9:00-17:00 oleme telefoni otsas.",
-    "formTitle": "Kontaktivorm",
-    "addressTitle": "Peakontor",
-    "addressValue": "Varssavi, Education tn 123",
-    "aiHelp": "Vajate kiiret vastust?",
-    "aiHelpDesc": "Meie nutikas assistent teab vastuseid enamikule korduma kippuvatele küsimustele. Küsige toodete, õppemeetodite või materjalide kättesaadavuse kohta.",
-    "aiHelpMobile": "AI-assistent on saadaval ekraani alumises nurgas.",
-    "form": {
-      "name": "Ees- ja perekonnanimi",
-      "email": "E-post",
-      "subject": "Teema",
-      "message": "Teie sõnum",
-      "messagePlaceholder": "Kuidas saame teid aidata?",
-      "sending": "Saatmine...",
-      "send": "Saada sõnum",
-      "success": "Sõnum saadetud!",
-      "successDesc": "Täname meiega ühendust võtmast. Vastame niipea kui võimalik.",
-      "placeholders": {
-        "name": "Mari Tamm",
-        "email": "mari@kamila.shor.dev",
-        "subject": "Toote päring...",
-        "message": "Kirjeldage, kuidas saame teid aidata..."
-      }
-    },
-    "info": {
-      "emailValue": "contact@kamilaenglish.com",
-      "phoneValue": "+48 123 456 789"
-    },
-    "aiChat": {
-      "title": "AI-assistent",
-      "status": "Sees ja valmis",
-      "thinking": "Mõtlen...",
-      "inputPlaceholder": "Küsi küsimus...",
-      "dataInputPlaceholder": "Sisesta nimi ja e-post...",
-      "welcome": "Tere! Olen teie nutikas assistent. Enne alustamist, kas olete juba meie klient?",
-      "options": {
-        "yes": "Jah, olen klient",
-        "no": "Ei, veel mitte"
-      },
-      "responses": {
-        "clientYes": "Suurepärane! Kuidas saan teid täna aidata?",
-        "clientNo": "Saan aru. Aitaksin teil meeleldi meie materjalidega tutvuda. Mis on teie nimi ja e-post, et saaksin teile tasuta näidiseid saata?",
-        "dataSaved": "Aitäh! Salvestasin teie andmed. Nüüd võite vabalt kõike küsida.",
-        "fallback": "Vabandust, ma ei saa päris hästi aru. Kas saaksite seda ümber sõnastada? Võite küsida hindade, kohaletoimetamise või õppemeetodite kohta."
-      },
-      "knowledge": {
-        "price": "Meie PDF-materjalid algavad 29 €. Aastapaketid (Mega Pack) on praegu müügil hinnaga 149 €.",
-        "delivery": "Kõik materjalid on digitaalsed. Saate allalaadimislingi e-postiga kohe pärast maksmist.",
-        "preschool": "Meil on suurepärane jaotis 'Inglise keel lasteaias'. Eriti soovitan meie paketti '4 aastaaega'.",
-        "contact": "Võite meile meilida või helistada +48 123 456 789 (E-R 9:00-17:00).",
-        "invoice": "Jah, väljastame käibemaksuga arveid. Arve rekvisiidid saate sisestada ostukorvis.",
-        "methods": "Kamila Łobko-Koziej pooldab mängupõhist lähenemist (TPR, kommunikatiivsed mängud). Vaadake meie blogi, et rohkem teada saada!"
-      }
-    }
-  },
-  "login": {
-    "title": "Tere tulemast tagasi!",
-    "desc": "Õpilastsooni sisenemiseks sisestage oma e-post.",
-    "student": "Õpilane",
-    "teacher": "Õpetaja",
-    "email": "E-post",
-    "emailTeacher": "Töö e-post",
-    "password": "Parool",
-    "loggingIn": "Sisselogimine...",
-    "success": "Sisse logitud!",
-    "submit": "Logi sisse",
-    "successMessage": "Sisselogimine õnnestus! Ümbersuunamine...",
-    "errorDefault": "Vale e-post või parool.",
-    "errorSystem": "Sisselogimisel tekkis viga. Palun proovi uuesti.",
-    "emailRequired": "E-post on kohustuslik",
-    "emailInvalid": "Vale e-posti vorming",
-    "passwordRequired": "Parool on kohustuslik",
-    "passwordMin": "Parool peab olema vähemalt 4 tähemärki pikk",
-    "forgotPassword": "Forgot your password?",
-    "magicLink": "Login with Magic Link",
-    "magicLinkDesc": "We'll send you a one-time login link to your email address.",
-    "sendMagicLink": "Send Magic Link",
-    "backToLogin": "Back to login",
-    "checkEmail": "Check your inbox",
-    "resetPassword": "Reset password",
-    "magicLinkSent": "A login link has been sent to your email address.",
-    "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
-    "resetSuccess": "Your password has been changed successfully."
-  },
-  "quickSale": {
-    "title": "KIIRE MAKSE",
-    "demoProduct": {
-      "title": "Näidis Premium e-raamat",
-      "excerpt": "See on demonstratsioonitoode. Täisversioonis hangitakse andmed andmebaasist."
-    },
-    "page": {
-      "guarantee": "30-päevane rahulolu garantii",
-      "totalLabel": "Kokku tasumiseks:",
-      "email_label": "Teie e-post",
-      "email_placeholder": "aadress@email.com",
-      "payment_method": "Makseviis",
-      "payment_card": "Kaart",
-      "blik_code": "BLIK kood",
-      "terms": "Nõustun poe tingimustega",
-      "pay_btn": "Ostan ja maksan",
-      "secure_checkout": "SSL krüpteeritud ühendus"
-    },
-    "optimization": {
-      "timer": {
-        "text": "Teie pakkumine aegub:"
-      },
-      "social_proof": {
-        "viewing": "Seda pakkumist vaatab praegu {count} inimest"
-      },
-      "savings": "Säästategi"
-    },
-    "bump": {
-      "yes_btn": "JAH, lisa minu tellimusele",
-      "price_prefix": "vaid",
-      "description": "Ühekordne pakkumine! Lisa kasutusvalmis töölehtede komplekt (PDF)."
-    }
-  },
-  "verify": {
-    "title": "Sertifikaadi kontrollimine",
-    "subtitle": "Sisestage sertifikaadi kontrollkood selle ehtsuse kinnitamiseks.",
-    "placeholder": "XXXX-XXXX-XXXX",
-    "success": {
-      "title": "Sertifikaat kinnitatud",
-      "desc": "See sertifikaat on ehtne ja selle on väljastanud meie platvorm.",
-      "user": "Osaleja",
-      "course": "Kursus",
-      "date": "Lõpetamise kuupäev",
-      "code": "Kood",
-      "view": "Vaata sertifikaati"
-    },
-    "error": {
-      "title": "Sertifikaati ei leitud",
-      "desc": "Me ei leidnud antud koodiga sertifikaati. Palun kontrollige, kas kood on õige."
-    }
-  },
-  "errors": {
-    "404": {
-      "title": "404",
-      "message": "Lehte ei leitud.",
-      "back": "Tagasi kodulehele"
-    }
-  },
-  "blog": {
-    "title": "Blogi",
-    "subtitle": "Artiklid, näpunäited ja inspiratsioon inglise keele õpetajatele. Õppige, kuidas õpetada tõhusamalt ja suurema kirega.",
-    "empty": "Blogipostitusi ei leitud.",
-    "readMore": "Loe edasi",
-    "backToBlog": "Tagasi blogisse",
-    "share": "Jaga:",
-    "notFound": "Ei leitud"
-  },
-  "common": {
-    "loading": "Laadimine..."
-  },
-  "certificates": {
-    "title": "Lõputunnistus",
-    "subtitle": "Käesolevaga kinnitatakse, et",
-    "completedCourse": "on läbinud kursuse",
-    "completionDate": "Lõpetamise kuupäev:",
-    "verificationCode": "Kontrollkood:",
-    "downloadPdf": "Laadi alla PDF",
-    "share": "Jaga",
-    "backToDashboard": "Tagasi paneelile",
-    "styleTitle": "Muuda sertifikaadi stiili",
-    "verifiedTitle": "Sertifikaat kinnitatud",
-    "verifiedDesc": "Selle sertifikaadi on väljastanud meie platvorm.",
-    "notFound": "Sertifikaati ei leitud",
-    "copySuccess": "Link kopeeritud!"
-  },
-  "languages": {
-    "pl": "Poola",
-    "en": "Inglise",
-    "uk": "Ukraina",
-    "de": "Saksa",
-    "es": "Hispaania",
-    "fr": "Prantsuse",
-    "it": "Itaalia",
-    "cs": "Tšehhi",
-    "sk": "Slovaki",
-    "ro": "Rumeenia",
-    "hu": "Ungari",
-    "pt": "Portugali",
-    "lt": "Leedu",
-    "lv": "Läti",
-    "et": "Eesti",
-    "hr": "Horvaadi",
-    "sr": "Serbia",
-    "sl": "Sloveenia",
-    "bg": "Bulgaaria",
-    "el": "Kreeka",
-    "nl": "Hollandi",
-    "sv": "Rootsi",
-    "fi": "Soome",
-    "no": "Norra",
-    "da": "Taani"
-  },
-  "fomo": {
-    "names": [
-      "John",
-      "Emily",
-      "Michael",
-      "Sarah",
-      "David",
-      "Jessica",
-      "Robert"
-    ],
-    "cities": [
-      "London",
-      "New York",
-      "Chicago",
-      "Toronto",
-      "Sydney",
-      "Dublin",
-      "Berlin"
-    ],
-    "purchaseMessage": "{name} from {city}",
-    "productMessage": "Just bought \"{product}\"",
-    "timeAgo": "{time} min ago"
-  },
-  "exitIntent": {
-    "title": "WAIT!",
-    "subtitle": "Before you leave...",
-    "header": "Get your free \"Starter Pack\"",
-    "description": "Join our newsletter and receive 50 free worksheets!",
-    "cta": "I want my gift",
-    "noThanks": "No thanks, I'll pay full price later"
-  },
-  "course": {
-    "yourProgress": "Teie Edenemist",
-    "noLessons": "Tunde pole.",
-    "quiz": "Viktoriini",
-    "unlocksInDays": "Avaneb {days} päeva pärast"
-  },
-  "dashboard": {
-    "wallet": {
-      "title": "Your Wallet",
-      "subtitle": "Collect points for activity and purchases.",
-      "available": "Available funds",
-      "points": "pts",
-      "value": "Value in {currency}",
-      "spend": "Spend points in shop",
-      "history": "Recent activity"
-    },
-    "awards": {
-      "title": "Your Hall of Fame",
-      "subtitle": "Earn badges for completed lessons and games!",
-      "mock": {
-        "start": "Quick Start",
-        "startDesc": "Completed first lesson",
-        "vocab": "Vocab Master",
-        "vocabDesc": "100% in quiz",
-        "steady": "Systematic",
-        "steadyDesc": "Logged in 7 days",
-        "polyglot": "Polyglot",
-        "polyglotDesc": "Passed A1 level"
-      }
-    },
-    "team": {
-      "title": "My Class / Team",
-      "subtitle": "Share materials with students",
-      "create_class": "Create new class",
-      "created_at": "Created: {date}",
-      "students_count": "{count} students",
-      "access_code": "Student access code",
-      "empty": {
-        "title": "New Class",
-        "desc": "Create a group for your students.",
-        "btn": "Start Setup"
-      },
-      "pro": {
-        "active": "Your PRO plan is active",
-        "unlock": "Unlock unlimited classes",
-        "desc": "Teacher PRO plan allows creating unlimited groups.",
-        "upgrade": "Upgrade to PRO",
-        "status": "Active"
-      }
-    },
-    "games": {
-      "title": "Educational Games",
-      "subtitle": "Interactive exercises for your students",
-      "play": "Play now",
-      "loading": "Loading game...",
-      "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
-      "fullscreen": "Full screen",
-      "report": "Report error"
-    }
-  }
 }

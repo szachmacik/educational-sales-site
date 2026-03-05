@@ -1,460 +1,465 @@
 {
-  "seo": {
-    "title": "Nastavni materijali za nastavnike engleskog | Kamila Łobko-Koziej",
-    "description": "Kreativni nastavni materijali, planovi lekcija, celogodišnji projekti i gotovi paketi za nastavnike engleskog.",
-    "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
-  },
-  "nav": {
-    "products": "Proizvodi",
-    "materialy": "Materijali",
-    "blog": "Blog",
-    "contact": "Kontakt",
-    "login": "Prijava",
-    "dashboard": "Panel",
-    "adminPanel": "Admin panel",
-    "verify": "Верификација"
-  },
-  "brand": {
-    "educationalMaterials": "Nastavni materijali",
-    "byKamila": "Kamila Łobko-Koziej"
-  },
-  "hero": {
-    "badge": "Materijali za nastavnike",
-    "title": "Predajte engleski sa pasijom i lakoćom",
-    "subtitle": "Kreativni nastavni materijali koji će promeniti vaše lekcije. Uštedite vreme na pripremi i inspirišite svoje učenike svaki dan.",
-    "cta_main": "Pregledaj materijale",
-    "cta_secondary": "O autorki",
-    "demoText": "Pogledajte demo panela:",
-    "teacherProfile": "Profil nastavnika",
-    "studentProfile": "Profil učenika"
-  },
-  "footer": {
-    "rights": "Sva prava zadržana.",
-    "description": "Originalni, kreativni nastavni materijali za nastavnike engleskog. Inspirišite se!",
-    "groups": {
-      "shop": "Prodavnica",
-      "info": "Informacije",
-      "help": "Pomoć"
+    "seo": {
+        "title": "Nastavni materijali za nastavnike engleskog | Kamila Łobko-Koziej",
+        "description": "Kreativni nastavni materijali, planovi lekcija, celogodišnji projekti i gotovi paketi za nastavnike engleskog.",
+        "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
     },
-    "links": {
-      "catalog": "Katalog",
-      "materials": "Nastavni materijali",
-      "projects": "Celogodišnji projekti",
-      "scenarios": "Planovi lekcija",
-      "packs": "Tematski paketi",
-      "about": "O autorki",
-      "contact": "Kontakt",
-      "privacy": "Politika privatnosti",
-      "terms": "Uslovi korišćenja",
-      "howToBuy": "Kako kupiti?",
-      "faq": "ČPP",
-      "returns": "Povrati",
-      "account": "Moj nalog",
-      "admin": "Panel nastavnika (Admin)"
+    "nav": {
+        "products": "Proizvodi",
+        "materialy": "Materijali",
+        "blog": "Blog",
+        "contact": "Kontakt",
+        "login": "Prijava",
+        "dashboard": "Panel",
+        "adminPanel": "Admin panel",
+        "verify": "Верификација"
+    },
+    "brand": {
+        "educationalMaterials": "Nastavni materijali",
+        "byKamila": "Kamila Łobko-Koziej"
+    },
+    "hero": {
+        "badge": "Materijali za nastavnike",
+        "title": "Predajte engleski sa pasijom i lakoćom",
+        "subtitle": "Kreativni nastavni materijali koji će promeniti vaše lekcije. Uštedite vreme na pripremi i inspirišite svoje učenike svaki dan.",
+        "cta_main": "Pregledaj materijale",
+        "cta_secondary": "O autorki",
+        "demoText": "Pogledajte demo panela:",
+        "teacherProfile": "Profil nastavnika",
+        "studentProfile": "Profil učenika"
+    },
+    "footer": {
+        "rights": "Sva prava zadržana.",
+        "description": "Originalni, kreativni nastavni materijali za nastavnike engleskog. Inspirišite se!",
+        "groups": {
+            "shop": "Prodavnica",
+            "info": "Informacije",
+            "help": "Pomoć"
+        },
+        "links": {
+            "catalog": "Katalog",
+            "materials": "Nastavni materijali",
+            "projects": "Celogodišnji projekti",
+            "scenarios": "Planovi lekcija",
+            "packs": "Tematski paketi",
+            "about": "O autorki",
+            "contact": "Kontakt",
+            "privacy": "Politika privatnosti",
+            "terms": "Uslovi korišćenja",
+            "howToBuy": "Kako kupiti?",
+            "faq": "ČPP",
+            "returns": "Povrati",
+            "account": "Moj nalog",
+            "admin": "Panel nastavnika (Admin)"
+        }
+    },
+    "auth": {
+        "logout": "Odjava",
+        "myCourses": "Moji kursevi",
+        "studentPanel": "Učenički panel",
+        "roleAdmin": "Administrator",
+        "roleTeacher": "Teacher",
+        "roleStudent": "Student"
+    },
+    "cart": {
+        "empty": "Vaša korpa je prazna",
+        "emptySub": "Dodajte proizvode za nastavak kupovine",
+        "browse": "Pregledaj proizvode",
+        "reserved": "Vaša korpa je rezervisana za:",
+        "header": "Korpa ({count})",
+        "remove": "Ukloni",
+        "specialOffer": "POSEBNA PONUDA",
+        "orderBump": "Dodaj paket šablona e-pošte (+29 RSD)",
+        "orderBumpDesc": "20 šablona spremnih za korišćenje za komunikaciju sa roditeljima. Uštedite 70%!",
+        "summary": "Sažetak",
+        "couponPlaceholder": "Kod za popust",
+        "apply": "Primeni",
+        "couponHeader": "Kupon:",
+        "products": "Proizvodi",
+        "discount": "Popust",
+        "total": "Ukupno",
+        "checkout": "Nastavi na plaćanje",
+        "secure": "Sigurno plaćanje",
+        "couponInvalid": "Neispravan kod kupona",
+        "couponInactive": "Ovaj kupon više nije aktivan",
+        "couponExpired": "Ovaj kupon je istekao",
+        "couponLimitReached": "Ovaj kupon je dostigao limit korišćenja",
+        "couponMinOrder": "Minimalna vrednost porudžbine: {minOrderValue} {currency}",
+        "couponAppliedPercent": "Popust od {percent}% je primenjen!",
+        "couponAppliedFixed": "Popust od {amount} {currency} je primenjen!",
+        "currencySymbol": "RSD"
+    },
+    "socialProof": {
+        "header": "Facebook zajednica",
+        "sub": "Budite u toku sa novostima i pridružite se raspravi!",
+        "cta": "Pogledajte naš profil pun inspiracije",
+        "madeWithLove": "Stvoreno s ljubavlju",
+        "polishQuality": "i poljskim kvalitetom"
+    },
+    "newsletter": {
+        "header": "Budite u toku!",
+        "sub": "Pretplatite se na naš newsletter i primajte informacije o novim materijalima, promocijama i ekskluzivnim popustima.",
+        "placeholder": "Vaša e-mail adresa",
+        "button": "Pretplati se",
+        "success": "Hvala na pretplati na newsletter!",
+        "privacy": "Poštujemo vašu privatnost. Možete se odjaviti u bilo kom trenutku."
+    },
+    "checkout": {
+        "acceptTermsError": "Morate prihvatiti uslove i odredbe",
+        "successTitle": "Hvala vam na narudžbini!",
+        "successOrder": "Vaša narudžbina br. {orderNumber} je zaprimljena.",
+        "successEmail": "Poslali smo detalje narudžbine na navedenu e-mail adresu.",
+        "backToStore": "Nazad u prodavnicu",
+        "myCourses": "Moji kursevi",
+        "backToCart": "Nazad u korpu",
+        "steps": {
+            "cart": "Korpa",
+            "payment": "Plaćanje",
+            "access": "Pristup"
+        },
+        "trust": {
+            "secure": "Sigurno plaćanje",
+            "ssl": "SSL enkripcija",
+            "instant": "Trenutni pristup"
+        },
+        "header": "Dovršite narudžbinu",
+        "contactTitle": "Kontakt podaci",
+        "email": "E-mail *",
+        "firstName": "Ime *",
+        "lastName": "Prezime *",
+        "phone": "Telefon (neobavezno)",
+        "invoiceTitle": "Račun",
+        "wantInvoice": "Želim da primim R1 račun",
+        "nip": "PIB / PDV ID",
+        "nipError": "Unesite važeći PIB",
+        "lookup": "Dohvati podatke",
+        "lookupSuccess": "Podaci kompanije dohvaćeni!",
+        "nipNotFound": "Kompanija nije pronađena",
+        "nipSearchError": "Greška prilikom pretraživanja. Pokušajte ponovo.",
+        "companyName": "Naziv kompanije",
+        "companyAddress": "Adresa kompanije",
+        "addressPlaceholder": "Ispuniće se automatski",
+        "paymentTitle": "Način plaćanja",
+        "paymentMethods": {
+            "card": "Platna kartica",
+            "cardSub": "Visa, Mastercard, American Express",
+            "blik": "BLIK",
+            "blikSub": "Brzo plaćanje BLIK kodom",
+            "transfer": "Bankovni transfer",
+            "transferSub": "Tradicionalni bankovni transfer"
+        },
+        "yourOrder": "Vaša narudžbina",
+        "summaryProducts": "Proizvodi",
+        "summaryDiscount": "Popust ({code})",
+        "summaryTotal": "Ukupno",
+        "terms": "Prihvatam uslove prodavnice i politiku privatnosti",
+        "termsRequired": "Potrebno za dovršetak narudžbine",
+        "processing": "Obrada...",
+        "pay": "Plati {total}",
+        "instantAccessInfo": "Nakon plaćanja, materijali su odmah dostupni na panelu",
+        "socialProof": "+2 500 nastavnika je već kupilo",
+        "toPayMobile": "Za platiti",
+        "paymentFailed": "Plaćanje nije uspelo. Pokušajte ponovo.",
+        "paymentSystemError": "Greška platnog sistema."
+    },
+    "contact": {
+        "title": "Stupite u kontakt",
+        "subtitle": "Imate li pitanje o materijalima? Treba vam podrška u odabiru paketa? Pišite nam ili razgovarajte sa našim AI asistentom. Ovde smo za vas!",
+        "aiBadge": "Obično odgovaramo u roku od 2 sata",
+        "trustBadge": "Preko 12.000 zadovoljnih nastavnika",
+        "emailTitle": "Pošaljite e-mail",
+        "emailDesc": "Naše sanduče je otvoreno 24/7 za vas.",
+        "phoneTitle": "Pozovite nas",
+        "phoneDesc": "Pon-Pet od 9:00 do 17:00 smo na telefonu.",
+        "formTitle": "Kontakt obrazac",
+        "addressTitle": "Sedište",
+        "addressValue": "Varšava, Edukativna br. 123",
+        "aiHelp": "Treba vam brzi odgovor?",
+        "aiHelpDesc": "Naš pametni asistent zna odgovore na većinu uobičajenih pitanja. Pitajte o proizvodima, metodama predavanja ili dostupnosti materijala.",
+        "aiHelpMobile": "AI asistent je dostupan u donjem uglu ekrana.",
+        "form": {
+            "name": "Ime i prezime",
+            "email": "E-mail",
+            "subject": "Predmet",
+            "message": "Vaša poruka",
+            "messagePlaceholder": "Kako vam možemo pomoći?",
+            "sending": "Slanje...",
+            "send": "Pošalji poruku",
+            "success": "Poruka poslata!",
+            "successDesc": "Hvala vam što ste nas kontaktirali. Odgovorićemo u najkraćem mogućem roku.",
+            "placeholders": {
+                "name": "Marko Marković",
+                "email": "marko@kamila.shor.dev",
+                "subject": "Upit o proizvodu...",
+                "message": "Opišite kako vam možemo pomoći..."
+            }
+        },
+        "info": {
+            "emailValue": "contact@kamilaenglish.com",
+            "phoneValue": "+48 123 456 789"
+        },
+        "aiChat": {
+            "title": "AI asistent",
+            "status": "Online i spreman",
+            "thinking": "Razmišljam...",
+            "inputPlaceholder": "Postavite pitanje...",
+            "dataInputPlaceholder": "Unesite ime i e-mail...",
+            "welcome": "Zdravo! Ja sam vaš pametni asistent. Pre nego što počnemo, da li ste već naš kupac?",
+            "options": {
+                "yes": "Da, ja sam kupac",
+                "no": "Ne, još nisam"
+            },
+            "responses": {
+                "clientYes": "Odlično! Kako vam danas mogu pomoći?",
+                "clientNo": "Razumem. Rado ću vam pomoći da istražite naše materijale. Kako se zovete i na koji e-mail vam mogu poslati besplatne uzorke?",
+                "dataSaved": "Hvala vam! Sačuvao sam vaše podatke. Sada slobodno pitajte bilo šta.",
+                "fallback": "Žao mi je, ne razumem sasvim. Možete li preformulisati? Možete pitati o cenama, dostavi ili metodama predavanja."
+            },
+            "knowledge": {
+                "price": "Naši PDF materijali počinju od 29 €. Godišnji paketi (Mega Pack) trenutno su na rasprodaji za 149 €.",
+                "delivery": "Svi materijali su digitalni. Link za preuzimanje dobićete e-poštom odmah nakon plaćanja.",
+                "preschool": "Imamo izvrsnu sekciju 'Engleski u vrtiću'. Posebno preporučujem naš paket 4 godišnja doba.",
+                "contact": "Možete nam poslati e-mail ili nas nazvati na +48 123 456 789 (Pon-Pet 9:00-17:00).",
+                "invoice": "Da, izdajemo R1 račune. Podatke za račun možete uneti u korpi.",
+                "methods": "Kamila Łobko-Koziej promoviše pristup zasnovan na igri (TPR, komunikacijske igre). Proverite naš blog kako biste saznali više!"
+            }
+        }
+    },
+    "login": {
+        "title": "Dobro došli nazad!",
+        "desc": "Unesite svoju e-poštu za ulazak u zonu za učenike.",
+        "student": "Učenik",
+        "teacher": "Nastavnik",
+        "email": "E-pošta",
+        "emailTeacher": "Službena e-pošta",
+        "password": "Lozinka",
+        "loggingIn": "Prijava...",
+        "success": "Prijavljeni ste!",
+        "submit": "Prijavi se",
+        "successMessage": "Uspešna prijava! Preusmeravanje...",
+        "errorDefault": "Neispravna e-pošta ili lozinka.",
+        "errorSystem": "Pojavila se greška pri prijavi. Pokušajte ponovo.",
+        "emailRequired": "E-pošta je obavezna",
+        "emailInvalid": "Neispravan format e-pošte",
+        "passwordRequired": "Lozinka je obavezna",
+        "passwordMin": "Lozinka mora imati najmanje 4 znaka",
+        "forgotPassword": "Forgot your password?",
+        "magicLink": "Login with Magic Link",
+        "magicLinkDesc": "We'll send you a one-time login link to your email address.",
+        "sendMagicLink": "Send Magic Link",
+        "backToLogin": "Back to login",
+        "checkEmail": "Check your inbox",
+        "resetPassword": "Reset password",
+        "magicLinkSent": "A login link has been sent to your email address.",
+        "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
+        "resetSuccess": "Your password has been changed successfully."
+    },
+    "quickSale": {
+        "title": "BRZO PLAĆANJE",
+        "demoProduct": {
+            "title": "Primer Premium E-knjige",
+            "excerpt": "Ovo je demonstracioni proizvod. U punoj verziji podaci bi se dohvatali iz baze podataka."
+        },
+        "page": {
+            "guarantee": "30-dnevna garancija zadovoljstva",
+            "totalLabel": "Ukupno za platiti:",
+            "email_label": "Vaš e-mail",
+            "email_placeholder": "adresa@email.com",
+            "payment_method": "Način plaćanja",
+            "payment_card": "Kartica",
+            "blik_code": "BLIK kod",
+            "terms": "Prihvatam uslove prodavnice",
+            "pay_btn": "Kupujem i plaćam",
+            "secure_checkout": "SSL kriptovana veza"
+        },
+        "optimization": {
+            "timer": {
+                "text": "Vaša ponuda ističe za:"
+            },
+            "social_proof": {
+                "viewing": "{count} osoba trenutno gleda ovu ponudu"
+            },
+            "savings": "Štedite"
+        },
+        "bump": {
+            "yes_btn": "DA, dodaj u moju narudžbinu",
+            "price_prefix": "samo",
+            "description": "Jednokratna ponuda! Dodajte set radnih listova spremnih za korišćenje (PDF)."
+        }
+    },
+    "verify": {
+        "title": "Verifikacija sertifikata",
+        "subtitle": "Unesite kod za verifikaciju sertifikata kako biste potvrdili njegovu autentičnost.",
+        "placeholder": "XXXX-XXXX-XXXX",
+        "success": {
+            "title": "Sertifikat verifikovan",
+            "desc": "Ovaj sertifikat je autentičan i izdala ga je naša platforma.",
+            "user": "Učesnik",
+            "course": "Kurs",
+            "date": "Datum završetka",
+            "code": "Kod",
+            "view": "Vidi sertifikat"
+        },
+        "error": {
+            "title": "Sertifikat nije pronađen",
+            "desc": "Nismo pronašli sertifikat sa navedenim kodom. Proverite da li je kod ispravan."
+        }
+    },
+    "errors": {
+        "404": {
+            "title": "404",
+            "message": "Stranica nije pronađena.",
+            "back": "Nazad na početnu stranicu"
+        }
+    },
+    "blog": {
+        "title": "Blog",
+        "subtitle": "Članci, saveti i inspiracija za nastavnike engleskog jezika. Naučite kako podučavati efikasnije i sa više strasti.",
+        "empty": "Nisu pronađeni objavljeni članci.",
+        "readMore": "Pročitaj više",
+        "backToBlog": "Nazad na blog",
+        "share": "Podeli:",
+        "notFound": "Nije pronađeno"
+    },
+    "common": {
+        "loading": "Učitavanje...",
+        "success": "Радња је успешно завршена."
+    },
+    "certificates": {
+        "title": "Sertifikat o završetku",
+        "subtitle": "Ovim se potvrđuje da je",
+        "completedCourse": "uspešno završio/la kurs",
+        "completionDate": "Datum završetka:",
+        "verificationCode": "Kod za verifikaciju:",
+        "downloadPdf": "Preuzmi PDF",
+        "share": "Podeli",
+        "backToDashboard": "Nazad na panel",
+        "styleTitle": "Promeni stil sertifikata",
+        "verifiedTitle": "Sertifikat verifikovan",
+        "verifiedDesc": "Ovaj sertifikat je izdala naša platforma.",
+        "notFound": "Sertifikat nije pronađen",
+        "copySuccess": "Link kopiran!"
+    },
+    "languages": {
+        "pl": "Poljski",
+        "en": "Engleski",
+        "uk": "Ukrajinski",
+        "de": "Nemački",
+        "es": "Španski",
+        "fr": "Francuski",
+        "it": "Italijanski",
+        "cs": "Češki",
+        "sk": "Slovački",
+        "ro": "Rumunski",
+        "hu": "Mađarski",
+        "pt": "Portugalski",
+        "lt": "Litvanski",
+        "lv": "Letonski",
+        "et": "Estonski",
+        "hr": "Hrvatski",
+        "sr": "Srpski",
+        "sl": "Slovenački",
+        "bg": "Bugarski",
+        "el": "Grčki",
+        "nl": "Holandski",
+        "sv": "Švedski",
+        "fi": "Finski",
+        "no": "Norveški",
+        "da": "Danski"
+    },
+    "fomo": {
+        "names": [
+            "John",
+            "Emily",
+            "Michael",
+            "Sarah",
+            "David",
+            "Jessica",
+            "Robert"
+        ],
+        "cities": [
+            "London",
+            "New York",
+            "Chicago",
+            "Toronto",
+            "Sydney",
+            "Dublin",
+            "Berlin"
+        ],
+        "purchaseMessage": "{name} from {city}",
+        "productMessage": "Just bought \"{product}\"",
+        "timeAgo": "{time} min ago"
+    },
+    "exitIntent": {
+        "title": "WAIT!",
+        "subtitle": "Before you leave...",
+        "header": "Get your free \"Starter Pack\"",
+        "description": "Join our newsletter and receive 50 free worksheets!",
+        "cta": "I want my gift",
+        "noThanks": "No thanks, I'll pay full price later"
+    },
+    "course": {
+        "yourProgress": "Vaš Napredak",
+        "noLessons": "Nema lekcija.",
+        "quiz": "Kviz",
+        "unlocksInDays": "Otključava se za {days} dana"
+    },
+    "dashboard": {
+        "wallet": {
+            "title": "Your Wallet",
+            "subtitle": "Collect points for activity and purchases.",
+            "available": "Available funds",
+            "points": "pts",
+            "value": "Value in {currency}",
+            "spend": "Spend points in shop",
+            "history": "Recent activity"
+        },
+        "awards": {
+            "title": "Your Hall of Fame",
+            "subtitle": "Earn badges for completed lessons and games!",
+            "mock": {
+                "start": "Quick Start",
+                "startDesc": "Completed first lesson",
+                "vocab": "Vocab Master",
+                "vocabDesc": "100% in quiz",
+                "steady": "Systematic",
+                "steadyDesc": "Logged in 7 days",
+                "polyglot": "Polyglot",
+                "polyglotDesc": "Passed A1 level"
+            }
+        },
+        "team": {
+            "title": "My Class / Team",
+            "subtitle": "Share materials with students",
+            "create_class": "Create new class",
+            "created_at": "Created: {date}",
+            "students_count": "{count} students",
+            "access_code": "Student access code",
+            "empty": {
+                "title": "New Class",
+                "desc": "Create a group for your students.",
+                "btn": "Start Setup"
+            },
+            "pro": {
+                "active": "Your PRO plan is active",
+                "unlock": "Unlock unlimited classes",
+                "desc": "Teacher PRO plan allows creating unlimited groups.",
+                "upgrade": "Upgrade to PRO",
+                "status": "Active"
+            }
+        },
+        "games": {
+            "title": "Educational Games",
+            "subtitle": "Interactive exercises for your students",
+            "play": "Play now",
+            "loading": "Loading game...",
+            "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
+            "fullscreen": "Full screen",
+            "report": "Report error"
+        }
+    },
+    "announcement": {
+        "launchOffer": "Посебна понуда за покретање: Добијте 20% ПОПУСТА са кодом \"START20\"",
+        "limitedTime": "Ограничено вријеме: Погледајте наше нове пакете!"
     }
-  },
-  "auth": {
-    "logout": "Odjava",
-    "myCourses": "Moji kursevi",
-    "studentPanel": "Učenički panel",
-    "roleAdmin": "Administrator",
-    "roleTeacher": "Teacher",
-    "roleStudent": "Student"
-  },
-  "cart": {
-    "empty": "Vaša korpa je prazna",
-    "emptySub": "Dodajte proizvode za nastavak kupovine",
-    "browse": "Pregledaj proizvode",
-    "reserved": "Vaša korpa je rezervisana za:",
-    "header": "Korpa ({count})",
-    "remove": "Ukloni",
-    "specialOffer": "POSEBNA PONUDA",
-    "orderBump": "Dodaj paket šablona e-pošte (+29 RSD)",
-    "orderBumpDesc": "20 šablona spremnih za korišćenje za komunikaciju sa roditeljima. Uštedite 70%!",
-    "summary": "Sažetak",
-    "couponPlaceholder": "Kod za popust",
-    "apply": "Primeni",
-    "couponHeader": "Kupon:",
-    "products": "Proizvodi",
-    "discount": "Popust",
-    "total": "Ukupno",
-    "checkout": "Nastavi na plaćanje",
-    "secure": "Sigurno plaćanje",
-    "couponInvalid": "Neispravan kod kupona",
-    "couponInactive": "Ovaj kupon više nije aktivan",
-    "couponExpired": "Ovaj kupon je istekao",
-    "couponLimitReached": "Ovaj kupon je dostigao limit korišćenja",
-    "couponMinOrder": "Minimalna vrednost porudžbine: {minOrderValue} {currency}",
-    "couponAppliedPercent": "Popust od {percent}% je primenjen!",
-    "couponAppliedFixed": "Popust od {amount} {currency} je primenjen!",
-    "currencySymbol": "RSD"
-  },
-  "socialProof": {
-    "header": "Facebook zajednica",
-    "sub": "Budite u toku sa novostima i pridružite se raspravi!",
-    "cta": "Pogledajte naš profil pun inspiracije",
-    "madeWithLove": "Stvoreno s ljubavlju",
-    "polishQuality": "i poljskim kvalitetom"
-  },
-  "newsletter": {
-    "header": "Budite u toku!",
-    "sub": "Pretplatite se na naš newsletter i primajte informacije o novim materijalima, promocijama i ekskluzivnim popustima.",
-    "placeholder": "Vaša e-mail adresa",
-    "button": "Pretplati se",
-    "success": "Hvala na pretplati na newsletter!",
-    "privacy": "Poštujemo vašu privatnost. Možete se odjaviti u bilo kom trenutku."
-  },
-  "checkout": {
-    "acceptTermsError": "Morate prihvatiti uslove i odredbe",
-    "successTitle": "Hvala vam na narudžbini!",
-    "successOrder": "Vaša narudžbina br. {orderNumber} je zaprimljena.",
-    "successEmail": "Poslali smo detalje narudžbine na navedenu e-mail adresu.",
-    "backToStore": "Nazad u prodavnicu",
-    "myCourses": "Moji kursevi",
-    "backToCart": "Nazad u korpu",
-    "steps": {
-      "cart": "Korpa",
-      "payment": "Plaćanje",
-      "access": "Pristup"
-    },
-    "trust": {
-      "secure": "Sigurno plaćanje",
-      "ssl": "SSL enkripcija",
-      "instant": "Trenutni pristup"
-    },
-    "header": "Dovršite narudžbinu",
-    "contactTitle": "Kontakt podaci",
-    "email": "E-mail *",
-    "firstName": "Ime *",
-    "lastName": "Prezime *",
-    "phone": "Telefon (neobavezno)",
-    "invoiceTitle": "Račun",
-    "wantInvoice": "Želim da primim R1 račun",
-    "nip": "PIB / PDV ID",
-    "nipError": "Unesite važeći PIB",
-    "lookup": "Dohvati podatke",
-    "lookupSuccess": "Podaci kompanije dohvaćeni!",
-    "nipNotFound": "Kompanija nije pronađena",
-    "nipSearchError": "Greška prilikom pretraživanja. Pokušajte ponovo.",
-    "companyName": "Naziv kompanije",
-    "companyAddress": "Adresa kompanije",
-    "addressPlaceholder": "Ispuniće se automatski",
-    "paymentTitle": "Način plaćanja",
-    "paymentMethods": {
-      "card": "Platna kartica",
-      "cardSub": "Visa, Mastercard, American Express",
-      "blik": "BLIK",
-      "blikSub": "Brzo plaćanje BLIK kodom",
-      "transfer": "Bankovni transfer",
-      "transferSub": "Tradicionalni bankovni transfer"
-    },
-    "yourOrder": "Vaša narudžbina",
-    "summaryProducts": "Proizvodi",
-    "summaryDiscount": "Popust ({code})",
-    "summaryTotal": "Ukupno",
-    "terms": "Prihvatam uslove prodavnice i politiku privatnosti",
-    "termsRequired": "Potrebno za dovršetak narudžbine",
-    "processing": "Obrada...",
-    "pay": "Plati {total}",
-    "instantAccessInfo": "Nakon plaćanja, materijali su odmah dostupni na panelu",
-    "socialProof": "+2 500 nastavnika je već kupilo",
-    "toPayMobile": "Za platiti",
-    "paymentFailed": "Plaćanje nije uspelo. Pokušajte ponovo.",
-    "paymentSystemError": "Greška platnog sistema."
-  },
-  "contact": {
-    "title": "Stupite u kontakt",
-    "subtitle": "Imate li pitanje o materijalima? Treba vam podrška u odabiru paketa? Pišite nam ili razgovarajte sa našim AI asistentom. Ovde smo za vas!",
-    "aiBadge": "Obično odgovaramo u roku od 2 sata",
-    "trustBadge": "Preko 12.000 zadovoljnih nastavnika",
-    "emailTitle": "Pošaljite e-mail",
-    "emailDesc": "Naše sanduče je otvoreno 24/7 za vas.",
-    "phoneTitle": "Pozovite nas",
-    "phoneDesc": "Pon-Pet od 9:00 do 17:00 smo na telefonu.",
-    "formTitle": "Kontakt obrazac",
-    "addressTitle": "Sedište",
-    "addressValue": "Varšava, Edukativna br. 123",
-    "aiHelp": "Treba vam brzi odgovor?",
-    "aiHelpDesc": "Naš pametni asistent zna odgovore na većinu uobičajenih pitanja. Pitajte o proizvodima, metodama predavanja ili dostupnosti materijala.",
-    "aiHelpMobile": "AI asistent je dostupan u donjem uglu ekrana.",
-    "form": {
-      "name": "Ime i prezime",
-      "email": "E-mail",
-      "subject": "Predmet",
-      "message": "Vaša poruka",
-      "messagePlaceholder": "Kako vam možemo pomoći?",
-      "sending": "Slanje...",
-      "send": "Pošalji poruku",
-      "success": "Poruka poslata!",
-      "successDesc": "Hvala vam što ste nas kontaktirali. Odgovorićemo u najkraćem mogućem roku.",
-      "placeholders": {
-        "name": "Marko Marković",
-        "email": "marko@kamila.shor.dev",
-        "subject": "Upit o proizvodu...",
-        "message": "Opišite kako vam možemo pomoći..."
-      }
-    },
-    "info": {
-      "emailValue": "contact@kamilaenglish.com",
-      "phoneValue": "+48 123 456 789"
-    },
-    "aiChat": {
-      "title": "AI asistent",
-      "status": "Online i spreman",
-      "thinking": "Razmišljam...",
-      "inputPlaceholder": "Postavite pitanje...",
-      "dataInputPlaceholder": "Unesite ime i e-mail...",
-      "welcome": "Zdravo! Ja sam vaš pametni asistent. Pre nego što počnemo, da li ste već naš kupac?",
-      "options": {
-        "yes": "Da, ja sam kupac",
-        "no": "Ne, još nisam"
-      },
-      "responses": {
-        "clientYes": "Odlično! Kako vam danas mogu pomoći?",
-        "clientNo": "Razumem. Rado ću vam pomoći da istražite naše materijale. Kako se zovete i na koji e-mail vam mogu poslati besplatne uzorke?",
-        "dataSaved": "Hvala vam! Sačuvao sam vaše podatke. Sada slobodno pitajte bilo šta.",
-        "fallback": "Žao mi je, ne razumem sasvim. Možete li preformulisati? Možete pitati o cenama, dostavi ili metodama predavanja."
-      },
-      "knowledge": {
-        "price": "Naši PDF materijali počinju od 29 €. Godišnji paketi (Mega Pack) trenutno su na rasprodaji za 149 €.",
-        "delivery": "Svi materijali su digitalni. Link za preuzimanje dobićete e-poštom odmah nakon plaćanja.",
-        "preschool": "Imamo izvrsnu sekciju 'Engleski u vrtiću'. Posebno preporučujem naš paket 4 godišnja doba.",
-        "contact": "Možete nam poslati e-mail ili nas nazvati na +48 123 456 789 (Pon-Pet 9:00-17:00).",
-        "invoice": "Da, izdajemo R1 račune. Podatke za račun možete uneti u korpi.",
-        "methods": "Kamila Łobko-Koziej promoviše pristup zasnovan na igri (TPR, komunikacijske igre). Proverite naš blog kako biste saznali više!"
-      }
-    }
-  },
-  "login": {
-    "title": "Dobro došli nazad!",
-    "desc": "Unesite svoju e-poštu za ulazak u zonu za učenike.",
-    "student": "Učenik",
-    "teacher": "Nastavnik",
-    "email": "E-pošta",
-    "emailTeacher": "Službena e-pošta",
-    "password": "Lozinka",
-    "loggingIn": "Prijava...",
-    "success": "Prijavljeni ste!",
-    "submit": "Prijavi se",
-    "successMessage": "Uspešna prijava! Preusmeravanje...",
-    "errorDefault": "Neispravna e-pošta ili lozinka.",
-    "errorSystem": "Pojavila se greška pri prijavi. Pokušajte ponovo.",
-    "emailRequired": "E-pošta je obavezna",
-    "emailInvalid": "Neispravan format e-pošte",
-    "passwordRequired": "Lozinka je obavezna",
-    "passwordMin": "Lozinka mora imati najmanje 4 znaka",
-    "forgotPassword": "Forgot your password?",
-    "magicLink": "Login with Magic Link",
-    "magicLinkDesc": "We'll send you a one-time login link to your email address.",
-    "sendMagicLink": "Send Magic Link",
-    "backToLogin": "Back to login",
-    "checkEmail": "Check your inbox",
-    "resetPassword": "Reset password",
-    "magicLinkSent": "A login link has been sent to your email address.",
-    "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
-    "resetSuccess": "Your password has been changed successfully."
-  },
-  "quickSale": {
-    "title": "BRZO PLAĆANJE",
-    "demoProduct": {
-      "title": "Primer Premium E-knjige",
-      "excerpt": "Ovo je demonstracioni proizvod. U punoj verziji podaci bi se dohvatali iz baze podataka."
-    },
-    "page": {
-      "guarantee": "30-dnevna garancija zadovoljstva",
-      "totalLabel": "Ukupno za platiti:",
-      "email_label": "Vaš e-mail",
-      "email_placeholder": "adresa@email.com",
-      "payment_method": "Način plaćanja",
-      "payment_card": "Kartica",
-      "blik_code": "BLIK kod",
-      "terms": "Prihvatam uslove prodavnice",
-      "pay_btn": "Kupujem i plaćam",
-      "secure_checkout": "SSL kriptovana veza"
-    },
-    "optimization": {
-      "timer": {
-        "text": "Vaša ponuda ističe za:"
-      },
-      "social_proof": {
-        "viewing": "{count} osoba trenutno gleda ovu ponudu"
-      },
-      "savings": "Štedite"
-    },
-    "bump": {
-      "yes_btn": "DA, dodaj u moju narudžbinu",
-      "price_prefix": "samo",
-      "description": "Jednokratna ponuda! Dodajte set radnih listova spremnih za korišćenje (PDF)."
-    }
-  },
-  "verify": {
-    "title": "Verifikacija sertifikata",
-    "subtitle": "Unesite kod za verifikaciju sertifikata kako biste potvrdili njegovu autentičnost.",
-    "placeholder": "XXXX-XXXX-XXXX",
-    "success": {
-      "title": "Sertifikat verifikovan",
-      "desc": "Ovaj sertifikat je autentičan i izdala ga je naša platforma.",
-      "user": "Učesnik",
-      "course": "Kurs",
-      "date": "Datum završetka",
-      "code": "Kod",
-      "view": "Vidi sertifikat"
-    },
-    "error": {
-      "title": "Sertifikat nije pronađen",
-      "desc": "Nismo pronašli sertifikat sa navedenim kodom. Proverite da li je kod ispravan."
-    }
-  },
-  "errors": {
-    "404": {
-      "title": "404",
-      "message": "Stranica nije pronađena.",
-      "back": "Nazad na početnu stranicu"
-    }
-  },
-  "blog": {
-    "title": "Blog",
-    "subtitle": "Članci, saveti i inspiracija za nastavnike engleskog jezika. Naučite kako podučavati efikasnije i sa više strasti.",
-    "empty": "Nisu pronađeni objavljeni članci.",
-    "readMore": "Pročitaj više",
-    "backToBlog": "Nazad na blog",
-    "share": "Podeli:",
-    "notFound": "Nije pronađeno"
-  },
-  "common": {
-    "loading": "Učitavanje..."
-  },
-  "certificates": {
-    "title": "Sertifikat o završetku",
-    "subtitle": "Ovim se potvrđuje da je",
-    "completedCourse": "uspešno završio/la kurs",
-    "completionDate": "Datum završetka:",
-    "verificationCode": "Kod za verifikaciju:",
-    "downloadPdf": "Preuzmi PDF",
-    "share": "Podeli",
-    "backToDashboard": "Nazad na panel",
-    "styleTitle": "Promeni stil sertifikata",
-    "verifiedTitle": "Sertifikat verifikovan",
-    "verifiedDesc": "Ovaj sertifikat je izdala naša platforma.",
-    "notFound": "Sertifikat nije pronađen",
-    "copySuccess": "Link kopiran!"
-  },
-  "languages": {
-    "pl": "Poljski",
-    "en": "Engleski",
-    "uk": "Ukrajinski",
-    "de": "Nemački",
-    "es": "Španski",
-    "fr": "Francuski",
-    "it": "Italijanski",
-    "cs": "Češki",
-    "sk": "Slovački",
-    "ro": "Rumunski",
-    "hu": "Mađarski",
-    "pt": "Portugalski",
-    "lt": "Litvanski",
-    "lv": "Letonski",
-    "et": "Estonski",
-    "hr": "Hrvatski",
-    "sr": "Srpski",
-    "sl": "Slovenački",
-    "bg": "Bugarski",
-    "el": "Grčki",
-    "nl": "Holandski",
-    "sv": "Švedski",
-    "fi": "Finski",
-    "no": "Norveški",
-    "da": "Danski"
-  },
-  "fomo": {
-    "names": [
-      "John",
-      "Emily",
-      "Michael",
-      "Sarah",
-      "David",
-      "Jessica",
-      "Robert"
-    ],
-    "cities": [
-      "London",
-      "New York",
-      "Chicago",
-      "Toronto",
-      "Sydney",
-      "Dublin",
-      "Berlin"
-    ],
-    "purchaseMessage": "{name} from {city}",
-    "productMessage": "Just bought \"{product}\"",
-    "timeAgo": "{time} min ago"
-  },
-  "exitIntent": {
-    "title": "WAIT!",
-    "subtitle": "Before you leave...",
-    "header": "Get your free \"Starter Pack\"",
-    "description": "Join our newsletter and receive 50 free worksheets!",
-    "cta": "I want my gift",
-    "noThanks": "No thanks, I'll pay full price later"
-  },
-  "course": {
-    "yourProgress": "Vaš Napredak",
-    "noLessons": "Nema lekcija.",
-    "quiz": "Kviz",
-    "unlocksInDays": "Otključava se za {days} dana"
-  },
-  "dashboard": {
-    "wallet": {
-      "title": "Your Wallet",
-      "subtitle": "Collect points for activity and purchases.",
-      "available": "Available funds",
-      "points": "pts",
-      "value": "Value in {currency}",
-      "spend": "Spend points in shop",
-      "history": "Recent activity"
-    },
-    "awards": {
-      "title": "Your Hall of Fame",
-      "subtitle": "Earn badges for completed lessons and games!",
-      "mock": {
-        "start": "Quick Start",
-        "startDesc": "Completed first lesson",
-        "vocab": "Vocab Master",
-        "vocabDesc": "100% in quiz",
-        "steady": "Systematic",
-        "steadyDesc": "Logged in 7 days",
-        "polyglot": "Polyglot",
-        "polyglotDesc": "Passed A1 level"
-      }
-    },
-    "team": {
-      "title": "My Class / Team",
-      "subtitle": "Share materials with students",
-      "create_class": "Create new class",
-      "created_at": "Created: {date}",
-      "students_count": "{count} students",
-      "access_code": "Student access code",
-      "empty": {
-        "title": "New Class",
-        "desc": "Create a group for your students.",
-        "btn": "Start Setup"
-      },
-      "pro": {
-        "active": "Your PRO plan is active",
-        "unlock": "Unlock unlimited classes",
-        "desc": "Teacher PRO plan allows creating unlimited groups.",
-        "upgrade": "Upgrade to PRO",
-        "status": "Active"
-      }
-    },
-    "games": {
-      "title": "Educational Games",
-      "subtitle": "Interactive exercises for your students",
-      "play": "Play now",
-      "loading": "Loading game...",
-      "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
-      "fullscreen": "Full screen",
-      "report": "Report error"
-    }
-  }
 }

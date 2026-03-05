@@ -1,1657 +1,1727 @@
 {
-  "adminSettings": {
-    "title": "Rendszerbeállítások",
-    "description": "Oldalkonfiguráció, analitika és SEO kezelése",
-    "ai_providers": {
-      "title": "Aktív AI Szolgáltató",
-      "description": "Válassza ki a tartalomgeneráláshoz használt modellt",
-      "api_key": "API kulcs"
-    },
-    "tabs": {
-      "ai": "AI Modellek",
-      "marketing": "Marketing és Analitika",
-      "seo": "SEO és Meta",
-      "economy": "Gazdaság és Pénztárca",
-      "gamification": "Gamifikáció és Jelvények",
-      "market": "Piac és Tanterv Elemzés",
-      "insights": "Elemzés és javaslatok",
-      "channels": "Értékesítési Csatornák",
-      "integrations": "Integrációk és API",
-      "interactive": "Játékok és Interakciók",
-      "workshop": "AI Stúdió és Canva",
-      "automation": "Ágensek és Automatizálás",
-      "emails": "E-mail Értesítések",
-      "google": "Google beállítások",
-      "abandoned": "Elhagyott Kosarak",
-      "guardian": "AI Guardian rendszer",
-      "affiliate": "Partnerprogram",
-      "pricing": "Árazás és Pénznemek (PPP)",
-      "taxes": "Számlák és Adók",
-      "growth_hacks": "Growth Hacks",
-      "ai_discovery": "AI Discovery (SEO)"
-    },
-    "sections": {
-      "shopping": "Vásárlás és Pénzügy",
-      "ai": "AI és Interakciók",
-      "growth": "Növekedés és Márka",
-      "system": "Rendszerbeállítások"
-    },
-    "common": {
-      "save": "Módosítások mentése",
-      "saved": "Mentve!",
-      "save_success": "Settings have been successfully saved.",
-      "subject": "Tárgy",
-      "content": "Tartalom",
-      "enabled_desc": "Globális kapcsoló a követőkódokhoz"
-    },
-    "marketing": {
-      "ga4": "Google Analytics 4 ID",
-      "ga4_placeholder": "G-XXXXXXXXXX",
-      "fb_pixel": "Facebook Pixel ID",
-      "fb_pixel_placeholder": "Pixel ID",
-      "meta_verification": "Meta Tartomány Ellenőrzés",
-      "meta_placeholder": "Ellenőrző kulcs",
-      "gsc": "Google Search Console ID",
-      "gsc_placeholder": "Google Ellenőrző kulcs",
-      "enabled": "Követés Engedélyezése",
-      "title": "Marketing és SEO",
-      "description": "Analitikai eszközök és hirdetések konfigurálása",
-      "ads": "Google Ads"
-    },
-    "seo": {
-      "default_title": "Alapértelmezett Oldalcím",
-      "default_desc": "Alapértelmezett Meta Leírás",
-      "og_image": "Alapértelmezett Megosztási Kép (OG Image)",
-      "site_name": "Oldal Neve",
-      "basic_title": "Alapvető SEO",
-      "basic_desc": "Keresőmotoros láthatósági beállítások",
-      "canonical_url": "Canonical Base URL",
-      "canonical_desc": "The base URL used for canonical and alternate (hreflang) links.",
-      "ai_discovery_title": "AI Search Optimization",
-      "ai_discovery_desc": "Configure how AI agents (Gemini, Perplexity, GPT-4) discover and interpret your site.",
-      "ai_discovery_enabled": "Enable AI Crawler Hints",
-      "ai_discovery_enabled_desc": "Injects specialized meta-data for LLM-based search engines.",
-      "ai_summary": "AI Product Summary",
-      "ai_summary_placeholder": "What should AI agents know about your store?",
-      "ai_summary_desc": "This summary helps AI agents provide accurate answers about your services.",
-      "sitemap_regenerate": "Regenerate Multi-Locale Sitemap",
-      "growth_hacks_title": "Growth & Performance Hacks",
-      "growth_hacks_desc": "Advanced tools to increase conversion and track user behavior.",
-      "fomo_title": "FOMO Elements (Scarcity)",
-      "fomo_desc": "Show 'Limited Stock' and 'Recent Purchase' alerts.",
-      "trust_title": "Trust Badges",
-      "trust_desc": "Display security and guarantee badges on product pages.",
-      "ux_tracking": "UX Tracking (Heatmaps)",
-      "clarity_id": "Microsoft Clarity ID",
-      "hotjar_id": "Hotjar Site ID"
-    },
-    "economy": {
-      "title": "Pontok és Pénztárca Rendszer",
-      "description": "Virtuális pénznem, előfizetések és hűségprogram kezelése",
-      "wallet": {
-        "title": "Virtuális Pénztárca",
-        "enable_wallet": "Felhasználói Pénztárca Engedélyezése",
-        "allow_topup": "Feltöltések Engedélyezése",
-        "recurring_topup": "Automatikus Ismétlődő Feltöltések",
-        "conversion_rate": "Átváltási árfolyam (1 EUR = X pont)",
-        "description": "Ügyfél virtuális pénztárcájának kezelése"
-      },
-      "loyalty": {
-        "title": "Hűségpontok",
-        "enable_loyalty": "Pontgyűjtés Engedélyezése",
-        "points_per_eur": "Pont minden elköltött 1 EUR után",
-        "min_redeem": "Minimum pont a beváltáshoz",
-        "description": "Pontok aktivitásért és vásárlásokért",
-        "protip": "Pro-tipp: Az előfizetők 2x több pontot kaphatnak, ha engedélyezi a szorzót a Gamifikáció szekcióban."
-      },
-      "subscriptions": {
-        "title": "Előfizetések",
-        "description": "Ismétlődő hozzáférési modellek kezelése",
-        "status_active": "ACTIVE",
-        "per_month": "/ month",
-        "perks": {
-          "all_pdfs": "All PDFs without limit",
-          "free_topup": "Free Wallet Top-up ({amount} every month)"
+    "adminSettings": {
+        "title": "Rendszerbeállítások",
+        "description": "Oldalkonfiguráció, analitika és SEO kezelése",
+        "ai_providers": {
+            "title": "Aktív AI Szolgáltató",
+            "description": "Válassza ki a tartalomgeneráláshoz használt modellt",
+            "api_key": "API kulcs"
         },
-        "add_plan": "Add new plan"
-      }
-    },
-    "gamification": {
-      "title": "Játékosítás",
-      "description": "Motiválja diákjait szintekkel és jelvényekkel",
-      "levels": {
-        "silver": "Silver Tier",
-        "gold": "Gold Tier",
-        "diamond": "Diamond VIP"
-      },
-      "perks": {
-        "discount": "Auto Discount (%)",
-        "auto_discount": "Automatikusan alkalmazva a fizetésnél",
-        "hidden_tier": "Manual assignment only"
-      },
-      "badges_title": "Tanulói Jelvények",
-      "badges": {
-        "early_bird": {
-          "name": "Korai Madár",
-          "desc": "Vásárlás a közzétételtől számított 1 órán belül"
+        "tabs": {
+            "ai": "AI Modellek",
+            "marketing": "Marketing és Analitika",
+            "seo": "SEO és Meta",
+            "economy": "Gazdaság és Pénztárca",
+            "gamification": "Gamifikáció és Jelvények",
+            "market": "Piac és Tanterv Elemzés",
+            "insights": "Elemzés és javaslatok",
+            "channels": "Értékesítési Csatornák",
+            "integrations": "Integrációk és API",
+            "interactive": "Játékok és Interakciók",
+            "workshop": "AI Stúdió és Canva",
+            "automation": "Ágensek és Automatizálás",
+            "emails": "E-mail Értesítések",
+            "google": "Google beállítások",
+            "abandoned": "Elhagyott Kosarak",
+            "guardian": "AI Guardian rendszer",
+            "affiliate": "Partnerprogram",
+            "pricing": "Árazás és Pénznemek (PPP)",
+            "taxes": "Számlák és Adók",
+            "growth_hacks": "Growth Hacks",
+            "ai_discovery": "AI Discovery (SEO)"
         },
-        "collector": {
-          "name": "Gyűjtő",
-          "desc": "50+ anyaggal rendelkezik"
+        "sections": {
+            "shopping": "Vásárlás és Pénzügy",
+            "ai": "AI és Interakciók",
+            "growth": "Növekedés és Márka",
+            "system": "Rendszerbeállítások"
         },
-        "top_reviewer": {
-          "name": "Top Véleményező",
-          "desc": "10 megbízható vélemény"
+        "common": {
+            "save": "Módosítások mentése",
+            "saved": "Mentve!",
+            "save_success": "Settings have been successfully saved.",
+            "subject": "Tárgy",
+            "content": "Tartalom",
+            "enabled_desc": "Globális kapcsoló a követőkódokhoz",
+            "ux": {
+                "show": "Megjelenítés",
+                "hide": "Elrejtés",
+                "copy": "Másolás",
+                "copied": "Másolva!",
+                "secure": "Titkosítva"
+            },
+            "preview": {
+                "title": "Preview and Acceptance",
+                "accept": "Accept changes",
+                "reject": "Reject",
+                "bulk_title": "Generated drafts review",
+                "apply_all": "Accept all ({count})",
+                "diff_before": "Before optimization",
+                "diff_after": "AI Suggestion"
+            }
+        },
+        "marketing": {
+            "ga4": "Google Analytics 4 ID",
+            "ga4_placeholder": "G-XXXXXXXXXX",
+            "fb_pixel": "Facebook Pixel ID",
+            "fb_pixel_placeholder": "Pixel ID",
+            "meta_verification": "Meta Tartomány Ellenőrzés",
+            "meta_placeholder": "Ellenőrző kulcs",
+            "gsc": "Google Search Console ID",
+            "gsc_placeholder": "Google Ellenőrző kulcs",
+            "enabled": "Követés Engedélyezése",
+            "title": "Marketing és SEO",
+            "description": "Analitikai eszközök és hirdetések konfigurálása",
+            "ads": "Google Ads"
+        },
+        "seo": {
+            "default_title": "Alapértelmezett Oldalcím",
+            "default_desc": "Alapértelmezett Meta Leírás",
+            "og_image": "Alapértelmezett Megosztási Kép (OG Image)",
+            "site_name": "Oldal Neve",
+            "basic_title": "Alapvető SEO",
+            "basic_desc": "Keresőmotoros láthatósági beállítások",
+            "canonical_url": "Canonical Base URL",
+            "canonical_desc": "The base URL used for canonical and alternate (hreflang) links.",
+            "ai_discovery_title": "AI Search Optimization",
+            "ai_discovery_desc": "Configure how AI agents (Gemini, Perplexity, GPT-4) discover and interpret your site.",
+            "ai_discovery_enabled": "Enable AI Crawler Hints",
+            "ai_discovery_enabled_desc": "Injects specialized meta-data for LLM-based search engines.",
+            "ai_summary": "AI Product Summary",
+            "ai_summary_placeholder": "What should AI agents know about your store?",
+            "ai_summary_desc": "This summary helps AI agents provide accurate answers about your services.",
+            "sitemap_regenerate": "Regenerate Multi-Locale Sitemap",
+            "growth_hacks_title": "Growth & Performance Hacks",
+            "growth_hacks_desc": "Advanced tools to increase conversion and track user behavior.",
+            "fomo_title": "FOMO Elements (Scarcity)",
+            "fomo_desc": "Show 'Limited Stock' and 'Recent Purchase' alerts.",
+            "trust_title": "Trust Badges",
+            "trust_desc": "Display security and guarantee badges on product pages.",
+            "ux_tracking": "UX Tracking (Heatmaps)",
+            "clarity_id": "Microsoft Clarity ID",
+            "hotjar_id": "Hotjar Site ID"
+        },
+        "economy": {
+            "title": "Pontok és Pénztárca Rendszer",
+            "description": "Virtuális pénznem, előfizetések és hűségprogram kezelése",
+            "wallet": {
+                "title": "Virtuális Pénztárca",
+                "enable_wallet": "Felhasználói Pénztárca Engedélyezése",
+                "allow_topup": "Feltöltések Engedélyezése",
+                "recurring_topup": "Automatikus Ismétlődő Feltöltések",
+                "conversion_rate": "Átváltási árfolyam (1 EUR = X pont)",
+                "description": "Ügyfél virtuális pénztárcájának kezelése"
+            },
+            "loyalty": {
+                "title": "Hűségpontok",
+                "enable_loyalty": "Pontgyűjtés Engedélyezése",
+                "points_per_eur": "Pont minden elköltött 1 EUR után",
+                "min_redeem": "Minimum pont a beváltáshoz",
+                "description": "Pontok aktivitásért és vásárlásokért",
+                "protip": "Pro-tipp: Az előfizetők 2x több pontot kaphatnak, ha engedélyezi a szorzót a Gamifikáció szekcióban."
+            },
+            "subscriptions": {
+                "title": "Előfizetések",
+                "description": "Ismétlődő hozzáférési modellek kezelése",
+                "status_active": "ACTIVE",
+                "per_month": "/ month",
+                "perks": {
+                    "all_pdfs": "All PDFs without limit",
+                    "free_topup": "Free Wallet Top-up ({amount} every month)"
+                },
+                "add_plan": "Add new plan"
+            }
+        },
+        "gamification": {
+            "title": "Játékosítás",
+            "description": "Motiválja diákjait szintekkel és jelvényekkel",
+            "levels": {
+                "silver": "Silver Tier",
+                "gold": "Gold Tier",
+                "diamond": "Diamond VIP"
+            },
+            "perks": {
+                "discount": "Auto Discount (%)",
+                "auto_discount": "Automatikusan alkalmazva a fizetésnél",
+                "hidden_tier": "Manual assignment only"
+            },
+            "badges_title": "Tanulói Jelvények",
+            "badges": {
+                "early_bird": {
+                    "name": "Korai Madár",
+                    "desc": "Vásárlás a közzétételtől számított 1 órán belül"
+                },
+                "collector": {
+                    "name": "Gyűjtő",
+                    "desc": "50+ anyaggal rendelkezik"
+                },
+                "top_reviewer": {
+                    "name": "Top Véleményező",
+                    "desc": "10 megbízható vélemény"
+                }
+            }
+        },
+        "market": {
+            "title": "Piac és Tanterv Intelligencia",
+            "description": "Piaci trendek és oktatási követelmények nyomon követése",
+            "curriculum": {
+                "title": "Tanterv Monitor",
+                "description": "AI ellenőrzi a megfelelést az aktuális követelményeknek (MoE / Ofsted / egyebek)",
+                "monitor_label": "Megfigyelt Tanterv",
+                "options": {
+                    "pl_mein": "Lengyelország (MEiN)",
+                    "uk_ofsted": "Egyesült Királyság (Ofsted)",
+                    "us_cc": "USA (Common Core)"
+                },
+                "status": "Anyagai megfelelősége: 85%",
+                "alerts": "Változás észlelhető a 4-6. osztályos követelményekben"
+            },
+            "trends": {
+                "title": "Trend-Figyelő",
+                "description": "Felkapott termékek olyan platformokon, mint a TPT az Ön kategóriáiban",
+                "top_selling": "Legnépszerűbb formátum: 'Interaktív Szabadulószobák'",
+                "competitor_bestsellers": "Versenytárs Bestsellerek",
+                "recommendation": "Javaslat: Hozzon létre 'Húsvéti Szabadulószoba' szettet (Nagy kereslet)",
+                "ai_rec": "AI Javaslat"
+            }
+        },
+        "insights": {
+            "title": "AI Audit és Termékbetekintések",
+            "description": "Erőforrásai elemzése és bővítési ötletek",
+            "sync": {
+                "title": "Szinkronizálási Napló",
+                "description": "Külső platformokról származó játék- és anyagimportok állapota",
+                "last_sync": "Utolsó sikeres szinkronizálás: 15 perce",
+                "pending_drafts": "{count} új vázlat áttekintésre"
+            },
+            "expansion": {
+                "title": "Anyaggyár (Javaslatok)",
+                "description": "Ötletek a meglévő termékek alacsony költségű bővítésére",
+                "item1": "A 'Unit 1' termék bővíthető 20 szótanuló kártyával (az AI automatikusan generálja őket)",
+                "item2": "Készítsen 'Mega Pack'-ot a 3 legnépszerűbb forgatókönyvéből (Potenciál: +25% árrés)"
+            },
+            "audit": {
+                "title": "Konverziós Audit",
+                "description": "Az AI elemzi termékei leírását és fotóit",
+                "suggestion": "Cserélje ki a főfotót a 'Fiszki Állatok' terméknél – a jelenleginek alacsony az átkattintási aránya (CTR)"
+            }
+        },
+        "integrations": {
+            "title": "Integrációk",
+            "description": "Külső rendszerekhez való kapcsolódás",
+            "webhooks": {
+                "title": "Webhookok",
+                "description": "Rendelési értesítések küldése külső rendszereknek",
+                "add": "Webhook Hozzáadása",
+                "url": "Cél URL",
+                "event": "Esemény",
+                "events": {
+                    "order_created": "Rendelés létrehozva",
+                    "order_paid": "Rendelés kifizetve",
+                    "user_registered": "Felhasználó regisztrálva"
+                }
+            },
+            "mcp": {
+                "title": "MCP Connectors",
+                "description": "Connect external models and knowledge bases via MCP protocol",
+                "server": "MCP Server Address",
+                "status": "Connection status"
+            },
+            "api": {
+                "title": "External API Keys",
+                "description": "Integrations with CRM, Mailing, and other systems",
+                "service": "Service (e.g., MailerLite, Zapier)",
+                "key": "API Key / Token",
+                "coming_soon": "Integration with MailerLite, ActiveCampaign and Zapier is being implemented.",
+                "coming_soon_desc": "You can already save keys in the Webhooks section for testing."
+            }
+        },
+        "interactive": {
+            "title": "Online Játékok Integrációja",
+            "description": "Wordwall, Genially és egyéb platformok összekapcsolása a bolttal",
+            "auto_import": "Automatikus terméklétrehozás a játék felvétele után a platformon",
+            "auto_import_desc": "A rendszer automatikusan felismeri a beágyazási kódokat (Embed) a termék létrehozásakor.",
+            "sync_status": "Utolsó játékszikronizálás",
+            "sync_hint": "Javasoljuk, hogy a játékokra mutató közvetlen linkeket illessze be a termékszerkesztő panelen. A rendszer automatikusan interaktív ablakká alakítja azokat a tanuló számára.",
+            "other_title": "Egyéb Integrációk",
+            "platforms": {
+                "wordwall": "Wordwall API kulcs",
+                "wordwall_placeholder": "pl. kamila-lo-ko",
+                "genially": "Genially API kulcs",
+                "genially_placeholder": "pl. https://view.genial.ly/profile/nick",
+                "sync_title": "Wordwall és Genially Szinkronizálás",
+                "h5p_desc": "Helyi beágyazás",
+                "learningapps_desc": "iFrame-en keresztül",
+                "quizizz_desc": "API Szinkronizálás"
+            }
+        },
+        "workshop": {
+            "title": "AI Műhely (RAG Motor)",
+            "description": "Származtatott anyagok generálása az Ön tudásbázisa alapján",
+            "generate_btn": "Anyagok Generálása",
+            "status_ready": "Készen áll a generálásra",
+            "rag_sources": {
+                "title": "Tudásforrások (RAG)",
+                "description": "Válassza ki az AI tudásbázisát",
+                "main_label": "Fő Forrás (RAG)",
+                "notebook_lm": "Link a NotebookLM-hez / Tudásbázishoz",
+                "options": {
+                    "google_drive": "Google Drive (Mappa: Edu-Materials)",
+                    "notebook_lm": "NotebookLM Csatlakozó",
+                    "local": "Helyi vektordatatbázis"
+                }
+            },
+            "generators": {
+                "title": "Anyaggenerátor",
+                "reading": "Olvasás (Szöveg + Kérdések)",
+                "listening": "Hallgatás (Szkript + AI Audió)",
+                "speaking": "Beszédkártyák",
+                "vocabulary": "Szókincsgyakorlatok",
+                "flashcards": "Szótanuló kártyák (CSV/Anki)",
+                "tests": "Teszt Generátor",
+                "worksheets": "PDF Munkalapok",
+                "ai_quiz": "AI Kvíz Készítő"
+            },
+            "canva": {
+                "title": "Canva Csatlakozó",
+                "description": "Generált tartalom exportálása közvetlenül Canva projektekbe",
+                "api_key": "Canva Design Token",
+                "auto_export": "Auto-export",
+                "connect": "Csatlakozás a Canvához"
+            },
+            "title_prefix": "AI Creative",
+            "title_suffix": "Studio",
+            "badge": "Next-Gen",
+            "powered_by": "Powered by OpenAI & HeyGen",
+            "available_credits": "Available Credits",
+            "generations_today": "Generations Today",
+            "studio": "Studio",
+            "history": "History",
+            "studios": {
+                "images": "Image Studio",
+                "video": "Video Studio",
+                "avatars": "Avatar Studio",
+                "social": "Social Hub",
+                "flashcards": "Flashcards",
+                "canva": "Canva Studio"
+            },
+            "actions": {
+                "reuse": "Reuse Prompt",
+                "generate": "Generate Asset",
+                "processing": "Processing...",
+                "attach": "Attach",
+                "change_product": "Change Product",
+                "connect": "Connect to Product"
+            },
+            "labels": {
+                "persona": "Select AI Persona",
+                "script": "Script",
+                "prompt": "Creative Prompt",
+                "preview": "Preview",
+                "history_empty": "Your canvas awaits.",
+                "connect_desc": "Link this AI asset to your store inventory.",
+                "professional_suite": "Professional Creative Suite"
+            },
+            "social_hub": {
+                "title": "Social Media Hub",
+                "subtitle": "Post Generator & Optimization",
+                "platforms": {
+                    "instagram": "Instagram",
+                    "facebook": "Facebook",
+                    "linkedin": "LinkedIn",
+                    "youtube": "YouTube"
+                },
+                "labels": {
+                    "select_product": "Select Product to Promote",
+                    "pick_placeholder": "Pick from Product Library...",
+                    "campaign_context": "Campaign Context / Prompt",
+                    "prompt_placeholder": "What are we promoting today? (e.g., 'New Flashcard Set for Christmas')",
+                    "ai_copy": "AI Generated Copy",
+                    "thinking": "Thinking...",
+                    "regenerate": "Regenerate Copy",
+                    "copy_placeholder": "AI will generate your post content here...",
+                    "media_asset": "Media Asset",
+                    "auto_selected": "Auto-Selected",
+                    "select_asset": "Select Asset",
+                    "from_gallery": "From Product Gallery",
+                    "viral_growth": "Viral Growth",
+                    "score": "Score",
+                    "ai_expectancy": "AI expects {percent}% higher engagement on {platform}.",
+                    "live_mockup": "Live Mockup Preview",
+                    "mockup_placeholder": "Your mockup copy will appear here...",
+                    "export": "Export to Socials"
+                }
+            },
+            "flashcards": {
+                "title": "AI Flashcard Studio",
+                "subtitle": "Transform topics into beautiful, ready-to-print flashcard sets.",
+                "badge": "Smart Learning",
+                "branding_kit": "Branding Kit",
+                "export_canva": "Export to Canva",
+                "smart_generator": "Smart Generator",
+                "topic_label": "Topic or Context",
+                "topic_placeholder": "e.g. Life Cycle of a Frog",
+                "style_label": "Visual Style",
+                "styles": {
+                    "academic": "Academic",
+                    "playful": "Playful",
+                    "minimal": "Minimal",
+                    "canva_ai": "Canva AI"
+                },
+                "generate_btn": "Generate Deck",
+                "generating": "Generating...",
+                "live_preview": "Live Preview",
+                "cards_prepared": "{count} Cards Prepared",
+                "empty": "No cards generated yet",
+                "add_custom": "Add Custom Card"
+            }
+        },
+        "automation": {
+            "title": "AI Ágens Csatlakozók",
+            "description": "Ágensek csatlakoztatása, mint a Manus AI, GPT-4o böngészővel, vagy Playwright/Selenium lekérdezések",
+            "agent_delivered": "Az ágens {count} új vázlatot szállított!",
+            "agents": {
+                "title": "Elérhető Böngésző-központú Ágensek",
+                "select_placeholder": "Válasszon automatizálási ágenst",
+                "manus": "Manus AI Csatlakozó",
+                "general": "Egyedi Böngésző Ágens (Webhook)",
+                "status_idle": "Ágens készen áll a feladatokra",
+                "btn_send": "Ágens küldése linkekért"
+            },
+            "receiver": {
+                "title": "Fogadó cím (Endpoint)",
+                "description": "Adja meg ezt az URL-t a Manus AI-ban, hogy az ágens a talált linkeket közvetlenül a vázlatok közé küldhesse",
+                "simulate_test": "(Ágens érkezésének szimulálása / Webhook teszt)",
+                "simulate_btn": "Ágens Szimulálása"
+            },
+            "scrapers": {
+                "title": "Automatizált eszközök",
+                "card_title": "Böngésző feladatok",
+                "options": {
+                    "wordwall": "Wordwall scraper",
+                    "genially": "Genially scraper",
+                    "learningapps": "LearningApps scraper"
+                },
+                "item1": "Találj Embed linkeket a játékokhoz a Genially profilomon",
+                "item2": "Ellenőrizd az új Canva sablonok elérhetőségét",
+                "item3": "Töltsd le a megosztási kódokat a Wordwallról",
+                "description": "Robotok konfigurálása tartalomimporthoz"
+            },
+            "chat": {
+                "title": "AI Ügyfélszolgálati Központ",
+                "subtitle": "Közvetlen kommunikáció a böngésző ügynökkel",
+                "placeholder": "Hol keressek ma?",
+                "capabilities": "Aktuális képességek: Genially, Wordwall, Canva",
+                "welcome": "Szia! Készen állok a munkára. Feladatokat adhatsz nekem a fiókjaidban (Wordwall, Canva, Genially). Mit tegyek?"
+            }
+        },
+        "emails": {
+            "title": "Rendszerüzenet Sablonok",
+            "description": "Az ügyfeleknek automatikusan küldött üzenetek tartalmának kezelése",
+            "save": "Sablonok mentése",
+            "templates": {
+                "welcome": {
+                    "title": "Köszöntés regisztráció után",
+                    "subject": "Üdvözöljük a közösségben!",
+                    "content": "Örülünk, hogy velünk tart. A belépési adatai..."
+                },
+                "order_confirmed": {
+                    "title": "Rendelés visszaigazolása",
+                    "subject": "Rendelését (#{orderNumber}) megkaptuk",
+                    "content": "Köszönjük a vásárlást! Az anyagok már elérhetőek a panelen."
+                },
+                "login_details": {
+                    "title": "Hozzáférési adatok (vásárlás után)",
+                    "subject": "Kurzus elérési adatai",
+                    "content": "Itt vannak a belépési adatai: E-mail: {email}, Jelszó: {password}"
+                }
+            },
+            "smtp": {
+                "title": "SMTP Konfiguráció / Szolgáltató",
+                "description": "Levélküldő szerver beállításai a rendszerüzenetekhez",
+                "enable_system": "Rendszerküldés Engedélyezése",
+                "enable_desc": "Konfigurált SMTP szerver használata",
+                "host": "SMTP Szerver",
+                "port": "Port"
+            },
+            "variables": "Elérhető változók: {orderNumber}, {email}, {password}, {firstName}, {total}"
+        },
+        "google": {
+            "title": "Google Cloud Integráció",
+            "description": "Google Drive csatlakoztatása anyagok közvetlen importálásához a boltba",
+            "auth": {
+                "title": "Google Hitelesítés",
+                "connect": "Csatlakozás a Google Drive-hoz",
+                "disconnect": "Fiók leválasztása",
+                "status_connected": "Csatlakoztatva a következő fiókhoz: {email}",
+                "status_disconnected": "Nincs aktív kapcsolat",
+                "drive_description": "Connect the 'Edu-Materials' folder from your Google Drive"
+            },
+            "drive": {
+                "title": "Google Drive Tallózó",
+                "import_selected": "Kijelölt fájlok importálása",
+                "refresh": "Lista frissítése",
+                "no_files": "Nem találhatók PDF/ZIP fájlok a meghajtón",
+                "import_success": "Fájlok sikeresen importálva anyagként",
+                "column_name": "Fájlnév",
+                "column_size": "Méret",
+                "column_action": "Művelet",
+                "description": "Importálásra kész PDF és ZIP fájlok tallózása",
+                "button": "Letöltés Google Drive-ról",
+                "connecting": "Csatlakozás...",
+                "picker_title": "Válasszon fájlokat a Google Drive-ról",
+                "import_count": "Kijelölt ({count}) importálása",
+                "toast_success": "{count} fájl importálva a Google Drive-ról"
+            },
+            "config": {
+                "client_id": "Google Client ID",
+                "client_secret": "Google Client Secret",
+                "redirect_uri": "Redirect URI"
+            }
+        },
+        "abandoned": {
+            "title": "Kosár-visszaállítás",
+            "description": "Automatikus emlékeztetők azon ügyfeleknek, akik nem fejezték be a vásárlást",
+            "delay": "Első e-mail késleltetése (óra)",
+            "discount_code": "Kedvezménykód az e-mailben (opcionális)",
+            "enable_auto": "Automatikus visszaállítás engedélyezése",
+            "stats": {
+                "total_recovered": "Visszaszerzett bevétel",
+                "pending_carts": "Félbehagyott kosarak"
+            }
+        },
+        "guardian": {
+            "title": "AI Biztonsági és Technikai Őr",
+            "description": "Intelligens rendszerhibák, jogi és teljesítményfigyelés",
+            "legal_check": "Jogi változások figyelése (EU E-commerce)",
+            "tech_check": "Valós idejű technikai hibafigyelés",
+            "security_check": "Illetéktelen hozzáférési kísérletek elemzése",
+            "alerts": "Kritikus problémák riasztása",
+            "status_good": "A rendszer megfelelően működik",
+            "status_warning": "Potenciális jogi meg nem felelés észlelhető",
+            "last_scan": "Utolsó teljes rendszervizsgálat"
+        },
+        "affiliate": {
+            "title": "Ajánlói és Partner Rendszer",
+            "description": "Változtassa vásárlóit márkanagykövetekké",
+            "commission": "Partner jutalék (%)",
+            "discount": "Ajánlói kedvezmény (%)",
+            "cookie_life": "Cookie élettartama (nap)",
+            "referral_links": "Ajánlói linkek generálása",
+            "total_partners": "Aktív partnerek",
+            "payouts": "Függő kifizetések"
+        },
+        "pricing": {
+            "title": "Vásárlóerő-paritás (PPP)",
+            "description": "Automatikus árigazítás a vásárlóerőhöz 19 országban",
+            "enable_ppp": "Intelligens regionális árazás engedélyezése",
+            "base_currency": "Alap pénznem",
+            "regions": {
+                "western": "Nyugat-Európa (100%-os ár)",
+                "central": "Közép-Európa (85%-os ár)",
+                "eastern": "Kelet-Európa (70%-os ár)",
+                "balkans": "Balkán (60%-os ár)"
+            },
+            "recurring_title": "Subscriptions & Recurring Payments",
+            "recurring_visa_title": "Visa Recurring Payments",
+            "recurring_visa_desc": "Enable automatic card charging for subscription products. Supported via Stripe Billing and PayNow Recurring.",
+            "recurring_frequency": "Standard Frequency",
+            "recurring_monthly": "30 DAYS / MONTHLY",
+            "recurring_grace_period": "Grace Period / Retry",
+            "recurring_retry": "3 DAYS RETRY",
+            "paynow_title": "PayNow Integration",
+            "paynow_access_key": "Access Key",
+            "paynow_signature_key": "Signature Key",
+            "blik_title": "BLIK Support Enabled",
+            "blik_desc": "PayNow allows users to pay with BLIK codes directly on your checkout page."
+        },
+        "taxes": {
+            "title": "Adó- és Számlakezelés",
+            "description": "ÁFA-kulcsok kezelése és automatikus EU-s számlakibocsátás",
+            "eu_vat_moss": "VAT-MOSS / OSS rendszer engedélyezése",
+            "invoice_provider": "Számlázó szolgáltató (pl. Fakturownia, InFakt)",
+            "infakt_api_key": "InFakt API Key",
+            "test_connection": "API kapcsolat tesztelése",
+            "stripe_title": "Stripe Payments",
+            "stripe_publishable": "Stripe Publishable Key",
+            "stripe_secret": "Stripe Secret Key"
+        },
+        "editor": {
+            "placeholder": "Kezdjen el gépelni...",
+            "prompts": {
+                "link": "Adja meg az URL-t:",
+                "image": "Adja meg a kép URL-jét:"
+            },
+            "toolbar": {
+                "bold": "Félkövér",
+                "italic": "Dőlt",
+                "h2": "Címsor 2",
+                "h3": "Címsor 3",
+                "list": "Sima lista",
+                "listOrdered": "Sorszámozott lista",
+                "link": "Link beszúrása",
+                "image": "Kép beszúrása",
+                "quote": "Idézet",
+                "code": "Kódblokk"
+            }
         }
-      }
     },
-    "market": {
-      "title": "Piac és Tanterv Intelligencia",
-      "description": "Piaci trendek és oktatási követelmények nyomon követése",
-      "curriculum": {
-        "title": "Tanterv Monitor",
-        "description": "AI ellenőrzi a megfelelést az aktuális követelményeknek (MoE / Ofsted / egyebek)",
-        "monitor_label": "Megfigyelt Tanterv",
-        "options": {
-          "pl_mein": "Lengyelország (MEiN)",
-          "uk_ofsted": "Egyesült Királyság (Ofsted)",
-          "us_cc": "USA (Common Core)"
+    "adminPanel": {
+        "sidebar": {
+            "title": "Admin Panel",
+            "subtitle": "Creative Studio",
+            "expand": "Kibontás",
+            "collapse": "Összecsukás",
+            "logout": "Kijelentkezés a munkamenetből",
+            "logoutTooltip": "Kijelentkezés",
+            "menu": {
+                "dashboard": "Vezérlőpult",
+                "products": "Termékek",
+                "orders": "Rendelések",
+                "coupons": "Coupons",
+                "materials": "Anyagok",
+                "blog": "Blog",
+                "import": "Import AI",
+                "settings": "Beállítások",
+                "chat": "AI Chat",
+                "home": "Kezdőlap",
+                "role": "Adminisztrátor",
+                "online": "Online",
+                "abandoned": "Abandoned Carts",
+                "offers": "Offer Generator",
+                "workshop": "AI Creative Suite",
+                "landing_builder": "Landing Pages"
+            }
         },
-        "status": "Anyagai megfelelősége: 85%",
-        "alerts": "Változás észlelhető a 4-6. osztályos követelményekben"
-      },
-      "trends": {
-        "title": "Trend-Figyelő",
-        "description": "Felkapott termékek olyan platformokon, mint a TPT az Ön kategóriáiban",
-        "top_selling": "Legnépszerűbb formátum: 'Interaktív Szabadulószobák'",
-        "competitor_bestsellers": "Versenytárs Bestsellerek",
-        "recommendation": "Javaslat: Hozzon létre 'Húsvéti Szabadulószoba' szettet (Nagy kereslet)",
-        "ai_rec": "AI Javaslat"
-      }
-    },
-    "insights": {
-      "title": "AI Audit és Termékbetekintések",
-      "description": "Erőforrásai elemzése és bővítési ötletek",
-      "sync": {
-        "title": "Szinkronizálási Napló",
-        "description": "Külső platformokról származó játék- és anyagimportok állapota",
-        "last_sync": "Utolsó sikeres szinkronizálás: 15 perce",
-        "pending_drafts": "{count} új vázlat áttekintésre"
-      },
-      "expansion": {
-        "title": "Anyaggyár (Javaslatok)",
-        "description": "Ötletek a meglévő termékek alacsony költségű bővítésére",
-        "item1": "A 'Unit 1' termék bővíthető 20 szótanuló kártyával (az AI automatikusan generálja őket)",
-        "item2": "Készítsen 'Mega Pack'-ot a 3 legnépszerűbb forgatókönyvéből (Potenciál: +25% árrés)"
-      },
-      "audit": {
-        "title": "Konverziós Audit",
-        "description": "Az AI elemzi termékei leírását és fotóit",
-        "suggestion": "Cserélje ki a főfotót a 'Fiszki Állatok' terméknél – a jelenleginek alacsony az átkattintási aránya (CTR)"
-      }
-    },
-    "integrations": {
-      "title": "Integrációk",
-      "description": "Külső rendszerekhez való kapcsolódás",
-      "webhooks": {
-        "title": "Webhookok",
-        "description": "Rendelési értesítések küldése külső rendszereknek",
-        "add": "Webhook Hozzáadása",
-        "url": "Cél URL",
-        "event": "Esemény",
-        "events": {
-          "order_created": "Rendelés létrehozva",
-          "order_paid": "Rendelés kifizetve",
-          "user_registered": "Felhasználó regisztrálva"
+        "dashboard": {
+            "title": "Vezérlőpult",
+            "subtitle": "Értékesítési áttekintés és analitika",
+            "periods": {
+                "7days": "7 nap",
+                "30days": "30 nap",
+                "90days": "90 nap",
+                "all": "Mindenkori"
+            },
+            "addProduct": "Termék hozzáadása",
+            "currency": "€",
+            "stats": {
+                "revenue": "Bevétel",
+                "orders": "Rendelések",
+                "customers": "Vásárlók",
+                "avgOrderValue": "Átl. rendelési érték",
+                "vsPrevious": "az előző időszakhoz képest",
+                "inSelectedPeriod": "A kiválasztott időszakban",
+                "uniqueCustomers": "Egyedi vásárlók",
+                "perOrder": "rendelésenként"
+            },
+            "charts": {
+                "weeklyRevenue": "Heti bevétel",
+                "revenueByDay": "Értékesítés naponta",
+                "bestsellersRanking": "Bestseller rangsor",
+                "topSellingProducts": "Legtöbbet eladott termékek",
+                "noSalesData": "Nincs értékesítési adat",
+                "sold": "{count} eladva",
+                "days": {
+                    "mon": "Hét",
+                    "tue": "Ked",
+                    "wed": "Sze",
+                    "thu": "Csüt",
+                    "fri": "Pén",
+                    "sat": "Szo",
+                    "sun": "Vas"
+                }
+            },
+            "recentOrders": {
+                "title": "Legutóbbi rendelések",
+                "subtitle": "Legfrissebb tranzakciók",
+                "viewAll": "Összes megtekintése",
+                "noOrders": "Még nincs rendelés",
+                "productCount": "{count} termék",
+                "status": {
+                    "completed": "Befejezve",
+                    "pending": "Függőben",
+                    "processing": "Feldolgozás alatt",
+                    "cancelled": "Törölve",
+                    "refunded": "Visszatérítve"
+                },
+                "table": {
+                    "title": "Legutóbbi rendelések",
+                    "viewAll": "Összes megtekintése",
+                    "order": "Rendelés",
+                    "customer": "Vásárló",
+                    "total": "Összesen",
+                    "status": "Állapot"
+                }
+            },
+            "aiInsights": {
+                "card": {
+                    "monitoring": "Active Market Monitoring",
+                    "strategyTitle": "Your growth strategy for {period}",
+                    "periodWeek": "next week",
+                    "periodMonth": "this month",
+                    "description": "We analyzed your last {count} orders. We have 3 specific recommendations that could increase your revenue by approx. 18%.",
+                    "generateBtn": "Generate Strategic Report"
+                },
+                "modal": {
+                    "title": "AI Growth Report",
+                    "subtitle": "Generated for: Administrator • Feb 2024",
+                    "revenueChance": "Revenue Chance",
+                    "revenueGrowth": "Possible growth in 14 days",
+                    "crossSellScore": "Cross-sell Score",
+                    "crossSellDesc": "High linking potential",
+                    "retentionProj": "Retention Proj.",
+                    "retentionDesc": "Loyal returning customers",
+                    "recommendedActions": "Recommended Actions",
+                    "action1Title": "Email: Abandoned Cart (New template)",
+                    "action1Desc": "Customers are abandoning carts for \"Preschool - Autumn Pack\". We suggest adding a 48h timer and 5% discount.",
+                    "action2Title": "Bundle: Preschool Combo Pack",
+                    "action2Desc": "Combine 3 most popular products into one bundle. Suggested price: $59.99.",
+                    "deploy": "Deploy",
+                    "create": "Create",
+                    "skip": "Skip report",
+                    "apply": "Apply Recommendations",
+                    "success": "Strategic report has been saved and sent for analysis."
+                },
+                "overlay": {
+                    "title": "Processing Big Data...",
+                    "subtitle": "\"Analyzing correlations between products and buying behaviors of your customers.\"",
+                    "step1": "Clustering users...",
+                    "step3": "Generating visualizations..."
+                },
+                "wordwallSync": {
+                    "title": "Smart Interactive Sync",
+                    "description": "Paste links to your resources (Wordwall, Genially, Canva, YouTube, Google Slides, Quizizz, NotebookLM, Vocaroo) to add them as products.",
+                    "placeholder": "https://wordwall.net/...\nhttps://view.genial.ly/...\nhttps://canva.com/design/...\nhttps://youtube.com/watch?v=...\nhttps://quizizz.com/...",
+                    "syncBtn": "Start Sync",
+                    "syncing": "Syncing...",
+                    "success": "Successfully imported {count} new games!",
+                    "noNew": "All provided links have already been imported.",
+                    "invalid": "No valid educational links (Wordwall/Genially/Canva/YouTube/Slides/etc) detected.",
+                    "close": "Close"
+                }
+            },
+            "interactivePreview": {
+                "subtitle": "Live preview of interactive material",
+                "noPreview": "No preview available for this asset",
+                "close": "Close"
+            },
+            "activeAiLogs": {
+                "title": "Active AI Logs",
+                "live": "Live",
+                "imageGenerated": "Image Generated",
+                "socialPostReady": "Social Post Ready",
+                "flashcardCreated": "Flashcard Created",
+                "trendIdentified": "Trend identified",
+                "seoOptimized": "SEO Optimized",
+                "imagePolished": "Image Polished"
+            },
+            "studioQuickAccess": {
+                "title": "Studio Quick Access",
+                "imageStudio": "Image Studio",
+                "generate4k": "Generate 4K Visuals",
+                "socialHub": "Social Hub",
+                "viralCreation": "Viral Post Creation"
+            },
+            "salesHub": {
+                "title": "Sales Hub",
+                "subtitle": "Real-time Performance Insights",
+                "totalRevenue": "Összes bevétel",
+                "avgOrderValue": "Átlagos rendelési érték",
+                "conversionRate": "Konverziós arány",
+                "abandonedCarts": "Elhagyott kosarak",
+                "upsellPerformance": "Upsell Performance",
+                "upsellDesc": "Post-purchase offers converted {percent}% of users",
+                "ltvLift": "LTV Lift"
+            },
+            "superAdmin": {
+                "title": "SuperAdmin: Deployment Management",
+                "subtitle": "Global Feature Toggles for new B2B modules",
+                "apiViewer": {
+                    "title": "External API Portal",
+                    "desc": "1-Click portal generator for schools (Phase 12).",
+                    "on": "Global ON",
+                    "off": "Paused",
+                    "earlyAccess": "Early Access List (Gold List)",
+                    "added": "Added {email} to early access"
+                },
+                "internalFeatures": {
+                    "title": "Internal Features & Shop Security",
+                    "desc": "Control the visibility of core modules in your B2C shop. Separately decide if these features are technically solid and should be allowed in B2B External Portals.",
+                    "ownShop": "Own Shop (B2C)",
+                    "externalExport": "External Export (B2B)",
+                    "games": "Interactive Games",
+                    "gamesDesc": "Arcade Room",
+                    "gamification": "Gamification",
+                    "gamificationDesc": "Badges, progress",
+                    "wallet": "Teacher Wallet",
+                    "walletDesc": "Points program"
+                },
+                "extensions": {
+                    "title": "B2B Extensions",
+                    "desc": "Marketplace for AI tokens and services (Phase 13)."
+                },
+                "futureCatalog": {
+                    "title": "Future B2B Module Catalog",
+                    "subtitle": "In development",
+                    "desc": "Features already existing in the mother shop, ready for future packaging and sharing with schools/teachers as paid SaaS Plugins.",
+                    "gamesApi": "Interactive Games (API)",
+                    "gamesApiDesc": "Allow schools to embed Arcade Room and board games directly on their own sites.",
+                    "gamificationEngine": "Gamification Engine",
+                    "gamificationEngineDesc": "Badges, Certificates, Proficiency Tree and Streaks sold as a motivative B2B addon.",
+                    "telemetry": "Clean Summaries",
+                    "telemetryDesc": "Simple, student-friendly summaries of completed modules exported to e-registers.",
+                    "affiliate": "B2B Affiliate Program",
+                    "affiliateDesc": "Schools dropship your courses under their own brand and share with students easily.",
+                    "ready": "Ready for deployment",
+                    "requiresPhase9": "Requires Phase 9"
+                }
+            }
+        },
+        "products": {
+            "title": "Termékek",
+            "subtitle": "Digitális termékeid kezelése",
+            "search": "Termékek keresése...",
+            "importAi": "AI Import",
+            "addProduct": "Termék hozzáadása",
+            "noProducts": "Nem találhatók termékek",
+            "addFirst": "Add hozzá az első terméket",
+            "table": {
+                "product": "Termék",
+                "category": "Kategória",
+                "price": "Ár",
+                "source": "Listázva itt",
+                "status": "Állapot",
+                "actions": "Műveletek"
+            },
+            "status": {
+                "published": "Közzétéve",
+                "draft": "Vázlat"
+            },
+            "actions": {
+                "edit": "Szerkesztés",
+                "viewAccess": "View Product Access",
+                "copyLink": "Gyors fizetési link másolása",
+                "hide": "Elrejtés",
+                "publish": "Közzététel",
+                "delete": "Törlés"
+            },
+            "toasts": {
+                "linkCopied": "Gyors fizetési link másolva:\n{link}",
+                "deleteConfirm": "Biztosan törölni szeretnéd ezt a terméket?"
+            },
+            "categories": {
+                "lesson-plans": "Óravázlatok",
+                "worksheets": "Munkalapok",
+                "flashcards": "Szótanuló kártyák",
+                "games": "Online játékok",
+                "audio": "Audio anyagok",
+                "video": "Video anyagok",
+                "bundles": "Csomagok",
+                "other": "Egyéb"
+            },
+            "source_badges": {
+                "wordpress": "WordPress / Publigo",
+                "tpt": "Teachers Pay Teachers",
+                "ai_optimized": "AI optimalizált"
+            }
+        },
+        "orders": {
+            "title": "Rendelések",
+            "subtitle": "Rendelések és fizetések kezelése",
+            "exportCsv": "CSV exportálása",
+            "stats": {
+                "revenue": "Bevétel (befejezett)",
+                "pending": "Függő fizetés",
+                "today": "Rendelések ma"
+            },
+            "search": "Rendelések keresése...",
+            "statusFilter": "Állapot",
+            "allStatuses": "Összes",
+            "empty": "Nem találhatók rendelések",
+            "table": {
+                "order": "Rendelés",
+                "customer": "Ügyfél",
+                "products": "Termékek",
+                "total": "Összesen",
+                "status": "Állapot",
+                "date": "Dátum"
+            },
+            "status": {
+                "pending": "Függőben",
+                "processing": "Feldolgozás alatt",
+                "completed": "Befejezett",
+                "cancelled": "Törölt",
+                "refunded": "Visszatérített"
+            },
+            "paymentMethods": {
+                "card": "Kártya",
+                "transfer": "Banki átutalás",
+                "blik": "BLIK",
+                "paypal": "PayPal"
+            },
+            "details": {
+                "notFound": "Rendelés nem található",
+                "back": "Vissza a listához",
+                "invoice": "Számla kiállítása",
+                "payment": "Fizetés",
+                "summary": "Összegzés",
+                "sendEmail": "E-mail küldése",
+                "items": "Tételek",
+                "paidAt": "Fizetve: {date}",
+                "discount": "Kedvezmény",
+                "total": "Összesen",
+                "quantity": "Mennyiség"
+            },
+            "paymentStatus": {
+                "paid": "Fizetve",
+                "pending": "Függőben",
+                "failed": "Sikertelen",
+                "refunded": "Visszatérített"
+            },
+            "export_headers": {
+                "order_number": "Rendelésszám",
+                "date": "Dátum",
+                "customer": "Ügyfél",
+                "email": "E-mail",
+                "products": "Termékek",
+                "total": "Összesen",
+                "status": "Állapot"
+            }
+        },
+        "coupons": {
+            "title": "Kuponok",
+            "subtitle": "Kedvezménykódok kezelése",
+            "addCoupon": "Új kupon",
+            "editCoupon": "Kupon szerkesztése",
+            "createCoupon": "Kupon létrehozása",
+            "stats": {
+                "all": "Összes kupon",
+                "active": "Aktív",
+                "usage": "Összes felhasználás"
+            },
+            "form": {
+                "code": "Kuponkód",
+                "generate": "Generálás",
+                "placeholder": "pl. SUMMER2024",
+                "discountType": "Kedvezmény típusa",
+                "percent": "Százalékos (%)",
+                "fixed": "Fix összeg",
+                "discountValue": "Kedvezmény értéke",
+                "usageLimit": "Felhasználási limit",
+                "minOrderValue": "Minimum rendelési érték",
+                "expiresAt": "Lejárati dátum (opcionális)"
+            },
+            "ux": {
+                "show": "Show",
+                "hide": "Hide",
+                "copy": "Copy",
+                "copied": "Copied!",
+                "secure": "Encrypted"
+            },
+            "preview": {
+                "title": "Preview & Accept",
+                "accept": "Accept Changes",
+                "reject": "Discard",
+                "bulk_title": "Review Generated Drafts",
+                "apply_all": "Accept All ({count})",
+                "diff_before": "Before Optimization",
+                "diff_after": "AI Suggestion"
+            },
+            "table": {
+                "code": "Kód",
+                "discount": "Kedvezmény",
+                "usage": "Felhasználás",
+                "expires": "Lejárat",
+                "status": "Állapot"
+            },
+            "toasts": {
+                "deleteConfirm": "Biztosan törölni szeretnéd ezt a kupont?"
+            }
+        },
+        "materials": {
+            "title": "Anyagkezelés",
+            "subtitle": "Fájlok hozzáadása, rendszerezése és termékekhez rendelése.",
+            "deleteSelected": "Törlés ({count})",
+            "assignToProduct": "Hozzárendelés termékhez ({count})",
+            "dragDrop": "Húzza ide a fájlokat",
+            "clickToUpload": "vagy kattintson az alábbi gombra a lemezről való kiválasztáshoz",
+            "selectFiles": "Fájlok kiválasztása",
+            "or": "- VAGY -",
+            "library": {
+                "title": "Fájlkönyvtár ({count})",
+                "description": "Az összes feltöltött anyag listája.",
+                "empty": "Nem találhatók fájlok. Töltsön fel valamit."
+            },
+            "table": {
+                "check": "Kijelölés",
+                "fileName": "Fájlnév",
+                "size": "Méret",
+                "source": "Forrás",
+                "product": "Hozzárendelt termék",
+                "actions": "Műveletek"
+            },
+            "badges": {
+                "upload": "Feltöltés",
+                "drive": "Google Drive",
+                "unassigned": "Nincs hozzárendelve"
+            },
+            "dialog": {
+                "title": "Fájlkezelés",
+                "selectLabel": "Termék kiválasztása",
+                "placeholder": "Válasszon terméket a listából...",
+                "cancel": "Mégse",
+                "save": "Változtatások mentése",
+                "delete": "Fájl törlése"
+            },
+            "toasts": {
+                "uploadSuccess": "{count} fájl feltöltve",
+                "deleted": "Fájl törölve",
+                "deletedSelected": "Kijelölt fájlok törölve",
+                "assigned": "{count} fájl hozzárendelve a termékhez"
+            }
+        },
+        "certificates": {
+            "title": "Tanúsítványok és Vizsgák",
+            "subtitle": "Tanúsítási folyamat kezelése",
+            "stats": {
+                "totalIssued": "Összesen kiállítva",
+                "avgScore": "Átlagos vizsgapontszám"
+            },
+            "tabs": {
+                "templates": "Sablonok",
+                "exams": "Vizsgák",
+                "issued": "Kiállított"
+            },
+            "templates": {
+                "create": "Sablon létrehozása",
+                "preview": "Sablon szerkesztése",
+                "standardTitle": "Standard Diploma (A4)",
+                "standardDesc": "Alapértelmezett sablon nyelvtanfolyamokhoz",
+                "certificateTitle": "Tanúsítvány a kurzus elvégzéséről",
+                "completedCourse": "Elvégzett kurzus: {course}",
+                "aiGenerate": "AI sablongenerálás",
+                "aiDesc": "Írja le a stílust (pl. 'modern', 'gyerekeknek'), és az AI egyedi diploma-dizájnt készít.",
+                "createAi": "Létrehozás AI-val"
+            },
+            "exams": {
+                "create": "Új vizsga",
+                "description": "Hozzon létre egy kérdésbankot, vagy hagyja, hogy az AI generáljon tesztet a kurzus tartalmából.",
+                "createAi": "AI vizsgakészítő"
+            },
+            "issued": {
+                "empty": "Ebben a hónapban nem állítottak ki tanúsítványt."
+            }
+        },
+        "blog": {
+            "title": "Blog",
+            "subtitle": "Blogbejegyzések és SEO kezelése",
+            "newPost": "Új bejegyzés",
+            "searchPlaceholder": "Bejegyzések keresése...",
+            "empty": "Nem találhatók blogbejegyzések",
+            "writeFirst": "Írd meg az első bejegyzésed",
+            "table": {
+                "title": "Cím",
+                "category": "Kategória",
+                "status": "Állapot",
+                "date": "Dátum"
+            },
+            "status": {
+                "published": "Közzétéve",
+                "draft": "Vázlat"
+            },
+            "actions": {
+                "preview": "Előnézet",
+                "delete": "Törlés",
+                "save": "Save",
+                "edit": "Szerkesztés",
+                "hide": "Elrejtés",
+                "publish": "Közzététel"
+            },
+            "categories": {
+                "mega-pack": "Mega Packs",
+                "scenariusze": "Scenarios",
+                "zlobek": "Nursery",
+                "special-lessons": "Special Lessons",
+                "speakbook": "Speakbook",
+                "stories": "Stories",
+                "culture": "Culture",
+                "pory-roku": "Seasons",
+                "teatr": "Theater",
+                "flashcards": "Flashcards",
+                "gry": "Games",
+                "inne": "Egyéb",
+                "metodyka": "Tanítási módszertan",
+                "materialy": "Tananyagok",
+                "technologia": "Technológia az oktatásban",
+                "inspiracje": "Inspiráció és ötletek",
+                "recenzje": "Vélemények",
+                "wydarzenia": "Események"
+            },
+            "toasts": {
+                "deleteConfirm": "Biztosan törölni szeretnéd ezt a bejegyzést?"
+            },
+            "form": {
+                "createTitle": "New Post",
+                "createSubtitle": "Create a new blog post",
+                "editTitle": "Edit Post",
+                "editSubtitle": "Edit existing blog post",
+                "titlePlaceholder": "Post title...",
+                "contentTitle": "Content",
+                "contentPlaceholder": "Start writing post content...",
+                "excerptTitle": "Excerpt",
+                "excerptPlaceholder": "Short description displayed on post list...",
+                "statusTitle": "Status",
+                "categoryTitle": "Category",
+                "categoryPlaceholder": "Select category",
+                "tagsTitle": "Tags",
+                "tagsPlaceholder": "tag1, tag2, tag3",
+                "imageTitle": "Featured Image",
+                "imagePlaceholder": "https://kamila.shor.dev/image.jpg",
+                "seoTitle": "SEO",
+                "metaTitleLabel": "Meta Title",
+                "metaTitlePlaceholder": "Search engine title",
+                "metaDescLabel": "Meta Description",
+                "metaDescPlaceholder": "Search engine description",
+                "charCount": "{count}/{max} characters",
+                "seoPreview": "Google Preview",
+                "generate": "Generate",
+                "save": "Save",
+                "saveChanges": "Save Changes",
+                "saving": "Saving...",
+                "delete": "Delete",
+                "notFound": "Post not found",
+                "backToList": "Back to list",
+                "titleRequired": "Please enter a title first"
+            }
+        },
+        "chat": {
+            "title": "AI Vezérlőközpont",
+            "subtitle": "Csevegés a boltoddal",
+            "welcome": "Üdvözöljük az AI Központban. Miben segíthetek?",
+            "newChat": "Új csevegés",
+            "history": "Előzmények",
+            "placeholder": "Válasszon modellt",
+            "capabilities": {
+                "database": "Adatbázis",
+                "store": "Bolt",
+                "web": "Internet",
+                "files": "Fájlok"
+            },
+            "inputPlaceholder": "Írjon egy üzenetet...",
+            "disclaimer": "Az AI hibázhat. Ellenőrizze a fontos információkat.",
+            "generatedBy": "Generálta: {model}",
+            "mockResponse": "A(z) {model} modell szimulált válasza. Kaptam: \"{content}\". A teljes verzióban itt jönne létre a kapcsolat az API-val (pl. OpenAI, Manus) vagy az adatbázissal.",
+            "mockSessions": {
+                "s1": {
+                    "title": "Q1 értékesítési elemzés",
+                    "date": "Ma"
+                },
+                "s2": {
+                    "title": "Új termékleírások",
+                    "date": "Tegnap"
+                },
+                "s3": {
+                    "title": "Integráció hibakeresés",
+                    "date": "2 napja"
+                }
+            }
+        },
+        "import": {
+            "title": "AI Import",
+            "subtitle": "Termékek importálása külső katalógusból és leírások fejlesztése AI-val",
+            "catalogUrl": "Katalógus URL",
+            "catalogUrlDesc": "Illessze be a termékoldal linkjét (kamilaenglish.com)",
+            "scan": "Termékek szkennelése",
+            "scanning": "Szkennelés...",
+            "enhance": "Fejlesztés AI-val",
+            "enhancing": "Fejlesztés...",
+            "import": "Importálás ({count})",
+            "importing": "Importálás...",
+            "productsFound": "Termékek ({count})",
+            "selectedCount": "{count} kiválasztva",
+            "selectAll": "Mindet kijelöl",
+            "deselectAll": "Kijelölés törlése",
+            "allCategories": "Összes",
+            "openSource": "Nyílt forráskód",
+            "preview": {
+                "testInteractive": "Test Interactive Game",
+                "sourceLink": "Source Link",
+                "selectToPreview": "Select a product to preview",
+                "backToList": "Back to List",
+                "acceptAndCreate": "Accept & Create {count} Drafts"
+            },
+            "configureAi": "Configure API keys in settings before using AI",
+            "selectProducts": "Select products to import",
+            "noAssetsFound": "No valid assets were found. Please ensure you are using public links (e.g. wordwall.net/resource/...) and not your private dashboard.",
+            "privateLink": "Skipped private page: {url}",
+            "errors": {
+                "enterUrl": "Adja meg a katalógus URL-jét",
+                "onlyKamila English": "Csak a kamilaenglish.com termékek támogatottak",
+                "configureAi": "Az AI használata előtt konfigurálja az API kulcsokat a beállításokban",
+                "selectProducts": "Válassza ki az importálandó termékeket"
+            },
+            "success": {
+                "found": "{count} termék található a Kamila English-en!",
+                "enhanced": "A leírásokat az AI továbbfejlesztette!",
+                "imported": "{count} termék importálva!"
+            },
+            "placeholders": {
+                "url": "https://www.sklep.kamilaenglish.com/..."
+            },
+            "categories": {
+                "mega-pack": "Mega csomagok",
+                "scenariusze": "Forgatókönyvek",
+                "zlobek": "Bölcsőde",
+                "special-lessons": "Speciális órák",
+                "speakbook": "Speakbook",
+                "stories": "Történetek",
+                "culture": "Kultúra",
+                "pory-roku": "Évszakok",
+                "teatr": "Színház",
+                "flashcards": "Fiszki",
+                "gry": "Játékok",
+                "inne": "Egyéb"
+            },
+            "enhancedText": {
+                "titlePrefix": "🎯",
+                "bestseller": "✨ BESTSELLER!",
+                "whatYouGet": "📚 Amit kapsz:",
+                "features": {
+                    "pdf": "• Nyomtatásra kész PDF anyagok",
+                    "teacher": "• Tanári útmutató",
+                    "worksheets": "• Munkalapok és gyakorlatok"
+                },
+                "footer": "⭐ Tanárok százai által ellenőrizve!"
+            }
+        },
+        "success": {
+            "found": "Found {count} products from Kamila English!",
+            "enhanced": "Descriptions enhanced by AI!",
+            "imported": "Imported {count} products!"
+        },
+        "placeholders": {
+            "url": "https://www.sklep.kamilaenglish.com/..."
+        },
+        "categories": {
+            "mega-pack": "Mega Packs",
+            "scenariusze": "Scenarios",
+            "zlobek": "Nursery",
+            "special-lessons": "Special Lessons",
+            "speakbook": "Speakbook",
+            "stories": "Stories",
+            "culture": "Culture",
+            "pory-roku": "Seasons",
+            "teatr": "Theater",
+            "flashcards": "Flashcards",
+            "gry": "Games",
+            "inne": "Others"
+        },
+        "footer": "⭐ Trusted by hundreds of teachers!",
+        "item1": "Full access to materials",
+        "item2": "SEO Optimized content",
+        "item3": "Implementation guide for students",
+        "assistant": {
+            "title": "AI Copilot",
+            "status": "Active Intelligence",
+            "welcome": "How can I help you today?",
+            "placeholder": "Ask me anything...",
+            "suggestions": {
+                "generate_visuals": "Generate 4K Visuals",
+                "social_post": "Create Social Post",
+                "avatar_script": "New AI Avatar Script",
+                "seo_optimize": "SEO Optimize Description",
+                "product_cover": "Generate Product Cover",
+                "sync_wordwall": "Sync with Wordwall",
+                "config_workshop": "Configure AI Workshop",
+                "test_api": "Test API Credentials",
+                "connect_canva": "Connect Canva Design",
+                "gen_strategy": "Generate Strategy",
+                "view_trends": "View Trends",
+                "open_workshop": "Open Workshop"
+            },
+            "responses": {
+                "processing": "I'm processing your request. As your AI Copilot, I can help you manage products, generate creative assets, and optimize your store.",
+                "products_context": "You currently have {count} products in your store. I can help you generate descriptions or images for them in the AI Workshop.",
+                "product_example": "For example, I noticed \"{title}\". Would you like to optimize it?",
+                "workshop_info": "The AI Workshop is where you can generate images, videos, and social media posts. You can find it in the 'Workshop' tab of Settings or the dedicated Studio page.",
+                "wordwall_info": "To sync with Wordwall, go to the Products page and use the 'Interactive Import' button. I can also help you scrape metadata from any educational URL!",
+                "hello": "Hello! I'm your AI Copilot. I'm currently aware of {count} products and your store settings. How can I assist you today?"
+            }
+        },
+        "offers": {
+            "title": "AI Offer Generator",
+            "subtitle": "Create high-converting offers in seconds.",
+            "beta": "Beta Growth Suite",
+            "parameters": {
+                "title": "Campaign Parameters",
+                "description": "Define the goal of your offer",
+                "promotion_type": "Promotion Type",
+                "occasional": "Occasional",
+                "evergreen": "Evergreen",
+                "product": "Product / Service",
+                "product_placeholder": "e.g. Lesson Plan Bundle A1-C1",
+                "benefit": "Main Benefit",
+                "benefit_placeholder": "What will the customer gain?",
+                "discount": "Discount (%)",
+                "generate": "Generate AI Offer",
+                "analyzing": "Analyzing market..."
+            },
+            "preview": {
+                "ai_project": "AI PROJECT",
+                "effectiveness": "Effectiveness: {score}%",
+                "title": "Special Early Bird Offer",
+                "subtitle": "Review the generated campaign before publishing",
+                "ad_copy_label": "Ad Slogan",
+                "conversion_label": "Conversion",
+                "vs_avg": "+{diff}% vs avg",
+                "discount_code_label": "Your discount code",
+                "copied": "Copied",
+                "copy": "Copy",
+                "reject": "Reject and change parameters",
+                "accept": "Accept and Publish Offer"
+            },
+            "loading": {
+                "title": "AI Magic in progress...",
+                "description": "\"Analyzing market trends and optimizing sales psychology for your products.\"",
+                "progress_label": "Competitor analysis..."
+            },
+            "toasts": {
+                "copied": "Discount code copied!",
+                "ready": "Offer ready for review!"
+            }
+        },
+        "landingBuilder": {
+            "title": "Landing Page Builder",
+            "draftVersion": "Draft Version: {name}",
+            "desktop": "Desktop",
+            "mobile": "Mobile",
+            "preview": "Preview",
+            "save": "Save changes",
+            "saving": "Saving...",
+            "elements": "Page Elements",
+            "text": "Text",
+            "image": "Image",
+            "button": "Button",
+            "aiBlock": "AI Block",
+            "canvas": "Canvas (Layers)",
+            "hero": "Hero Section",
+            "features": "Advantages & Benefits",
+            "pricing": "Pricing Section",
+            "aiMagic": {
+                "title": "Ready for magic?",
+                "desc": "Use AI to automatically match copy and colors to your product.",
+                "optimize": "Optimize with AI"
+            },
+            "mock": {
+                "newCourse": "New Course",
+                "heroTitle": "Start teaching the language {joy}",
+                "joy": "with joy",
+                "heroDesc": "Ready-made scenarios your students will love. Zero stress, 100% results.",
+                "buyNow": "Buy now and start teaching",
+                "learnMore": "Learn more",
+                "addImage": "Add main image (Drag & Drop)"
+            },
+            "optimization": {
+                "title": "AI Landing Optimization",
+                "desc": "We detected {count} areas for improvement to increase conversion by approx. {percent}%.",
+                "current": "Current Version",
+                "aiSuggestion": "AI Suggestion (Improved conversion)",
+                "recommendation": "RECOMMENDATION",
+                "skip": "Skip changes",
+                "apply": "Apply optimization",
+                "success": "AI changes have been applied to the project!",
+                "processing": "Working on the project...",
+                "processingDesc": "\"Scanning your copy for benefit language and analyzing market heatmaps.\"",
+                "analysingHeaders": "Analyzing headers...",
+                "pickingColors": "Choosing color palette...",
+                "renderingPreview": "Rendering preview...",
+                "paletteTitle": "Improved Color Palette (Ocean Night)",
+                "paletteDesc": "We will change the accents to a more professional navy and energetic blue.",
+                "suggestionTitle": "Stop wasting hours on preparation. Choose ready-made solutions.",
+                "suggestionDesc": "Join 500+ teachers who reclaimed 10 hours a week. We guarantee a smile on every student's face.",
+                "suggestionButton": "Claim your time and start now"
+            },
+            "toasts": {
+                "saved": "Landing page saved successfully!"
+            }
+        },
+        "integrations": {
+            "title": "Oktatási BaseLinker",
+            "subtitle": "Globális anyagértékesítés és AI automatizálás.",
+            "loading": "Fordítások betöltése...",
+            "addStore": "Bolt hozzáadása",
+            "sync_status": "Szinkronizálás: {date}",
+            "today": "Ma",
+            "tabs": {
+                "sync": "Raktár és Szinkronizálás",
+                "agent": "Publikációs ágens",
+                "settings": "Marketplace beállítások"
+            },
+            "marketplaces": {
+                "groups": {
+                    "poland": "Lengyelország",
+                    "usa": "USA",
+                    "dach": "Németország (DACH)",
+                    "uk": "Egyesült Királyság",
+                    "fr_es": "Franciaország/Spanyolország"
+                },
+                "names": {
+                    "wp": "WooCommerce / Publigo",
+                    "wp_full": "WordPress / Publigo",
+                    "tpt": "Teachers Pay Teachers",
+                    "etsy": "Etsy Education",
+                    "eduki": "Eduki (Németország)",
+                    "tes": "TES (UK)",
+                    "mieux": "MieuxEnseigner (Franciaország/Spanyolország)"
+                }
+            },
+            "inventory": {
+                "title": "Globális Anyagleltár",
+                "badge": "Központi Raktár",
+                "description": "Forrásfájlok és jelenlétük kezelése a különböző piacokon.",
+                "source": "Forrás: kamilaenglish.com",
+                "allFiles": "Minden PDF, játék és audió egy helyen",
+                "updateBtn": "Leltár frissítése",
+                "syncBtn": "Leltár szinkronizálása",
+                "progress": "Szinkronizálási folyamat",
+                "log": "Rendszernapló",
+                "waiting": "Várakozás az indításra...",
+                "logs": {
+                    "init": "Csatlakozás inicializálása a külső rendszerekhez...",
+                    "auth": "Publigo (wp-idea) és WooCommerce hitelesítése...",
+                    "fetching": "Terméklista lekérése (Multi-Channel Sourcing)...",
+                    "syncing": "Készletszintek és digitális fájlok szinkronizálása...",
+                    "complete": "Szinkronizálás kész. {count} új anyag észlelve.",
+                    "agent_init": "Környezet inicializálása a(z) {mkt} részére...",
+                    "agent_login": "Bejelentkezés az eladói panelbe...",
+                    "agent_fill": "Űrlap kitöltése: {title}...",
+                    "agent_optimize": "SEO optimalizálás és fájlok feltöltése...",
+                    "agent_done": "Kész! A termék jóváhagyásra vár."
+                },
+                "toasts": {
+                    "sync_success": "A raktár sikeresen frissítve.",
+                    "analysis_done": "AI elemzés kész. A javasolt adatok rendelkezésre állnak.",
+                    "no_tokens": "Nincs elég token. Töltse fel fiókját.",
+                    "tokens_spent": "{count} token levonva az AI műveletért.",
+                    "test_woo": "WooCommerce kapcsolat tesztelése...",
+                    "woo_success": "Sikeres csatlakozás a kamilaenglish.com-hoz (API v3)",
+                    "test_manus": "Manus AI licenc ellenőrzése...",
+                    "manus_success": "Licenc aktív. Az ágens munkára kész.",
+                    "settings_saved": "Beállítások helyileg mentve.",
+                    "new_channel": "Új értékesítési csatorna konfigurátorának megnyitása...",
+                    "edit_schedule": "Az ütemezés szerkesztése elérhető a rendszerbeállításokban.",
+                    "importing": "Új termékek importálása..."
+                },
+                "stats": {
+                    "products_short": "term."
+                }
+            },
+            "schedule": {
+                "title": "Ütemezés",
+                "daily02": "Naponta 02:00-kor",
+                "active": "Aktív",
+                "disabled": "Kikapcsolva",
+                "checkOnlyChanges": "Csak a változások ellenőrzése",
+                "changeCron": "Cron beállítások módosítása"
+            },
+            "aiTip": {
+                "title": "AI Tipp",
+                "description": "{count} új terméket találtunk a WordPress-en, amely nincs meg ebben a boltban. Szeretné importálni őket?",
+                "importBtn": "Importálás most"
+            },
+            "agent": {
+                "catalogTitle": "Termékkatalógus",
+                "ready": "Kész",
+                "emptyState": {
+                    "title": "Válasszon terméket és célpiacot",
+                    "description": "A Manus AI ágens elvégzi a munkát Ön helyett – bejelentkezik, kitölti az adatokat és közzéteszi a terméket a kiválasztott platformon."
+                },
+                "selectMarket": "Válasszon célpiacot",
+                "launchBtn": "Ágens indítása",
+                "launchAdmin": "Ágens indítása (Admin)",
+                "launchPoints": "Indítás {count} pontért",
+                "working": "Az ágens dolgozik...",
+                "manusMode": "Manus mód: Aktív",
+                "marketPrefix": "EnglishLearning: ",
+                "yourBalance": "Egyenleged",
+                "analysisTitle": "AI elemzés a következőhöz: {market}",
+                "regionalOptimization": "Regionális optimalizálás",
+                "suggestedTitle": "Javasolt cím (Helyi SEO)",
+                "suggestedPrice": "Ár (PPP konverzió)",
+                "sellingProb": "Eladási valószínűség",
+                "veryHigh": "NAGYON MAGAS",
+                "success": {
+                    "title": "Feladat befejezve!",
+                    "description": "Az AI ágens sikeresen meglátogatta a(z) {market} piacot és közzétette a termékét.",
+                    "viewLogs": "SZEZONNAPLÓK MEGTEKINTÉSE"
+                },
+                "toasts": {
+                    "session_manager": "Munkamenet-kezelő megnyitása...",
+                    "proxy_success": "Proxy: {ip} ({location}) OK",
+                    "report_title": "Ügynök jelentés",
+                    "report_desc": "Bejelentkezve: OK, Űrlap: Kitöltve, Képek: Feltöltve, SEO: Optimalizálva. Összes idő: {time}"
+                },
+                "stats": {
+                    "points": "pont"
+                },
+                "mockAnalysis": {
+                    "title": "AI Elemzés",
+                    "optimizedTitleSuffix": "Átfogó tananyag tanároknak",
+                    "suggestedPrice": "12,99 €",
+                    "subject": "Angol nyelv",
+                    "seoTags": "otthonoktatás, munkalapok, szókincs, szótanuló kártyák, tanári források",
+                    "description": "Engedje szabadjára osztályterme potenciálját ezzel a prémium {title} forrással. \n\nPedagógusok által, pedagógusoknak tervezve, ez a forrás tartalmazza:\n- Teljes PDF forgatókönyvek\n- Nyomtatásra kész feladatlapok\n- Interaktív vizuális segédeszközök.\n\nIdeális online és tantermi órákhoz egyaránt!"
+                },
+                "idle": {
+                    "title": "Készenlétben",
+                    "description": "Indítsa el az ágenst az automatizálási folyamat megkezdéséhez a(z) {market} platformon."
+                }
+            },
+            "settings": {
+                "title": "Multi-Channel kapcsolatok",
+                "description": "Külső boltok hozzáférési adatainak konfigurálása.",
+                "saveAll": "Mindet ment",
+                "lastSaved": "Utolsó mentés: {time}",
+                "woo": {
+                    "title": "WooCommerce / WordPress oldal",
+                    "url": "Bolt URL (REST API)",
+                    "key": "Consumer Key",
+                    "secret": "Consumer Secret",
+                    "connected": "Csatlakoztatva",
+                    "autoSync": "AUTO-SZINKRONIZÁLÁS BE",
+                    "test": "Teszt"
+                },
+                "manus": {
+                    "title": "Manus AI munkamenet",
+                    "description": "Az ágens a \"Browser Operator Mode\"-ot használja, bejelentkezve a fiókjaiba. Töltse fel a munkamenet sütiket (JSON) a 2FA problémák elkerülése érdekében.",
+                    "instance": "Ágens API példány",
+                    "test": "Manus tesztelése",
+                    "manage": "Munkamenet kezelése",
+                    "proxy": "Proxy tesztelése"
+                }
+            }
         }
-      },
-      "mcp": {
-        "title": "MCP Connectors",
-        "description": "Connect external models and knowledge bases via MCP protocol",
-        "server": "MCP Server Address",
-        "status": "Connection status"
-      },
-      "api": {
-        "title": "External API Keys",
-        "description": "Integrations with CRM, Mailing, and other systems",
-        "service": "Service (e.g., MailerLite, Zapier)",
-        "key": "API Key / Token",
-        "coming_soon": "Integration with MailerLite, ActiveCampaign and Zapier is being implemented.",
-        "coming_soon_desc": "You can already save keys in the Webhooks section for testing."
-      }
+    },
+    "logs": {
+        "init": "🚀 Initializing AI Scraper agent...",
+        "connect": "🔍 Connecting to API session...",
+        "extract": "🧩 Extracting mechanics and metadata...",
+        "images": "🖼️ Generating preview thumbnails...",
+        "seo": "✍️ Crafting SEO-optimized descriptions...",
+        "pricing": "💰 Calculating regional pricing...",
+        "finalize": "✨ Finalizing product drafts..."
     },
     "interactive": {
-      "title": "Online Játékok Integrációja",
-      "description": "Wordwall, Genially és egyéb platformok összekapcsolása a bolttal",
-      "auto_import": "Automatikus terméklétrehozás a játék felvétele után a platformon",
-      "auto_import_desc": "A rendszer automatikusan felismeri a beágyazási kódokat (Embed) a termék létrehozásakor.",
-      "sync_status": "Utolsó játékszikronizálás",
-      "sync_hint": "Javasoljuk, hogy a játékokra mutató közvetlen linkeket illessze be a termékszerkesztő panelen. A rendszer automatikusan interaktív ablakká alakítja azokat a tanuló számára.",
-      "other_title": "Egyéb Integrációk",
-      "platforms": {
-        "wordwall": "Wordwall API kulcs",
-        "wordwall_placeholder": "pl. kamila-lo-ko",
-        "genially": "Genially API kulcs",
-        "genially_placeholder": "pl. https://view.genial.ly/profile/nick",
-        "sync_title": "Wordwall és Genially Szinkronizálás",
-        "h5p_desc": "Helyi beágyazás",
-        "learningapps_desc": "iFrame-en keresztül",
-        "quizizz_desc": "API Szinkronizálás"
-      }
-    },
-    "workshop": {
-      "title": "AI Műhely (RAG Motor)",
-      "description": "Származtatott anyagok generálása az Ön tudásbázisa alapján",
-      "generate_btn": "Anyagok Generálása",
-      "status_ready": "Készen áll a generálásra",
-      "rag_sources": {
-        "title": "Tudásforrások (RAG)",
-        "description": "Válassza ki az AI tudásbázisát",
-        "main_label": "Fő Forrás (RAG)",
-        "notebook_lm": "Link a NotebookLM-hez / Tudásbázishoz",
-        "options": {
-          "google_drive": "Google Drive (Mappa: Edu-Materials)",
-          "notebook_lm": "NotebookLM Csatlakozó",
-          "local": "Helyi vektordatatbázis"
+        "title": "Interactive Content",
+        "subtitle": "Import and optimize Games with AI",
+        "placeholder": "Paste links (one per line)...",
+        "found": "Found {count} interactive items!",
+        "generate": "Generate drafts",
+        "createDrafts": "Accept and create drafts",
+        "success": "Successfully imported {count} products!",
+        "preview_title": "AI Draft Preview",
+        "preview_desc": "Review generated products and test interactive content.",
+        "logs": {
+            "launching": "🚀 Launching real-time scraping agent...",
+            "analyzing": "🔍 Analyzing: {url}...",
+            "private": "⚠️ Link {url} appears to be a private collection. Skipping - please use individual game links.",
+            "extracted": "✅ Extracted: {title}",
+            "dropped": "❌ Connection dropped for: {url}",
+            "complete": "Scraping complete! Successfully extracted metadata for {count} assets."
         }
-      },
-      "generators": {
-        "title": "Anyaggenerátor",
-        "reading": "Olvasás (Szöveg + Kérdések)",
-        "listening": "Hallgatás (Szkript + AI Audió)",
-        "speaking": "Beszédkártyák",
-        "vocabulary": "Szókincsgyakorlatok",
-        "flashcards": "Szótanuló kártyák (CSV/Anki)",
-        "tests": "Teszt Generátor",
-        "worksheets": "PDF Munkalapok",
-        "ai_quiz": "AI Kvíz Készítő"
-      },
-      "canva": {
-        "title": "Canva Csatlakozó",
-        "description": "Generált tartalom exportálása közvetlenül Canva projektekbe",
-        "api_key": "Canva Design Token",
-        "auto_export": "Auto-export",
-        "connect": "Csatlakozás a Canvához"
-      },
-      "title_prefix": "AI Creative",
-      "title_suffix": "Studio",
-      "badge": "Next-Gen",
-      "powered_by": "Powered by OpenAI & HeyGen",
-      "available_credits": "Available Credits",
-      "generations_today": "Generations Today",
-      "studio": "Studio",
-      "history": "History",
-      "studios": {
-        "images": "Image Studio",
-        "video": "Video Studio",
-        "avatars": "Avatar Studio",
-        "social": "Social Hub",
-        "flashcards": "Flashcards",
-        "canva": "Canva Studio"
-      },
-      "actions": {
-        "reuse": "Reuse Prompt",
-        "generate": "Generate Asset",
-        "processing": "Processing...",
-        "attach": "Attach",
-        "change_product": "Change Product",
-        "connect": "Connect to Product"
-      },
-      "labels": {
-        "persona": "Select AI Persona",
-        "script": "Script",
-        "prompt": "Creative Prompt",
-        "preview": "Preview",
-        "history_empty": "Your canvas awaits.",
-        "connect_desc": "Link this AI asset to your store inventory.",
-        "professional_suite": "Professional Creative Suite"
-      },
-      "social_hub": {
-        "title": "Social Media Hub",
-        "subtitle": "Post Generator & Optimization",
-        "platforms": {
-          "instagram": "Instagram",
-          "facebook": "Facebook",
-          "linkedin": "LinkedIn",
-          "youtube": "YouTube"
-        },
-        "labels": {
-          "select_product": "Select Product to Promote",
-          "pick_placeholder": "Pick from Product Library...",
-          "campaign_context": "Campaign Context / Prompt",
-          "prompt_placeholder": "What are we promoting today? (e.g., 'New Flashcard Set for Christmas')",
-          "ai_copy": "AI Generated Copy",
-          "thinking": "Thinking...",
-          "regenerate": "Regenerate Copy",
-          "copy_placeholder": "AI will generate your post content here...",
-          "media_asset": "Media Asset",
-          "auto_selected": "Auto-Selected",
-          "select_asset": "Select Asset",
-          "from_gallery": "From Product Gallery",
-          "viral_growth": "Viral Growth",
-          "score": "Score",
-          "ai_expectancy": "AI expects {percent}% higher engagement on {platform}.",
-          "live_mockup": "Live Mockup Preview",
-          "mockup_placeholder": "Your mockup copy will appear here...",
-          "export": "Export to Socials"
-        }
-      },
-      "flashcards": {
-        "title": "AI Flashcard Studio",
-        "subtitle": "Transform topics into beautiful, ready-to-print flashcard sets.",
-        "badge": "Smart Learning",
-        "branding_kit": "Branding Kit",
-        "export_canva": "Export to Canva",
-        "smart_generator": "Smart Generator",
-        "topic_label": "Topic or Context",
-        "topic_placeholder": "e.g. Life Cycle of a Frog",
-        "style_label": "Visual Style",
-        "styles": {
-          "academic": "Academic",
-          "playful": "Playful",
-          "minimal": "Minimal",
-          "canva_ai": "Canva AI"
-        },
-        "generate_btn": "Generate Deck",
-        "generating": "Generating...",
-        "live_preview": "Live Preview",
-        "cards_prepared": "{count} Cards Prepared",
-        "empty": "No cards generated yet",
-        "add_custom": "Add Custom Card"
-      }
-    },
-    "automation": {
-      "title": "AI Ágens Csatlakozók",
-      "description": "Ágensek csatlakoztatása, mint a Manus AI, GPT-4o böngészővel, vagy Playwright/Selenium lekérdezések",
-      "agent_delivered": "Az ágens {count} új vázlatot szállított!",
-      "agents": {
-        "title": "Elérhető Böngésző-központú Ágensek",
-        "select_placeholder": "Válasszon automatizálási ágenst",
-        "manus": "Manus AI Csatlakozó",
-        "general": "Egyedi Böngésző Ágens (Webhook)",
-        "status_idle": "Ágens készen áll a feladatokra",
-        "btn_send": "Ágens küldése linkekért"
-      },
-      "receiver": {
-        "title": "Fogadó cím (Endpoint)",
-        "description": "Adja meg ezt az URL-t a Manus AI-ban, hogy az ágens a talált linkeket közvetlenül a vázlatok közé küldhesse",
-        "simulate_test": "(Ágens érkezésének szimulálása / Webhook teszt)",
-        "simulate_btn": "Ágens Szimulálása"
-      },
-      "scrapers": {
-        "title": "Automatizált eszközök",
-        "card_title": "Böngésző feladatok",
-        "options": {
-          "wordwall": "Wordwall scraper",
-          "genially": "Genially scraper",
-          "learningapps": "LearningApps scraper"
-        },
-        "item1": "Találj Embed linkeket a játékokhoz a Genially profilomon",
-        "item2": "Ellenőrizd az új Canva sablonok elérhetőségét",
-        "item3": "Töltsd le a megosztási kódokat a Wordwallról",
-        "description": "Robotok konfigurálása tartalomimporthoz"
-      },
-      "chat": {
-        "title": "AI Ügyfélszolgálati Központ",
-        "subtitle": "Közvetlen kommunikáció a böngésző ügynökkel",
-        "placeholder": "Hol keressek ma?",
-        "capabilities": "Aktuális képességek: Genially, Wordwall, Canva",
-        "welcome": "Szia! Készen állok a munkára. Feladatokat adhatsz nekem a fiókjaidban (Wordwall, Canva, Genially). Mit tegyek?"
-      }
-    },
-    "emails": {
-      "title": "Rendszerüzenet Sablonok",
-      "description": "Az ügyfeleknek automatikusan küldött üzenetek tartalmának kezelése",
-      "save": "Sablonok mentése",
-      "templates": {
-        "welcome": {
-          "title": "Köszöntés regisztráció után",
-          "subject": "Üdvözöljük a közösségben!",
-          "content": "Örülünk, hogy velünk tart. A belépési adatai..."
-        },
-        "order_confirmed": {
-          "title": "Rendelés visszaigazolása",
-          "subject": "Rendelését (#{orderNumber}) megkaptuk",
-          "content": "Köszönjük a vásárlást! Az anyagok már elérhetőek a panelen."
-        },
-        "login_details": {
-          "title": "Hozzáférési adatok (vásárlás után)",
-          "subject": "Kurzus elérési adatai",
-          "content": "Itt vannak a belépési adatai: E-mail: {email}, Jelszó: {password}"
-        }
-      },
-      "smtp": {
-        "title": "SMTP Konfiguráció / Szolgáltató",
-        "description": "Levélküldő szerver beállításai a rendszerüzenetekhez",
-        "enable_system": "Rendszerküldés Engedélyezése",
-        "enable_desc": "Konfigurált SMTP szerver használata",
-        "host": "SMTP Szerver",
-        "port": "Port"
-      },
-      "variables": "Elérhető változók: {orderNumber}, {email}, {password}, {firstName}, {total}"
-    },
-    "google": {
-      "title": "Google Cloud Integráció",
-      "description": "Google Drive csatlakoztatása anyagok közvetlen importálásához a boltba",
-      "auth": {
-        "title": "Google Hitelesítés",
-        "connect": "Csatlakozás a Google Drive-hoz",
-        "disconnect": "Fiók leválasztása",
-        "status_connected": "Csatlakoztatva a következő fiókhoz: {email}",
-        "status_disconnected": "Nincs aktív kapcsolat",
-        "drive_description": "Connect the 'Edu-Materials' folder from your Google Drive"
-      },
-      "drive": {
-        "title": "Google Drive Tallózó",
-        "import_selected": "Kijelölt fájlok importálása",
-        "refresh": "Lista frissítése",
-        "no_files": "Nem találhatók PDF/ZIP fájlok a meghajtón",
-        "import_success": "Fájlok sikeresen importálva anyagként",
-        "column_name": "Fájlnév",
-        "column_size": "Méret",
-        "column_action": "Művelet",
-        "description": "Importálásra kész PDF és ZIP fájlok tallózása",
-        "button": "Letöltés Google Drive-ról",
-        "connecting": "Csatlakozás...",
-        "picker_title": "Válasszon fájlokat a Google Drive-ról",
-        "import_count": "Kijelölt ({count}) importálása",
-        "toast_success": "{count} fájl importálva a Google Drive-ról"
-      },
-      "config": {
-        "client_id": "Google Client ID",
-        "client_secret": "Google Client Secret",
-        "redirect_uri": "Redirect URI"
-      }
-    },
-    "abandoned": {
-      "title": "Kosár-visszaállítás",
-      "description": "Automatikus emlékeztetők azon ügyfeleknek, akik nem fejezték be a vásárlást",
-      "delay": "Első e-mail késleltetése (óra)",
-      "discount_code": "Kedvezménykód az e-mailben (opcionális)",
-      "enable_auto": "Automatikus visszaállítás engedélyezése",
-      "stats": {
-        "total_recovered": "Visszaszerzett bevétel",
-        "pending_carts": "Félbehagyott kosarak"
-      }
-    },
-    "guardian": {
-      "title": "AI Biztonsági és Technikai Őr",
-      "description": "Intelligens rendszerhibák, jogi és teljesítményfigyelés",
-      "legal_check": "Jogi változások figyelése (EU E-commerce)",
-      "tech_check": "Valós idejű technikai hibafigyelés",
-      "security_check": "Illetéktelen hozzáférési kísérletek elemzése",
-      "alerts": "Kritikus problémák riasztása",
-      "status_good": "A rendszer megfelelően működik",
-      "status_warning": "Potenciális jogi meg nem felelés észlelhető",
-      "last_scan": "Utolsó teljes rendszervizsgálat"
-    },
-    "affiliate": {
-      "title": "Ajánlói és Partner Rendszer",
-      "description": "Változtassa vásárlóit márkanagykövetekké",
-      "commission": "Partner jutalék (%)",
-      "discount": "Ajánlói kedvezmény (%)",
-      "cookie_life": "Cookie élettartama (nap)",
-      "referral_links": "Ajánlói linkek generálása",
-      "total_partners": "Aktív partnerek",
-      "payouts": "Függő kifizetések"
-    },
-    "pricing": {
-      "title": "Vásárlóerő-paritás (PPP)",
-      "description": "Automatikus árigazítás a vásárlóerőhöz 19 országban",
-      "enable_ppp": "Intelligens regionális árazás engedélyezése",
-      "base_currency": "Alap pénznem",
-      "regions": {
-        "western": "Nyugat-Európa (100%-os ár)",
-        "central": "Közép-Európa (85%-os ár)",
-        "eastern": "Kelet-Európa (70%-os ár)",
-        "balkans": "Balkán (60%-os ár)"
-      },
-      "recurring_title": "Subscriptions & Recurring Payments",
-      "recurring_visa_title": "Visa Recurring Payments",
-      "recurring_visa_desc": "Enable automatic card charging for subscription products. Supported via Stripe Billing and PayNow Recurring.",
-      "recurring_frequency": "Standard Frequency",
-      "recurring_monthly": "30 DAYS / MONTHLY",
-      "recurring_grace_period": "Grace Period / Retry",
-      "recurring_retry": "3 DAYS RETRY",
-      "paynow_title": "PayNow Integration",
-      "paynow_access_key": "Access Key",
-      "paynow_signature_key": "Signature Key",
-      "blik_title": "BLIK Support Enabled",
-      "blik_desc": "PayNow allows users to pay with BLIK codes directly on your checkout page."
-    },
-    "taxes": {
-      "title": "Adó- és Számlakezelés",
-      "description": "ÁFA-kulcsok kezelése és automatikus EU-s számlakibocsátás",
-      "eu_vat_moss": "VAT-MOSS / OSS rendszer engedélyezése",
-      "invoice_provider": "Számlázó szolgáltató (pl. Fakturownia, InFakt)",
-      "infakt_api_key": "InFakt API Key",
-      "test_connection": "API kapcsolat tesztelése",
-      "stripe_title": "Stripe Payments",
-      "stripe_publishable": "Stripe Publishable Key",
-      "stripe_secret": "Stripe Secret Key"
-    },
-    "editor": {
-      "placeholder": "Kezdjen el gépelni...",
-      "prompts": {
-        "link": "Adja meg az URL-t:",
-        "image": "Adja meg a kép URL-jét:"
-      },
-      "toolbar": {
-        "bold": "Félkövér",
-        "italic": "Dőlt",
-        "h2": "Címsor 2",
-        "h3": "Címsor 3",
-        "list": "Sima lista",
-        "listOrdered": "Sorszámozott lista",
-        "link": "Link beszúrása",
-        "image": "Kép beszúrása",
-        "quote": "Idézet",
-        "code": "Kódblokk"
-      }
-    }
-  },
-  "adminPanel": {
-    "sidebar": {
-      "title": "Admin Panel",
-      "subtitle": "Creative Studio",
-      "expand": "Kibontás",
-      "collapse": "Összecsukás",
-      "logout": "Kijelentkezés a munkamenetből",
-      "logoutTooltip": "Kijelentkezés",
-      "menu": {
-        "dashboard": "Vezérlőpult",
-        "products": "Termékek",
-        "orders": "Rendelések",
-        "coupons": "Coupons",
-        "materials": "Anyagok",
-        "blog": "Blog",
-        "import": "Import AI",
-        "settings": "Beállítások",
-        "chat": "AI Chat",
-        "home": "Kezdőlap",
-        "role": "Adminisztrátor",
-        "online": "Online",
-        "abandoned": "Abandoned Carts",
-        "offers": "Offer Generator",
-        "workshop": "AI Creative Suite",
-        "landing_builder": "Landing Pages"
-      }
-    },
-    "dashboard": {
-      "title": "Vezérlőpult",
-      "subtitle": "Értékesítési áttekintés és analitika",
-      "periods": {
-        "7days": "7 nap",
-        "30days": "30 nap",
-        "90days": "90 nap",
-        "all": "Mindenkori"
-      },
-      "addProduct": "Termék hozzáadása",
-      "currency": "€",
-      "stats": {
-        "revenue": "Bevétel",
-        "orders": "Rendelések",
-        "customers": "Vásárlók",
-        "avgOrderValue": "Átl. rendelési érték",
-        "vsPrevious": "az előző időszakhoz képest",
-        "inSelectedPeriod": "A kiválasztott időszakban",
-        "uniqueCustomers": "Egyedi vásárlók",
-        "perOrder": "rendelésenként"
-      },
-      "charts": {
-        "weeklyRevenue": "Heti bevétel",
-        "revenueByDay": "Értékesítés naponta",
-        "bestsellersRanking": "Bestseller rangsor",
-        "topSellingProducts": "Legtöbbet eladott termékek",
-        "noSalesData": "Nincs értékesítési adat",
-        "sold": "{count} eladva",
-        "days": {
-          "mon": "Hét",
-          "tue": "Ked",
-          "wed": "Sze",
-          "thu": "Csüt",
-          "fri": "Pén",
-          "sat": "Szo",
-          "sun": "Vas"
-        }
-      },
-      "recentOrders": {
-        "title": "Legutóbbi rendelések",
-        "subtitle": "Legfrissebb tranzakciók",
-        "viewAll": "Összes megtekintése",
-        "noOrders": "Még nincs rendelés",
-        "productCount": "{count} termék",
-        "status": {
-          "completed": "Befejezve",
-          "pending": "Függőben",
-          "processing": "Feldolgozás alatt",
-          "cancelled": "Törölve",
-          "refunded": "Visszatérítve"
-        },
-        "table": {
-          "title": "Legutóbbi rendelések",
-          "viewAll": "Összes megtekintése",
-          "order": "Rendelés",
-          "customer": "Vásárló",
-          "total": "Összesen",
-          "status": "Állapot"
-        }
-      },
-      "aiInsights": {
-        "card": {
-          "monitoring": "Active Market Monitoring",
-          "strategyTitle": "Your growth strategy for {period}",
-          "periodWeek": "next week",
-          "periodMonth": "this month",
-          "description": "We analyzed your last {count} orders. We have 3 specific recommendations that could increase your revenue by approx. 18%.",
-          "generateBtn": "Generate Strategic Report"
-        },
-        "modal": {
-          "title": "AI Growth Report",
-          "subtitle": "Generated for: Administrator • Feb 2024",
-          "revenueChance": "Revenue Chance",
-          "revenueGrowth": "Possible growth in 14 days",
-          "crossSellScore": "Cross-sell Score",
-          "crossSellDesc": "High linking potential",
-          "retentionProj": "Retention Proj.",
-          "retentionDesc": "Loyal returning customers",
-          "recommendedActions": "Recommended Actions",
-          "action1Title": "Email: Abandoned Cart (New template)",
-          "action1Desc": "Customers are abandoning carts for \"Preschool - Autumn Pack\". We suggest adding a 48h timer and 5% discount.",
-          "action2Title": "Bundle: Preschool Combo Pack",
-          "action2Desc": "Combine 3 most popular products into one bundle. Suggested price: $59.99.",
-          "deploy": "Deploy",
-          "create": "Create",
-          "skip": "Skip report",
-          "apply": "Apply Recommendations",
-          "success": "Strategic report has been saved and sent for analysis."
-        },
-        "overlay": {
-          "title": "Processing Big Data...",
-          "subtitle": "\"Analyzing correlations between products and buying behaviors of your customers.\"",
-          "step1": "Clustering users...",
-          "step3": "Generating visualizations..."
-        },
-        "wordwallSync": {
-          "title": "Smart Interactive Sync",
-          "description": "Paste links to your resources (Wordwall, Genially, Canva, YouTube, Google Slides, Quizizz, NotebookLM, Vocaroo) to add them as products.",
-          "placeholder": "https://wordwall.net/...\nhttps://view.genial.ly/...\nhttps://canva.com/design/...\nhttps://youtube.com/watch?v=...\nhttps://quizizz.com/...",
-          "syncBtn": "Start Sync",
-          "syncing": "Syncing...",
-          "success": "Successfully imported {count} new games!",
-          "noNew": "All provided links have already been imported.",
-          "invalid": "No valid educational links (Wordwall/Genially/Canva/YouTube/Slides/etc) detected.",
-          "close": "Close"
-        }
-      },
-      "interactivePreview": {
-        "subtitle": "Live preview of interactive material",
-        "noPreview": "No preview available for this asset",
-        "close": "Close"
-      },
-      "activeAiLogs": {
-        "title": "Active AI Logs",
-        "live": "Live",
-        "imageGenerated": "Image Generated",
-        "socialPostReady": "Social Post Ready",
-        "flashcardCreated": "Flashcard Created",
-        "trendIdentified": "Trend identified",
-        "seoOptimized": "SEO Optimized",
-        "imagePolished": "Image Polished"
-      },
-      "studioQuickAccess": {
-        "title": "Studio Quick Access",
-        "imageStudio": "Image Studio",
-        "generate4k": "Generate 4K Visuals",
-        "socialHub": "Social Hub",
-        "viralCreation": "Viral Post Creation"
-      }
-    },
-    "products": {
-      "title": "Termékek",
-      "subtitle": "Digitális termékeid kezelése",
-      "search": "Termékek keresése...",
-      "importAi": "AI Import",
-      "addProduct": "Termék hozzáadása",
-      "noProducts": "Nem találhatók termékek",
-      "addFirst": "Add hozzá az első terméket",
-      "table": {
-        "product": "Termék",
-        "category": "Kategória",
-        "price": "Ár",
-        "source": "Listázva itt",
-        "status": "Állapot",
-        "actions": "Műveletek"
-      },
-      "status": {
-        "published": "Közzétéve",
-        "draft": "Vázlat"
-      },
-      "actions": {
-        "edit": "Szerkesztés",
-        "viewAccess": "View Product Access",
-        "copyLink": "Gyors fizetési link másolása",
-        "hide": "Elrejtés",
-        "publish": "Közzététel",
-        "delete": "Törlés"
-      },
-      "toasts": {
-        "linkCopied": "Gyors fizetési link másolva:\n{link}",
-        "deleteConfirm": "Biztosan törölni szeretnéd ezt a terméket?"
-      },
-      "categories": {
-        "lesson-plans": "Óravázlatok",
-        "worksheets": "Munkalapok",
-        "flashcards": "Szótanuló kártyák",
-        "games": "Online játékok",
-        "audio": "Audio anyagok",
-        "video": "Video anyagok",
-        "bundles": "Csomagok",
-        "other": "Egyéb"
-      },
-      "source_badges": {
-        "wordpress": "WordPress / Publigo",
-        "tpt": "Teachers Pay Teachers",
-        "ai_optimized": "AI optimalizált"
-      }
-    },
-    "orders": {
-      "title": "Rendelések",
-      "subtitle": "Rendelések és fizetések kezelése",
-      "exportCsv": "CSV exportálása",
-      "stats": {
-        "revenue": "Bevétel (befejezett)",
-        "pending": "Függő fizetés",
-        "today": "Rendelések ma"
-      },
-      "search": "Rendelések keresése...",
-      "statusFilter": "Állapot",
-      "allStatuses": "Összes",
-      "empty": "Nem találhatók rendelések",
-      "table": {
-        "order": "Rendelés",
-        "customer": "Ügyfél",
-        "products": "Termékek",
-        "total": "Összesen",
-        "status": "Állapot",
-        "date": "Dátum"
-      },
-      "status": {
-        "pending": "Függőben",
-        "processing": "Feldolgozás alatt",
-        "completed": "Befejezett",
-        "cancelled": "Törölt",
-        "refunded": "Visszatérített"
-      },
-      "paymentMethods": {
-        "card": "Kártya",
-        "transfer": "Banki átutalás",
-        "blik": "BLIK",
-        "paypal": "PayPal"
-      },
-      "details": {
-        "notFound": "Rendelés nem található",
-        "back": "Vissza a listához",
-        "invoice": "Számla kiállítása",
-        "payment": "Fizetés",
-        "summary": "Összegzés",
-        "sendEmail": "E-mail küldése",
-        "items": "Tételek",
-        "paidAt": "Fizetve: {date}",
-        "discount": "Kedvezmény",
-        "total": "Összesen",
-        "quantity": "Mennyiség"
-      },
-      "paymentStatus": {
-        "paid": "Fizetve",
-        "pending": "Függőben",
-        "failed": "Sikertelen",
-        "refunded": "Visszatérített"
-      },
-      "export_headers": {
-        "order_number": "Rendelésszám",
-        "date": "Dátum",
-        "customer": "Ügyfél",
-        "email": "E-mail",
-        "products": "Termékek",
-        "total": "Összesen",
-        "status": "Állapot"
-      }
-    },
-    "coupons": {
-      "title": "Kuponok",
-      "subtitle": "Kedvezménykódok kezelése",
-      "addCoupon": "Új kupon",
-      "editCoupon": "Kupon szerkesztése",
-      "createCoupon": "Kupon létrehozása",
-      "stats": {
-        "all": "Összes kupon",
-        "active": "Aktív",
-        "usage": "Összes felhasználás"
-      },
-      "form": {
-        "code": "Kuponkód",
-        "generate": "Generálás",
-        "placeholder": "pl. SUMMER2024",
-        "discountType": "Kedvezmény típusa",
-        "percent": "Százalékos (%)",
-        "fixed": "Fix összeg",
-        "discountValue": "Kedvezmény értéke",
-        "usageLimit": "Felhasználási limit",
-        "minOrderValue": "Minimum rendelési érték",
-        "expiresAt": "Lejárati dátum (opcionális)"
-      },
-      "ux": {
-        "show": "Show",
-        "hide": "Hide",
-        "copy": "Copy",
-        "copied": "Copied!",
-        "secure": "Encrypted"
-      },
-      "preview": {
-        "title": "Preview & Accept",
-        "accept": "Accept Changes",
-        "reject": "Discard",
-        "bulk_title": "Review Generated Drafts",
-        "apply_all": "Accept All ({count})",
-        "diff_before": "Before Optimization",
-        "diff_after": "AI Suggestion"
-      },
-      "table": {
-        "code": "Kód",
-        "discount": "Kedvezmény",
-        "usage": "Felhasználás",
-        "expires": "Lejárat",
-        "status": "Állapot"
-      },
-      "toasts": {
-        "deleteConfirm": "Biztosan törölni szeretnéd ezt a kupont?"
-      }
-    },
-    "materials": {
-      "title": "Anyagkezelés",
-      "subtitle": "Fájlok hozzáadása, rendszerezése és termékekhez rendelése.",
-      "deleteSelected": "Törlés ({count})",
-      "assignToProduct": "Hozzárendelés termékhez ({count})",
-      "dragDrop": "Húzza ide a fájlokat",
-      "clickToUpload": "vagy kattintson az alábbi gombra a lemezről való kiválasztáshoz",
-      "selectFiles": "Fájlok kiválasztása",
-      "or": "- VAGY -",
-      "library": {
-        "title": "Fájlkönyvtár ({count})",
-        "description": "Az összes feltöltött anyag listája.",
-        "empty": "Nem találhatók fájlok. Töltsön fel valamit."
-      },
-      "table": {
-        "check": "Kijelölés",
-        "fileName": "Fájlnév",
-        "size": "Méret",
-        "source": "Forrás",
-        "product": "Hozzárendelt termék",
-        "actions": "Műveletek"
-      },
-      "badges": {
-        "upload": "Feltöltés",
-        "drive": "Google Drive",
-        "unassigned": "Nincs hozzárendelve"
-      },
-      "dialog": {
-        "title": "Fájlkezelés",
-        "selectLabel": "Termék kiválasztása",
-        "placeholder": "Válasszon terméket a listából...",
-        "cancel": "Mégse",
-        "save": "Változtatások mentése",
-        "delete": "Fájl törlése"
-      },
-      "toasts": {
-        "uploadSuccess": "{count} fájl feltöltve",
-        "deleted": "Fájl törölve",
-        "deletedSelected": "Kijelölt fájlok törölve",
-        "assigned": "{count} fájl hozzárendelve a termékhez"
-      }
-    },
-    "certificates": {
-      "title": "Tanúsítványok és Vizsgák",
-      "subtitle": "Tanúsítási folyamat kezelése",
-      "stats": {
-        "totalIssued": "Összesen kiállítva",
-        "avgScore": "Átlagos vizsgapontszám"
-      },
-      "tabs": {
-        "templates": "Sablonok",
-        "exams": "Vizsgák",
-        "issued": "Kiállított"
-      },
-      "templates": {
-        "create": "Sablon létrehozása",
-        "preview": "Sablon szerkesztése",
-        "standardTitle": "Standard Diploma (A4)",
-        "standardDesc": "Alapértelmezett sablon nyelvtanfolyamokhoz",
-        "certificateTitle": "Tanúsítvány a kurzus elvégzéséről",
-        "completedCourse": "Elvégzett kurzus: {course}",
-        "aiGenerate": "AI sablongenerálás",
-        "aiDesc": "Írja le a stílust (pl. 'modern', 'gyerekeknek'), és az AI egyedi diploma-dizájnt készít.",
-        "createAi": "Létrehozás AI-val"
-      },
-      "exams": {
-        "create": "Új vizsga",
-        "description": "Hozzon létre egy kérdésbankot, vagy hagyja, hogy az AI generáljon tesztet a kurzus tartalmából.",
-        "createAi": "AI vizsgakészítő"
-      },
-      "issued": {
-        "empty": "Ebben a hónapban nem állítottak ki tanúsítványt."
-      }
-    },
-    "blog": {
-      "title": "Blog",
-      "subtitle": "Blogbejegyzések és SEO kezelése",
-      "newPost": "Új bejegyzés",
-      "searchPlaceholder": "Bejegyzések keresése...",
-      "empty": "Nem találhatók blogbejegyzések",
-      "writeFirst": "Írd meg az első bejegyzésed",
-      "table": {
-        "title": "Cím",
-        "category": "Kategória",
-        "status": "Állapot",
-        "date": "Dátum"
-      },
-      "status": {
-        "published": "Közzétéve",
-        "draft": "Vázlat"
-      },
-      "actions": {
-        "preview": "Előnézet",
-        "delete": "Törlés",
-        "save": "Save",
-        "edit": "Szerkesztés",
-        "hide": "Elrejtés",
-        "publish": "Közzététel"
-      },
-      "categories": {
-        "mega-pack": "Mega Packs",
-        "scenariusze": "Scenarios",
-        "zlobek": "Nursery",
-        "special-lessons": "Special Lessons",
-        "speakbook": "Speakbook",
-        "stories": "Stories",
-        "culture": "Culture",
-        "pory-roku": "Seasons",
-        "teatr": "Theater",
-        "flashcards": "Flashcards",
-        "gry": "Games",
-        "inne": "Egyéb",
-        "metodyka": "Tanítási módszertan",
-        "materialy": "Tananyagok",
-        "technologia": "Technológia az oktatásban",
-        "inspiracje": "Inspiráció és ötletek",
-        "recenzje": "Vélemények",
-        "wydarzenia": "Események"
-      },
-      "toasts": {
-        "deleteConfirm": "Biztosan törölni szeretnéd ezt a bejegyzést?"
-      },
-      "form": {
-        "createTitle": "New Post",
-        "createSubtitle": "Create a new blog post",
-        "editTitle": "Edit Post",
-        "editSubtitle": "Edit existing blog post",
-        "titlePlaceholder": "Post title...",
-        "contentTitle": "Content",
-        "contentPlaceholder": "Start writing post content...",
-        "excerptTitle": "Excerpt",
-        "excerptPlaceholder": "Short description displayed on post list...",
-        "statusTitle": "Status",
-        "categoryTitle": "Category",
-        "categoryPlaceholder": "Select category",
-        "tagsTitle": "Tags",
-        "tagsPlaceholder": "tag1, tag2, tag3",
-        "imageTitle": "Featured Image",
-        "imagePlaceholder": "https://kamila.shor.dev/image.jpg",
-        "seoTitle": "SEO",
-        "metaTitleLabel": "Meta Title",
-        "metaTitlePlaceholder": "Search engine title",
-        "metaDescLabel": "Meta Description",
-        "metaDescPlaceholder": "Search engine description",
-        "charCount": "{count}/{max} characters",
-        "seoPreview": "Google Preview",
-        "generate": "Generate",
-        "save": "Save",
-        "saveChanges": "Save Changes",
-        "saving": "Saving...",
-        "delete": "Delete",
-        "notFound": "Post not found",
-        "backToList": "Back to list",
-        "titleRequired": "Please enter a title first"
-      }
-    },
-    "chat": {
-      "title": "AI Vezérlőközpont",
-      "subtitle": "Csevegés a boltoddal",
-      "welcome": "Üdvözöljük az AI Központban. Miben segíthetek?",
-      "newChat": "Új csevegés",
-      "history": "Előzmények",
-      "placeholder": "Válasszon modellt",
-      "capabilities": {
-        "database": "Adatbázis",
-        "store": "Bolt",
-        "web": "Internet",
-        "files": "Fájlok"
-      },
-      "inputPlaceholder": "Írjon egy üzenetet...",
-      "disclaimer": "Az AI hibázhat. Ellenőrizze a fontos információkat.",
-      "generatedBy": "Generálta: {model}",
-      "mockResponse": "A(z) {model} modell szimulált válasza. Kaptam: \"{content}\". A teljes verzióban itt jönne létre a kapcsolat az API-val (pl. OpenAI, Manus) vagy az adatbázissal.",
-      "mockSessions": {
-        "s1": {
-          "title": "Q1 értékesítési elemzés",
-          "date": "Ma"
-        },
-        "s2": {
-          "title": "Új termékleírások",
-          "date": "Tegnap"
-        },
-        "s3": {
-          "title": "Integráció hibakeresés",
-          "date": "2 napja"
-        }
-      }
-    },
-    "import": {
-      "title": "AI Import",
-      "subtitle": "Termékek importálása külső katalógusból és leírások fejlesztése AI-val",
-      "catalogUrl": "Katalógus URL",
-      "catalogUrlDesc": "Illessze be a termékoldal linkjét (kamilaenglish.com)",
-      "scan": "Termékek szkennelése",
-      "scanning": "Szkennelés...",
-      "enhance": "Fejlesztés AI-val",
-      "enhancing": "Fejlesztés...",
-      "import": "Importálás ({count})",
-      "importing": "Importálás...",
-      "productsFound": "Termékek ({count})",
-      "selectedCount": "{count} kiválasztva",
-      "selectAll": "Mindet kijelöl",
-      "deselectAll": "Kijelölés törlése",
-      "allCategories": "Összes",
-      "openSource": "Nyílt forráskód",
-      "preview": {
-        "testInteractive": "Test Interactive Game",
-        "sourceLink": "Source Link",
-        "selectToPreview": "Select a product to preview",
-        "backToList": "Back to List",
-        "acceptAndCreate": "Accept & Create {count} Drafts"
-      },
-      "configureAi": "Configure API keys in settings before using AI",
-      "selectProducts": "Select products to import",
-      "noAssetsFound": "No valid assets were found. Please ensure you are using public links (e.g. wordwall.net/resource/...) and not your private dashboard.",
-      "privateLink": "Skipped private page: {url}",
-      "errors": {
-        "enterUrl": "Adja meg a katalógus URL-jét",
-        "onlyKamila English": "Csak a kamilaenglish.com termékek támogatottak",
-        "configureAi": "Az AI használata előtt konfigurálja az API kulcsokat a beállításokban",
-        "selectProducts": "Válassza ki az importálandó termékeket"
-      },
-      "success": {
-        "found": "{count} termék található a Kamila English-en!",
-        "enhanced": "A leírásokat az AI továbbfejlesztette!",
-        "imported": "{count} termék importálva!"
-      },
-      "placeholders": {
-        "url": "https://www.sklep.kamilaenglish.com/..."
-      },
-      "categories": {
-        "mega-pack": "Mega csomagok",
-        "scenariusze": "Forgatókönyvek",
-        "zlobek": "Bölcsőde",
-        "special-lessons": "Speciális órák",
-        "speakbook": "Speakbook",
-        "stories": "Történetek",
-        "culture": "Kultúra",
-        "pory-roku": "Évszakok",
-        "teatr": "Színház",
-        "flashcards": "Fiszki",
-        "gry": "Játékok",
-        "inne": "Egyéb"
-      },
-      "enhancedText": {
-        "titlePrefix": "🎯",
-        "bestseller": "✨ BESTSELLER!",
-        "whatYouGet": "📚 Amit kapsz:",
-        "features": {
-          "pdf": "• Nyomtatásra kész PDF anyagok",
-          "teacher": "• Tanári útmutató",
-          "worksheets": "• Munkalapok és gyakorlatok"
-        },
-        "footer": "⭐ Tanárok százai által ellenőrizve!"
-      }
-    },
-    "success": {
-      "found": "Found {count} products from Kamila English!",
-      "enhanced": "Descriptions enhanced by AI!",
-      "imported": "Imported {count} products!"
-    },
-    "placeholders": {
-      "url": "https://www.sklep.kamilaenglish.com/..."
-    },
-    "categories": {
-      "mega-pack": "Mega Packs",
-      "scenariusze": "Scenarios",
-      "zlobek": "Nursery",
-      "special-lessons": "Special Lessons",
-      "speakbook": "Speakbook",
-      "stories": "Stories",
-      "culture": "Culture",
-      "pory-roku": "Seasons",
-      "teatr": "Theater",
-      "flashcards": "Flashcards",
-      "gry": "Games",
-      "inne": "Others"
-    },
-    "footer": "⭐ Trusted by hundreds of teachers!",
-    "item1": "Full access to materials",
-    "item2": "SEO Optimized content",
-    "item3": "Implementation guide for students",
-    "assistant": {
-      "title": "AI Copilot",
-      "status": "Active Intelligence",
-      "welcome": "How can I help you today?",
-      "placeholder": "Ask me anything...",
-      "suggestions": {
-        "generate_visuals": "Generate 4K Visuals",
-        "social_post": "Create Social Post",
-        "avatar_script": "New AI Avatar Script",
-        "seo_optimize": "SEO Optimize Description",
-        "product_cover": "Generate Product Cover",
-        "sync_wordwall": "Sync with Wordwall",
-        "config_workshop": "Configure AI Workshop",
-        "test_api": "Test API Credentials",
-        "connect_canva": "Connect Canva Design",
-        "gen_strategy": "Generate Strategy",
-        "view_trends": "View Trends",
-        "open_workshop": "Open Workshop"
-      },
-      "responses": {
-        "processing": "I'm processing your request. As your AI Copilot, I can help you manage products, generate creative assets, and optimize your store.",
-        "products_context": "You currently have {count} products in your store. I can help you generate descriptions or images for them in the AI Workshop.",
-        "product_example": "For example, I noticed \"{title}\". Would you like to optimize it?",
-        "workshop_info": "The AI Workshop is where you can generate images, videos, and social media posts. You can find it in the 'Workshop' tab of Settings or the dedicated Studio page.",
-        "wordwall_info": "To sync with Wordwall, go to the Products page and use the 'Interactive Import' button. I can also help you scrape metadata from any educational URL!",
-        "hello": "Hello! I'm your AI Copilot. I'm currently aware of {count} products and your store settings. How can I assist you today?"
-      }
-    },
-    "offers": {
-      "title": "AI Offer Generator",
-      "subtitle": "Create high-converting offers in seconds.",
-      "beta": "Beta Growth Suite",
-      "parameters": {
-        "title": "Campaign Parameters",
-        "description": "Define the goal of your offer",
-        "promotion_type": "Promotion Type",
-        "occasional": "Occasional",
-        "evergreen": "Evergreen",
-        "product": "Product / Service",
-        "product_placeholder": "e.g. Lesson Plan Bundle A1-C1",
-        "benefit": "Main Benefit",
-        "benefit_placeholder": "What will the customer gain?",
-        "discount": "Discount (%)",
-        "generate": "Generate AI Offer",
-        "analyzing": "Analyzing market..."
-      },
-      "preview": {
-        "ai_project": "AI PROJECT",
-        "effectiveness": "Effectiveness: {score}%",
-        "title": "Special Early Bird Offer",
-        "subtitle": "Review the generated campaign before publishing",
-        "ad_copy_label": "Ad Slogan",
-        "conversion_label": "Conversion",
-        "vs_avg": "+{diff}% vs avg",
-        "discount_code_label": "Your discount code",
-        "copied": "Copied",
-        "copy": "Copy",
-        "reject": "Reject and change parameters",
-        "accept": "Accept and Publish Offer"
-      },
-      "loading": {
-        "title": "AI Magic in progress...",
-        "description": "\"Analyzing market trends and optimizing sales psychology for your products.\"",
-        "progress_label": "Competitor analysis..."
-      },
-      "toasts": {
-        "copied": "Discount code copied!",
-        "ready": "Offer ready for review!"
-      }
-    },
-    "landingBuilder": {
-      "title": "Landing Page Builder",
-      "draftVersion": "Draft Version: {name}",
-      "desktop": "Desktop",
-      "mobile": "Mobile",
-      "preview": "Preview",
-      "save": "Save changes",
-      "saving": "Saving...",
-      "elements": "Page Elements",
-      "text": "Text",
-      "image": "Image",
-      "button": "Button",
-      "aiBlock": "AI Block",
-      "canvas": "Canvas (Layers)",
-      "hero": "Hero Section",
-      "features": "Advantages & Benefits",
-      "pricing": "Pricing Section",
-      "aiMagic": {
-        "title": "Ready for magic?",
-        "desc": "Use AI to automatically match copy and colors to your product.",
-        "optimize": "Optimize with AI"
-      },
-      "mock": {
-        "newCourse": "New Course",
-        "heroTitle": "Start teaching the language {joy}",
-        "joy": "with joy",
-        "heroDesc": "Ready-made scenarios your students will love. Zero stress, 100% results.",
-        "buyNow": "Buy now and start teaching",
-        "learnMore": "Learn more",
-        "addImage": "Add main image (Drag & Drop)"
-      },
-      "optimization": {
-        "title": "AI Landing Optimization",
-        "desc": "We detected {count} areas for improvement to increase conversion by approx. {percent}%.",
-        "current": "Current Version",
-        "aiSuggestion": "AI Suggestion (Improved conversion)",
-        "recommendation": "RECOMMENDATION",
-        "skip": "Skip changes",
-        "apply": "Apply optimization",
-        "success": "AI changes have been applied to the project!",
-        "processing": "Working on the project...",
-        "processingDesc": "\"Scanning your copy for benefit language and analyzing market heatmaps.\"",
-        "analysingHeaders": "Analyzing headers...",
-        "pickingColors": "Choosing color palette...",
-        "renderingPreview": "Rendering preview...",
-        "paletteTitle": "Improved Color Palette (Ocean Night)",
-        "paletteDesc": "We will change the accents to a more professional navy and energetic blue.",
-        "suggestionTitle": "Stop wasting hours on preparation. Choose ready-made solutions.",
-        "suggestionDesc": "Join 500+ teachers who reclaimed 10 hours a week. We guarantee a smile on every student's face.",
-        "suggestionButton": "Claim your time and start now"
-      },
-      "toasts": {
-        "saved": "Landing page saved successfully!"
-      }
     },
     "integrations": {
-      "title": "Oktatási BaseLinker",
-      "subtitle": "Globális anyagértékesítés és AI automatizálás.",
-      "loading": "Fordítások betöltése...",
-      "addStore": "Bolt hozzáadása",
-      "sync_status": "Szinkronizálás: {date}",
-      "today": "Ma",
-      "tabs": {
-        "sync": "Raktár és Szinkronizálás",
-        "agent": "Publikációs ágens",
-        "settings": "Marketplace beállítások"
-      },
-      "marketplaces": {
-        "groups": {
-          "poland": "Lengyelország",
-          "usa": "USA",
-          "dach": "Németország (DACH)",
-          "uk": "Egyesült Királyság",
-          "fr_es": "Franciaország/Spanyolország"
+        "title": "Educational BaseLinker",
+        "subtitle": "Global materials sales and AI automation.",
+        "loading": "Loading translations...",
+        "addStore": "Add store",
+        "sync_status": "Sync: {date}",
+        "today": "Today",
+        "tabs": {
+            "sync": "Warehouse & Sync",
+            "agent": "Publication Agent",
+            "settings": "Marketplace Settings"
         },
-        "names": {
-          "wp": "WooCommerce / Publigo",
-          "wp_full": "WordPress / Publigo",
-          "tpt": "Teachers Pay Teachers",
-          "etsy": "Etsy Education",
-          "eduki": "Eduki (Németország)",
-          "tes": "TES (UK)",
-          "mieux": "MieuxEnseigner (Franciaország/Spanyolország)"
+        "marketplaces": {
+            "groups": {
+                "poland": "Poland",
+                "usa": "USA",
+                "dach": "Germany (DACH)",
+                "uk": "UK",
+                "fr_es": "France/Spain"
+            },
+            "names": {
+                "wp": "WooCommerce / Publigo",
+                "wp_full": "WordPress / Publigo",
+                "tpt": "Teachers Pay Teachers",
+                "etsy": "Etsy Education",
+                "eduki": "Eduki (Germany)",
+                "tes": "TES (UK)",
+                "mieux": "MieuxEnseigner (France/Spain)"
+            }
+        },
+        "inventory": {
+            "title": "Global Materials Inventory",
+            "badge": "Central Warehouse",
+            "description": "Manage source files and their presence in different markets.",
+            "source": "Source: kamilaenglish.com",
+            "allFiles": "All PDFs, Games and Audio in one place",
+            "updateBtn": "Update Inventory",
+            "syncBtn": "Sync Inventory",
+            "progress": "Sync progress",
+            "log": "System Log",
+            "waiting": "Waiting for start...",
+            "logs": {
+                "init": "Initializing connection with external systems...",
+                "auth": "Authorizing Publigo (wp-idea) & WooCommerce...",
+                "fetching": "Fetching product list (Multi-Channel Sourcing)...",
+                "syncing": "Syncing stock levels and digital files...",
+                "complete": "Sync complete. Detected {count} new materials.",
+                "agent_init": "Initializing environment for {mkt}...",
+                "agent_login": "Logging into seller panel...",
+                "agent_fill": "Filling form: {title}...",
+                "agent_optimize": "Optimizing SEO and uploading files...",
+                "agent_done": "Ready! Product is waiting for approval."
+            },
+            "toasts": {
+                "sync_success": "Warehouse updated successfully.",
+                "analysis_done": "AI Analysis complete. Suggested data is ready.",
+                "no_tokens": "Insufficient tokens. Top up your account.",
+                "tokens_spent": "{count} tokens deducted for AI operation.",
+                "test_woo": "Testing WooCommerce connection...",
+                "woo_success": "Connected successfully to kamilaenglish.com (API v3)",
+                "test_manus": "Verifying Manus AI license...",
+                "manus_success": "License active. Agent ready for work.",
+                "settings_saved": "Settings saved locally.",
+                "new_channel": "Opening new sales channel configurator...",
+                "edit_schedule": "Schedule editing available in system settings.",
+                "importing": "Importing new products..."
+            },
+            "stats": {
+                "products_short": "prod."
+            }
+        },
+        "schedule": {
+            "title": "Schedule",
+            "daily02": "Daily at 02:00",
+            "active": "Active",
+            "disabled": "Disabled",
+            "checkOnlyChanges": "Check only changes",
+            "changeCron": "Change cron settings"
+        },
+        "aiTip": {
+            "title": "AI Tip",
+            "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
+            "importBtn": "Import now"
+        },
+        "agent": {
+            "catalogTitle": "Product Catalog",
+            "ready": "Ready",
+            "emptyState": {
+                "title": "Select product and target market",
+                "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
+            },
+            "selectMarket": "Select target market",
+            "launchBtn": "Launch Agent",
+            "launchAdmin": "Launch Agent (Admin)",
+            "launchPoints": "Launch for {count} pts",
+            "working": "Agent Working...",
+            "manusMode": "Manus Mode: Active",
+            "marketPrefix": "EnglishLearning: ",
+            "yourBalance": "Your balance",
+            "analysisTitle": "AI Analysis for {market}",
+            "regionalOptimization": "Regional optimization",
+            "suggestedTitle": "Suggested Title (SEO Local)",
+            "suggestedPrice": "Price (PPP Conversion)",
+            "sellingProb": "Selling Probability",
+            "veryHigh": "VERY HIGH",
+            "success": {
+                "title": "Task Completed!",
+                "description": "AI Agent successfully visited {market} and published your product.",
+                "viewLogs": "VIEW SESSION LOGS"
+            },
+            "toasts": {
+                "session_manager": "Opening session manager...",
+                "proxy_success": "Proxy: {ip} ({location}) OK",
+                "report_title": "Agent Report",
+                "report_desc": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}"
+            },
+            "stats": {
+                "points": "pts"
+            },
+            "mockAnalysis": {
+                "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
+                "suggestedPrice": "$12.99",
+                "subject": "English Language Arts",
+                "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
+                "description": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!"
+            },
+            "idle": {
+                "title": "In standby",
+                "description": "Run agent to start automation process on platform {market}."
+            }
+        },
+        "settings": {
+            "title": "Multi-Channel Connections",
+            "description": "Configure access data for external stores.",
+            "saveAll": "Save all",
+            "lastSaved": "Last saved: {time}",
+            "woo": {
+                "title": "WooCommerce / WordPress Site",
+                "url": "Store URL (REST API)",
+                "key": "Consumer Key",
+                "secret": "Consumer Secret",
+                "connected": "Connected",
+                "autoSync": "AUTO-SYNC ON",
+                "test": "Test"
+            },
+            "manus": {
+                "title": "Manus AI Session",
+                "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
+                "instance": "Agent API Instance",
+                "test": "Test Manus",
+                "manage": "Manage Session",
+                "proxy": "Test Proxy"
+            },
+            "mailerlite": {
+                "title": "MailerLite Integration",
+                "api_key": "MailerLite API Key",
+                "placeholder": "ml_...",
+                "groups": "Subscriber Group ID",
+                "test": "Test Connection"
+            },
+            "manychat": {
+                "title": "ManyChat Automation",
+                "api_key": "ManyChat API Key",
+                "placeholder": "mc_...",
+                "automation_id": "Default Flow ID",
+                "test": "Test Automation"
+            }
         }
-      },
-      "inventory": {
-        "title": "Globális Anyagleltár",
-        "badge": "Központi Raktár",
-        "description": "Forrásfájlok és jelenlétük kezelése a különböző piacokon.",
-        "source": "Forrás: kamilaenglish.com",
-        "allFiles": "Minden PDF, játék és audió egy helyen",
-        "updateBtn": "Leltár frissítése",
-        "syncBtn": "Leltár szinkronizálása",
-        "progress": "Szinkronizálási folyamat",
-        "log": "Rendszernapló",
-        "waiting": "Várakozás az indításra...",
-        "logs": {
-          "init": "Csatlakozás inicializálása a külső rendszerekhez...",
-          "auth": "Publigo (wp-idea) és WooCommerce hitelesítése...",
-          "fetching": "Terméklista lekérése (Multi-Channel Sourcing)...",
-          "syncing": "Készletszintek és digitális fájlok szinkronizálása...",
-          "complete": "Szinkronizálás kész. {count} új anyag észlelve.",
-          "agent_init": "Környezet inicializálása a(z) {mkt} részére...",
-          "agent_login": "Bejelentkezés az eladói panelbe...",
-          "agent_fill": "Űrlap kitöltése: {title}...",
-          "agent_optimize": "SEO optimalizálás és fájlok feltöltése...",
-          "agent_done": "Kész! A termék jóváhagyásra vár."
+    },
+    "abandonedHub": {
+        "title": "Abandoned Cart Hub",
+        "subtitle": "Recover lost sales and manage leads",
+        "table": {
+            "customer": "Customer",
+            "cart": "Cart Items",
+            "value": "Value",
+            "lastActive": "Last Active",
+            "actions": "Actions"
         },
-        "toasts": {
-          "sync_success": "A raktár sikeresen frissítve.",
-          "analysis_done": "AI elemzés kész. A javasolt adatok rendelkezésre állnak.",
-          "no_tokens": "Nincs elég token. Töltse fel fiókját.",
-          "tokens_spent": "{count} token levonva az AI műveletért.",
-          "test_woo": "WooCommerce kapcsolat tesztelése...",
-          "woo_success": "Sikeres csatlakozás a kamilaenglish.com-hoz (API v3)",
-          "test_manus": "Manus AI licenc ellenőrzése...",
-          "manus_success": "Licenc aktív. Az ágens munkára kész.",
-          "settings_saved": "Beállítások helyileg mentve.",
-          "new_channel": "Új értékesítési csatorna konfigurátorának megnyitása...",
-          "edit_schedule": "Az ütemezés szerkesztése elérhető a rendszerbeállításokban.",
-          "importing": "Új termékek importálása..."
+        "actions": {
+            "sendReminder": "Send Reminder",
+            "recoveryLink": "Copy Recovery Link",
+            "delete": "Remove lead"
         },
-        "stats": {
-          "products_short": "term."
+        "status": {
+            "contacted": "Contacted",
+            "pending": "Pending",
+            "recovered": "Recovered"
+        },
+        "notifications": {
+            "reminderSent": "Recovery email simulation sent to {email}",
+            "linkCopied": "Recovery link copied with discount code!"
         }
-      },
-      "schedule": {
-        "title": "Ütemezés",
-        "daily02": "Naponta 02:00-kor",
-        "active": "Aktív",
-        "disabled": "Kikapcsolva",
-        "checkOnlyChanges": "Csak a változások ellenőrzése",
-        "changeCron": "Cron beállítások módosítása"
-      },
-      "aiTip": {
-        "title": "AI Tipp",
-        "description": "{count} új terméket találtunk a WordPress-en, amely nincs meg ebben a boltban. Szeretné importálni őket?",
-        "importBtn": "Importálás most"
-      },
-      "agent": {
-        "catalogTitle": "Termékkatalógus",
-        "ready": "Kész",
-        "emptyState": {
-          "title": "Válasszon terméket és célpiacot",
-          "description": "A Manus AI ágens elvégzi a munkát Ön helyett – bejelentkezik, kitölti az adatokat és közzéteszi a terméket a kiválasztott platformon."
-        },
-        "selectMarket": "Válasszon célpiacot",
-        "launchBtn": "Ágens indítása",
-        "launchAdmin": "Ágens indítása (Admin)",
-        "launchPoints": "Indítás {count} pontért",
-        "working": "Az ágens dolgozik...",
-        "manusMode": "Manus mód: Aktív",
-        "marketPrefix": "EnglishLearning: ",
-        "yourBalance": "Egyenleged",
-        "analysisTitle": "AI elemzés a következőhöz: {market}",
-        "regionalOptimization": "Regionális optimalizálás",
-        "suggestedTitle": "Javasolt cím (Helyi SEO)",
-        "suggestedPrice": "Ár (PPP konverzió)",
-        "sellingProb": "Eladási valószínűség",
-        "veryHigh": "NAGYON MAGAS",
-        "success": {
-          "title": "Feladat befejezve!",
-          "description": "Az AI ágens sikeresen meglátogatta a(z) {market} piacot és közzétette a termékét.",
-          "viewLogs": "SZEZONNAPLÓK MEGTEKINTÉSE"
-        },
-        "toasts": {
-          "session_manager": "Munkamenet-kezelő megnyitása...",
-          "proxy_success": "Proxy: {ip} ({location}) OK",
-          "report_title": "Ügynök jelentés",
-          "report_desc": "Bejelentkezve: OK, Űrlap: Kitöltve, Képek: Feltöltve, SEO: Optimalizálva. Összes idő: {time}"
-        },
-        "stats": {
-          "points": "pont"
-        },
-        "mockAnalysis": {
-          "title": "AI Elemzés",
-          "optimizedTitleSuffix": "Átfogó tananyag tanároknak",
-          "suggestedPrice": "12,99 €",
-          "subject": "Angol nyelv",
-          "seoTags": "otthonoktatás, munkalapok, szókincs, szótanuló kártyák, tanári források",
-          "description": "Engedje szabadjára osztályterme potenciálját ezzel a prémium {title} forrással. \n\nPedagógusok által, pedagógusoknak tervezve, ez a forrás tartalmazza:\n- Teljes PDF forgatókönyvek\n- Nyomtatásra kész feladatlapok\n- Interaktív vizuális segédeszközök.\n\nIdeális online és tantermi órákhoz egyaránt!"
-        },
-        "idle": {
-          "title": "Készenlétben",
-          "description": "Indítsa el az ágenst az automatizálási folyamat megkezdéséhez a(z) {market} platformon."
-        }
-      },
-      "settings": {
-        "title": "Multi-Channel kapcsolatok",
-        "description": "Külső boltok hozzáférési adatainak konfigurálása.",
-        "saveAll": "Mindet ment",
-        "lastSaved": "Utolsó mentés: {time}",
-        "woo": {
-          "title": "WooCommerce / WordPress oldal",
-          "url": "Bolt URL (REST API)",
-          "key": "Consumer Key",
-          "secret": "Consumer Secret",
-          "connected": "Csatlakoztatva",
-          "autoSync": "AUTO-SZINKRONIZÁLÁS BE",
-          "test": "Teszt"
-        },
-        "manus": {
-          "title": "Manus AI munkamenet",
-          "description": "Az ágens a \"Browser Operator Mode\"-ot használja, bejelentkezve a fiókjaiba. Töltse fel a munkamenet sütiket (JSON) a 2FA problémák elkerülése érdekében.",
-          "instance": "Ágens API példány",
-          "test": "Manus tesztelése",
-          "manage": "Munkamenet kezelése",
-          "proxy": "Proxy tesztelése"
-        }
-      }
     }
-  },
-  "logs": {
-    "init": "🚀 Initializing AI Scraper agent...",
-    "connect": "🔍 Connecting to API session...",
-    "extract": "🧩 Extracting mechanics and metadata...",
-    "images": "🖼️ Generating preview thumbnails...",
-    "seo": "✍️ Crafting SEO-optimized descriptions...",
-    "pricing": "💰 Calculating regional pricing...",
-    "finalize": "✨ Finalizing product drafts..."
-  },
-  "interactive": {
-    "title": "Interactive Content",
-    "subtitle": "Import and optimize Games with AI",
-    "placeholder": "Paste links (one per line)...",
-    "found": "Found {count} interactive items!",
-    "generate": "Generate drafts",
-    "createDrafts": "Accept and create drafts",
-    "success": "Successfully imported {count} products!",
-    "preview_title": "AI Draft Preview",
-    "preview_desc": "Review generated products and test interactive content.",
-    "logs": {
-      "launching": "🚀 Launching real-time scraping agent...",
-      "analyzing": "🔍 Analyzing: {url}...",
-      "private": "⚠️ Link {url} appears to be a private collection. Skipping - please use individual game links.",
-      "extracted": "✅ Extracted: {title}",
-      "dropped": "❌ Connection dropped for: {url}",
-      "complete": "Scraping complete! Successfully extracted metadata for {count} assets."
-    }
-  },
-  "integrations": {
-    "title": "Educational BaseLinker",
-    "subtitle": "Global materials sales and AI automation.",
-    "loading": "Loading translations...",
-    "addStore": "Add store",
-    "sync_status": "Sync: {date}",
-    "today": "Today",
-    "tabs": {
-      "sync": "Warehouse & Sync",
-      "agent": "Publication Agent",
-      "settings": "Marketplace Settings"
-    },
-    "marketplaces": {
-      "groups": {
-        "poland": "Poland",
-        "usa": "USA",
-        "dach": "Germany (DACH)",
-        "uk": "UK",
-        "fr_es": "France/Spain"
-      },
-      "names": {
-        "wp": "WooCommerce / Publigo",
-        "wp_full": "WordPress / Publigo",
-        "tpt": "Teachers Pay Teachers",
-        "etsy": "Etsy Education",
-        "eduki": "Eduki (Germany)",
-        "tes": "TES (UK)",
-        "mieux": "MieuxEnseigner (France/Spain)"
-      }
-    },
-    "inventory": {
-      "title": "Global Materials Inventory",
-      "badge": "Central Warehouse",
-      "description": "Manage source files and their presence in different markets.",
-      "source": "Source: kamilaenglish.com",
-      "allFiles": "All PDFs, Games and Audio in one place",
-      "updateBtn": "Update Inventory",
-      "syncBtn": "Sync Inventory",
-      "progress": "Sync progress",
-      "log": "System Log",
-      "waiting": "Waiting for start...",
-      "logs": {
-        "init": "Initializing connection with external systems...",
-        "auth": "Authorizing Publigo (wp-idea) & WooCommerce...",
-        "fetching": "Fetching product list (Multi-Channel Sourcing)...",
-        "syncing": "Syncing stock levels and digital files...",
-        "complete": "Sync complete. Detected {count} new materials.",
-        "agent_init": "Initializing environment for {mkt}...",
-        "agent_login": "Logging into seller panel...",
-        "agent_fill": "Filling form: {title}...",
-        "agent_optimize": "Optimizing SEO and uploading files...",
-        "agent_done": "Ready! Product is waiting for approval."
-      },
-      "toasts": {
-        "sync_success": "Warehouse updated successfully.",
-        "analysis_done": "AI Analysis complete. Suggested data is ready.",
-        "no_tokens": "Insufficient tokens. Top up your account.",
-        "tokens_spent": "{count} tokens deducted for AI operation.",
-        "test_woo": "Testing WooCommerce connection...",
-        "woo_success": "Connected successfully to kamilaenglish.com (API v3)",
-        "test_manus": "Verifying Manus AI license...",
-        "manus_success": "License active. Agent ready for work.",
-        "settings_saved": "Settings saved locally.",
-        "new_channel": "Opening new sales channel configurator...",
-        "edit_schedule": "Schedule editing available in system settings.",
-        "importing": "Importing new products..."
-      },
-      "stats": {
-        "products_short": "prod."
-      }
-    },
-    "schedule": {
-      "title": "Schedule",
-      "daily02": "Daily at 02:00",
-      "active": "Active",
-      "disabled": "Disabled",
-      "checkOnlyChanges": "Check only changes",
-      "changeCron": "Change cron settings"
-    },
-    "aiTip": {
-      "title": "AI Tip",
-      "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
-      "importBtn": "Import now"
-    },
-    "agent": {
-      "catalogTitle": "Product Catalog",
-      "ready": "Ready",
-      "emptyState": {
-        "title": "Select product and target market",
-        "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
-      },
-      "selectMarket": "Select target market",
-      "launchBtn": "Launch Agent",
-      "launchAdmin": "Launch Agent (Admin)",
-      "launchPoints": "Launch for {count} pts",
-      "working": "Agent Working...",
-      "manusMode": "Manus Mode: Active",
-      "marketPrefix": "EnglishLearning: ",
-      "yourBalance": "Your balance",
-      "analysisTitle": "AI Analysis for {market}",
-      "regionalOptimization": "Regional optimization",
-      "suggestedTitle": "Suggested Title (SEO Local)",
-      "suggestedPrice": "Price (PPP Conversion)",
-      "sellingProb": "Selling Probability",
-      "veryHigh": "VERY HIGH",
-      "success": {
-        "title": "Task Completed!",
-        "description": "AI Agent successfully visited {market} and published your product.",
-        "viewLogs": "VIEW SESSION LOGS"
-      },
-      "toasts": {
-        "session_manager": "Opening session manager...",
-        "proxy_success": "Proxy: {ip} ({location}) OK",
-        "report_title": "Agent Report",
-        "report_desc": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}"
-      },
-      "stats": {
-        "points": "pts"
-      },
-      "mockAnalysis": {
-        "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
-        "suggestedPrice": "$12.99",
-        "subject": "English Language Arts",
-        "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
-        "description": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!"
-      },
-      "idle": {
-        "title": "In standby",
-        "description": "Run agent to start automation process on platform {market}."
-      }
-    },
-    "settings": {
-      "title": "Multi-Channel Connections",
-      "description": "Configure access data for external stores.",
-      "saveAll": "Save all",
-      "lastSaved": "Last saved: {time}",
-      "woo": {
-        "title": "WooCommerce / WordPress Site",
-        "url": "Store URL (REST API)",
-        "key": "Consumer Key",
-        "secret": "Consumer Secret",
-        "connected": "Connected",
-        "autoSync": "AUTO-SYNC ON",
-        "test": "Test"
-      },
-      "manus": {
-        "title": "Manus AI Session",
-        "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
-        "instance": "Agent API Instance",
-        "test": "Test Manus",
-        "manage": "Manage Session",
-        "proxy": "Test Proxy"
-      },
-      "mailerlite": {
-        "title": "MailerLite Integration",
-        "api_key": "MailerLite API Key",
-        "placeholder": "ml_...",
-        "groups": "Subscriber Group ID",
-        "test": "Test Connection"
-      },
-      "manychat": {
-        "title": "ManyChat Automation",
-        "api_key": "ManyChat API Key",
-        "placeholder": "mc_...",
-        "automation_id": "Default Flow ID",
-        "test": "Test Automation"
-      }
-    }
-  },
-  "abandonedHub": {
-    "title": "Abandoned Cart Hub",
-    "subtitle": "Recover lost sales and manage leads",
-    "table": {
-      "customer": "Customer",
-      "cart": "Cart Items",
-      "value": "Value",
-      "lastActive": "Last Active",
-      "actions": "Actions"
-    },
-    "actions": {
-      "sendReminder": "Send Reminder",
-      "recoveryLink": "Copy Recovery Link",
-      "delete": "Remove lead"
-    },
-    "status": {
-      "contacted": "Contacted",
-      "pending": "Pending",
-      "recovered": "Recovered"
-    },
-    "notifications": {
-      "reminderSent": "Recovery email simulation sent to {email}",
-      "linkCopied": "Recovery link copied with discount code!"
-    }
-  }
 }

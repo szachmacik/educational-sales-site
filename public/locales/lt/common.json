@@ -1,460 +1,465 @@
 {
-  "seo": {
-    "title": "Mokymo priemonės anglų kalbos mokytojams | Kamila Łobko-Koziej",
-    "description": "Kūrybiškos mokymo priemonės, pamokų planai, metiniai projektai ir paruošti paketai anglų kalbos mokytojams.",
-    "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
-  },
-  "nav": {
-    "products": "Produktai",
-    "materialy": "Priemonės",
-    "blog": "Tinklaraštis",
-    "contact": "Kontaktai",
-    "login": "Prisijungti",
-    "dashboard": "Skydelis",
-    "adminPanel": "Admin skydelis",
-    "verify": "Patvirtinimas"
-  },
-  "brand": {
-    "educationalMaterials": "Mokymo priemonės",
-    "byKamila": "Kamila Łobko-Koziej"
-  },
-  "hero": {
-    "badge": "Priemonės mokytojams",
-    "title": "Mokykite anglų kalbos su aistra ir lengvumu",
-    "subtitle": "Kūrybiškos mokymo priemonės, kurios pakeis jūsų pamokas. Sutaupykite laiko pasiruošimui ir kiekvieną dieną įkvėpkite savo mokinius.",
-    "cta_main": "Naršyti priemones",
-    "cta_secondary": "Apie autorę",
-    "demoText": "Žiūrėti skydelio demo:",
-    "teacherProfile": "Mokytojo profilis",
-    "studentProfile": "Mokinio profilis"
-  },
-  "footer": {
-    "rights": "Visos teisės saugomos.",
-    "description": "Originalios, kūrybiškos mokymo priemonės anglų kalbos mokytojams. Įsikvėpkite!",
-    "groups": {
-      "shop": "Parduotuvė",
-      "info": "Informacija",
-      "help": "Pagalba"
+    "seo": {
+        "title": "Mokymo priemonės anglų kalbos mokytojams | Kamila Łobko-Koziej",
+        "description": "Kūrybiškos mokymo priemonės, pamokų planai, metiniai projektai ir paruošti paketai anglų kalbos mokytojams.",
+        "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
     },
-    "links": {
-      "catalog": "Katalogas",
-      "materials": "Mokymo priemonės",
-      "projects": "Metiniai projektai",
-      "scenarios": "Pamokų planai",
-      "packs": "Teminiai paketai",
-      "about": "Apie autorę",
-      "contact": "Kontaktai",
-      "privacy": "Privatumo politika",
-      "terms": "Paslaugų teikimo sąlygos",
-      "howToBuy": "Kaip pirkti?",
-      "faq": "DUK",
-      "returns": "Grąžinimai",
-      "account": "Mano paskyra",
-      "admin": "Mokytojo skydelis (Admin)"
+    "nav": {
+        "products": "Produktai",
+        "materialy": "Priemonės",
+        "blog": "Tinklaraštis",
+        "contact": "Kontaktai",
+        "login": "Prisijungti",
+        "dashboard": "Skydelis",
+        "adminPanel": "Admin skydelis",
+        "verify": "Patvirtinimas"
+    },
+    "brand": {
+        "educationalMaterials": "Mokymo priemonės",
+        "byKamila": "Kamila Łobko-Koziej"
+    },
+    "hero": {
+        "badge": "Priemonės mokytojams",
+        "title": "Mokykite anglų kalbos su aistra ir lengvumu",
+        "subtitle": "Kūrybiškos mokymo priemonės, kurios pakeis jūsų pamokas. Sutaupykite laiko pasiruošimui ir kiekvieną dieną įkvėpkite savo mokinius.",
+        "cta_main": "Naršyti priemones",
+        "cta_secondary": "Apie autorę",
+        "demoText": "Žiūrėti skydelio demo:",
+        "teacherProfile": "Mokytojo profilis",
+        "studentProfile": "Mokinio profilis"
+    },
+    "footer": {
+        "rights": "Visos teisės saugomos.",
+        "description": "Originalios, kūrybiškos mokymo priemonės anglų kalbos mokytojams. Įsikvėpkite!",
+        "groups": {
+            "shop": "Parduotuvė",
+            "info": "Informacija",
+            "help": "Pagalba"
+        },
+        "links": {
+            "catalog": "Katalogas",
+            "materials": "Mokymo priemonės",
+            "projects": "Metiniai projektai",
+            "scenarios": "Pamokų planai",
+            "packs": "Teminiai paketai",
+            "about": "Apie autorę",
+            "contact": "Kontaktai",
+            "privacy": "Privatumo politika",
+            "terms": "Paslaugų teikimo sąlygos",
+            "howToBuy": "Kaip pirkti?",
+            "faq": "DUK",
+            "returns": "Grąžinimai",
+            "account": "Mano paskyra",
+            "admin": "Mokytojo skydelis (Admin)"
+        }
+    },
+    "auth": {
+        "logout": "Atsijungti",
+        "myCourses": "Mano kursai",
+        "studentPanel": "Mokinio skydelis",
+        "roleAdmin": "Administrator",
+        "roleTeacher": "Teacher",
+        "roleStudent": "Student"
+    },
+    "cart": {
+        "empty": "Jūsų krepšelis tuščias",
+        "emptySub": "Pridėkite produktų, kad tęstumėte apsipirkimą",
+        "browse": "Naršyti produktus",
+        "reserved": "Jūsų krepšelis rezervuotas:",
+        "header": "Krepšelis ({count})",
+        "remove": "Pašalinti",
+        "specialOffer": "SPECIALUS PASIŪLYMAS",
+        "orderBump": "Pridėti el. laiško šablonų paketą (+29 €)",
+        "orderBumpDesc": "20 paruoštų naudoti šablonų bendravimui su tėvais. Sutaupykite 70%!",
+        "summary": "Suvestinė",
+        "couponPlaceholder": "Nuolaidos kodas",
+        "apply": "Taikyti",
+        "couponHeader": "Kuponas:",
+        "products": "Produktai",
+        "discount": "Nuolaida",
+        "total": "Iš viso",
+        "checkout": "Tęsti apmokėjimą",
+        "secure": "Saugus apmokėjimas",
+        "couponInvalid": "Neteisingas nuolaidos kodas",
+        "couponInactive": "Šis kuponas nebėra aktyvus",
+        "couponExpired": "Šio kupono galiojimo laikas pasibaigė",
+        "couponLimitReached": "Šis kuponas pasiekė savo naudojimo limitą",
+        "couponMinOrder": "Minimali užsakymo vertė: {minOrderValue} {currency}",
+        "couponAppliedPercent": "Nuolaida {percent}% pritaikyta!",
+        "couponAppliedFixed": "Nuolaida {amount} {currency} pritaikyta!",
+        "currencySymbol": "€"
+    },
+    "socialProof": {
+        "header": "Facebook bendruomenė",
+        "sub": "Sekite naujienas ir prisijunkite prie diskusijos!",
+        "cta": "Peržiūrėkite mūsų profilį, pilną įkvėpimo",
+        "madeWithLove": "Sukurta su meile",
+        "polishQuality": "ir lenkiška kokybe"
+    },
+    "newsletter": {
+        "header": "Būkite informuoti!",
+        "sub": "Prenumeruokite mūsų naujienlaiškį ir gaukite informaciją apie naujas priemones, akcijas ir išskirtines nuolaidas.",
+        "placeholder": "Jūsų el. pašto adresas",
+        "button": "Prenumeruoti",
+        "success": "Ačiū, kad užsiprenumeravote naujienlaiškį!",
+        "privacy": "Mes gerbiame jūsų privatumą. Galite bet kada atsisakyti prenumeratos."
+    },
+    "checkout": {
+        "acceptTermsError": "Turite sutikti su taisyklėmis ir sąlygomis",
+        "successTitle": "Ačiū už jūsų užsakymą!",
+        "successOrder": "Jūsų užsakymas Nr. {orderNumber} buvo gautas.",
+        "successEmail": "Užsakymo detales išsiuntėme nurodytu el. pašto adresu.",
+        "backToStore": "Atgal į parduotuvę",
+        "myCourses": "Mano kursai",
+        "backToCart": "Atgal į krepšelį",
+        "steps": {
+            "cart": "Krepšelis",
+            "payment": "Mokėjimas",
+            "access": "Prieiga"
+        },
+        "trust": {
+            "secure": "Saugus mokėjimas",
+            "ssl": "SSL šifravimas",
+            "instant": "Momentinė prieiga"
+        },
+        "header": "Užbaikite užsakymą",
+        "contactTitle": "Kontaktinė informacija",
+        "email": "El. paštas *",
+        "firstName": "Vardas *",
+        "lastName": "Pavardė *",
+        "phone": "Telefonas (neprivaloma)",
+        "invoiceTitle": "Sąskaita faktūra",
+        "wantInvoice": "Noriu gauti PVM sąskaitą faktūrą",
+        "nip": "PVM mokėtojo kodas / Įmonės kodas",
+        "nipError": "Įveskite galiojantį kodą",
+        "lookup": "Gauti duomenis",
+        "lookupSuccess": "Įmonės duomenys gauti!",
+        "nipNotFound": "Įmonė nerasta",
+        "nipSearchError": "Klaida atliekant paiešką. Bandykite dar kartą.",
+        "companyName": "Įmonės pavadinimas",
+        "companyAddress": "Įmonės adresas",
+        "addressPlaceholder": "Bus užpildyta automatiškai",
+        "paymentTitle": "Mokėjimo būdas",
+        "paymentMethods": {
+            "card": "Mokėjimo kortelė",
+            "cardSub": "Visa, Mastercard, American Express",
+            "blik": "BLIK",
+            "blikSub": "Greitas mokėjimas BLIK kodu",
+            "transfer": "Bankinis pavedimas",
+            "transferSub": "Tradicinis bankinis pavedimas"
+        },
+        "yourOrder": "Jūsų užsakymas",
+        "summaryProducts": "Produktai",
+        "summaryDiscount": "Nuolaida ({code})",
+        "summaryTotal": "Iš viso",
+        "terms": "Sutinku su parduotuvės taisyklėmis ir privatumo politika",
+        "termsRequired": "Privaloma norint užbaigti užsakymą",
+        "processing": "Vykdoma...",
+        "pay": "Mokėti {total}",
+        "instantAccessInfo": "Po apmokėjimo priemonės iškart pasiekiamos skydelyje",
+        "socialProof": "+2 500 mokytojų jau nusipirko",
+        "toPayMobile": "Mokėti",
+        "paymentFailed": "Mokėjimas nepavyko. Prašome bandyti dar kartą.",
+        "paymentSystemError": "Mokėjimo sistemos klaida."
+    },
+    "contact": {
+        "title": "Susisiekite",
+        "subtitle": "Turite klausimų apie priemones? Reikia pagalbos renkantis paketą? Rašykite mums arba pasikalbėkite su mūsų AI asistentu. Mes čia dėl jūsų!",
+        "aiBadge": "Paprastai atsakome per 2 valandas",
+        "trustBadge": "Daugiau nei 12 000 patenkintų mokytojų",
+        "emailTitle": "Rašykite el. laišką",
+        "emailDesc": "Mūsų pašto dėžutė atvira jums 24/7.",
+        "phoneTitle": "Skambinkite mums",
+        "phoneDesc": "Pir-Pen nuo 9:00 iki 17:00 esame prie telefono.",
+        "formTitle": "Kontaktų forma",
+        "addressTitle": "Būstinė",
+        "addressValue": "Varšuva, Educational g. 123",
+        "aiHelp": "Reikia greito atsakymo?",
+        "aiHelpDesc": "Mūsų išmanusis asistentas žino atsakymus į daugumą dažniausiai užduodamų klausimų. Klauskite apie produktus, mokymo metodus ar priemonių prieinamumą.",
+        "aiHelpMobile": "AI asistentas pasiekiamas apatiniame ekrano kampe.",
+        "form": {
+            "name": "Vardas ir pavardė",
+            "email": "El. paštas",
+            "subject": "Tema",
+            "message": "Jūsų žinutė",
+            "messagePlaceholder": "Kaip galime jums padėti?",
+            "sending": "Siunčiama...",
+            "send": "Siųsti žinutę",
+            "success": "Žinutė išsiųsta!",
+            "successDesc": "Ačiū, kad susisiekėte. Atsakysime kaip įmanoma greičiau.",
+            "placeholders": {
+                "name": "Jonas Jonaitis",
+                "email": "jonas@kamila.shor.dev",
+                "subject": "Užklausa apie produktą...",
+                "message": "Aprašykite, kaip galime jums padėti..."
+            }
+        },
+        "info": {
+            "emailValue": "contact@kamilaenglish.com",
+            "phoneValue": "+48 123 456 789"
+        },
+        "aiChat": {
+            "title": "AI asistentas",
+            "status": "Prisijungęs ir pasiruošęs",
+            "thinking": "Galvoju...",
+            "inputPlaceholder": "Užduokite klausimą...",
+            "dataInputPlaceholder": "Įveskite vardą ir el. paštą...",
+            "welcome": "Sveiki! Aš esu jūsų išmanusis asistentas. Prieš pradedant, ar jau esate mūsų klientas?",
+            "options": {
+                "yes": "Taip, aš esu klientas",
+                "no": "Ne, dar ne"
+            },
+            "responses": {
+                "clientYes": "Puiku! Kaip galiu jums padėti šiandien?",
+                "clientNo": "Supratau. Mielai padėsiu jums susipažinti su mūsų priemonėmis. Koks jūsų vardas ir el. paštas, kad galėčiau atsiųsti jums nemokamų pavyzdžių?",
+                "dataSaved": "Ačiū! Išsaugojau jūsų duomenis. Dabar drąsiai klauskite bet ko.",
+                "fallback": "Atsiprašau, ne visai suprantu. Gal galėtumėte perfrazuoti? Galite klausti apie kainas, pristatymą ar mokymo metodus."
+            },
+            "knowledge": {
+                "price": "Mūsų PDF priemonės prasideda nuo 29 €. Metiniai paketai (Mega Pack) šiuo metu kainuoja 149 €.",
+                "delivery": "Visos priemonės yra skaitmeninės. Atsisiuntimo nuorodą gausite el. paštu iškart po apmokėjimo.",
+                "preschool": "Turime puikų skyrių 'Anglų kalba darželyje'. Ypač rekomenduoju mūsų paketą '4 metų laikai'.",
+                "contact": "Galite rašyti mums el. paštu arba skambinti +48 123 456 789 (Pir-Pen 9:00-17:00).",
+                "invoice": "Taip, išrašome PVM sąskaitas faktūras. Sąskaitos duomenis galite nurodyti krepšelyje.",
+                "methods": "Kamila Łobko-Koziej skatina žaidimais pagrįstą požiūrį (TPR, komunikaciniai žaidimai). Peržiūrėkite mūsų tinklaraštį, kad sužinotumėte daugiau!"
+            }
+        }
+    },
+    "login": {
+        "title": "Sveiki sugrįžę!",
+        "desc": "Įveskite savo el. paštą, kad patektumėte į mokinio zoną.",
+        "student": "Mokinys",
+        "teacher": "Mokytojas",
+        "email": "El. paštas",
+        "emailTeacher": "Darbo el. paštas",
+        "password": "Slaptažodis",
+        "loggingIn": "Jungiamasi...",
+        "success": "Prisijungta!",
+        "submit": "Prisijungti",
+        "successMessage": "Sėkmingai prisijungta! Peradresuojama...",
+        "errorDefault": "Neteisingas el. paštas arba slaptažodis.",
+        "errorSystem": "Įvyko prisijungimo klaida. Bandykite dar kartą.",
+        "emailRequired": "El. paštas yra privalomas",
+        "emailInvalid": "Neteisingas el. pašto formatas",
+        "passwordRequired": "Slaptažodis yra privalomas",
+        "passwordMin": "Slaptažodis turi būti bent 4 simbolių ilgio",
+        "forgotPassword": "Forgot your password?",
+        "magicLink": "Login with Magic Link",
+        "magicLinkDesc": "We'll send you a one-time login link to your email address.",
+        "sendMagicLink": "Send Magic Link",
+        "backToLogin": "Back to login",
+        "checkEmail": "Check your inbox",
+        "resetPassword": "Reset password",
+        "magicLinkSent": "A login link has been sent to your email address.",
+        "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
+        "resetSuccess": "Your password has been changed successfully."
+    },
+    "quickSale": {
+        "title": "GREITAS APMOKĖJIMAS",
+        "demoProduct": {
+            "title": "Premium el. knygos pavyzdys",
+            "excerpt": "Tai demonstracinis produktas. Pilnoje versijoje duomenys būtų imami iš duomenų bazės."
+        },
+        "page": {
+            "guarantee": "30 dienų pasitenkinimo garantija",
+            "totalLabel": "Iš viso mokėti:",
+            "email_label": "Jūsų el. paštas",
+            "email_placeholder": "adresas@email.com",
+            "payment_method": "Mokėjimo būdas",
+            "payment_card": "Kortelė",
+            "blik_code": "BLIK kodas",
+            "terms": "Sutinku su parduotuvės taisyklėmis",
+            "pay_btn": "Perku ir moku",
+            "secure_checkout": "SSL šifruotas ryšys"
+        },
+        "optimization": {
+            "timer": {
+                "text": "Jūsų pasiūlymas baigsis po:"
+            },
+            "social_proof": {
+                "viewing": "Šį pasiūlymą šiuo metu žiūri {count} žmonės"
+            },
+            "savings": "Sutaupote"
+        },
+        "bump": {
+            "yes_btn": "TAIP, pridėti prie mano užsakymo",
+            "price_prefix": "tik",
+            "description": "Vienkartinis pasiūlymas! Pridėkite paruoštų naudoti užduočių rinkinį (PDF)."
+        }
+    },
+    "verify": {
+        "title": "Sertifikato patikra",
+        "subtitle": "Įveskite sertifikato patikros kodą, kad patvirtintumėte jo autentiškumą.",
+        "placeholder": "XXXX-XXXX-XXXX",
+        "success": {
+            "title": "Sertifikatas patvirtintas",
+            "desc": "Šis sertifikatas yra autentiškas ir išduotas mūsų platformos.",
+            "user": "Dalyvis",
+            "course": "Kursas",
+            "date": "Baigimo data",
+            "code": "Kodas",
+            "view": "Žiūrėti sertifikatą"
+        },
+        "error": {
+            "title": "Sertifikatas nerastas",
+            "desc": "Nerandame sertifikato su nurodytu kodu. Patikrinkite, ar kodas teisingas."
+        }
+    },
+    "errors": {
+        "404": {
+            "title": "404",
+            "message": "Puslapis nerastas.",
+            "back": "Atgal į pagrindinį puslapį"
+        }
+    },
+    "blog": {
+        "title": "Tinklaraštis",
+        "subtitle": "Straipsniai, patarimai ir įkvėpimas anglų kalbos mokytojams. Sužinokite, kaip mokyti efektyviau ir su didesne aistra.",
+        "empty": "Tinklaraščio įrašų nerasta.",
+        "readMore": "Skaityti daugiau",
+        "backToBlog": "Atgal į tinklaraštį",
+        "share": "Dalintis:",
+        "notFound": "Nerasta"
+    },
+    "common": {
+        "loading": "Kraunama...",
+        "success": "Veiksmas sėkmingai atliktas."
+    },
+    "certificates": {
+        "title": "Baigimo sertifikatas",
+        "subtitle": "Šiuo patvirtinama, kad",
+        "completedCourse": "sėkmingai baigė kursą",
+        "completionDate": "Baigimo data:",
+        "verificationCode": "Patikros kodas:",
+        "downloadPdf": "Atsisiųsti PDF",
+        "share": "Dalintis",
+        "backToDashboard": "Atgal į skydelį",
+        "styleTitle": "Keisti sertifikato stilių",
+        "verifiedTitle": "Sertifikatas patvirtintas",
+        "verifiedDesc": "Šį sertifikatą išdavė mūsų platforma.",
+        "notFound": "Sertifikatas nerastas",
+        "copySuccess": "Nuoroda nukopijuota!"
+    },
+    "languages": {
+        "pl": "Lenkų k.",
+        "en": "Anglų k.",
+        "uk": "Ukrainiečių k.",
+        "de": "Vokiečių k.",
+        "es": "Ispanų k.",
+        "fr": "Prancūzų k.",
+        "it": "Italų k.",
+        "cs": "Čekų k.",
+        "sk": "Slovakų k.",
+        "ro": "Rumunų k.",
+        "hu": "Vengrų k.",
+        "pt": "Portugalų k.",
+        "lt": "Lietuvių k.",
+        "lv": "Latvių k.",
+        "et": "Estų k.",
+        "hr": "Kroatų k.",
+        "sr": "Serbų k.",
+        "sl": "Slovėnų k.",
+        "bg": "Bulgarų k.",
+        "el": "Graikų k.",
+        "nl": "Olandų k.",
+        "sv": "Švedų k.",
+        "fi": "Suomių k.",
+        "no": "Norvegų k.",
+        "da": "Danų k."
+    },
+    "fomo": {
+        "names": [
+            "John",
+            "Emily",
+            "Michael",
+            "Sarah",
+            "David",
+            "Jessica",
+            "Robert"
+        ],
+        "cities": [
+            "London",
+            "New York",
+            "Chicago",
+            "Toronto",
+            "Sydney",
+            "Dublin",
+            "Berlin"
+        ],
+        "purchaseMessage": "{name} from {city}",
+        "productMessage": "Just bought \"{product}\"",
+        "timeAgo": "{time} min ago"
+    },
+    "exitIntent": {
+        "title": "WAIT!",
+        "subtitle": "Before you leave...",
+        "header": "Get your free \"Starter Pack\"",
+        "description": "Join our newsletter and receive 50 free worksheets!",
+        "cta": "I want my gift",
+        "noThanks": "No thanks, I'll pay full price later"
+    },
+    "course": {
+        "yourProgress": "Jūsų Pažanga",
+        "noLessons": "Nėra pamokų.",
+        "quiz": "Viktorina",
+        "unlocksInDays": "Atsidarys po {days} dienų"
+    },
+    "dashboard": {
+        "wallet": {
+            "title": "Your Wallet",
+            "subtitle": "Collect points for activity and purchases.",
+            "available": "Available funds",
+            "points": "pts",
+            "value": "Value in {currency}",
+            "spend": "Spend points in shop",
+            "history": "Recent activity"
+        },
+        "awards": {
+            "title": "Your Hall of Fame",
+            "subtitle": "Earn badges for completed lessons and games!",
+            "mock": {
+                "start": "Quick Start",
+                "startDesc": "Completed first lesson",
+                "vocab": "Vocab Master",
+                "vocabDesc": "100% in quiz",
+                "steady": "Systematic",
+                "steadyDesc": "Logged in 7 days",
+                "polyglot": "Polyglot",
+                "polyglotDesc": "Passed A1 level"
+            }
+        },
+        "team": {
+            "title": "My Class / Team",
+            "subtitle": "Share materials with students",
+            "create_class": "Create new class",
+            "created_at": "Created: {date}",
+            "students_count": "{count} students",
+            "access_code": "Student access code",
+            "empty": {
+                "title": "New Class",
+                "desc": "Create a group for your students.",
+                "btn": "Start Setup"
+            },
+            "pro": {
+                "active": "Your PRO plan is active",
+                "unlock": "Unlock unlimited classes",
+                "desc": "Teacher PRO plan allows creating unlimited groups.",
+                "upgrade": "Upgrade to PRO",
+                "status": "Active"
+            }
+        },
+        "games": {
+            "title": "Educational Games",
+            "subtitle": "Interactive exercises for your students",
+            "play": "Play now",
+            "loading": "Loading game...",
+            "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
+            "fullscreen": "Full screen",
+            "report": "Report error"
+        }
+    },
+    "announcement": {
+        "launchOffer": "Speciali paleidimo pasiūla: Gaukite 20% NUOLAIDĄ su kodu \"START20\"",
+        "limitedTime": "Ribotas laikas: Peržiūrėkite mūsų naujus paketus!"
     }
-  },
-  "auth": {
-    "logout": "Atsijungti",
-    "myCourses": "Mano kursai",
-    "studentPanel": "Mokinio skydelis",
-    "roleAdmin": "Administrator",
-    "roleTeacher": "Teacher",
-    "roleStudent": "Student"
-  },
-  "cart": {
-    "empty": "Jūsų krepšelis tuščias",
-    "emptySub": "Pridėkite produktų, kad tęstumėte apsipirkimą",
-    "browse": "Naršyti produktus",
-    "reserved": "Jūsų krepšelis rezervuotas:",
-    "header": "Krepšelis ({count})",
-    "remove": "Pašalinti",
-    "specialOffer": "SPECIALUS PASIŪLYMAS",
-    "orderBump": "Pridėti el. laiško šablonų paketą (+29 €)",
-    "orderBumpDesc": "20 paruoštų naudoti šablonų bendravimui su tėvais. Sutaupykite 70%!",
-    "summary": "Suvestinė",
-    "couponPlaceholder": "Nuolaidos kodas",
-    "apply": "Taikyti",
-    "couponHeader": "Kuponas:",
-    "products": "Produktai",
-    "discount": "Nuolaida",
-    "total": "Iš viso",
-    "checkout": "Tęsti apmokėjimą",
-    "secure": "Saugus apmokėjimas",
-    "couponInvalid": "Neteisingas nuolaidos kodas",
-    "couponInactive": "Šis kuponas nebėra aktyvus",
-    "couponExpired": "Šio kupono galiojimo laikas pasibaigė",
-    "couponLimitReached": "Šis kuponas pasiekė savo naudojimo limitą",
-    "couponMinOrder": "Minimali užsakymo vertė: {minOrderValue} {currency}",
-    "couponAppliedPercent": "Nuolaida {percent}% pritaikyta!",
-    "couponAppliedFixed": "Nuolaida {amount} {currency} pritaikyta!",
-    "currencySymbol": "€"
-  },
-  "socialProof": {
-    "header": "Facebook bendruomenė",
-    "sub": "Sekite naujienas ir prisijunkite prie diskusijos!",
-    "cta": "Peržiūrėkite mūsų profilį, pilną įkvėpimo",
-    "madeWithLove": "Sukurta su meile",
-    "polishQuality": "ir lenkiška kokybe"
-  },
-  "newsletter": {
-    "header": "Būkite informuoti!",
-    "sub": "Prenumeruokite mūsų naujienlaiškį ir gaukite informaciją apie naujas priemones, akcijas ir išskirtines nuolaidas.",
-    "placeholder": "Jūsų el. pašto adresas",
-    "button": "Prenumeruoti",
-    "success": "Ačiū, kad užsiprenumeravote naujienlaiškį!",
-    "privacy": "Mes gerbiame jūsų privatumą. Galite bet kada atsisakyti prenumeratos."
-  },
-  "checkout": {
-    "acceptTermsError": "Turite sutikti su taisyklėmis ir sąlygomis",
-    "successTitle": "Ačiū už jūsų užsakymą!",
-    "successOrder": "Jūsų užsakymas Nr. {orderNumber} buvo gautas.",
-    "successEmail": "Užsakymo detales išsiuntėme nurodytu el. pašto adresu.",
-    "backToStore": "Atgal į parduotuvę",
-    "myCourses": "Mano kursai",
-    "backToCart": "Atgal į krepšelį",
-    "steps": {
-      "cart": "Krepšelis",
-      "payment": "Mokėjimas",
-      "access": "Prieiga"
-    },
-    "trust": {
-      "secure": "Saugus mokėjimas",
-      "ssl": "SSL šifravimas",
-      "instant": "Momentinė prieiga"
-    },
-    "header": "Užbaikite užsakymą",
-    "contactTitle": "Kontaktinė informacija",
-    "email": "El. paštas *",
-    "firstName": "Vardas *",
-    "lastName": "Pavardė *",
-    "phone": "Telefonas (neprivaloma)",
-    "invoiceTitle": "Sąskaita faktūra",
-    "wantInvoice": "Noriu gauti PVM sąskaitą faktūrą",
-    "nip": "PVM mokėtojo kodas / Įmonės kodas",
-    "nipError": "Įveskite galiojantį kodą",
-    "lookup": "Gauti duomenis",
-    "lookupSuccess": "Įmonės duomenys gauti!",
-    "nipNotFound": "Įmonė nerasta",
-    "nipSearchError": "Klaida atliekant paiešką. Bandykite dar kartą.",
-    "companyName": "Įmonės pavadinimas",
-    "companyAddress": "Įmonės adresas",
-    "addressPlaceholder": "Bus užpildyta automatiškai",
-    "paymentTitle": "Mokėjimo būdas",
-    "paymentMethods": {
-      "card": "Mokėjimo kortelė",
-      "cardSub": "Visa, Mastercard, American Express",
-      "blik": "BLIK",
-      "blikSub": "Greitas mokėjimas BLIK kodu",
-      "transfer": "Bankinis pavedimas",
-      "transferSub": "Tradicinis bankinis pavedimas"
-    },
-    "yourOrder": "Jūsų užsakymas",
-    "summaryProducts": "Produktai",
-    "summaryDiscount": "Nuolaida ({code})",
-    "summaryTotal": "Iš viso",
-    "terms": "Sutinku su parduotuvės taisyklėmis ir privatumo politika",
-    "termsRequired": "Privaloma norint užbaigti užsakymą",
-    "processing": "Vykdoma...",
-    "pay": "Mokėti {total}",
-    "instantAccessInfo": "Po apmokėjimo priemonės iškart pasiekiamos skydelyje",
-    "socialProof": "+2 500 mokytojų jau nusipirko",
-    "toPayMobile": "Mokėti",
-    "paymentFailed": "Mokėjimas nepavyko. Prašome bandyti dar kartą.",
-    "paymentSystemError": "Mokėjimo sistemos klaida."
-  },
-  "contact": {
-    "title": "Susisiekite",
-    "subtitle": "Turite klausimų apie priemones? Reikia pagalbos renkantis paketą? Rašykite mums arba pasikalbėkite su mūsų AI asistentu. Mes čia dėl jūsų!",
-    "aiBadge": "Paprastai atsakome per 2 valandas",
-    "trustBadge": "Daugiau nei 12 000 patenkintų mokytojų",
-    "emailTitle": "Rašykite el. laišką",
-    "emailDesc": "Mūsų pašto dėžutė atvira jums 24/7.",
-    "phoneTitle": "Skambinkite mums",
-    "phoneDesc": "Pir-Pen nuo 9:00 iki 17:00 esame prie telefono.",
-    "formTitle": "Kontaktų forma",
-    "addressTitle": "Būstinė",
-    "addressValue": "Varšuva, Educational g. 123",
-    "aiHelp": "Reikia greito atsakymo?",
-    "aiHelpDesc": "Mūsų išmanusis asistentas žino atsakymus į daugumą dažniausiai užduodamų klausimų. Klauskite apie produktus, mokymo metodus ar priemonių prieinamumą.",
-    "aiHelpMobile": "AI asistentas pasiekiamas apatiniame ekrano kampe.",
-    "form": {
-      "name": "Vardas ir pavardė",
-      "email": "El. paštas",
-      "subject": "Tema",
-      "message": "Jūsų žinutė",
-      "messagePlaceholder": "Kaip galime jums padėti?",
-      "sending": "Siunčiama...",
-      "send": "Siųsti žinutę",
-      "success": "Žinutė išsiųsta!",
-      "successDesc": "Ačiū, kad susisiekėte. Atsakysime kaip įmanoma greičiau.",
-      "placeholders": {
-        "name": "Jonas Jonaitis",
-        "email": "jonas@kamila.shor.dev",
-        "subject": "Užklausa apie produktą...",
-        "message": "Aprašykite, kaip galime jums padėti..."
-      }
-    },
-    "info": {
-      "emailValue": "contact@kamilaenglish.com",
-      "phoneValue": "+48 123 456 789"
-    },
-    "aiChat": {
-      "title": "AI asistentas",
-      "status": "Prisijungęs ir pasiruošęs",
-      "thinking": "Galvoju...",
-      "inputPlaceholder": "Užduokite klausimą...",
-      "dataInputPlaceholder": "Įveskite vardą ir el. paštą...",
-      "welcome": "Sveiki! Aš esu jūsų išmanusis asistentas. Prieš pradedant, ar jau esate mūsų klientas?",
-      "options": {
-        "yes": "Taip, aš esu klientas",
-        "no": "Ne, dar ne"
-      },
-      "responses": {
-        "clientYes": "Puiku! Kaip galiu jums padėti šiandien?",
-        "clientNo": "Supratau. Mielai padėsiu jums susipažinti su mūsų priemonėmis. Koks jūsų vardas ir el. paštas, kad galėčiau atsiųsti jums nemokamų pavyzdžių?",
-        "dataSaved": "Ačiū! Išsaugojau jūsų duomenis. Dabar drąsiai klauskite bet ko.",
-        "fallback": "Atsiprašau, ne visai suprantu. Gal galėtumėte perfrazuoti? Galite klausti apie kainas, pristatymą ar mokymo metodus."
-      },
-      "knowledge": {
-        "price": "Mūsų PDF priemonės prasideda nuo 29 €. Metiniai paketai (Mega Pack) šiuo metu kainuoja 149 €.",
-        "delivery": "Visos priemonės yra skaitmeninės. Atsisiuntimo nuorodą gausite el. paštu iškart po apmokėjimo.",
-        "preschool": "Turime puikų skyrių 'Anglų kalba darželyje'. Ypač rekomenduoju mūsų paketą '4 metų laikai'.",
-        "contact": "Galite rašyti mums el. paštu arba skambinti +48 123 456 789 (Pir-Pen 9:00-17:00).",
-        "invoice": "Taip, išrašome PVM sąskaitas faktūras. Sąskaitos duomenis galite nurodyti krepšelyje.",
-        "methods": "Kamila Łobko-Koziej skatina žaidimais pagrįstą požiūrį (TPR, komunikaciniai žaidimai). Peržiūrėkite mūsų tinklaraštį, kad sužinotumėte daugiau!"
-      }
-    }
-  },
-  "login": {
-    "title": "Sveiki sugrįžę!",
-    "desc": "Įveskite savo el. paštą, kad patektumėte į mokinio zoną.",
-    "student": "Mokinys",
-    "teacher": "Mokytojas",
-    "email": "El. paštas",
-    "emailTeacher": "Darbo el. paštas",
-    "password": "Slaptažodis",
-    "loggingIn": "Jungiamasi...",
-    "success": "Prisijungta!",
-    "submit": "Prisijungti",
-    "successMessage": "Sėkmingai prisijungta! Peradresuojama...",
-    "errorDefault": "Neteisingas el. paštas arba slaptažodis.",
-    "errorSystem": "Įvyko prisijungimo klaida. Bandykite dar kartą.",
-    "emailRequired": "El. paštas yra privalomas",
-    "emailInvalid": "Neteisingas el. pašto formatas",
-    "passwordRequired": "Slaptažodis yra privalomas",
-    "passwordMin": "Slaptažodis turi būti bent 4 simbolių ilgio",
-    "forgotPassword": "Forgot your password?",
-    "magicLink": "Login with Magic Link",
-    "magicLinkDesc": "We'll send you a one-time login link to your email address.",
-    "sendMagicLink": "Send Magic Link",
-    "backToLogin": "Back to login",
-    "checkEmail": "Check your inbox",
-    "resetPassword": "Reset password",
-    "magicLinkSent": "A login link has been sent to your email address.",
-    "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
-    "resetSuccess": "Your password has been changed successfully."
-  },
-  "quickSale": {
-    "title": "GREITAS APMOKĖJIMAS",
-    "demoProduct": {
-      "title": "Premium el. knygos pavyzdys",
-      "excerpt": "Tai demonstracinis produktas. Pilnoje versijoje duomenys būtų imami iš duomenų bazės."
-    },
-    "page": {
-      "guarantee": "30 dienų pasitenkinimo garantija",
-      "totalLabel": "Iš viso mokėti:",
-      "email_label": "Jūsų el. paštas",
-      "email_placeholder": "adresas@email.com",
-      "payment_method": "Mokėjimo būdas",
-      "payment_card": "Kortelė",
-      "blik_code": "BLIK kodas",
-      "terms": "Sutinku su parduotuvės taisyklėmis",
-      "pay_btn": "Perku ir moku",
-      "secure_checkout": "SSL šifruotas ryšys"
-    },
-    "optimization": {
-      "timer": {
-        "text": "Jūsų pasiūlymas baigsis po:"
-      },
-      "social_proof": {
-        "viewing": "Šį pasiūlymą šiuo metu žiūri {count} žmonės"
-      },
-      "savings": "Sutaupote"
-    },
-    "bump": {
-      "yes_btn": "TAIP, pridėti prie mano užsakymo",
-      "price_prefix": "tik",
-      "description": "Vienkartinis pasiūlymas! Pridėkite paruoštų naudoti užduočių rinkinį (PDF)."
-    }
-  },
-  "verify": {
-    "title": "Sertifikato patikra",
-    "subtitle": "Įveskite sertifikato patikros kodą, kad patvirtintumėte jo autentiškumą.",
-    "placeholder": "XXXX-XXXX-XXXX",
-    "success": {
-      "title": "Sertifikatas patvirtintas",
-      "desc": "Šis sertifikatas yra autentiškas ir išduotas mūsų platformos.",
-      "user": "Dalyvis",
-      "course": "Kursas",
-      "date": "Baigimo data",
-      "code": "Kodas",
-      "view": "Žiūrėti sertifikatą"
-    },
-    "error": {
-      "title": "Sertifikatas nerastas",
-      "desc": "Nerandame sertifikato su nurodytu kodu. Patikrinkite, ar kodas teisingas."
-    }
-  },
-  "errors": {
-    "404": {
-      "title": "404",
-      "message": "Puslapis nerastas.",
-      "back": "Atgal į pagrindinį puslapį"
-    }
-  },
-  "blog": {
-    "title": "Tinklaraštis",
-    "subtitle": "Straipsniai, patarimai ir įkvėpimas anglų kalbos mokytojams. Sužinokite, kaip mokyti efektyviau ir su didesne aistra.",
-    "empty": "Tinklaraščio įrašų nerasta.",
-    "readMore": "Skaityti daugiau",
-    "backToBlog": "Atgal į tinklaraštį",
-    "share": "Dalintis:",
-    "notFound": "Nerasta"
-  },
-  "common": {
-    "loading": "Kraunama..."
-  },
-  "certificates": {
-    "title": "Baigimo sertifikatas",
-    "subtitle": "Šiuo patvirtinama, kad",
-    "completedCourse": "sėkmingai baigė kursą",
-    "completionDate": "Baigimo data:",
-    "verificationCode": "Patikros kodas:",
-    "downloadPdf": "Atsisiųsti PDF",
-    "share": "Dalintis",
-    "backToDashboard": "Atgal į skydelį",
-    "styleTitle": "Keisti sertifikato stilių",
-    "verifiedTitle": "Sertifikatas patvirtintas",
-    "verifiedDesc": "Šį sertifikatą išdavė mūsų platforma.",
-    "notFound": "Sertifikatas nerastas",
-    "copySuccess": "Nuoroda nukopijuota!"
-  },
-  "languages": {
-    "pl": "Lenkų k.",
-    "en": "Anglų k.",
-    "uk": "Ukrainiečių k.",
-    "de": "Vokiečių k.",
-    "es": "Ispanų k.",
-    "fr": "Prancūzų k.",
-    "it": "Italų k.",
-    "cs": "Čekų k.",
-    "sk": "Slovakų k.",
-    "ro": "Rumunų k.",
-    "hu": "Vengrų k.",
-    "pt": "Portugalų k.",
-    "lt": "Lietuvių k.",
-    "lv": "Latvių k.",
-    "et": "Estų k.",
-    "hr": "Kroatų k.",
-    "sr": "Serbų k.",
-    "sl": "Slovėnų k.",
-    "bg": "Bulgarų k.",
-    "el": "Graikų k.",
-    "nl": "Olandų k.",
-    "sv": "Švedų k.",
-    "fi": "Suomių k.",
-    "no": "Norvegų k.",
-    "da": "Danų k."
-  },
-  "fomo": {
-    "names": [
-      "John",
-      "Emily",
-      "Michael",
-      "Sarah",
-      "David",
-      "Jessica",
-      "Robert"
-    ],
-    "cities": [
-      "London",
-      "New York",
-      "Chicago",
-      "Toronto",
-      "Sydney",
-      "Dublin",
-      "Berlin"
-    ],
-    "purchaseMessage": "{name} from {city}",
-    "productMessage": "Just bought \"{product}\"",
-    "timeAgo": "{time} min ago"
-  },
-  "exitIntent": {
-    "title": "WAIT!",
-    "subtitle": "Before you leave...",
-    "header": "Get your free \"Starter Pack\"",
-    "description": "Join our newsletter and receive 50 free worksheets!",
-    "cta": "I want my gift",
-    "noThanks": "No thanks, I'll pay full price later"
-  },
-  "course": {
-    "yourProgress": "Jūsų Pažanga",
-    "noLessons": "Nėra pamokų.",
-    "quiz": "Viktorina",
-    "unlocksInDays": "Atsidarys po {days} dienų"
-  },
-  "dashboard": {
-    "wallet": {
-      "title": "Your Wallet",
-      "subtitle": "Collect points for activity and purchases.",
-      "available": "Available funds",
-      "points": "pts",
-      "value": "Value in {currency}",
-      "spend": "Spend points in shop",
-      "history": "Recent activity"
-    },
-    "awards": {
-      "title": "Your Hall of Fame",
-      "subtitle": "Earn badges for completed lessons and games!",
-      "mock": {
-        "start": "Quick Start",
-        "startDesc": "Completed first lesson",
-        "vocab": "Vocab Master",
-        "vocabDesc": "100% in quiz",
-        "steady": "Systematic",
-        "steadyDesc": "Logged in 7 days",
-        "polyglot": "Polyglot",
-        "polyglotDesc": "Passed A1 level"
-      }
-    },
-    "team": {
-      "title": "My Class / Team",
-      "subtitle": "Share materials with students",
-      "create_class": "Create new class",
-      "created_at": "Created: {date}",
-      "students_count": "{count} students",
-      "access_code": "Student access code",
-      "empty": {
-        "title": "New Class",
-        "desc": "Create a group for your students.",
-        "btn": "Start Setup"
-      },
-      "pro": {
-        "active": "Your PRO plan is active",
-        "unlock": "Unlock unlimited classes",
-        "desc": "Teacher PRO plan allows creating unlimited groups.",
-        "upgrade": "Upgrade to PRO",
-        "status": "Active"
-      }
-    },
-    "games": {
-      "title": "Educational Games",
-      "subtitle": "Interactive exercises for your students",
-      "play": "Play now",
-      "loading": "Loading game...",
-      "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
-      "fullscreen": "Full screen",
-      "report": "Report error"
-    }
-  }
 }

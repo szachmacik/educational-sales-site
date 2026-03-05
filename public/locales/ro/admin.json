@@ -1,1659 +1,1729 @@
 {
-  "adminSettings": {
-    "title": "Setări Sistem",
-    "description": "Gestionați configurația site-ului, analiza și SEO",
-    "ai_providers": {
-      "title": "Furnizor AI Activ",
-      "description": "Selectați modelul pentru generarea de conținut",
-      "api_key": "Cheie API"
-    },
-    "tabs": {
-      "ai": "Modele AI",
-      "marketing": "Marketing și Analiză",
-      "seo": "SEO și Meta",
-      "economy": "Economie și Portofel",
-      "gamification": "Gamificare și Insigne",
-      "market": "Analiză Piață și Curriculum",
-      "insights": "Analiză și recomandări",
-      "channels": "Canale de Vânzare",
-      "integrations": "Integrări și API",
-      "interactive": "Jocuri și Interacțiuni",
-      "workshop": "Studiou AI și Canva",
-      "automation": "Agenți și Automatizare",
-      "emails": "Notificări prin Email",
-      "google": "Setări Google",
-      "abandoned": "Coșuri Abandonate",
-      "guardian": "Sistem AI Guardian",
-      "affiliate": "Program Afiliere",
-      "pricing": "Prețuri și Valute (PPP)",
-      "taxes": "Facturi și Taxe",
-      "growth_hacks": "Growth Hacks",
-      "ai_discovery": "AI Discovery (SEO)"
-    },
-    "sections": {
-      "shopping": "Cumpărături și Finanțe",
-      "ai": "AI și Interacțiuni",
-      "growth": "Creștere și Brand",
-      "system": "Setări Sistem"
-    },
-    "common": {
-      "save": "Salvează modificările",
-      "saved": "Salvat!",
-      "save_success": "Settings have been successfully saved.",
-      "subject": "Subiect",
-      "content": "Conținut",
-      "enabled_desc": "Comutator global pentru scripturi de urmărire"
-    },
-    "marketing": {
-      "ga4": "Google Analytics 4 ID",
-      "ga4_placeholder": "G-XXXXXXXXXX",
-      "fb_pixel": "Facebook Pixel ID",
-      "fb_pixel_placeholder": "Pixel ID",
-      "meta_verification": "Verificare Domeniu Meta",
-      "meta_placeholder": "Cheie de Verificare",
-      "gsc": "Google Search Console ID",
-      "gsc_placeholder": "Cheie de Verificare Google",
-      "enabled": "Activează Urmărirea",
-      "title": "Marketing și SEO",
-      "description": "Configurarea instrumentelor analitice și de publicitate",
-      "ads": "Google Ads"
-    },
-    "seo": {
-      "default_title": "Titlu Pagină Implicit",
-      "default_desc": "Meta Descriere Implicită",
-      "og_image": "Imagine Partajare Implicită (Imagine OG)",
-      "site_name": "Nume Site",
-      "basic_title": "SEO de Bază",
-      "basic_desc": "Setări de vizibilitate în motoarele de căutare",
-      "canonical_url": "Canonical Base URL",
-      "canonical_desc": "The base URL used for canonical and alternate (hreflang) links.",
-      "ai_discovery_title": "AI Search Optimization",
-      "ai_discovery_desc": "Configure how AI agents (Gemini, Perplexity, GPT-4) discover and interpret your site.",
-      "ai_discovery_enabled": "Enable AI Crawler Hints",
-      "ai_discovery_enabled_desc": "Injects specialized meta-data for LLM-based search engines.",
-      "ai_summary": "AI Product Summary",
-      "ai_summary_placeholder": "What should AI agents know about your store?",
-      "ai_summary_desc": "This summary helps AI agents provide accurate answers about your services.",
-      "sitemap_regenerate": "Regenerate Multi-Locale Sitemap",
-      "growth_hacks_title": "Growth & Performance Hacks",
-      "growth_hacks_desc": "Advanced tools to increase conversion and track user behavior.",
-      "fomo_title": "FOMO Elements (Scarcity)",
-      "fomo_desc": "Show 'Limited Stock' and 'Recent Purchase' alerts.",
-      "trust_title": "Trust Badges",
-      "trust_desc": "Display security and guarantee badges on product pages.",
-      "ux_tracking": "UX Tracking (Heatmaps)",
-      "clarity_id": "Microsoft Clarity ID",
-      "hotjar_id": "Hotjar Site ID"
-    },
-    "economy": {
-      "title": "Sistem de Puncte și Portofel",
-      "description": "Gestionați moneda virtuală, abonamentele și loialitatea clienților",
-      "wallet": {
-        "title": "Portofel Virtual",
-        "enable_wallet": "Activează Portofel Utilizator",
-        "allow_topup": "Permite Reîncărcări",
-        "recurring_topup": "Reîncărcări Recurente Automate",
-        "conversion_rate": "Rată de reîncărcare (1 EUR = X puncte)",
-        "description": "Gestionați portofelul virtual al clienților"
-      },
-      "loyalty": {
-        "title": "Puncte de Loialitate",
-        "enable_loyalty": "Activează Colectarea Punctelor",
-        "points_per_eur": "Puncte pentru fiecare 1 EUR cheltuit",
-        "min_redeem": "Puncte minime pentru utilizare",
-        "description": "Puncte pentru activitate și achiziții",
-        "protip": "Sfat pro: Abonații pot primi de 2 ori mai multe puncte dacă activați multiplicatorul în secțiunea Gamificare."
-      },
-      "subscriptions": {
-        "title": "Abonamente",
-        "description": "Gestionați modelele de acces recurent",
-        "status_active": "ACTIVE",
-        "per_month": "/ month",
-        "perks": {
-          "all_pdfs": "All PDFs without limit",
-          "free_topup": "Free Wallet Top-up ({amount} every month)"
+    "adminSettings": {
+        "title": "Setări Sistem",
+        "description": "Gestionați configurația site-ului, analiza și SEO",
+        "ai_providers": {
+            "title": "Furnizor AI Activ",
+            "description": "Selectați modelul pentru generarea de conținut",
+            "api_key": "Cheie API"
         },
-        "add_plan": "Add new plan"
-      }
-    },
-    "gamification": {
-      "title": "Gamificare",
-      "description": "Motivați elevii cu niveluri și insigne",
-      "levels": {
-        "silver": "Silver Tier",
-        "gold": "Gold Tier",
-        "diamond": "Diamond VIP"
-      },
-      "perks": {
-        "discount": "Auto Discount (%)",
-        "auto_discount": "Se aplică automat la finalizarea comenzii",
-        "hidden_tier": "Doar atribuire manuală"
-      },
-      "badges_title": "Insigne Elev",
-      "badges": {
-        "early_bird": {
-          "name": "Early Bird",
-          "desc": "Cumpărare în prima oră de la publicare"
+        "tabs": {
+            "ai": "Modele AI",
+            "marketing": "Marketing și Analiză",
+            "seo": "SEO și Meta",
+            "economy": "Economie și Portofel",
+            "gamification": "Gamificare și Insigne",
+            "market": "Analiză Piață și Curriculum",
+            "insights": "Analiză și recomandări",
+            "channels": "Canale de Vânzare",
+            "integrations": "Integrări și API",
+            "interactive": "Jocuri și Interacțiuni",
+            "workshop": "Studiou AI și Canva",
+            "automation": "Agenți și Automatizare",
+            "emails": "Notificări prin Email",
+            "google": "Setări Google",
+            "abandoned": "Coșuri Abandonate",
+            "guardian": "Sistem AI Guardian",
+            "affiliate": "Program Afiliere",
+            "pricing": "Prețuri și Valute (PPP)",
+            "taxes": "Facturi și Taxe",
+            "growth_hacks": "Growth Hacks",
+            "ai_discovery": "AI Discovery (SEO)"
         },
-        "collector": {
-          "name": "Colecționar",
-          "desc": "Deține peste 50 de materiale"
+        "sections": {
+            "shopping": "Cumpărături și Finanțe",
+            "ai": "AI și Interacțiuni",
+            "growth": "Creștere și Brand",
+            "system": "Setări Sistem"
         },
-        "top_reviewer": {
-          "name": "Recenzent Top",
-          "desc": "10 recenzii detaliate"
+        "common": {
+            "save": "Salvează modificările",
+            "saved": "Salvat!",
+            "save_success": "Settings have been successfully saved.",
+            "subject": "Subiect",
+            "content": "Conținut",
+            "enabled_desc": "Comutator global pentru scripturi de urmărire",
+            "ux": {
+                "show": "Afișare",
+                "hide": "Ascundere",
+                "copy": "Copiere",
+                "copied": "Copiat!",
+                "secure": "Criptat"
+            },
+            "preview": {
+                "title": "Preview and Acceptance",
+                "accept": "Accept changes",
+                "reject": "Reject",
+                "bulk_title": "Generated drafts review",
+                "apply_all": "Accept all ({count})",
+                "diff_before": "Before optimization",
+                "diff_after": "AI Suggestion"
+            }
+        },
+        "marketing": {
+            "ga4": "Google Analytics 4 ID",
+            "ga4_placeholder": "G-XXXXXXXXXX",
+            "fb_pixel": "Facebook Pixel ID",
+            "fb_pixel_placeholder": "Pixel ID",
+            "meta_verification": "Verificare Domeniu Meta",
+            "meta_placeholder": "Cheie de Verificare",
+            "gsc": "Google Search Console ID",
+            "gsc_placeholder": "Cheie de Verificare Google",
+            "enabled": "Activează Urmărirea",
+            "title": "Marketing și SEO",
+            "description": "Configurarea instrumentelor analitice și de publicitate",
+            "ads": "Google Ads"
+        },
+        "seo": {
+            "default_title": "Titlu Pagină Implicit",
+            "default_desc": "Meta Descriere Implicită",
+            "og_image": "Imagine Partajare Implicită (Imagine OG)",
+            "site_name": "Nume Site",
+            "basic_title": "SEO de Bază",
+            "basic_desc": "Setări de vizibilitate în motoarele de căutare",
+            "canonical_url": "Canonical Base URL",
+            "canonical_desc": "The base URL used for canonical and alternate (hreflang) links.",
+            "ai_discovery_title": "AI Search Optimization",
+            "ai_discovery_desc": "Configure how AI agents (Gemini, Perplexity, GPT-4) discover and interpret your site.",
+            "ai_discovery_enabled": "Enable AI Crawler Hints",
+            "ai_discovery_enabled_desc": "Injects specialized meta-data for LLM-based search engines.",
+            "ai_summary": "AI Product Summary",
+            "ai_summary_placeholder": "What should AI agents know about your store?",
+            "ai_summary_desc": "This summary helps AI agents provide accurate answers about your services.",
+            "sitemap_regenerate": "Regenerate Multi-Locale Sitemap",
+            "growth_hacks_title": "Growth & Performance Hacks",
+            "growth_hacks_desc": "Advanced tools to increase conversion and track user behavior.",
+            "fomo_title": "FOMO Elements (Scarcity)",
+            "fomo_desc": "Show 'Limited Stock' and 'Recent Purchase' alerts.",
+            "trust_title": "Trust Badges",
+            "trust_desc": "Display security and guarantee badges on product pages.",
+            "ux_tracking": "UX Tracking (Heatmaps)",
+            "clarity_id": "Microsoft Clarity ID",
+            "hotjar_id": "Hotjar Site ID"
+        },
+        "economy": {
+            "title": "Sistem de Puncte și Portofel",
+            "description": "Gestionați moneda virtuală, abonamentele și loialitatea clienților",
+            "wallet": {
+                "title": "Portofel Virtual",
+                "enable_wallet": "Activează Portofel Utilizator",
+                "allow_topup": "Permite Reîncărcări",
+                "recurring_topup": "Reîncărcări Recurente Automate",
+                "conversion_rate": "Rată de reîncărcare (1 EUR = X puncte)",
+                "description": "Gestionați portofelul virtual al clienților"
+            },
+            "loyalty": {
+                "title": "Puncte de Loialitate",
+                "enable_loyalty": "Activează Colectarea Punctelor",
+                "points_per_eur": "Puncte pentru fiecare 1 EUR cheltuit",
+                "min_redeem": "Puncte minime pentru utilizare",
+                "description": "Puncte pentru activitate și achiziții",
+                "protip": "Sfat pro: Abonații pot primi de 2 ori mai multe puncte dacă activați multiplicatorul în secțiunea Gamificare."
+            },
+            "subscriptions": {
+                "title": "Abonamente",
+                "description": "Gestionați modelele de acces recurent",
+                "status_active": "ACTIVE",
+                "per_month": "/ month",
+                "perks": {
+                    "all_pdfs": "All PDFs without limit",
+                    "free_topup": "Free Wallet Top-up ({amount} every month)"
+                },
+                "add_plan": "Add new plan"
+            }
+        },
+        "gamification": {
+            "title": "Gamificare",
+            "description": "Motivați elevii cu niveluri și insigne",
+            "levels": {
+                "silver": "Silver Tier",
+                "gold": "Gold Tier",
+                "diamond": "Diamond VIP"
+            },
+            "perks": {
+                "discount": "Auto Discount (%)",
+                "auto_discount": "Se aplică automat la finalizarea comenzii",
+                "hidden_tier": "Doar atribuire manuală"
+            },
+            "badges_title": "Insigne Elev",
+            "badges": {
+                "early_bird": {
+                    "name": "Early Bird",
+                    "desc": "Cumpărare în prima oră de la publicare"
+                },
+                "collector": {
+                    "name": "Colecționar",
+                    "desc": "Deține peste 50 de materiale"
+                },
+                "top_reviewer": {
+                    "name": "Recenzent Top",
+                    "desc": "10 recenzii detaliate"
+                }
+            }
+        },
+        "market": {
+            "title": "Analiză de Piață și Curriculum",
+            "description": "Monitorizați tendințele pieței și cerințele educaționale",
+            "curriculum": {
+                "title": "Monitor Curriculum",
+                "description": "AI verifică conformitatea cu cerințele actuale (Ministerul Educației / Ofsted / altele)",
+                "monitor_label": "Curriculum Monitorizat",
+                "options": {
+                    "pl_mein": "Polonia (MEiN)",
+                    "uk_ofsted": "Marea Britanie (Ofsted)",
+                    "us_cc": "SUA (Common Core)"
+                },
+                "status": "Conformitatea materialelor tale: 85%",
+                "alerts": "Schimbare detectată în cerințele pentru clasele 4-6"
+            },
+            "trends": {
+                "title": "Urmărire Tendințe",
+                "description": "Produse în tendințe pe platforme precum TPT în categoriile tale",
+                "top_selling": "Cel mai popular format: 'Escape Rooms Interactiv'",
+                "competitor_bestsellers": "Bestseller-uri Concurență",
+                "recommendation": "Sugestie: Creează set 'Escape Room de Paște' (Cerere mare)",
+                "ai_rec": "Recomandare AI"
+            }
+        },
+        "insights": {
+            "title": "Audit AI și Sugestii de Produse",
+            "description": "Analiza resurselor tale și idei de expansiune",
+            "sync": {
+                "title": "Registru Sincronizare",
+                "description": "Starea importurilor de jocuri și materiale de pe platformele externe",
+                "last_sync": "Ultima sincronizare reușită: acum 15 min",
+                "pending_drafts": "{count} schițe noi de revizuit"
+            },
+            "expansion": {
+                "title": "Fabrica de Materiale (Sugestii)",
+                "description": "Idei pentru extinderea produselor existente la costuri reduse",
+                "item1": "Produsul 'Unitatea 1' poate fi extins cu 20 de flashcards (AI le va genera automat)",
+                "item2": "Creează un 'Mega Pack' din 3 dintre cele mai populare scenarii ale tale (Potențial: +25% marjă)"
+            },
+            "audit": {
+                "title": "Audit de Conversie",
+                "description": "AI analizează descrierile și fotografiile produselor tale",
+                "suggestion": "Schimbă fotografia principală la 'Flashcards Animale' – cea actuală are CTR scăzut"
+            }
+        },
+        "integrations": {
+            "title": "Integrări",
+            "description": "Conexiuni cu sisteme externe",
+            "webhooks": {
+                "title": "Webhook-uri",
+                "description": "Trimite notificări de comandă către sisteme externe",
+                "add": "Adaugă Webhook",
+                "url": "URL Țintă",
+                "event": "Eveniment",
+                "events": {
+                    "order_created": "Comandă creată",
+                    "order_paid": "Comandă plătită",
+                    "user_registered": "Utilizator înregistrat"
+                }
+            },
+            "mcp": {
+                "title": "MCP Connectors",
+                "description": "Connect external models and knowledge bases via MCP protocol",
+                "server": "MCP Server Address",
+                "status": "Connection status"
+            },
+            "api": {
+                "title": "External API Keys",
+                "description": "Integrations with CRM, Mailing, and other systems",
+                "service": "Service (e.g., MailerLite, Zapier)",
+                "key": "API Key / Token",
+                "coming_soon": "Integration with MailerLite, ActiveCampaign and Zapier is being implemented.",
+                "coming_soon_desc": "You can already save keys in the Webhooks section for testing."
+            }
+        },
+        "interactive": {
+            "title": "Integrare Jocuri Online",
+            "description": "Conectați Wordwall, Genially și alte platforme la magazinul dvs.",
+            "auto_import": "Creează automat un produs după adăugarea unui joc pe platformă",
+            "auto_import_desc": "Sistemul va detecta automat codurile încorporate (Embed) la crearea unui produs.",
+            "sync_status": "Ultima sincronizare a jocurilor",
+            "sync_hint": "Sugerăm inserarea linkurilor directe către jocuri în panoul de editare a produsului. Sistemul le va transforma automat într-o fereastră interactivă pentru student.",
+            "other_title": "Alte Integrări",
+            "platforms": {
+                "wordwall": "Cheie API Wordwall",
+                "wordwall_placeholder": "ex. kamila-lo-ko",
+                "genially": "Cheie API Genially",
+                "genially_placeholder": "ex. https://view.genial.ly/profile/nick",
+                "sync_title": "Sincronizare Wordwall și Genially",
+                "h5p_desc": "Încorporare locală",
+                "learningapps_desc": "Prin iFrame",
+                "quizizz_desc": "Sincronizare API"
+            }
+        },
+        "workshop": {
+            "title": "Atelier AI (Motor RAG)",
+            "description": "Generați materiale derivate pe baza bazei dvs. de cunoștințe",
+            "generate_btn": "Generează Materiale",
+            "status_ready": "Gata de generare",
+            "rag_sources": {
+                "title": "Surse de Cunoștințe (RAG)",
+                "description": "Alegeți baza de cunoștințe AI",
+                "main_label": "Sursa Principală (RAG)",
+                "notebook_lm": "Link către NotebookLM / Baza de Cunoștințe",
+                "options": {
+                    "google_drive": "Google Drive (Dosar: Materiale-Edu)",
+                    "notebook_lm": "Conector NotebookLM",
+                    "local": "Bază de date vectorială locală"
+                }
+            },
+            "generators": {
+                "title": "Generator de Materiale",
+                "reading": "Citire (Text + Întrebări)",
+                "listening": "Ascultare (Script + Audio AI)",
+                "speaking": "Carduri de Vorbire",
+                "vocabulary": "Exerciții de Vocabular",
+                "flashcards": "Flashcards (CSV/Anki)",
+                "tests": "Generator de Teste",
+                "worksheets": "Fișe de lucru PDF",
+                "ai_quiz": "Creator de Chestionare AI"
+            },
+            "canva": {
+                "title": "Conector Canva",
+                "description": "Exportați conținutul generat direct în proiectele Canva",
+                "api_key": "Token de Design Canva",
+                "auto_export": "Auto-export",
+                "connect": "Conectează-te la Canva"
+            },
+            "title_prefix": "AI Creative",
+            "title_suffix": "Studio",
+            "badge": "Next-Gen",
+            "powered_by": "Powered by OpenAI & HeyGen",
+            "available_credits": "Available Credits",
+            "generations_today": "Generations Today",
+            "studio": "Studio",
+            "history": "History",
+            "studios": {
+                "images": "Image Studio",
+                "video": "Video Studio",
+                "avatars": "Avatar Studio",
+                "social": "Social Hub",
+                "flashcards": "Flashcards",
+                "canva": "Canva Studio"
+            },
+            "actions": {
+                "reuse": "Reuse Prompt",
+                "generate": "Generate Asset",
+                "processing": "Processing...",
+                "attach": "Attach",
+                "change_product": "Change Product",
+                "connect": "Connect to Product"
+            },
+            "labels": {
+                "persona": "Select AI Persona",
+                "script": "Script",
+                "prompt": "Creative Prompt",
+                "preview": "Preview",
+                "history_empty": "Your canvas awaits.",
+                "connect_desc": "Link this AI asset to your store inventory.",
+                "professional_suite": "Professional Creative Suite"
+            },
+            "social_hub": {
+                "title": "Social Media Hub",
+                "subtitle": "Post Generator & Optimization",
+                "platforms": {
+                    "instagram": "Instagram",
+                    "facebook": "Facebook",
+                    "linkedin": "LinkedIn",
+                    "youtube": "YouTube"
+                },
+                "labels": {
+                    "select_product": "Select Product to Promote",
+                    "pick_placeholder": "Pick from Product Library...",
+                    "campaign_context": "Campaign Context / Prompt",
+                    "prompt_placeholder": "What are we promoting today? (e.g., 'New Flashcard Set for Christmas')",
+                    "ai_copy": "AI Generated Copy",
+                    "thinking": "Thinking...",
+                    "regenerate": "Regenerate Copy",
+                    "copy_placeholder": "AI will generate your post content here...",
+                    "media_asset": "Media Asset",
+                    "auto_selected": "Auto-Selected",
+                    "select_asset": "Select Asset",
+                    "from_gallery": "From Product Gallery",
+                    "viral_growth": "Viral Growth",
+                    "score": "Score",
+                    "ai_expectancy": "AI expects {percent}% higher engagement on {platform}.",
+                    "live_mockup": "Live Mockup Preview",
+                    "mockup_placeholder": "Your mockup copy will appear here...",
+                    "export": "Export to Socials"
+                }
+            },
+            "flashcards": {
+                "title": "AI Flashcard Studio",
+                "subtitle": "Transform topics into beautiful, ready-to-print flashcard sets.",
+                "badge": "Smart Learning",
+                "branding_kit": "Branding Kit",
+                "export_canva": "Export to Canva",
+                "smart_generator": "Smart Generator",
+                "topic_label": "Topic or Context",
+                "topic_placeholder": "e.g. Life Cycle of a Frog",
+                "style_label": "Visual Style",
+                "styles": {
+                    "academic": "Academic",
+                    "playful": "Playful",
+                    "minimal": "Minimal",
+                    "canva_ai": "Canva AI"
+                },
+                "generate_btn": "Generate Deck",
+                "generating": "Generating...",
+                "live_preview": "Live Preview",
+                "cards_prepared": "{count} Cards Prepared",
+                "empty": "No cards generated yet",
+                "add_custom": "Add Custom Card"
+            }
+        },
+        "automation": {
+            "title": "Conectori Agenți AI",
+            "description": "Conectați agenți precum Manus AI, GPT-4o cu Browser sau scripturi Playwright/Selenium",
+            "agent_delivered": "Agentul a livrat {count} schițe noi!",
+            "agents": {
+                "title": "Agenți Browser Disponibili",
+                "select_placeholder": "Alegeți agentul de automatizare",
+                "manus": "Conector Manus AI",
+                "general": "Agent Browser Personalizat (Webhook)",
+                "status_idle": "Agent gata pentru sarcini",
+                "btn_send": "Trimite Agentul pentru linkuri"
+            },
+            "receiver": {
+                "title": "Adresa Receptorului (Endpoint)",
+                "description": "Introduceți acest URL în Manus AI pentru ca agentul să poată trimite linkurile găsite direct în schițele dvs.",
+                "simulate_test": "(Simulare Sosire Agent / Test Webhook)",
+                "simulate_btn": "Simulează Agent"
+            },
+            "scrapers": {
+                "title": "Instrumente automate",
+                "card_title": "Joburi în Browser",
+                "options": {
+                    "wordwall": "Wordwall scraper",
+                    "genially": "Genially scraper",
+                    "learningapps": "LearningApps scraper"
+                },
+                "item1": "Găsește linkurile Embed pentru jocuri în profilul meu Genially",
+                "item2": "Verifică disponibilitatea noilor șabloane Canva",
+                "item3": "Descarcă codurile de partajare de la Wordwall",
+                "description": "Configurarea roboților pentru importul de conținut"
+            },
+            "chat": {
+                "title": "Chat Agent AI",
+                "subtitle": "Comunicare directă cu agentul browser",
+                "placeholder": "Unde să caut astăzi?",
+                "capabilities": "Capabilități actuale: Genially, Wordwall, Canva",
+                "welcome": "Bună! Sunt gata de treabă. Îmi poți da sarcini în conturile tale (Wordwall, Canva, Genially). Ce să fac?"
+            }
+        },
+        "emails": {
+            "title": "Șabloane Mesaje Sistem",
+            "description": "Gestionați conținutul mesajelor trimise automat clienților",
+            "save": "Salvează șabloanele",
+            "templates": {
+                "welcome": {
+                    "title": "Salut după înregistrare",
+                    "subject": "Bun venit în comunitate!",
+                    "content": "Ne bucurăm că ești cu noi. Detaliile tale de autentificare sunt..."
+                },
+                "order_confirmed": {
+                    "title": "Confirmare comandă",
+                    "subject": "Comanda ta #{orderNumber} a fost primită",
+                    "content": "Îți mulțumim pentru achiziție! Materialele tale sunt acum disponibile în panou."
+                },
+                "login_details": {
+                    "title": "Date de acces (după achiziție)",
+                    "subject": "Datele tale de acces la curs",
+                    "content": "Iată detaliile tale de autentificare: Email: {email}, Parolă: {password}"
+                }
+            },
+            "smtp": {
+                "title": "Configurare SMTP / Furnizor",
+                "description": "Setări server de mail pentru emailurile de sistem",
+                "enable_system": "Activați Trimiterea prin Sistem",
+                "enable_desc": "Utilizați serverul SMTP configurat",
+                "host": "Host SMTP",
+                "port": "Port"
+            },
+            "variables": "Variabile disponibile: {orderNumber}, {email}, {password}, {firstName}, {total}"
+        },
+        "google": {
+            "title": "Integrare Google Cloud",
+            "description": "Conectați Google Drive pentru a importa materiale direct în magazin",
+            "auth": {
+                "title": "Autorizare Google",
+                "connect": "Conectează-te la Google Drive",
+                "disconnect": "Deconectează contul",
+                "status_connected": "Conectat la contul: {email}",
+                "status_disconnected": "Nicio conexiune activă",
+                "drive_description": "Connect the 'Edu-Materials' folder from your Google Drive"
+            },
+            "drive": {
+                "title": "Browser Google Drive",
+                "import_selected": "Importă fișierele selectate",
+                "refresh": "Actualizează lista",
+                "no_files": "Nu s-au găsit fișiere PDF/ZIP în Drive-ul tău",
+                "import_success": "Fișierele au fost importate cu succes ca materiale",
+                "column_name": "Nume fișier",
+                "column_size": "Dimensiune",
+                "column_action": "Acțiune",
+                "description": "Răsfoiți fișierele PDF și ZIP gata de import",
+                "button": "Descarcă din Google Drive",
+                "connecting": "Se conectează...",
+                "picker_title": "Selectați fișierele din Google Drive",
+                "import_count": "Importă selectate ({count})",
+                "toast_success": "Importat {count} fișiere din Google Drive"
+            },
+            "config": {
+                "client_id": "Google Client ID",
+                "client_secret": "Google Client Secret",
+                "redirect_uri": "Redirect URI"
+            }
+        },
+        "abandoned": {
+            "title": "Recuperare Coș",
+            "description": "Mementouri automate pentru clienții care nu și-au finalizat achiziția",
+            "delay": "Întârziere primul email (ore)",
+            "discount_code": "Cod de reducere în email (opțional)",
+            "enable_auto": "Activează recuperarea automată",
+            "stats": {
+                "total_recovered": "Venituri recuperate",
+                "pending_carts": "Coșuri în așteptare"
+            }
+        },
+        "guardian": {
+            "title": "Gardian AI de Siguranță și Tehnic",
+            "description": "Sistem inteligent care monitorizează erorile, legislația și performanța",
+            "legal_check": "Monitorizare schimbări legislative (Ecommerce UE)",
+            "tech_check": "Monitorizare erori tehnice în timp real",
+            "security_check": "Analiza tentativelor de acces neautorizat",
+            "alerts": "Alerte de probleme critice",
+            "status_good": "Sistemul funcționează fără probleme",
+            "status_warning": "S-a detectat o posibilă neconformitate legală",
+            "last_scan": "Ultima scanare completă a sistemului"
+        },
+        "affiliate": {
+            "title": "Sistem de Referință și Afiliere",
+            "description": "Transformați-vă clienții în ambasadori ai brandului",
+            "commission": "Comision partener (%)",
+            "discount": "Reducere recomandare (%)",
+            "cookie_life": "Valabilitate cookie (zile)",
+            "referral_links": "Generați linkuri de recomandare",
+            "total_partners": "Parteneri activi",
+            "payouts": "Plăți în așteptare"
+        },
+        "pricing": {
+            "title": "Paritatea Puterii de Cumpărare (PPP)",
+            "description": "Ajustarea automată a prețurilor la puterea de cumpărare în 19 țări",
+            "enable_ppp": "Activați prețurile regionale inteligente",
+            "base_currency": "Moneda de bază",
+            "regions": {
+                "western": "Europa de Vest (100% preț)",
+                "central": "Europa Centrală (85% preț)",
+                "eastern": "Europa de Est (70% preț)",
+                "balkans": "Balcani (60% preț)"
+            },
+            "recurring_title": "Subscriptions & Recurring Payments",
+            "recurring_visa_title": "Visa Recurring Payments",
+            "recurring_visa_desc": "Enable automatic card charging for subscription products. Supported via Stripe Billing and PayNow Recurring.",
+            "recurring_frequency": "Standard Frequency",
+            "recurring_monthly": "30 DAYS / MONTHLY",
+            "recurring_grace_period": "Grace Period / Retry",
+            "recurring_retry": "3 DAYS RETRY",
+            "paynow_title": "PayNow Integration",
+            "paynow_access_key": "Access Key",
+            "paynow_signature_key": "Signature Key",
+            "blik_title": "BLIK Support Enabled",
+            "blik_desc": "PayNow allows users to pay with BLIK codes directly on your checkout page."
+        },
+        "taxes": {
+            "title": "Gestionare Taxe și Facturi",
+            "description": "Gestionați cotele de TVA și emiterea automată a facturilor în UE",
+            "eu_vat_moss": "Activează sistemul VAT-MOSS / OSS",
+            "invoice_provider": "Furnizor facturare (ex. Fakturownia, InFakt)",
+            "infakt_api_key": "InFakt API Key",
+            "test_connection": "Testează conexiunea API",
+            "stripe_title": "Stripe Payments",
+            "stripe_publishable": "Stripe Publishable Key",
+            "stripe_secret": "Stripe Secret Key"
+        },
+        "editor": {
+            "placeholder": "Începe să scrii...",
+            "prompts": {
+                "link": "Introdu URL-ul:",
+                "image": "Introdu URL-ul imaginii:"
+            },
+            "toolbar": {
+                "bold": "Bold",
+                "italic": "Italic",
+                "h2": "Titlu 2",
+                "h3": "Titlu 3",
+                "list": "Listă cu bumbi",
+                "listOrdered": "Listă numerotată",
+                "link": "Inserează Link",
+                "image": "Inserează Imagine",
+                "quote": "Citat",
+                "code": "Bloc de Cod"
+            }
         }
-      }
     },
-    "market": {
-      "title": "Analiză de Piață și Curriculum",
-      "description": "Monitorizați tendințele pieței și cerințele educaționale",
-      "curriculum": {
-        "title": "Monitor Curriculum",
-        "description": "AI verifică conformitatea cu cerințele actuale (Ministerul Educației / Ofsted / altele)",
-        "monitor_label": "Curriculum Monitorizat",
-        "options": {
-          "pl_mein": "Polonia (MEiN)",
-          "uk_ofsted": "Marea Britanie (Ofsted)",
-          "us_cc": "SUA (Common Core)"
+    "adminPanel": {
+        "sidebar": {
+            "title": "Panou Admin",
+            "subtitle": "Creative Studio",
+            "expand": "Extinde",
+            "collapse": "Restrânge",
+            "logout": "Deconectare",
+            "logoutTooltip": "Ieșire din sesiune",
+            "menu": {
+                "dashboard": "Tablou de bord",
+                "products": "Produse",
+                "orders": "Comenzi",
+                "coupons": "Coupons",
+                "materials": "Materiale",
+                "blog": "Blog",
+                "import": "Import AI",
+                "settings": "Setări",
+                "chat": "AI Chat",
+                "home": "Pagina principală",
+                "role": "Administrator",
+                "online": "Online",
+                "abandoned": "Abandoned Carts",
+                "offers": "Offer Generator",
+                "workshop": "AI Creative Suite",
+                "landing_builder": "Landing Pages"
+            }
         },
-        "status": "Conformitatea materialelor tale: 85%",
-        "alerts": "Schimbare detectată în cerințele pentru clasele 4-6"
-      },
-      "trends": {
-        "title": "Urmărire Tendințe",
-        "description": "Produse în tendințe pe platforme precum TPT în categoriile tale",
-        "top_selling": "Cel mai popular format: 'Escape Rooms Interactiv'",
-        "competitor_bestsellers": "Bestseller-uri Concurență",
-        "recommendation": "Sugestie: Creează set 'Escape Room de Paște' (Cerere mare)",
-        "ai_rec": "Recomandare AI"
-      }
-    },
-    "insights": {
-      "title": "Audit AI și Sugestii de Produse",
-      "description": "Analiza resurselor tale și idei de expansiune",
-      "sync": {
-        "title": "Registru Sincronizare",
-        "description": "Starea importurilor de jocuri și materiale de pe platformele externe",
-        "last_sync": "Ultima sincronizare reușită: acum 15 min",
-        "pending_drafts": "{count} schițe noi de revizuit"
-      },
-      "expansion": {
-        "title": "Fabrica de Materiale (Sugestii)",
-        "description": "Idei pentru extinderea produselor existente la costuri reduse",
-        "item1": "Produsul 'Unitatea 1' poate fi extins cu 20 de flashcards (AI le va genera automat)",
-        "item2": "Creează un 'Mega Pack' din 3 dintre cele mai populare scenarii ale tale (Potențial: +25% marjă)"
-      },
-      "audit": {
-        "title": "Audit de Conversie",
-        "description": "AI analizează descrierile și fotografiile produselor tale",
-        "suggestion": "Schimbă fotografia principală la 'Flashcards Animale' – cea actuală are CTR scăzut"
-      }
-    },
-    "integrations": {
-      "title": "Integrări",
-      "description": "Conexiuni cu sisteme externe",
-      "webhooks": {
-        "title": "Webhook-uri",
-        "description": "Trimite notificări de comandă către sisteme externe",
-        "add": "Adaugă Webhook",
-        "url": "URL Țintă",
-        "event": "Eveniment",
-        "events": {
-          "order_created": "Comandă creată",
-          "order_paid": "Comandă plătită",
-          "user_registered": "Utilizator înregistrat"
+        "dashboard": {
+            "title": "Tablou de bord",
+            "subtitle": "Prezentare generală a vânzărilor și analiză",
+            "periods": {
+                "7days": "7 zile",
+                "30days": "30 zile",
+                "90days": "90 zile",
+                "all": "Tot timpul"
+            },
+            "addProduct": "Adaugă produs",
+            "currency": "€",
+            "stats": {
+                "revenue": "Venituri",
+                "orders": "Comenzi",
+                "customers": "Clienți",
+                "avgOrderValue": "Valoare medie comandă",
+                "vsPrevious": "față de perioada anterioară",
+                "inSelectedPeriod": "În perioada selectată",
+                "uniqueCustomers": "Clienți unici",
+                "perOrder": "per comandă"
+            },
+            "charts": {
+                "weeklyRevenue": "Venituri săptămânale",
+                "revenueByDay": "Vânzări pe zile",
+                "bestsellersRanking": "Clasament Bestseller",
+                "topSellingProducts": "Cele mai vândute produse",
+                "noSalesData": "Nu există date despre vânzări",
+                "sold": "vândute: {count}",
+                "days": {
+                    "mon": "Lun",
+                    "tue": "Mar",
+                    "wed": "Mie",
+                    "thu": "Joi",
+                    "fri": "Vin",
+                    "sat": "Sâm",
+                    "sun": "Dum"
+                }
+            },
+            "recentOrders": {
+                "title": "Comenzi recente",
+                "subtitle": "Cele mai noi tranzacții",
+                "viewAll": "Vezi tot",
+                "noOrders": "Nicio comandă momentan",
+                "productCount": "{count} produse",
+                "status": {
+                    "completed": "Finalizat",
+                    "pending": "În așteptare",
+                    "processing": "În procesare",
+                    "cancelled": "Anulat",
+                    "refunded": "Rambursat"
+                }
+            },
+            "aiInsights": {
+                "card": {
+                    "monitoring": "Active Market Monitoring",
+                    "strategyTitle": "Your growth strategy for {period}",
+                    "periodWeek": "next week",
+                    "periodMonth": "this month",
+                    "description": "We analyzed your last {count} orders. We have 3 specific recommendations that could increase your revenue by approx. 18%.",
+                    "generateBtn": "Generate Strategic Report"
+                },
+                "modal": {
+                    "title": "AI Growth Report",
+                    "subtitle": "Generated for: Administrator • Feb 2024",
+                    "revenueChance": "Revenue Chance",
+                    "revenueGrowth": "Possible growth in 14 days",
+                    "crossSellScore": "Cross-sell Score",
+                    "crossSellDesc": "High linking potential",
+                    "retentionProj": "Retention Proj.",
+                    "retentionDesc": "Loyal returning customers",
+                    "recommendedActions": "Recommended Actions",
+                    "action1Title": "Email: Abandoned Cart (New template)",
+                    "action1Desc": "Customers are abandoning carts for \"Preschool - Autumn Pack\". We suggest adding a 48h timer and 5% discount.",
+                    "action2Title": "Bundle: Preschool Combo Pack",
+                    "action2Desc": "Combine 3 most popular products into one bundle. Suggested price: $59.99.",
+                    "deploy": "Deploy",
+                    "create": "Create",
+                    "skip": "Skip report",
+                    "apply": "Apply Recommendations",
+                    "success": "Strategic report has been saved and sent for analysis."
+                },
+                "overlay": {
+                    "title": "Processing Big Data...",
+                    "subtitle": "\"Analyzing correlations between products and buying behaviors of your customers.\"",
+                    "step1": "Clustering users...",
+                    "step3": "Generating visualizations..."
+                },
+                "wordwallSync": {
+                    "title": "Smart Interactive Sync",
+                    "description": "Paste links to your resources (Wordwall, Genially, Canva, YouTube, Google Slides, Quizizz, NotebookLM, Vocaroo) to add them as products.",
+                    "placeholder": "https://wordwall.net/...\nhttps://view.genial.ly/...\nhttps://canva.com/design/...\nhttps://youtube.com/watch?v=...\nhttps://quizizz.com/...",
+                    "syncBtn": "Start Sync",
+                    "syncing": "Syncing...",
+                    "success": "Successfully imported {count} new games!",
+                    "noNew": "All provided links have already been imported.",
+                    "invalid": "No valid educational links (Wordwall/Genially/Canva/YouTube/Slides/etc) detected.",
+                    "close": "Close"
+                }
+            },
+            "interactivePreview": {
+                "subtitle": "Live preview of interactive material",
+                "noPreview": "No preview available for this asset",
+                "close": "Close"
+            },
+            "activeAiLogs": {
+                "title": "Active AI Logs",
+                "live": "Live",
+                "imageGenerated": "Image Generated",
+                "socialPostReady": "Social Post Ready",
+                "flashcardCreated": "Flashcard Created",
+                "trendIdentified": "Trend identified",
+                "seoOptimized": "SEO Optimized",
+                "imagePolished": "Image Polished"
+            },
+            "studioQuickAccess": {
+                "title": "Studio Quick Access",
+                "imageStudio": "Image Studio",
+                "generate4k": "Generate 4K Visuals",
+                "socialHub": "Social Hub",
+                "viralCreation": "Viral Post Creation"
+            },
+            "salesHub": {
+                "title": "Sales Hub",
+                "subtitle": "Real-time Performance Insights",
+                "totalRevenue": "Venituri totale",
+                "avgOrderValue": "Valoarea medie a comenzii",
+                "conversionRate": "Rata de conversie",
+                "abandonedCarts": "Coșuri abandonate",
+                "upsellPerformance": "Upsell Performance",
+                "upsellDesc": "Post-purchase offers converted {percent}% of users",
+                "ltvLift": "LTV Lift"
+            },
+            "superAdmin": {
+                "title": "SuperAdmin: Deployment Management",
+                "subtitle": "Global Feature Toggles for new B2B modules",
+                "apiViewer": {
+                    "title": "External API Portal",
+                    "desc": "1-Click portal generator for schools (Phase 12).",
+                    "on": "Global ON",
+                    "off": "Paused",
+                    "earlyAccess": "Early Access List (Gold List)",
+                    "added": "Added {email} to early access"
+                },
+                "internalFeatures": {
+                    "title": "Internal Features & Shop Security",
+                    "desc": "Control the visibility of core modules in your B2C shop. Separately decide if these features are technically solid and should be allowed in B2B External Portals.",
+                    "ownShop": "Own Shop (B2C)",
+                    "externalExport": "External Export (B2B)",
+                    "games": "Interactive Games",
+                    "gamesDesc": "Arcade Room",
+                    "gamification": "Gamification",
+                    "gamificationDesc": "Badges, progress",
+                    "wallet": "Teacher Wallet",
+                    "walletDesc": "Points program"
+                },
+                "extensions": {
+                    "title": "B2B Extensions",
+                    "desc": "Marketplace for AI tokens and services (Phase 13)."
+                },
+                "futureCatalog": {
+                    "title": "Future B2B Module Catalog",
+                    "subtitle": "In development",
+                    "desc": "Features already existing in the mother shop, ready for future packaging and sharing with schools/teachers as paid SaaS Plugins.",
+                    "gamesApi": "Interactive Games (API)",
+                    "gamesApiDesc": "Allow schools to embed Arcade Room and board games directly on their own sites.",
+                    "gamificationEngine": "Gamification Engine",
+                    "gamificationEngineDesc": "Badges, Certificates, Proficiency Tree and Streaks sold as a motivative B2B addon.",
+                    "telemetry": "Clean Summaries",
+                    "telemetryDesc": "Simple, student-friendly summaries of completed modules exported to e-registers.",
+                    "affiliate": "B2B Affiliate Program",
+                    "affiliateDesc": "Schools dropship your courses under their own brand and share with students easily.",
+                    "ready": "Ready for deployment",
+                    "requiresPhase9": "Requires Phase 9"
+                }
+            }
+        },
+        "products": {
+            "title": "Produse",
+            "subtitle": "Gestionează produsele tale digitale",
+            "search": "Caută produse...",
+            "importAi": "Import AI",
+            "addProduct": "Adaugă produs",
+            "noProducts": "Nu s-au găsit produse",
+            "addFirst": "Adaugă primul produs",
+            "table": {
+                "product": "Produs",
+                "category": "Categorie",
+                "price": "Preț",
+                "source": "Listat în",
+                "status": "Stare",
+                "actions": "Acțiuni"
+            },
+            "status": {
+                "published": "Publicat",
+                "draft": "Schiță"
+            },
+            "actions": {
+                "edit": "Editează",
+                "viewAccess": "View Product Access",
+                "copyLink": "Copiază link checkout rapid",
+                "hide": "Ascunde",
+                "publish": "Publică",
+                "delete": "Șterge"
+            },
+            "toasts": {
+                "linkCopied": "Link checkout rapid copiat:\n{link}",
+                "deleteConfirm": "Sigur dorești să ștergi acest produs?"
+            },
+            "categories": {
+                "lesson-plans": "Planuri de lecții",
+                "worksheets": "Fișe de lucru",
+                "flashcards": "Flashcards",
+                "games": "Jocuri online",
+                "audio": "Materiale audio",
+                "video": "Materiale video",
+                "bundles": "Pachete",
+                "other": "Altele"
+            },
+            "source_badges": {
+                "wordpress": "WordPress / Publigo",
+                "tpt": "Teachers Pay Teachers",
+                "ai_optimized": "Optimizat AI"
+            }
+        },
+        "orders": {
+            "title": "Comenzi",
+            "subtitle": "Gestionarea comenzilor și urmărirea plăților",
+            "exportCsv": "Exportă CSV",
+            "stats": {
+                "revenue": "Venituri (finalizate)",
+                "pending": "Plăți în așteptare",
+                "today": "Comenzi astăzi",
+                "orders": "Comenzi",
+                "avgValue": "Valoare medie"
+            },
+            "search": "Caută comenzi...",
+            "statusFilter": "Stare",
+            "allStatuses": "Toate",
+            "empty": "Nu s-au găsit comenzi",
+            "table": {
+                "order": "Comandă",
+                "customer": "Client",
+                "products": "Produse",
+                "total": "Total",
+                "status": "Stare",
+                "date": "Dată",
+                "email": "Email",
+                "actions": "Acțiuni"
+            },
+            "status": {
+                "pending": "În așteptare",
+                "processing": "În procesare",
+                "completed": "Finalizat",
+                "cancelled": "Anulat",
+                "refunded": "Rambursat"
+            },
+            "paymentMethods": {
+                "card": "Card",
+                "transfer": "Transfer bancar",
+                "blik": "BLIK",
+                "paypal": "PayPal"
+            },
+            "details": {
+                "notFound": "Comanda nu a fost găsită",
+                "back": "Înapoi la listă",
+                "invoice": "Emite factură",
+                "payment": "Plată",
+                "summary": "Rezumat",
+                "sendEmail": "Trimite email",
+                "items": "Articole",
+                "paidAt": "Plătit la: {date}",
+                "discount": "Reducere",
+                "total": "Total",
+                "quantity": "Cantitate",
+                "title": "Detalii comandă",
+                "customer": "Client"
+            },
+            "paymentStatus": {
+                "paid": "Plătit",
+                "pending": "În așteptare",
+                "failed": "Eșuat",
+                "refunded": "Rambursat"
+            },
+            "export_headers": {
+                "order_number": "Număr comandă",
+                "date": "Dată",
+                "customer": "Client",
+                "email": "Email",
+                "products": "Produse",
+                "total": "Total",
+                "status": "Stare"
+            }
+        },
+        "coupons": {
+            "title": "Cupoane",
+            "subtitle": "Gestionează codurile de reducere",
+            "addCoupon": "Cupon nou",
+            "editCoupon": "Editează cupon",
+            "createCoupon": "Creează cupon",
+            "stats": {
+                "all": "Toate cupoanele",
+                "active": "Active",
+                "usage": "Utilizare totală"
+            },
+            "form": {
+                "code": "Cod cupon",
+                "generate": "Generează",
+                "placeholder": "ex. VARA2024",
+                "discountType": "Tip reducere",
+                "percent": "Procentual (%)",
+                "fixed": "Sumă fixă",
+                "discountValue": "Valoare reducere",
+                "usageLimit": "Limită utilizare",
+                "minOrderValue": "Valoare minimă comandă",
+                "expiresAt": "Expiră la (opțional)"
+            },
+            "ux": {
+                "show": "Show",
+                "hide": "Hide",
+                "copy": "Copy",
+                "copied": "Copied!",
+                "secure": "Encrypted"
+            },
+            "preview": {
+                "title": "Preview & Accept",
+                "accept": "Accept Changes",
+                "reject": "Discard",
+                "bulk_title": "Review Generated Drafts",
+                "apply_all": "Accept All ({count})",
+                "diff_before": "Before Optimization",
+                "diff_after": "AI Suggestion"
+            },
+            "table": {
+                "code": "Cod",
+                "discount": "Reducere",
+                "usage": "Utilizare",
+                "expires": "Expiră",
+                "status": "Stare"
+            },
+            "toasts": {
+                "deleteConfirm": "Sigur dorești să ștergi acest cupon?"
+            }
+        },
+        "materials": {
+            "title": "Gestionare Materiale",
+            "subtitle": "Adăugați fișiere, organizați-le și atribuiți-le produselor.",
+            "deleteSelected": "Șterge ({count})",
+            "assignToProduct": "Atribuie produsului ({count})",
+            "dragDrop": "Trageți fișierele aici",
+            "clickToUpload": "sau faceți clic pe butonul de mai jos pentru a selecta de pe disc",
+            "selectFiles": "Selectează fișiere",
+            "or": "- SAU -",
+            "library": {
+                "title": "Biblioteca de fișiere ({count})",
+                "description": "Lista tuturor materialelor încărcate.",
+                "empty": "Nu s-au găsit fișiere. Încărcați ceva."
+            },
+            "table": {
+                "check": "Selectează",
+                "fileName": "Nume fișier",
+                "size": "Dimensiune",
+                "source": "Sursă",
+                "product": "Produs atribuit",
+                "actions": "Acțiuni"
+            },
+            "badges": {
+                "upload": "Încărcare",
+                "drive": "Google Drive",
+                "unassigned": "Neatribuit"
+            },
+            "dialog": {
+                "title": "Atribuie fișiere produsului",
+                "selectLabel": "Selectează produsul",
+                "placeholder": "Selectează produsul din listă...",
+                "cancel": "Anulează",
+                "save": "Salvează modificările"
+            },
+            "toasts": {
+                "uploadSuccess": "S-au încărcat {count} fișiere",
+                "deleted": "Fișier șters",
+                "deletedSelected": "S-au șters fișierele selectate",
+                "assigned": "S-au atribuit {count} fișiere produsului"
+            }
+        },
+        "certificates": {
+            "title": "Certificate și Examene",
+            "subtitle": "Gestionează procesul de certificare",
+            "stats": {
+                "totalIssued": "Total emise",
+                "avgScore": "Scor mediu examen"
+            },
+            "tabs": {
+                "templates": "Șabloane",
+                "exams": "Examene",
+                "issued": "Emise"
+            },
+            "templates": {
+                "create": "Creează șablon",
+                "preview": "Editează șablon",
+                "standardTitle": "Diplomă Standard (A4)",
+                "standardDesc": "Șablon implicit pentru cursuri de limbi străine",
+                "certificateTitle": "Certificat de Absolvire",
+                "completedCourse": "Curs finalizat: {course}",
+                "aiGenerate": "Generează șablon AI",
+                "aiDesc": "Descrieți stilul (ex. 'modern', 'pentru copii'), iar AI va crea un design unic de diplomă.",
+                "createAi": "Creează cu AI"
+            },
+            "exams": {
+                "create": "Examen nou",
+                "description": "Creați o bancă de întrebări sau lăsați AI-ul să genereze un test din conținutul cursului.",
+                "createAi": "Creează examen AI"
+            },
+            "issued": {
+                "empty": "Nu au fost emise certificate în această lună."
+            }
+        },
+        "blog": {
+            "title": "Blog",
+            "subtitle": "Gestionează articolele de blog și SEO",
+            "newPost": "Articol nou",
+            "searchPlaceholder": "Caută articole...",
+            "empty": "Nu s-au găsit articole de blog",
+            "writeFirst": "Scrie primul articol",
+            "table": {
+                "title": "Titlu",
+                "category": "Categorie",
+                "status": "Stare",
+                "date": "Data"
+            },
+            "status": {
+                "published": "Publicat",
+                "draft": "Schiță"
+            },
+            "actions": {
+                "preview": "Previzualizează",
+                "delete": "Șterge",
+                "save": "Save",
+                "edit": "Editează",
+                "hide": "Ascunde",
+                "publish": "Publică"
+            },
+            "categories": {
+                "mega-pack": "Mega Packs",
+                "scenariusze": "Scenarios",
+                "zlobek": "Nursery",
+                "special-lessons": "Special Lessons",
+                "speakbook": "Speakbook",
+                "stories": "Stories",
+                "culture": "Culture",
+                "pory-roku": "Seasons",
+                "teatr": "Theater",
+                "flashcards": "Flashcards",
+                "gry": "Games",
+                "inne": "Altele",
+                "metodyka": "Metodica predării",
+                "materialy": "Materiale didactice",
+                "technologia": "Tehnologia în educație",
+                "inspiracje": "Inspirație și idei",
+                "recenzje": "Recenzii",
+                "wydarzenia": "Evenimente"
+            },
+            "toasts": {
+                "deleteConfirm": "Sigur dorești să ștergi acest articol?"
+            },
+            "form": {
+                "createTitle": "New Post",
+                "createSubtitle": "Create a new blog post",
+                "editTitle": "Edit Post",
+                "editSubtitle": "Edit existing blog post",
+                "titlePlaceholder": "Post title...",
+                "contentTitle": "Content",
+                "contentPlaceholder": "Start writing post content...",
+                "excerptTitle": "Excerpt",
+                "excerptPlaceholder": "Short description displayed on post list...",
+                "statusTitle": "Status",
+                "categoryTitle": "Category",
+                "categoryPlaceholder": "Select category",
+                "tagsTitle": "Tags",
+                "tagsPlaceholder": "tag1, tag2, tag3",
+                "imageTitle": "Featured Image",
+                "imagePlaceholder": "https://kamila.shor.dev/image.jpg",
+                "seoTitle": "SEO",
+                "metaTitleLabel": "Meta Title",
+                "metaTitlePlaceholder": "Search engine title",
+                "metaDescLabel": "Meta Description",
+                "metaDescPlaceholder": "Search engine description",
+                "charCount": "{count}/{max} characters",
+                "seoPreview": "Google Preview",
+                "generate": "Generate",
+                "save": "Save",
+                "saveChanges": "Save Changes",
+                "saving": "Saving...",
+                "delete": "Delete",
+                "notFound": "Post not found",
+                "backToList": "Back to list",
+                "titleRequired": "Please enter a title first"
+            },
+            "dialog": {
+                "title": "Gestionare fișier",
+                "save": "Salvează modificările",
+                "cancel": "Anulează",
+                "delete": "Șterge fișierul"
+            }
+        },
+        "chat": {
+            "title": "Centru de Comandă AI",
+            "subtitle": "Chat cu magazinul tău",
+            "welcome": "Bun venit în Centrul AI. Cu ce te pot ajuta?",
+            "newChat": "Chat nou",
+            "history": "Istoric",
+            "placeholder": "Selectează modelul",
+            "capabilities": {
+                "database": "Bază de date",
+                "store": "Magazin",
+                "web": "Internet",
+                "files": "Fișiere"
+            },
+            "inputPlaceholder": "Scrie un mesaj...",
+            "disclaimer": "AI-ul poate face greșeli. Verificați informațiile importante.",
+            "generatedBy": "Generat de {model}",
+            "mockResponse": "Răspuns simulat al modelului {model}. Am primit: \"{content}\". În versiunea completă, aici ar urma conexiunea cu API-ul (ex. OpenAI, Manus) sau baza de date.",
+            "mockSessions": {
+                "s1": {
+                    "title": "Analiza vânzărilor Q1",
+                    "date": "Astăzi"
+                },
+                "s2": {
+                    "title": "Descrieri noi de produse",
+                    "date": "Ieri"
+                },
+                "s3": {
+                    "title": "Depanare integrări",
+                    "date": "acum 2 zile"
+                }
+            }
+        },
+        "import": {
+            "title": "Import AI",
+            "subtitle": "Importă produse din catalog extern și îmbunătățește descrierile cu AI",
+            "catalogUrl": "URL Catalog",
+            "catalogUrlDesc": "Lipiți linkul către pagina de produse (kamilaenglish.com)",
+            "scan": "Scanează Produse",
+            "scanning": "Se scanează...",
+            "enhance": "Îmbunătățește cu AI",
+            "enhancing": "Se îmbunătățește...",
+            "import": "Importă ({count})",
+            "importing": "Se importă...",
+            "productsFound": "Produse ({count})",
+            "selectedCount": "{count} selectate",
+            "selectAll": "Selectează Tot",
+            "deselectAll": "Deselectează Tot",
+            "allCategories": "Toate",
+            "openSource": "Sursă deschisă",
+            "preview": {
+                "testInteractive": "Test Interactive Game",
+                "sourceLink": "Source Link",
+                "selectToPreview": "Select a product to preview",
+                "backToList": "Back to List",
+                "acceptAndCreate": "Accept & Create {count} Drafts"
+            },
+            "configureAi": "Configure API keys in settings before using AI",
+            "selectProducts": "Select products to import",
+            "noAssetsFound": "No valid assets were found. Please ensure you are using public links (e.g. wordwall.net/resource/...) and not your private dashboard.",
+            "privateLink": "Skipped private page: {url}",
+            "errors": {
+                "enterUrl": "Introduceți URL-ul catalogului",
+                "onlyKamila English": "Sunt suportate doar produsele de pe kamilaenglish.com",
+                "configureAi": "Configurați cheile API în setări înainte de a utiliza AI",
+                "selectProducts": "Selectați produsele pentru import"
+            },
+            "success": {
+                "found": "S-au găsit {count} produse de pe Kamila English!",
+                "enhanced": "Descrierile au fost îmbunătățite de AI!",
+                "imported": "S-au importat {count} produse!"
+            },
+            "placeholders": {
+                "url": "https://www.sklep.kamilaenglish.com/..."
+            },
+            "categories": {
+                "mega-pack": "Mega Pachete",
+                "scenariusze": "Scenarii",
+                "zlobek": "Creșă",
+                "special-lessons": "Lecții Speciale",
+                "speakbook": "Speakbook",
+                "stories": "Povestioare",
+                "culture": "Cultură",
+                "pory-roku": "Anotimpuri",
+                "teatr": "Teatru",
+                "flashcards": "Flashcards",
+                "gry": "Jocuri",
+                "inne": "Altele"
+            },
+            "enhancedText": {
+                "titlePrefix": "🎯",
+                "bestseller": "✨ BESTSELLER!",
+                "whatYouGet": "📚 Ce primești:",
+                "features": {
+                    "pdf": "• Materiale PDF gata de tipărit",
+                    "teacher": "• Instrucțiuni pentru profesor",
+                    "worksheets": "• Fișe de lucru și exerciții"
+                },
+                "footer": "⭐ Verificat de sute de profesori!"
+            }
+        },
+        "success": {
+            "found": "Found {count} products from Kamila English!",
+            "enhanced": "Descriptions enhanced by AI!",
+            "imported": "Imported {count} products!"
+        },
+        "placeholders": {
+            "url": "https://www.sklep.kamilaenglish.com/..."
+        },
+        "categories": {
+            "mega-pack": "Mega Packs",
+            "scenariusze": "Scenarios",
+            "zlobek": "Nursery",
+            "special-lessons": "Special Lessons",
+            "speakbook": "Speakbook",
+            "stories": "Stories",
+            "culture": "Culture",
+            "pory-roku": "Seasons",
+            "teatr": "Theater",
+            "flashcards": "Flashcards",
+            "gry": "Games",
+            "inne": "Others"
+        },
+        "footer": "⭐ Trusted by hundreds of teachers!",
+        "item1": "Full access to materials",
+        "item2": "SEO Optimized content",
+        "item3": "Implementation guide for students",
+        "assistant": {
+            "title": "AI Copilot",
+            "status": "Active Intelligence",
+            "welcome": "How can I help you today?",
+            "placeholder": "Ask me anything...",
+            "suggestions": {
+                "generate_visuals": "Generate 4K Visuals",
+                "social_post": "Create Social Post",
+                "avatar_script": "New AI Avatar Script",
+                "seo_optimize": "SEO Optimize Description",
+                "product_cover": "Generate Product Cover",
+                "sync_wordwall": "Sync with Wordwall",
+                "config_workshop": "Configure AI Workshop",
+                "test_api": "Test API Credentials",
+                "connect_canva": "Connect Canva Design",
+                "gen_strategy": "Generate Strategy",
+                "view_trends": "View Trends",
+                "open_workshop": "Open Workshop"
+            },
+            "responses": {
+                "processing": "I'm processing your request. As your AI Copilot, I can help you manage products, generate creative assets, and optimize your store.",
+                "products_context": "You currently have {count} products in your store. I can help you generate descriptions or images for them in the AI Workshop.",
+                "product_example": "For example, I noticed \"{title}\". Would you like to optimize it?",
+                "workshop_info": "The AI Workshop is where you can generate images, videos, and social media posts. You can find it in the 'Workshop' tab of Settings or the dedicated Studio page.",
+                "wordwall_info": "To sync with Wordwall, go to the Products page and use the 'Interactive Import' button. I can also help you scrape metadata from any educational URL!",
+                "hello": "Hello! I'm your AI Copilot. I'm currently aware of {count} products and your store settings. How can I assist you today?"
+            }
+        },
+        "offers": {
+            "title": "AI Offer Generator",
+            "subtitle": "Create high-converting offers in seconds.",
+            "beta": "Beta Growth Suite",
+            "parameters": {
+                "title": "Campaign Parameters",
+                "description": "Define the goal of your offer",
+                "promotion_type": "Promotion Type",
+                "occasional": "Occasional",
+                "evergreen": "Evergreen",
+                "product": "Product / Service",
+                "product_placeholder": "e.g. Lesson Plan Bundle A1-C1",
+                "benefit": "Main Benefit",
+                "benefit_placeholder": "What will the customer gain?",
+                "discount": "Discount (%)",
+                "generate": "Generate AI Offer",
+                "analyzing": "Analyzing market..."
+            },
+            "preview": {
+                "ai_project": "AI PROJECT",
+                "effectiveness": "Effectiveness: {score}%",
+                "title": "Special Early Bird Offer",
+                "subtitle": "Review the generated campaign before publishing",
+                "ad_copy_label": "Ad Slogan",
+                "conversion_label": "Conversion",
+                "vs_avg": "+{diff}% vs avg",
+                "discount_code_label": "Your discount code",
+                "copied": "Copied",
+                "copy": "Copy",
+                "reject": "Reject and change parameters",
+                "accept": "Accept and Publish Offer"
+            },
+            "loading": {
+                "title": "AI Magic in progress...",
+                "description": "\"Analyzing market trends and optimizing sales psychology for your products.\"",
+                "progress_label": "Competitor analysis..."
+            },
+            "toasts": {
+                "copied": "Discount code copied!",
+                "ready": "Offer ready for review!"
+            }
+        },
+        "landingBuilder": {
+            "title": "Landing Page Builder",
+            "draftVersion": "Draft Version: {name}",
+            "desktop": "Desktop",
+            "mobile": "Mobile",
+            "preview": "Preview",
+            "save": "Save changes",
+            "saving": "Saving...",
+            "elements": "Page Elements",
+            "text": "Text",
+            "image": "Image",
+            "button": "Button",
+            "aiBlock": "AI Block",
+            "canvas": "Canvas (Layers)",
+            "hero": "Hero Section",
+            "features": "Advantages & Benefits",
+            "pricing": "Pricing Section",
+            "aiMagic": {
+                "title": "Ready for magic?",
+                "desc": "Use AI to automatically match copy and colors to your product.",
+                "optimize": "Optimize with AI"
+            },
+            "mock": {
+                "newCourse": "New Course",
+                "heroTitle": "Start teaching the language {joy}",
+                "joy": "with joy",
+                "heroDesc": "Ready-made scenarios your students will love. Zero stress, 100% results.",
+                "buyNow": "Buy now and start teaching",
+                "learnMore": "Learn more",
+                "addImage": "Add main image (Drag & Drop)"
+            },
+            "optimization": {
+                "title": "AI Landing Optimization",
+                "desc": "We detected {count} areas for improvement to increase conversion by approx. {percent}%.",
+                "current": "Current Version",
+                "aiSuggestion": "AI Suggestion (Improved conversion)",
+                "recommendation": "RECOMMENDATION",
+                "skip": "Skip changes",
+                "apply": "Apply optimization",
+                "success": "AI changes have been applied to the project!",
+                "processing": "Working on the project...",
+                "processingDesc": "\"Scanning your copy for benefit language and analyzing market heatmaps.\"",
+                "analysingHeaders": "Analyzing headers...",
+                "pickingColors": "Choosing color palette...",
+                "renderingPreview": "Rendering preview...",
+                "paletteTitle": "Improved Color Palette (Ocean Night)",
+                "paletteDesc": "We will change the accents to a more professional navy and energetic blue.",
+                "suggestionTitle": "Stop wasting hours on preparation. Choose ready-made solutions.",
+                "suggestionDesc": "Join 500+ teachers who reclaimed 10 hours a week. We guarantee a smile on every student's face.",
+                "suggestionButton": "Claim your time and start now"
+            },
+            "toasts": {
+                "saved": "Landing page saved successfully!"
+            }
+        },
+        "integrations": {
+            "title": "Educational BaseLinker",
+            "subtitle": "Vânzări globale de materiale și automatizare AI.",
+            "loading": "Se încarcă traducerile...",
+            "addStore": "Adaugă magazin",
+            "sync_status": "Sincronizare: {date}",
+            "today": "Astăzi",
+            "tabs": {
+                "sync": "Depozit și Sincronizare",
+                "agent": "Agent Publicare",
+                "settings": "Setări Marketplace"
+            },
+            "marketplaces": {
+                "groups": {
+                    "poland": "Polonia",
+                    "usa": "SUA",
+                    "dach": "Germania (DACH)",
+                    "uk": "Regatul Unit",
+                    "fr_es": "Franța/Spania"
+                },
+                "names": {
+                    "wp": "WooCommerce / Publigo",
+                    "wp_full": "WordPress / Publigo",
+                    "tpt": "Teachers Pay Teachers",
+                    "etsy": "Etsy Education",
+                    "eduki": "Eduki (Germania)",
+                    "tes": "TES (UK)",
+                    "mieux": "MieuxEnseigner (Franța/Spania)"
+                }
+            },
+            "inventory": {
+                "title": "Inventar Global de Materiale",
+                "badge": "Depozit Central",
+                "description": "Gestionați fișierele sursă și prezența lor în diferite piețe.",
+                "source": "Sursă: kamilaenglish.com",
+                "allFiles": "Toate PDF-urile, Jocurile și Audio într-un singur loc",
+                "updateBtn": "Actualizează Inventarul",
+                "syncBtn": "Sincronizează Inventarul",
+                "progress": "Progres sincronizare",
+                "log": "Log Sistem",
+                "waiting": "Se așteaptă pornirea...",
+                "logs": {
+                    "init": "Se inițializează conexiunea cu sistemele externe...",
+                    "auth": "Se autorizează Publigo (wp-idea) & WooCommerce...",
+                    "fetching": "Se preia lista de produse (Multi-Channel Sourcing)...",
+                    "syncing": "Se sincronizează stocurile și fișierele digitale...",
+                    "complete": "Sincronizare completă. S-au detectat {count} materiale noi.",
+                    "agent_init": "Se inițializează mediul pentru {mkt}...",
+                    "agent_login": "Autentificare în panoul vânzătorului...",
+                    "agent_fill": "Se completează formularul: {title}...",
+                    "agent_optimize": "Se optimizează SEO și se încarcă fișierele...",
+                    "agent_done": "Gata! Produsul așteaptă aprobarea."
+                },
+                "toasts": {
+                    "sync_success": "Depozitul a fost actualizat cu succes.",
+                    "analysis_done": "Analiza AI finalizată. Datele sugerate sunt gata.",
+                    "no_tokens": "Tokeni suficienți. Reîncărcați contul.",
+                    "tokens_spent": "{count} tokeni deduși pentru operațiunea AI.",
+                    "test_woo": "Se testează conexiunea WooCommerce...",
+                    "woo_success": "Conectat cu succes la kamilaenglish.com (API v3)",
+                    "test_manus": "Se verifică licența Manus AI...",
+                    "manus_success": "Licență activă. Agent gata de lucru.",
+                    "settings_saved": "Setările au fost salvate local.",
+                    "new_channel": "Se deschide configuratorul canalului nou de vânzare...",
+                    "edit_schedule": "Editarea programului este disponibilă în setările sistemului.",
+                    "importing": "Se importă produse noi..."
+                },
+                "stats": {
+                    "products_short": "prod."
+                }
+            },
+            "schedule": {
+                "title": "Program",
+                "daily02": "Zilnic la 02:00",
+                "active": "Activ",
+                "disabled": "Dezactivat",
+                "checkOnlyChanges": "Verifică doar modificările",
+                "changeCron": "Schimbă setările cron"
+            },
+            "aiTip": {
+                "title": "Sfat AI",
+                "description": "Am detectat {count} produse noi pe WordPress pe care nu le aveți în acest magazin. Doriți să le descărcați?",
+                "importBtn": "Importă acum"
+            },
+            "agent": {
+                "catalogTitle": "Catalog Produse",
+                "ready": "Gata",
+                "emptyState": {
+                    "title": "Selectați produsul și piața țintă",
+                    "description": "Agentul Manus AI va face treaba pentru tine – se va autentifica, va completa datele și va publica produsul pe platforma selectată."
+                },
+                "selectMarket": "Selectați piața țintă",
+                "launchBtn": "Lansează Agentul",
+                "launchAdmin": "Lansează Agentul (Admin)",
+                "launchPoints": "Lansează pentru {count} puncte",
+                "working": "Agentul lucrează...",
+                "manusMode": "Mod Manus: Activ",
+                "marketPrefix": "EnglishLearning: ",
+                "yourBalance": "Soldul tău",
+                "analysisTitle": "Analiza AI pentru {market}",
+                "regionalOptimization": "Optimizare regională",
+                "suggestedTitle": "Titlu Sugerat (SEO Local)",
+                "suggestedPrice": "Preț (Conversie PPP)",
+                "sellingProb": "Probabilitate Vânzare",
+                "veryHigh": "FOARTE MARE",
+                "success": {
+                    "title": "Sarcină Finalizată!",
+                    "description": "Agentul AI a vizitat cu succes {market} și a publicat produsul tău.",
+                    "viewLogs": "VEZI LOGURILE SESIUNII"
+                },
+                "toasts": {
+                    "session_manager": "Se deschide managerul de sesiune...",
+                    "proxy_success": "Proxy: {ip} ({location}) OK",
+                    "report_title": "Raport agent",
+                    "report_desc": "Autentificat: OK, Formular: Completat, Imagini: Încărcate, SEO: Optimizat. Timp total: {time}"
+                },
+                "stats": {
+                    "points": "pct"
+                },
+                "mockAnalysis": {
+                    "optimizedTitleSuffix": "Material de Predare Cuprinzător pentru Profesori",
+                    "suggestedPrice": "12,99 €",
+                    "subject": "Limba Engleză",
+                    "seoTags": "homeschool, fișe de lucru, vocabular, flashcards, resurse profesori",
+                    "description": "Deblocați potențialul clasei dvs. cu acest produs premium {title}. \n\nCreat de educatori pentru educatori, această resursă include:\n- Scenarii PDF complete\n- Fișe de lucru gata de tipărit\n- Instrumente vizuale interactive.\n\nPerfect pentru lecții online și staționare!"
+                },
+                "idle": {
+                    "title": "În așteptare",
+                    "description": "Rulați agentul pentru a începe procesul de automatizare pe platforma {market}."
+                }
+            },
+            "settings": {
+                "title": "Conexiuni Multi-Channel",
+                "description": "Configurați datele de acces pentru magazinele externe.",
+                "saveAll": "Salvează tot",
+                "lastSaved": "Ultima salvare: {time}",
+                "woo": {
+                    "title": "Site WooCommerce / WordPress",
+                    "url": "URL magazin (REST API)",
+                    "key": "Consumer Key",
+                    "secret": "Consumer Secret",
+                    "connected": "Conectat",
+                    "autoSync": "AUTO-SYNC ACTIVAT",
+                    "test": "Testează"
+                },
+                "manus": {
+                    "title": "Sesiune Manus AI",
+                    "description": "Agentul folosește \"Browser Operator Mode\", autentificându-se în conturile tale. Încărcați cookie-urile de sesiune (JSON) pentru a evita problemele 2FA.",
+                    "instance": "Instanță API Agent",
+                    "test": "Testează Manus",
+                    "manage": "Gestionează sesiunea",
+                    "proxy": "Testează Proxy"
+                }
+            }
         }
-      },
-      "mcp": {
-        "title": "MCP Connectors",
-        "description": "Connect external models and knowledge bases via MCP protocol",
-        "server": "MCP Server Address",
-        "status": "Connection status"
-      },
-      "api": {
-        "title": "External API Keys",
-        "description": "Integrations with CRM, Mailing, and other systems",
-        "service": "Service (e.g., MailerLite, Zapier)",
-        "key": "API Key / Token",
-        "coming_soon": "Integration with MailerLite, ActiveCampaign and Zapier is being implemented.",
-        "coming_soon_desc": "You can already save keys in the Webhooks section for testing."
-      }
+    },
+    "logs": {
+        "init": "🚀 Initializing AI Scraper agent...",
+        "connect": "🔍 Connecting to API session...",
+        "extract": "🧩 Extracting mechanics and metadata...",
+        "images": "🖼️ Generating preview thumbnails...",
+        "seo": "✍️ Crafting SEO-optimized descriptions...",
+        "pricing": "💰 Calculating regional pricing...",
+        "finalize": "✨ Finalizing product drafts..."
     },
     "interactive": {
-      "title": "Integrare Jocuri Online",
-      "description": "Conectați Wordwall, Genially și alte platforme la magazinul dvs.",
-      "auto_import": "Creează automat un produs după adăugarea unui joc pe platformă",
-      "auto_import_desc": "Sistemul va detecta automat codurile încorporate (Embed) la crearea unui produs.",
-      "sync_status": "Ultima sincronizare a jocurilor",
-      "sync_hint": "Sugerăm inserarea linkurilor directe către jocuri în panoul de editare a produsului. Sistemul le va transforma automat într-o fereastră interactivă pentru student.",
-      "other_title": "Alte Integrări",
-      "platforms": {
-        "wordwall": "Cheie API Wordwall",
-        "wordwall_placeholder": "ex. kamila-lo-ko",
-        "genially": "Cheie API Genially",
-        "genially_placeholder": "ex. https://view.genial.ly/profile/nick",
-        "sync_title": "Sincronizare Wordwall și Genially",
-        "h5p_desc": "Încorporare locală",
-        "learningapps_desc": "Prin iFrame",
-        "quizizz_desc": "Sincronizare API"
-      }
-    },
-    "workshop": {
-      "title": "Atelier AI (Motor RAG)",
-      "description": "Generați materiale derivate pe baza bazei dvs. de cunoștințe",
-      "generate_btn": "Generează Materiale",
-      "status_ready": "Gata de generare",
-      "rag_sources": {
-        "title": "Surse de Cunoștințe (RAG)",
-        "description": "Alegeți baza de cunoștințe AI",
-        "main_label": "Sursa Principală (RAG)",
-        "notebook_lm": "Link către NotebookLM / Baza de Cunoștințe",
-        "options": {
-          "google_drive": "Google Drive (Dosar: Materiale-Edu)",
-          "notebook_lm": "Conector NotebookLM",
-          "local": "Bază de date vectorială locală"
+        "title": "Interactive Content",
+        "subtitle": "Import and optimize Games with AI",
+        "placeholder": "Paste links (one per line)...",
+        "found": "Found {count} interactive items!",
+        "generate": "Generate drafts",
+        "createDrafts": "Accept and create drafts",
+        "success": "Successfully imported {count} products!",
+        "preview_title": "AI Draft Preview",
+        "preview_desc": "Review generated products and test interactive content.",
+        "logs": {
+            "launching": "🚀 Launching real-time scraping agent...",
+            "analyzing": "🔍 Analyzing: {url}...",
+            "private": "⚠️ Link {url} appears to be a private collection. Skipping - please use individual game links.",
+            "extracted": "✅ Extracted: {title}",
+            "dropped": "❌ Connection dropped for: {url}",
+            "complete": "Scraping complete! Successfully extracted metadata for {count} assets."
         }
-      },
-      "generators": {
-        "title": "Generator de Materiale",
-        "reading": "Citire (Text + Întrebări)",
-        "listening": "Ascultare (Script + Audio AI)",
-        "speaking": "Carduri de Vorbire",
-        "vocabulary": "Exerciții de Vocabular",
-        "flashcards": "Flashcards (CSV/Anki)",
-        "tests": "Generator de Teste",
-        "worksheets": "Fișe de lucru PDF",
-        "ai_quiz": "Creator de Chestionare AI"
-      },
-      "canva": {
-        "title": "Conector Canva",
-        "description": "Exportați conținutul generat direct în proiectele Canva",
-        "api_key": "Token de Design Canva",
-        "auto_export": "Auto-export",
-        "connect": "Conectează-te la Canva"
-      },
-      "title_prefix": "AI Creative",
-      "title_suffix": "Studio",
-      "badge": "Next-Gen",
-      "powered_by": "Powered by OpenAI & HeyGen",
-      "available_credits": "Available Credits",
-      "generations_today": "Generations Today",
-      "studio": "Studio",
-      "history": "History",
-      "studios": {
-        "images": "Image Studio",
-        "video": "Video Studio",
-        "avatars": "Avatar Studio",
-        "social": "Social Hub",
-        "flashcards": "Flashcards",
-        "canva": "Canva Studio"
-      },
-      "actions": {
-        "reuse": "Reuse Prompt",
-        "generate": "Generate Asset",
-        "processing": "Processing...",
-        "attach": "Attach",
-        "change_product": "Change Product",
-        "connect": "Connect to Product"
-      },
-      "labels": {
-        "persona": "Select AI Persona",
-        "script": "Script",
-        "prompt": "Creative Prompt",
-        "preview": "Preview",
-        "history_empty": "Your canvas awaits.",
-        "connect_desc": "Link this AI asset to your store inventory.",
-        "professional_suite": "Professional Creative Suite"
-      },
-      "social_hub": {
-        "title": "Social Media Hub",
-        "subtitle": "Post Generator & Optimization",
-        "platforms": {
-          "instagram": "Instagram",
-          "facebook": "Facebook",
-          "linkedin": "LinkedIn",
-          "youtube": "YouTube"
-        },
-        "labels": {
-          "select_product": "Select Product to Promote",
-          "pick_placeholder": "Pick from Product Library...",
-          "campaign_context": "Campaign Context / Prompt",
-          "prompt_placeholder": "What are we promoting today? (e.g., 'New Flashcard Set for Christmas')",
-          "ai_copy": "AI Generated Copy",
-          "thinking": "Thinking...",
-          "regenerate": "Regenerate Copy",
-          "copy_placeholder": "AI will generate your post content here...",
-          "media_asset": "Media Asset",
-          "auto_selected": "Auto-Selected",
-          "select_asset": "Select Asset",
-          "from_gallery": "From Product Gallery",
-          "viral_growth": "Viral Growth",
-          "score": "Score",
-          "ai_expectancy": "AI expects {percent}% higher engagement on {platform}.",
-          "live_mockup": "Live Mockup Preview",
-          "mockup_placeholder": "Your mockup copy will appear here...",
-          "export": "Export to Socials"
-        }
-      },
-      "flashcards": {
-        "title": "AI Flashcard Studio",
-        "subtitle": "Transform topics into beautiful, ready-to-print flashcard sets.",
-        "badge": "Smart Learning",
-        "branding_kit": "Branding Kit",
-        "export_canva": "Export to Canva",
-        "smart_generator": "Smart Generator",
-        "topic_label": "Topic or Context",
-        "topic_placeholder": "e.g. Life Cycle of a Frog",
-        "style_label": "Visual Style",
-        "styles": {
-          "academic": "Academic",
-          "playful": "Playful",
-          "minimal": "Minimal",
-          "canva_ai": "Canva AI"
-        },
-        "generate_btn": "Generate Deck",
-        "generating": "Generating...",
-        "live_preview": "Live Preview",
-        "cards_prepared": "{count} Cards Prepared",
-        "empty": "No cards generated yet",
-        "add_custom": "Add Custom Card"
-      }
-    },
-    "automation": {
-      "title": "Conectori Agenți AI",
-      "description": "Conectați agenți precum Manus AI, GPT-4o cu Browser sau scripturi Playwright/Selenium",
-      "agent_delivered": "Agentul a livrat {count} schițe noi!",
-      "agents": {
-        "title": "Agenți Browser Disponibili",
-        "select_placeholder": "Alegeți agentul de automatizare",
-        "manus": "Conector Manus AI",
-        "general": "Agent Browser Personalizat (Webhook)",
-        "status_idle": "Agent gata pentru sarcini",
-        "btn_send": "Trimite Agentul pentru linkuri"
-      },
-      "receiver": {
-        "title": "Adresa Receptorului (Endpoint)",
-        "description": "Introduceți acest URL în Manus AI pentru ca agentul să poată trimite linkurile găsite direct în schițele dvs.",
-        "simulate_test": "(Simulare Sosire Agent / Test Webhook)",
-        "simulate_btn": "Simulează Agent"
-      },
-      "scrapers": {
-        "title": "Instrumente automate",
-        "card_title": "Joburi în Browser",
-        "options": {
-          "wordwall": "Wordwall scraper",
-          "genially": "Genially scraper",
-          "learningapps": "LearningApps scraper"
-        },
-        "item1": "Găsește linkurile Embed pentru jocuri în profilul meu Genially",
-        "item2": "Verifică disponibilitatea noilor șabloane Canva",
-        "item3": "Descarcă codurile de partajare de la Wordwall",
-        "description": "Configurarea roboților pentru importul de conținut"
-      },
-      "chat": {
-        "title": "Chat Agent AI",
-        "subtitle": "Comunicare directă cu agentul browser",
-        "placeholder": "Unde să caut astăzi?",
-        "capabilities": "Capabilități actuale: Genially, Wordwall, Canva",
-        "welcome": "Bună! Sunt gata de treabă. Îmi poți da sarcini în conturile tale (Wordwall, Canva, Genially). Ce să fac?"
-      }
-    },
-    "emails": {
-      "title": "Șabloane Mesaje Sistem",
-      "description": "Gestionați conținutul mesajelor trimise automat clienților",
-      "save": "Salvează șabloanele",
-      "templates": {
-        "welcome": {
-          "title": "Salut după înregistrare",
-          "subject": "Bun venit în comunitate!",
-          "content": "Ne bucurăm că ești cu noi. Detaliile tale de autentificare sunt..."
-        },
-        "order_confirmed": {
-          "title": "Confirmare comandă",
-          "subject": "Comanda ta #{orderNumber} a fost primită",
-          "content": "Îți mulțumim pentru achiziție! Materialele tale sunt acum disponibile în panou."
-        },
-        "login_details": {
-          "title": "Date de acces (după achiziție)",
-          "subject": "Datele tale de acces la curs",
-          "content": "Iată detaliile tale de autentificare: Email: {email}, Parolă: {password}"
-        }
-      },
-      "smtp": {
-        "title": "Configurare SMTP / Furnizor",
-        "description": "Setări server de mail pentru emailurile de sistem",
-        "enable_system": "Activați Trimiterea prin Sistem",
-        "enable_desc": "Utilizați serverul SMTP configurat",
-        "host": "Host SMTP",
-        "port": "Port"
-      },
-      "variables": "Variabile disponibile: {orderNumber}, {email}, {password}, {firstName}, {total}"
-    },
-    "google": {
-      "title": "Integrare Google Cloud",
-      "description": "Conectați Google Drive pentru a importa materiale direct în magazin",
-      "auth": {
-        "title": "Autorizare Google",
-        "connect": "Conectează-te la Google Drive",
-        "disconnect": "Deconectează contul",
-        "status_connected": "Conectat la contul: {email}",
-        "status_disconnected": "Nicio conexiune activă",
-        "drive_description": "Connect the 'Edu-Materials' folder from your Google Drive"
-      },
-      "drive": {
-        "title": "Browser Google Drive",
-        "import_selected": "Importă fișierele selectate",
-        "refresh": "Actualizează lista",
-        "no_files": "Nu s-au găsit fișiere PDF/ZIP în Drive-ul tău",
-        "import_success": "Fișierele au fost importate cu succes ca materiale",
-        "column_name": "Nume fișier",
-        "column_size": "Dimensiune",
-        "column_action": "Acțiune",
-        "description": "Răsfoiți fișierele PDF și ZIP gata de import",
-        "button": "Descarcă din Google Drive",
-        "connecting": "Se conectează...",
-        "picker_title": "Selectați fișierele din Google Drive",
-        "import_count": "Importă selectate ({count})",
-        "toast_success": "Importat {count} fișiere din Google Drive"
-      },
-      "config": {
-        "client_id": "Google Client ID",
-        "client_secret": "Google Client Secret",
-        "redirect_uri": "Redirect URI"
-      }
-    },
-    "abandoned": {
-      "title": "Recuperare Coș",
-      "description": "Mementouri automate pentru clienții care nu și-au finalizat achiziția",
-      "delay": "Întârziere primul email (ore)",
-      "discount_code": "Cod de reducere în email (opțional)",
-      "enable_auto": "Activează recuperarea automată",
-      "stats": {
-        "total_recovered": "Venituri recuperate",
-        "pending_carts": "Coșuri în așteptare"
-      }
-    },
-    "guardian": {
-      "title": "Gardian AI de Siguranță și Tehnic",
-      "description": "Sistem inteligent care monitorizează erorile, legislația și performanța",
-      "legal_check": "Monitorizare schimbări legislative (Ecommerce UE)",
-      "tech_check": "Monitorizare erori tehnice în timp real",
-      "security_check": "Analiza tentativelor de acces neautorizat",
-      "alerts": "Alerte de probleme critice",
-      "status_good": "Sistemul funcționează fără probleme",
-      "status_warning": "S-a detectat o posibilă neconformitate legală",
-      "last_scan": "Ultima scanare completă a sistemului"
-    },
-    "affiliate": {
-      "title": "Sistem de Referință și Afiliere",
-      "description": "Transformați-vă clienții în ambasadori ai brandului",
-      "commission": "Comision partener (%)",
-      "discount": "Reducere recomandare (%)",
-      "cookie_life": "Valabilitate cookie (zile)",
-      "referral_links": "Generați linkuri de recomandare",
-      "total_partners": "Parteneri activi",
-      "payouts": "Plăți în așteptare"
-    },
-    "pricing": {
-      "title": "Paritatea Puterii de Cumpărare (PPP)",
-      "description": "Ajustarea automată a prețurilor la puterea de cumpărare în 19 țări",
-      "enable_ppp": "Activați prețurile regionale inteligente",
-      "base_currency": "Moneda de bază",
-      "regions": {
-        "western": "Europa de Vest (100% preț)",
-        "central": "Europa Centrală (85% preț)",
-        "eastern": "Europa de Est (70% preț)",
-        "balkans": "Balcani (60% preț)"
-      },
-      "recurring_title": "Subscriptions & Recurring Payments",
-      "recurring_visa_title": "Visa Recurring Payments",
-      "recurring_visa_desc": "Enable automatic card charging for subscription products. Supported via Stripe Billing and PayNow Recurring.",
-      "recurring_frequency": "Standard Frequency",
-      "recurring_monthly": "30 DAYS / MONTHLY",
-      "recurring_grace_period": "Grace Period / Retry",
-      "recurring_retry": "3 DAYS RETRY",
-      "paynow_title": "PayNow Integration",
-      "paynow_access_key": "Access Key",
-      "paynow_signature_key": "Signature Key",
-      "blik_title": "BLIK Support Enabled",
-      "blik_desc": "PayNow allows users to pay with BLIK codes directly on your checkout page."
-    },
-    "taxes": {
-      "title": "Gestionare Taxe și Facturi",
-      "description": "Gestionați cotele de TVA și emiterea automată a facturilor în UE",
-      "eu_vat_moss": "Activează sistemul VAT-MOSS / OSS",
-      "invoice_provider": "Furnizor facturare (ex. Fakturownia, InFakt)",
-      "infakt_api_key": "InFakt API Key",
-      "test_connection": "Testează conexiunea API",
-      "stripe_title": "Stripe Payments",
-      "stripe_publishable": "Stripe Publishable Key",
-      "stripe_secret": "Stripe Secret Key"
-    },
-    "editor": {
-      "placeholder": "Începe să scrii...",
-      "prompts": {
-        "link": "Introdu URL-ul:",
-        "image": "Introdu URL-ul imaginii:"
-      },
-      "toolbar": {
-        "bold": "Bold",
-        "italic": "Italic",
-        "h2": "Titlu 2",
-        "h3": "Titlu 3",
-        "list": "Listă cu bumbi",
-        "listOrdered": "Listă numerotată",
-        "link": "Inserează Link",
-        "image": "Inserează Imagine",
-        "quote": "Citat",
-        "code": "Bloc de Cod"
-      }
-    }
-  },
-  "adminPanel": {
-    "sidebar": {
-      "title": "Panou Admin",
-      "subtitle": "Creative Studio",
-      "expand": "Extinde",
-      "collapse": "Restrânge",
-      "logout": "Deconectare",
-      "logoutTooltip": "Ieșire din sesiune",
-      "menu": {
-        "dashboard": "Tablou de bord",
-        "products": "Produse",
-        "orders": "Comenzi",
-        "coupons": "Coupons",
-        "materials": "Materiale",
-        "blog": "Blog",
-        "import": "Import AI",
-        "settings": "Setări",
-        "chat": "AI Chat",
-        "home": "Pagina principală",
-        "role": "Administrator",
-        "online": "Online",
-        "abandoned": "Abandoned Carts",
-        "offers": "Offer Generator",
-        "workshop": "AI Creative Suite",
-        "landing_builder": "Landing Pages"
-      }
-    },
-    "dashboard": {
-      "title": "Tablou de bord",
-      "subtitle": "Prezentare generală a vânzărilor și analiză",
-      "periods": {
-        "7days": "7 zile",
-        "30days": "30 zile",
-        "90days": "90 zile",
-        "all": "Tot timpul"
-      },
-      "addProduct": "Adaugă produs",
-      "currency": "€",
-      "stats": {
-        "revenue": "Venituri",
-        "orders": "Comenzi",
-        "customers": "Clienți",
-        "avgOrderValue": "Valoare medie comandă",
-        "vsPrevious": "față de perioada anterioară",
-        "inSelectedPeriod": "În perioada selectată",
-        "uniqueCustomers": "Clienți unici",
-        "perOrder": "per comandă"
-      },
-      "charts": {
-        "weeklyRevenue": "Venituri săptămânale",
-        "revenueByDay": "Vânzări pe zile",
-        "bestsellersRanking": "Clasament Bestseller",
-        "topSellingProducts": "Cele mai vândute produse",
-        "noSalesData": "Nu există date despre vânzări",
-        "sold": "vândute: {count}",
-        "days": {
-          "mon": "Lun",
-          "tue": "Mar",
-          "wed": "Mie",
-          "thu": "Joi",
-          "fri": "Vin",
-          "sat": "Sâm",
-          "sun": "Dum"
-        }
-      },
-      "recentOrders": {
-        "title": "Comenzi recente",
-        "subtitle": "Cele mai noi tranzacții",
-        "viewAll": "Vezi tot",
-        "noOrders": "Nicio comandă momentan",
-        "productCount": "{count} produse",
-        "status": {
-          "completed": "Finalizat",
-          "pending": "În așteptare",
-          "processing": "În procesare",
-          "cancelled": "Anulat",
-          "refunded": "Rambursat"
-        }
-      },
-      "aiInsights": {
-        "card": {
-          "monitoring": "Active Market Monitoring",
-          "strategyTitle": "Your growth strategy for {period}",
-          "periodWeek": "next week",
-          "periodMonth": "this month",
-          "description": "We analyzed your last {count} orders. We have 3 specific recommendations that could increase your revenue by approx. 18%.",
-          "generateBtn": "Generate Strategic Report"
-        },
-        "modal": {
-          "title": "AI Growth Report",
-          "subtitle": "Generated for: Administrator • Feb 2024",
-          "revenueChance": "Revenue Chance",
-          "revenueGrowth": "Possible growth in 14 days",
-          "crossSellScore": "Cross-sell Score",
-          "crossSellDesc": "High linking potential",
-          "retentionProj": "Retention Proj.",
-          "retentionDesc": "Loyal returning customers",
-          "recommendedActions": "Recommended Actions",
-          "action1Title": "Email: Abandoned Cart (New template)",
-          "action1Desc": "Customers are abandoning carts for \"Preschool - Autumn Pack\". We suggest adding a 48h timer and 5% discount.",
-          "action2Title": "Bundle: Preschool Combo Pack",
-          "action2Desc": "Combine 3 most popular products into one bundle. Suggested price: $59.99.",
-          "deploy": "Deploy",
-          "create": "Create",
-          "skip": "Skip report",
-          "apply": "Apply Recommendations",
-          "success": "Strategic report has been saved and sent for analysis."
-        },
-        "overlay": {
-          "title": "Processing Big Data...",
-          "subtitle": "\"Analyzing correlations between products and buying behaviors of your customers.\"",
-          "step1": "Clustering users...",
-          "step3": "Generating visualizations..."
-        },
-        "wordwallSync": {
-          "title": "Smart Interactive Sync",
-          "description": "Paste links to your resources (Wordwall, Genially, Canva, YouTube, Google Slides, Quizizz, NotebookLM, Vocaroo) to add them as products.",
-          "placeholder": "https://wordwall.net/...\nhttps://view.genial.ly/...\nhttps://canva.com/design/...\nhttps://youtube.com/watch?v=...\nhttps://quizizz.com/...",
-          "syncBtn": "Start Sync",
-          "syncing": "Syncing...",
-          "success": "Successfully imported {count} new games!",
-          "noNew": "All provided links have already been imported.",
-          "invalid": "No valid educational links (Wordwall/Genially/Canva/YouTube/Slides/etc) detected.",
-          "close": "Close"
-        }
-      },
-      "interactivePreview": {
-        "subtitle": "Live preview of interactive material",
-        "noPreview": "No preview available for this asset",
-        "close": "Close"
-      },
-      "activeAiLogs": {
-        "title": "Active AI Logs",
-        "live": "Live",
-        "imageGenerated": "Image Generated",
-        "socialPostReady": "Social Post Ready",
-        "flashcardCreated": "Flashcard Created",
-        "trendIdentified": "Trend identified",
-        "seoOptimized": "SEO Optimized",
-        "imagePolished": "Image Polished"
-      },
-      "studioQuickAccess": {
-        "title": "Studio Quick Access",
-        "imageStudio": "Image Studio",
-        "generate4k": "Generate 4K Visuals",
-        "socialHub": "Social Hub",
-        "viralCreation": "Viral Post Creation"
-      }
-    },
-    "products": {
-      "title": "Produse",
-      "subtitle": "Gestionează produsele tale digitale",
-      "search": "Caută produse...",
-      "importAi": "Import AI",
-      "addProduct": "Adaugă produs",
-      "noProducts": "Nu s-au găsit produse",
-      "addFirst": "Adaugă primul produs",
-      "table": {
-        "product": "Produs",
-        "category": "Categorie",
-        "price": "Preț",
-        "source": "Listat în",
-        "status": "Stare",
-        "actions": "Acțiuni"
-      },
-      "status": {
-        "published": "Publicat",
-        "draft": "Schiță"
-      },
-      "actions": {
-        "edit": "Editează",
-        "viewAccess": "View Product Access",
-        "copyLink": "Copiază link checkout rapid",
-        "hide": "Ascunde",
-        "publish": "Publică",
-        "delete": "Șterge"
-      },
-      "toasts": {
-        "linkCopied": "Link checkout rapid copiat:\n{link}",
-        "deleteConfirm": "Sigur dorești să ștergi acest produs?"
-      },
-      "categories": {
-        "lesson-plans": "Planuri de lecții",
-        "worksheets": "Fișe de lucru",
-        "flashcards": "Flashcards",
-        "games": "Jocuri online",
-        "audio": "Materiale audio",
-        "video": "Materiale video",
-        "bundles": "Pachete",
-        "other": "Altele"
-      },
-      "source_badges": {
-        "wordpress": "WordPress / Publigo",
-        "tpt": "Teachers Pay Teachers",
-        "ai_optimized": "Optimizat AI"
-      }
-    },
-    "orders": {
-      "title": "Comenzi",
-      "subtitle": "Gestionarea comenzilor și urmărirea plăților",
-      "exportCsv": "Exportă CSV",
-      "stats": {
-        "revenue": "Venituri (finalizate)",
-        "pending": "Plăți în așteptare",
-        "today": "Comenzi astăzi",
-        "orders": "Comenzi",
-        "avgValue": "Valoare medie"
-      },
-      "search": "Caută comenzi...",
-      "statusFilter": "Stare",
-      "allStatuses": "Toate",
-      "empty": "Nu s-au găsit comenzi",
-      "table": {
-        "order": "Comandă",
-        "customer": "Client",
-        "products": "Produse",
-        "total": "Total",
-        "status": "Stare",
-        "date": "Dată",
-        "email": "Email",
-        "actions": "Acțiuni"
-      },
-      "status": {
-        "pending": "În așteptare",
-        "processing": "În procesare",
-        "completed": "Finalizat",
-        "cancelled": "Anulat",
-        "refunded": "Rambursat"
-      },
-      "paymentMethods": {
-        "card": "Card",
-        "transfer": "Transfer bancar",
-        "blik": "BLIK",
-        "paypal": "PayPal"
-      },
-      "details": {
-        "notFound": "Comanda nu a fost găsită",
-        "back": "Înapoi la listă",
-        "invoice": "Emite factură",
-        "payment": "Plată",
-        "summary": "Rezumat",
-        "sendEmail": "Trimite email",
-        "items": "Articole",
-        "paidAt": "Plătit la: {date}",
-        "discount": "Reducere",
-        "total": "Total",
-        "quantity": "Cantitate",
-        "title": "Detalii comandă",
-        "customer": "Client"
-      },
-      "paymentStatus": {
-        "paid": "Plătit",
-        "pending": "În așteptare",
-        "failed": "Eșuat",
-        "refunded": "Rambursat"
-      },
-      "export_headers": {
-        "order_number": "Număr comandă",
-        "date": "Dată",
-        "customer": "Client",
-        "email": "Email",
-        "products": "Produse",
-        "total": "Total",
-        "status": "Stare"
-      }
-    },
-    "coupons": {
-      "title": "Cupoane",
-      "subtitle": "Gestionează codurile de reducere",
-      "addCoupon": "Cupon nou",
-      "editCoupon": "Editează cupon",
-      "createCoupon": "Creează cupon",
-      "stats": {
-        "all": "Toate cupoanele",
-        "active": "Active",
-        "usage": "Utilizare totală"
-      },
-      "form": {
-        "code": "Cod cupon",
-        "generate": "Generează",
-        "placeholder": "ex. VARA2024",
-        "discountType": "Tip reducere",
-        "percent": "Procentual (%)",
-        "fixed": "Sumă fixă",
-        "discountValue": "Valoare reducere",
-        "usageLimit": "Limită utilizare",
-        "minOrderValue": "Valoare minimă comandă",
-        "expiresAt": "Expiră la (opțional)"
-      },
-      "ux": {
-        "show": "Show",
-        "hide": "Hide",
-        "copy": "Copy",
-        "copied": "Copied!",
-        "secure": "Encrypted"
-      },
-      "preview": {
-        "title": "Preview & Accept",
-        "accept": "Accept Changes",
-        "reject": "Discard",
-        "bulk_title": "Review Generated Drafts",
-        "apply_all": "Accept All ({count})",
-        "diff_before": "Before Optimization",
-        "diff_after": "AI Suggestion"
-      },
-      "table": {
-        "code": "Cod",
-        "discount": "Reducere",
-        "usage": "Utilizare",
-        "expires": "Expiră",
-        "status": "Stare"
-      },
-      "toasts": {
-        "deleteConfirm": "Sigur dorești să ștergi acest cupon?"
-      }
-    },
-    "materials": {
-      "title": "Gestionare Materiale",
-      "subtitle": "Adăugați fișiere, organizați-le și atribuiți-le produselor.",
-      "deleteSelected": "Șterge ({count})",
-      "assignToProduct": "Atribuie produsului ({count})",
-      "dragDrop": "Trageți fișierele aici",
-      "clickToUpload": "sau faceți clic pe butonul de mai jos pentru a selecta de pe disc",
-      "selectFiles": "Selectează fișiere",
-      "or": "- SAU -",
-      "library": {
-        "title": "Biblioteca de fișiere ({count})",
-        "description": "Lista tuturor materialelor încărcate.",
-        "empty": "Nu s-au găsit fișiere. Încărcați ceva."
-      },
-      "table": {
-        "check": "Selectează",
-        "fileName": "Nume fișier",
-        "size": "Dimensiune",
-        "source": "Sursă",
-        "product": "Produs atribuit",
-        "actions": "Acțiuni"
-      },
-      "badges": {
-        "upload": "Încărcare",
-        "drive": "Google Drive",
-        "unassigned": "Neatribuit"
-      },
-      "dialog": {
-        "title": "Atribuie fișiere produsului",
-        "selectLabel": "Selectează produsul",
-        "placeholder": "Selectează produsul din listă...",
-        "cancel": "Anulează",
-        "save": "Salvează modificările"
-      },
-      "toasts": {
-        "uploadSuccess": "S-au încărcat {count} fișiere",
-        "deleted": "Fișier șters",
-        "deletedSelected": "S-au șters fișierele selectate",
-        "assigned": "S-au atribuit {count} fișiere produsului"
-      }
-    },
-    "certificates": {
-      "title": "Certificate și Examene",
-      "subtitle": "Gestionează procesul de certificare",
-      "stats": {
-        "totalIssued": "Total emise",
-        "avgScore": "Scor mediu examen"
-      },
-      "tabs": {
-        "templates": "Șabloane",
-        "exams": "Examene",
-        "issued": "Emise"
-      },
-      "templates": {
-        "create": "Creează șablon",
-        "preview": "Editează șablon",
-        "standardTitle": "Diplomă Standard (A4)",
-        "standardDesc": "Șablon implicit pentru cursuri de limbi străine",
-        "certificateTitle": "Certificat de Absolvire",
-        "completedCourse": "Curs finalizat: {course}",
-        "aiGenerate": "Generează șablon AI",
-        "aiDesc": "Descrieți stilul (ex. 'modern', 'pentru copii'), iar AI va crea un design unic de diplomă.",
-        "createAi": "Creează cu AI"
-      },
-      "exams": {
-        "create": "Examen nou",
-        "description": "Creați o bancă de întrebări sau lăsați AI-ul să genereze un test din conținutul cursului.",
-        "createAi": "Creează examen AI"
-      },
-      "issued": {
-        "empty": "Nu au fost emise certificate în această lună."
-      }
-    },
-    "blog": {
-      "title": "Blog",
-      "subtitle": "Gestionează articolele de blog și SEO",
-      "newPost": "Articol nou",
-      "searchPlaceholder": "Caută articole...",
-      "empty": "Nu s-au găsit articole de blog",
-      "writeFirst": "Scrie primul articol",
-      "table": {
-        "title": "Titlu",
-        "category": "Categorie",
-        "status": "Stare",
-        "date": "Data"
-      },
-      "status": {
-        "published": "Publicat",
-        "draft": "Schiță"
-      },
-      "actions": {
-        "preview": "Previzualizează",
-        "delete": "Șterge",
-        "save": "Save",
-        "edit": "Editează",
-        "hide": "Ascunde",
-        "publish": "Publică"
-      },
-      "categories": {
-        "mega-pack": "Mega Packs",
-        "scenariusze": "Scenarios",
-        "zlobek": "Nursery",
-        "special-lessons": "Special Lessons",
-        "speakbook": "Speakbook",
-        "stories": "Stories",
-        "culture": "Culture",
-        "pory-roku": "Seasons",
-        "teatr": "Theater",
-        "flashcards": "Flashcards",
-        "gry": "Games",
-        "inne": "Altele",
-        "metodyka": "Metodica predării",
-        "materialy": "Materiale didactice",
-        "technologia": "Tehnologia în educație",
-        "inspiracje": "Inspirație și idei",
-        "recenzje": "Recenzii",
-        "wydarzenia": "Evenimente"
-      },
-      "toasts": {
-        "deleteConfirm": "Sigur dorești să ștergi acest articol?"
-      },
-      "form": {
-        "createTitle": "New Post",
-        "createSubtitle": "Create a new blog post",
-        "editTitle": "Edit Post",
-        "editSubtitle": "Edit existing blog post",
-        "titlePlaceholder": "Post title...",
-        "contentTitle": "Content",
-        "contentPlaceholder": "Start writing post content...",
-        "excerptTitle": "Excerpt",
-        "excerptPlaceholder": "Short description displayed on post list...",
-        "statusTitle": "Status",
-        "categoryTitle": "Category",
-        "categoryPlaceholder": "Select category",
-        "tagsTitle": "Tags",
-        "tagsPlaceholder": "tag1, tag2, tag3",
-        "imageTitle": "Featured Image",
-        "imagePlaceholder": "https://kamila.shor.dev/image.jpg",
-        "seoTitle": "SEO",
-        "metaTitleLabel": "Meta Title",
-        "metaTitlePlaceholder": "Search engine title",
-        "metaDescLabel": "Meta Description",
-        "metaDescPlaceholder": "Search engine description",
-        "charCount": "{count}/{max} characters",
-        "seoPreview": "Google Preview",
-        "generate": "Generate",
-        "save": "Save",
-        "saveChanges": "Save Changes",
-        "saving": "Saving...",
-        "delete": "Delete",
-        "notFound": "Post not found",
-        "backToList": "Back to list",
-        "titleRequired": "Please enter a title first"
-      },
-      "dialog": {
-        "title": "Gestionare fișier",
-        "save": "Salvează modificările",
-        "cancel": "Anulează",
-        "delete": "Șterge fișierul"
-      }
-    },
-    "chat": {
-      "title": "Centru de Comandă AI",
-      "subtitle": "Chat cu magazinul tău",
-      "welcome": "Bun venit în Centrul AI. Cu ce te pot ajuta?",
-      "newChat": "Chat nou",
-      "history": "Istoric",
-      "placeholder": "Selectează modelul",
-      "capabilities": {
-        "database": "Bază de date",
-        "store": "Magazin",
-        "web": "Internet",
-        "files": "Fișiere"
-      },
-      "inputPlaceholder": "Scrie un mesaj...",
-      "disclaimer": "AI-ul poate face greșeli. Verificați informațiile importante.",
-      "generatedBy": "Generat de {model}",
-      "mockResponse": "Răspuns simulat al modelului {model}. Am primit: \"{content}\". În versiunea completă, aici ar urma conexiunea cu API-ul (ex. OpenAI, Manus) sau baza de date.",
-      "mockSessions": {
-        "s1": {
-          "title": "Analiza vânzărilor Q1",
-          "date": "Astăzi"
-        },
-        "s2": {
-          "title": "Descrieri noi de produse",
-          "date": "Ieri"
-        },
-        "s3": {
-          "title": "Depanare integrări",
-          "date": "acum 2 zile"
-        }
-      }
-    },
-    "import": {
-      "title": "Import AI",
-      "subtitle": "Importă produse din catalog extern și îmbunătățește descrierile cu AI",
-      "catalogUrl": "URL Catalog",
-      "catalogUrlDesc": "Lipiți linkul către pagina de produse (kamilaenglish.com)",
-      "scan": "Scanează Produse",
-      "scanning": "Se scanează...",
-      "enhance": "Îmbunătățește cu AI",
-      "enhancing": "Se îmbunătățește...",
-      "import": "Importă ({count})",
-      "importing": "Se importă...",
-      "productsFound": "Produse ({count})",
-      "selectedCount": "{count} selectate",
-      "selectAll": "Selectează Tot",
-      "deselectAll": "Deselectează Tot",
-      "allCategories": "Toate",
-      "openSource": "Sursă deschisă",
-      "preview": {
-        "testInteractive": "Test Interactive Game",
-        "sourceLink": "Source Link",
-        "selectToPreview": "Select a product to preview",
-        "backToList": "Back to List",
-        "acceptAndCreate": "Accept & Create {count} Drafts"
-      },
-      "configureAi": "Configure API keys in settings before using AI",
-      "selectProducts": "Select products to import",
-      "noAssetsFound": "No valid assets were found. Please ensure you are using public links (e.g. wordwall.net/resource/...) and not your private dashboard.",
-      "privateLink": "Skipped private page: {url}",
-      "errors": {
-        "enterUrl": "Introduceți URL-ul catalogului",
-        "onlyKamila English": "Sunt suportate doar produsele de pe kamilaenglish.com",
-        "configureAi": "Configurați cheile API în setări înainte de a utiliza AI",
-        "selectProducts": "Selectați produsele pentru import"
-      },
-      "success": {
-        "found": "S-au găsit {count} produse de pe Kamila English!",
-        "enhanced": "Descrierile au fost îmbunătățite de AI!",
-        "imported": "S-au importat {count} produse!"
-      },
-      "placeholders": {
-        "url": "https://www.sklep.kamilaenglish.com/..."
-      },
-      "categories": {
-        "mega-pack": "Mega Pachete",
-        "scenariusze": "Scenarii",
-        "zlobek": "Creșă",
-        "special-lessons": "Lecții Speciale",
-        "speakbook": "Speakbook",
-        "stories": "Povestioare",
-        "culture": "Cultură",
-        "pory-roku": "Anotimpuri",
-        "teatr": "Teatru",
-        "flashcards": "Flashcards",
-        "gry": "Jocuri",
-        "inne": "Altele"
-      },
-      "enhancedText": {
-        "titlePrefix": "🎯",
-        "bestseller": "✨ BESTSELLER!",
-        "whatYouGet": "📚 Ce primești:",
-        "features": {
-          "pdf": "• Materiale PDF gata de tipărit",
-          "teacher": "• Instrucțiuni pentru profesor",
-          "worksheets": "• Fișe de lucru și exerciții"
-        },
-        "footer": "⭐ Verificat de sute de profesori!"
-      }
-    },
-    "success": {
-      "found": "Found {count} products from Kamila English!",
-      "enhanced": "Descriptions enhanced by AI!",
-      "imported": "Imported {count} products!"
-    },
-    "placeholders": {
-      "url": "https://www.sklep.kamilaenglish.com/..."
-    },
-    "categories": {
-      "mega-pack": "Mega Packs",
-      "scenariusze": "Scenarios",
-      "zlobek": "Nursery",
-      "special-lessons": "Special Lessons",
-      "speakbook": "Speakbook",
-      "stories": "Stories",
-      "culture": "Culture",
-      "pory-roku": "Seasons",
-      "teatr": "Theater",
-      "flashcards": "Flashcards",
-      "gry": "Games",
-      "inne": "Others"
-    },
-    "footer": "⭐ Trusted by hundreds of teachers!",
-    "item1": "Full access to materials",
-    "item2": "SEO Optimized content",
-    "item3": "Implementation guide for students",
-    "assistant": {
-      "title": "AI Copilot",
-      "status": "Active Intelligence",
-      "welcome": "How can I help you today?",
-      "placeholder": "Ask me anything...",
-      "suggestions": {
-        "generate_visuals": "Generate 4K Visuals",
-        "social_post": "Create Social Post",
-        "avatar_script": "New AI Avatar Script",
-        "seo_optimize": "SEO Optimize Description",
-        "product_cover": "Generate Product Cover",
-        "sync_wordwall": "Sync with Wordwall",
-        "config_workshop": "Configure AI Workshop",
-        "test_api": "Test API Credentials",
-        "connect_canva": "Connect Canva Design",
-        "gen_strategy": "Generate Strategy",
-        "view_trends": "View Trends",
-        "open_workshop": "Open Workshop"
-      },
-      "responses": {
-        "processing": "I'm processing your request. As your AI Copilot, I can help you manage products, generate creative assets, and optimize your store.",
-        "products_context": "You currently have {count} products in your store. I can help you generate descriptions or images for them in the AI Workshop.",
-        "product_example": "For example, I noticed \"{title}\". Would you like to optimize it?",
-        "workshop_info": "The AI Workshop is where you can generate images, videos, and social media posts. You can find it in the 'Workshop' tab of Settings or the dedicated Studio page.",
-        "wordwall_info": "To sync with Wordwall, go to the Products page and use the 'Interactive Import' button. I can also help you scrape metadata from any educational URL!",
-        "hello": "Hello! I'm your AI Copilot. I'm currently aware of {count} products and your store settings. How can I assist you today?"
-      }
-    },
-    "offers": {
-      "title": "AI Offer Generator",
-      "subtitle": "Create high-converting offers in seconds.",
-      "beta": "Beta Growth Suite",
-      "parameters": {
-        "title": "Campaign Parameters",
-        "description": "Define the goal of your offer",
-        "promotion_type": "Promotion Type",
-        "occasional": "Occasional",
-        "evergreen": "Evergreen",
-        "product": "Product / Service",
-        "product_placeholder": "e.g. Lesson Plan Bundle A1-C1",
-        "benefit": "Main Benefit",
-        "benefit_placeholder": "What will the customer gain?",
-        "discount": "Discount (%)",
-        "generate": "Generate AI Offer",
-        "analyzing": "Analyzing market..."
-      },
-      "preview": {
-        "ai_project": "AI PROJECT",
-        "effectiveness": "Effectiveness: {score}%",
-        "title": "Special Early Bird Offer",
-        "subtitle": "Review the generated campaign before publishing",
-        "ad_copy_label": "Ad Slogan",
-        "conversion_label": "Conversion",
-        "vs_avg": "+{diff}% vs avg",
-        "discount_code_label": "Your discount code",
-        "copied": "Copied",
-        "copy": "Copy",
-        "reject": "Reject and change parameters",
-        "accept": "Accept and Publish Offer"
-      },
-      "loading": {
-        "title": "AI Magic in progress...",
-        "description": "\"Analyzing market trends and optimizing sales psychology for your products.\"",
-        "progress_label": "Competitor analysis..."
-      },
-      "toasts": {
-        "copied": "Discount code copied!",
-        "ready": "Offer ready for review!"
-      }
-    },
-    "landingBuilder": {
-      "title": "Landing Page Builder",
-      "draftVersion": "Draft Version: {name}",
-      "desktop": "Desktop",
-      "mobile": "Mobile",
-      "preview": "Preview",
-      "save": "Save changes",
-      "saving": "Saving...",
-      "elements": "Page Elements",
-      "text": "Text",
-      "image": "Image",
-      "button": "Button",
-      "aiBlock": "AI Block",
-      "canvas": "Canvas (Layers)",
-      "hero": "Hero Section",
-      "features": "Advantages & Benefits",
-      "pricing": "Pricing Section",
-      "aiMagic": {
-        "title": "Ready for magic?",
-        "desc": "Use AI to automatically match copy and colors to your product.",
-        "optimize": "Optimize with AI"
-      },
-      "mock": {
-        "newCourse": "New Course",
-        "heroTitle": "Start teaching the language {joy}",
-        "joy": "with joy",
-        "heroDesc": "Ready-made scenarios your students will love. Zero stress, 100% results.",
-        "buyNow": "Buy now and start teaching",
-        "learnMore": "Learn more",
-        "addImage": "Add main image (Drag & Drop)"
-      },
-      "optimization": {
-        "title": "AI Landing Optimization",
-        "desc": "We detected {count} areas for improvement to increase conversion by approx. {percent}%.",
-        "current": "Current Version",
-        "aiSuggestion": "AI Suggestion (Improved conversion)",
-        "recommendation": "RECOMMENDATION",
-        "skip": "Skip changes",
-        "apply": "Apply optimization",
-        "success": "AI changes have been applied to the project!",
-        "processing": "Working on the project...",
-        "processingDesc": "\"Scanning your copy for benefit language and analyzing market heatmaps.\"",
-        "analysingHeaders": "Analyzing headers...",
-        "pickingColors": "Choosing color palette...",
-        "renderingPreview": "Rendering preview...",
-        "paletteTitle": "Improved Color Palette (Ocean Night)",
-        "paletteDesc": "We will change the accents to a more professional navy and energetic blue.",
-        "suggestionTitle": "Stop wasting hours on preparation. Choose ready-made solutions.",
-        "suggestionDesc": "Join 500+ teachers who reclaimed 10 hours a week. We guarantee a smile on every student's face.",
-        "suggestionButton": "Claim your time and start now"
-      },
-      "toasts": {
-        "saved": "Landing page saved successfully!"
-      }
     },
     "integrations": {
-      "title": "Educational BaseLinker",
-      "subtitle": "Vânzări globale de materiale și automatizare AI.",
-      "loading": "Se încarcă traducerile...",
-      "addStore": "Adaugă magazin",
-      "sync_status": "Sincronizare: {date}",
-      "today": "Astăzi",
-      "tabs": {
-        "sync": "Depozit și Sincronizare",
-        "agent": "Agent Publicare",
-        "settings": "Setări Marketplace"
-      },
-      "marketplaces": {
-        "groups": {
-          "poland": "Polonia",
-          "usa": "SUA",
-          "dach": "Germania (DACH)",
-          "uk": "Regatul Unit",
-          "fr_es": "Franța/Spania"
+        "title": "Educational BaseLinker",
+        "subtitle": "Global materials sales and AI automation.",
+        "loading": "Loading translations...",
+        "addStore": "Add store",
+        "sync_status": "Sync: {date}",
+        "today": "Today",
+        "tabs": {
+            "sync": "Warehouse & Sync",
+            "agent": "Publication Agent",
+            "settings": "Marketplace Settings"
         },
-        "names": {
-          "wp": "WooCommerce / Publigo",
-          "wp_full": "WordPress / Publigo",
-          "tpt": "Teachers Pay Teachers",
-          "etsy": "Etsy Education",
-          "eduki": "Eduki (Germania)",
-          "tes": "TES (UK)",
-          "mieux": "MieuxEnseigner (Franța/Spania)"
+        "marketplaces": {
+            "groups": {
+                "poland": "Poland",
+                "usa": "USA",
+                "dach": "Germany (DACH)",
+                "uk": "UK",
+                "fr_es": "France/Spain"
+            },
+            "names": {
+                "wp": "WooCommerce / Publigo",
+                "wp_full": "WordPress / Publigo",
+                "tpt": "Teachers Pay Teachers",
+                "etsy": "Etsy Education",
+                "eduki": "Eduki (Germany)",
+                "tes": "TES (UK)",
+                "mieux": "MieuxEnseigner (France/Spain)"
+            }
+        },
+        "inventory": {
+            "title": "Global Materials Inventory",
+            "badge": "Central Warehouse",
+            "description": "Manage source files and their presence in different markets.",
+            "source": "Source: kamilaenglish.com",
+            "allFiles": "All PDFs, Games and Audio in one place",
+            "updateBtn": "Update Inventory",
+            "syncBtn": "Sync Inventory",
+            "progress": "Sync progress",
+            "log": "System Log",
+            "waiting": "Waiting for start...",
+            "logs": {
+                "init": "Initializing connection with external systems...",
+                "auth": "Authorizing Publigo (wp-idea) & WooCommerce...",
+                "fetching": "Fetching product list (Multi-Channel Sourcing)...",
+                "syncing": "Syncing stock levels and digital files...",
+                "complete": "Sync complete. Detected {count} new materials.",
+                "agent_init": "Initializing environment for {mkt}...",
+                "agent_login": "Logging into seller panel...",
+                "agent_fill": "Filling form: {title}...",
+                "agent_optimize": "Optimizing SEO and uploading files...",
+                "agent_done": "Ready! Product is waiting for approval."
+            },
+            "toasts": {
+                "sync_success": "Warehouse updated successfully.",
+                "analysis_done": "AI Analysis complete. Suggested data is ready.",
+                "no_tokens": "Insufficient tokens. Top up your account.",
+                "tokens_spent": "{count} tokens deducted for AI operation.",
+                "test_woo": "Testing WooCommerce connection...",
+                "woo_success": "Connected successfully to kamilaenglish.com (API v3)",
+                "test_manus": "Verifying Manus AI license...",
+                "manus_success": "License active. Agent ready for work.",
+                "settings_saved": "Settings saved locally.",
+                "new_channel": "Opening new sales channel configurator...",
+                "edit_schedule": "Schedule editing available in system settings.",
+                "importing": "Importing new products..."
+            },
+            "stats": {
+                "products_short": "prod."
+            }
+        },
+        "schedule": {
+            "title": "Schedule",
+            "daily02": "Daily at 02:00",
+            "active": "Active",
+            "disabled": "Disabled",
+            "checkOnlyChanges": "Check only changes",
+            "changeCron": "Change cron settings"
+        },
+        "aiTip": {
+            "title": "AI Tip",
+            "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
+            "importBtn": "Import now"
+        },
+        "agent": {
+            "catalogTitle": "Product Catalog",
+            "ready": "Ready",
+            "emptyState": {
+                "title": "Select product and target market",
+                "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
+            },
+            "selectMarket": "Select target market",
+            "launchBtn": "Launch Agent",
+            "launchAdmin": "Launch Agent (Admin)",
+            "launchPoints": "Launch for {count} pts",
+            "working": "Agent Working...",
+            "manusMode": "Manus Mode: Active",
+            "marketPrefix": "EnglishLearning: ",
+            "yourBalance": "Your balance",
+            "analysisTitle": "AI Analysis for {market}",
+            "regionalOptimization": "Regional optimization",
+            "suggestedTitle": "Suggested Title (SEO Local)",
+            "suggestedPrice": "Price (PPP Conversion)",
+            "sellingProb": "Selling Probability",
+            "veryHigh": "VERY HIGH",
+            "success": {
+                "title": "Task Completed!",
+                "description": "AI Agent successfully visited {market} and published your product.",
+                "viewLogs": "VIEW SESSION LOGS"
+            },
+            "toasts": {
+                "session_manager": "Opening session manager...",
+                "proxy_success": "Proxy: {ip} ({location}) OK",
+                "report_title": "Agent Report",
+                "report_desc": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}"
+            },
+            "stats": {
+                "points": "pts"
+            },
+            "mockAnalysis": {
+                "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
+                "suggestedPrice": "$12.99",
+                "subject": "English Language Arts",
+                "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
+                "description": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!"
+            },
+            "idle": {
+                "title": "In standby",
+                "description": "Run agent to start automation process on platform {market}."
+            }
+        },
+        "settings": {
+            "title": "Multi-Channel Connections",
+            "description": "Configure access data for external stores.",
+            "saveAll": "Save all",
+            "lastSaved": "Last saved: {time}",
+            "woo": {
+                "title": "WooCommerce / WordPress Site",
+                "url": "Store URL (REST API)",
+                "key": "Consumer Key",
+                "secret": "Consumer Secret",
+                "connected": "Connected",
+                "autoSync": "AUTO-SYNC ON",
+                "test": "Test"
+            },
+            "manus": {
+                "title": "Manus AI Session",
+                "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
+                "instance": "Agent API Instance",
+                "test": "Test Manus",
+                "manage": "Manage Session",
+                "proxy": "Test Proxy"
+            },
+            "mailerlite": {
+                "title": "MailerLite Integration",
+                "api_key": "MailerLite API Key",
+                "placeholder": "ml_...",
+                "groups": "Subscriber Group ID",
+                "test": "Test Connection"
+            },
+            "manychat": {
+                "title": "ManyChat Automation",
+                "api_key": "ManyChat API Key",
+                "placeholder": "mc_...",
+                "automation_id": "Default Flow ID",
+                "test": "Test Automation"
+            }
         }
-      },
-      "inventory": {
-        "title": "Inventar Global de Materiale",
-        "badge": "Depozit Central",
-        "description": "Gestionați fișierele sursă și prezența lor în diferite piețe.",
-        "source": "Sursă: kamilaenglish.com",
-        "allFiles": "Toate PDF-urile, Jocurile și Audio într-un singur loc",
-        "updateBtn": "Actualizează Inventarul",
-        "syncBtn": "Sincronizează Inventarul",
-        "progress": "Progres sincronizare",
-        "log": "Log Sistem",
-        "waiting": "Se așteaptă pornirea...",
-        "logs": {
-          "init": "Se inițializează conexiunea cu sistemele externe...",
-          "auth": "Se autorizează Publigo (wp-idea) & WooCommerce...",
-          "fetching": "Se preia lista de produse (Multi-Channel Sourcing)...",
-          "syncing": "Se sincronizează stocurile și fișierele digitale...",
-          "complete": "Sincronizare completă. S-au detectat {count} materiale noi.",
-          "agent_init": "Se inițializează mediul pentru {mkt}...",
-          "agent_login": "Autentificare în panoul vânzătorului...",
-          "agent_fill": "Se completează formularul: {title}...",
-          "agent_optimize": "Se optimizează SEO și se încarcă fișierele...",
-          "agent_done": "Gata! Produsul așteaptă aprobarea."
+    },
+    "abandonedHub": {
+        "title": "Abandoned Cart Hub",
+        "subtitle": "Recover lost sales and manage leads",
+        "table": {
+            "customer": "Customer",
+            "cart": "Cart Items",
+            "value": "Value",
+            "lastActive": "Last Active",
+            "actions": "Actions"
         },
-        "toasts": {
-          "sync_success": "Depozitul a fost actualizat cu succes.",
-          "analysis_done": "Analiza AI finalizată. Datele sugerate sunt gata.",
-          "no_tokens": "Tokeni suficienți. Reîncărcați contul.",
-          "tokens_spent": "{count} tokeni deduși pentru operațiunea AI.",
-          "test_woo": "Se testează conexiunea WooCommerce...",
-          "woo_success": "Conectat cu succes la kamilaenglish.com (API v3)",
-          "test_manus": "Se verifică licența Manus AI...",
-          "manus_success": "Licență activă. Agent gata de lucru.",
-          "settings_saved": "Setările au fost salvate local.",
-          "new_channel": "Se deschide configuratorul canalului nou de vânzare...",
-          "edit_schedule": "Editarea programului este disponibilă în setările sistemului.",
-          "importing": "Se importă produse noi..."
+        "actions": {
+            "sendReminder": "Send Reminder",
+            "recoveryLink": "Copy Recovery Link",
+            "delete": "Remove lead"
         },
-        "stats": {
-          "products_short": "prod."
+        "status": {
+            "contacted": "Contacted",
+            "pending": "Pending",
+            "recovered": "Recovered"
+        },
+        "notifications": {
+            "reminderSent": "Recovery email simulation sent to {email}",
+            "linkCopied": "Recovery link copied with discount code!"
         }
-      },
-      "schedule": {
-        "title": "Program",
-        "daily02": "Zilnic la 02:00",
-        "active": "Activ",
-        "disabled": "Dezactivat",
-        "checkOnlyChanges": "Verifică doar modificările",
-        "changeCron": "Schimbă setările cron"
-      },
-      "aiTip": {
-        "title": "Sfat AI",
-        "description": "Am detectat {count} produse noi pe WordPress pe care nu le aveți în acest magazin. Doriți să le descărcați?",
-        "importBtn": "Importă acum"
-      },
-      "agent": {
-        "catalogTitle": "Catalog Produse",
-        "ready": "Gata",
-        "emptyState": {
-          "title": "Selectați produsul și piața țintă",
-          "description": "Agentul Manus AI va face treaba pentru tine – se va autentifica, va completa datele și va publica produsul pe platforma selectată."
-        },
-        "selectMarket": "Selectați piața țintă",
-        "launchBtn": "Lansează Agentul",
-        "launchAdmin": "Lansează Agentul (Admin)",
-        "launchPoints": "Lansează pentru {count} puncte",
-        "working": "Agentul lucrează...",
-        "manusMode": "Mod Manus: Activ",
-        "marketPrefix": "EnglishLearning: ",
-        "yourBalance": "Soldul tău",
-        "analysisTitle": "Analiza AI pentru {market}",
-        "regionalOptimization": "Optimizare regională",
-        "suggestedTitle": "Titlu Sugerat (SEO Local)",
-        "suggestedPrice": "Preț (Conversie PPP)",
-        "sellingProb": "Probabilitate Vânzare",
-        "veryHigh": "FOARTE MARE",
-        "success": {
-          "title": "Sarcină Finalizată!",
-          "description": "Agentul AI a vizitat cu succes {market} și a publicat produsul tău.",
-          "viewLogs": "VEZI LOGURILE SESIUNII"
-        },
-        "toasts": {
-          "session_manager": "Se deschide managerul de sesiune...",
-          "proxy_success": "Proxy: {ip} ({location}) OK",
-          "report_title": "Raport agent",
-          "report_desc": "Autentificat: OK, Formular: Completat, Imagini: Încărcate, SEO: Optimizat. Timp total: {time}"
-        },
-        "stats": {
-          "points": "pct"
-        },
-        "mockAnalysis": {
-          "optimizedTitleSuffix": "Material de Predare Cuprinzător pentru Profesori",
-          "suggestedPrice": "12,99 €",
-          "subject": "Limba Engleză",
-          "seoTags": "homeschool, fișe de lucru, vocabular, flashcards, resurse profesori",
-          "description": "Deblocați potențialul clasei dvs. cu acest produs premium {title}. \n\nCreat de educatori pentru educatori, această resursă include:\n- Scenarii PDF complete\n- Fișe de lucru gata de tipărit\n- Instrumente vizuale interactive.\n\nPerfect pentru lecții online și staționare!"
-        },
-        "idle": {
-          "title": "În așteptare",
-          "description": "Rulați agentul pentru a începe procesul de automatizare pe platforma {market}."
-        }
-      },
-      "settings": {
-        "title": "Conexiuni Multi-Channel",
-        "description": "Configurați datele de acces pentru magazinele externe.",
-        "saveAll": "Salvează tot",
-        "lastSaved": "Ultima salvare: {time}",
-        "woo": {
-          "title": "Site WooCommerce / WordPress",
-          "url": "URL magazin (REST API)",
-          "key": "Consumer Key",
-          "secret": "Consumer Secret",
-          "connected": "Conectat",
-          "autoSync": "AUTO-SYNC ACTIVAT",
-          "test": "Testează"
-        },
-        "manus": {
-          "title": "Sesiune Manus AI",
-          "description": "Agentul folosește \"Browser Operator Mode\", autentificându-se în conturile tale. Încărcați cookie-urile de sesiune (JSON) pentru a evita problemele 2FA.",
-          "instance": "Instanță API Agent",
-          "test": "Testează Manus",
-          "manage": "Gestionează sesiunea",
-          "proxy": "Testează Proxy"
-        }
-      }
     }
-  },
-  "logs": {
-    "init": "🚀 Initializing AI Scraper agent...",
-    "connect": "🔍 Connecting to API session...",
-    "extract": "🧩 Extracting mechanics and metadata...",
-    "images": "🖼️ Generating preview thumbnails...",
-    "seo": "✍️ Crafting SEO-optimized descriptions...",
-    "pricing": "💰 Calculating regional pricing...",
-    "finalize": "✨ Finalizing product drafts..."
-  },
-  "interactive": {
-    "title": "Interactive Content",
-    "subtitle": "Import and optimize Games with AI",
-    "placeholder": "Paste links (one per line)...",
-    "found": "Found {count} interactive items!",
-    "generate": "Generate drafts",
-    "createDrafts": "Accept and create drafts",
-    "success": "Successfully imported {count} products!",
-    "preview_title": "AI Draft Preview",
-    "preview_desc": "Review generated products and test interactive content.",
-    "logs": {
-      "launching": "🚀 Launching real-time scraping agent...",
-      "analyzing": "🔍 Analyzing: {url}...",
-      "private": "⚠️ Link {url} appears to be a private collection. Skipping - please use individual game links.",
-      "extracted": "✅ Extracted: {title}",
-      "dropped": "❌ Connection dropped for: {url}",
-      "complete": "Scraping complete! Successfully extracted metadata for {count} assets."
-    }
-  },
-  "integrations": {
-    "title": "Educational BaseLinker",
-    "subtitle": "Global materials sales and AI automation.",
-    "loading": "Loading translations...",
-    "addStore": "Add store",
-    "sync_status": "Sync: {date}",
-    "today": "Today",
-    "tabs": {
-      "sync": "Warehouse & Sync",
-      "agent": "Publication Agent",
-      "settings": "Marketplace Settings"
-    },
-    "marketplaces": {
-      "groups": {
-        "poland": "Poland",
-        "usa": "USA",
-        "dach": "Germany (DACH)",
-        "uk": "UK",
-        "fr_es": "France/Spain"
-      },
-      "names": {
-        "wp": "WooCommerce / Publigo",
-        "wp_full": "WordPress / Publigo",
-        "tpt": "Teachers Pay Teachers",
-        "etsy": "Etsy Education",
-        "eduki": "Eduki (Germany)",
-        "tes": "TES (UK)",
-        "mieux": "MieuxEnseigner (France/Spain)"
-      }
-    },
-    "inventory": {
-      "title": "Global Materials Inventory",
-      "badge": "Central Warehouse",
-      "description": "Manage source files and their presence in different markets.",
-      "source": "Source: kamilaenglish.com",
-      "allFiles": "All PDFs, Games and Audio in one place",
-      "updateBtn": "Update Inventory",
-      "syncBtn": "Sync Inventory",
-      "progress": "Sync progress",
-      "log": "System Log",
-      "waiting": "Waiting for start...",
-      "logs": {
-        "init": "Initializing connection with external systems...",
-        "auth": "Authorizing Publigo (wp-idea) & WooCommerce...",
-        "fetching": "Fetching product list (Multi-Channel Sourcing)...",
-        "syncing": "Syncing stock levels and digital files...",
-        "complete": "Sync complete. Detected {count} new materials.",
-        "agent_init": "Initializing environment for {mkt}...",
-        "agent_login": "Logging into seller panel...",
-        "agent_fill": "Filling form: {title}...",
-        "agent_optimize": "Optimizing SEO and uploading files...",
-        "agent_done": "Ready! Product is waiting for approval."
-      },
-      "toasts": {
-        "sync_success": "Warehouse updated successfully.",
-        "analysis_done": "AI Analysis complete. Suggested data is ready.",
-        "no_tokens": "Insufficient tokens. Top up your account.",
-        "tokens_spent": "{count} tokens deducted for AI operation.",
-        "test_woo": "Testing WooCommerce connection...",
-        "woo_success": "Connected successfully to kamilaenglish.com (API v3)",
-        "test_manus": "Verifying Manus AI license...",
-        "manus_success": "License active. Agent ready for work.",
-        "settings_saved": "Settings saved locally.",
-        "new_channel": "Opening new sales channel configurator...",
-        "edit_schedule": "Schedule editing available in system settings.",
-        "importing": "Importing new products..."
-      },
-      "stats": {
-        "products_short": "prod."
-      }
-    },
-    "schedule": {
-      "title": "Schedule",
-      "daily02": "Daily at 02:00",
-      "active": "Active",
-      "disabled": "Disabled",
-      "checkOnlyChanges": "Check only changes",
-      "changeCron": "Change cron settings"
-    },
-    "aiTip": {
-      "title": "AI Tip",
-      "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
-      "importBtn": "Import now"
-    },
-    "agent": {
-      "catalogTitle": "Product Catalog",
-      "ready": "Ready",
-      "emptyState": {
-        "title": "Select product and target market",
-        "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
-      },
-      "selectMarket": "Select target market",
-      "launchBtn": "Launch Agent",
-      "launchAdmin": "Launch Agent (Admin)",
-      "launchPoints": "Launch for {count} pts",
-      "working": "Agent Working...",
-      "manusMode": "Manus Mode: Active",
-      "marketPrefix": "EnglishLearning: ",
-      "yourBalance": "Your balance",
-      "analysisTitle": "AI Analysis for {market}",
-      "regionalOptimization": "Regional optimization",
-      "suggestedTitle": "Suggested Title (SEO Local)",
-      "suggestedPrice": "Price (PPP Conversion)",
-      "sellingProb": "Selling Probability",
-      "veryHigh": "VERY HIGH",
-      "success": {
-        "title": "Task Completed!",
-        "description": "AI Agent successfully visited {market} and published your product.",
-        "viewLogs": "VIEW SESSION LOGS"
-      },
-      "toasts": {
-        "session_manager": "Opening session manager...",
-        "proxy_success": "Proxy: {ip} ({location}) OK",
-        "report_title": "Agent Report",
-        "report_desc": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}"
-      },
-      "stats": {
-        "points": "pts"
-      },
-      "mockAnalysis": {
-        "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
-        "suggestedPrice": "$12.99",
-        "subject": "English Language Arts",
-        "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
-        "description": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!"
-      },
-      "idle": {
-        "title": "In standby",
-        "description": "Run agent to start automation process on platform {market}."
-      }
-    },
-    "settings": {
-      "title": "Multi-Channel Connections",
-      "description": "Configure access data for external stores.",
-      "saveAll": "Save all",
-      "lastSaved": "Last saved: {time}",
-      "woo": {
-        "title": "WooCommerce / WordPress Site",
-        "url": "Store URL (REST API)",
-        "key": "Consumer Key",
-        "secret": "Consumer Secret",
-        "connected": "Connected",
-        "autoSync": "AUTO-SYNC ON",
-        "test": "Test"
-      },
-      "manus": {
-        "title": "Manus AI Session",
-        "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
-        "instance": "Agent API Instance",
-        "test": "Test Manus",
-        "manage": "Manage Session",
-        "proxy": "Test Proxy"
-      },
-      "mailerlite": {
-        "title": "MailerLite Integration",
-        "api_key": "MailerLite API Key",
-        "placeholder": "ml_...",
-        "groups": "Subscriber Group ID",
-        "test": "Test Connection"
-      },
-      "manychat": {
-        "title": "ManyChat Automation",
-        "api_key": "ManyChat API Key",
-        "placeholder": "mc_...",
-        "automation_id": "Default Flow ID",
-        "test": "Test Automation"
-      }
-    }
-  },
-  "abandonedHub": {
-    "title": "Abandoned Cart Hub",
-    "subtitle": "Recover lost sales and manage leads",
-    "table": {
-      "customer": "Customer",
-      "cart": "Cart Items",
-      "value": "Value",
-      "lastActive": "Last Active",
-      "actions": "Actions"
-    },
-    "actions": {
-      "sendReminder": "Send Reminder",
-      "recoveryLink": "Copy Recovery Link",
-      "delete": "Remove lead"
-    },
-    "status": {
-      "contacted": "Contacted",
-      "pending": "Pending",
-      "recovered": "Recovered"
-    },
-    "notifications": {
-      "reminderSent": "Recovery email simulation sent to {email}",
-      "linkCopied": "Recovery link copied with discount code!"
-    }
-  }
 }

@@ -1,464 +1,465 @@
 {
-  "seo": {
-    "title": "Εκπαιδευτικό Υλικό για Καθηγητές Αγγλικών | Kamila Łobko-Koziej",
-    "description": "Κreative διδακτικό υλικό, σχέδια μαθήματος, ολοχρονικά έργα και έτοιμα πακέτα για καθηγητές αγγλικών.",
-    "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
-  },
-  "nav": {
-    "products": "Προϊόντα",
-    "materialy": "Υλικά",
-    "blog": "Ιστολόγιο",
-    "contact": "Επικοινωνία",
-    "login": "Σύνδεση",
-    "dashboard": "Πάνελ",
-    "adminPanel": "Πάνελ Διαχειριστή",
-    "verify": "Επαλήθευση"
-  },
-  "brand": {
-    "educationalMaterials": "Εκπαιδευτικό Υλικό",
-    "byKamila": "από την Kamila Łobko-Koziej"
-  },
-  "hero": {
-    "badge": "Υλικό για Καθηγητές",
-    "title": "Διδάξτε Αγγλικά με Πάθος και Ευκολία",
-    "subtitle": "Κreative διδακτικό υλικό που θα μεταμορφώσει τα μαθήματά σας. Εξοικονομήστε χρόνο στην προετοιμασία και εμπνεύστε τους μαθητές σας κάθε μέρα.",
-    "cta_main": "Περιήγηση στα υλικά",
-    "cta_secondary": "Σχετικά με τη συγγραφέα",
-    "demoText": "Δείτε το demo του πάνελ:",
-    "teacherProfile": "Προφίλ Καθηγητή",
-    "studentProfile": "Προφίλ Μαθητή"
-  },
-  "footer": {
-    "rights": "Όλα τα δικαιώματα διατηρούνται.",
-    "description": "Πρωτότυπο, δημιουργικό διδακτικό υλικό για καθηγητές αγγλικών. Εμπνευστείτε!",
-    "groups": {
-      "shop": "Κατάστημα",
-      "info": "Πληροφορίες",
-      "help": "Βοήθεια"
+    "seo": {
+        "title": "Εκπαιδευτικό Υλικό για Καθηγητές Αγγλικών | Kamila Łobko-Koziej",
+        "description": "Κreative διδακτικό υλικό, σχέδια μαθήματος, ολοχρονικά έργα και έτοιμα πακέτα για καθηγητές αγγλικών.",
+        "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
     },
-    "links": {
-      "catalog": "Κατάλογος",
-      "materials": "Διδακτικό υλικό",
-      "projects": "Ολοχρονικά έργα",
-      "scenarios": "Σχέδια μαθήματος",
-      "packs": "Θεματικά πακέτα",
-      "about": "Σχετικά με τη συγγραφέα",
-      "contact": "Επικοινωνία",
-      "privacy": "Πολιτική απορρήτου",
-      "terms": "Όροι χρήσης",
-      "howToBuy": "Πώς να αγοράσετε;",
-      "faq": "Συχνές ερωτήσεις",
-      "returns": "Επιστροφές και παράπονα",
-      "account": "Ο λογαριασμός μου",
-      "admin": "Πάνελ Καθηγητή (Admin)"
+    "nav": {
+        "products": "Προϊόντα",
+        "materialy": "Υλικά",
+        "blog": "Ιστολόγιο",
+        "contact": "Επικοινωνία",
+        "login": "Σύνδεση",
+        "dashboard": "Πάνελ",
+        "adminPanel": "Πάνελ Διαχειριστή",
+        "verify": "Επαλήθευση"
+    },
+    "brand": {
+        "educationalMaterials": "Εκπαιδευτικό Υλικό",
+        "byKamila": "από την Kamila Łobko-Koziej"
+    },
+    "hero": {
+        "badge": "Υλικό για Καθηγητές",
+        "title": "Διδάξτε Αγγλικά με Πάθος και Ευκολία",
+        "subtitle": "Κreative διδακτικό υλικό που θα μεταμορφώσει τα μαθήματά σας. Εξοικονομήστε χρόνο στην προετοιμασία και εμπνεύστε τους μαθητές σας κάθε μέρα.",
+        "cta_main": "Περιήγηση στα υλικά",
+        "cta_secondary": "Σχετικά με τη συγγραφέα",
+        "demoText": "Δείτε το demo του πάνελ:",
+        "teacherProfile": "Προφίλ Καθηγητή",
+        "studentProfile": "Προφίλ Μαθητή"
+    },
+    "footer": {
+        "rights": "Όλα τα δικαιώματα διατηρούνται.",
+        "description": "Πρωτότυπο, δημιουργικό διδακτικό υλικό για καθηγητές αγγλικών. Εμπνευστείτε!",
+        "groups": {
+            "shop": "Κατάστημα",
+            "info": "Πληροφορίες",
+            "help": "Βοήθεια"
+        },
+        "links": {
+            "catalog": "Κατάλογος",
+            "materials": "Διδακτικό υλικό",
+            "projects": "Ολοχρονικά έργα",
+            "scenarios": "Σχέδια μαθήματος",
+            "packs": "Θεματικά πακέτα",
+            "about": "Σχετικά με τη συγγραφέα",
+            "contact": "Επικοινωνία",
+            "privacy": "Πολιτική απορρήτου",
+            "terms": "Όροι χρήσης",
+            "howToBuy": "Πώς να αγοράσετε;",
+            "faq": "Συχνές ερωτήσεις",
+            "returns": "Επιστροφές και παράπονα",
+            "account": "Ο λογαριασμός μου",
+            "admin": "Πάνελ Καθηγητή (Admin)"
+        }
+    },
+    "auth": {
+        "logout": "Αποσύνδεση",
+        "myCourses": "Τα Μαθήματά μου",
+        "studentPanel": "Πάνελ Μαθητή",
+        "roleAdmin": "Διαχειριστής",
+        "roleTeacher": "Καθηγητής",
+        "roleStudent": "Μαθητής"
+    },
+    "cart": {
+        "empty": "Το καλάθι σας είναι άδειο",
+        "emptySub": "Προσθέστε προϊόντα για να συνεχίσετε τις αγορές σας",
+        "browse": "Περιήγηση στα προϊόντα",
+        "reserved": "Το καλάθι σας είναι δεσμευμένο για:",
+        "header": "Καλάθι ({count})",
+        "remove": "Αφαίρεση",
+        "specialOffer": "ΕΙΔΙΚΗ ΠΡΟΣΦΟΡΑ",
+        "orderBump": "Προσθέστε πακέτο προτύπων email (+29 €)",
+        "orderBumpDesc": "20 έτοιμα πρότυπα για επικοινωνία με τους γονείς. Εξοικονομείτε 70%!",
+        "summary": "Σύνοψη",
+        "couponPlaceholder": "Κωδικός έκπτωσης",
+        "apply": "Εφαρμογή",
+        "couponHeader": "Κουπόνι:",
+        "products": "Προϊόντα",
+        "discount": "Έκπτωση",
+        "total": "Σύνολο",
+        "checkout": "Συνέχεια στην πληρωμή",
+        "secure": "Ασφαλής πληρωμή",
+        "couponInvalid": "Μη έγκυρος κωδικός κουπονιού",
+        "couponInactive": "Αυτό το κουπόνι δεν είναι πλέον ενεργό",
+        "couponExpired": "Αυτό το κουπόνι έχει λήξει",
+        "couponLimitReached": "Αυτό το κουπόνι έχει φτάσει το όριο χρήσης του",
+        "couponMinOrder": "Ελάχιστη αξία παραγγελίας: {minOrderValue} {currency}",
+        "couponAppliedPercent": "Η έκπτωση {percent}% εφαρμόστηκε!",
+        "couponAppliedFixed": "Η έκπτωση {amount} {currency} εφαρμόστηκε!",
+        "currencySymbol": "€"
+    },
+    "socialProof": {
+        "header": "Κοινότητα Facebook",
+        "sub": "Μείνετε ενημερωμένοι με τα νέα και λάβετε μέρος στη συζήτηση!",
+        "cta": "Δείτε το προφίλ μας γεμάτο έμπνευση",
+        "madeWithLove": "Δημιουργήθηκε με Αγάπη",
+        "polishQuality": "και Πολωνική Ποιότητα"
+    },
+    "newsletter": {
+        "header": "Μείνετε ενημερωμένοι!",
+        "sub": "Εγγραφείτε στο newsletter μας και λάβετε πληροφορίες για νέα υλικά, προσφορές και αποκλειστικές εκπτώσεις.",
+        "placeholder": "Η διεύθυνση email σας",
+        "button": "Εγγραφή",
+        "success": "Σας ευχαριστούμε για την εγγραφή σας στο newsletter!",
+        "privacy": "Σεβόμαστε την ιδιωτικότητά σας. Μπορείτε να διαγραφείτε ανά πάσα στιγμή."
+    },
+    "checkout": {
+        "acceptTermsError": "Πρέπει να αποδεχτείτε τους όρους και τις προϋποθέσεις",
+        "successTitle": "Σας ευχαριστούμε για την παραγγελία σας!",
+        "successOrder": "Η παραγγελία σας με αριθμό {orderNumber} έχει ληφθεί.",
+        "successEmail": "Στείλαμε τις λεπτομέρειες της παραγγελίας στη διεύθυνση email που δώσατε.",
+        "backToStore": "Επιστροφή στο κατάστημα",
+        "myCourses": "Τα μαθήματά μου",
+        "backToCart": "Επιστροφή στο καλάθι",
+        "steps": {
+            "cart": "Καλάθι",
+            "payment": "Πληρωμή",
+            "access": "Πρόσβαση"
+        },
+        "trust": {
+            "secure": "Ασφαλής πληρωμή",
+            "ssl": "Κρυπτογράφηση SSL",
+            "instant": "Άμεση πρόσβαση"
+        },
+        "header": "Ολοκληρώστε την παραγγελία σας",
+        "contactTitle": "Στοιχεία επικοινωνίας",
+        "email": "Email *",
+        "firstName": "Όνομα *",
+        "lastName": "Επώνυμο *",
+        "phone": "Τηλέφωνο (προαιρετικό)",
+        "invoiceTitle": "Τιμολόγιο",
+        "wantInvoice": "Θέλω να λάβω τιμολόγιο VAT",
+        "nip": "ΑΦΜ *",
+        "nipError": "Εισαγάγετε έγκυρο ΑΦΜ",
+        "lookup": "Λήψη δεδομένων",
+        "lookupSuccess": "Τα στοιχεία της εταιρείας ανακτήθηκαν με επιτυχία!",
+        "nipNotFound": "Η εταιρεία δεν βρέθηκε",
+        "nipSearchError": "Σφάλμα κατά την αναζήτηση. Δοκιμάστε ξανά.",
+        "companyName": "Όνομα εταιρείας *",
+        "companyAddress": "Διεύθυνση εταιρείας",
+        "addressPlaceholder": "Θα συμπληρωθεί αυτόματα",
+        "paymentTitle": "Μέθοδος πληρωμής",
+        "paymentMethods": {
+            "card": "Πιστωτική κάρτα",
+            "cardSub": "Visa, Mastercard, American Express",
+            "blik": "BLIK",
+            "blikSub": "Γρήγορη πληρωμή με κωδικό BLIK",
+            "transfer": "Τραπεζικό έμβασμα",
+            "transferSub": "Παραδοσιακό τραπεζικό έμβασμα"
+        },
+        "yourOrder": "Η παραγγελία σας",
+        "summaryProducts": "Προϊόντα",
+        "summaryDiscount": "Έκπτωση ({code})",
+        "summaryTotal": "Σύνολο",
+        "terms": "Αποδέχομαι τους όρους του καταστήματος και την πολιτική απορρήτου",
+        "termsRequired": "Απαραίτητο για την επεξεργασία της παραγγελίας",
+        "processing": "Επεξεργασία...",
+        "pay": "Πληρωμή {total} €",
+        "instantAccessInfo": "Τα υλικά είναι διαθέσιμα στο πάνελ αμέσως μετά την πληρωμή",
+        "socialProof": "+2.500 εκπαιδευτικοί έχουν ήδη αγοράσει",
+        "toPayMobile": "Για πληρωμή",
+        "paymentFailed": "Η πληρωμή απέτυχε. Παρακαλώ δοκιμάστε ξανά.",
+        "paymentSystemError": "Σφάλμα συστήματος πληρωμών."
+    },
+    "contact": {
+        "title": "Ας μείνουμε σε επαφή",
+        "subtitle": "Έχετε κάποια ερώτηση σχετικά με τα υλικά; Χρειάζεστε υποστήριξη στην επιλογή ενός πακέτου; Γράψτε μας ή μιλήστε με τον βοηθό μας AI. Είμαστε εδώ για εσάς!",
+        "aiBadge": "Απαντάμε συνήθως σε 2 ώρες",
+        "trustBadge": "Πάνω από 5000 ικανοποιημένοι καθηγητές",
+        "emailTitle": "Γράψτε ένα e-mail",
+        "emailDesc": "Τα εισερχόμενά μας είναι ανοιχτά για εσάς 24/7.",
+        "phoneTitle": "Καλέστε μας",
+        "phoneDesc": "Δευ-Παρ από τις 9:00 έως τις 17:00 είμαστε στο τηλέφωνο.",
+        "formTitle": "Φόρμα Επικοινωνίας",
+        "addressTitle": "Έδρα",
+        "addressValue": "Βαρσοβία, Πολωνία",
+        "aiHelp": "Χρειάζεστε μια γρήγορη απάντηση;",
+        "aiHelpDesc": "Ο έξυπνος βοηθός μας γνωρίζει τις απαντήσεις στις περισσότερες κοινές ερωτήσεις. Ρωτήστε για προϊόντα, μεθόδους διδασκαλίας ή διαθεσιμότητα υλικών.",
+        "aiHelpMobile": "Ο βοηθός AI είναι διαθέσιμος στην κάτω γωνία της οθόνης.",
+        "form": {
+            "name": "Ονοματεπώνυμο",
+            "email": "E-mail",
+            "subject": "Θέμα",
+            "message": "Το μήνυμά σας",
+            "messagePlaceholder": "Πώς μπορούμε να σας βοηθήσουμε;",
+            "sending": "Αποστολή...",
+            "send": "Αποστολή Μηνύματος",
+            "success": "Το μήνυμα στάλθηκε!",
+            "successDesc": "Σας ευχαριστούμε για την επικοινωνία. Θα απαντήσουμε το συντομότερο δυνατό.",
+            "placeholders": {
+                "name": "Γιάννης Παπαδόπουλος",
+                "email": "jan@kamila.shor.dev",
+                "subject": "Ερώτηση για προϊόν...",
+                "message": "Περιγράψτε πώς μπορούμε να βοηθήσουμε..."
+            }
+        },
+        "info": {
+            "emailValue": "contact@kamilaenglish.com",
+            "phoneValue": "+48 123 456 789"
+        },
+        "aiChat": {
+            "title": "Βοηθός AI",
+            "status": "Online & Έτοιμος",
+            "thinking": "Σκέφτομαι...",
+            "inputPlaceholder": "Κάντε μια ερώτηση...",
+            "dataInputPlaceholder": "Εισαγάγετε όνομα και email...",
+            "welcome": "Γεια! Είμαι ο έξυπνος βοηθός σας. Πριν ξεκινήσουμε, είστε ήδη πελάτης μας;",
+            "options": {
+                "yes": "Ναι, είμαι πελάτης",
+                "no": "Όχι, όχι ακόμα"
+            },
+            "responses": {
+                "clientYes": "Υπέροχα! Πώς μπορώ να σας βοηθήσω σήμερα;",
+                "clientNo": "Καταλαβαίνω. Θα ήθελα πολύ να σας βοηθήσω να εξερευνήσετε τα υλικά μας. Ποιο είναι το όνομά σας και σε ποιο email μπορώ να σας στείλω μερικά δωρεάν δείγματα;",
+                "dataSaved": "Σας ευχαριστώ! Αποθήκευσα τα στοιχεία σας. Τώρα μη διστάσετε να ρωτήσετε οτιδήποτε.",
+                "fallback": "Λυπάμαι, δεν καταλαβαίνω απόλυτα την ερώτηση. Μπορείτε να τη διατυπώσετε διαφορετικά; Μπορείτε να ρωτήσετε για τιμές, παράδοση υλικών ή μεθόδους διδασκαλίας."
+            },
+            "knowledge": {
+                "price": "Τα υλικά μας PDF ξεκινούν από 29 €. Τα ετήσια πακέτα (Mega Pack) είναι επί του παρόντος σε προσφορά στα 149 €.",
+                "delivery": "Όλα τα υλικά είναι ψηφιακά. Θα λάβετε έναν σύνδεσμο λήψης αμέσως μετά την πληρωμή της παραγγελίας στη διεύθυνση email σας.",
+                "preschool": "Έχουμε μια εξαιρετική ενότητα 'Αγγλικά στον Βρεφονηπιακό Σταθμό και το Νηπιαγωγείο'. Συνιστώ ιδιαίτερα το πακέτο μας 4 Εποχές.",
+                "contact": "Μπορείτε να μας γράψετε στο email που αναφέρεται στη σελίδα ή να μας καλέσετε στο +30 210 123 4567 (Δευ-Παρ 9:00-17:00).",
+                "invoice": "Ναι, εκδίδουμε τιμολόγια VAT. Μπορείτε να δώσετε τα στοιχεία του τιμολογίου στο καλάθι κατά την ολοκλήρωση της παραγγελίας σας.",
+                "methods": "Η Kamila Łobko-Koziej προωθεί μια προσέγγιση βασισμένη στη σχέση και το παιχνίδι (TPR, επικοινωνιακά παιχνίδια). Δείτε το blog μας για να μάθετε περισσότερα!"
+            }
+        }
+    },
+    "login": {
+        "title": "Καλώς ήρθατε ξανά!",
+        "desc": "Εισαγάγετε το email σας για να εισέλθετε στη ζώνη μαθητή.",
+        "student": "Μαθητής",
+        "teacher": "Καθηγητής",
+        "email": "Email",
+        "emailTeacher": "Email εργασίας",
+        "password": "Κωδικός",
+        "loggingIn": "Σύνδεση...",
+        "success": "Συνδεθήκατε!",
+        "submit": "Σύνδεση",
+        "successMessage": "Συνδεθήκατε με επιτυχία! Ανακατεύθυνση...",
+        "errorDefault": "Μη έγκυρο email ή κωδικός.",
+        "errorSystem": "Παρουσιάστηκε σφάλμα σύνδεσης. Δοκιμάστε ξανά.",
+        "emailRequired": "Το email είναι απαραίτητο",
+        "emailInvalid": "Μη έγκυρη μορφή email",
+        "passwordRequired": "Ο κωδικός είναι απαραίτητος",
+        "passwordMin": "Ο κωδικός πρέπει να έχει τουλάχιστον 4 χαρακτήρες",
+        "forgotPassword": "Ξεχάσατε τον κωδικό σας;",
+        "magicLink": "Σύνδεση με Magic Link",
+        "magicLinkDesc": "Θα σας στείλουμε έναν σύνδεσμο σύνδεσης μίας χρήσης στη διεύθυνση email σας.",
+        "sendMagicLink": "Αποστολή Magic Link",
+        "backToLogin": "Επιστροφή στη σύνδεση",
+        "checkEmail": "Ελέγξτε τα εισερχόμενά σας",
+        "resetPassword": "Επαναφορά κωδικού πρόσβασης",
+        "magicLinkSent": "Ένας σύνδεσμος σύνδεσης στάλθηκε στη διεύθυνση email σας.",
+        "emailCheckDesc": "Εάν υπάρχει λογαριασμός με αυτό το email, στείλαμε οδηγίες στα εισερχόμενά σας.",
+        "resetSuccess": "Ο κωδικός πρόσβασής σας άλλαξε με επιτυχία."
+    },
+    "quickSale": {
+        "title": "ΓΡΗΓΟΡΗ ΠΛΗΡΩΜΗ",
+        "demoProduct": {
+            "title": "Παράδειγμα E-book Premium",
+            "excerpt": "Αυτό είναι ένα προϊόν επίδειξης. Στην πλήρη έκδοση, τα δεδομένα θα ανακτώνταν από τη βάση δεδομένων."
+        },
+        "page": {
+            "guarantee": "Εγγύηση ικανοποίησης 30 ημερών",
+            "totalLabel": "Σύνολο προς πληρωμή:",
+            "email_label": "Το e-mail σας",
+            "email_placeholder": "address@email.com",
+            "payment_method": "Μέθοδος πληρωμής",
+            "payment_card": "Κάρτα",
+            "blik_code": "Κωδικός BLIK",
+            "terms": "Αποδέχομαι τους όρους του καταστήματος",
+            "pay_btn": "Αγοράζω και πληρώνω",
+            "secure_checkout": "Σύνδεση κρυπτογραφημένη με SSL"
+        },
+        "optimization": {
+            "timer": {
+                "text": "Η προσφορά σας λήγει σε:"
+            },
+            "social_proof": {
+                "viewing": "{count} άτομα παρακολουθούν αυτή την προσφορά"
+            },
+            "savings": "Εξοικονομείτε"
+        },
+        "bump": {
+            "yes_btn": "ΝΑΙ, προσθέστε στην παραγγελία μου",
+            "price_prefix": "μόνο",
+            "description": "Προσφορά εφάπαξ! Προσθέστε ένα σετ από έτοιμα φύλλα εργασίας (PDF)."
+        }
+    },
+    "verify": {
+        "title": "Επαλήθευση πιστοποιητικού",
+        "subtitle": "Εισαγάγετε τον κωδικό επαλήθευσης του πιστοποιητικού για να επιβεβαιώσετε την αυθεντικότητά του.",
+        "placeholder": "XXXX-XXXX-XXXX",
+        "success": {
+            "title": "Το πιστοποιητικό επαληθεύτηκε",
+            "desc": "Αυτό το πιστοποιητικό είναι αυθεντικό και εκδόθηκε από την πλατφόρμα μας.",
+            "user": "Συμμετέχων",
+            "course": "Μάθημα",
+            "date": "Ημερομηνία ολοκλήρωσης",
+            "code": "Κωδικός",
+            "view": "Δείτε το πιστοποιητικό"
+        },
+        "error": {
+            "title": "Το πιστοποιητικό δεν βρέθηκε",
+            "desc": "Δεν βρήκαμε πιστοποιητικό με τον συγκεκριμένο κωδικό. Ελέγξτε αν ο κωδικός είναι σωστός."
+        }
+    },
+    "errors": {
+        "404": {
+            "title": "404",
+            "message": "Η σελίδα δεν βρέθηκε.",
+            "back": "Επιστροφή στην αρχική σελίδα"
+        }
+    },
+    "blog": {
+        "title": "Ιστολόγιο",
+        "subtitle": "Άρθρα, συμβουλές και έμπνευση για καθηγητές αγγλικών. Μάθετε πώς να διδάσκετε πιο αποτελεσματικά και με περισσότερο πάθος.",
+        "empty": "Δεν βρέθηκαν αναρτήσεις στο ιστολόγιο.",
+        "readMore": "Διαβάστε περισσότερα",
+        "backToBlog": "Επιστροφή στο ιστολόγιο",
+        "share": "Κοινοποίηση:",
+        "notFound": "Δεν βρέθηκε"
+    },
+    "common": {
+        "loading": "Φόρτωση...",
+        "success": "Η ενέργεια ολοκληρώθηκε επιτυχώς."
+    },
+    "certificates": {
+        "title": "Πιστοποιητικό Ολοκλήρωσης",
+        "subtitle": "Δια του παρόντος πιστοποιείται ότι",
+        "completedCourse": "ολοκλήρωσε το μάθημα",
+        "completionDate": "Ημερομηνία ολοκλήρωσης:",
+        "verificationCode": "Κωδικός επαλήθευσης:",
+        "downloadPdf": "Λήψη PDF",
+        "share": "Κοινοποίηση",
+        "backToDashboard": "Επιστροφή στο πάνελ",
+        "styleTitle": "Αλλαγή στυλ πιστοποιητικού",
+        "verifiedTitle": "Το πιστοποιητικό επαληθεύτηκε",
+        "verifiedDesc": "Αυτό το πιστοποιητικό εκδόθηκε από την πλατφόρμα μας.",
+        "notFound": "Το πιστοποιητικό δεν βρέθηκε",
+        "copySuccess": "Ο σύνδεσμος αντιγράφηκε!"
+    },
+    "languages": {
+        "pl": "Πολωνικά",
+        "en": "Αγγλικά",
+        "uk": "Ουκρανικά",
+        "de": "Γερμανικά",
+        "es": "Ισπανικά",
+        "fr": "Γαλλικά",
+        "it": "Ιταλικά",
+        "cs": "Τσεχικά",
+        "sk": "Σλοβακικά",
+        "ro": "Ρουμανικά",
+        "hu": "Ουγγρικά",
+        "pt": "Πορτογαλικά",
+        "lt": "Λιθουανικά",
+        "lv": "Λετονικά",
+        "et": "Εσθονικά",
+        "hr": "Κροατικά",
+        "sr": "Σερβικά",
+        "sl": "Σλοβενικά",
+        "bg": "Βουλγαρικά",
+        "el": "Ελληνικά",
+        "nl": "Ολλανδικά",
+        "sv": "Σουηδικά",
+        "fi": "Φινλανδικά",
+        "no": "Νορβηγικά",
+        "da": "Δανικά"
+    },
+    "fomo": {
+        "names": [
+            "John",
+            "Emily",
+            "Michael",
+            "Sarah",
+            "David",
+            "Jessica",
+            "Robert"
+        ],
+        "cities": [
+            "London",
+            "New York",
+            "Chicago",
+            "Toronto",
+            "Sydney",
+            "Dublin",
+            "Berlin"
+        ],
+        "purchaseMessage": "{name} from {city}",
+        "productMessage": "Just bought \"{product}\"",
+        "timeAgo": "{time} min ago"
+    },
+    "exitIntent": {
+        "title": "ΠΕΡΙΜΕΝΕΤΕ!",
+        "subtitle": "Πριν φύγετε...",
+        "header": "Λάβετε το δωρεάν \"Starter Pack\"",
+        "description": "Εγγραφείτε στο newsletter μας και λάβετε 50 δωρεάν φύλλα εργασίας!",
+        "cta": "Θέλω το δώρο μου",
+        "noThanks": "Όχι ευχαριστώ, θα πληρώσω την πλήρη τιμή αργότερα"
+    },
+    "announcement": {
+        "launchOffer": "Ειδική Προσφορά Εγκαινίων: -20% με τον κωδικό \"START20\"",
+        "limitedTime": "Περιορισμένος χρόνος: Δείτε τα νέα μας πακέτα!"
+    },
+    "course": {
+        "yourProgress": "Η Πρόοδός Σας",
+        "noLessons": "Δεν υπάρχουν μαθήματα.",
+        "quiz": "Κουίζ",
+        "unlocksInDays": "Ξεκλειδώνεται σε {days} ημέρες"
+    },
+    "dashboard": {
+        "wallet": {
+            "title": "Your Wallet",
+            "subtitle": "Collect points for activity and purchases.",
+            "available": "Available funds",
+            "points": "pts",
+            "value": "Value in {currency}",
+            "spend": "Spend points in shop",
+            "history": "Recent activity"
+        },
+        "awards": {
+            "title": "Your Hall of Fame",
+            "subtitle": "Earn badges for completed lessons and games!",
+            "mock": {
+                "start": "Quick Start",
+                "startDesc": "Completed first lesson",
+                "vocab": "Vocab Master",
+                "vocabDesc": "100% in quiz",
+                "steady": "Systematic",
+                "steadyDesc": "Logged in 7 days",
+                "polyglot": "Polyglot",
+                "polyglotDesc": "Passed A1 level"
+            }
+        },
+        "team": {
+            "title": "My Class / Team",
+            "subtitle": "Share materials with students",
+            "create_class": "Create new class",
+            "created_at": "Created: {date}",
+            "students_count": "{count} students",
+            "access_code": "Student access code",
+            "empty": {
+                "title": "New Class",
+                "desc": "Create a group for your students.",
+                "btn": "Start Setup"
+            },
+            "pro": {
+                "active": "Your PRO plan is active",
+                "unlock": "Unlock unlimited classes",
+                "desc": "Teacher PRO plan allows creating unlimited groups.",
+                "upgrade": "Upgrade to PRO",
+                "status": "Active"
+            }
+        },
+        "games": {
+            "title": "Educational Games",
+            "subtitle": "Interactive exercises for your students",
+            "play": "Play now",
+            "loading": "Loading game...",
+            "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
+            "fullscreen": "Full screen",
+            "report": "Report error"
+        }
     }
-  },
-  "auth": {
-    "logout": "Αποσύνδεση",
-    "myCourses": "Τα Μαθήματά μου",
-    "studentPanel": "Πάνελ Μαθητή",
-    "roleAdmin": "Διαχειριστής",
-    "roleTeacher": "Καθηγητής",
-    "roleStudent": "Μαθητής"
-  },
-  "cart": {
-    "empty": "Το καλάθι σας είναι άδειο",
-    "emptySub": "Προσθέστε προϊόντα για να συνεχίσετε τις αγορές σας",
-    "browse": "Περιήγηση στα προϊόντα",
-    "reserved": "Το καλάθι σας είναι δεσμευμένο για:",
-    "header": "Καλάθι ({count})",
-    "remove": "Αφαίρεση",
-    "specialOffer": "ΕΙΔΙΚΗ ΠΡΟΣΦΟΡΑ",
-    "orderBump": "Προσθέστε πακέτο προτύπων email (+29 €)",
-    "orderBumpDesc": "20 έτοιμα πρότυπα για επικοινωνία με τους γονείς. Εξοικονομείτε 70%!",
-    "summary": "Σύνοψη",
-    "couponPlaceholder": "Κωδικός έκπτωσης",
-    "apply": "Εφαρμογή",
-    "couponHeader": "Κουπόνι:",
-    "products": "Προϊόντα",
-    "discount": "Έκπτωση",
-    "total": "Σύνολο",
-    "checkout": "Συνέχεια στην πληρωμή",
-    "secure": "Ασφαλής πληρωμή",
-    "couponInvalid": "Μη έγκυρος κωδικός κουπονιού",
-    "couponInactive": "Αυτό το κουπόνι δεν είναι πλέον ενεργό",
-    "couponExpired": "Αυτό το κουπόνι έχει λήξει",
-    "couponLimitReached": "Αυτό το κουπόνι έχει φτάσει το όριο χρήσης του",
-    "couponMinOrder": "Ελάχιστη αξία παραγγελίας: {minOrderValue} {currency}",
-    "couponAppliedPercent": "Η έκπτωση {percent}% εφαρμόστηκε!",
-    "couponAppliedFixed": "Η έκπτωση {amount} {currency} εφαρμόστηκε!",
-    "currencySymbol": "€"
-  },
-  "socialProof": {
-    "header": "Κοινότητα Facebook",
-    "sub": "Μείνετε ενημερωμένοι με τα νέα και λάβετε μέρος στη συζήτηση!",
-    "cta": "Δείτε το προφίλ μας γεμάτο έμπνευση",
-    "madeWithLove": "Δημιουργήθηκε με Αγάπη",
-    "polishQuality": "και Πολωνική Ποιότητα"
-  },
-  "newsletter": {
-    "header": "Μείνετε ενημερωμένοι!",
-    "sub": "Εγγραφείτε στο newsletter μας και λάβετε πληροφορίες για νέα υλικά, προσφορές και αποκλειστικές εκπτώσεις.",
-    "placeholder": "Η διεύθυνση email σας",
-    "button": "Εγγραφή",
-    "success": "Σας ευχαριστούμε για την εγγραφή σας στο newsletter!",
-    "privacy": "Σεβόμαστε την ιδιωτικότητά σας. Μπορείτε να διαγραφείτε ανά πάσα στιγμή."
-  },
-  "checkout": {
-    "acceptTermsError": "Πρέπει να αποδεχτείτε τους όρους και τις προϋποθέσεις",
-    "successTitle": "Σας ευχαριστούμε για την παραγγελία σας!",
-    "successOrder": "Η παραγγελία σας με αριθμό {orderNumber} έχει ληφθεί.",
-    "successEmail": "Στείλαμε τις λεπτομέρειες της παραγγελίας στη διεύθυνση email που δώσατε.",
-    "backToStore": "Επιστροφή στο κατάστημα",
-    "myCourses": "Τα μαθήματά μου",
-    "backToCart": "Επιστροφή στο καλάθι",
-    "steps": {
-      "cart": "Καλάθι",
-      "payment": "Πληρωμή",
-      "access": "Πρόσβαση"
-    },
-    "trust": {
-      "secure": "Ασφαλής πληρωμή",
-      "ssl": "Κρυπτογράφηση SSL",
-      "instant": "Άμεση πρόσβαση"
-    },
-    "header": "Ολοκληρώστε την παραγγελία σας",
-    "contactTitle": "Στοιχεία επικοινωνίας",
-    "email": "Email *",
-    "firstName": "Όνομα *",
-    "lastName": "Επώνυμο *",
-    "phone": "Τηλέφωνο (προαιρετικό)",
-    "invoiceTitle": "Τιμολόγιο",
-    "wantInvoice": "Θέλω να λάβω τιμολόγιο VAT",
-    "nip": "ΑΦΜ *",
-    "nipError": "Εισαγάγετε έγκυρο ΑΦΜ",
-    "lookup": "Λήψη δεδομένων",
-    "lookupSuccess": "Τα στοιχεία της εταιρείας ανακτήθηκαν με επιτυχία!",
-    "nipNotFound": "Η εταιρεία δεν βρέθηκε",
-    "nipSearchError": "Σφάλμα κατά την αναζήτηση. Δοκιμάστε ξανά.",
-    "companyName": "Όνομα εταιρείας *",
-    "companyAddress": "Διεύθυνση εταιρείας",
-    "addressPlaceholder": "Θα συμπληρωθεί αυτόματα",
-    "paymentTitle": "Μέθοδος πληρωμής",
-    "paymentMethods": {
-      "card": "Πιστωτική κάρτα",
-      "cardSub": "Visa, Mastercard, American Express",
-      "blik": "BLIK",
-      "blikSub": "Γρήγορη πληρωμή με κωδικό BLIK",
-      "transfer": "Τραπεζικό έμβασμα",
-      "transferSub": "Παραδοσιακό τραπεζικό έμβασμα"
-    },
-    "yourOrder": "Η παραγγελία σας",
-    "summaryProducts": "Προϊόντα",
-    "summaryDiscount": "Έκπτωση ({code})",
-    "summaryTotal": "Σύνολο",
-    "terms": "Αποδέχομαι τους όρους του καταστήματος και την πολιτική απορρήτου",
-    "termsRequired": "Απαραίτητο για την επεξεργασία της παραγγελίας",
-    "processing": "Επεξεργασία...",
-    "pay": "Πληρωμή {total} €",
-    "instantAccessInfo": "Τα υλικά είναι διαθέσιμα στο πάνελ αμέσως μετά την πληρωμή",
-    "socialProof": "+2.500 εκπαιδευτικοί έχουν ήδη αγοράσει",
-    "toPayMobile": "Για πληρωμή",
-    "paymentFailed": "Η πληρωμή απέτυχε. Παρακαλώ δοκιμάστε ξανά.",
-    "paymentSystemError": "Σφάλμα συστήματος πληρωμών."
-  },
-  "contact": {
-    "title": "Ας μείνουμε σε επαφή",
-    "subtitle": "Έχετε κάποια ερώτηση σχετικά με τα υλικά; Χρειάζεστε υποστήριξη στην επιλογή ενός πακέτου; Γράψτε μας ή μιλήστε με τον βοηθό μας AI. Είμαστε εδώ για εσάς!",
-    "aiBadge": "Απαντάμε συνήθως σε 2 ώρες",
-    "trustBadge": "Πάνω από 5000 ικανοποιημένοι καθηγητές",
-    "emailTitle": "Γράψτε ένα e-mail",
-    "emailDesc": "Τα εισερχόμενά μας είναι ανοιχτά για εσάς 24/7.",
-    "phoneTitle": "Καλέστε μας",
-    "phoneDesc": "Δευ-Παρ από τις 9:00 έως τις 17:00 είμαστε στο τηλέφωνο.",
-    "formTitle": "Φόρμα Επικοινωνίας",
-    "addressTitle": "Έδρα",
-    "addressValue": "Βαρσοβία, Πολωνία",
-    "aiHelp": "Χρειάζεστε μια γρήγορη απάντηση;",
-    "aiHelpDesc": "Ο έξυπνος βοηθός μας γνωρίζει τις απαντήσεις στις περισσότερες κοινές ερωτήσεις. Ρωτήστε για προϊόντα, μεθόδους διδασκαλίας ή διαθεσιμότητα υλικών.",
-    "aiHelpMobile": "Ο βοηθός AI είναι διαθέσιμος στην κάτω γωνία της οθόνης.",
-    "form": {
-      "name": "Ονοματεπώνυμο",
-      "email": "E-mail",
-      "subject": "Θέμα",
-      "message": "Το μήνυμά σας",
-      "messagePlaceholder": "Πώς μπορούμε να σας βοηθήσουμε;",
-      "sending": "Αποστολή...",
-      "send": "Αποστολή Μηνύματος",
-      "success": "Το μήνυμα στάλθηκε!",
-      "successDesc": "Σας ευχαριστούμε για την επικοινωνία. Θα απαντήσουμε το συντομότερο δυνατό.",
-      "placeholders": {
-        "name": "Γιάννης Παπαδόπουλος",
-        "email": "jan@kamila.shor.dev",
-        "subject": "Ερώτηση για προϊόν...",
-        "message": "Περιγράψτε πώς μπορούμε να βοηθήσουμε..."
-      }
-    },
-    "info": {
-      "emailValue": "contact@kamilaenglish.com",
-      "phoneValue": "+48 123 456 789"
-    },
-    "aiChat": {
-      "title": "Βοηθός AI",
-      "status": "Online & Έτοιμος",
-      "thinking": "Σκέφτομαι...",
-      "inputPlaceholder": "Κάντε μια ερώτηση...",
-      "dataInputPlaceholder": "Εισαγάγετε όνομα και email...",
-      "welcome": "Γεια! Είμαι ο έξυπνος βοηθός σας. Πριν ξεκινήσουμε, είστε ήδη πελάτης μας;",
-      "options": {
-        "yes": "Ναι, είμαι πελάτης",
-        "no": "Όχι, όχι ακόμα"
-      },
-      "responses": {
-        "clientYes": "Υπέροχα! Πώς μπορώ να σας βοηθήσω σήμερα;",
-        "clientNo": "Καταλαβαίνω. Θα ήθελα πολύ να σας βοηθήσω να εξερευνήσετε τα υλικά μας. Ποιο είναι το όνομά σας και σε ποιο email μπορώ να σας στείλω μερικά δωρεάν δείγματα;",
-        "dataSaved": "Σας ευχαριστώ! Αποθήκευσα τα στοιχεία σας. Τώρα μη διστάσετε να ρωτήσετε οτιδήποτε.",
-        "fallback": "Λυπάμαι, δεν καταλαβαίνω απόλυτα την ερώτηση. Μπορείτε να τη διατυπώσετε διαφορετικά; Μπορείτε να ρωτήσετε για τιμές, παράδοση υλικών ή μεθόδους διδασκαλίας."
-      },
-      "knowledge": {
-        "price": "Τα υλικά μας PDF ξεκινούν από 29 €. Τα ετήσια πακέτα (Mega Pack) είναι επί του παρόντος σε προσφορά στα 149 €.",
-        "delivery": "Όλα τα υλικά είναι ψηφιακά. Θα λάβετε έναν σύνδεσμο λήψης αμέσως μετά την πληρωμή της παραγγελίας στη διεύθυνση email σας.",
-        "preschool": "Έχουμε μια εξαιρετική ενότητα 'Αγγλικά στον Βρεφονηπιακό Σταθμό και το Νηπιαγωγείο'. Συνιστώ ιδιαίτερα το πακέτο μας 4 Εποχές.",
-        "contact": "Μπορείτε να μας γράψετε στο email που αναφέρεται στη σελίδα ή να μας καλέσετε στο +30 210 123 4567 (Δευ-Παρ 9:00-17:00).",
-        "invoice": "Ναι, εκδίδουμε τιμολόγια VAT. Μπορείτε να δώσετε τα στοιχεία του τιμολογίου στο καλάθι κατά την ολοκλήρωση της παραγγελίας σας.",
-        "methods": "Η Kamila Łobko-Koziej προωθεί μια προσέγγιση βασισμένη στη σχέση και το παιχνίδι (TPR, επικοινωνιακά παιχνίδια). Δείτε το blog μας για να μάθετε περισσότερα!"
-      }
-    }
-  },
-  "login": {
-    "title": "Καλώς ήρθατε ξανά!",
-    "desc": "Εισαγάγετε το email σας για να εισέλθετε στη ζώνη μαθητή.",
-    "student": "Μαθητής",
-    "teacher": "Καθηγητής",
-    "email": "Email",
-    "emailTeacher": "Email εργασίας",
-    "password": "Κωδικός",
-    "loggingIn": "Σύνδεση...",
-    "success": "Συνδεθήκατε!",
-    "submit": "Σύνδεση",
-    "successMessage": "Συνδεθήκατε με επιτυχία! Ανακατεύθυνση...",
-    "errorDefault": "Μη έγκυρο email ή κωδικός.",
-    "errorSystem": "Παρουσιάστηκε σφάλμα σύνδεσης. Δοκιμάστε ξανά.",
-    "emailRequired": "Το email είναι απαραίτητο",
-    "emailInvalid": "Μη έγκυρη μορφή email",
-    "passwordRequired": "Ο κωδικός είναι απαραίτητος",
-    "passwordMin": "Ο κωδικός πρέπει να έχει τουλάχιστον 4 χαρακτήρες",
-    "forgotPassword": "Ξεχάσατε τον κωδικό σας;",
-    "magicLink": "Σύνδεση με Magic Link",
-    "magicLinkDesc": "Θα σας στείλουμε έναν σύνδεσμο σύνδεσης μίας χρήσης στη διεύθυνση email σας.",
-    "sendMagicLink": "Αποστολή Magic Link",
-    "backToLogin": "Επιστροφή στη σύνδεση",
-    "checkEmail": "Ελέγξτε τα εισερχόμενά σας",
-    "resetPassword": "Επαναφορά κωδικού πρόσβασης",
-    "magicLinkSent": "Ένας σύνδεσμος σύνδεσης στάλθηκε στη διεύθυνση email σας.",
-    "emailCheckDesc": "Εάν υπάρχει λογαριασμός με αυτό το email, στείλαμε οδηγίες στα εισερχόμενά σας.",
-    "resetSuccess": "Ο κωδικός πρόσβασής σας άλλαξε με επιτυχία."
-  },
-  "quickSale": {
-    "title": "ΓΡΗΓΟΡΗ ΠΛΗΡΩΜΗ",
-    "demoProduct": {
-      "title": "Παράδειγμα E-book Premium",
-      "excerpt": "Αυτό είναι ένα προϊόν επίδειξης. Στην πλήρη έκδοση, τα δεδομένα θα ανακτώνταν από τη βάση δεδομένων."
-    },
-    "page": {
-      "guarantee": "Εγγύηση ικανοποίησης 30 ημερών",
-      "totalLabel": "Σύνολο προς πληρωμή:",
-      "email_label": "Το e-mail σας",
-      "email_placeholder": "address@email.com",
-      "payment_method": "Μέθοδος πληρωμής",
-      "payment_card": "Κάρτα",
-      "blik_code": "Κωδικός BLIK",
-      "terms": "Αποδέχομαι τους όρους του καταστήματος",
-      "pay_btn": "Αγοράζω και πληρώνω",
-      "secure_checkout": "Σύνδεση κρυπτογραφημένη με SSL"
-    },
-    "optimization": {
-      "timer": {
-        "text": "Η προσφορά σας λήγει σε:"
-      },
-      "social_proof": {
-        "viewing": "{count} άτομα παρακολουθούν αυτή την προσφορά"
-      },
-      "savings": "Εξοικονομείτε"
-    },
-    "bump": {
-      "yes_btn": "ΝΑΙ, προσθέστε στην παραγγελία μου",
-      "price_prefix": "μόνο",
-      "description": "Προσφορά εφάπαξ! Προσθέστε ένα σετ από έτοιμα φύλλα εργασίας (PDF)."
-    }
-  },
-  "verify": {
-    "title": "Επαλήθευση πιστοποιητικού",
-    "subtitle": "Εισαγάγετε τον κωδικό επαλήθευσης του πιστοποιητικού για να επιβεβαιώσετε την αυθεντικότητά του.",
-    "placeholder": "XXXX-XXXX-XXXX",
-    "success": {
-      "title": "Το πιστοποιητικό επαληθεύτηκε",
-      "desc": "Αυτό το πιστοποιητικό είναι αυθεντικό και εκδόθηκε από την πλατφόρμα μας.",
-      "user": "Συμμετέχων",
-      "course": "Μάθημα",
-      "date": "Ημερομηνία ολοκλήρωσης",
-      "code": "Κωδικός",
-      "view": "Δείτε το πιστοποιητικό"
-    },
-    "error": {
-      "title": "Το πιστοποιητικό δεν βρέθηκε",
-      "desc": "Δεν βρήκαμε πιστοποιητικό με τον συγκεκριμένο κωδικό. Ελέγξτε αν ο κωδικός είναι σωστός."
-    }
-  },
-  "errors": {
-    "404": {
-      "title": "404",
-      "message": "Η σελίδα δεν βρέθηκε.",
-      "back": "Επιστροφή στην αρχική σελίδα"
-    }
-  },
-  "blog": {
-    "title": "Ιστολόγιο",
-    "subtitle": "Άρθρα, συμβουλές και έμπνευση για καθηγητές αγγλικών. Μάθετε πώς να διδάσκετε πιο αποτελεσματικά και με περισσότερο πάθος.",
-    "empty": "Δεν βρέθηκαν αναρτήσεις στο ιστολόγιο.",
-    "readMore": "Διαβάστε περισσότερα",
-    "backToBlog": "Επιστροφή στο ιστολόγιο",
-    "share": "Κοινοποίηση:",
-    "notFound": "Δεν βρέθηκε"
-  },
-  "common": {
-    "loading": "Φόρτωση..."
-  },
-  "certificates": {
-    "title": "Πιστοποιητικό Ολοκλήρωσης",
-    "subtitle": "Δια του παρόντος πιστοποιείται ότι",
-    "completedCourse": "ολοκλήρωσε το μάθημα",
-    "completionDate": "Ημερομηνία ολοκλήρωσης:",
-    "verificationCode": "Κωδικός επαλήθευσης:",
-    "downloadPdf": "Λήψη PDF",
-    "share": "Κοινοποίηση",
-    "backToDashboard": "Επιστροφή στο πάνελ",
-    "styleTitle": "Αλλαγή στυλ πιστοποιητικού",
-    "verifiedTitle": "Το πιστοποιητικό επαληθεύτηκε",
-    "verifiedDesc": "Αυτό το πιστοποιητικό εκδόθηκε από την πλατφόρμα μας.",
-    "notFound": "Το πιστοποιητικό δεν βρέθηκε",
-    "copySuccess": "Ο σύνδεσμος αντιγράφηκε!"
-  },
-  "languages": {
-    "pl": "Πολωνικά",
-    "en": "Αγγλικά",
-    "uk": "Ουκρανικά",
-    "de": "Γερμανικά",
-    "es": "Ισπανικά",
-    "fr": "Γαλλικά",
-    "it": "Ιταλικά",
-    "cs": "Τσεχικά",
-    "sk": "Σλοβακικά",
-    "ro": "Ρουμανικά",
-    "hu": "Ουγγρικά",
-    "pt": "Πορτογαλικά",
-    "lt": "Λιθουανικά",
-    "lv": "Λετονικά",
-    "et": "Εσθονικά",
-    "hr": "Κροατικά",
-    "sr": "Σερβικά",
-    "sl": "Σλοβενικά",
-    "bg": "Βουλγαρικά",
-    "el": "Ελληνικά",
-    "nl": "Ολλανδικά",
-    "sv": "Σουηδικά",
-    "fi": "Φινλανδικά",
-    "no": "Νορβηγικά",
-    "da": "Δανικά"
-  },
-  "fomo": {
-    "names": [
-      "John",
-      "Emily",
-      "Michael",
-      "Sarah",
-      "David",
-      "Jessica",
-      "Robert"
-    ],
-    "cities": [
-      "London",
-      "New York",
-      "Chicago",
-      "Toronto",
-      "Sydney",
-      "Dublin",
-      "Berlin"
-    ],
-    "purchaseMessage": "{name} from {city}",
-    "productMessage": "Just bought \"{product}\"",
-    "timeAgo": "{time} min ago"
-  },
-  "exitIntent": {
-    "title": "ΠΕΡΙΜΕΝΕΤΕ!",
-    "subtitle": "Πριν φύγετε...",
-    "header": "Λάβετε το δωρεάν \"Starter Pack\"",
-    "description": "Εγγραφείτε στο newsletter μας και λάβετε 50 δωρεάν φύλλα εργασίας!",
-    "cta": "Θέλω το δώρο μου",
-    "noThanks": "Όχι ευχαριστώ, θα πληρώσω την πλήρη τιμή αργότερα"
-  },
-  "announcement": {
-    "launchOffer": "Ειδική Προσφορά Εγκαινίων: -20% με τον κωδικό \"START20\"",
-    "limitedTime": "Περιορισμένος χρόνος: Δείτε τα νέα μας πακέτα!"
-  },
-  "course": {
-    "yourProgress": "Η Πρόοδός Σας",
-    "noLessons": "Δεν υπάρχουν μαθήματα.",
-    "quiz": "Κουίζ",
-    "unlocksInDays": "Ξεκλειδώνεται σε {days} ημέρες"
-  },
-  "dashboard": {
-    "wallet": {
-      "title": "Your Wallet",
-      "subtitle": "Collect points for activity and purchases.",
-      "available": "Available funds",
-      "points": "pts",
-      "value": "Value in {currency}",
-      "spend": "Spend points in shop",
-      "history": "Recent activity"
-    },
-    "awards": {
-      "title": "Your Hall of Fame",
-      "subtitle": "Earn badges for completed lessons and games!",
-      "mock": {
-        "start": "Quick Start",
-        "startDesc": "Completed first lesson",
-        "vocab": "Vocab Master",
-        "vocabDesc": "100% in quiz",
-        "steady": "Systematic",
-        "steadyDesc": "Logged in 7 days",
-        "polyglot": "Polyglot",
-        "polyglotDesc": "Passed A1 level"
-      }
-    },
-    "team": {
-      "title": "My Class / Team",
-      "subtitle": "Share materials with students",
-      "create_class": "Create new class",
-      "created_at": "Created: {date}",
-      "students_count": "{count} students",
-      "access_code": "Student access code",
-      "empty": {
-        "title": "New Class",
-        "desc": "Create a group for your students.",
-        "btn": "Start Setup"
-      },
-      "pro": {
-        "active": "Your PRO plan is active",
-        "unlock": "Unlock unlimited classes",
-        "desc": "Teacher PRO plan allows creating unlimited groups.",
-        "upgrade": "Upgrade to PRO",
-        "status": "Active"
-      }
-    },
-    "games": {
-      "title": "Educational Games",
-      "subtitle": "Interactive exercises for your students",
-      "play": "Play now",
-      "loading": "Loading game...",
-      "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
-      "fullscreen": "Full screen",
-      "report": "Report error"
-    }
-  }
 }

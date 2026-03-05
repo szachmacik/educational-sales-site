@@ -1,460 +1,465 @@
 {
-  "seo": {
-    "title": "Studiematerial för engelskalärare | Kamila Łobko-Koziej",
-    "description": "Kreativt studiematerial, lektionsplaner, helårsprojekt och färdiga paket för engelskalärare.",
-    "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
-  },
-  "nav": {
-    "products": "Produkter",
-    "materialy": "Material",
-    "blog": "Blogg",
-    "contact": "Kontakt",
-    "login": "Logga in",
-    "dashboard": "Instrumentpanel",
-    "adminPanel": "Adminpanel",
-    "verify": "Verifiering"
-  },
-  "brand": {
-    "educationalMaterials": "Utbildningsmaterial",
-    "byKamila": "av Kamila Łobko-Koziej"
-  },
-  "hero": {
-    "badge": "Material för lärare",
-    "title": "Undervisa engelska med passion och lätthet",
-    "subtitle": "Kreativt studiematerial som kommer att förvandla dina lektioner. Spara tid på förberedelser och inspirera dina elever varje dag.",
-    "cta_main": "Bläddra i material",
-    "cta_secondary": "Om författaren",
-    "demoText": "Se demopanel:",
-    "teacherProfile": "Lärarprofil",
-    "studentProfile": "Elevprofil"
-  },
-  "footer": {
-    "rights": "Alla rättigheter förbehållna.",
-    "description": "Originalt, kreativt studiematerial för engelskalärare. Låt dig inspireras!",
-    "groups": {
-      "shop": "Butik",
-      "info": "Information",
-      "help": "Hjälp"
+    "seo": {
+        "title": "Studiematerial för engelskalärare | Kamila Łobko-Koziej",
+        "description": "Kreativt studiematerial, lektionsplaner, helårsprojekt och färdiga paket för engelskalärare.",
+        "ai_summary": "Online store with educational materials for English teachers. Created by Kamila Łobko-Koziej."
     },
-    "links": {
-      "catalog": "Katalog",
-      "materials": "Studiematerial",
-      "projects": "Helårsprojekt",
-      "scenarios": "Lektionsplaner",
-      "packs": "Temapaket",
-      "about": "Om författaren",
-      "contact": "Kontakt",
-      "privacy": "Integritetspolicy",
-      "terms": "Användarvillkor",
-      "howToBuy": "Hur man köper?",
-      "faq": "FAQ",
-      "returns": "Returer",
-      "account": "Mitt konto",
-      "admin": "Lärarpanel (Admin)"
+    "nav": {
+        "products": "Produkter",
+        "materialy": "Material",
+        "blog": "Blogg",
+        "contact": "Kontakt",
+        "login": "Logga in",
+        "dashboard": "Instrumentpanel",
+        "adminPanel": "Adminpanel",
+        "verify": "Verifiering"
+    },
+    "brand": {
+        "educationalMaterials": "Utbildningsmaterial",
+        "byKamila": "av Kamila Łobko-Koziej"
+    },
+    "hero": {
+        "badge": "Material för lärare",
+        "title": "Undervisa engelska med passion och lätthet",
+        "subtitle": "Kreativt studiematerial som kommer att förvandla dina lektioner. Spara tid på förberedelser och inspirera dina elever varje dag.",
+        "cta_main": "Bläddra i material",
+        "cta_secondary": "Om författaren",
+        "demoText": "Se demopanel:",
+        "teacherProfile": "Lärarprofil",
+        "studentProfile": "Elevprofil"
+    },
+    "footer": {
+        "rights": "Alla rättigheter förbehållna.",
+        "description": "Originalt, kreativt studiematerial för engelskalärare. Låt dig inspireras!",
+        "groups": {
+            "shop": "Butik",
+            "info": "Information",
+            "help": "Hjälp"
+        },
+        "links": {
+            "catalog": "Katalog",
+            "materials": "Studiematerial",
+            "projects": "Helårsprojekt",
+            "scenarios": "Lektionsplaner",
+            "packs": "Temapaket",
+            "about": "Om författaren",
+            "contact": "Kontakt",
+            "privacy": "Integritetspolicy",
+            "terms": "Användarvillkor",
+            "howToBuy": "Hur man köper?",
+            "faq": "FAQ",
+            "returns": "Returer",
+            "account": "Mitt konto",
+            "admin": "Lärarpanel (Admin)"
+        }
+    },
+    "auth": {
+        "logout": "Logga ut",
+        "myCourses": "Mina kurser",
+        "studentPanel": "Elevpanel",
+        "roleAdmin": "Administratör",
+        "roleTeacher": "Lärare",
+        "roleStudent": "Elev"
+    },
+    "cart": {
+        "empty": "Din varukorg är tom",
+        "emptySub": "Lägg till produkter för att fortsätta handla",
+        "browse": "Bläddra bland produkter",
+        "reserved": "Din varukorg är reserverad i:",
+        "header": "Varukorg ({count})",
+        "remove": "Ta bort",
+        "specialOffer": "SPECIALERBJUDANDE",
+        "orderBump": "Lägg till e-postmallspaket (+29)",
+        "orderBumpDesc": "20 färdiga mallar för föräldrakommunikation. Spara 70%!",
+        "summary": "Sammanfattning",
+        "couponPlaceholder": "Rabattkod",
+        "apply": "Använd",
+        "couponHeader": "Kupong:",
+        "products": "Produkter",
+        "discount": "Rabatt",
+        "total": "Totalt",
+        "checkout": "Gå till kassan",
+        "secure": "Säker betalning",
+        "couponInvalid": "Ogiltig kupongkod",
+        "couponInactive": "Kupongen är inte längre aktiv",
+        "couponExpired": "Kupongen har gått ut",
+        "couponLimitReached": "Användningsgräns för kupong uppnådd",
+        "couponMinOrder": "Minsta ordervärde: {minOrderValue} {currency}",
+        "couponAppliedPercent": "Rabatt {percent}% applicerad!",
+        "couponAppliedFixed": "Rabatt {amount} {currency} applicerad!",
+        "currencySymbol": "€"
+    },
+    "socialProof": {
+        "header": "Facebook-community",
+        "sub": "Håll dig uppdaterad med nyheter och delta i diskussionen!",
+        "cta": "Se vår profil full av inspiration",
+        "madeWithLove": "Skapad med kärlek",
+        "polishQuality": "och polsk kvalitet"
+    },
+    "newsletter": {
+        "header": "Håll dig uppdaterad!",
+        "sub": "Prenumerera på vårt nyhetsbrev och få information om nytt material, kampanjer och exklusiva rabatter.",
+        "placeholder": "Din e-postadress",
+        "button": "Prenumerera",
+        "success": "Tack för att du prenumererar på nyhetsbrevet!",
+        "privacy": "Vi respekterar din integritet. Du kan avsluta prenumerationen när som helst."
+    },
+    "checkout": {
+        "acceptTermsError": "Du måste acceptera villkoren",
+        "successTitle": "Tack för din beställning!",
+        "successOrder": "Din beställning #{orderNumber} har tagits emot.",
+        "successEmail": "Orderbekräftelse har skickats till din e-postadress.",
+        "backToStore": "Tillbaka till butiken",
+        "myCourses": "Mina kurser",
+        "backToCart": "Tillbaka till varukorgen",
+        "steps": {
+            "cart": "Varukorg",
+            "payment": "Betalning",
+            "access": "Åtkomst"
+        },
+        "trust": {
+            "secure": "Säker betalning",
+            "ssl": "SSL-kryptering",
+            "instant": "Omedelbar åtkomst"
+        },
+        "header": "Slutför din beställning",
+        "contactTitle": "Kontaktinformation",
+        "email": "E-post *",
+        "firstName": "Förnamn *",
+        "lastName": "Efternamn *",
+        "phone": "Telefon (valfritt)",
+        "invoiceTitle": "Faktura",
+        "wantInvoice": "Jag vill ha en moms-faktura",
+        "nip": "Momsregistreringsnummer *",
+        "nipError": "Ange ett giltigt momsnummer",
+        "lookup": "Hämta data",
+        "lookupSuccess": "Företagsuppgifter hämtade!",
+        "nipNotFound": "Företaget hittades inte",
+        "nipSearchError": "Fel vid sökning. Försök igen.",
+        "companyName": "Företagsnamn *",
+        "companyAddress": "Företagsadress",
+        "addressPlaceholder": "Fylls i automatiskt",
+        "paymentTitle": "Betalningsmetod",
+        "paymentMethods": {
+            "card": "Betalkort",
+            "cardSub": "Visa, Mastercard, American Express",
+            "blik": "BLIK",
+            "blikSub": "Snabb betalning med BLIK-kod",
+            "transfer": "Banköverföring",
+            "transferSub": "Traditionell banköverföring"
+        },
+        "yourOrder": "Din beställning",
+        "summaryProducts": "Produkter",
+        "summaryDiscount": "Rabatt ({code})",
+        "summaryTotal": "Totalt",
+        "terms": "Jag accepterar köpvillkoren och integritetspolicyn",
+        "termsRequired": "Krävs för att behandla beställningen",
+        "processing": "Behandlar...",
+        "pay": "Betala {total}",
+        "instantAccessInfo": "Materialet är tillgängligt i panelen omedelbart efter betalning",
+        "socialProof": "Över 2 500 lärare har redan gått med",
+        "toPayMobile": "Att betala",
+        "paymentFailed": "Payment failed. Please try again.",
+        "paymentSystemError": "Payment system error."
+    },
+    "contact": {
+        "title": "Hör av dig",
+        "subtitle": "Har du frågor om materialet? Behöver du hjälp att välja ett paket? Skriv till oss eller prata med vår AI-assistent. Vi finns här för dig!",
+        "aiBadge": "Vi svarar vanligtvis inom 2 timmar",
+        "trustBadge": "Över 12 000 nöjda lärare",
+        "emailTitle": "Skicka ett e-postmeddelande",
+        "emailDesc": "Vår inkorg är öppen 24/7 för dig.",
+        "phoneTitle": "Ring oss",
+        "phoneDesc": "Mån-fre kl. 9:00-17:00 finns vi på telefon.",
+        "formTitle": "Kontaktformulär",
+        "addressTitle": "Huvudkontor",
+        "addressValue": "Warszawa, Educational St 123",
+        "aiHelp": "Behöver du ett snabbt svar?",
+        "aiHelpDesc": "Vår smarta assistent kan svaren på de vanligaste frågorna. Fråga om produkter, undervisningsmetoder eller tillgänglighet.",
+        "aiHelpMobile": "AI-assistenten finns i det nedre hörnet av skärmen.",
+        "form": {
+            "name": "Namn & efternamn",
+            "email": "E-post",
+            "subject": "Ämne",
+            "message": "Ditt meddelande",
+            "messagePlaceholder": "Hur kan vi hjälpa dig?",
+            "sending": "Skickar...",
+            "send": "Skicka meddelande",
+            "success": "Meddelandet har skickats!",
+            "successDesc": "Tack för att du kontaktar oss. Vi svarar så snart som möjligt.",
+            "placeholders": {
+                "name": "John Doe",
+                "email": "jan@kamila.shor.dev",
+                "subject": "Produktfråga...",
+                "message": "Beskriv hur vi kan hjälpa till..."
+            }
+        },
+        "info": {
+            "emailValue": "contact@kamilaenglish.com",
+            "phoneValue": "+48 123 456 789"
+        },
+        "aiChat": {
+            "title": "AI-assistent",
+            "status": "Online & redo",
+            "thinking": "Tänker...",
+            "inputPlaceholder": "Ställ en fråga...",
+            "dataInputPlaceholder": "Ange namn och e-post...",
+            "welcome": "Hej! Jag är din smarta assistent. Innan vi börjar, är du redan kund hos oss?",
+            "options": {
+                "yes": "Ja, jag är kund",
+                "no": "Nej, inte än"
+            },
+            "responses": {
+                "clientYes": "Härligt! Hur kan jag hjälpa dig idag?",
+                "clientNo": "Jag förstår. Jag hjälper dig gärna att utforska vårt material. Vad är ditt namn och e-post så att jag kan skicka några gratisprover?",
+                "dataSaved": "Tack! Jag har sparat dina uppgifter. Nu är det bara att fråga.",
+                "fallback": "Jag beklagar, jag förstod inte riktigt. Kan du formulera om frågan? Du kan fråga om priser, leverans eller undervisningsmetoder."
+            },
+            "knowledge": {
+                "price": "Vårt PDF-material börjar vid $29. Årspaket (Mega Pack) är just nu på rea för $149.",
+                "delivery": "Allt material är digitalt. Du får en nedladdningslänk direkt efter betalning.",
+                "preschool": "Vi har en fantastisk avdelning för förskola. Jag rekommenderar speciellt vårt '4 Seasons'-paket.",
+                "contact": "Du kan mejla oss eller ringa +1 234 567 890 (mån-fre 9:00-17:00).",
+                "invoice": "Ja, vi utfärdar moms-fakturor. Du kan ange fakturauppgifter i varukorgen.",
+                "methods": "Kamila Łobko-Koziej förespråkar ett lekbaserat tillvägagångssätt (TPR, kommunikativa lekar). Kolla vår blogg för att lära dig mer!"
+            }
+        }
+    },
+    "login": {
+        "title": "Välkommen tillbaka!",
+        "desc": "Ange din e-post för att gå till elevzonen.",
+        "student": "Elev",
+        "teacher": "Lärare",
+        "email": "E-post",
+        "emailTeacher": "Arbets-e-post",
+        "password": "Lösenord",
+        "loggingIn": "Loggar in...",
+        "success": "Inloggad!",
+        "submit": "Logga in",
+        "successMessage": "Inloggningen lyckades! Omdirigerar...",
+        "errorDefault": "Ogiltig e-post eller lösenord.",
+        "errorSystem": "Ett inloggningsfel uppstod. Försök igen.",
+        "emailRequired": "E-post krävs",
+        "emailInvalid": "Ogiltigt e-postformat",
+        "passwordRequired": "Lösenord krävs",
+        "passwordMin": "Lösenordet måste vara minst 4 tecken",
+        "forgotPassword": "Forgot your password?",
+        "magicLink": "Login with Magic Link",
+        "magicLinkDesc": "We'll send you a one-time login link to your email address.",
+        "sendMagicLink": "Send Magic Link",
+        "backToLogin": "Back to login",
+        "checkEmail": "Check your inbox",
+        "resetPassword": "Reset password",
+        "magicLinkSent": "A login link has been sent to your email address.",
+        "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
+        "resetSuccess": "Your password has been changed successfully."
+    },
+    "quickSale": {
+        "title": "SNABB BETALNING",
+        "demoProduct": {
+            "title": "Exempel Premium E-bok",
+            "excerpt": "Detta är en demonstrationsprodukt. I den fullständiga versionen hämtas data från databasen."
+        },
+        "page": {
+            "guarantee": "30 dagars nöjdhetsgaranti",
+            "totalLabel": "Totalt att betala:",
+            "email_label": "Din e-post",
+            "email_placeholder": "adress@email.com",
+            "payment_method": "Betalningsmetod",
+            "payment_card": "Kort",
+            "blik_code": "BLIK-kod",
+            "terms": "Jag accepterar köpvillkoren",
+            "pay_btn": "Jag köper och betalar",
+            "secure_checkout": "SSL-krypterad anslutning"
+        },
+        "optimization": {
+            "timer": {
+                "text": "Erbjudandet går ut om:"
+            },
+            "social_proof": {
+                "viewing": "{count} personer ser detta erbjudande just nu"
+            },
+            "savings": "Du sparar"
+        },
+        "bump": {
+            "yes_btn": "JA, lägg till i min beställning",
+            "price_prefix": "endast",
+            "description": "Engångserbjudande! Lägg till en uppsättning färdiga arbetsblad (PDF)."
+        }
+    },
+    "verify": {
+        "title": "Verifiering av certifikat",
+        "subtitle": "Ange verifieringskoden för att bekräfta certifikatets äkthet.",
+        "placeholder": "XXXX-XXXX-XXXX",
+        "success": {
+            "title": "Certifikatet verifierat",
+            "desc": "Detta certifikat är äkta och utfärdades av vår plattform.",
+            "user": "Deltagare",
+            "course": "Kurs",
+            "date": "Slutförandedatum",
+            "code": "Kod",
+            "view": "Visa certifikat"
+        },
+        "error": {
+            "title": "Certifikatet hittades inte",
+            "desc": "Vi hittade inget certifikat med den angivna koden. Kontrollera att koden är rätt."
+        }
+    },
+    "errors": {
+        "404": {
+            "title": "404",
+            "message": "Sidan hittades inte.",
+            "back": "Tillbaka till startsidan"
+        }
+    },
+    "blog": {
+        "title": "Blogg",
+        "subtitle": "Artiklar, tips och inspiration för engelskalärare. Lär dig hur du undervisar effektivare och med mer passion.",
+        "empty": "Inga blogginlägg hittades.",
+        "readMore": "Läs mer",
+        "backToBlog": "Tillbaka till bloggen",
+        "share": "Dela:",
+        "notFound": "Hittades inte"
+    },
+    "common": {
+        "loading": "Laddar...",
+        "success": "Åtgärden slutfördes framgångsrikt."
+    },
+    "certificates": {
+        "title": "Certifikat för slutförd kurs",
+        "subtitle": "Detta intygar att",
+        "completedCourse": "har slutfört kursen",
+        "completionDate": "Slutförandedatum:",
+        "verificationCode": "Verifieringskod:",
+        "downloadPdf": "Ladda ner PDF",
+        "share": "Dela",
+        "backToDashboard": "Tillbaka till översikten",
+        "styleTitle": "Ändra certifikatstil",
+        "verifiedTitle": "Certifikatet verifierat",
+        "verifiedDesc": "Detta certifikat utfärdades av vår plattform.",
+        "notFound": "Certifikatet hittades inte",
+        "copySuccess": "Länk kopierad till urklipp!"
+    },
+    "languages": {
+        "pl": "Polish",
+        "en": "English",
+        "uk": "Ukrainian",
+        "de": "German",
+        "es": "Spanish",
+        "fr": "French",
+        "it": "Italian",
+        "cs": "Czech",
+        "sk": "Slovak",
+        "ro": "Romanian",
+        "hu": "Hungarian",
+        "pt": "Portuguese",
+        "lt": "Lithuanian",
+        "lv": "Latvian",
+        "et": "Estonian",
+        "hr": "Croatian",
+        "sr": "Serbian",
+        "sl": "Slovenian",
+        "bg": "Bulgarian",
+        "el": "Greek",
+        "nl": "Dutch",
+        "sv": "Swedish",
+        "fi": "Finnish",
+        "no": "Norwegian",
+        "da": "Danish"
+    },
+    "fomo": {
+        "names": [
+            "John",
+            "Emily",
+            "Michael",
+            "Sarah",
+            "David",
+            "Jessica",
+            "Robert"
+        ],
+        "cities": [
+            "London",
+            "New York",
+            "Chicago",
+            "Toronto",
+            "Sydney",
+            "Dublin",
+            "Berlin"
+        ],
+        "purchaseMessage": "{name} from {city}",
+        "productMessage": "Just bought \"{product}\"",
+        "timeAgo": "{time} min ago"
+    },
+    "exitIntent": {
+        "title": "WAIT!",
+        "subtitle": "Before you leave...",
+        "header": "Get your free \"Starter Pack\"",
+        "description": "Join our newsletter and receive 50 free worksheets!",
+        "cta": "I want my gift",
+        "noThanks": "No thanks, I'll pay full price later"
+    },
+    "course": {
+        "yourProgress": "Din Framsteg",
+        "noLessons": "Inga lektioner.",
+        "quiz": "Quiz",
+        "unlocksInDays": "Låses upp om {days} dagar"
+    },
+    "dashboard": {
+        "wallet": {
+            "title": "Your Wallet",
+            "subtitle": "Collect points for activity and purchases.",
+            "available": "Available funds",
+            "points": "pts",
+            "value": "Value in {currency}",
+            "spend": "Spend points in shop",
+            "history": "Recent activity"
+        },
+        "awards": {
+            "title": "Your Hall of Fame",
+            "subtitle": "Earn badges for completed lessons and games!",
+            "mock": {
+                "start": "Quick Start",
+                "startDesc": "Completed first lesson",
+                "vocab": "Vocab Master",
+                "vocabDesc": "100% in quiz",
+                "steady": "Systematic",
+                "steadyDesc": "Logged in 7 days",
+                "polyglot": "Polyglot",
+                "polyglotDesc": "Passed A1 level"
+            }
+        },
+        "team": {
+            "title": "My Class / Team",
+            "subtitle": "Share materials with students",
+            "create_class": "Create new class",
+            "created_at": "Created: {date}",
+            "students_count": "{count} students",
+            "access_code": "Student access code",
+            "empty": {
+                "title": "New Class",
+                "desc": "Create a group for your students.",
+                "btn": "Start Setup"
+            },
+            "pro": {
+                "active": "Your PRO plan is active",
+                "unlock": "Unlock unlimited classes",
+                "desc": "Teacher PRO plan allows creating unlimited groups.",
+                "upgrade": "Upgrade to PRO",
+                "status": "Active"
+            }
+        },
+        "games": {
+            "title": "Educational Games",
+            "subtitle": "Interactive exercises for your students",
+            "play": "Play now",
+            "loading": "Loading game...",
+            "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
+            "fullscreen": "Full screen",
+            "report": "Report error"
+        }
+    },
+    "announcement": {
+        "launchOffer": "Specialerbjudande vid lansering: Få 20% RABATT med koden \"START20\"",
+        "limitedTime": "Begränsad tid: Kolla in våra nya paket!"
     }
-  },
-  "auth": {
-    "logout": "Logga ut",
-    "myCourses": "Mina kurser",
-    "studentPanel": "Elevpanel",
-    "roleAdmin": "Administratör",
-    "roleTeacher": "Lärare",
-    "roleStudent": "Elev"
-  },
-  "cart": {
-    "empty": "Din varukorg är tom",
-    "emptySub": "Lägg till produkter för att fortsätta handla",
-    "browse": "Bläddra bland produkter",
-    "reserved": "Din varukorg är reserverad i:",
-    "header": "Varukorg ({count})",
-    "remove": "Ta bort",
-    "specialOffer": "SPECIALERBJUDANDE",
-    "orderBump": "Lägg till e-postmallspaket (+29)",
-    "orderBumpDesc": "20 färdiga mallar för föräldrakommunikation. Spara 70%!",
-    "summary": "Sammanfattning",
-    "couponPlaceholder": "Rabattkod",
-    "apply": "Använd",
-    "couponHeader": "Kupong:",
-    "products": "Produkter",
-    "discount": "Rabatt",
-    "total": "Totalt",
-    "checkout": "Gå till kassan",
-    "secure": "Säker betalning",
-    "couponInvalid": "Ogiltig kupongkod",
-    "couponInactive": "Kupongen är inte längre aktiv",
-    "couponExpired": "Kupongen har gått ut",
-    "couponLimitReached": "Användningsgräns för kupong uppnådd",
-    "couponMinOrder": "Minsta ordervärde: {minOrderValue} {currency}",
-    "couponAppliedPercent": "Rabatt {percent}% applicerad!",
-    "couponAppliedFixed": "Rabatt {amount} {currency} applicerad!",
-    "currencySymbol": "€"
-  },
-  "socialProof": {
-    "header": "Facebook-community",
-    "sub": "Håll dig uppdaterad med nyheter och delta i diskussionen!",
-    "cta": "Se vår profil full av inspiration",
-    "madeWithLove": "Skapad med kärlek",
-    "polishQuality": "och polsk kvalitet"
-  },
-  "newsletter": {
-    "header": "Håll dig uppdaterad!",
-    "sub": "Prenumerera på vårt nyhetsbrev och få information om nytt material, kampanjer och exklusiva rabatter.",
-    "placeholder": "Din e-postadress",
-    "button": "Prenumerera",
-    "success": "Tack för att du prenumererar på nyhetsbrevet!",
-    "privacy": "Vi respekterar din integritet. Du kan avsluta prenumerationen när som helst."
-  },
-  "checkout": {
-    "acceptTermsError": "Du måste acceptera villkoren",
-    "successTitle": "Tack för din beställning!",
-    "successOrder": "Din beställning #{orderNumber} har tagits emot.",
-    "successEmail": "Orderbekräftelse har skickats till din e-postadress.",
-    "backToStore": "Tillbaka till butiken",
-    "myCourses": "Mina kurser",
-    "backToCart": "Tillbaka till varukorgen",
-    "steps": {
-      "cart": "Varukorg",
-      "payment": "Betalning",
-      "access": "Åtkomst"
-    },
-    "trust": {
-      "secure": "Säker betalning",
-      "ssl": "SSL-kryptering",
-      "instant": "Omedelbar åtkomst"
-    },
-    "header": "Slutför din beställning",
-    "contactTitle": "Kontaktinformation",
-    "email": "E-post *",
-    "firstName": "Förnamn *",
-    "lastName": "Efternamn *",
-    "phone": "Telefon (valfritt)",
-    "invoiceTitle": "Faktura",
-    "wantInvoice": "Jag vill ha en moms-faktura",
-    "nip": "Momsregistreringsnummer *",
-    "nipError": "Ange ett giltigt momsnummer",
-    "lookup": "Hämta data",
-    "lookupSuccess": "Företagsuppgifter hämtade!",
-    "nipNotFound": "Företaget hittades inte",
-    "nipSearchError": "Fel vid sökning. Försök igen.",
-    "companyName": "Företagsnamn *",
-    "companyAddress": "Företagsadress",
-    "addressPlaceholder": "Fylls i automatiskt",
-    "paymentTitle": "Betalningsmetod",
-    "paymentMethods": {
-      "card": "Betalkort",
-      "cardSub": "Visa, Mastercard, American Express",
-      "blik": "BLIK",
-      "blikSub": "Snabb betalning med BLIK-kod",
-      "transfer": "Banköverföring",
-      "transferSub": "Traditionell banköverföring"
-    },
-    "yourOrder": "Din beställning",
-    "summaryProducts": "Produkter",
-    "summaryDiscount": "Rabatt ({code})",
-    "summaryTotal": "Totalt",
-    "terms": "Jag accepterar köpvillkoren och integritetspolicyn",
-    "termsRequired": "Krävs för att behandla beställningen",
-    "processing": "Behandlar...",
-    "pay": "Betala {total}",
-    "instantAccessInfo": "Materialet är tillgängligt i panelen omedelbart efter betalning",
-    "socialProof": "Över 2 500 lärare har redan gått med",
-    "toPayMobile": "Att betala",
-    "paymentFailed": "Payment failed. Please try again.",
-    "paymentSystemError": "Payment system error."
-  },
-  "contact": {
-    "title": "Hör av dig",
-    "subtitle": "Har du frågor om materialet? Behöver du hjälp att välja ett paket? Skriv till oss eller prata med vår AI-assistent. Vi finns här för dig!",
-    "aiBadge": "Vi svarar vanligtvis inom 2 timmar",
-    "trustBadge": "Över 12 000 nöjda lärare",
-    "emailTitle": "Skicka ett e-postmeddelande",
-    "emailDesc": "Vår inkorg är öppen 24/7 för dig.",
-    "phoneTitle": "Ring oss",
-    "phoneDesc": "Mån-fre kl. 9:00-17:00 finns vi på telefon.",
-    "formTitle": "Kontaktformulär",
-    "addressTitle": "Huvudkontor",
-    "addressValue": "Warszawa, Educational St 123",
-    "aiHelp": "Behöver du ett snabbt svar?",
-    "aiHelpDesc": "Vår smarta assistent kan svaren på de vanligaste frågorna. Fråga om produkter, undervisningsmetoder eller tillgänglighet.",
-    "aiHelpMobile": "AI-assistenten finns i det nedre hörnet av skärmen.",
-    "form": {
-      "name": "Namn & efternamn",
-      "email": "E-post",
-      "subject": "Ämne",
-      "message": "Ditt meddelande",
-      "messagePlaceholder": "Hur kan vi hjälpa dig?",
-      "sending": "Skickar...",
-      "send": "Skicka meddelande",
-      "success": "Meddelandet har skickats!",
-      "successDesc": "Tack för att du kontaktar oss. Vi svarar så snart som möjligt.",
-      "placeholders": {
-        "name": "John Doe",
-        "email": "jan@kamila.shor.dev",
-        "subject": "Produktfråga...",
-        "message": "Beskriv hur vi kan hjälpa till..."
-      }
-    },
-    "info": {
-      "emailValue": "contact@kamilaenglish.com",
-      "phoneValue": "+48 123 456 789"
-    },
-    "aiChat": {
-      "title": "AI-assistent",
-      "status": "Online & redo",
-      "thinking": "Tänker...",
-      "inputPlaceholder": "Ställ en fråga...",
-      "dataInputPlaceholder": "Ange namn och e-post...",
-      "welcome": "Hej! Jag är din smarta assistent. Innan vi börjar, är du redan kund hos oss?",
-      "options": {
-        "yes": "Ja, jag är kund",
-        "no": "Nej, inte än"
-      },
-      "responses": {
-        "clientYes": "Härligt! Hur kan jag hjälpa dig idag?",
-        "clientNo": "Jag förstår. Jag hjälper dig gärna att utforska vårt material. Vad är ditt namn och e-post så att jag kan skicka några gratisprover?",
-        "dataSaved": "Tack! Jag har sparat dina uppgifter. Nu är det bara att fråga.",
-        "fallback": "Jag beklagar, jag förstod inte riktigt. Kan du formulera om frågan? Du kan fråga om priser, leverans eller undervisningsmetoder."
-      },
-      "knowledge": {
-        "price": "Vårt PDF-material börjar vid $29. Årspaket (Mega Pack) är just nu på rea för $149.",
-        "delivery": "Allt material är digitalt. Du får en nedladdningslänk direkt efter betalning.",
-        "preschool": "Vi har en fantastisk avdelning för förskola. Jag rekommenderar speciellt vårt '4 Seasons'-paket.",
-        "contact": "Du kan mejla oss eller ringa +1 234 567 890 (mån-fre 9:00-17:00).",
-        "invoice": "Ja, vi utfärdar moms-fakturor. Du kan ange fakturauppgifter i varukorgen.",
-        "methods": "Kamila Łobko-Koziej förespråkar ett lekbaserat tillvägagångssätt (TPR, kommunikativa lekar). Kolla vår blogg för att lära dig mer!"
-      }
-    }
-  },
-  "login": {
-    "title": "Välkommen tillbaka!",
-    "desc": "Ange din e-post för att gå till elevzonen.",
-    "student": "Elev",
-    "teacher": "Lärare",
-    "email": "E-post",
-    "emailTeacher": "Arbets-e-post",
-    "password": "Lösenord",
-    "loggingIn": "Loggar in...",
-    "success": "Inloggad!",
-    "submit": "Logga in",
-    "successMessage": "Inloggningen lyckades! Omdirigerar...",
-    "errorDefault": "Ogiltig e-post eller lösenord.",
-    "errorSystem": "Ett inloggningsfel uppstod. Försök igen.",
-    "emailRequired": "E-post krävs",
-    "emailInvalid": "Ogiltigt e-postformat",
-    "passwordRequired": "Lösenord krävs",
-    "passwordMin": "Lösenordet måste vara minst 4 tecken",
-    "forgotPassword": "Forgot your password?",
-    "magicLink": "Login with Magic Link",
-    "magicLinkDesc": "We'll send you a one-time login link to your email address.",
-    "sendMagicLink": "Send Magic Link",
-    "backToLogin": "Back to login",
-    "checkEmail": "Check your inbox",
-    "resetPassword": "Reset password",
-    "magicLinkSent": "A login link has been sent to your email address.",
-    "emailCheckDesc": "If an account with this email exists, we've sent instructions to your inbox.",
-    "resetSuccess": "Your password has been changed successfully."
-  },
-  "quickSale": {
-    "title": "SNABB BETALNING",
-    "demoProduct": {
-      "title": "Exempel Premium E-bok",
-      "excerpt": "Detta är en demonstrationsprodukt. I den fullständiga versionen hämtas data från databasen."
-    },
-    "page": {
-      "guarantee": "30 dagars nöjdhetsgaranti",
-      "totalLabel": "Totalt att betala:",
-      "email_label": "Din e-post",
-      "email_placeholder": "adress@email.com",
-      "payment_method": "Betalningsmetod",
-      "payment_card": "Kort",
-      "blik_code": "BLIK-kod",
-      "terms": "Jag accepterar köpvillkoren",
-      "pay_btn": "Jag köper och betalar",
-      "secure_checkout": "SSL-krypterad anslutning"
-    },
-    "optimization": {
-      "timer": {
-        "text": "Erbjudandet går ut om:"
-      },
-      "social_proof": {
-        "viewing": "{count} personer ser detta erbjudande just nu"
-      },
-      "savings": "Du sparar"
-    },
-    "bump": {
-      "yes_btn": "JA, lägg till i min beställning",
-      "price_prefix": "endast",
-      "description": "Engångserbjudande! Lägg till en uppsättning färdiga arbetsblad (PDF)."
-    }
-  },
-  "verify": {
-    "title": "Verifiering av certifikat",
-    "subtitle": "Ange verifieringskoden för att bekräfta certifikatets äkthet.",
-    "placeholder": "XXXX-XXXX-XXXX",
-    "success": {
-      "title": "Certifikatet verifierat",
-      "desc": "Detta certifikat är äkta och utfärdades av vår plattform.",
-      "user": "Deltagare",
-      "course": "Kurs",
-      "date": "Slutförandedatum",
-      "code": "Kod",
-      "view": "Visa certifikat"
-    },
-    "error": {
-      "title": "Certifikatet hittades inte",
-      "desc": "Vi hittade inget certifikat med den angivna koden. Kontrollera att koden är rätt."
-    }
-  },
-  "errors": {
-    "404": {
-      "title": "404",
-      "message": "Sidan hittades inte.",
-      "back": "Tillbaka till startsidan"
-    }
-  },
-  "blog": {
-    "title": "Blogg",
-    "subtitle": "Artiklar, tips och inspiration för engelskalärare. Lär dig hur du undervisar effektivare och med mer passion.",
-    "empty": "Inga blogginlägg hittades.",
-    "readMore": "Läs mer",
-    "backToBlog": "Tillbaka till bloggen",
-    "share": "Dela:",
-    "notFound": "Hittades inte"
-  },
-  "common": {
-    "loading": "Laddar..."
-  },
-  "certificates": {
-    "title": "Certifikat för slutförd kurs",
-    "subtitle": "Detta intygar att",
-    "completedCourse": "har slutfört kursen",
-    "completionDate": "Slutförandedatum:",
-    "verificationCode": "Verifieringskod:",
-    "downloadPdf": "Ladda ner PDF",
-    "share": "Dela",
-    "backToDashboard": "Tillbaka till översikten",
-    "styleTitle": "Ändra certifikatstil",
-    "verifiedTitle": "Certifikatet verifierat",
-    "verifiedDesc": "Detta certifikat utfärdades av vår plattform.",
-    "notFound": "Certifikatet hittades inte",
-    "copySuccess": "Länk kopierad till urklipp!"
-  },
-  "languages": {
-    "pl": "Polish",
-    "en": "English",
-    "uk": "Ukrainian",
-    "de": "German",
-    "es": "Spanish",
-    "fr": "French",
-    "it": "Italian",
-    "cs": "Czech",
-    "sk": "Slovak",
-    "ro": "Romanian",
-    "hu": "Hungarian",
-    "pt": "Portuguese",
-    "lt": "Lithuanian",
-    "lv": "Latvian",
-    "et": "Estonian",
-    "hr": "Croatian",
-    "sr": "Serbian",
-    "sl": "Slovenian",
-    "bg": "Bulgarian",
-    "el": "Greek",
-    "nl": "Dutch",
-    "sv": "Swedish",
-    "fi": "Finnish",
-    "no": "Norwegian",
-    "da": "Danish"
-  },
-  "fomo": {
-    "names": [
-      "John",
-      "Emily",
-      "Michael",
-      "Sarah",
-      "David",
-      "Jessica",
-      "Robert"
-    ],
-    "cities": [
-      "London",
-      "New York",
-      "Chicago",
-      "Toronto",
-      "Sydney",
-      "Dublin",
-      "Berlin"
-    ],
-    "purchaseMessage": "{name} from {city}",
-    "productMessage": "Just bought \"{product}\"",
-    "timeAgo": "{time} min ago"
-  },
-  "exitIntent": {
-    "title": "WAIT!",
-    "subtitle": "Before you leave...",
-    "header": "Get your free \"Starter Pack\"",
-    "description": "Join our newsletter and receive 50 free worksheets!",
-    "cta": "I want my gift",
-    "noThanks": "No thanks, I'll pay full price later"
-  },
-  "course": {
-    "yourProgress": "Din Framsteg",
-    "noLessons": "Inga lektioner.",
-    "quiz": "Quiz",
-    "unlocksInDays": "Låses upp om {days} dagar"
-  },
-  "dashboard": {
-    "wallet": {
-      "title": "Your Wallet",
-      "subtitle": "Collect points for activity and purchases.",
-      "available": "Available funds",
-      "points": "pts",
-      "value": "Value in {currency}",
-      "spend": "Spend points in shop",
-      "history": "Recent activity"
-    },
-    "awards": {
-      "title": "Your Hall of Fame",
-      "subtitle": "Earn badges for completed lessons and games!",
-      "mock": {
-        "start": "Quick Start",
-        "startDesc": "Completed first lesson",
-        "vocab": "Vocab Master",
-        "vocabDesc": "100% in quiz",
-        "steady": "Systematic",
-        "steadyDesc": "Logged in 7 days",
-        "polyglot": "Polyglot",
-        "polyglotDesc": "Passed A1 level"
-      }
-    },
-    "team": {
-      "title": "My Class / Team",
-      "subtitle": "Share materials with students",
-      "create_class": "Create new class",
-      "created_at": "Created: {date}",
-      "students_count": "{count} students",
-      "access_code": "Student access code",
-      "empty": {
-        "title": "New Class",
-        "desc": "Create a group for your students.",
-        "btn": "Start Setup"
-      },
-      "pro": {
-        "active": "Your PRO plan is active",
-        "unlock": "Unlock unlimited classes",
-        "desc": "Teacher PRO plan allows creating unlimited groups.",
-        "upgrade": "Upgrade to PRO",
-        "status": "Active"
-      }
-    },
-    "games": {
-      "title": "Educational Games",
-      "subtitle": "Interactive exercises for your students",
-      "play": "Play now",
-      "loading": "Loading game...",
-      "notice": "In the full version of the app, an interactive iframe from {provider} would appear here.",
-      "fullscreen": "Full screen",
-      "report": "Report error"
-    }
-  }
 }

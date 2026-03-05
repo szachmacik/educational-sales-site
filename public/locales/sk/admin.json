@@ -1,1662 +1,1732 @@
 {
-  "adminSettings": {
-    "title": "Nastavenia systému",
-    "description": "Správa konfigurácie webu, analytiky a SEO",
-    "ai_providers": {
-      "title": "Aktívny poskytovateľ AI",
-      "description": "Vyberte model pre generovanie obsahu",
-      "api_key": "API kľúč"
-    },
-    "tabs": {
-      "ai": "AI Modely",
-      "marketing": "Marketing a analytika",
-      "seo": "SEO a meta tagy",
-      "economy": "Ekonomika a peňaženka",
-      "gamification": "Gamifikácia a odznaky",
-      "market": "Analýza trhu a osnov",
-      "insights": "AI audit a návrhy",
-      "channels": "Predajné kanály",
-      "integrations": "Integrácie a API",
-      "interactive": "Hry a interakcie",
-      "workshop": "AI Studio a Canva",
-      "automation": "Agenti a automatizácia",
-      "emails": "Emailové upozornenia",
-      "google": "Nastavenia Google",
-      "abandoned": "Opustené košíky",
-      "guardian": "AI Guardian systém",
-      "affiliate": "Partnerský program",
-      "pricing": "Ceny a meny (PPP)",
-      "taxes": "Faktúry a dane",
-      "growth_hacks": "Growth Hacks",
-      "ai_discovery": "AI Discovery (SEO)"
-    },
-    "sections": {
-      "shopping": "Nákupy a financie",
-      "ai": "AI a interakcie",
-      "growth": "Rast a značka",
-      "system": "Systémové nastavenia"
-    },
-    "common": {
-      "save": "Uložiť zmeny",
-      "saved": "Uložené!",
-      "save_success": "Settings have been successfully saved.",
-      "subject": "Predmet",
-      "content": "Obsah",
-      "enabled_desc": "Globálny prepínač pre sledovacie skripty"
-    },
-    "marketing": {
-      "ga4": "Google Analytics 4 ID",
-      "ga4_placeholder": "G-XXXXXXXXXX",
-      "fb_pixel": "Facebook Pixel ID",
-      "fb_pixel_placeholder": "ID Pixela",
-      "meta_verification": "Overenie domény Meta",
-      "meta_placeholder": "Overovací kľúč",
-      "gsc": "Google Search Console ID",
-      "gsc_placeholder": "Kľúč overenia Google",
-      "enabled": "Povoliť sledovanie",
-      "title": "Marketing a SEO",
-      "description": "Konfigurácia analytických nástrojov a reklamy",
-      "ads": "Google Ads"
-    },
-    "seo": {
-      "default_title": "Predvolený titulok stránky",
-      "default_desc": "Predvolený meta popis",
-      "og_image": "Obrázok pre sociálne siete (OG Image)",
-      "site_name": "Názov webu",
-      "basic_title": "Základné SEO",
-      "basic_desc": "Nastavenia viditeľnosti vo vyhľadávačoch",
-      "canonical_url": "Canonical Base URL",
-      "canonical_desc": "The base URL used for canonical and alternate (hreflang) links.",
-      "ai_discovery_title": "AI Search Optimization",
-      "ai_discovery_desc": "Configure how AI agents (Gemini, Perplexity, GPT-4) discover and interpret your site.",
-      "ai_discovery_enabled": "Enable AI Crawler Hints",
-      "ai_discovery_enabled_desc": "Injects specialized meta-data for LLM-based search engines.",
-      "ai_summary": "AI Product Summary",
-      "ai_summary_placeholder": "What should AI agents know about your store?",
-      "ai_summary_desc": "This summary helps AI agents provide accurate answers about your services.",
-      "sitemap_regenerate": "Regenerate Multi-Locale Sitemap",
-      "growth_hacks_title": "Growth & Performance Hacks",
-      "growth_hacks_desc": "Advanced tools to increase conversion and track user behavior.",
-      "fomo_title": "FOMO Elements (Scarcity)",
-      "fomo_desc": "Show 'Limited Stock' and 'Recent Purchase' alerts.",
-      "trust_title": "Trust Badges",
-      "trust_desc": "Display security and guarantee badges on product pages.",
-      "ux_tracking": "UX Tracking (Heatmaps)",
-      "clarity_id": "Microsoft Clarity ID",
-      "hotjar_id": "Hotjar Site ID"
-    },
-    "economy": {
-      "title": "Bodový systém a peňaženka",
-      "description": "Správa virtuálnej meny, predplatného a vernosti zákazníkov",
-      "wallet": {
-        "title": "Virtuálna peňaženka",
-        "enable_wallet": "Povoliť používateľskú peňaženku",
-        "allow_topup": "Povoliť dobíjanie",
-        "recurring_topup": "Automatické opakované dobíjanie",
-        "conversion_rate": "Kurz dobíjania (1 EUR = X bodov)",
-        "description": "Správa virtuálnej peňaženky zákazníka"
-      },
-      "loyalty": {
-        "title": "Vernostné body",
-        "enable_loyalty": "Povoliť zbieranie bodov",
-        "points_per_eur": "Body za každé utratené 1 EUR",
-        "min_redeem": "Minimálny počet bodov na uplatnenie",
-        "description": "Body za aktivitu a nákupy",
-        "protip": "Tip: Predplatitelia môžu získať 2x viac bodov, ak povolíte násobiteľ v sekcii Gamifikácia."
-      },
-      "subscriptions": {
-        "title": "Predplatné",
-        "description": "Správa modelov pravidelného prístupu",
-        "status_active": "AKTÍVNE",
-        "per_month": "/ mesiac",
-        "perks": {
-          "all_pdfs": "Všetky PDF bez obmedzení",
-          "free_topup": "Zadarmo dobitie peňaženky ({amount} každý mesiac)"
+    "adminSettings": {
+        "title": "Nastavenia systému",
+        "description": "Správa konfigurácie webu, analytiky a SEO",
+        "ai_providers": {
+            "title": "Aktívny poskytovateľ AI",
+            "description": "Vyberte model pre generovanie obsahu",
+            "api_key": "API kľúč"
         },
-        "add_plan": "Pridať nový plán"
-      }
-    },
-    "gamification": {
-      "title": "Gryifikácia",
-      "description": "Motivujte študentov pomocou úrovní a odznakov",
-      "levels": {
-        "silver": "Strieborná úroveň",
-        "gold": "Zlatá úroveň",
-        "diamond": "Diamantový VIP"
-      },
-      "perks": {
-        "discount": "Auto zľava (%)",
-        "auto_discount": "Uplatňuje sa automaticky pri pokladni",
-        "hidden_tier": "Iba manuálne priradenie"
-      },
-      "badges_title": "Študentské odznaky",
-      "badges": {
-        "early_bird": {
-          "name": "Ranné vtáča",
-          "desc": "Nákup do 1h od zverejnenia"
+        "tabs": {
+            "ai": "AI Modely",
+            "marketing": "Marketing a analytika",
+            "seo": "SEO a meta tagy",
+            "economy": "Ekonomika a peňaženka",
+            "gamification": "Gamifikácia a odznaky",
+            "market": "Analýza trhu a osnov",
+            "insights": "AI audit a návrhy",
+            "channels": "Predajné kanály",
+            "integrations": "Integrácie a API",
+            "interactive": "Hry a interakcie",
+            "workshop": "AI Studio a Canva",
+            "automation": "Agenti a automatizácia",
+            "emails": "Emailové upozornenia",
+            "google": "Nastavenia Google",
+            "abandoned": "Opustené košíky",
+            "guardian": "AI Guardian systém",
+            "affiliate": "Partnerský program",
+            "pricing": "Ceny a meny (PPP)",
+            "taxes": "Faktúry a dane",
+            "growth_hacks": "Growth Hacks",
+            "ai_discovery": "AI Discovery (SEO)"
         },
-        "collector": {
-          "name": "Zberateľ",
-          "desc": "Má 50+ materiálov"
+        "sections": {
+            "shopping": "Nákupy a financie",
+            "ai": "AI a interakcie",
+            "growth": "Rast a značka",
+            "system": "Systémové nastavenia"
         },
-        "top_reviewer": {
-          "name": "Top recenzent",
-          "desc": "10 spoľahlivých recenzií"
+        "common": {
+            "save": "Uložiť zmeny",
+            "saved": "Uložené!",
+            "save_success": "Settings have been successfully saved.",
+            "subject": "Predmet",
+            "content": "Obsah",
+            "enabled_desc": "Globálny prepínač pre sledovacie skripty",
+            "ux": {
+                "show": "Zobraziť",
+                "hide": "Skryť",
+                "copy": "Kopírovať",
+                "copied": "Skopírované!",
+                "secure": "Šifrované"
+            },
+            "preview": {
+                "title": "Preview and Acceptance",
+                "accept": "Accept changes",
+                "reject": "Reject",
+                "bulk_title": "Generated drafts review",
+                "apply_all": "Accept all ({count})",
+                "diff_before": "Before optimization",
+                "diff_after": "AI Suggestion"
+            }
+        },
+        "marketing": {
+            "ga4": "Google Analytics 4 ID",
+            "ga4_placeholder": "G-XXXXXXXXXX",
+            "fb_pixel": "Facebook Pixel ID",
+            "fb_pixel_placeholder": "ID Pixela",
+            "meta_verification": "Overenie domény Meta",
+            "meta_placeholder": "Overovací kľúč",
+            "gsc": "Google Search Console ID",
+            "gsc_placeholder": "Kľúč overenia Google",
+            "enabled": "Povoliť sledovanie",
+            "title": "Marketing a SEO",
+            "description": "Konfigurácia analytických nástrojov a reklamy",
+            "ads": "Google Ads"
+        },
+        "seo": {
+            "default_title": "Predvolený titulok stránky",
+            "default_desc": "Predvolený meta popis",
+            "og_image": "Obrázok pre sociálne siete (OG Image)",
+            "site_name": "Názov webu",
+            "basic_title": "Základné SEO",
+            "basic_desc": "Nastavenia viditeľnosti vo vyhľadávačoch",
+            "canonical_url": "Canonical Base URL",
+            "canonical_desc": "The base URL used for canonical and alternate (hreflang) links.",
+            "ai_discovery_title": "AI Search Optimization",
+            "ai_discovery_desc": "Configure how AI agents (Gemini, Perplexity, GPT-4) discover and interpret your site.",
+            "ai_discovery_enabled": "Enable AI Crawler Hints",
+            "ai_discovery_enabled_desc": "Injects specialized meta-data for LLM-based search engines.",
+            "ai_summary": "AI Product Summary",
+            "ai_summary_placeholder": "What should AI agents know about your store?",
+            "ai_summary_desc": "This summary helps AI agents provide accurate answers about your services.",
+            "sitemap_regenerate": "Regenerate Multi-Locale Sitemap",
+            "growth_hacks_title": "Growth & Performance Hacks",
+            "growth_hacks_desc": "Advanced tools to increase conversion and track user behavior.",
+            "fomo_title": "FOMO Elements (Scarcity)",
+            "fomo_desc": "Show 'Limited Stock' and 'Recent Purchase' alerts.",
+            "trust_title": "Trust Badges",
+            "trust_desc": "Display security and guarantee badges on product pages.",
+            "ux_tracking": "UX Tracking (Heatmaps)",
+            "clarity_id": "Microsoft Clarity ID",
+            "hotjar_id": "Hotjar Site ID"
+        },
+        "economy": {
+            "title": "Bodový systém a peňaženka",
+            "description": "Správa virtuálnej meny, predplatného a vernosti zákazníkov",
+            "wallet": {
+                "title": "Virtuálna peňaženka",
+                "enable_wallet": "Povoliť používateľskú peňaženku",
+                "allow_topup": "Povoliť dobíjanie",
+                "recurring_topup": "Automatické opakované dobíjanie",
+                "conversion_rate": "Kurz dobíjania (1 EUR = X bodov)",
+                "description": "Správa virtuálnej peňaženky zákazníka"
+            },
+            "loyalty": {
+                "title": "Vernostné body",
+                "enable_loyalty": "Povoliť zbieranie bodov",
+                "points_per_eur": "Body za každé utratené 1 EUR",
+                "min_redeem": "Minimálny počet bodov na uplatnenie",
+                "description": "Body za aktivitu a nákupy",
+                "protip": "Tip: Predplatitelia môžu získať 2x viac bodov, ak povolíte násobiteľ v sekcii Gamifikácia."
+            },
+            "subscriptions": {
+                "title": "Predplatné",
+                "description": "Správa modelov pravidelného prístupu",
+                "status_active": "AKTÍVNE",
+                "per_month": "/ mesiac",
+                "perks": {
+                    "all_pdfs": "Všetky PDF bez obmedzení",
+                    "free_topup": "Zadarmo dobitie peňaženky ({amount} každý mesiac)"
+                },
+                "add_plan": "Pridať nový plán"
+            }
+        },
+        "gamification": {
+            "title": "Gryifikácia",
+            "description": "Motivujte študentov pomocou úrovní a odznakov",
+            "levels": {
+                "silver": "Strieborná úroveň",
+                "gold": "Zlatá úroveň",
+                "diamond": "Diamantový VIP"
+            },
+            "perks": {
+                "discount": "Auto zľava (%)",
+                "auto_discount": "Uplatňuje sa automaticky pri pokladni",
+                "hidden_tier": "Iba manuálne priradenie"
+            },
+            "badges_title": "Študentské odznaky",
+            "badges": {
+                "early_bird": {
+                    "name": "Ranné vtáča",
+                    "desc": "Nákup do 1h od zverejnenia"
+                },
+                "collector": {
+                    "name": "Zberateľ",
+                    "desc": "Má 50+ materiálov"
+                },
+                "top_reviewer": {
+                    "name": "Top recenzent",
+                    "desc": "10 spoľahlivých recenzií"
+                }
+            }
+        },
+        "market": {
+            "title": "Analýza trhu a osnov",
+            "description": "Sledovanie trhových trendov a vzdelávacích požiadaviek",
+            "curriculum": {
+                "title": "Monitorovanie osnov",
+                "description": "AI kontroluje zhodu s aktuálnymi požiadavkami (MŠVVaM / Ofsted / a ďalšie)",
+                "monitor_label": "Monitorované osnovy",
+                "options": {
+                    "pl_mein": "Poľsko (MEiN)",
+                    "uk_ofsted": "Veľká Británia (Ofsted)",
+                    "us_cc": "USA (Common Core)"
+                },
+                "status": "Zhoda vašich materiálov: 85 %",
+                "alerts": "Zistená zmena v požiadavkách pre 4.–6. triedu"
+            },
+            "trends": {
+                "title": "Sledovanie trendov",
+                "description": "Populárne produkty na platformách ako TPT vo vašich kategóriách",
+                "top_selling": "Najobľúbenejší formát: 'Interaktívne únikové hry'",
+                "competitor_bestsellers": "Bestsellery konkurencie",
+                "recommendation": "Návrh: Vytvorte sadu 'Veľkonočná úniková hra' (Vysoký dopyt)",
+                "ai_rec": "Odporúčanie AI"
+            }
+        },
+        "insights": {
+            "title": "AI audit a produktové návrhy",
+            "description": "Analýza vašich zdrojov a nápady na rozšírenie",
+            "sync": {
+                "title": "Register synchronizácie",
+                "description": "Stav importu hier a materiálov z externých platforiem",
+                "last_sync": "Posledná úspešná synchronizácia: pred 15 min",
+                "pending_drafts": "{count} nových konceptov na kontrolu"
+            },
+            "expansion": {
+                "title": "Továreň na materiály (Návrhy)",
+                "description": "Nápady na nízkonákladové rozširovanie existujúcich produktov",
+                "item1": "Produkt 'Unit 1' je možné rozšíriť o 20 flashcards (AI ich vygeneruje automaticky)",
+                "item2": "Vytvorte 'Mega Pack' z 3 vašich najobľúbenejších scenárov (Potenciál: +25% marža)"
+            },
+            "audit": {
+                "title": "Audit konverzie",
+                "description": "AI analyzuje popisy a fotografie vašich produktov",
+                "suggestion": "Zmeňte hlavnú fotku pri 'Flashcards Animals' – aktuálna má nízke CTR"
+            }
+        },
+        "integrations": {
+            "title": "Integrácie",
+            "description": "Prepojenie s externými systémami",
+            "webhooks": {
+                "title": "Webhooky",
+                "description": "Odosielajte oznámenia o objednávkach do externých systémov",
+                "add": "Pridať Webhook",
+                "url": "Cieľová URL",
+                "event": "Udalosť",
+                "events": {
+                    "order_created": "Objednávka vytvorená",
+                    "order_paid": "Objednávka zaplatená",
+                    "user_registered": "Používateľ registrovaný"
+                }
+            },
+            "mcp": {
+                "title": "MCP Connectors",
+                "description": "Connect external models and knowledge bases via MCP protocol",
+                "server": "MCP Server Address",
+                "status": "Connection status"
+            },
+            "api": {
+                "title": "External API Keys",
+                "description": "Integrations with CRM, Mailing, and other systems",
+                "service": "Service (e.g., MailerLite, Zapier)",
+                "key": "API Key / Token",
+                "coming_soon": "Integration with MailerLite, ActiveCampaign and Zapier is being implemented.",
+                "coming_soon_desc": "You can already save keys in the Webhooks section for testing."
+            }
+        },
+        "interactive": {
+            "title": "Integrácia online hier",
+            "description": "Pripojte Wordwall, Genially a ďalšie platformy k svojmu obchodu",
+            "auto_import": "Automaticky vytvoriť produkt po pridaní hry na platformu",
+            "auto_import_desc": "Systém automaticky deteguje vložené kódy (Embed) pri vytváraní produktu.",
+            "sync_status": "Posledná synchronizácia hier",
+            "sync_hint": "Odporúčame vkladať priame odkazy na hry v ovládacom paneli úprav produktu. Systém ich automaticky premení na interaktívne okno pre študenta.",
+            "other_title": "Ostatné integrácie",
+            "platforms": {
+                "wordwall": "Wordwall API kľúč",
+                "wordwall_placeholder": "napr. kamila-lo-ko",
+                "genially": "Genially API kľúč",
+                "genially_placeholder": "napr. https://view.genial.ly/profile/nick",
+                "sync_title": "Synchronizácia Wordwall & Genially",
+                "h5p_desc": "Lokálne vloženie",
+                "learningapps_desc": "Cez iFrame",
+                "quizizz_desc": "API synchronizácia"
+            }
+        },
+        "workshop": {
+            "title": "AI dielňa (RAG Engine)",
+            "description": "Generujte odvodené materiály na základe vašej znalostnej bázy",
+            "generate_btn": "Generovať materiály",
+            "status_ready": "Pripravené na generovanie",
+            "rag_sources": {
+                "title": "Zdroje znalostí (RAG)",
+                "description": "Vyberte svoju znalostnú bázu AI",
+                "main_label": "Hlavný zdroj (RAG)",
+                "notebook_lm": "Odkaz na NotebookLM / Znalostnú bázu",
+                "options": {
+                    "google_drive": "Google Drive (Priečinok: Edu-Materials)",
+                    "notebook_lm": "Konektor NotebookLM",
+                    "local": "Lokálna vektorová databáza"
+                }
+            },
+            "generators": {
+                "title": "Generátor materiálov",
+                "reading": "Čítanie (Text + Otázky)",
+                "listening": "Počúvanie (Skript + AI Audio)",
+                "speaking": "Karty na rozprávanie",
+                "vocabulary": "Slovná zásoba – cvičenia",
+                "flashcards": "Flashcards (CSV/Anki)",
+                "tests": "Generátor testov",
+                "worksheets": "Pracovné listy (PDF)",
+                "ai_quiz": "AI tvorca kvízov"
+            },
+            "canva": {
+                "title": "Konektor Canva",
+                "description": "Exportujte vygenerovaný obsah priamo do projektov v Canve",
+                "api_key": "Designový token Canva",
+                "auto_export": "Auto-export",
+                "connect": "Pripojiť Canvu"
+            },
+            "title_prefix": "AI Creative",
+            "title_suffix": "Studio",
+            "badge": "Next-Gen",
+            "powered_by": "Powered by OpenAI & HeyGen",
+            "available_credits": "Available Credits",
+            "generations_today": "Generations Today",
+            "studio": "Studio",
+            "history": "History",
+            "studios": {
+                "images": "Image Studio",
+                "video": "Video Studio",
+                "avatars": "Avatar Studio",
+                "social": "Social Hub",
+                "flashcards": "Flashcards",
+                "canva": "Canva Studio"
+            },
+            "actions": {
+                "reuse": "Reuse Prompt",
+                "generate": "Generate Asset",
+                "processing": "Processing...",
+                "attach": "Attach",
+                "change_product": "Change Product",
+                "connect": "Connect to Product"
+            },
+            "labels": {
+                "persona": "Select AI Persona",
+                "script": "Script",
+                "prompt": "Creative Prompt",
+                "preview": "Preview",
+                "history_empty": "Your canvas awaits.",
+                "connect_desc": "Link this AI asset to your store inventory.",
+                "professional_suite": "Professional Creative Suite"
+            },
+            "social_hub": {
+                "title": "Social Media Hub",
+                "subtitle": "Post Generator & Optimization",
+                "platforms": {
+                    "instagram": "Instagram",
+                    "facebook": "Facebook",
+                    "linkedin": "LinkedIn",
+                    "youtube": "YouTube"
+                },
+                "labels": {
+                    "select_product": "Select Product to Promote",
+                    "pick_placeholder": "Pick from Product Library...",
+                    "campaign_context": "Campaign Context / Prompt",
+                    "prompt_placeholder": "What are we promoting today? (e.g., 'New Flashcard Set for Christmas')",
+                    "ai_copy": "AI Generated Copy",
+                    "thinking": "Thinking...",
+                    "regenerate": "Regenerate Copy",
+                    "copy_placeholder": "AI will generate your post content here...",
+                    "media_asset": "Media Asset",
+                    "auto_selected": "Auto-Selected",
+                    "select_asset": "Select Asset",
+                    "from_gallery": "From Product Gallery",
+                    "viral_growth": "Viral Growth",
+                    "score": "Score",
+                    "ai_expectancy": "AI expects {percent}% higher engagement on {platform}.",
+                    "live_mockup": "Live Mockup Preview",
+                    "mockup_placeholder": "Your mockup copy will appear here...",
+                    "export": "Export to Socials"
+                }
+            },
+            "flashcards": {
+                "title": "AI Flashcard Studio",
+                "subtitle": "Transform topics into beautiful, ready-to-print flashcard sets.",
+                "badge": "Smart Learning",
+                "branding_kit": "Branding Kit",
+                "export_canva": "Export to Canva",
+                "smart_generator": "Smart Generator",
+                "topic_label": "Topic or Context",
+                "topic_placeholder": "e.g. Life Cycle of a Frog",
+                "style_label": "Visual Style",
+                "styles": {
+                    "academic": "Academic",
+                    "playful": "Playful",
+                    "minimal": "Minimal",
+                    "canva_ai": "Canva AI"
+                },
+                "generate_btn": "Generate Deck",
+                "generating": "Generating...",
+                "live_preview": "Live Preview",
+                "cards_prepared": "{count} Cards Prepared",
+                "empty": "No cards generated yet",
+                "add_custom": "Add Custom Card"
+            }
+        },
+        "automation": {
+            "title": "Konektory AI agentov",
+            "description": "Pripojte agentov ako Manus AI, GPT-4o s prehliadačom alebo skripty Playwright/Selenium",
+            "agent_delivered": "Agent doručil {count} nových konceptov!",
+            "agents": {
+                "title": "Dostupní agenti s prehliadačom",
+                "select_placeholder": "Vyberte agenta pre automatizáciu",
+                "manus": "Konektor Manus AI",
+                "general": "Vlastný agent s prehliadačom (Webhook)",
+                "status_idle": "Agent je pripravený na úlohy",
+                "btn_send": "Odoslať agenta na odkazy"
+            },
+            "receiver": {
+                "title": "Adresa príjemcu (Endpoint)",
+                "description": "Zadajte túto URL v Manus AI, aby mohol agent posielať nájdené odkazy priamo do vašich konceptov",
+                "simulate_test": "(Simulovať príchod agenta / Test Webhooku)",
+                "simulate_btn": "Simulovať agenta"
+            },
+            "scrapers": {
+                "title": "Automatické nástroje",
+                "card_title": "Úlohy v prehliadači",
+                "options": {
+                    "wordwall": "Wordwall scraper",
+                    "genially": "Genially scraper",
+                    "learningapps": "LearningApps scraper"
+                },
+                "item1": "Nájsť Embed odkazy na hry v mojom profile Genially",
+                "item2": "Skontrolovať dostupnosť nových šablón v Canve",
+                "item3": "Stiahnuť kódy na zdieľanie z Wordwall",
+                "description": "Konfigurácia robotov na import obsahu"
+            },
+            "chat": {
+                "title": "Chat s AI agentom",
+                "subtitle": "Direct communication with the browser agent",
+                "placeholder": "Kde mám dnes hľadať?",
+                "capabilities": "Aktuálne možnosti: Genially, Wordwall, Canva",
+                "welcome": "Dobrý deň! Som pripravený na prácu. Môžete mi zadávať úlohy vo vašich účtoch (Wordwall, Canva, Genially). Čo mám urobiť?"
+            }
+        },
+        "emails": {
+            "title": "Šablóny systémových správ",
+            "description": "Správa obsahu správ odosielaných automaticky zákazníkom",
+            "save": "Uložiť šablóny",
+            "templates": {
+                "welcome": {
+                    "title": "Privítanie po registrácii",
+                    "subject": "Vitajte v komunite!",
+                    "content": "Sme radi, že ste s nami. Vaše prihlasovacie údaje sú..."
+                },
+                "order_confirmed": {
+                    "title": "Potvrdenie objednávky",
+                    "subject": "Vaša objednávka #{orderNumber} bola prijatá",
+                    "content": "Ďakujeme za váš nákup! Vaše materiály sú teraz k dispozícii v paneli."
+                },
+                "login_details": {
+                    "title": "Prístupové údaje (po nákupe)",
+                    "subject": "Vaše údaje pre prístup ku kurzu",
+                    "content": "Tu sú vaše prihlasovacie údaje: Email: {email}, Heslo: {password}"
+                }
+            },
+            "smtp": {
+                "title": "Konfigurácia SMTP / Poskytovateľ",
+                "description": "Nastavenie poštového servera pre systémové e-maily",
+                "enable_system": "Povoliť systémové odosielanie",
+                "enable_desc": "Použiť nakonfigurovaný SMTP server",
+                "host": "SMTP Host",
+                "port": "Port"
+            },
+            "variables": "Dostupné premenné: {orderNumber}, {email}, {password}, {firstName}, {total}"
+        },
+        "google": {
+            "title": "Integrácia Google Cloud",
+            "description": "Pripojte Google Drive pre import materiálov priamo do obchodu",
+            "auth": {
+                "title": "Autorizácia Google",
+                "connect": "Pripojiť Google Drive",
+                "disconnect": "Odpojiť účet",
+                "status_connected": "Pripojené k účtu: {email}",
+                "status_disconnected": "Žiadne aktívne pripojenie",
+                "drive_description": "Connect the 'Edu-Materials' folder from your Google Drive"
+            },
+            "drive": {
+                "title": "Prehliadač Google Drive",
+                "import_selected": "Importovať vybrané súbory",
+                "refresh": "Obnoviť zoznam",
+                "no_files": "Na vašom disku neboli nájdené žiadne súbory PDF/ZIP",
+                "import_success": "Súbory boli úspešne importované ako materiály",
+                "column_name": "Názov súboru",
+                "column_size": "Veľkosť",
+                "column_action": "Akcia",
+                "description": "Prehliadať súbory PDF a ZIP pripravené na import",
+                "button": "Stiahnuť z Google Drive",
+                "connecting": "Pripájanie...",
+                "picker_title": "Vyberte súbory z Google Drive",
+                "import_count": "Importovať vybrané ({count})",
+                "toast_success": "Importovaných {count} súborov z Google Drive"
+            },
+            "config": {
+                "client_id": "Google Client ID",
+                "client_secret": "Google Client Secret",
+                "redirect_uri": "Redirect URI"
+            }
+        },
+        "abandoned": {
+            "title": "Obnova košíka",
+            "description": "Automatické pripomienky pre zákazníkov, ktorí nedokončili nákup",
+            "delay": "Oneskorenie prvého e-mailu (hodiny)",
+            "discount_code": "Zľavový kód v e-maile (voliteľné)",
+            "enable_auto": "Povoliť automatickú obnovu",
+            "stats": {
+                "total_recovered": "Obnovené tržby",
+                "pending_carts": "Čakajúce košíky"
+            }
+        },
+        "guardian": {
+            "title": "AI Strážca a technický dohľad",
+            "description": "Inteligentný systém monitorujúci chyby, zákony a výkon",
+            "legal_check": "Sledovanie legislatívnych zmien (EU E-commerce)",
+            "tech_check": "Technický monitoring chýb v reálnom čase",
+            "security_check": "Analýza pokusov o neoprávnený prístup",
+            "alerts": "Upozornenia na kritické problémy",
+            "status_good": "Systém beží hladko",
+            "status_warning": "Zistený potenciálny nesúlad s legislatívou",
+            "last_scan": "Posledný úplný sken systému"
+        },
+        "affiliate": {
+            "title": "Referral a partnerský systém",
+            "description": "Premeňte svojich zákazníkov na ambasádorov značky",
+            "commission": "Provízia partnera (%)",
+            "discount": "Referenčná zľava (%)",
+            "cookie_life": "Platnosť cookie (dni)",
+            "referral_links": "Generovať referenčné odkazy",
+            "total_partners": "Aktívni partneri",
+            "payouts": "Čakajúce výplaty"
+        },
+        "pricing": {
+            "title": "Parita kúpnej sily (PPP)",
+            "description": "Automatická úprava cien podľa kúpnej sily v 19 krajinách",
+            "enable_ppp": "Povoliť inteligentné regionálne ceny",
+            "base_currency": "Základná mena",
+            "regions": {
+                "western": "Západná Európa (100 % ceny)",
+                "central": "Stredná Európa (85 % ceny)",
+                "eastern": "Východná Európa (70 % ceny)",
+                "balkans": "Balkán (60 % ceny)"
+            },
+            "recurring_title": "Subscriptions & Recurring Payments",
+            "recurring_visa_title": "Visa Recurring Payments",
+            "recurring_visa_desc": "Enable automatic card charging for subscription products. Supported via Stripe Billing and PayNow Recurring.",
+            "recurring_frequency": "Standard Frequency",
+            "recurring_monthly": "30 DAYS / MONTHLY",
+            "recurring_grace_period": "Grace Period / Retry",
+            "recurring_retry": "3 DAYS RETRY",
+            "paynow_title": "PayNow Integration",
+            "paynow_access_key": "Access Key",
+            "paynow_signature_key": "Signature Key",
+            "blik_title": "BLIK Support Enabled",
+            "blik_desc": "PayNow allows users to pay with BLIK codes directly on your checkout page."
+        },
+        "taxes": {
+            "title": "Spracovanie daní a faktúr",
+            "description": "Správa sadzieb DPH a automatické vystavovanie faktúr v rámci EÚ",
+            "eu_vat_moss": "Povoliť systém VAT-MOSS / OSS",
+            "invoice_provider": "Poskytovateľ fakturácie (napr. Fakturownia, InFakt)",
+            "infakt_api_key": "InFakt API Key",
+            "test_connection": "Test API pripojenia",
+            "stripe_title": "Stripe Payments",
+            "stripe_publishable": "Stripe Publishable Key",
+            "stripe_secret": "Stripe Secret Key"
+        },
+        "editor": {
+            "placeholder": "Začnite písať...",
+            "prompts": {
+                "link": "Zadajte URL:",
+                "image": "Zadajte URL obrázka:"
+            },
+            "toolbar": {
+                "bold": "Tučné",
+                "italic": "Kurzíva",
+                "h2": "Nadpis 2",
+                "h3": "Nadpis 3",
+                "list": "Odrážkový zoznam",
+                "listOrdered": "Číslovaný zoznam",
+                "link": "Vložiť odkaz",
+                "image": "Vložiť obrázok",
+                "quote": "Citácia",
+                "code": "Blok kódu"
+            }
         }
-      }
     },
-    "market": {
-      "title": "Analýza trhu a osnov",
-      "description": "Sledovanie trhových trendov a vzdelávacích požiadaviek",
-      "curriculum": {
-        "title": "Monitorovanie osnov",
-        "description": "AI kontroluje zhodu s aktuálnymi požiadavkami (MŠVVaM / Ofsted / a ďalšie)",
-        "monitor_label": "Monitorované osnovy",
-        "options": {
-          "pl_mein": "Poľsko (MEiN)",
-          "uk_ofsted": "Veľká Británia (Ofsted)",
-          "us_cc": "USA (Common Core)"
+    "adminPanel": {
+        "sidebar": {
+            "title": "AdminPanel",
+            "subtitle": "Creative Studio",
+            "expand": "Rozbaliť",
+            "collapse": "Zbaliť",
+            "logout": "Odhlásiť reláciu",
+            "logoutTooltip": "Odhlásiť sa",
+            "menu": {
+                "dashboard": "Nástenka",
+                "products": "Produkty",
+                "orders": "Objednávky",
+                "coupons": "Coupons",
+                "materials": "Materiály",
+                "blog": "Blog",
+                "import": "Import AI",
+                "settings": "Nastavenia",
+                "chat": "AI Chat",
+                "home": "Úvodná stránka",
+                "role": "Administrátor",
+                "online": "Online",
+                "abandoned": "Abandoned Carts",
+                "offers": "Offer Generator",
+                "workshop": "AI Creative Suite",
+                "landing_builder": "Landing Pages"
+            }
         },
-        "status": "Zhoda vašich materiálov: 85 %",
-        "alerts": "Zistená zmena v požiadavkách pre 4.–6. triedu"
-      },
-      "trends": {
-        "title": "Sledovanie trendov",
-        "description": "Populárne produkty na platformách ako TPT vo vašich kategóriách",
-        "top_selling": "Najobľúbenejší formát: 'Interaktívne únikové hry'",
-        "competitor_bestsellers": "Bestsellery konkurencie",
-        "recommendation": "Návrh: Vytvorte sadu 'Veľkonočná úniková hra' (Vysoký dopyt)",
-        "ai_rec": "Odporúčanie AI"
-      }
-    },
-    "insights": {
-      "title": "AI audit a produktové návrhy",
-      "description": "Analýza vašich zdrojov a nápady na rozšírenie",
-      "sync": {
-        "title": "Register synchronizácie",
-        "description": "Stav importu hier a materiálov z externých platforiem",
-        "last_sync": "Posledná úspešná synchronizácia: pred 15 min",
-        "pending_drafts": "{count} nových konceptov na kontrolu"
-      },
-      "expansion": {
-        "title": "Továreň na materiály (Návrhy)",
-        "description": "Nápady na nízkonákladové rozširovanie existujúcich produktov",
-        "item1": "Produkt 'Unit 1' je možné rozšíriť o 20 flashcards (AI ich vygeneruje automaticky)",
-        "item2": "Vytvorte 'Mega Pack' z 3 vašich najobľúbenejších scenárov (Potenciál: +25% marža)"
-      },
-      "audit": {
-        "title": "Audit konverzie",
-        "description": "AI analyzuje popisy a fotografie vašich produktov",
-        "suggestion": "Zmeňte hlavnú fotku pri 'Flashcards Animals' – aktuálna má nízke CTR"
-      }
-    },
-    "integrations": {
-      "title": "Integrácie",
-      "description": "Prepojenie s externými systémami",
-      "webhooks": {
-        "title": "Webhooky",
-        "description": "Odosielajte oznámenia o objednávkach do externých systémov",
-        "add": "Pridať Webhook",
-        "url": "Cieľová URL",
-        "event": "Udalosť",
-        "events": {
-          "order_created": "Objednávka vytvorená",
-          "order_paid": "Objednávka zaplatená",
-          "user_registered": "Používateľ registrovaný"
+        "dashboard": {
+            "title": "Nástenka",
+            "subtitle": "Prehľad predajov a analytika",
+            "periods": {
+                "7days": "7 dní",
+                "30days": "30 dní",
+                "90days": "90 dní",
+                "all": "Celý čas"
+            },
+            "addProduct": "Pridať produkt",
+            "currency": "€",
+            "stats": {
+                "revenue": "Tržby",
+                "orders": "Objednávky",
+                "customers": "Zákazníci",
+                "avgOrderValue": "Priem. hodnota objednávky",
+                "vsPrevious": "oproti predchádzajúcemu obdobiu",
+                "inSelectedPeriod": "Vo vybranom období",
+                "uniqueCustomers": "Unikátni zákazníci",
+                "perOrder": "na objednávku"
+            },
+            "charts": {
+                "weeklyRevenue": "Týždenné tržby",
+                "revenueByDay": "Predaje v jednotlivých dňoch",
+                "bestsellersRanking": "Rebríček bestsellerov",
+                "topSellingProducts": "Najpredávanejšie produkty",
+                "noSalesData": "Žiadne údaje o predajoch",
+                "sold": "predané {count}",
+                "days": {
+                    "mon": "Po",
+                    "tue": "Ut",
+                    "wed": "St",
+                    "thu": "Št",
+                    "fri": "Pi",
+                    "sat": "So",
+                    "sun": "Ne"
+                }
+            },
+            "recentOrders": {
+                "title": "Nedávne objednávky",
+                "subtitle": "Najnovšie transakcie",
+                "viewAll": "Zobraziť všetko",
+                "noOrders": "Zatiaľ žiadne objednávky",
+                "productCount": "{count} produktov",
+                "status": {
+                    "completed": "Dokončené",
+                    "pending": "Čaká na vybavenie",
+                    "processing": "Spracováva sa",
+                    "cancelled": "Zrušené",
+                    "refunded": "Vrátené"
+                },
+                "table": {
+                    "title": "Nedávne objednávky",
+                    "viewAll": "Zobraziť všetko",
+                    "order": "Objednávka",
+                    "customer": "Zákazník",
+                    "total": "Celkom",
+                    "status": "Stav"
+                }
+            },
+            "aiInsights": {
+                "card": {
+                    "monitoring": "Active Market Monitoring",
+                    "strategyTitle": "Your growth strategy for {period}",
+                    "periodWeek": "next week",
+                    "periodMonth": "this month",
+                    "description": "We analyzed your last {count} orders. We have 3 specific recommendations that could increase your revenue by approx. 18%.",
+                    "generateBtn": "Generate Strategic Report"
+                },
+                "modal": {
+                    "title": "AI Growth Report",
+                    "subtitle": "Generated for: Administrator • Feb 2024",
+                    "revenueChance": "Revenue Chance",
+                    "revenueGrowth": "Possible growth in 14 days",
+                    "crossSellScore": "Cross-sell Score",
+                    "crossSellDesc": "High linking potential",
+                    "retentionProj": "Retention Proj.",
+                    "retentionDesc": "Loyal returning customers",
+                    "recommendedActions": "Recommended Actions",
+                    "action1Title": "Email: Abandoned Cart (New template)",
+                    "action1Desc": "Customers are abandoning carts for \"Preschool - Autumn Pack\". We suggest adding a 48h timer and 5% discount.",
+                    "action2Title": "Bundle: Preschool Combo Pack",
+                    "action2Desc": "Combine 3 most popular products into one bundle. Suggested price: $59.99.",
+                    "deploy": "Deploy",
+                    "create": "Create",
+                    "skip": "Skip report",
+                    "apply": "Apply Recommendations",
+                    "success": "Strategic report has been saved and sent for analysis."
+                },
+                "overlay": {
+                    "title": "Processing Big Data...",
+                    "subtitle": "\"Analyzing correlations between products and buying behaviors of your customers.\"",
+                    "step1": "Clustering users...",
+                    "step3": "Generating visualizations..."
+                },
+                "wordwallSync": {
+                    "title": "Smart Interactive Sync",
+                    "description": "Paste links to your resources (Wordwall, Genially, Canva, YouTube, Google Slides, Quizizz, NotebookLM, Vocaroo) to add them as products.",
+                    "placeholder": "https://wordwall.net/...\nhttps://view.genial.ly/...\nhttps://canva.com/design/...\nhttps://youtube.com/watch?v=...\nhttps://quizizz.com/...",
+                    "syncBtn": "Start Sync",
+                    "syncing": "Syncing...",
+                    "success": "Successfully imported {count} new games!",
+                    "noNew": "All provided links have already been imported.",
+                    "invalid": "No valid educational links (Wordwall/Genially/Canva/YouTube/Slides/etc) detected.",
+                    "close": "Close"
+                }
+            },
+            "interactivePreview": {
+                "subtitle": "Live preview of interactive material",
+                "noPreview": "No preview available for this asset",
+                "close": "Close"
+            },
+            "activeAiLogs": {
+                "title": "Active AI Logs",
+                "live": "Live",
+                "imageGenerated": "Image Generated",
+                "socialPostReady": "Social Post Ready",
+                "flashcardCreated": "Flashcard Created",
+                "trendIdentified": "Trend identified",
+                "seoOptimized": "SEO Optimized",
+                "imagePolished": "Image Polished"
+            },
+            "studioQuickAccess": {
+                "title": "Studio Quick Access",
+                "imageStudio": "Image Studio",
+                "generate4k": "Generate 4K Visuals",
+                "socialHub": "Social Hub",
+                "viralCreation": "Viral Post Creation"
+            },
+            "salesHub": {
+                "title": "Sales Hub",
+                "subtitle": "Real-time Performance Insights",
+                "totalRevenue": "Celkové príjmy",
+                "avgOrderValue": "Priemerná hodnota objednávky",
+                "conversionRate": "Miera konverzie",
+                "abandonedCarts": "Opustené košíky",
+                "upsellPerformance": "Upsell Performance",
+                "upsellDesc": "Post-purchase offers converted {percent}% of users",
+                "ltvLift": "LTV Lift"
+            },
+            "superAdmin": {
+                "title": "SuperAdmin: Deployment Management",
+                "subtitle": "Global Feature Toggles for new B2B modules",
+                "apiViewer": {
+                    "title": "External API Portal",
+                    "desc": "1-Click portal generator for schools (Phase 12).",
+                    "on": "Global ON",
+                    "off": "Paused",
+                    "earlyAccess": "Early Access List (Gold List)",
+                    "added": "Added {email} to early access"
+                },
+                "internalFeatures": {
+                    "title": "Internal Features & Shop Security",
+                    "desc": "Control the visibility of core modules in your B2C shop. Separately decide if these features are technically solid and should be allowed in B2B External Portals.",
+                    "ownShop": "Own Shop (B2C)",
+                    "externalExport": "External Export (B2B)",
+                    "games": "Interactive Games",
+                    "gamesDesc": "Arcade Room",
+                    "gamification": "Gamification",
+                    "gamificationDesc": "Badges, progress",
+                    "wallet": "Teacher Wallet",
+                    "walletDesc": "Points program"
+                },
+                "extensions": {
+                    "title": "B2B Extensions",
+                    "desc": "Marketplace for AI tokens and services (Phase 13)."
+                },
+                "futureCatalog": {
+                    "title": "Future B2B Module Catalog",
+                    "subtitle": "In development",
+                    "desc": "Features already existing in the mother shop, ready for future packaging and sharing with schools/teachers as paid SaaS Plugins.",
+                    "gamesApi": "Interactive Games (API)",
+                    "gamesApiDesc": "Allow schools to embed Arcade Room and board games directly on their own sites.",
+                    "gamificationEngine": "Gamification Engine",
+                    "gamificationEngineDesc": "Badges, Certificates, Proficiency Tree and Streaks sold as a motivative B2B addon.",
+                    "telemetry": "Clean Summaries",
+                    "telemetryDesc": "Simple, student-friendly summaries of completed modules exported to e-registers.",
+                    "affiliate": "B2B Affiliate Program",
+                    "affiliateDesc": "Schools dropship your courses under their own brand and share with students easily.",
+                    "ready": "Ready for deployment",
+                    "requiresPhase9": "Requires Phase 9"
+                }
+            }
+        },
+        "products": {
+            "title": "Produkty",
+            "subtitle": "Správa vašich digitálnych produktov",
+            "search": "Hľadať produkty...",
+            "importAi": "AI Import",
+            "addProduct": "Pridať produkt",
+            "noProducts": "Nenašli sa žiadne produkty",
+            "addFirst": "Pridajte prvý produkt",
+            "table": {
+                "product": "Produkt",
+                "category": "Kategória",
+                "price": "Cena",
+                "source": "Zverejnené v",
+                "status": "Stav",
+                "actions": "Akcie"
+            },
+            "status": {
+                "published": "Publikované",
+                "draft": "Koncept"
+            },
+            "actions": {
+                "edit": "Upraviť",
+                "viewAccess": "View Product Access",
+                "copyLink": "Kopírovať odkaz na rýchlu pokladňu",
+                "hide": "Skryť",
+                "publish": "Publikovať",
+                "delete": "Vymazať"
+            },
+            "toasts": {
+                "linkCopied": "Odkaz na rýchlu pokladňu skopírovaný (Naffy Style):\n{link}",
+                "deleteConfirm": "Naozaj chcete tento produkt vymazať?"
+            },
+            "categories": {
+                "lesson-plans": "Plány lekcií",
+                "worksheets": "Pracovné listy",
+                "flashcards": "Flashcards",
+                "games": "Online hry",
+                "audio": "Audio materiály",
+                "video": "Video materiály",
+                "bundles": "Balíky",
+                "other": "Ostatné"
+            },
+            "source_badges": {
+                "wordpress": "WordPress / Publigo",
+                "tpt": "Teachers Pay Teachers",
+                "ai_optimized": "AI Optimalizované"
+            }
+        },
+        "orders": {
+            "title": "Objednávky",
+            "subtitle": "Správa objednávok a sledovanie platieb",
+            "exportCsv": "Exportovať CSV",
+            "stats": {
+                "revenue": "Tržby (dokončené)",
+                "pending": "Čaká na platbu",
+                "today": "Dnešné objednávky",
+                "orders": "Objednávky",
+                "avgValue": "Priem. hodnota"
+            },
+            "search": "Hľadať objednávky...",
+            "statusFilter": "Stav",
+            "allStatuses": "Všetky",
+            "empty": "Nenašli sa žiadne objednávky",
+            "table": {
+                "order": "Objednávka",
+                "customer": "Zákazník",
+                "products": "Produkty",
+                "total": "Celkom",
+                "status": "Stav",
+                "date": "Dátum",
+                "email": "Email",
+                "actions": "Akcie"
+            },
+            "status": {
+                "pending": "Čaká na vybavenie",
+                "processing": "Spracováva sa",
+                "completed": "Dokončené",
+                "cancelled": "Zrušené",
+                "refunded": "Vrátené"
+            },
+            "paymentMethods": {
+                "card": "Karta",
+                "transfer": "Bankový prevod",
+                "blik": "BLIK",
+                "paypal": "PayPal"
+            },
+            "details": {
+                "notFound": "Objednávka nebola nájdená",
+                "back": "Späť na zoznam",
+                "invoice": "Vystaviť faktúru",
+                "payment": "Platba",
+                "summary": "Zhrnutie",
+                "sendEmail": "Odoslať email",
+                "items": "Položky",
+                "paidAt": "Zaplatené: {date}",
+                "discount": "Zľava",
+                "total": "Celkom",
+                "quantity": "Množstvo",
+                "title": "Detail objednávky",
+                "customer": "Zákazník"
+            },
+            "paymentStatus": {
+                "paid": "Zaplatené",
+                "pending": "Čaká na platbu",
+                "failed": "Neúspešná platba",
+                "refunded": "Vrátené"
+            },
+            "export_headers": {
+                "order_number": "Číslo objednávky",
+                "date": "Dátum",
+                "customer": "Zákazník",
+                "email": "Email",
+                "products": "Produkty",
+                "total": "Celkom",
+                "status": "Stav"
+            }
+        },
+        "coupons": {
+            "title": "Kupóny",
+            "subtitle": "Správa zľavových kódov",
+            "addCoupon": "Nový kupón",
+            "editCoupon": "Upraviť kupón",
+            "createCoupon": "Vytvoriť kupón",
+            "stats": {
+                "all": "Všetky kupóny",
+                "active": "Aktívne",
+                "usage": "Celkové využitie"
+            },
+            "form": {
+                "code": "Kód kupónu",
+                "generate": "Generovať",
+                "placeholder": "napr. LETO2024",
+                "discountType": "Typ zľavy",
+                "percent": "Percentuálna (%)",
+                "fixed": "Fixná suma",
+                "discountValue": "Hodnota zľavy",
+                "usageLimit": "Limit využitia",
+                "minOrderValue": "Min. hodnota objednávky",
+                "expiresAt": "Platnosť do (voliteľné)"
+            },
+            "ux": {
+                "show": "Show",
+                "hide": "Hide",
+                "copy": "Copy",
+                "copied": "Copied!",
+                "secure": "Encrypted"
+            },
+            "preview": {
+                "title": "Preview & Accept",
+                "accept": "Accept Changes",
+                "reject": "Discard",
+                "bulk_title": "Review Generated Drafts",
+                "apply_all": "Accept All ({count})",
+                "diff_before": "Before Optimization",
+                "diff_after": "AI Suggestion"
+            },
+            "table": {
+                "code": "Kód",
+                "discount": "Zľava",
+                "usage": "Využitie",
+                "expires": "Platí do",
+                "status": "Stav"
+            },
+            "toasts": {
+                "deleteConfirm": "Naozaj chcete tento kupón vymazať?"
+            }
+        },
+        "materials": {
+            "title": "Správa materiálov",
+            "subtitle": "Pridávajte súbory, organizujte ich a priraďujte k produktom.",
+            "deleteSelected": "Vymazať ({count})",
+            "assignToProduct": "Priradiť k produktu ({count})",
+            "dragDrop": "Presuňte súbory sem",
+            "clickToUpload": "alebo kliknite na tlačidlo nižšie a vyberte z disku",
+            "selectFiles": "Vybrať súbory",
+            "or": "- ALEBO -",
+            "library": {
+                "title": "Knižnica súborov ({count})",
+                "description": "Zoznam všetkých nahraných materiálov.",
+                "empty": "Nenašli sa žiadne súbory. Nahrajte niečo."
+            },
+            "table": {
+                "check": "Vybrať",
+                "fileName": "Názov súboru",
+                "size": "Veľkosť",
+                "source": "Zdroj",
+                "product": "Priradený produkt",
+                "actions": "Akcie"
+            },
+            "badges": {
+                "upload": "Nahrať",
+                "drive": "Google Drive",
+                "unassigned": "Nepriradené"
+            },
+            "dialog": {
+                "title": "Správa súboru",
+                "selectLabel": "Vybrať produkt",
+                "placeholder": "Vyberte produkt zo zoznamu...",
+                "cancel": "Zrušiť",
+                "save": "Uložiť zmeny",
+                "delete": "Odstrániť súbor"
+            },
+            "toasts": {
+                "uploadSuccess": "Nahraných {count} súborov",
+                "deleted": "Súbor vymazaný",
+                "deletedSelected": "Vymazané vybrané súbory",
+                "assigned": "Priradených {count} súborov k produktu"
+            }
+        },
+        "certificates": {
+            "title": "Certifikáty a skúšky",
+            "subtitle": "Správa certifikačného procesu",
+            "stats": {
+                "totalIssued": "Celkom vydaných",
+                "avgScore": "Priem. skóre skúšky"
+            },
+            "tabs": {
+                "templates": "Šablóny",
+                "exams": "Skúšky",
+                "issued": "Vydané"
+            },
+            "templates": {
+                "create": "Vytvoriť šablónu",
+                "preview": "Upraviť šablónu",
+                "standardTitle": "Štandardný diplom (A4)",
+                "standardDesc": "Predvolená šablóna pre jazykové kurzy",
+                "certificateTitle": "Certifikát o dokončení",
+                "completedCourse": "Dokončený kurz: {course}",
+                "aiGenerate": "Generovať AI šablónu",
+                "aiDesc": "Popíšte štýl (napr. 'moderný', 'pre deti') a AI vytvorí unikátny dizajn diplomu.",
+                "createAi": "Vytvoriť pomocou AI"
+            },
+            "exams": {
+                "create": "Nová skúška",
+                "description": "Vytvorte banku otázok alebo nechajte AI generovať test z obsahu kurzu.",
+                "createAi": "Vytvoriť AI skúšku"
+            },
+            "issued": {
+                "empty": "Tento mesiac neboli vydané žiadne certifikáty."
+            }
+        },
+        "blog": {
+            "title": "Blog",
+            "subtitle": "Správa článkov blogu a SEO",
+            "newPost": "Nový článok",
+            "searchPlaceholder": "Hľadať články...",
+            "empty": "Nenašli sa žiadne články v blogu",
+            "writeFirst": "Napíšte prvý článok",
+            "table": {
+                "title": "Názov",
+                "category": "Kategória",
+                "status": "Stav",
+                "date": "Dátum"
+            },
+            "status": {
+                "published": "Publikované",
+                "draft": "Koncept"
+            },
+            "actions": {
+                "preview": "Náhľad",
+                "delete": "Vymazať",
+                "save": "Save",
+                "edit": "Upraviť",
+                "hide": "Skryť",
+                "publish": "Publikovať"
+            },
+            "categories": {
+                "mega-pack": "Mega Packs",
+                "scenariusze": "Scenarios",
+                "zlobek": "Nursery",
+                "special-lessons": "Special Lessons",
+                "speakbook": "Speakbook",
+                "stories": "Stories",
+                "culture": "Culture",
+                "pory-roku": "Seasons",
+                "teatr": "Theater",
+                "flashcards": "Flashcards",
+                "gry": "Games",
+                "inne": "Ostatné",
+                "metodyka": "Metodika výučby",
+                "materialy": "Didaktické materiály",
+                "technologia": "Technológie vo vzdelávaní",
+                "inspiracje": "Inšpirácie a nápady",
+                "recenzje": "Recenzie",
+                "wydarzenia": "Udalosti"
+            },
+            "toasts": {
+                "deleteConfirm": "Naozaj chcete tento článok vymazať?"
+            },
+            "form": {
+                "createTitle": "New Post",
+                "createSubtitle": "Create a new blog post",
+                "editTitle": "Edit Post",
+                "editSubtitle": "Edit existing blog post",
+                "titlePlaceholder": "Post title...",
+                "contentTitle": "Content",
+                "contentPlaceholder": "Start writing post content...",
+                "excerptTitle": "Excerpt",
+                "excerptPlaceholder": "Short description displayed on post list...",
+                "statusTitle": "Status",
+                "categoryTitle": "Category",
+                "categoryPlaceholder": "Select category",
+                "tagsTitle": "Tags",
+                "tagsPlaceholder": "tag1, tag2, tag3",
+                "imageTitle": "Featured Image",
+                "imagePlaceholder": "https://kamila.shor.dev/image.jpg",
+                "seoTitle": "SEO",
+                "metaTitleLabel": "Meta Title",
+                "metaTitlePlaceholder": "Search engine title",
+                "metaDescLabel": "Meta Description",
+                "metaDescPlaceholder": "Search engine description",
+                "charCount": "{count}/{max} characters",
+                "seoPreview": "Google Preview",
+                "generate": "Generate",
+                "save": "Save",
+                "saveChanges": "Save Changes",
+                "saving": "Saving...",
+                "delete": "Delete",
+                "notFound": "Post not found",
+                "backToList": "Back to list",
+                "titleRequired": "Please enter a title first"
+            }
+        },
+        "chat": {
+            "title": "AI Riadiace centrum",
+            "subtitle": "Chatujte so svojím obchodom",
+            "welcome": "Vitajte v AI centre. Ako vám môžem pomôcť?",
+            "newChat": "Nový chat",
+            "history": "História",
+            "placeholder": "Vyberte model",
+            "capabilities": {
+                "database": "Databáza",
+                "store": "Obchod",
+                "web": "Internet",
+                "files": "Súbory"
+            },
+            "inputPlaceholder": "Napíšte správu...",
+            "disclaimer": "AI môže robiť chyby. Overte si dôležité informácie.",
+            "generatedBy": "Generované modelom {model}",
+            "mockResponse": "Simulovaná odpoveď modelu {model}. Dostal som: \"{content}\". V plnej verzii by tu nasledovalo spojenie s API (napr. OpenAI, Manus) alebo databázou.",
+            "mockSessions": {
+                "s1": {
+                    "title": "Analýza predaja Q1",
+                    "date": "Dnes"
+                },
+                "s2": {
+                    "title": "Nové popisy produktov",
+                    "date": "Včera"
+                },
+                "s3": {
+                    "title": "Ladenie integrácií",
+                    "date": "Pred 2 dňami"
+                }
+            }
+        },
+        "import": {
+            "title": "AI Import",
+            "subtitle": "Importujte produkty z externého katalógu a vylepšite popisy pomocou AI",
+            "catalogUrl": "URL katalógu",
+            "catalogUrlDesc": "Vložte odkaz na stránku s produktmi (kamilaenglish.com)",
+            "scan": "Skenovať produkty",
+            "scanning": "Skenuje sa...",
+            "enhance": "Vylepšiť pomocou AI",
+            "enhancing": "Vylepšuje sa...",
+            "import": "Importovať ({count})",
+            "importing": "Importuje sa...",
+            "productsFound": "Nájdené produkty ({count})",
+            "selectedCount": "{count} vybratých",
+            "selectAll": "Vybrať všetko",
+            "deselectAll": "Zrušiť výber",
+            "allCategories": "Všetky",
+            "openSource": "Otvoriť zdroj",
+            "preview": {
+                "testInteractive": "Test Interactive Game",
+                "sourceLink": "Source Link",
+                "selectToPreview": "Select a product to preview",
+                "backToList": "Back to List",
+                "acceptAndCreate": "Accept & Create {count} Drafts"
+            },
+            "configureAi": "Configure API keys in settings before using AI",
+            "selectProducts": "Select products to import",
+            "noAssetsFound": "No valid assets were found. Please ensure you are using public links (e.g. wordwall.net/resource/...) and not your private dashboard.",
+            "privateLink": "Skipped private page: {url}",
+            "errors": {
+                "enterUrl": "Zadajte URL katalógu",
+                "onlyKamila English": "Podporované sú iba produkty z kamilaenglish.com",
+                "configureAi": "Pred použitím AI nakonfigurujte API kľúče v nastaveniach",
+                "selectProducts": "Vyberte produkty na import"
+            },
+            "success": {
+                "found": "Nájdených {count} produktov z Kamila English!",
+                "enhanced": "Popisy boli vylepšené pomocou AI!",
+                "imported": "Importovaných {count} produktov!"
+            },
+            "placeholders": {
+                "url": "https://www.sklep.kamilaenglish.com/..."
+            },
+            "categories": {
+                "mega-pack": "Mega balíky",
+                "scenariusze": "Scenáre",
+                "zlobek": "Jasle",
+                "special-lessons": "Špeciálne lekcie",
+                "speakbook": "Speakbook",
+                "stories": "Príbehy",
+                "culture": "Kultúra",
+                "pory-roku": "Ročné obdobia",
+                "teatr": "Divadlo",
+                "flashcards": "Flashcards",
+                "gry": "Hry",
+                "inne": "Ostatné"
+            },
+            "enhancedText": {
+                "titlePrefix": "🎯",
+                "bestseller": "✨ BESTSELLER!",
+                "whatYouGet": "📚 Čo získate:",
+                "features": {
+                    "pdf": "• Materiály PDF pripravené na tlač",
+                    "teacher": "• Inštrukcie pre učiteľa",
+                    "worksheets": "• Pracovné listy a cvičenia"
+                },
+                "footer": "⭐ Overené stovkami učiteľov!"
+            }
+        },
+        "success": {
+            "found": "Found {count} products from Kamila English!",
+            "enhanced": "Descriptions enhanced by AI!",
+            "imported": "Imported {count} products!"
+        },
+        "placeholders": {
+            "url": "https://www.sklep.kamilaenglish.com/..."
+        },
+        "categories": {
+            "mega-pack": "Mega Packs",
+            "scenariusze": "Scenarios",
+            "zlobek": "Nursery",
+            "special-lessons": "Special Lessons",
+            "speakbook": "Speakbook",
+            "stories": "Stories",
+            "culture": "Culture",
+            "pory-roku": "Seasons",
+            "teatr": "Theater",
+            "flashcards": "Flashcards",
+            "gry": "Games",
+            "inne": "Others"
+        },
+        "footer": "⭐ Trusted by hundreds of teachers!",
+        "item1": "Full access to materials",
+        "item2": "SEO Optimized content",
+        "item3": "Implementation guide for students",
+        "assistant": {
+            "title": "AI Copilot",
+            "status": "Active Intelligence",
+            "welcome": "How can I help you today?",
+            "placeholder": "Ask me anything...",
+            "suggestions": {
+                "generate_visuals": "Generate 4K Visuals",
+                "social_post": "Create Social Post",
+                "avatar_script": "New AI Avatar Script",
+                "seo_optimize": "SEO Optimize Description",
+                "product_cover": "Generate Product Cover",
+                "sync_wordwall": "Sync with Wordwall",
+                "config_workshop": "Configure AI Workshop",
+                "test_api": "Test API Credentials",
+                "connect_canva": "Connect Canva Design",
+                "gen_strategy": "Generate Strategy",
+                "view_trends": "View Trends",
+                "open_workshop": "Open Workshop"
+            },
+            "responses": {
+                "processing": "I'm processing your request. As your AI Copilot, I can help you manage products, generate creative assets, and optimize your store.",
+                "products_context": "You currently have {count} products in your store. I can help you generate descriptions or images for them in the AI Workshop.",
+                "product_example": "For example, I noticed \"{title}\". Would you like to optimize it?",
+                "workshop_info": "The AI Workshop is where you can generate images, videos, and social media posts. You can find it in the 'Workshop' tab of Settings or the dedicated Studio page.",
+                "wordwall_info": "To sync with Wordwall, go to the Products page and use the 'Interactive Import' button. I can also help you scrape metadata from any educational URL!",
+                "hello": "Hello! I'm your AI Copilot. I'm currently aware of {count} products and your store settings. How can I assist you today?"
+            }
+        },
+        "offers": {
+            "title": "AI Offer Generator",
+            "subtitle": "Create high-converting offers in seconds.",
+            "beta": "Beta Growth Suite",
+            "parameters": {
+                "title": "Campaign Parameters",
+                "description": "Define the goal of your offer",
+                "promotion_type": "Promotion Type",
+                "occasional": "Occasional",
+                "evergreen": "Evergreen",
+                "product": "Product / Service",
+                "product_placeholder": "e.g. Lesson Plan Bundle A1-C1",
+                "benefit": "Main Benefit",
+                "benefit_placeholder": "What will the customer gain?",
+                "discount": "Discount (%)",
+                "generate": "Generate AI Offer",
+                "analyzing": "Analyzing market..."
+            },
+            "preview": {
+                "ai_project": "AI PROJECT",
+                "effectiveness": "Effectiveness: {score}%",
+                "title": "Special Early Bird Offer",
+                "subtitle": "Review the generated campaign before publishing",
+                "ad_copy_label": "Ad Slogan",
+                "conversion_label": "Conversion",
+                "vs_avg": "+{diff}% vs avg",
+                "discount_code_label": "Your discount code",
+                "copied": "Copied",
+                "copy": "Copy",
+                "reject": "Reject and change parameters",
+                "accept": "Accept and Publish Offer"
+            },
+            "loading": {
+                "title": "AI Magic in progress...",
+                "description": "\"Analyzing market trends and optimizing sales psychology for your products.\"",
+                "progress_label": "Competitor analysis..."
+            },
+            "toasts": {
+                "copied": "Discount code copied!",
+                "ready": "Offer ready for review!"
+            }
+        },
+        "landingBuilder": {
+            "title": "Landing Page Builder",
+            "draftVersion": "Draft Version: {name}",
+            "desktop": "Desktop",
+            "mobile": "Mobile",
+            "preview": "Preview",
+            "save": "Save changes",
+            "saving": "Saving...",
+            "elements": "Page Elements",
+            "text": "Text",
+            "image": "Image",
+            "button": "Button",
+            "aiBlock": "AI Block",
+            "canvas": "Canvas (Layers)",
+            "hero": "Hero Section",
+            "features": "Advantages & Benefits",
+            "pricing": "Pricing Section",
+            "aiMagic": {
+                "title": "Ready for magic?",
+                "desc": "Use AI to automatically match copy and colors to your product.",
+                "optimize": "Optimize with AI"
+            },
+            "mock": {
+                "newCourse": "New Course",
+                "heroTitle": "Start teaching the language {joy}",
+                "joy": "with joy",
+                "heroDesc": "Ready-made scenarios your students will love. Zero stress, 100% results.",
+                "buyNow": "Buy now and start teaching",
+                "learnMore": "Learn more",
+                "addImage": "Add main image (Drag & Drop)"
+            },
+            "optimization": {
+                "title": "AI Landing Optimization",
+                "desc": "We detected {count} areas for improvement to increase conversion by approx. {percent}%.",
+                "current": "Current Version",
+                "aiSuggestion": "AI Suggestion (Improved conversion)",
+                "recommendation": "RECOMMENDATION",
+                "skip": "Skip changes",
+                "apply": "Apply optimization",
+                "success": "AI changes have been applied to the project!",
+                "processing": "Working on the project...",
+                "processingDesc": "\"Scanning your copy for benefit language and analyzing market heatmaps.\"",
+                "analysingHeaders": "Analyzing headers...",
+                "pickingColors": "Choosing color palette...",
+                "renderingPreview": "Rendering preview...",
+                "paletteTitle": "Improved Color Palette (Ocean Night)",
+                "paletteDesc": "We will change the accents to a more professional navy and energetic blue.",
+                "suggestionTitle": "Stop wasting hours on preparation. Choose ready-made solutions.",
+                "suggestionDesc": "Join 500+ teachers who reclaimed 10 hours a week. We guarantee a smile on every student's face.",
+                "suggestionButton": "Claim your time and start now"
+            },
+            "toasts": {
+                "saved": "Landing page saved successfully!"
+            }
+        },
+        "integrations": {
+            "title": "Educational BaseLinker",
+            "subtitle": "Globálny predaj materiálov a AI automatizácia.",
+            "loading": "Načítavajú sa preklady...",
+            "addStore": "Pridať obchod",
+            "sync_status": "Synchronizácia: {date}",
+            "today": "Dnes",
+            "tabs": {
+                "sync": "Sklad a synchronizácia",
+                "agent": "Publikačný agent",
+                "settings": "Nastavenia Marketplace"
+            },
+            "marketplaces": {
+                "groups": {
+                    "poland": "Poľsko",
+                    "usa": "USA",
+                    "dach": "Nemecko (DACH)",
+                    "uk": "Veľká Británia",
+                    "fr_es": "Francúzsko/Španielsko"
+                },
+                "names": {
+                    "wp": "WooCommerce / Publigo",
+                    "wp_full": "WordPress / Publigo",
+                    "tpt": "Teachers Pay Teachers",
+                    "etsy": "Etsy Education",
+                    "eduki": "Eduki (Nemecko)",
+                    "tes": "TES (UK)",
+                    "mieux": "MieuxEnseigner (Francúzsko/Španielsko)"
+                }
+            },
+            "inventory": {
+                "title": "Globálny inventár materiálov",
+                "badge": "Centrálny sklad",
+                "description": "Spravujte zdrojové súbory a ich prítomnosť na rôznych trhoch.",
+                "source": "Zdroj: kamilaenglish.com",
+                "allFiles": "Všetky PDF, hry a audio na jednom mieste",
+                "updateBtn": "Aktualizovať inventár",
+                "syncBtn": "Synchronizovať inventár",
+                "progress": "Priebeh synchronizácie",
+                "log": "Systémový log",
+                "waiting": "Čaká sa na spustenie...",
+                "logs": {
+                    "init": "Inicializácia spojenia s externými systémami...",
+                    "auth": "Autorizácia Publigo (wp-idea) & WooCommerce...",
+                    "fetching": "Získavanie zoznamu produktov (Multi-Channel Sourcing)...",
+                    "syncing": "Synchronizácia stavu zásob a digitálnych súborov...",
+                    "complete": "Synchronizácia dokončená. Zistených {count} nových materiálov.",
+                    "agent_init": "Inicializácia prostredia pre {mkt}...",
+                    "agent_login": "Prihlasovanie do panela predajcu...",
+                    "agent_fill": "Vypĺňanie formulára: {title}...",
+                    "agent_optimize": "Optimalizácia SEO a nahrávanie súborov...",
+                    "agent_done": "Hotovo! Produkt čaká na schválenie."
+                },
+                "toasts": {
+                    "sync_success": "Sklad bol úspešne aktualizovaný.",
+                    "analysis_done": "AI analýza dokončená. Navrhované údaje sú pripravené.",
+                    "no_tokens": "Nedostatok tokenov. Dobite si účet.",
+                    "tokens_spent": "{count} tokenov odpočítaných za AI operáciu.",
+                    "test_woo": "Testovanie pripojenia WooCommerce...",
+                    "woo_success": "Úspešne pripojené k kamilaenglish.com (API v3)",
+                    "test_manus": "Overovanie licencie Manus AI...",
+                    "manus_success": "Licencia aktívna. Agent pripravený na prácu.",
+                    "settings_saved": "Nastavenia uložené lokálne.",
+                    "new_channel": "Otváranie konfigurátora nového predajného kanála...",
+                    "edit_schedule": "Úprava plánu je k dispozícii v nastaveniach systému.",
+                    "importing": "Importujú sa nové produkty..."
+                },
+                "stats": {
+                    "products_short": "prod."
+                }
+            },
+            "schedule": {
+                "title": "Plán",
+                "daily02": "Denne o 02:00",
+                "active": "Aktívny",
+                "disabled": "Vypnutý",
+                "checkOnlyChanges": "Kontrolovať iba zmeny",
+                "changeCron": "Zmeniť nastavenia cronu"
+            },
+            "aiTip": {
+                "title": "AI Tip",
+                "description": "Zistili sme {count} nových produktov na WordPress, ktoré v tomto obchode nemáte. Chcete ich stiahnuť?",
+                "importBtn": "Importovať teraz"
+            },
+            "agent": {
+                "catalogTitle": "Katalóg produktov",
+                "ready": "Pripravený",
+                "emptyState": {
+                    "title": "Vyberte produkt a cieľový trh",
+                    "description": "Manus AI Agent urobí prácu za vás – prihlási sa, vyplní údaje a zverejní produkt na vybranej platforme."
+                },
+                "selectMarket": "Vyberte cieľový trh",
+                "launchBtn": "Spustiť agenta",
+                "launchAdmin": "Spustiť agenta (Admin)",
+                "launchPoints": "Spustiť za {count} bodov",
+                "working": "Agent pracuje...",
+                "manusMode": "Manus mód: Aktívny",
+                "marketPrefix": "EnglishLearning: ",
+                "yourBalance": "Váš zostatok",
+                "analysisTitle": "AI analýza pre {market}",
+                "regionalOptimization": "Regionálna optimalizácia",
+                "suggestedTitle": "Navrhovaný názov (SEO lokálne)",
+                "suggestedPrice": "Cena (PPP konverzia)",
+                "sellingProb": "Pravdepodobnosť predaja",
+                "veryHigh": "VEĽMI VYSOKÁ",
+                "success": {
+                    "title": "Úloha dokončená!",
+                    "description": "AI Agent úspešne navštívil {market} a zverejnil váš produkt.",
+                    "viewLogs": "ZOBRAZIŤ LOGY RELÁCIE"
+                },
+                "toasts": {
+                    "session_manager": "Otváranie správcu relácií...",
+                    "proxy_success": "Proxy: {ip} ({location}) OK",
+                    "report_title": "Správa agenta",
+                    "report_desc": "Prihlásenie: OK, Formulár: Vyplnený, Obrázky: Nahrané, SEO: Optimalizované. Celkový čas: {time}"
+                },
+                "stats": {
+                    "points": "bodov"
+                },
+                "mockAnalysis": {
+                    "optimizedTitleSuffix": "Komplexný výučbový materiál pre učiteľov",
+                    "suggestedPrice": "12,99 €",
+                    "subject": "Anglický jazyk",
+                    "seoTags": "homeschool, pracovné listy, slovná zásoba, flashcards, zdroje pre učiteľov",
+                    "description": "Odomknite potenciál svojej triedy s týmto prémiovým produktom {title}. \n\nNavrhnuté pedagógmi pre pedagógov, tento zdroj obsahuje:\n- Kompletné PDF scenáre\n- Pracovné listy pripravené na tlač\n- Interaktívne vizuálne pomôcky.\n\nIdeálne pre online aj prezenčné lekcie!"
+                },
+                "idle": {
+                    "title": "V pohotovosti",
+                    "description": "Spustite agenta na začatie procesu automatizácie na platforme {market}."
+                }
+            },
+            "settings": {
+                "title": "Multikanálové pripojenia",
+                "description": "Nakonfigurujte prístupové údaje pre externé obchody.",
+                "saveAll": "Uložiť všetko",
+                "lastSaved": "Posledné uloženie: {time}",
+                "woo": {
+                    "title": "Webová stránka WooCommerce / WordPress",
+                    "url": "URL obchodu (REST API)",
+                    "key": "Consumer Key",
+                    "secret": "Consumer Secret",
+                    "connected": "Pripojené",
+                    "autoSync": "AUTO-SYNC ZAPNUTÝ",
+                    "test": "Testovať"
+                },
+                "manus": {
+                    "title": "Manus AI relácia",
+                    "description": "Agent používa \"Browser Operator Mode\", prihlasuje sa do vašich účtov. Nahrajte session cookies (JSON), aby ste sa vyhli problémom s 2FA.",
+                    "instance": "Inštancia Agent API",
+                    "test": "Testovať Manus",
+                    "manage": "Spravovať reláciu",
+                    "proxy": "Testovať Proxy"
+                }
+            }
         }
-      },
-      "mcp": {
-        "title": "MCP Connectors",
-        "description": "Connect external models and knowledge bases via MCP protocol",
-        "server": "MCP Server Address",
-        "status": "Connection status"
-      },
-      "api": {
-        "title": "External API Keys",
-        "description": "Integrations with CRM, Mailing, and other systems",
-        "service": "Service (e.g., MailerLite, Zapier)",
-        "key": "API Key / Token",
-        "coming_soon": "Integration with MailerLite, ActiveCampaign and Zapier is being implemented.",
-        "coming_soon_desc": "You can already save keys in the Webhooks section for testing."
-      }
+    },
+    "logs": {
+        "init": "🚀 Initializing AI Scraper agent...",
+        "connect": "🔍 Connecting to API session...",
+        "extract": "🧩 Extracting mechanics and metadata...",
+        "images": "🖼️ Generating preview thumbnails...",
+        "seo": "✍️ Crafting SEO-optimized descriptions...",
+        "pricing": "💰 Calculating regional pricing...",
+        "finalize": "✨ Finalizing product drafts..."
     },
     "interactive": {
-      "title": "Integrácia online hier",
-      "description": "Pripojte Wordwall, Genially a ďalšie platformy k svojmu obchodu",
-      "auto_import": "Automaticky vytvoriť produkt po pridaní hry na platformu",
-      "auto_import_desc": "Systém automaticky deteguje vložené kódy (Embed) pri vytváraní produktu.",
-      "sync_status": "Posledná synchronizácia hier",
-      "sync_hint": "Odporúčame vkladať priame odkazy na hry v ovládacom paneli úprav produktu. Systém ich automaticky premení na interaktívne okno pre študenta.",
-      "other_title": "Ostatné integrácie",
-      "platforms": {
-        "wordwall": "Wordwall API kľúč",
-        "wordwall_placeholder": "napr. kamila-lo-ko",
-        "genially": "Genially API kľúč",
-        "genially_placeholder": "napr. https://view.genial.ly/profile/nick",
-        "sync_title": "Synchronizácia Wordwall & Genially",
-        "h5p_desc": "Lokálne vloženie",
-        "learningapps_desc": "Cez iFrame",
-        "quizizz_desc": "API synchronizácia"
-      }
-    },
-    "workshop": {
-      "title": "AI dielňa (RAG Engine)",
-      "description": "Generujte odvodené materiály na základe vašej znalostnej bázy",
-      "generate_btn": "Generovať materiály",
-      "status_ready": "Pripravené na generovanie",
-      "rag_sources": {
-        "title": "Zdroje znalostí (RAG)",
-        "description": "Vyberte svoju znalostnú bázu AI",
-        "main_label": "Hlavný zdroj (RAG)",
-        "notebook_lm": "Odkaz na NotebookLM / Znalostnú bázu",
-        "options": {
-          "google_drive": "Google Drive (Priečinok: Edu-Materials)",
-          "notebook_lm": "Konektor NotebookLM",
-          "local": "Lokálna vektorová databáza"
+        "title": "Interactive Content",
+        "subtitle": "Import and optimize Games with AI",
+        "placeholder": "Paste links (one per line)...",
+        "found": "Found {count} interactive items!",
+        "generate": "Generate drafts",
+        "createDrafts": "Accept and create drafts",
+        "success": "Successfully imported {count} products!",
+        "preview_title": "AI Draft Preview",
+        "preview_desc": "Review generated products and test interactive content.",
+        "logs": {
+            "launching": "🚀 Launching real-time scraping agent...",
+            "analyzing": "🔍 Analyzing: {url}...",
+            "private": "⚠️ Link {url} appears to be a private collection. Skipping - please use individual game links.",
+            "extracted": "✅ Extracted: {title}",
+            "dropped": "❌ Connection dropped for: {url}",
+            "complete": "Scraping complete! Successfully extracted metadata for {count} assets."
         }
-      },
-      "generators": {
-        "title": "Generátor materiálov",
-        "reading": "Čítanie (Text + Otázky)",
-        "listening": "Počúvanie (Skript + AI Audio)",
-        "speaking": "Karty na rozprávanie",
-        "vocabulary": "Slovná zásoba – cvičenia",
-        "flashcards": "Flashcards (CSV/Anki)",
-        "tests": "Generátor testov",
-        "worksheets": "Pracovné listy (PDF)",
-        "ai_quiz": "AI tvorca kvízov"
-      },
-      "canva": {
-        "title": "Konektor Canva",
-        "description": "Exportujte vygenerovaný obsah priamo do projektov v Canve",
-        "api_key": "Designový token Canva",
-        "auto_export": "Auto-export",
-        "connect": "Pripojiť Canvu"
-      },
-      "title_prefix": "AI Creative",
-      "title_suffix": "Studio",
-      "badge": "Next-Gen",
-      "powered_by": "Powered by OpenAI & HeyGen",
-      "available_credits": "Available Credits",
-      "generations_today": "Generations Today",
-      "studio": "Studio",
-      "history": "History",
-      "studios": {
-        "images": "Image Studio",
-        "video": "Video Studio",
-        "avatars": "Avatar Studio",
-        "social": "Social Hub",
-        "flashcards": "Flashcards",
-        "canva": "Canva Studio"
-      },
-      "actions": {
-        "reuse": "Reuse Prompt",
-        "generate": "Generate Asset",
-        "processing": "Processing...",
-        "attach": "Attach",
-        "change_product": "Change Product",
-        "connect": "Connect to Product"
-      },
-      "labels": {
-        "persona": "Select AI Persona",
-        "script": "Script",
-        "prompt": "Creative Prompt",
-        "preview": "Preview",
-        "history_empty": "Your canvas awaits.",
-        "connect_desc": "Link this AI asset to your store inventory.",
-        "professional_suite": "Professional Creative Suite"
-      },
-      "social_hub": {
-        "title": "Social Media Hub",
-        "subtitle": "Post Generator & Optimization",
-        "platforms": {
-          "instagram": "Instagram",
-          "facebook": "Facebook",
-          "linkedin": "LinkedIn",
-          "youtube": "YouTube"
-        },
-        "labels": {
-          "select_product": "Select Product to Promote",
-          "pick_placeholder": "Pick from Product Library...",
-          "campaign_context": "Campaign Context / Prompt",
-          "prompt_placeholder": "What are we promoting today? (e.g., 'New Flashcard Set for Christmas')",
-          "ai_copy": "AI Generated Copy",
-          "thinking": "Thinking...",
-          "regenerate": "Regenerate Copy",
-          "copy_placeholder": "AI will generate your post content here...",
-          "media_asset": "Media Asset",
-          "auto_selected": "Auto-Selected",
-          "select_asset": "Select Asset",
-          "from_gallery": "From Product Gallery",
-          "viral_growth": "Viral Growth",
-          "score": "Score",
-          "ai_expectancy": "AI expects {percent}% higher engagement on {platform}.",
-          "live_mockup": "Live Mockup Preview",
-          "mockup_placeholder": "Your mockup copy will appear here...",
-          "export": "Export to Socials"
-        }
-      },
-      "flashcards": {
-        "title": "AI Flashcard Studio",
-        "subtitle": "Transform topics into beautiful, ready-to-print flashcard sets.",
-        "badge": "Smart Learning",
-        "branding_kit": "Branding Kit",
-        "export_canva": "Export to Canva",
-        "smart_generator": "Smart Generator",
-        "topic_label": "Topic or Context",
-        "topic_placeholder": "e.g. Life Cycle of a Frog",
-        "style_label": "Visual Style",
-        "styles": {
-          "academic": "Academic",
-          "playful": "Playful",
-          "minimal": "Minimal",
-          "canva_ai": "Canva AI"
-        },
-        "generate_btn": "Generate Deck",
-        "generating": "Generating...",
-        "live_preview": "Live Preview",
-        "cards_prepared": "{count} Cards Prepared",
-        "empty": "No cards generated yet",
-        "add_custom": "Add Custom Card"
-      }
-    },
-    "automation": {
-      "title": "Konektory AI agentov",
-      "description": "Pripojte agentov ako Manus AI, GPT-4o s prehliadačom alebo skripty Playwright/Selenium",
-      "agent_delivered": "Agent doručil {count} nových konceptov!",
-      "agents": {
-        "title": "Dostupní agenti s prehliadačom",
-        "select_placeholder": "Vyberte agenta pre automatizáciu",
-        "manus": "Konektor Manus AI",
-        "general": "Vlastný agent s prehliadačom (Webhook)",
-        "status_idle": "Agent je pripravený na úlohy",
-        "btn_send": "Odoslať agenta na odkazy"
-      },
-      "receiver": {
-        "title": "Adresa príjemcu (Endpoint)",
-        "description": "Zadajte túto URL v Manus AI, aby mohol agent posielať nájdené odkazy priamo do vašich konceptov",
-        "simulate_test": "(Simulovať príchod agenta / Test Webhooku)",
-        "simulate_btn": "Simulovať agenta"
-      },
-      "scrapers": {
-        "title": "Automatické nástroje",
-        "card_title": "Úlohy v prehliadači",
-        "options": {
-          "wordwall": "Wordwall scraper",
-          "genially": "Genially scraper",
-          "learningapps": "LearningApps scraper"
-        },
-        "item1": "Nájsť Embed odkazy na hry v mojom profile Genially",
-        "item2": "Skontrolovať dostupnosť nových šablón v Canve",
-        "item3": "Stiahnuť kódy na zdieľanie z Wordwall",
-        "description": "Konfigurácia robotov na import obsahu"
-      },
-      "chat": {
-        "title": "Chat s AI agentom",
-        "subtitle": "Direct communication with the browser agent",
-        "placeholder": "Kde mám dnes hľadať?",
-        "capabilities": "Aktuálne možnosti: Genially, Wordwall, Canva",
-        "welcome": "Dobrý deň! Som pripravený na prácu. Môžete mi zadávať úlohy vo vašich účtoch (Wordwall, Canva, Genially). Čo mám urobiť?"
-      }
-    },
-    "emails": {
-      "title": "Šablóny systémových správ",
-      "description": "Správa obsahu správ odosielaných automaticky zákazníkom",
-      "save": "Uložiť šablóny",
-      "templates": {
-        "welcome": {
-          "title": "Privítanie po registrácii",
-          "subject": "Vitajte v komunite!",
-          "content": "Sme radi, že ste s nami. Vaše prihlasovacie údaje sú..."
-        },
-        "order_confirmed": {
-          "title": "Potvrdenie objednávky",
-          "subject": "Vaša objednávka #{orderNumber} bola prijatá",
-          "content": "Ďakujeme za váš nákup! Vaše materiály sú teraz k dispozícii v paneli."
-        },
-        "login_details": {
-          "title": "Prístupové údaje (po nákupe)",
-          "subject": "Vaše údaje pre prístup ku kurzu",
-          "content": "Tu sú vaše prihlasovacie údaje: Email: {email}, Heslo: {password}"
-        }
-      },
-      "smtp": {
-        "title": "Konfigurácia SMTP / Poskytovateľ",
-        "description": "Nastavenie poštového servera pre systémové e-maily",
-        "enable_system": "Povoliť systémové odosielanie",
-        "enable_desc": "Použiť nakonfigurovaný SMTP server",
-        "host": "SMTP Host",
-        "port": "Port"
-      },
-      "variables": "Dostupné premenné: {orderNumber}, {email}, {password}, {firstName}, {total}"
-    },
-    "google": {
-      "title": "Integrácia Google Cloud",
-      "description": "Pripojte Google Drive pre import materiálov priamo do obchodu",
-      "auth": {
-        "title": "Autorizácia Google",
-        "connect": "Pripojiť Google Drive",
-        "disconnect": "Odpojiť účet",
-        "status_connected": "Pripojené k účtu: {email}",
-        "status_disconnected": "Žiadne aktívne pripojenie",
-        "drive_description": "Connect the 'Edu-Materials' folder from your Google Drive"
-      },
-      "drive": {
-        "title": "Prehliadač Google Drive",
-        "import_selected": "Importovať vybrané súbory",
-        "refresh": "Obnoviť zoznam",
-        "no_files": "Na vašom disku neboli nájdené žiadne súbory PDF/ZIP",
-        "import_success": "Súbory boli úspešne importované ako materiály",
-        "column_name": "Názov súboru",
-        "column_size": "Veľkosť",
-        "column_action": "Akcia",
-        "description": "Prehliadať súbory PDF a ZIP pripravené na import",
-        "button": "Stiahnuť z Google Drive",
-        "connecting": "Pripájanie...",
-        "picker_title": "Vyberte súbory z Google Drive",
-        "import_count": "Importovať vybrané ({count})",
-        "toast_success": "Importovaných {count} súborov z Google Drive"
-      },
-      "config": {
-        "client_id": "Google Client ID",
-        "client_secret": "Google Client Secret",
-        "redirect_uri": "Redirect URI"
-      }
-    },
-    "abandoned": {
-      "title": "Obnova košíka",
-      "description": "Automatické pripomienky pre zákazníkov, ktorí nedokončili nákup",
-      "delay": "Oneskorenie prvého e-mailu (hodiny)",
-      "discount_code": "Zľavový kód v e-maile (voliteľné)",
-      "enable_auto": "Povoliť automatickú obnovu",
-      "stats": {
-        "total_recovered": "Obnovené tržby",
-        "pending_carts": "Čakajúce košíky"
-      }
-    },
-    "guardian": {
-      "title": "AI Strážca a technický dohľad",
-      "description": "Inteligentný systém monitorujúci chyby, zákony a výkon",
-      "legal_check": "Sledovanie legislatívnych zmien (EU E-commerce)",
-      "tech_check": "Technický monitoring chýb v reálnom čase",
-      "security_check": "Analýza pokusov o neoprávnený prístup",
-      "alerts": "Upozornenia na kritické problémy",
-      "status_good": "Systém beží hladko",
-      "status_warning": "Zistený potenciálny nesúlad s legislatívou",
-      "last_scan": "Posledný úplný sken systému"
-    },
-    "affiliate": {
-      "title": "Referral a partnerský systém",
-      "description": "Premeňte svojich zákazníkov na ambasádorov značky",
-      "commission": "Provízia partnera (%)",
-      "discount": "Referenčná zľava (%)",
-      "cookie_life": "Platnosť cookie (dni)",
-      "referral_links": "Generovať referenčné odkazy",
-      "total_partners": "Aktívni partneri",
-      "payouts": "Čakajúce výplaty"
-    },
-    "pricing": {
-      "title": "Parita kúpnej sily (PPP)",
-      "description": "Automatická úprava cien podľa kúpnej sily v 19 krajinách",
-      "enable_ppp": "Povoliť inteligentné regionálne ceny",
-      "base_currency": "Základná mena",
-      "regions": {
-        "western": "Západná Európa (100 % ceny)",
-        "central": "Stredná Európa (85 % ceny)",
-        "eastern": "Východná Európa (70 % ceny)",
-        "balkans": "Balkán (60 % ceny)"
-      },
-      "recurring_title": "Subscriptions & Recurring Payments",
-      "recurring_visa_title": "Visa Recurring Payments",
-      "recurring_visa_desc": "Enable automatic card charging for subscription products. Supported via Stripe Billing and PayNow Recurring.",
-      "recurring_frequency": "Standard Frequency",
-      "recurring_monthly": "30 DAYS / MONTHLY",
-      "recurring_grace_period": "Grace Period / Retry",
-      "recurring_retry": "3 DAYS RETRY",
-      "paynow_title": "PayNow Integration",
-      "paynow_access_key": "Access Key",
-      "paynow_signature_key": "Signature Key",
-      "blik_title": "BLIK Support Enabled",
-      "blik_desc": "PayNow allows users to pay with BLIK codes directly on your checkout page."
-    },
-    "taxes": {
-      "title": "Spracovanie daní a faktúr",
-      "description": "Správa sadzieb DPH a automatické vystavovanie faktúr v rámci EÚ",
-      "eu_vat_moss": "Povoliť systém VAT-MOSS / OSS",
-      "invoice_provider": "Poskytovateľ fakturácie (napr. Fakturownia, InFakt)",
-      "infakt_api_key": "InFakt API Key",
-      "test_connection": "Test API pripojenia",
-      "stripe_title": "Stripe Payments",
-      "stripe_publishable": "Stripe Publishable Key",
-      "stripe_secret": "Stripe Secret Key"
-    },
-    "editor": {
-      "placeholder": "Začnite písať...",
-      "prompts": {
-        "link": "Zadajte URL:",
-        "image": "Zadajte URL obrázka:"
-      },
-      "toolbar": {
-        "bold": "Tučné",
-        "italic": "Kurzíva",
-        "h2": "Nadpis 2",
-        "h3": "Nadpis 3",
-        "list": "Odrážkový zoznam",
-        "listOrdered": "Číslovaný zoznam",
-        "link": "Vložiť odkaz",
-        "image": "Vložiť obrázok",
-        "quote": "Citácia",
-        "code": "Blok kódu"
-      }
-    }
-  },
-  "adminPanel": {
-    "sidebar": {
-      "title": "AdminPanel",
-      "subtitle": "Creative Studio",
-      "expand": "Rozbaliť",
-      "collapse": "Zbaliť",
-      "logout": "Odhlásiť reláciu",
-      "logoutTooltip": "Odhlásiť sa",
-      "menu": {
-        "dashboard": "Nástenka",
-        "products": "Produkty",
-        "orders": "Objednávky",
-        "coupons": "Coupons",
-        "materials": "Materiály",
-        "blog": "Blog",
-        "import": "Import AI",
-        "settings": "Nastavenia",
-        "chat": "AI Chat",
-        "home": "Úvodná stránka",
-        "role": "Administrátor",
-        "online": "Online",
-        "abandoned": "Abandoned Carts",
-        "offers": "Offer Generator",
-        "workshop": "AI Creative Suite",
-        "landing_builder": "Landing Pages"
-      }
-    },
-    "dashboard": {
-      "title": "Nástenka",
-      "subtitle": "Prehľad predajov a analytika",
-      "periods": {
-        "7days": "7 dní",
-        "30days": "30 dní",
-        "90days": "90 dní",
-        "all": "Celý čas"
-      },
-      "addProduct": "Pridať produkt",
-      "currency": "€",
-      "stats": {
-        "revenue": "Tržby",
-        "orders": "Objednávky",
-        "customers": "Zákazníci",
-        "avgOrderValue": "Priem. hodnota objednávky",
-        "vsPrevious": "oproti predchádzajúcemu obdobiu",
-        "inSelectedPeriod": "Vo vybranom období",
-        "uniqueCustomers": "Unikátni zákazníci",
-        "perOrder": "na objednávku"
-      },
-      "charts": {
-        "weeklyRevenue": "Týždenné tržby",
-        "revenueByDay": "Predaje v jednotlivých dňoch",
-        "bestsellersRanking": "Rebríček bestsellerov",
-        "topSellingProducts": "Najpredávanejšie produkty",
-        "noSalesData": "Žiadne údaje o predajoch",
-        "sold": "predané {count}",
-        "days": {
-          "mon": "Po",
-          "tue": "Ut",
-          "wed": "St",
-          "thu": "Št",
-          "fri": "Pi",
-          "sat": "So",
-          "sun": "Ne"
-        }
-      },
-      "recentOrders": {
-        "title": "Nedávne objednávky",
-        "subtitle": "Najnovšie transakcie",
-        "viewAll": "Zobraziť všetko",
-        "noOrders": "Zatiaľ žiadne objednávky",
-        "productCount": "{count} produktov",
-        "status": {
-          "completed": "Dokončené",
-          "pending": "Čaká na vybavenie",
-          "processing": "Spracováva sa",
-          "cancelled": "Zrušené",
-          "refunded": "Vrátené"
-        },
-        "table": {
-          "title": "Nedávne objednávky",
-          "viewAll": "Zobraziť všetko",
-          "order": "Objednávka",
-          "customer": "Zákazník",
-          "total": "Celkom",
-          "status": "Stav"
-        }
-      },
-      "aiInsights": {
-        "card": {
-          "monitoring": "Active Market Monitoring",
-          "strategyTitle": "Your growth strategy for {period}",
-          "periodWeek": "next week",
-          "periodMonth": "this month",
-          "description": "We analyzed your last {count} orders. We have 3 specific recommendations that could increase your revenue by approx. 18%.",
-          "generateBtn": "Generate Strategic Report"
-        },
-        "modal": {
-          "title": "AI Growth Report",
-          "subtitle": "Generated for: Administrator • Feb 2024",
-          "revenueChance": "Revenue Chance",
-          "revenueGrowth": "Possible growth in 14 days",
-          "crossSellScore": "Cross-sell Score",
-          "crossSellDesc": "High linking potential",
-          "retentionProj": "Retention Proj.",
-          "retentionDesc": "Loyal returning customers",
-          "recommendedActions": "Recommended Actions",
-          "action1Title": "Email: Abandoned Cart (New template)",
-          "action1Desc": "Customers are abandoning carts for \"Preschool - Autumn Pack\". We suggest adding a 48h timer and 5% discount.",
-          "action2Title": "Bundle: Preschool Combo Pack",
-          "action2Desc": "Combine 3 most popular products into one bundle. Suggested price: $59.99.",
-          "deploy": "Deploy",
-          "create": "Create",
-          "skip": "Skip report",
-          "apply": "Apply Recommendations",
-          "success": "Strategic report has been saved and sent for analysis."
-        },
-        "overlay": {
-          "title": "Processing Big Data...",
-          "subtitle": "\"Analyzing correlations between products and buying behaviors of your customers.\"",
-          "step1": "Clustering users...",
-          "step3": "Generating visualizations..."
-        },
-        "wordwallSync": {
-          "title": "Smart Interactive Sync",
-          "description": "Paste links to your resources (Wordwall, Genially, Canva, YouTube, Google Slides, Quizizz, NotebookLM, Vocaroo) to add them as products.",
-          "placeholder": "https://wordwall.net/...\nhttps://view.genial.ly/...\nhttps://canva.com/design/...\nhttps://youtube.com/watch?v=...\nhttps://quizizz.com/...",
-          "syncBtn": "Start Sync",
-          "syncing": "Syncing...",
-          "success": "Successfully imported {count} new games!",
-          "noNew": "All provided links have already been imported.",
-          "invalid": "No valid educational links (Wordwall/Genially/Canva/YouTube/Slides/etc) detected.",
-          "close": "Close"
-        }
-      },
-      "interactivePreview": {
-        "subtitle": "Live preview of interactive material",
-        "noPreview": "No preview available for this asset",
-        "close": "Close"
-      },
-      "activeAiLogs": {
-        "title": "Active AI Logs",
-        "live": "Live",
-        "imageGenerated": "Image Generated",
-        "socialPostReady": "Social Post Ready",
-        "flashcardCreated": "Flashcard Created",
-        "trendIdentified": "Trend identified",
-        "seoOptimized": "SEO Optimized",
-        "imagePolished": "Image Polished"
-      },
-      "studioQuickAccess": {
-        "title": "Studio Quick Access",
-        "imageStudio": "Image Studio",
-        "generate4k": "Generate 4K Visuals",
-        "socialHub": "Social Hub",
-        "viralCreation": "Viral Post Creation"
-      }
-    },
-    "products": {
-      "title": "Produkty",
-      "subtitle": "Správa vašich digitálnych produktov",
-      "search": "Hľadať produkty...",
-      "importAi": "AI Import",
-      "addProduct": "Pridať produkt",
-      "noProducts": "Nenašli sa žiadne produkty",
-      "addFirst": "Pridajte prvý produkt",
-      "table": {
-        "product": "Produkt",
-        "category": "Kategória",
-        "price": "Cena",
-        "source": "Zverejnené v",
-        "status": "Stav",
-        "actions": "Akcie"
-      },
-      "status": {
-        "published": "Publikované",
-        "draft": "Koncept"
-      },
-      "actions": {
-        "edit": "Upraviť",
-        "viewAccess": "View Product Access",
-        "copyLink": "Kopírovať odkaz na rýchlu pokladňu",
-        "hide": "Skryť",
-        "publish": "Publikovať",
-        "delete": "Vymazať"
-      },
-      "toasts": {
-        "linkCopied": "Odkaz na rýchlu pokladňu skopírovaný (Naffy Style):\n{link}",
-        "deleteConfirm": "Naozaj chcete tento produkt vymazať?"
-      },
-      "categories": {
-        "lesson-plans": "Plány lekcií",
-        "worksheets": "Pracovné listy",
-        "flashcards": "Flashcards",
-        "games": "Online hry",
-        "audio": "Audio materiály",
-        "video": "Video materiály",
-        "bundles": "Balíky",
-        "other": "Ostatné"
-      },
-      "source_badges": {
-        "wordpress": "WordPress / Publigo",
-        "tpt": "Teachers Pay Teachers",
-        "ai_optimized": "AI Optimalizované"
-      }
-    },
-    "orders": {
-      "title": "Objednávky",
-      "subtitle": "Správa objednávok a sledovanie platieb",
-      "exportCsv": "Exportovať CSV",
-      "stats": {
-        "revenue": "Tržby (dokončené)",
-        "pending": "Čaká na platbu",
-        "today": "Dnešné objednávky",
-        "orders": "Objednávky",
-        "avgValue": "Priem. hodnota"
-      },
-      "search": "Hľadať objednávky...",
-      "statusFilter": "Stav",
-      "allStatuses": "Všetky",
-      "empty": "Nenašli sa žiadne objednávky",
-      "table": {
-        "order": "Objednávka",
-        "customer": "Zákazník",
-        "products": "Produkty",
-        "total": "Celkom",
-        "status": "Stav",
-        "date": "Dátum",
-        "email": "Email",
-        "actions": "Akcie"
-      },
-      "status": {
-        "pending": "Čaká na vybavenie",
-        "processing": "Spracováva sa",
-        "completed": "Dokončené",
-        "cancelled": "Zrušené",
-        "refunded": "Vrátené"
-      },
-      "paymentMethods": {
-        "card": "Karta",
-        "transfer": "Bankový prevod",
-        "blik": "BLIK",
-        "paypal": "PayPal"
-      },
-      "details": {
-        "notFound": "Objednávka nebola nájdená",
-        "back": "Späť na zoznam",
-        "invoice": "Vystaviť faktúru",
-        "payment": "Platba",
-        "summary": "Zhrnutie",
-        "sendEmail": "Odoslať email",
-        "items": "Položky",
-        "paidAt": "Zaplatené: {date}",
-        "discount": "Zľava",
-        "total": "Celkom",
-        "quantity": "Množstvo",
-        "title": "Detail objednávky",
-        "customer": "Zákazník"
-      },
-      "paymentStatus": {
-        "paid": "Zaplatené",
-        "pending": "Čaká na platbu",
-        "failed": "Neúspešná platba",
-        "refunded": "Vrátené"
-      },
-      "export_headers": {
-        "order_number": "Číslo objednávky",
-        "date": "Dátum",
-        "customer": "Zákazník",
-        "email": "Email",
-        "products": "Produkty",
-        "total": "Celkom",
-        "status": "Stav"
-      }
-    },
-    "coupons": {
-      "title": "Kupóny",
-      "subtitle": "Správa zľavových kódov",
-      "addCoupon": "Nový kupón",
-      "editCoupon": "Upraviť kupón",
-      "createCoupon": "Vytvoriť kupón",
-      "stats": {
-        "all": "Všetky kupóny",
-        "active": "Aktívne",
-        "usage": "Celkové využitie"
-      },
-      "form": {
-        "code": "Kód kupónu",
-        "generate": "Generovať",
-        "placeholder": "napr. LETO2024",
-        "discountType": "Typ zľavy",
-        "percent": "Percentuálna (%)",
-        "fixed": "Fixná suma",
-        "discountValue": "Hodnota zľavy",
-        "usageLimit": "Limit využitia",
-        "minOrderValue": "Min. hodnota objednávky",
-        "expiresAt": "Platnosť do (voliteľné)"
-      },
-      "ux": {
-        "show": "Show",
-        "hide": "Hide",
-        "copy": "Copy",
-        "copied": "Copied!",
-        "secure": "Encrypted"
-      },
-      "preview": {
-        "title": "Preview & Accept",
-        "accept": "Accept Changes",
-        "reject": "Discard",
-        "bulk_title": "Review Generated Drafts",
-        "apply_all": "Accept All ({count})",
-        "diff_before": "Before Optimization",
-        "diff_after": "AI Suggestion"
-      },
-      "table": {
-        "code": "Kód",
-        "discount": "Zľava",
-        "usage": "Využitie",
-        "expires": "Platí do",
-        "status": "Stav"
-      },
-      "toasts": {
-        "deleteConfirm": "Naozaj chcete tento kupón vymazať?"
-      }
-    },
-    "materials": {
-      "title": "Správa materiálov",
-      "subtitle": "Pridávajte súbory, organizujte ich a priraďujte k produktom.",
-      "deleteSelected": "Vymazať ({count})",
-      "assignToProduct": "Priradiť k produktu ({count})",
-      "dragDrop": "Presuňte súbory sem",
-      "clickToUpload": "alebo kliknite na tlačidlo nižšie a vyberte z disku",
-      "selectFiles": "Vybrať súbory",
-      "or": "- ALEBO -",
-      "library": {
-        "title": "Knižnica súborov ({count})",
-        "description": "Zoznam všetkých nahraných materiálov.",
-        "empty": "Nenašli sa žiadne súbory. Nahrajte niečo."
-      },
-      "table": {
-        "check": "Vybrať",
-        "fileName": "Názov súboru",
-        "size": "Veľkosť",
-        "source": "Zdroj",
-        "product": "Priradený produkt",
-        "actions": "Akcie"
-      },
-      "badges": {
-        "upload": "Nahrať",
-        "drive": "Google Drive",
-        "unassigned": "Nepriradené"
-      },
-      "dialog": {
-        "title": "Správa súboru",
-        "selectLabel": "Vybrať produkt",
-        "placeholder": "Vyberte produkt zo zoznamu...",
-        "cancel": "Zrušiť",
-        "save": "Uložiť zmeny",
-        "delete": "Odstrániť súbor"
-      },
-      "toasts": {
-        "uploadSuccess": "Nahraných {count} súborov",
-        "deleted": "Súbor vymazaný",
-        "deletedSelected": "Vymazané vybrané súbory",
-        "assigned": "Priradených {count} súborov k produktu"
-      }
-    },
-    "certificates": {
-      "title": "Certifikáty a skúšky",
-      "subtitle": "Správa certifikačného procesu",
-      "stats": {
-        "totalIssued": "Celkom vydaných",
-        "avgScore": "Priem. skóre skúšky"
-      },
-      "tabs": {
-        "templates": "Šablóny",
-        "exams": "Skúšky",
-        "issued": "Vydané"
-      },
-      "templates": {
-        "create": "Vytvoriť šablónu",
-        "preview": "Upraviť šablónu",
-        "standardTitle": "Štandardný diplom (A4)",
-        "standardDesc": "Predvolená šablóna pre jazykové kurzy",
-        "certificateTitle": "Certifikát o dokončení",
-        "completedCourse": "Dokončený kurz: {course}",
-        "aiGenerate": "Generovať AI šablónu",
-        "aiDesc": "Popíšte štýl (napr. 'moderný', 'pre deti') a AI vytvorí unikátny dizajn diplomu.",
-        "createAi": "Vytvoriť pomocou AI"
-      },
-      "exams": {
-        "create": "Nová skúška",
-        "description": "Vytvorte banku otázok alebo nechajte AI generovať test z obsahu kurzu.",
-        "createAi": "Vytvoriť AI skúšku"
-      },
-      "issued": {
-        "empty": "Tento mesiac neboli vydané žiadne certifikáty."
-      }
-    },
-    "blog": {
-      "title": "Blog",
-      "subtitle": "Správa článkov blogu a SEO",
-      "newPost": "Nový článok",
-      "searchPlaceholder": "Hľadať články...",
-      "empty": "Nenašli sa žiadne články v blogu",
-      "writeFirst": "Napíšte prvý článok",
-      "table": {
-        "title": "Názov",
-        "category": "Kategória",
-        "status": "Stav",
-        "date": "Dátum"
-      },
-      "status": {
-        "published": "Publikované",
-        "draft": "Koncept"
-      },
-      "actions": {
-        "preview": "Náhľad",
-        "delete": "Vymazať",
-        "save": "Save",
-        "edit": "Upraviť",
-        "hide": "Skryť",
-        "publish": "Publikovať"
-      },
-      "categories": {
-        "mega-pack": "Mega Packs",
-        "scenariusze": "Scenarios",
-        "zlobek": "Nursery",
-        "special-lessons": "Special Lessons",
-        "speakbook": "Speakbook",
-        "stories": "Stories",
-        "culture": "Culture",
-        "pory-roku": "Seasons",
-        "teatr": "Theater",
-        "flashcards": "Flashcards",
-        "gry": "Games",
-        "inne": "Ostatné",
-        "metodyka": "Metodika výučby",
-        "materialy": "Didaktické materiály",
-        "technologia": "Technológie vo vzdelávaní",
-        "inspiracje": "Inšpirácie a nápady",
-        "recenzje": "Recenzie",
-        "wydarzenia": "Udalosti"
-      },
-      "toasts": {
-        "deleteConfirm": "Naozaj chcete tento článok vymazať?"
-      },
-      "form": {
-        "createTitle": "New Post",
-        "createSubtitle": "Create a new blog post",
-        "editTitle": "Edit Post",
-        "editSubtitle": "Edit existing blog post",
-        "titlePlaceholder": "Post title...",
-        "contentTitle": "Content",
-        "contentPlaceholder": "Start writing post content...",
-        "excerptTitle": "Excerpt",
-        "excerptPlaceholder": "Short description displayed on post list...",
-        "statusTitle": "Status",
-        "categoryTitle": "Category",
-        "categoryPlaceholder": "Select category",
-        "tagsTitle": "Tags",
-        "tagsPlaceholder": "tag1, tag2, tag3",
-        "imageTitle": "Featured Image",
-        "imagePlaceholder": "https://kamila.shor.dev/image.jpg",
-        "seoTitle": "SEO",
-        "metaTitleLabel": "Meta Title",
-        "metaTitlePlaceholder": "Search engine title",
-        "metaDescLabel": "Meta Description",
-        "metaDescPlaceholder": "Search engine description",
-        "charCount": "{count}/{max} characters",
-        "seoPreview": "Google Preview",
-        "generate": "Generate",
-        "save": "Save",
-        "saveChanges": "Save Changes",
-        "saving": "Saving...",
-        "delete": "Delete",
-        "notFound": "Post not found",
-        "backToList": "Back to list",
-        "titleRequired": "Please enter a title first"
-      }
-    },
-    "chat": {
-      "title": "AI Riadiace centrum",
-      "subtitle": "Chatujte so svojím obchodom",
-      "welcome": "Vitajte v AI centre. Ako vám môžem pomôcť?",
-      "newChat": "Nový chat",
-      "history": "História",
-      "placeholder": "Vyberte model",
-      "capabilities": {
-        "database": "Databáza",
-        "store": "Obchod",
-        "web": "Internet",
-        "files": "Súbory"
-      },
-      "inputPlaceholder": "Napíšte správu...",
-      "disclaimer": "AI môže robiť chyby. Overte si dôležité informácie.",
-      "generatedBy": "Generované modelom {model}",
-      "mockResponse": "Simulovaná odpoveď modelu {model}. Dostal som: \"{content}\". V plnej verzii by tu nasledovalo spojenie s API (napr. OpenAI, Manus) alebo databázou.",
-      "mockSessions": {
-        "s1": {
-          "title": "Analýza predaja Q1",
-          "date": "Dnes"
-        },
-        "s2": {
-          "title": "Nové popisy produktov",
-          "date": "Včera"
-        },
-        "s3": {
-          "title": "Ladenie integrácií",
-          "date": "Pred 2 dňami"
-        }
-      }
-    },
-    "import": {
-      "title": "AI Import",
-      "subtitle": "Importujte produkty z externého katalógu a vylepšite popisy pomocou AI",
-      "catalogUrl": "URL katalógu",
-      "catalogUrlDesc": "Vložte odkaz na stránku s produktmi (kamilaenglish.com)",
-      "scan": "Skenovať produkty",
-      "scanning": "Skenuje sa...",
-      "enhance": "Vylepšiť pomocou AI",
-      "enhancing": "Vylepšuje sa...",
-      "import": "Importovať ({count})",
-      "importing": "Importuje sa...",
-      "productsFound": "Nájdené produkty ({count})",
-      "selectedCount": "{count} vybratých",
-      "selectAll": "Vybrať všetko",
-      "deselectAll": "Zrušiť výber",
-      "allCategories": "Všetky",
-      "openSource": "Otvoriť zdroj",
-      "preview": {
-        "testInteractive": "Test Interactive Game",
-        "sourceLink": "Source Link",
-        "selectToPreview": "Select a product to preview",
-        "backToList": "Back to List",
-        "acceptAndCreate": "Accept & Create {count} Drafts"
-      },
-      "configureAi": "Configure API keys in settings before using AI",
-      "selectProducts": "Select products to import",
-      "noAssetsFound": "No valid assets were found. Please ensure you are using public links (e.g. wordwall.net/resource/...) and not your private dashboard.",
-      "privateLink": "Skipped private page: {url}",
-      "errors": {
-        "enterUrl": "Zadajte URL katalógu",
-        "onlyKamila English": "Podporované sú iba produkty z kamilaenglish.com",
-        "configureAi": "Pred použitím AI nakonfigurujte API kľúče v nastaveniach",
-        "selectProducts": "Vyberte produkty na import"
-      },
-      "success": {
-        "found": "Nájdených {count} produktov z Kamila English!",
-        "enhanced": "Popisy boli vylepšené pomocou AI!",
-        "imported": "Importovaných {count} produktov!"
-      },
-      "placeholders": {
-        "url": "https://www.sklep.kamilaenglish.com/..."
-      },
-      "categories": {
-        "mega-pack": "Mega balíky",
-        "scenariusze": "Scenáre",
-        "zlobek": "Jasle",
-        "special-lessons": "Špeciálne lekcie",
-        "speakbook": "Speakbook",
-        "stories": "Príbehy",
-        "culture": "Kultúra",
-        "pory-roku": "Ročné obdobia",
-        "teatr": "Divadlo",
-        "flashcards": "Flashcards",
-        "gry": "Hry",
-        "inne": "Ostatné"
-      },
-      "enhancedText": {
-        "titlePrefix": "🎯",
-        "bestseller": "✨ BESTSELLER!",
-        "whatYouGet": "📚 Čo získate:",
-        "features": {
-          "pdf": "• Materiály PDF pripravené na tlač",
-          "teacher": "• Inštrukcie pre učiteľa",
-          "worksheets": "• Pracovné listy a cvičenia"
-        },
-        "footer": "⭐ Overené stovkami učiteľov!"
-      }
-    },
-    "success": {
-      "found": "Found {count} products from Kamila English!",
-      "enhanced": "Descriptions enhanced by AI!",
-      "imported": "Imported {count} products!"
-    },
-    "placeholders": {
-      "url": "https://www.sklep.kamilaenglish.com/..."
-    },
-    "categories": {
-      "mega-pack": "Mega Packs",
-      "scenariusze": "Scenarios",
-      "zlobek": "Nursery",
-      "special-lessons": "Special Lessons",
-      "speakbook": "Speakbook",
-      "stories": "Stories",
-      "culture": "Culture",
-      "pory-roku": "Seasons",
-      "teatr": "Theater",
-      "flashcards": "Flashcards",
-      "gry": "Games",
-      "inne": "Others"
-    },
-    "footer": "⭐ Trusted by hundreds of teachers!",
-    "item1": "Full access to materials",
-    "item2": "SEO Optimized content",
-    "item3": "Implementation guide for students",
-    "assistant": {
-      "title": "AI Copilot",
-      "status": "Active Intelligence",
-      "welcome": "How can I help you today?",
-      "placeholder": "Ask me anything...",
-      "suggestions": {
-        "generate_visuals": "Generate 4K Visuals",
-        "social_post": "Create Social Post",
-        "avatar_script": "New AI Avatar Script",
-        "seo_optimize": "SEO Optimize Description",
-        "product_cover": "Generate Product Cover",
-        "sync_wordwall": "Sync with Wordwall",
-        "config_workshop": "Configure AI Workshop",
-        "test_api": "Test API Credentials",
-        "connect_canva": "Connect Canva Design",
-        "gen_strategy": "Generate Strategy",
-        "view_trends": "View Trends",
-        "open_workshop": "Open Workshop"
-      },
-      "responses": {
-        "processing": "I'm processing your request. As your AI Copilot, I can help you manage products, generate creative assets, and optimize your store.",
-        "products_context": "You currently have {count} products in your store. I can help you generate descriptions or images for them in the AI Workshop.",
-        "product_example": "For example, I noticed \"{title}\". Would you like to optimize it?",
-        "workshop_info": "The AI Workshop is where you can generate images, videos, and social media posts. You can find it in the 'Workshop' tab of Settings or the dedicated Studio page.",
-        "wordwall_info": "To sync with Wordwall, go to the Products page and use the 'Interactive Import' button. I can also help you scrape metadata from any educational URL!",
-        "hello": "Hello! I'm your AI Copilot. I'm currently aware of {count} products and your store settings. How can I assist you today?"
-      }
-    },
-    "offers": {
-      "title": "AI Offer Generator",
-      "subtitle": "Create high-converting offers in seconds.",
-      "beta": "Beta Growth Suite",
-      "parameters": {
-        "title": "Campaign Parameters",
-        "description": "Define the goal of your offer",
-        "promotion_type": "Promotion Type",
-        "occasional": "Occasional",
-        "evergreen": "Evergreen",
-        "product": "Product / Service",
-        "product_placeholder": "e.g. Lesson Plan Bundle A1-C1",
-        "benefit": "Main Benefit",
-        "benefit_placeholder": "What will the customer gain?",
-        "discount": "Discount (%)",
-        "generate": "Generate AI Offer",
-        "analyzing": "Analyzing market..."
-      },
-      "preview": {
-        "ai_project": "AI PROJECT",
-        "effectiveness": "Effectiveness: {score}%",
-        "title": "Special Early Bird Offer",
-        "subtitle": "Review the generated campaign before publishing",
-        "ad_copy_label": "Ad Slogan",
-        "conversion_label": "Conversion",
-        "vs_avg": "+{diff}% vs avg",
-        "discount_code_label": "Your discount code",
-        "copied": "Copied",
-        "copy": "Copy",
-        "reject": "Reject and change parameters",
-        "accept": "Accept and Publish Offer"
-      },
-      "loading": {
-        "title": "AI Magic in progress...",
-        "description": "\"Analyzing market trends and optimizing sales psychology for your products.\"",
-        "progress_label": "Competitor analysis..."
-      },
-      "toasts": {
-        "copied": "Discount code copied!",
-        "ready": "Offer ready for review!"
-      }
-    },
-    "landingBuilder": {
-      "title": "Landing Page Builder",
-      "draftVersion": "Draft Version: {name}",
-      "desktop": "Desktop",
-      "mobile": "Mobile",
-      "preview": "Preview",
-      "save": "Save changes",
-      "saving": "Saving...",
-      "elements": "Page Elements",
-      "text": "Text",
-      "image": "Image",
-      "button": "Button",
-      "aiBlock": "AI Block",
-      "canvas": "Canvas (Layers)",
-      "hero": "Hero Section",
-      "features": "Advantages & Benefits",
-      "pricing": "Pricing Section",
-      "aiMagic": {
-        "title": "Ready for magic?",
-        "desc": "Use AI to automatically match copy and colors to your product.",
-        "optimize": "Optimize with AI"
-      },
-      "mock": {
-        "newCourse": "New Course",
-        "heroTitle": "Start teaching the language {joy}",
-        "joy": "with joy",
-        "heroDesc": "Ready-made scenarios your students will love. Zero stress, 100% results.",
-        "buyNow": "Buy now and start teaching",
-        "learnMore": "Learn more",
-        "addImage": "Add main image (Drag & Drop)"
-      },
-      "optimization": {
-        "title": "AI Landing Optimization",
-        "desc": "We detected {count} areas for improvement to increase conversion by approx. {percent}%.",
-        "current": "Current Version",
-        "aiSuggestion": "AI Suggestion (Improved conversion)",
-        "recommendation": "RECOMMENDATION",
-        "skip": "Skip changes",
-        "apply": "Apply optimization",
-        "success": "AI changes have been applied to the project!",
-        "processing": "Working on the project...",
-        "processingDesc": "\"Scanning your copy for benefit language and analyzing market heatmaps.\"",
-        "analysingHeaders": "Analyzing headers...",
-        "pickingColors": "Choosing color palette...",
-        "renderingPreview": "Rendering preview...",
-        "paletteTitle": "Improved Color Palette (Ocean Night)",
-        "paletteDesc": "We will change the accents to a more professional navy and energetic blue.",
-        "suggestionTitle": "Stop wasting hours on preparation. Choose ready-made solutions.",
-        "suggestionDesc": "Join 500+ teachers who reclaimed 10 hours a week. We guarantee a smile on every student's face.",
-        "suggestionButton": "Claim your time and start now"
-      },
-      "toasts": {
-        "saved": "Landing page saved successfully!"
-      }
     },
     "integrations": {
-      "title": "Educational BaseLinker",
-      "subtitle": "Globálny predaj materiálov a AI automatizácia.",
-      "loading": "Načítavajú sa preklady...",
-      "addStore": "Pridať obchod",
-      "sync_status": "Synchronizácia: {date}",
-      "today": "Dnes",
-      "tabs": {
-        "sync": "Sklad a synchronizácia",
-        "agent": "Publikačný agent",
-        "settings": "Nastavenia Marketplace"
-      },
-      "marketplaces": {
-        "groups": {
-          "poland": "Poľsko",
-          "usa": "USA",
-          "dach": "Nemecko (DACH)",
-          "uk": "Veľká Británia",
-          "fr_es": "Francúzsko/Španielsko"
+        "title": "Educational BaseLinker",
+        "subtitle": "Global materials sales and AI automation.",
+        "loading": "Loading translations...",
+        "addStore": "Add store",
+        "sync_status": "Sync: {date}",
+        "today": "Today",
+        "tabs": {
+            "sync": "Warehouse & Sync",
+            "agent": "Publication Agent",
+            "settings": "Marketplace Settings"
         },
-        "names": {
-          "wp": "WooCommerce / Publigo",
-          "wp_full": "WordPress / Publigo",
-          "tpt": "Teachers Pay Teachers",
-          "etsy": "Etsy Education",
-          "eduki": "Eduki (Nemecko)",
-          "tes": "TES (UK)",
-          "mieux": "MieuxEnseigner (Francúzsko/Španielsko)"
+        "marketplaces": {
+            "groups": {
+                "poland": "Poland",
+                "usa": "USA",
+                "dach": "Germany (DACH)",
+                "uk": "UK",
+                "fr_es": "France/Spain"
+            },
+            "names": {
+                "wp": "WooCommerce / Publigo",
+                "wp_full": "WordPress / Publigo",
+                "tpt": "Teachers Pay Teachers",
+                "etsy": "Etsy Education",
+                "eduki": "Eduki (Germany)",
+                "tes": "TES (UK)",
+                "mieux": "MieuxEnseigner (France/Spain)"
+            }
+        },
+        "inventory": {
+            "title": "Global Materials Inventory",
+            "badge": "Central Warehouse",
+            "description": "Manage source files and their presence in different markets.",
+            "source": "Source: kamilaenglish.com",
+            "allFiles": "All PDFs, Games and Audio in one place",
+            "updateBtn": "Update Inventory",
+            "syncBtn": "Sync Inventory",
+            "progress": "Sync progress",
+            "log": "System Log",
+            "waiting": "Waiting for start...",
+            "logs": {
+                "init": "Initializing connection with external systems...",
+                "auth": "Authorizing Publigo (wp-idea) & WooCommerce...",
+                "fetching": "Fetching product list (Multi-Channel Sourcing)...",
+                "syncing": "Syncing stock levels and digital files...",
+                "complete": "Sync complete. Detected {count} new materials.",
+                "agent_init": "Initializing environment for {mkt}...",
+                "agent_login": "Logging into seller panel...",
+                "agent_fill": "Filling form: {title}...",
+                "agent_optimize": "Optimizing SEO and uploading files...",
+                "agent_done": "Ready! Product is waiting for approval."
+            },
+            "toasts": {
+                "sync_success": "Warehouse updated successfully.",
+                "analysis_done": "AI Analysis complete. Suggested data is ready.",
+                "no_tokens": "Insufficient tokens. Top up your account.",
+                "tokens_spent": "{count} tokens deducted for AI operation.",
+                "test_woo": "Testing WooCommerce connection...",
+                "woo_success": "Connected successfully to kamilaenglish.com (API v3)",
+                "test_manus": "Verifying Manus AI license...",
+                "manus_success": "License active. Agent ready for work.",
+                "settings_saved": "Settings saved locally.",
+                "new_channel": "Opening new sales channel configurator...",
+                "edit_schedule": "Schedule editing available in system settings.",
+                "importing": "Importing new products..."
+            },
+            "stats": {
+                "products_short": "prod."
+            }
+        },
+        "schedule": {
+            "title": "Schedule",
+            "daily02": "Daily at 02:00",
+            "active": "Active",
+            "disabled": "Disabled",
+            "checkOnlyChanges": "Check only changes",
+            "changeCron": "Change cron settings"
+        },
+        "aiTip": {
+            "title": "AI Tip",
+            "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
+            "importBtn": "Import now"
+        },
+        "agent": {
+            "catalogTitle": "Product Catalog",
+            "ready": "Ready",
+            "emptyState": {
+                "title": "Select product and target market",
+                "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
+            },
+            "selectMarket": "Select target market",
+            "launchBtn": "Launch Agent",
+            "launchAdmin": "Launch Agent (Admin)",
+            "launchPoints": "Launch for {count} pts",
+            "working": "Agent Working...",
+            "manusMode": "Manus Mode: Active",
+            "marketPrefix": "EnglishLearning: ",
+            "yourBalance": "Your balance",
+            "analysisTitle": "AI Analysis for {market}",
+            "regionalOptimization": "Regional optimization",
+            "suggestedTitle": "Suggested Title (SEO Local)",
+            "suggestedPrice": "Price (PPP Conversion)",
+            "sellingProb": "Selling Probability",
+            "veryHigh": "VERY HIGH",
+            "success": {
+                "title": "Task Completed!",
+                "description": "AI Agent successfully visited {market} and published your product.",
+                "viewLogs": "VIEW SESSION LOGS"
+            },
+            "toasts": {
+                "session_manager": "Opening session manager...",
+                "proxy_success": "Proxy: {ip} ({location}) OK",
+                "report_title": "Agent Report",
+                "report_desc": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}"
+            },
+            "stats": {
+                "points": "pts"
+            },
+            "mockAnalysis": {
+                "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
+                "suggestedPrice": "$12.99",
+                "subject": "English Language Arts",
+                "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
+                "description": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!"
+            },
+            "idle": {
+                "title": "In standby",
+                "description": "Run agent to start automation process on platform {market}."
+            }
+        },
+        "settings": {
+            "title": "Multi-Channel Connections",
+            "description": "Configure access data for external stores.",
+            "saveAll": "Save all",
+            "lastSaved": "Last saved: {time}",
+            "woo": {
+                "title": "WooCommerce / WordPress Site",
+                "url": "Store URL (REST API)",
+                "key": "Consumer Key",
+                "secret": "Consumer Secret",
+                "connected": "Connected",
+                "autoSync": "AUTO-SYNC ON",
+                "test": "Test"
+            },
+            "manus": {
+                "title": "Manus AI Session",
+                "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
+                "instance": "Agent API Instance",
+                "test": "Test Manus",
+                "manage": "Manage Session",
+                "proxy": "Test Proxy"
+            },
+            "mailerlite": {
+                "title": "MailerLite Integration",
+                "api_key": "MailerLite API Key",
+                "placeholder": "ml_...",
+                "groups": "Subscriber Group ID",
+                "test": "Test Connection"
+            },
+            "manychat": {
+                "title": "ManyChat Automation",
+                "api_key": "ManyChat API Key",
+                "placeholder": "mc_...",
+                "automation_id": "Default Flow ID",
+                "test": "Test Automation"
+            }
         }
-      },
-      "inventory": {
-        "title": "Globálny inventár materiálov",
-        "badge": "Centrálny sklad",
-        "description": "Spravujte zdrojové súbory a ich prítomnosť na rôznych trhoch.",
-        "source": "Zdroj: kamilaenglish.com",
-        "allFiles": "Všetky PDF, hry a audio na jednom mieste",
-        "updateBtn": "Aktualizovať inventár",
-        "syncBtn": "Synchronizovať inventár",
-        "progress": "Priebeh synchronizácie",
-        "log": "Systémový log",
-        "waiting": "Čaká sa na spustenie...",
-        "logs": {
-          "init": "Inicializácia spojenia s externými systémami...",
-          "auth": "Autorizácia Publigo (wp-idea) & WooCommerce...",
-          "fetching": "Získavanie zoznamu produktov (Multi-Channel Sourcing)...",
-          "syncing": "Synchronizácia stavu zásob a digitálnych súborov...",
-          "complete": "Synchronizácia dokončená. Zistených {count} nových materiálov.",
-          "agent_init": "Inicializácia prostredia pre {mkt}...",
-          "agent_login": "Prihlasovanie do panela predajcu...",
-          "agent_fill": "Vypĺňanie formulára: {title}...",
-          "agent_optimize": "Optimalizácia SEO a nahrávanie súborov...",
-          "agent_done": "Hotovo! Produkt čaká na schválenie."
+    },
+    "abandonedHub": {
+        "title": "Abandoned Cart Hub",
+        "subtitle": "Recover lost sales and manage leads",
+        "table": {
+            "customer": "Customer",
+            "cart": "Cart Items",
+            "value": "Value",
+            "lastActive": "Last Active",
+            "actions": "Actions"
         },
-        "toasts": {
-          "sync_success": "Sklad bol úspešne aktualizovaný.",
-          "analysis_done": "AI analýza dokončená. Navrhované údaje sú pripravené.",
-          "no_tokens": "Nedostatok tokenov. Dobite si účet.",
-          "tokens_spent": "{count} tokenov odpočítaných za AI operáciu.",
-          "test_woo": "Testovanie pripojenia WooCommerce...",
-          "woo_success": "Úspešne pripojené k kamilaenglish.com (API v3)",
-          "test_manus": "Overovanie licencie Manus AI...",
-          "manus_success": "Licencia aktívna. Agent pripravený na prácu.",
-          "settings_saved": "Nastavenia uložené lokálne.",
-          "new_channel": "Otváranie konfigurátora nového predajného kanála...",
-          "edit_schedule": "Úprava plánu je k dispozícii v nastaveniach systému.",
-          "importing": "Importujú sa nové produkty..."
+        "actions": {
+            "sendReminder": "Send Reminder",
+            "recoveryLink": "Copy Recovery Link",
+            "delete": "Remove lead"
         },
-        "stats": {
-          "products_short": "prod."
+        "status": {
+            "contacted": "Contacted",
+            "pending": "Pending",
+            "recovered": "Recovered"
+        },
+        "notifications": {
+            "reminderSent": "Recovery email simulation sent to {email}",
+            "linkCopied": "Recovery link copied with discount code!"
         }
-      },
-      "schedule": {
-        "title": "Plán",
-        "daily02": "Denne o 02:00",
-        "active": "Aktívny",
-        "disabled": "Vypnutý",
-        "checkOnlyChanges": "Kontrolovať iba zmeny",
-        "changeCron": "Zmeniť nastavenia cronu"
-      },
-      "aiTip": {
-        "title": "AI Tip",
-        "description": "Zistili sme {count} nových produktov na WordPress, ktoré v tomto obchode nemáte. Chcete ich stiahnuť?",
-        "importBtn": "Importovať teraz"
-      },
-      "agent": {
-        "catalogTitle": "Katalóg produktov",
-        "ready": "Pripravený",
-        "emptyState": {
-          "title": "Vyberte produkt a cieľový trh",
-          "description": "Manus AI Agent urobí prácu za vás – prihlási sa, vyplní údaje a zverejní produkt na vybranej platforme."
-        },
-        "selectMarket": "Vyberte cieľový trh",
-        "launchBtn": "Spustiť agenta",
-        "launchAdmin": "Spustiť agenta (Admin)",
-        "launchPoints": "Spustiť za {count} bodov",
-        "working": "Agent pracuje...",
-        "manusMode": "Manus mód: Aktívny",
-        "marketPrefix": "EnglishLearning: ",
-        "yourBalance": "Váš zostatok",
-        "analysisTitle": "AI analýza pre {market}",
-        "regionalOptimization": "Regionálna optimalizácia",
-        "suggestedTitle": "Navrhovaný názov (SEO lokálne)",
-        "suggestedPrice": "Cena (PPP konverzia)",
-        "sellingProb": "Pravdepodobnosť predaja",
-        "veryHigh": "VEĽMI VYSOKÁ",
-        "success": {
-          "title": "Úloha dokončená!",
-          "description": "AI Agent úspešne navštívil {market} a zverejnil váš produkt.",
-          "viewLogs": "ZOBRAZIŤ LOGY RELÁCIE"
-        },
-        "toasts": {
-          "session_manager": "Otváranie správcu relácií...",
-          "proxy_success": "Proxy: {ip} ({location}) OK",
-          "report_title": "Správa agenta",
-          "report_desc": "Prihlásenie: OK, Formulár: Vyplnený, Obrázky: Nahrané, SEO: Optimalizované. Celkový čas: {time}"
-        },
-        "stats": {
-          "points": "bodov"
-        },
-        "mockAnalysis": {
-          "optimizedTitleSuffix": "Komplexný výučbový materiál pre učiteľov",
-          "suggestedPrice": "12,99 €",
-          "subject": "Anglický jazyk",
-          "seoTags": "homeschool, pracovné listy, slovná zásoba, flashcards, zdroje pre učiteľov",
-          "description": "Odomknite potenciál svojej triedy s týmto prémiovým produktom {title}. \n\nNavrhnuté pedagógmi pre pedagógov, tento zdroj obsahuje:\n- Kompletné PDF scenáre\n- Pracovné listy pripravené na tlač\n- Interaktívne vizuálne pomôcky.\n\nIdeálne pre online aj prezenčné lekcie!"
-        },
-        "idle": {
-          "title": "V pohotovosti",
-          "description": "Spustite agenta na začatie procesu automatizácie na platforme {market}."
-        }
-      },
-      "settings": {
-        "title": "Multikanálové pripojenia",
-        "description": "Nakonfigurujte prístupové údaje pre externé obchody.",
-        "saveAll": "Uložiť všetko",
-        "lastSaved": "Posledné uloženie: {time}",
-        "woo": {
-          "title": "Webová stránka WooCommerce / WordPress",
-          "url": "URL obchodu (REST API)",
-          "key": "Consumer Key",
-          "secret": "Consumer Secret",
-          "connected": "Pripojené",
-          "autoSync": "AUTO-SYNC ZAPNUTÝ",
-          "test": "Testovať"
-        },
-        "manus": {
-          "title": "Manus AI relácia",
-          "description": "Agent používa \"Browser Operator Mode\", prihlasuje sa do vašich účtov. Nahrajte session cookies (JSON), aby ste sa vyhli problémom s 2FA.",
-          "instance": "Inštancia Agent API",
-          "test": "Testovať Manus",
-          "manage": "Spravovať reláciu",
-          "proxy": "Testovať Proxy"
-        }
-      }
     }
-  },
-  "logs": {
-    "init": "🚀 Initializing AI Scraper agent...",
-    "connect": "🔍 Connecting to API session...",
-    "extract": "🧩 Extracting mechanics and metadata...",
-    "images": "🖼️ Generating preview thumbnails...",
-    "seo": "✍️ Crafting SEO-optimized descriptions...",
-    "pricing": "💰 Calculating regional pricing...",
-    "finalize": "✨ Finalizing product drafts..."
-  },
-  "interactive": {
-    "title": "Interactive Content",
-    "subtitle": "Import and optimize Games with AI",
-    "placeholder": "Paste links (one per line)...",
-    "found": "Found {count} interactive items!",
-    "generate": "Generate drafts",
-    "createDrafts": "Accept and create drafts",
-    "success": "Successfully imported {count} products!",
-    "preview_title": "AI Draft Preview",
-    "preview_desc": "Review generated products and test interactive content.",
-    "logs": {
-      "launching": "🚀 Launching real-time scraping agent...",
-      "analyzing": "🔍 Analyzing: {url}...",
-      "private": "⚠️ Link {url} appears to be a private collection. Skipping - please use individual game links.",
-      "extracted": "✅ Extracted: {title}",
-      "dropped": "❌ Connection dropped for: {url}",
-      "complete": "Scraping complete! Successfully extracted metadata for {count} assets."
-    }
-  },
-  "integrations": {
-    "title": "Educational BaseLinker",
-    "subtitle": "Global materials sales and AI automation.",
-    "loading": "Loading translations...",
-    "addStore": "Add store",
-    "sync_status": "Sync: {date}",
-    "today": "Today",
-    "tabs": {
-      "sync": "Warehouse & Sync",
-      "agent": "Publication Agent",
-      "settings": "Marketplace Settings"
-    },
-    "marketplaces": {
-      "groups": {
-        "poland": "Poland",
-        "usa": "USA",
-        "dach": "Germany (DACH)",
-        "uk": "UK",
-        "fr_es": "France/Spain"
-      },
-      "names": {
-        "wp": "WooCommerce / Publigo",
-        "wp_full": "WordPress / Publigo",
-        "tpt": "Teachers Pay Teachers",
-        "etsy": "Etsy Education",
-        "eduki": "Eduki (Germany)",
-        "tes": "TES (UK)",
-        "mieux": "MieuxEnseigner (France/Spain)"
-      }
-    },
-    "inventory": {
-      "title": "Global Materials Inventory",
-      "badge": "Central Warehouse",
-      "description": "Manage source files and their presence in different markets.",
-      "source": "Source: kamilaenglish.com",
-      "allFiles": "All PDFs, Games and Audio in one place",
-      "updateBtn": "Update Inventory",
-      "syncBtn": "Sync Inventory",
-      "progress": "Sync progress",
-      "log": "System Log",
-      "waiting": "Waiting for start...",
-      "logs": {
-        "init": "Initializing connection with external systems...",
-        "auth": "Authorizing Publigo (wp-idea) & WooCommerce...",
-        "fetching": "Fetching product list (Multi-Channel Sourcing)...",
-        "syncing": "Syncing stock levels and digital files...",
-        "complete": "Sync complete. Detected {count} new materials.",
-        "agent_init": "Initializing environment for {mkt}...",
-        "agent_login": "Logging into seller panel...",
-        "agent_fill": "Filling form: {title}...",
-        "agent_optimize": "Optimizing SEO and uploading files...",
-        "agent_done": "Ready! Product is waiting for approval."
-      },
-      "toasts": {
-        "sync_success": "Warehouse updated successfully.",
-        "analysis_done": "AI Analysis complete. Suggested data is ready.",
-        "no_tokens": "Insufficient tokens. Top up your account.",
-        "tokens_spent": "{count} tokens deducted for AI operation.",
-        "test_woo": "Testing WooCommerce connection...",
-        "woo_success": "Connected successfully to kamilaenglish.com (API v3)",
-        "test_manus": "Verifying Manus AI license...",
-        "manus_success": "License active. Agent ready for work.",
-        "settings_saved": "Settings saved locally.",
-        "new_channel": "Opening new sales channel configurator...",
-        "edit_schedule": "Schedule editing available in system settings.",
-        "importing": "Importing new products..."
-      },
-      "stats": {
-        "products_short": "prod."
-      }
-    },
-    "schedule": {
-      "title": "Schedule",
-      "daily02": "Daily at 02:00",
-      "active": "Active",
-      "disabled": "Disabled",
-      "checkOnlyChanges": "Check only changes",
-      "changeCron": "Change cron settings"
-    },
-    "aiTip": {
-      "title": "AI Tip",
-      "description": "We detected {count} new products on WordPress that you don't have in this store. Do you want to download them?",
-      "importBtn": "Import now"
-    },
-    "agent": {
-      "catalogTitle": "Product Catalog",
-      "ready": "Ready",
-      "emptyState": {
-        "title": "Select product and target market",
-        "description": "Manus AI Agent will do the work for you – login, fill data and publish product on selected platform."
-      },
-      "selectMarket": "Select target market",
-      "launchBtn": "Launch Agent",
-      "launchAdmin": "Launch Agent (Admin)",
-      "launchPoints": "Launch for {count} pts",
-      "working": "Agent Working...",
-      "manusMode": "Manus Mode: Active",
-      "marketPrefix": "EnglishLearning: ",
-      "yourBalance": "Your balance",
-      "analysisTitle": "AI Analysis for {market}",
-      "regionalOptimization": "Regional optimization",
-      "suggestedTitle": "Suggested Title (SEO Local)",
-      "suggestedPrice": "Price (PPP Conversion)",
-      "sellingProb": "Selling Probability",
-      "veryHigh": "VERY HIGH",
-      "success": {
-        "title": "Task Completed!",
-        "description": "AI Agent successfully visited {market} and published your product.",
-        "viewLogs": "VIEW SESSION LOGS"
-      },
-      "toasts": {
-        "session_manager": "Opening session manager...",
-        "proxy_success": "Proxy: {ip} ({location}) OK",
-        "report_title": "Agent Report",
-        "report_desc": "Logged in: OK, Form: Filled, Images: Uploaded, SEO: Optimized. Total time: {time}"
-      },
-      "stats": {
-        "points": "pts"
-      },
-      "mockAnalysis": {
-        "optimizedTitleSuffix": "Comprehensive Teaching Material for Teachers",
-        "suggestedPrice": "$12.99",
-        "subject": "English Language Arts",
-        "seoTags": "homeschool, worksheets, vocabulary, flashcards, teacher resources",
-        "description": "Unlock the potential of your classroom with this premium {title}. \n\nDesigned by educators for educators, this resource includes:\n- Full PDF Scenarios\n- Ready-to-print Worksheets\n- Interactive visual aids.\n\nPerfect for both Online and Stationary lessons!"
-      },
-      "idle": {
-        "title": "In standby",
-        "description": "Run agent to start automation process on platform {market}."
-      }
-    },
-    "settings": {
-      "title": "Multi-Channel Connections",
-      "description": "Configure access data for external stores.",
-      "saveAll": "Save all",
-      "lastSaved": "Last saved: {time}",
-      "woo": {
-        "title": "WooCommerce / WordPress Site",
-        "url": "Store URL (REST API)",
-        "key": "Consumer Key",
-        "secret": "Consumer Secret",
-        "connected": "Connected",
-        "autoSync": "AUTO-SYNC ON",
-        "test": "Test"
-      },
-      "manus": {
-        "title": "Manus AI Session",
-        "description": "Agent uses \"Browser Operator Mode\", logging into your accounts. Upload session cookies (JSON) to avoid 2FA issues.",
-        "instance": "Agent API Instance",
-        "test": "Test Manus",
-        "manage": "Manage Session",
-        "proxy": "Test Proxy"
-      },
-      "mailerlite": {
-        "title": "MailerLite Integration",
-        "api_key": "MailerLite API Key",
-        "placeholder": "ml_...",
-        "groups": "Subscriber Group ID",
-        "test": "Test Connection"
-      },
-      "manychat": {
-        "title": "ManyChat Automation",
-        "api_key": "ManyChat API Key",
-        "placeholder": "mc_...",
-        "automation_id": "Default Flow ID",
-        "test": "Test Automation"
-      }
-    }
-  },
-  "abandonedHub": {
-    "title": "Abandoned Cart Hub",
-    "subtitle": "Recover lost sales and manage leads",
-    "table": {
-      "customer": "Customer",
-      "cart": "Cart Items",
-      "value": "Value",
-      "lastActive": "Last Active",
-      "actions": "Actions"
-    },
-    "actions": {
-      "sendReminder": "Send Reminder",
-      "recoveryLink": "Copy Recovery Link",
-      "delete": "Remove lead"
-    },
-    "status": {
-      "contacted": "Contacted",
-      "pending": "Pending",
-      "recovered": "Recovered"
-    },
-    "notifications": {
-      "reminderSent": "Recovery email simulation sent to {email}",
-      "linkCopied": "Recovery link copied with discount code!"
-    }
-  }
 }
