@@ -28,18 +28,18 @@ export async function parseInstitutionalDocument(base64Image: string) {
     }
 
     lastScanTime = now;
-    console.log("[OCR] Analyzing document...");
+    console.info("[OCR] Analyzing document...");
 
     const isSimulatorMode = typeof window !== 'undefined' && localStorage.getItem('feature_simulator_mode') === 'true';
 
     if (isSimulatorMode) {
-        console.log("[OCR] Simulator Mode is ON. Simulating image extraction API.");
+        console.info("[OCR] Simulator Mode is ON. Simulating image extraction API.");
         // Simulate delay
         await new Promise(r => setTimeout(r, 2000));
     } else {
         // In a real application, this would call an API route that interacts with Gemini 2.0 Flash Vision
         // For now, if no key, we also fallback to setTimeout simulation.
-        console.log("[OCR] Production Mode is ON. Fallback mock invoked since API is not wired yet in this example.");
+        console.info("[OCR] Production Mode is ON. Fallback mock invoked since API is not wired yet in this example.");
         await new Promise(r => setTimeout(r, 2000));
     }
 

@@ -355,7 +355,6 @@ export default function SettingsContent({ dictionary }: { dictionary: any }) {
                 ]);
                 const msg = t.adminSettings?.automation?.agent_delivered;
                 const finalMsg = typeof msg === 'string' ? msg.replace("{count}", data.processedItems.toString()) : `Processed ${data.processedItems} items`;
-                console.log(finalMsg);
             }
         } catch (e) {
             console.error(e);

@@ -33,7 +33,7 @@ async function updateOrderStatus(externalId: string, status: string, paymentId: 
       };
       orders[idx].updatedAt = new Date().toISOString();
       await fs.writeFile(ORDERS_FILE, JSON.stringify(orders, null, 2), "utf8");
-      console.log(`[PayNow Webhook] Order ${externalId} updated to ${mappedStatus} (PayNow: ${status})`);
+      console.info(`[PayNow Webhook] Order ${externalId} updated to ${mappedStatus} (PayNow: ${status})`);
     }
   } catch (err) {
     console.error("[PayNow Webhook] Failed to update order:", err);

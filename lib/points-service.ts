@@ -94,7 +94,7 @@ export function updateUserPoints(userId: string, amount: number, type: 'earn' | 
     const xpNeeded = getXpForLevel(newLevel);
     if (newXp >= xpNeeded) {
         newLevel++;
-        console.log(`🆙 [Points] User ${userId} LEVELED UP to ${newLevel}!`);
+        console.info(`🆙 [Points] User ${userId} LEVELED UP to ${newLevel}!`);
     }
 
     const newBalance = type === 'earn' ? userPoints.balance + amount : userPoints.balance - amount;
@@ -115,7 +115,7 @@ export function updateUserPoints(userId: string, amount: number, type: 'earn' | 
     localStorage.setItem(POINTS_DB_KEY, JSON.stringify(db));
 
     // In production, we would also call /api/user/points to persist on server
-    console.log(`✨ [Points Service] User ${userId} ${type}ed ${amount} points for ${reason}. New balance: ${newBalance}`);
+    console.info(`✨ [Points Service] User ${userId} ${type}ed ${amount} points for ${reason}. New balance: ${newBalance}`);
 }
 
 /**
@@ -137,7 +137,7 @@ export function triggerPointEvent(userId: string, event: PointTransaction['reaso
                 const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
                 if (diffDays === 0) {
-                    console.log("📅 [Points] Already checked in today.");
+                    console.info("📅 [Points] Already checked in today.");
                     return;
                 } else if (diffDays === 1) {
                     streak++;

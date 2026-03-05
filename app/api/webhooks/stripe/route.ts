@@ -26,7 +26,7 @@ async function updateOrderStatus(orderId: string, status: string, transactionId:
       };
       orders[idx].updatedAt = new Date().toISOString();
       await fs.writeFile(ORDERS_FILE, JSON.stringify(orders, null, 2), "utf8");
-      console.log(`[Stripe Webhook] Order ${orderId} updated to ${status}`);
+      console.info(`[Stripe Webhook] Order ${orderId} updated to ${status}`);
     }
   } catch (err) {
     console.error("[Stripe Webhook] Failed to update order:", err);
@@ -93,7 +93,7 @@ export async function POST(req: NextRequest) {
       break;
     }
     default:
-      console.log(`[Stripe Webhook] Unhandled event: ${event.type}`);
+      console.info(`[Stripe Webhook] Unhandled event: ${event.type}`);
   }
 
   return NextResponse.json({ received: true });

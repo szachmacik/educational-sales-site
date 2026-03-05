@@ -14,7 +14,7 @@ export interface ExternalProduct {
  * Universal Sync Adapter for Baselinker / Wholesale
  */
 export async function syncExternalProducts(source: 'baselinker' | 'wholesale'): Promise<void> {
-    console.log(`🔄 [Sync Service] Starting sync from ${source}...`);
+    console.info(`🔄 [Sync Service] Starting sync from ${source}...`);
 
     // In production, this would be an actual API call
     // await fetch('https://api.baselinker.com/connector.php', ...);
@@ -49,7 +49,7 @@ export async function syncExternalProducts(source: 'baselinker' | 'wholesale'): 
         }
     }));
 
-    console.log(`✅ [Sync Service] Successfully mapped ${internalProducts.length} products from ${source}.`);
+    console.info(`✅ [Sync Service] Successfully mapped ${internalProducts.length} products from ${source}.`);
 
     // Here we would save to products.json or a real DB
     // await saveProducts(internalProducts);
@@ -61,6 +61,6 @@ export async function syncExternalProducts(source: 'baselinker' | 'wholesale'): 
 export async function updateStockFromExternal(productId: string): Promise<number> {
     // Simulated stock check
     const newStock = Math.floor(Math.random() * 20);
-    console.log(`📦 [Stock Sync] Product ${productId} updated to ${newStock} units.`);
+    console.info(`📦 [Stock Sync] Product ${productId} updated to ${newStock} units.`);
     return newStock;
 }

@@ -9,7 +9,7 @@ const IS_PROD_MODE = API_KEY && API_KEY.length > 5 && API_URL?.includes('http');
 const USE_MOCK = !IS_PROD_MODE;
 
 if (typeof window === 'undefined') {
-    console.log(`📡 [API System] Mode: ${IS_PROD_MODE ? 'PRODUCTION (Real API)' : 'TEST (Mock/Scraped Data)'}`);
+    console.info(`📡 [API System] Mode: ${IS_PROD_MODE ? 'PRODUCTION (Real API)' : 'TEST (Mock/Scraped Data)'}`);
 }
 
 export async function getCourses(): Promise<Course[]> {
@@ -104,7 +104,7 @@ export async function getCourses(): Promise<Course[]> {
     }
 
     try {
-        console.log(`🌐 [Server] Fetching from: ${API_URL}/wp-json/wp-idea/v2/products`);
+        console.info(`🌐 [Server] Fetching from: ${API_URL}/wp-json/wp-idea/v2/products`);
         const res = await fetch(`${API_URL}/wp-json/wp-idea/v2/products`, {
             method: 'GET',
             headers: {

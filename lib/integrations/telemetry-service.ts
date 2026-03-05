@@ -62,7 +62,7 @@ export function trackAnonymousEvent(event: string, metadata?: Record<string, any
         metadata: scrubData(metadata)
     };
 
-    console.log(`[Telemetry] Tracking: ${event}`, telemetryEvent);
+    console.info(`[Telemetry] Tracking: ${event}`, telemetryEvent);
 
     eventBuffer.push(telemetryEvent);
 
@@ -111,7 +111,7 @@ export async function flushTelemetry() {
     eventBuffer = [];
 
     try {
-        console.log(`[DataIntelligence] Silently syncing ${payload.length} anonymous data points...`, payload);
+        console.info(`[DataIntelligence] Silently syncing ${payload.length} anonymous data points...`, payload);
         fetch('/api/telemetry', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

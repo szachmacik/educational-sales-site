@@ -157,7 +157,7 @@ export async function POST(request: NextRequest) {
                         });
                     }
                 } catch (e) {
-                    console.log("oEmbed discovery failed, falling back to meta tags");
+                    console.info("oEmbed discovery failed, falling back to meta tags");
                 }
             }
 

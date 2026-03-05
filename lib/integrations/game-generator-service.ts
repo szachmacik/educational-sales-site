@@ -29,7 +29,7 @@ export async function generateGameFromPrompt(prompt: string, type: GameType): Pr
     }
 
     lastRequestTime = now_ts;
-    console.log(`[GameGenerator] Generating ${type} for prompt: "${prompt}"`);
+    console.info(`[GameGenerator] Generating ${type} for prompt: "${prompt}"`);
 
     const mockId = `game_${Date.now()}`;
     const now = new Date().toISOString();
@@ -63,7 +63,7 @@ export async function generateGameFromPrompt(prompt: string, type: GameType): Pr
             console.error("[GameGenerator] Network error, using fallback.");
         }
     } else {
-        console.log("[GameGenerator] Simulator Mode is ON. Using mock game generation.");
+        console.info("[GameGenerator] Simulator Mode is ON. Using mock game generation.");
         await new Promise(resolve => setTimeout(resolve, 1500));
     }
 

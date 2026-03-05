@@ -6,8 +6,8 @@ export async function POST(request: Request) {
         const body = await request.json();
         const { source, items, timestamp } = body;
 
-        console.log(`[Agent Webhook] Received data from ${source}`);
-        console.log(`[Agent Webhook] Items found: ${items.length}`);
+        console.info(`[Agent Webhook] Received data from ${source}`);
+        console.info(`[Agent Webhook] Items found: ${items.length}`);
 
         // In a real application, you would:
         // 1. Validate the secret key

@@ -30,7 +30,7 @@ export async function issueInFaktInvoice(orderData: any, language: string = 'pl'
         throw new Error("InFakt not configured");
     }
 
-    console.log(`[InFakt] Issuing invoice (${language.toUpperCase()}) for Order #${orderData.orderNumber}`);
+    console.info(`[InFakt] Issuing invoice (${language.toUpperCase()}) for Order #${orderData.orderNumber}`);
 
     try {
         if (!isSimulatorMode) {
@@ -59,7 +59,7 @@ export async function issueInFaktInvoice(orderData: any, language: string = 'pl'
                 console.warn(`[InFakt] Invoice creation failed with status ${response.status}. Using fallback simulation for demo.`);
             }
         } else {
-            console.log("[InFakt] Simulator mode is ON. Simulating invoice generation API call.", orderData);
+            console.info("[InFakt] Simulator mode is ON. Simulating invoice generation API call.", orderData);
             await new Promise(resolve => setTimeout(resolve, 1000));
         }
     } catch (error) {
@@ -83,7 +83,7 @@ export async function issueInstitutionalInvoice(orderData: any, institutionalDat
         throw new Error("InFakt not configured");
     }
 
-    console.log(`[InFakt] Issuing Institutional Invoice for Order #${orderData.orderNumber}`);
+    console.info(`[InFakt] Issuing Institutional Invoice for Order #${orderData.orderNumber}`);
 
     // Workaround: InFakt API doesn't support dual JST fields yet.
     const notes = `ODBIORCA: ${institutionalData.recipientName}, ${institutionalData.recipientStreet}, ${institutionalData.recipientZip} ${institutionalData.recipientCity}`;
@@ -119,7 +119,7 @@ export async function issueInstitutionalInvoice(orderData: any, institutionalDat
                 console.warn(`[InFakt] Institutional invoice creation failed with status ${response.status}. Using fallback simulation for demo.`);
             }
         } else {
-            console.log("[InFakt] Simulator mode is ON. Simulating institutional invoice generation API call.", institutionalData);
+            console.info("[InFakt] Simulator mode is ON. Simulating institutional invoice generation API call.", institutionalData);
             await new Promise(resolve => setTimeout(resolve, 1500));
         }
     } catch (error) {

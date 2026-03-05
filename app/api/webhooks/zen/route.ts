@@ -50,7 +50,7 @@ async function updateOrderStatus(merchantTransactionId: string, status: string, 
       };
       orders[idx].updatedAt = new Date().toISOString();
       await fs.writeFile(ORDERS_FILE, JSON.stringify(orders, null, 2), "utf8");
-      console.log(`[Zen Webhook] Order ${merchantTransactionId} → ${mappedStatus} (Zen: ${status})`);
+      console.info(`[Zen Webhook] Order ${merchantTransactionId} → ${mappedStatus} (Zen: ${status})`);
     }
   } catch (err) {
     console.error("[Zen Webhook] Failed to update order:", err);

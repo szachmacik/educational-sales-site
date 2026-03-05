@@ -71,7 +71,7 @@ export async function POST(req: NextRequest) {
         if (!emailSent) {
             console.warn("[Contact] Email sending failed, but logging the submission.");
             // Still return success to user — log to console for now
-            console.log(`[Contact] Form submission: name=${name}, email=${email}, message=${message.substring(0, 100)}`);
+            console.info(`[Contact] Form submission: name=${name}, email=${email}, message=${message.substring(0, 100)}`);
         }
 
         return NextResponse.json({ success: true });

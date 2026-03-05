@@ -26,7 +26,7 @@ export function trackPartnerImpression(partnerId: string, moduleId: string) {
         trackedAt: new Date().toISOString()
     });
 
-    console.log(`[Monetization] Anonymous impression tracked for partner: ${partnerId}`);
+    console.info(`[Monetization] Anonymous impression tracked for partner: ${partnerId}`);
 }
 
 /**

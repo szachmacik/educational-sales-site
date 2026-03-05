@@ -31,7 +31,7 @@ export async function POST(request: Request) {
         const trimmed = reports.slice(0, 50);
         await fs.writeFile(REPORTS_FILE, JSON.stringify(trimmed, null, 2));
 
-        console.log(`[Manus Report] Received and unified in ${REPORTS_FILE}`);
+        console.info(`[Manus Report] Received and unified in ${REPORTS_FILE}`);
 
         return NextResponse.json({ success: true, message: "Report unified and saved." });
     } catch (error: any) {

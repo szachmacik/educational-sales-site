@@ -76,7 +76,7 @@ export async function sendMetaCapiEvent(
         });
 
         const result = await response.json();
-        console.log(`[MetaCAPI] Event ${eventName} sent.`, result);
+        console.info(`[MetaCAPI] Event ${eventName} sent.`, result);
         return { success: true, result };
 
     } catch (error) {

@@ -31,7 +31,7 @@ export async function GET(
     // 3. Optional: Add sub-id or tracking tag to know it came from Kamila English store
     targetUrl.searchParams.set('subid', 'kamila_english_site');
 
-    console.log(`🚀 [Affiliate Redirect] User sent to ${partner.name} via ${targetUrl.toString()}`);
+    console.info(`🚀 [Affiliate Redirect] User sent to ${partner.name} via ${targetUrl.toString()}`);
 
     // Performance: Simple transparent redirect
     const response = NextResponse.redirect(targetUrl.toString());

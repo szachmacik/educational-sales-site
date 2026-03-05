@@ -161,14 +161,14 @@ export function processReferral(
 
     // Award bonus to REFERRER
     updateUserPoints(record.ownerId, REFERRAL_BONUS_INVITER, 'earn', 'referral');
-    console.log(`🎁 [Referral] ${REFERRAL_BONUS_INVITER} pts awarded to referrer (${record.ownerEmail})`);
+    console.info(`🎁 [Referral] ${REFERRAL_BONUS_INVITER} pts awarded to referrer (${record.ownerEmail})`);
 
     // Mark as awarded
     record.usedBy[record.usedBy.length - 1].bonusAwarded = true;
     db[referralCode] = record;
     saveDB(db);
 
-    console.log(`🎉 [Referral] New user ${newUserEmail} joined via code ${referralCode}. +${REFERRAL_BONUS_NEW_USER} pts for them.`);
+    console.info(`🎉 [Referral] New user ${newUserEmail} joined via code ${referralCode}. +${REFERRAL_BONUS_NEW_USER} pts for them.`);
 
     return {
         success: true,

@@ -62,7 +62,7 @@ export function saveUserProfile(profile: UserProfile) {
     db[profile.userId] = profile;
     localStorage.setItem(PROFILE_DB_KEY, JSON.stringify(db));
 
-    console.log(`👤 [Profile Service] Profile saved for ${profile.userId}. Complete: ${profile.isProfileComplete}`);
+    console.info(`👤 [Profile Service] Profile saved for ${profile.userId}. Complete: ${profile.isProfileComplete}`);
 
     return becameComplete;
 }
