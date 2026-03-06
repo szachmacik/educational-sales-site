@@ -22,6 +22,7 @@ import { notFound } from "next/navigation";
 import { useToast } from "@/hooks/use-toast";
 import { useCart } from "@/lib/cart-context";
 import { useState, useEffect } from "react";
+import { trackProductView, RecentlyViewedProducts } from "@/components/recently-viewed-products";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 // Globe import removed as it was moved above
 import { Language } from "@/lib/translations";
@@ -30,6 +31,15 @@ import { formatPrice as formatPriceUtil } from "@/lib/currency";
 import { TrustBadgeBar } from "@/components/marketing/growth-tools";
 import { PromoTimer } from "@/components/marketing/premium-growth";
 import { useTokens } from "@/lib/token-context";
+import { Progress } from "@/components/ui/progress";
+
+const SAMPLE_REVIEWS = [
+    { id: 1, author: "Anna K.", role: "Nauczyciel angielskiego", rating: 5, date: "2025-11-12", text: "Fantastyczne materiały! Uczniowie są zachwyceni, a ja zaoszczędziłam mnóstwo czasu na przygotowaniach. Polecam każdemu nauczycielowi.", verified: true, helpful: 24 },
+    { id: 2, author: "Marta W.", role: "Lektor języka angielskiego", rating: 5, date: "2025-10-28", text: "Bardzo profesjonalnie przygotowane. Wszystkie materiały są spójne, estetyczne i gotowe do druku. Oszczędność czasu nieoceniona!", verified: true, helpful: 18 },
+    { id: 3, author: "Tomasz B.", role: "Nauczyciel w szkole podstawowej", rating: 4, date: "2025-10-05", text: "Dobra jakość, materiały trafiają w potrzeby uczniów. Jedyne co brakuje to więcej ćwiczeń na poziomie A1. Ogólnie bardzo polecam.", verified: true, helpful: 11 },
+    { id: 4, author: "Katarzyna M.", role: "Korepetytorka", rating: 5, date: "2025-09-20", text: "Korzystam z tych materiałów od kilku miesięcy. Jakość jest naprawdę wysoka, a uczniowie chętnie z nich korzystają. Warte każdej złotówki!", verified: false, helpful: 9 },
+    { id: 5, author: "Joanna P.", role: "Nauczycielka w przedszkolu", rating: 5, date: "2025-09-01", text: "Świetne do pracy z dziećmi! Kolorowe, angażujące i dobrze dopasowane do wieku. Dzieci uwielbiają te aktywności.", verified: true, helpful: 15 },
+];
 
 const ALL_LANGUAGES: Language[] = ['pl', 'en', 'uk', 'de', 'es', 'fr', 'it', 'cs', 'sk', 'ro', 'hu', 'pt', 'lt', 'lv', 'et', 'hr', 'sr', 'sl', 'bg', 'el'];
 
@@ -55,6 +65,20 @@ export function ProductDetailView({ slug }: ProductDetailViewProps) {
             setSelectedVariant(language);
         }
     }, [language]);
+
+    // Track product view for recently viewed
+    useEffect(() => {
+        if (product) {
+            trackProductView({
+                slug: product.slug,
+                title: product.title,
+                price: product.price,
+                image: product.image || '',
+                category: product.categories[0] || '',
+            });
+        }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [product?.slug]);
 
     if (!product) {
         return (
@@ -192,19 +216,27 @@ export function ProductDetailView({ slug }: ProductDetailViewProps) {
 
                     {/* Breadcrumbs / Back */}
                     <nav className="flex mb-8" aria-label="Breadcrumb">
-                        <ol className="flex items-center space-x-2">
+                        <ol className="flex items-center flex-wrap gap-y-1 text-sm">
                             <li>
-                                <Link
-                                    href={`/${language}/shop`}
-                                    className="inline-flex items-center text-sm font-medium text-slate-500 hover:text-indigo-600 transition-colors group"
-                                >
-                                    <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-                                    {t?.products?.backToStore || "Wróć do sklepu"}
+                                <Link href={`/${language}`} className="text-slate-400 hover:text-indigo-600 transition-colors">
+                                    {language === 'pl' ? 'Strona główna' : language === 'uk' ? 'Головна' : 'Home'}
                                 </Link>
                             </li>
-                            <li className="flex items-center text-slate-300">
-                                <span className="mx-2">/</span>
-                                <span className="text-sm font-bold text-slate-400 capitalize">{primaryCategory}</span>
+                            <li className="text-slate-300 mx-2">/</li>
+                            <li>
+                                <Link href={`/${language}/products`} className="text-slate-400 hover:text-indigo-600 transition-colors">
+                                    {t?.products?.backToStore || 'Sklep'}
+                                </Link>
+                            </li>
+                            <li className="text-slate-300 mx-2">/</li>
+                            <li>
+                                <Link href={`/${language}/products?category=${primaryCategory}`} className="text-slate-500 hover:text-indigo-600 transition-colors capitalize">
+                                    {categoryName}
+                                </Link>
+                            </li>
+                            <li className="text-slate-300 mx-2">/</li>
+                            <li>
+                                <span className="text-slate-900 font-semibold line-clamp-1 max-w-[180px] sm:max-w-xs">{product.title}</span>
                             </li>
                         </ol>
                     </nav>
@@ -481,6 +513,103 @@ export function ProductDetailView({ slug }: ProductDetailViewProps) {
                         </div>
                     </div>
 
+                    {/* Customer Reviews */}
+                    <div className="border-t pt-16 mt-16">
+                        <h2 className="text-2xl font-serif font-bold mb-8">
+                            {language === 'pl' ? 'Opinie klientów' : language === 'uk' ? 'Відгуки клієнтів' : 'Customer Reviews'}
+                        </h2>
+                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-10">
+                            <div className="flex flex-col items-center justify-center bg-slate-50 rounded-2xl p-8 text-center">
+                                <span className="text-6xl font-black text-slate-900">4.8</span>
+                                <div className="flex items-center gap-0.5 mt-2">
+                                    {[1,2,3,4,5].map((s) => <Star key={s} className={cn("h-5 w-5", s <= 5 ? 'fill-amber-400 text-amber-400' : 'fill-slate-200 text-slate-200')} />)}
+                                </div>
+                                <span className="text-sm text-slate-500 mt-2">{SAMPLE_REVIEWS.length} {language === 'pl' ? 'opinii' : 'reviews'}</span>
+                            </div>
+                            <div className="lg:col-span-2 flex flex-col justify-center gap-2">
+                                {[5,4,3,2,1].map((r) => {
+                                    const count = SAMPLE_REVIEWS.filter((rv) => rv.rating === r).length;
+                                    return (
+                                        <div key={r} className="flex items-center gap-3">
+                                            <span className="text-sm font-medium w-4 text-slate-600">{r}</span>
+                                            <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400 shrink-0" />
+                                            <Progress value={(count / SAMPLE_REVIEWS.length) * 100} className="flex-1 h-2" />
+                                            <span className="text-sm text-slate-500 w-4">{count}</span>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                        <div className="space-y-6">
+                            {SAMPLE_REVIEWS.map((review) => (
+                                <div key={review.id} className="bg-white rounded-2xl border border-slate-100 p-6 shadow-sm">
+                                    <div className="flex items-start justify-between gap-4 mb-3">
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center font-bold text-indigo-700 text-sm shrink-0">{review.author.charAt(0)}</div>
+                                            <div>
+                                                <div className="flex items-center gap-2">
+                                                    <span className="font-bold text-sm text-slate-900">{review.author}</span>
+                                                    {review.verified && (
+                                                        <Badge variant="secondary" className="text-[10px] px-1.5 py-0 bg-green-50 text-green-700 border-green-200">
+                                                            <Check className="h-2.5 w-2.5 mr-0.5" />{language === 'pl' ? 'Zweryfikowany' : 'Verified'}
+                                                        </Badge>
+                                                    )}
+                                                </div>
+                                                <span className="text-xs text-slate-500">{review.role}</span>
+                                            </div>
+                                        </div>
+                                        <div className="flex flex-col items-end gap-1 shrink-0">
+                                            <div className="flex items-center gap-0.5">{[1,2,3,4,5].map((s) => <Star key={s} className={cn("h-3.5 w-3.5", s <= review.rating ? 'fill-amber-400 text-amber-400' : 'fill-slate-200 text-slate-200')} />)}</div>
+                                            <span className="text-xs text-slate-400">{new Date(review.date).toLocaleDateString(language === 'pl' ? 'pl-PL' : 'en-GB')}</span>
+                                        </div>
+                                    </div>
+                                    <p className="text-sm text-slate-700 leading-relaxed">{review.text}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Product FAQ */}
+                    <div className="border-t pt-12 mt-12">
+                        <h2 className="text-2xl font-bold mb-6">
+                            {language === 'pl' ? 'Najczęściej zadawane pytania' : language === 'uk' ? 'Часто задавані питання' : 'Frequently Asked Questions'}
+                        </h2>
+                        <div className="space-y-3 max-w-3xl">
+                            {[
+                                {
+                                    q: language === 'pl' ? 'W jakim formacie otrzymam materiały?' : language === 'uk' ? 'У якому форматі я отримаю матеріали?' : 'In what format will I receive the materials?',
+                                    a: language === 'pl' ? 'Materiały dostarczamy w formacie PDF gotowym do druku oraz edytowalnym DOCX/PPTX. Po zakupie otrzymasz link do pobrania na adres e-mail.' : language === 'uk' ? 'Матеріали надаються у форматі PDF та DOCX/PPTX. Після покупки ви отримаєте посилання на e-mail.' : 'Materials are delivered in print-ready PDF and editable DOCX/PPTX format. After purchase you will receive a download link by email.',
+                                },
+                                {
+                                    q: language === 'pl' ? 'Czy mogę używać materiałów w wielu klasach?' : language === 'uk' ? 'Чи можу я використовувати матеріали в кількох класах?' : 'Can I use the materials in multiple classes?',
+                                    a: language === 'pl' ? 'Tak! Licencja obejmuje nieograniczone użycie w Twoich klasach. Możesz drukować i używać materiałów z dowolna liczbą uczniów.' : language === 'uk' ? 'Так! Ліцензія дозволяє необмежене використання у ваших класах.' : 'Yes! The license covers unlimited use in your classes. You can print and use the materials with any number of students.',
+                                },
+                                {
+                                    q: language === 'pl' ? 'Jak długo mam dostęp do pobranych materiałów?' : language === 'uk' ? 'Скільки часу я маю доступ до завантажених матеріалів?' : 'How long do I have access to downloaded materials?',
+                                    a: language === 'pl' ? 'Dostęp jest bezterminowy. Po pobraniu materiały są Twoje na zawsze. Link do pobrania jest ważny przez 30 dni od zakupu.' : language === 'uk' ? 'Доступ безтерміновий. Після завантаження матеріали ваші назавжди.' : 'Access is permanent. Once downloaded, the materials are yours forever. The download link is valid for 30 days from purchase.',
+                                },
+                                {
+                                    q: language === 'pl' ? 'Czy mogę zwrócić zakupione materiały?' : language === 'uk' ? 'Чи можу я повернути придбані матеріали?' : 'Can I return purchased materials?',
+                                    a: language === 'pl' ? 'Ze względu na cyfrowy charakter produktów, zwroty są możliwe w ciągu 14 dni od zakupu, jeśli materiały nie zostały pobrane. Szczegóły w polityce zwrotów.' : language === 'uk' ? 'За цифровий характер продуктів, повернення можливе протягом 14 днів.' : 'Due to the digital nature of the products, returns are possible within 14 days of purchase if the materials have not been downloaded. See our returns policy for details.',
+                                },
+                            ].map((item, idx) => (
+                                <details key={idx} className="group bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+                                    <summary className="flex items-center justify-between p-5 cursor-pointer list-none hover:bg-slate-50 transition-colors">
+                                        <span className="font-semibold text-slate-900 pr-4">{item.q}</span>
+                                        <ChevronLeft className="h-4 w-4 text-slate-400 -rotate-90 group-open:rotate-90 transition-transform shrink-0" />
+                                    </summary>
+                                    <div className="px-5 pb-5 pt-0">
+                                        <p className="text-sm text-slate-600 leading-relaxed">{item.a}</p>
+                                    </div>
+                                </details>
+                            ))}
+                        </div>
+                        <div className="mt-6">
+                            <Link href={`/${language}/faq`} className="text-sm text-indigo-600 hover:text-indigo-800 font-medium underline underline-offset-2">
+                                {language === 'pl' ? 'Zobacz pełne FAQ →' : language === 'uk' ? 'Повне FAQ →' : 'View full FAQ →'}
+                            </Link>
+                        </div>
+                    </div>
                     {/* Related Products */}
                     {relatedProducts.length > 0 && (
                         <div className="border-t pt-16 mt-16">
@@ -517,6 +646,9 @@ export function ProductDetailView({ slug }: ProductDetailViewProps) {
                     )}
                 </div>
             </main>
+
+            {/* Recently Viewed Products */}
+            <RecentlyViewedProducts currentSlug={slug} />
 
             <Footer />
 

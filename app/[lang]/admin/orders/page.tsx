@@ -148,6 +148,12 @@ export default function OrdersPage() {
         return { totalRevenue, pendingCount, todayOrders };
     }, [orders]);
 
+    const handleStatusChange = useCallback((orderId: string, newStatus: OrderStatus) => {
+        const updated = orders.map(o => o.id === orderId ? { ...o, status: newStatus } : o);
+        setOrders(updated);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+    }, [orders]);
+
     const exportToCSV = useCallback(() => {
         // Safe access to translated headers
         const h = o.export_headers || {
@@ -325,9 +331,16 @@ export default function OrdersPage() {
                                                 </div>
                                             </TableCell>
                                             <TableCell>
-                                                <Badge className={cn("text-[10px] h-5 px-1.5 whitespace-nowrap", getStatusBadgeVariant(order.status))}>
-                                                    {o.status?.[order.status]}
-                                                </Badge>
+                                                <Select value={order.status} onValueChange={(val) => handleStatusChange(order.id, val as OrderStatus)}>
+                                                    <SelectTrigger className={cn("h-6 text-[10px] px-1.5 border-0 shadow-none w-auto min-w-[90px] font-semibold rounded-full", getStatusBadgeVariant(order.status))}>
+                                                        <SelectValue />
+                                                    </SelectTrigger>
+                                                    <SelectContent>
+                                                        {(['pending','processing','completed','cancelled','refunded'] as OrderStatus[]).map(s => (
+                                                            <SelectItem key={s} value={s} className="text-xs">{o.status?.[s] || s}</SelectItem>
+                                                        ))}
+                                                    </SelectContent>
+                                                </Select>
                                             </TableCell>
                                             <TableCell className="hidden md:table-cell text-right">
                                                 <span className="text-[11px] text-muted-foreground whitespace-nowrap">{formatDate(order.createdAt, language).split(",")[0]}</span>

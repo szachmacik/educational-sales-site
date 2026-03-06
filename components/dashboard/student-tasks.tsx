@@ -38,7 +38,7 @@ export function StudentTasks() {
                         W tym tygodniu skupiamy się na odmianie czasownika <b>to be</b> w czasie przeszłym (Past Simple). Pamiętaj o różnicy między <i>was</i> a <i>were</i>. Powodzenia!
                     </p>
                     <div className="flex gap-3">
-                        <Button onClick={() => toast.success("Funkcja została wywołana.")} variant="secondary" className="bg-white text-indigo-600 hover:bg-slate-50 font-bold">
+                        <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} variant="secondary" className="bg-white text-indigo-600 hover:bg-slate-50 font-bold">
                             Przejdź do lekcji (Past Simple)
                         </Button>
                     </div>
@@ -63,7 +63,7 @@ export function StudentTasks() {
                                     {task.due !== '-' && <span className="flex items-center gap-1 text-orange-600 font-medium"><Lock className="h-3 w-3" /> {t.dashboard?.studentTasks?.due || "Due"}: {task.due}</span>}
                                 </div>
                             </div>
-                            <Button onClick={() => toast.success("Funkcja została wywołana.")} variant={task.status === "todo" ? "default" : "secondary"}>
+                            <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} variant={task.status === "todo" ? "default" : "secondary"}>
                                 {task.status === "todo" ? (t.dashboard?.studentTasks?.actions?.start || "Start") : (t.dashboard?.studentTasks?.actions?.open || "Open")}
                             </Button>
                         </CardContent>
@@ -108,7 +108,7 @@ export function StudentTasks() {
                                     { label: "Przyroda", active: true, icon: "🌿" },
                                     { label: "Muzyka", active: false, icon: "🎵" }
                                 ].map((badge, i) => (
-                                    <Button onClick={() => toast.success("Funkcja została wywołana.")}
+                                    <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })}
                                         key={i}
                                         variant={badge.active ? "default" : "outline"}
                                         size="sm"
@@ -120,7 +120,7 @@ export function StudentTasks() {
                                         <span className="text-sm">{badge.icon}</span> {badge.label}
                                     </Button>
                                 ))}
-                                <Button onClick={() => toast.success("Funkcja została wywołana.")} variant="ghost" size="sm" className="rounded-full border border-dashed border-slate-300 text-slate-400 hover:text-slate-600">
+                                <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} variant="ghost" size="sm" className="rounded-full border border-dashed border-slate-300 text-slate-400 hover:text-slate-600">
                                     <PlusIcon className="h-3 w-3 mr-1" /> Dodaj własne
                                 </Button>
                             </div>
@@ -142,7 +142,7 @@ export function StudentTasks() {
                                 </div>
                                 <h4 className="font-bold text-slate-900 text-sm mb-1">Mistrz Past Simple</h4>
                                 <p className="text-[10px] text-slate-500 mb-3">Zdobyto: 12.02.2026</p>
-                                <Button onClick={() => toast.success("Funkcja została wywołana.")} size="sm" variant="outline" className="w-full text-xs h-7 border-amber-200 text-amber-700 hover:bg-amber-100 gap-1 font-bold">
+                                <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} size="sm" variant="outline" className="w-full text-xs h-7 border-amber-200 text-amber-700 hover:bg-amber-100 gap-1 font-bold">
                                     <Download className="h-3 w-3" /> Pobierz PDF
                                 </Button>
                             </CardContent>

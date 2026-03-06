@@ -61,7 +61,7 @@ export function InAppNotifications() {
                 </DropdownMenuGroup>
                 <DropdownMenuSeparator className="m-0" />
                 <div className="p-2">
-                    <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} variant="ghost" className="w-full justify-center text-xs font-semibold text-indigo-600 h-8">
+                    <Button onClick={() => toast.success(t?.common?.markAllRead || "Wszystkie oznaczone jako przeczytane")} variant="ghost" className="w-full justify-center text-xs font-semibold text-indigo-600 h-8">
                         Oznacz wszystkie jako przeczytane
                     </Button>
                 </div>

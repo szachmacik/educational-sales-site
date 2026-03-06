@@ -188,7 +188,7 @@ export function AIGameWorkshop() {
                                         <p className="text-slate-500 font-medium">{generatedGame.description}</p>
                                     </div>
                                     <div className="flex gap-3">
-                                        <Button onClick={() => toast.success("Funkcja została wywołana.")} variant="outline" className="rounded-2xl h-12 font-bold gap-2">
+                                        <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} variant="outline" className="rounded-2xl h-12 font-bold gap-2">
                                             <Wand2 className="h-4 w-4" /> Przeładuj AI
                                         </Button>
                                         <Button onClick={handleSave} className="bg-emerald-600 hover:bg-emerald-700 rounded-2xl h-12 font-bold gap-2 shadow-lg shadow-emerald-100">
@@ -210,7 +210,7 @@ export function AIGameWorkshop() {
                                                 To jest symulacja gotowej gry. W pełnej wersji tutaj pojawia się interaktywny kontener z Twoim {generatedGame.type}.
                                             </p>
                                         </div>
-                                        <Button onClick={() => toast.success("Funkcja została wywołana.")} size="lg" className="bg-white text-indigo-900 hover:bg-indigo-50 rounded-2xl px-12 py-8 text-xl font-black shadow-2xl">
+                                        <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} size="lg" className="bg-white text-indigo-900 hover:bg-indigo-50 rounded-2xl px-12 py-8 text-xl font-black shadow-2xl">
                                             URUCHOM TEST
                                         </Button>
                                     </div>

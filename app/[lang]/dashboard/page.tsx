@@ -288,7 +288,7 @@ function PanelContent({ tab, role, subRole, courses, email, userName, setActiveT
                         <button onClick={() => setActiveTab("certificates")} className="flex items-center gap-3 p-4 rounded-xl border border-slate-100 hover:border-indigo-200 hover:bg-indigo-50/50 transition-all font-medium text-sm text-slate-700 hover:text-indigo-700 text-left">
                             🎓 Certyfikaty dziecka
                         </button>
-                        <button onClick={() => toast.success("Akcja wykonana pomyślnie.")} className="flex items-center gap-3 p-4 rounded-xl border border-emerald-100 bg-emerald-50 hover:border-emerald-300 hover:bg-emerald-100/80 transition-all font-medium text-sm text-emerald-700 text-left">
+                        <button onClick={() => { toast.info("Zarządzanie kontami dzieci będzie dostępne wkrótce."); }} className="flex items-center gap-3 p-4 rounded-xl border border-emerald-100 bg-emerald-50 hover:border-emerald-300 hover:bg-emerald-100/80 transition-all font-medium text-sm text-emerald-700 text-left">
                             👨‍👧 Zarządzaj Kontami Dzieci
                         </button>
                         <button onClick={() => setActiveTab("purchases")} className="flex items-center gap-3 p-4 rounded-xl border border-slate-100 hover:border-indigo-200 hover:bg-indigo-50/50 transition-all font-medium text-sm text-slate-700 hover:text-indigo-700 text-left">

@@ -57,34 +57,45 @@ import {
 import { Progress } from "@/components/ui/progress";
 import { AdminSalesHub } from "@/components/admin/admin-sales-hub";
 import { SuperAdminToggles } from "@/components/admin/super-admin-toggles";
+import {
+    AreaChart,
+    Area,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip as RechartsTooltip,
+    ResponsiveContainer,
+    BarChart as RechartsBarChart,
+    Bar,
+    PieChart,
+    Pie,
+    Cell,
+} from "recharts";
 
 const ORDERS_KEY = "admin_orders";
 const PRODUCTS_KEY = "admin_products";
 
-// Simple bar chart component
-function BarChart({ data, maxValue, currency }: { data: { label: string; value: number }[]; maxValue: number; currency: string }) {
+// Recharts-based revenue area chart
+function BarChart({ data, currency }: { data: { label: string; value: number }[]; maxValue: number; currency: string }) {
     return (
-        <div className="space-y-4">
-            {data.map((item, i) => (
-                <div key={item.label} className="flex flex-col gap-1 group">
-                    <div className="flex items-center justify-between text-[10px] font-black uppercase tracking-wider text-slate-400">
-                        <span>{item.label}</span>
-                        <span className="text-slate-900">{item.value.toLocaleString()} {currency}</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                        <div className="flex-1 h-3 bg-slate-100 rounded-full overflow-hidden">
-                            <div
-                                className="h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full transition-all duration-1000 ease-out delay-75 shadow-sm"
-                                style={{
-                                    width: `${(item.value / maxValue) * 100}%`,
-                                    transitionDelay: `${i * 100}ms`
-                                }}
-                            />
-                        </div>
-                    </div>
-                </div>
-            ))}
-        </div>
+        <ResponsiveContainer width="100%" height={220}>
+            <AreaChart data={data} margin={{ top: 5, right: 10, left: -20, bottom: 0 }}>
+                <defs>
+                    <linearGradient id="revenueGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#6366f1" stopOpacity={0.3} />
+                        <stop offset="95%" stopColor="#6366f1" stopOpacity={0} />
+                    </linearGradient>
+                </defs>
+                <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
+                <XAxis dataKey="label" tick={{ fontSize: 11, fill: '#94a3b8' }} axisLine={false} tickLine={false} />
+                <YAxis tick={{ fontSize: 11, fill: '#94a3b8' }} axisLine={false} tickLine={false} />
+                <RechartsTooltip
+                    contentStyle={{ background: '#1e293b', border: 'none', borderRadius: '12px', color: '#f8fafc', fontSize: 12 }}
+                    formatter={(v: number) => [`${v} ${currency}`, '']}
+                />
+                <Area type="monotone" dataKey="value" stroke="#6366f1" strokeWidth={2.5} fill="url(#revenueGrad)" dot={{ fill: '#6366f1', r: 3 }} activeDot={{ r: 5 }} />
+            </AreaChart>
+        </ResponsiveContainer>
     );
 }
 
@@ -472,7 +483,7 @@ export default function AdminDashboard() {
                 <SuperAdminToggles />
 
                 {/* Charts Row */}
-                <div className="grid gap-6 md:grid-cols-2">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                     {/* Revenue Chart */}
                     <Card>
                         <CardHeader>
@@ -523,8 +534,46 @@ export default function AdminDashboard() {
                             )}
                         </CardContent>
                     </Card>
+                    {/* Order Status Pie Chart */}
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>{language === 'pl' ? 'Status zamówień' : language === 'uk' ? 'Статус замовлень' : 'Order Status'}</CardTitle>
+                            <CardDescription>{language === 'pl' ? 'Podział zamówień wg statusu' : language === 'uk' ? 'Розподіл замовлень за статусом' : 'Orders by status'}</CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            {(() => {
+                                const statusCounts = orders.reduce((acc, o) => {
+                                    acc[o.status] = (acc[o.status] || 0) + 1;
+                                    return acc;
+                                }, {} as Record<string, number>);
+                                const pieData = Object.entries(statusCounts).map(([status, count]) => ({ name: status, value: count }));
+                                const COLORS = ['#6366f1', '#22c55e', '#f59e0b', '#ef4444', '#94a3b8'];
+                                if (pieData.length === 0) return <p className="text-sm text-muted-foreground text-center py-8">{language === 'pl' ? 'Brak danych' : 'No data'}</p>;
+                                return (
+                                    <div className="flex flex-col items-center gap-4">
+                                        <ResponsiveContainer width="100%" height={160}>
+                                            <PieChart>
+                                                <Pie data={pieData} cx="50%" cy="50%" innerRadius={45} outerRadius={70} paddingAngle={3} dataKey="value">
+                                                    {pieData.map((_, idx) => <Cell key={idx} fill={COLORS[idx % COLORS.length]} />)}
+                                                </Pie>
+                                                <RechartsTooltip contentStyle={{ background: '#1e293b', border: 'none', borderRadius: '8px', color: '#f8fafc', fontSize: 12 }} />
+                                            </PieChart>
+                                        </ResponsiveContainer>
+                                        <div className="flex flex-wrap gap-2 justify-center">
+                                            {pieData.map((entry, idx) => (
+                                                <div key={entry.name} className="flex items-center gap-1.5 text-xs">
+                                                    <div className="w-2.5 h-2.5 rounded-full" style={{ background: COLORS[idx % COLORS.length] }} />
+                                                    <span className="text-slate-600 capitalize">{entry.name}</span>
+                                                    <span className="font-bold text-slate-900">{entry.value}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                );
+                            })()}
+                        </CardContent>
+                    </Card>
                 </div>
-
                 {/* AI & Studio Insights Row */}
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-12">
                     {/* Active AI Logs */}
@@ -715,7 +764,7 @@ export default function AdminDashboard() {
                                             <p className="font-bold text-slate-900">{d.aiInsights?.modal?.action1Title}</p>
                                             <p className="text-sm text-slate-500 leading-relaxed font-medium">{d.aiInsights?.modal?.action1Desc}</p>
                                         </div>
-                                        <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} size="sm" variant="outline" className="ml-auto rounded-xl border-indigo-100 text-indigo-600 font-bold">{d.aiInsights?.modal?.deploy}</Button>
+                                        <Button onClick={() => { toast.info("Wdrożenie kampanii będzie dostępne wkrótce."); }} size="sm" variant="outline" className="ml-auto rounded-xl border-indigo-100 text-indigo-600 font-bold">{d.aiInsights?.modal?.deploy}</Button>
                                     </div>
                                     <div className="flex gap-4 p-5 rounded-2xl border border-slate-100 hover:border-indigo-200 transition-colors shadow-sm group bg-slate-50/30 backdrop-blur-sm">
                                         <div className="h-10 w-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">

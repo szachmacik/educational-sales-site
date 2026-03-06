@@ -228,7 +228,7 @@ export default function PayPage() {
                         </div>
                     </div>
 
-                    <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} size="lg" className="w-full text-base font-bold h-12 mt-2 gap-2 shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">
+                    <Button onClick={() => { toast.info("Płatność zostanie aktywowana po skonfigurowaniu bramki płatności (Stripe/PayNow/ZEN)."); }} size="lg" className="w-full text-base font-bold h-12 mt-2 gap-2 shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">
                         {t.quickSale.page.pay_btn}
                         <Zap className="h-4 w-4 fill-current" />
                     </Button>

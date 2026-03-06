@@ -170,7 +170,7 @@ export function TeacherTeam() {
                         </p>
                     </div>
                     {!(isPro || isAdmin) ? (
-                        <Button onClick={() => toast.success("Funkcja została wywołana.")} size="lg" className="bg-white text-indigo-600 hover:bg-indigo-50 border-none font-bold shadow-lg shrink-0 w-full md:w-auto">
+                        <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} size="lg" className="bg-white text-indigo-600 hover:bg-indigo-50 border-none font-bold shadow-lg shrink-0 w-full md:w-auto">
                             {t.dashboard?.team?.pro?.upgrade || "Upgrade to PRO"}
                         </Button>
                     ) : (
@@ -196,7 +196,7 @@ export function TeacherTeam() {
                         <p className="text-sm text-slate-600 max-w-md"> Czegoś brakuje? Zauważyłeś problem? Jesteśmy tu dla Ciebie. Dodaj swój pomysł na usprawnienie platformy, a my postaramy się go wdrożyć.</p>
                     </div>
                 </div>
-                <Button onClick={() => toast.success("Funkcja została wywołana.")} className="relative z-10 w-full md:w-auto bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg shadow-indigo-200 font-bold gap-2 whitespace-nowrap">
+                <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} className="relative z-10 w-full md:w-auto bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg shadow-indigo-200 font-bold gap-2 whitespace-nowrap">
                     <MessageSquarePlus className="h-4 w-4" /> Zgłoś Pomysł
                 </Button>
             </div>

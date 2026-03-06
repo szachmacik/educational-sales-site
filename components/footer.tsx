@@ -24,10 +24,12 @@ export function Footer() {
       title: t.footer.groups.shop,
       links: [
         { name: t.footer.links.catalog, href: `/${language}/products` },
+        { name: language === 'pl' ? 'Bestsellery' : language === 'uk' ? 'Бестселери' : 'Bestsellers', href: `/${language}/bestsellery` },
+        { name: language === 'pl' ? 'Nowości' : language === 'uk' ? 'Новинки' : 'New Arrivals', href: `/${language}/nowosci` },
+        { name: language === 'pl' ? 'Pakiety' : language === 'uk' ? 'Пакети' : 'Bundles', href: `/${language}/pakiety` },
+        { name: language === 'pl' ? 'Lista życzeń' : language === 'uk' ? 'Список бажань' : 'Wishlist', href: `/${language}/lista-zyczen` },
         { name: t.footer.links.materials, href: `/${language}/products` },
-        { name: t.footer.links.projects, href: `/${language}/products` },
         { name: t.footer.links.scenarios, href: `/${language}/products` },
-        { name: t.footer.links.packs, href: `/${language}/products` },
       ],
     },
     informacje: {

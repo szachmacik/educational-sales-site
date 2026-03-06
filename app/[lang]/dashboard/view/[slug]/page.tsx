@@ -286,7 +286,7 @@ export default function ProductAccessPage() {
                                 </div>
 
                                 <div className="pt-6 border-t border-slate-100 flex flex-col gap-3">
-                                    <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} variant="outline" className="w-full h-12 rounded-2xl font-bold border-slate-200 text-slate-600 hover:bg-slate-50">
+                                    <Button onClick={() => { toast.info("Funkcja będzie dostępna wkrótce."); }} variant="outline" className="w-full h-12 rounded-2xl font-bold border-slate-200 text-slate-600 hover:bg-slate-50">
                                         Report Material Error
                                     </Button>
                                     <Button

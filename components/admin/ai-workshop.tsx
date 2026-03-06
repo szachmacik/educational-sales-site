@@ -382,7 +382,7 @@ export function AIWorkshop() {
                                                                 <Package className="h-4 w-4" />
                                                                 {selectedProduct ? w.actions.change_product : w.actions.attach}
                                                             </Button>
-                                                            <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} size="icon" className="h-12 w-12 rounded-2xl bg-white/20 backdrop-blur-md text-white border border-white/30">
+                                                            <Button onClick={() => { toast.info("Eksport materiałów będzie dostępny wkrótce."); }} size="icon" className="h-12 w-12 rounded-2xl bg-white/20 backdrop-blur-md text-white border border-white/30">
                                                                 <Download className="h-4 w-4" />
                                                             </Button>
                                                         </div>

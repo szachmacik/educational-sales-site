@@ -159,7 +159,7 @@ export default function LandingBuilderPage() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                    <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} variant="outline" className="rounded-2xl border-slate-200 font-bold">
+                    <Button onClick={() => { toast.info("Podgląd strony lądowania będzie dostępny wkrótce."); }} variant="outline" className="rounded-2xl border-slate-200 font-bold">
                         <Eye className="h-4 w-4 mr-2" />
                         {trans.preview}
                     </Button>
@@ -364,7 +364,7 @@ export default function LandingBuilderPage() {
                             <div className="border border-slate-100 rounded-2xl p-6 bg-slate-50 opacity-60">
                                 <h3 className="text-2xl font-bold text-slate-900 mb-4">{trans.mock.heroTitle.replace("{joy}", trans.mock.joy)}</h3>
                                 <p className="text-sm text-slate-500 mb-6 font-medium leading-relaxed">{trans.mock.heroDesc}</p>
-                                <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} className="w-full h-12 rounded-xl bg-slate-200 text-slate-400 font-bold" disabled>{trans.mock.buyNow}</Button>
+                                <Button className="w-full h-12 rounded-xl bg-slate-200 text-slate-400 font-bold" disabled>{trans.mock.buyNow}</Button>
                             </div>
                         </div>
 
@@ -381,7 +381,7 @@ export default function LandingBuilderPage() {
                                 <p className="text-sm text-indigo-700/80 mb-6 font-semibold leading-relaxed">
                                     {trans.optimization.suggestionDesc}
                                 </p>
-                                <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} className="w-full h-12 rounded-xl bg-indigo-600 text-white font-black shadow-lg shadow-indigo-200">
+                                <Button onClick={() => { toast.info("Płatność zostanie aktywowana po skonfigurowaniu bramki płatności."); }} className="w-full h-12 rounded-xl bg-indigo-600 text-white font-black shadow-lg shadow-indigo-200">
                                     {trans.optimization.suggestionButton}
                                 </Button>
                             </div>

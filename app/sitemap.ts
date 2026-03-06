@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getProducts } from '@/lib/product-service';
-import { SAMPLE_BLOG_POSTS } from "@/lib/blog-schema";
+import { ALL_BLOG_POSTS } from "@/lib/blog-schema";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://kamilaenglish.ofshore.dev';
 const SUPPORTED_LANGS = [
@@ -65,7 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
 
     // Blog posts (Polish only)
-    const publishedPosts = SAMPLE_BLOG_POSTS.filter((p) => p.status === 'published');
+    const publishedPosts = ALL_BLOG_POSTS.filter((p) => p.status === 'published');
     for (const post of publishedPosts) {
         entries.push({
             url: `${BASE_URL}/pl/blog/${post.slug}`,

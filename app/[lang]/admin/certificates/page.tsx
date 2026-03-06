@@ -19,7 +19,7 @@ export default function CertificatesPage() {
                     <h1 className="text-3xl font-bold tracking-tight">{c.title || "Certificates"}</h1>
                     <p className="text-muted-foreground">{c.subtitle}</p>
                 </div>
-                <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} className="gap-2">
+                <Button onClick={() => { toast.info("Funkcja tworzenia szablonu certyfikatu będzie dostępna wkrótce."); }} className="gap-2">
                     <Plus className="h-4 w-4" />
                     {c.templates?.create}
                 </Button>
@@ -90,7 +90,7 @@ export default function CertificatesPage() {
                                         {c.templates?.aiDesc}
                                     </p>
                                 </div>
-                                <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} variant="outline">{c.templates?.createAi}</Button>
+                                <Button onClick={() => { toast.info("Generator szablonów AI będzie dostępny wkrótce."); }} variant="outline">{c.templates?.createAi}</Button>
                             </div>
                         </Card>
                     </div>
@@ -101,7 +101,7 @@ export default function CertificatesPage() {
                         <PenTool className="h-12 w-12 mx-auto text-muted-foreground mb-4" />
                         <h3 className="font-bold text-lg">{c.exams?.create}</h3>
                         <p className="text-muted-foreground mb-4">{c.exams?.description}</p>
-                        <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} variant="default" className="gap-2">
+                        <Button onClick={() => { toast.info("Generator egzaminów AI będzie dostępny wkrótce."); }} variant="default" className="gap-2">
                             <Wand2 className="h-4 w-4" />
                             {c.exams?.createAi}
                         </Button>

@@ -159,10 +159,10 @@ export function FlashcardGenerator({ products = [], selectedProduct, onSelectPro
                     </Button>
 
                     <div className="pt-4 border-t border-slate-50 grid grid-cols-2 gap-4">
-                        <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} variant="outline" className="h-12 rounded-xl text-[9px] font-black uppercase border-slate-100">
+                        <Button onClick={() => { toast.info("Eksport do PDF będzie dostępny wkrótce."); }} variant="outline" className="h-12 rounded-xl text-[9px] font-black uppercase border-slate-100">
                             {f.branding_kit}
                         </Button>
-                        <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} variant="outline" className="h-12 rounded-xl text-[9px] font-black uppercase border-slate-100 gap-2">
+                        <Button onClick={() => { toast.info("Eksport do Anki będzie dostępny wkrótce."); }} variant="outline" className="h-12 rounded-xl text-[9px] font-black uppercase border-slate-100 gap-2">
                             <Layers className="h-3.5 w-3.5 text-indigo-500" />
                             {f.export_canva}
                         </Button>
@@ -180,7 +180,7 @@ export function FlashcardGenerator({ products = [], selectedProduct, onSelectPro
                         </CardDescription>
                     </div>
                     <div className="flex gap-3">
-                        <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} variant="secondary" className="h-10 rounded-xl px-4 text-[10px] font-black uppercase tracking-widest bg-white shadow-sm border-slate-100">
+                        <Button onClick={() => { toast.info("Zapis do biblioteki będzie dostępny wkrótce."); }} variant="secondary" className="h-10 rounded-xl px-4 text-[10px] font-black uppercase tracking-widest bg-white shadow-sm border-slate-100">
                             {f.add_custom}
                         </Button>
                         <Button onClick={() => toast.info("Otwieranie kreatora...")} disabled={flashcards.length === 0} className="h-10 rounded-xl px-4 text-[10px] font-black uppercase tracking-widest bg-slate-900 text-white shadow-lg shadow-slate-200">

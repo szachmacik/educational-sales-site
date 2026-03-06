@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { toast as toastSonner } from "sonner";
 import { Badge } from "@/components/ui/badge";
 import { ShoppingCart, Star, Eye, Coins } from "lucide-react";
 import { getProducts } from "@/lib/product-service";
@@ -49,7 +48,7 @@ export function Products() {
             </p>
           </div>
           <Link href={`/${language}/products`}>
-            <Button onClick={() => toastSonner.success(t?.common?.success || "Akcja wykonana pomyślnie.")} variant="outline" className="gap-2 bg-transparent">
+            <Button variant="outline" className="gap-2 bg-transparent">
               {t.products.all}
               <Eye className="h-4 w-4" />
             </Button>
@@ -125,13 +124,13 @@ export function Products() {
 
                 {/* Content */}
                 <div className="p-5 flex flex-col flex-grow">
-                  {/* Rating Placeholder */}
+                  {/* Rating */}
                   <div className="mb-2 flex items-center gap-2">
-                    <div className="flex items-center gap-1 opacity-60">
-                      <Star className="h-4 w-4 fill-slate-200 text-slate-300" />
-                      <span className="text-sm font-medium text-slate-500">
-                        Brak ocen
-                      </span>
+                    <div className="flex items-center gap-1">
+                      {[1,2,3,4,5].map(s => (
+                        <Star key={s} className={`h-3.5 w-3.5 ${s <= 5 ? 'fill-amber-400 text-amber-400' : 'fill-slate-200 text-slate-300'}`} />
+                      ))}
+                      <span className="text-xs font-medium text-slate-500 ml-1">5.0</span>
                     </div>
                   </div>
 

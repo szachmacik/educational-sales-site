@@ -81,20 +81,33 @@ export default function AdminChatPage() {
         setInputValue("");
         setIsTyping(true);
 
-        // Simulate AI Response
-        setTimeout(() => {
+        // Real API call to admin chat endpoint
+        try {
+            const res = await fetch('/api/admin/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: newUserMsg.content }),
+            });
+            const data = await res.json();
             const botResponse: Message = {
                 id: (Date.now() + 1).toString(),
                 role: 'assistant',
-                content: c.mockResponse
-                    .replace("{model}", selectedModel)
-                    .replace("{content}", newUserMsg.content),
+                content: res.ok ? data.response : (data.error || 'Wystąpił błąd. Spróbuj ponownie.'),
                 timestamp: Date.now(),
                 model: selectedModel
             };
             setMessages(prev => [...prev, botResponse]);
+        } catch {
+            setMessages(prev => [...prev, {
+                id: (Date.now() + 1).toString(),
+                role: 'assistant',
+                content: 'Nie udało się połączyć z serwerem. Sprawdź połączenie i spróbuj ponownie.',
+                timestamp: Date.now(),
+                model: selectedModel
+            }]);
+        } finally {
             setIsTyping(false);
-        }, 1500);
+        }
     };
 
     const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -112,7 +125,7 @@ export default function AdminChatPage() {
                 isSidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
             )}>
                 <div className="p-5 border-b border-slate-100 flex items-center justify-between">
-                    <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} variant="outline" className="flex-1 justify-start gap-3 border-dashed border-indigo-200 hover:border-indigo-500 hover:bg-indigo-50 text-indigo-600 rounded-2xl h-11 transition-all">
+                    <Button onClick={() => { toast.info("Nowy szablon rozmowy będzie dostępny wkrótce."); }} variant="outline" className="flex-1 justify-start gap-3 border-dashed border-indigo-200 hover:border-indigo-500 hover:bg-indigo-50 text-indigo-600 rounded-2xl h-11 transition-all">
                         <Plus className="h-4 w-4" />
                         <span className="font-bold text-xs uppercase tracking-wider">{c.newChat}</span>
                     </Button>
@@ -280,7 +293,7 @@ export default function AdminChatPage() {
                         <div className="relative group">
                             <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl blur opacity-10 group-focus-within:opacity-25 transition duration-500"></div>
                             <div className="relative flex items-end gap-3 bg-white p-2.5 rounded-2xl border border-slate-200 shadow-sm focus-within:border-indigo-500/50 transition-all">
-                                <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} variant="ghost" size="icon" className="h-11 w-11 rounded-xl text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 shrink-0">
+                                <Button onClick={() => { toast.info("Nagrywanie głosu będzie dostępne wkrótce."); }} variant="ghost" size="icon" className="h-11 w-11 rounded-xl text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 shrink-0">
                                     <Plus className="h-5 w-5" />
                                 </Button>
                                 <textarea
@@ -317,7 +330,7 @@ export default function AdminChatPage() {
 
 function BadgeIcon({ icon: Icon, label, active = false }: { icon: any, label: string, active?: boolean }) {
     return (
-        <button onClick={() => toast.success("Akcja wykonana pomyślnie.")} className={cn(
+        <button onClick={() => { toast.info("Nowa rozmowa zostanie dodana wkrótce."); }} className={cn(
             "flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-colors whitespace-nowrap",
             active
                 ? "bg-primary/10 border-primary/20 text-primary"

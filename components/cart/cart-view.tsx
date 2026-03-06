@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { useCart } from "@/lib/cart-context";
 import { useLanguage } from "@/components/language-provider";
+import Image from "next/image";
 import {
     ShoppingCart,
     Trash2,
@@ -19,7 +20,11 @@ import {
     Package,
     Clock,
     ShieldCheck,
+    Sparkles,
+    Star,
+    BookOpen,
 } from "lucide-react";
+import { getProducts } from "@/lib/product-service";
 
 export function CartView() {
     const { t, formatPrice, language } = useLanguage();
@@ -76,23 +81,64 @@ export function CartView() {
         }
     };
 
+    const featuredProducts = getProducts(language).slice(0, 4);
+    const upsellProducts = getProducts(language)
+        .filter(p => !cart.items.find(i => i.productId === p.id))
+        .slice(0, 4);
+
     if (cart.items.length === 0) {
         return (
-            <main className="flex-1 flex items-center justify-center py-20">
-                <div className="text-center">
-                    <div className="w-24 h-24 rounded-full bg-muted mx-auto flex items-center justify-center mb-6">
-                        <ShoppingCart className="h-12 w-12 text-muted-foreground" />
+            <main className="flex-1 py-16">
+                <div className="mx-auto max-w-5xl px-4">
+                    <div className="text-center mb-16">
+                        <div className="w-24 h-24 rounded-full bg-indigo-50 mx-auto flex items-center justify-center mb-6">
+                            <ShoppingCart className="h-12 w-12 text-indigo-400" />
+                        </div>
+                        <h1 className="text-3xl font-bold mb-3">{cartEmpty}</h1>
+                        <p className="text-muted-foreground mb-8 max-w-md mx-auto">{cartEmptySub}</p>
+                        <div className="flex items-center justify-center gap-4 flex-wrap">
+                            <Button size="lg" asChild className="rounded-full px-8">
+                                <Link href={`/${language}/products`}>
+                                    {cartBrowse}
+                                    <ArrowRight className="h-4 w-4 ml-2" />
+                                </Link>
+                            </Button>
+                            <Button size="lg" variant="outline" asChild className="rounded-full px-8">
+                                <Link href={`/${language}/blog`}>
+                                    <BookOpen className="h-4 w-4 mr-2" />
+                                    {language === 'pl' ? 'Czytaj blog' : language === 'uk' ? 'Читати блог' : 'Read blog'}
+                                </Link>
+                            </Button>
+                        </div>
                     </div>
-                    <h1 className="text-2xl font-bold mb-2">{cartEmpty}</h1>
-                    <p className="text-muted-foreground mb-6">
-                        {cartEmptySub}
-                    </p>
-                    <Button asChild>
-                        <Link href={`/${language}`}>
-                            {cartBrowse}
-                            <ArrowRight className="h-4 w-4 ml-2" />
-                        </Link>
-                    </Button>
+                    {featuredProducts.length > 0 && (
+                        <div>
+                            <div className="flex items-center gap-2 mb-6">
+                                <Sparkles className="h-5 w-5 text-indigo-500" />
+                                <h2 className="text-lg font-bold">
+                                    {language === 'pl' ? 'Polecane produkty' : language === 'uk' ? 'Рекомендовані продукти' : 'Recommended products'}
+                                </h2>
+                            </div>
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                {featuredProducts.map((product) => (
+                                    <Link key={product.slug} href={`/${language}/products/${product.slug}`} className="group">
+                                        <Card className="h-full overflow-hidden hover:shadow-md transition-all border-slate-100">
+                                            <div className="relative aspect-square bg-slate-50 overflow-hidden">
+                                                <Image src={product.image || '/product-placeholder.png'} alt={product.title} fill className="object-contain p-4 group-hover:scale-105 transition-transform duration-300" />
+                                            </div>
+                                            <CardContent className="p-3">
+                                                <p className="text-xs font-bold line-clamp-2 group-hover:text-indigo-600 transition-colors">{product.title}</p>
+                                                <div className="flex items-center gap-0.5 mt-1">
+                                                    {[1,2,3,4,5].map((s) => <Star key={s} className="h-2.5 w-2.5 fill-amber-400 text-amber-400" />)}
+                                                </div>
+                                                <p className="text-sm font-black text-indigo-600 mt-1">{formatPrice(product.price)}</p>
+                                            </CardContent>
+                                        </Card>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div>
             </main>
         );
@@ -320,6 +366,39 @@ export function CartView() {
                     </div>
                 </div>
 
+                {/* Upsell: Klienci kupili też */}
+                {upsellProducts.length > 0 && (
+                    <div className="mt-12 pb-24 lg:pb-0">
+                        <h3 className="text-xl font-serif font-bold text-slate-900 mb-6 flex items-center gap-2">
+                            <Sparkles className="h-5 w-5 text-violet-500" />
+                            {language === 'pl' ? 'Klienci kupili też' : language === 'uk' ? 'Клієнти також купили' : 'Customers also bought'}
+                        </h3>
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                            {upsellProducts.map(product => (
+                                <div key={product.id} className="group border border-slate-200 rounded-xl overflow-hidden hover:shadow-md transition-all duration-300 bg-white">
+                                    <div className="relative aspect-[4/3] bg-slate-50 overflow-hidden">
+                                        {product.image ? (
+                                            <Image src={product.image} alt={product.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                                        ) : (
+                                            <div className="absolute inset-0 flex items-center justify-center"><BookOpen className="h-8 w-8 text-slate-300" /></div>
+                                        )}
+                                    </div>
+                                    <div className="p-3">
+                                        <Link href={`/${language}/products/${product.slug}`}>
+                                            <p className="text-xs font-semibold text-slate-800 line-clamp-2 hover:text-violet-600 transition-colors leading-snug mb-2">{product.title}</p>
+                                        </Link>
+                                        <div className="flex items-center justify-between">
+                                            <span className="text-sm font-bold text-violet-600">{formatPrice(product.price)}</span>
+                                            <Button size="sm" variant="outline" className="h-7 px-2 text-xs border-violet-200 text-violet-600 hover:bg-violet-50" onClick={() => addItem(product)}>
+                                                <Plus className="h-3 w-3" />
+                                            </Button>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
                 {/* Mobile Fixed Checkout Bar */}
                 <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden border-t bg-background/95 backdrop-blur p-4 pb-safe shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
                     <div className="mx-auto max-w-lg flex items-center justify-between gap-4">

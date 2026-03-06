@@ -144,7 +144,7 @@ export default function MaterialsPage() {
 
                     <Dialog open={assignDialogOpen} onOpenChange={setAssignDialogOpen}>
                         <DialogTrigger asChild>
-                            <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} disabled={selectedFiles.length === 0}>
+                            <Button onClick={() => { toast.info("Przesyłanie plików będzie dostępne wkrótce."); }} disabled={selectedFiles.length === 0}>
                                 <LinkIcon className="h-4 w-4 mr-2" />
                                 {m.assignToProduct.replace("{count}", selectedFiles.length.toString())}
                             </Button>
@@ -203,7 +203,7 @@ export default function MaterialsPage() {
                                         className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
                                         onChange={handleFileInput}
                                     />
-                                    <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")}>{m.selectFiles}</Button>
+                                    <Button>{m.selectFiles}</Button>
                                 </div>
                                 <span className="flex items-center text-sm text-muted-foreground">{m.or}</span>
                                 <GoogleDrivePicker onImport={handleGoogleImport} />

@@ -11,6 +11,10 @@ import { Newsletter } from "@/components/newsletter";
 import { Footer } from "@/components/footer";
 import { SocialProofGallery } from "@/components/social-proof-gallery";
 import { LatestBlogPosts } from "@/components/latest-blog-posts";
+import { HowItWorks } from "@/components/how-it-works";
+import { NewArrivalsSection } from "@/components/new-arrivals-section";
+import { StatsCounter } from "@/components/stats-counter";
+import { PromoBanner } from "@/components/promo-banner";
 import { LanguageProvider } from "@/components/language-provider";
 import fs from 'fs/promises';
 import path from 'path';
@@ -60,13 +64,17 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         This overrides the context from Layout but includes 'common' so Header/Footer still work.
       */}
       <LanguageProvider lang={lang} dictionary={combinedDictionary}>
+        <PromoBanner />
         <Header />
         <Hero />
         <TrustBar />
+        <StatsCounter />
         <Categories />
         <Products />
+        <NewArrivalsSection />
         <SocialProofGallery />
         <Features />
+        <HowItWorks />
         <Testimonials />
         <LatestBlogPosts />
         <AboutAuthor />

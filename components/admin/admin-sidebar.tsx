@@ -16,7 +16,8 @@ import {
     Layout,
     Ticket,
     Zap,
-    Mail
+    Mail,
+    TrendingUp
 } from "lucide-react";
 
 import {
@@ -75,6 +76,7 @@ export function AdminSidebar() {
         { title: menu.import || "Import AI", icon: Package, href: `/${language}/admin/import` },
         { title: menu.blog || "Blog", icon: FileText, href: `/${language}/admin/blog` },
         { title: menu.newsletter || "Newsletter", icon: Mail, href: `/${language}/admin/newsletter` },
+        { title: menu.analytics || "Analityka", icon: TrendingUp, href: `/${language}/admin/analytics` },
         { title: menu.settings || "Settings", icon: Settings, href: `/${language}/admin/settings` },
     ];
 

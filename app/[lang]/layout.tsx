@@ -16,6 +16,8 @@ import { AICrawlerHints } from "@/components/seo/ai-crawler-hints"
 import { AnnouncementBar } from "@/components/marketing/premium-growth"
 import { LazyFOMOPopup, LazyExitIntentPopup, LazyMarketingTracker, LazyTrackingScripts } from "@/components/marketing/lazy-marketing"
 import { CookieBanner } from "@/components/legal/cookie-banner"
+import { CompareBar } from "@/components/compare-bar"
+import { WishlistProvider } from "@/lib/wishlist-context"
 import { OrganizationSchema, WebSiteSchema } from "@/components/seo/json-ld"
 import '../globals.css'
 import fs from 'fs/promises';
@@ -120,6 +122,7 @@ export default async function LocaleLayout({
         suppressHydrationWarning
       >
         <CartProvider>
+          <WishlistProvider>
           <ProgressProvider>
             <LanguageProvider lang={lang} dictionary={dictionary}>
               <AnnouncementBar />
@@ -134,12 +137,14 @@ export default async function LocaleLayout({
                     {children}
                   </div>
                   <CookieBanner />
+                  <CompareBar />
                   <Toaster />
                   <SonnerToaster position="top-center" expand={true} richColors />
                 </FeatureProvider>
               </TokenProvider>
             </LanguageProvider>
           </ProgressProvider>
+          </WishlistProvider>
         </CartProvider>
         <Analytics />
       </body>

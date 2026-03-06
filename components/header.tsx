@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, ShoppingCart, User, ChevronDown, LayoutDashboard, LogOut, Settings, BookOpen } from "lucide-react";
+import { Menu, ShoppingCart, User, ChevronDown, LayoutDashboard, LogOut, Settings, BookOpen, Heart } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -22,6 +22,7 @@ import { logout } from "@/lib/auth";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { useLanguage } from "@/components/language-provider";
 import { useCart } from "@/lib/cart-context";
+import { useWishlist } from "@/lib/wishlist-context";
 import { getUserPoints } from "@/lib/points-service";
 import { Coins } from "lucide-react";
 
@@ -38,9 +39,25 @@ export function Header() {
   const [userRole, setUserRole] = useState("");
   const { t, language } = useLanguage();
   const { itemCount } = useCart();
+  const { count: wishlistCount } = useWishlist();
+
+  // Wishlist icon component
+  const WishlistIcon = () => (
+    <Link href={`/${language}/lista-zyczen`} aria-label="Lista życzeń">
+      <Button variant="ghost" size="icon" className="relative" aria-label="Lista życzeń">
+        <Heart className={`h-5 w-5 ${wishlistCount > 0 ? 'fill-rose-500 text-rose-500' : ''}`} aria-hidden="true" />
+        {wishlistCount > 0 && (
+          <span aria-hidden="true" className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-rose-500 text-xs font-semibold text-white">
+            {wishlistCount}
+          </span>
+        )}
+      </Button>
+    </Link>
+  );
 
   const navLinks = [
     { name: t.nav.products, href: `/${language}/products` },
+    { name: language === 'pl' ? 'Bestsellery' : language === 'uk' ? 'Бестселери' : 'Bestsellers', href: `/${language}/bestsellery` },
     { name: t.nav.blog, href: `/${language}/blog` },
     { name: t.nav.about || (language === 'pl' ? 'O nas' : language === 'uk' ? 'Про нас' : 'About'), href: `/${language}/o-nas` },
     { name: t.nav.faq || "FAQ", href: `/${language}/faq` },
@@ -164,6 +181,7 @@ export function Header() {
           <LanguageSwitcher />
 
           {isLoggedIn && <InAppNotifications />}
+          <WishlistIcon />
 
           <Link href={`/${language}/cart`} aria-label={`Koszyk${itemCount > 0 ? ` (${itemCount} produktów)` : ''}`}>
             <Button variant="ghost" size="icon" className="relative" aria-label="Koszyk">

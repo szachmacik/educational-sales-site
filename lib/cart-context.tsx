@@ -3,10 +3,11 @@
 import { createContext, useContext, useState, useEffect, useCallback, ReactNode } from "react";
 import { Cart, CartItem, Coupon, calculateDiscount, SAMPLE_COUPONS } from "./order-schema";
 import { Product } from "./product-schema";
+import { ProductWithSlug } from "./product-service";
 
 interface CartContextType {
     cart: Cart;
-    addItem: (product: Product, selectedLanguage?: string) => void;
+    addItem: (product: Product | ProductWithSlug, selectedLanguage?: string) => void;
     removeItem: (productId: string) => void;
     updateQuantity: (productId: string, quantity: number) => void;
     applyCoupon: (code: string, t: any) => { success: boolean; message: string };
@@ -65,7 +66,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
         }
     }, [cart, isLoaded]);
 
-    const addItem = useCallback((product: Product, selectedLanguage?: string) => {
+    const addItem = useCallback((product: Product | ProductWithSlug, selectedLanguage?: string) => {
         setCart((prev) => {
             const existingIndex = prev.items.findIndex(
                 (item) => item.productId === product.id && item.selectedLanguage === selectedLanguage
@@ -81,9 +82,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
                     productId: product.id,
                     title: product.title,
                     price: product.price,
-                    salePrice: product.salePrice,
+                    salePrice: ("salePrice" in product ? product.salePrice : undefined),
                     quantity: 1,
-                    image: product.images[0] || "",
+                    image: ("images" in product ? product.images[0] : product.image) || "",
                     selectedLanguage,
                 };
                 newItems = [...prev.items, newItem];

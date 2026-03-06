@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useLanguage } from "@/components/language-provider";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import {
     Gamepad2, Flame, Trophy, PlayCircle, Star, Sparkles, BookOpen, Clock, Zap, Target, ArrowRight, ShieldCheck, Activity, Rocket, Layers, BrainCircuit, Ribbon, Bell, Plus as PlusIcon
 } from "lucide-react";
@@ -16,7 +17,7 @@ interface WelcomeBannerProps {
 }
 
 export function WelcomeBanner({ user }: WelcomeBannerProps) {
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
     useEffect(() => {
         // Simple client-side initialization if needed
     }, []);
@@ -46,14 +47,18 @@ export function WelcomeBanner({ user }: WelcomeBannerProps) {
                     )}
                 </div>
                 <div className="flex items-center gap-3">
-                    <Button onClick={() => toast.success("Funkcja została wywołana.")} variant="outline" size="icon" className="rounded-full shadow-sm">
-                        <Bell className="h-5 w-5 text-slate-600" />
-                    </Button>
-                    {(user.role === 'teacher' || user.role === 'school') && (
-                        <Button onClick={() => toast.success("Funkcja została wywołana.")} className="rounded-full bg-slate-900 text-white hover:bg-indigo-600 shadow-md gap-2 font-bold">
-                            <PlusIcon className="h-4 w-4" />
-                            Dodaj Materiały
+                    <Link href={`/${language}/dashboard`}>
+                        <Button variant="outline" size="icon" className="rounded-full shadow-sm">
+                            <Bell className="h-5 w-5 text-slate-600" />
                         </Button>
+                    </Link>
+                    {(user.role === 'teacher' || user.role === 'school') && (
+                        <Link href={`/${language}/products`}>
+                            <Button className="rounded-full bg-slate-900 text-white hover:bg-indigo-600 shadow-md gap-2 font-bold">
+                                <PlusIcon className="h-4 w-4" />
+                                Dodaj Materiały
+                            </Button>
+                        </Link>
                     )}
                 </div>
             </div>
@@ -99,9 +104,11 @@ export function WelcomeBanner({ user }: WelcomeBannerProps) {
                                 Brak czasu na szukanie? Zaufaj nam. Kliknij, a wygenerujemy gotową misję No-Prep na 45 minut, dopasowaną do Twojego konta.
                             </p>
                         </div>
-                        <Button onClick={() => toast.success("Funkcja została wywołana.")} className="w-full relative z-10 bg-indigo-500 hover:bg-indigo-600 text-white font-bold gap-2 shadow-[0_4px_0_rgb(79,70,229)] hover:shadow-[0_2px_0_rgb(79,70,229)] hover:translate-y-[2px] active:shadow-none active:translate-y-[4px] transition-all">
-                            <Sparkles className="h-4 w-4" /> Uruchom Gotowca
-                        </Button>
+                        <Link href={`/${language}/products?category=no-prep`} className="w-full">
+                            <Button className="w-full relative z-10 bg-indigo-500 hover:bg-indigo-600 text-white font-bold gap-2 shadow-[0_4px_0_rgb(79,70,229)] hover:shadow-[0_2px_0_rgb(79,70,229)] hover:translate-y-[2px] active:shadow-none active:translate-y-[4px] transition-all">
+                                <Sparkles className="h-4 w-4" /> Uruchom Gotowca
+                            </Button>
+                        </Link>
                     </div>
 
                     {/* TEACHER GAMIFICATION 3: TIME SAVED METRIC */}
@@ -181,9 +188,11 @@ export function WelcomeBanner({ user }: WelcomeBannerProps) {
                                 <span className="text-xs font-black uppercase tracking-widest text-orange-600 bg-orange-100 px-2 py-1 rounded-md">Zadanie na Dziś!</span>
                                 <h3 className="text-xl font-black text-slate-900 mt-2 mb-1">Twój nauczyciel p. Janek, prosi o wykonanie Misji: &quot;Past Simple&quot;</h3>
                                 <p className="text-sm font-medium text-slate-500 mb-3">Zrób to dzisiaj, a otrzymasz 150 EXP bonusu za terminowość.</p>
-                                <Button onClick={() => toast.success("Funkcja została wywołana.")} className="w-full md:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold gap-2 rounded-xl shadow-[0_4px_0_rgb(194,65,12)] hover:shadow-[0_2px_0_rgb(194,65,12)] hover:translate-y-[2px] active:shadow-none active:translate-y-[4px] transition-all">
-                                    Rozpocznij Misję <ArrowRight className="h-4 w-4" />
-                                </Button>
+                                <Link href={`/${language}/products`}>
+                                    <Button className="w-full md:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold gap-2 rounded-xl shadow-[0_4px_0_rgb(194,65,12)] hover:shadow-[0_2px_0_rgb(194,65,12)] hover:translate-y-[2px] active:shadow-none active:translate-y-[4px] transition-all">
+                                        Rozpocznij Misję <ArrowRight className="h-4 w-4" />
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -314,9 +323,11 @@ export function WelcomeBanner({ user }: WelcomeBannerProps) {
                                     <Badge variant="outline" className="bg-indigo-50 text-indigo-700 border-indigo-100 text-[10px]">Najlepszy Wynik: 1420 pkt</Badge>
                                 </div>
                             </div>
-                            <Button onClick={() => toast.success("Funkcja została wywołana.")} className="w-full mt-4 bg-indigo-100 hover:bg-indigo-500 text-indigo-700 hover:text-white transition-colors" size="sm">
-                                <PlayCircle className="w-4 h-4 mr-2" /> Zagraj w Dodatek
-                            </Button>
+                            <Link href={`/${language}/products`} className="w-full">
+                                <Button className="w-full mt-4 bg-indigo-100 hover:bg-indigo-500 text-indigo-700 hover:text-white transition-colors" size="sm">
+                                    <PlayCircle className="w-4 h-4 mr-2" /> Przeglądaj Materiały
+                                </Button>
+                            </Link>
                         </div>
 
                         {/* LOCKED GAME 1 — no purchase CTA, just locked */}

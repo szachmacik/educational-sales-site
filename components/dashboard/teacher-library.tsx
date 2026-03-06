@@ -66,7 +66,7 @@ export function TeacherLibrary({ courses, setCategoryFilter, filteredCourses }: 
                             Za 2 minuty dzwonek, a Ty nie masz nic? Kliknij guzik paniki, a wylosujemy dla Ciebie uniwersalną, angażującą rozgrzewkę (Warm-up) na ekran, która nie wymaga kserowania.
                         </p>
                     </div>
-                    <Button onClick={() => toast.success("Funkcja została wywołana.")} size="lg" className="bg-white text-rose-600 hover:bg-rose-50 font-black shadow-lg rounded-2xl h-14 px-8 text-lg shrink-0 relative z-10 w-full md:w-auto hover:scale-105 transition-transform">
+                    <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} size="lg" className="bg-white text-rose-600 hover:bg-rose-50 font-black shadow-lg rounded-2xl h-14 px-8 text-lg shrink-0 relative z-10 w-full md:w-auto hover:scale-105 transition-transform">
                         Uratuj moją lekcję 🚀
                     </Button>
                 </div>
@@ -86,11 +86,11 @@ export function TeacherLibrary({ courses, setCategoryFilter, filteredCourses }: 
                             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">Mega Pack: Scenariusze A1-A2</h2>
                             <p className="text-slate-600 mb-6 max-w-lg">{t.dashboard?.library?.packDesc || "Complete set of materials for the whole school year."}</p>
                             <div className="flex gap-3">
-                                <Button onClick={() => toast.success("Funkcja została wywołana.")} className="bg-indigo-600 hover:bg-indigo-700 shadow-md shadow-indigo-200 gap-2">
+                                <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} className="bg-indigo-600 hover:bg-indigo-700 shadow-md shadow-indigo-200 gap-2">
                                     <Download className="h-4 w-4" />
                                     {t.dashboard?.library?.downloadZip || "Download all (ZIP)"}
                                 </Button>
-                                <Button onClick={() => toast.success("Funkcja została wywołana.")} variant="outline" className="gap-2">
+                                <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} variant="outline" className="gap-2">
                                     <BookOpen className="h-4 w-4" />
                                     {t.dashboard?.library?.browseFiles || "Browse files"}
                                 </Button>
@@ -138,7 +138,7 @@ export function TeacherLibrary({ courses, setCategoryFilter, filteredCourses }: 
                                         <h4 className="font-bold text-slate-900 text-sm leading-tight truncate">{rec.title}</h4>
                                         <p className="text-xs font-bold text-emerald-600 mt-1">{rec.price}</p>
                                     </div>
-                                    <Button onClick={() => toast.success("Funkcja została wywołana.")} size="sm" variant="ghost" className="rounded-full h-8 w-8 p-0 hover:bg-indigo-50 text-indigo-600">
+                                    <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} size="sm" variant="ghost" className="rounded-full h-8 w-8 p-0 hover:bg-indigo-50 text-indigo-600">
                                         <ShoppingBag className="h-4 w-4" />
                                     </Button>
                                 </div>

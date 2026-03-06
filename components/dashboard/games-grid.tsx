@@ -39,7 +39,7 @@ export function GamesGrid() {
                                 <h4 className="text-2xl font-black text-slate-900 mb-2">Stwórz własną grę przez AI</h4>
                                 <p className="text-slate-500 font-medium">Uruchom kreatora i wygeneruj interaktywny quiz lub grę memory w kilka sekund za pomocą prostego opisu.</p>
                             </div>
-                            <Button onClick={() => toast.success("Funkcja została wywołana.")} size="lg" className="bg-indigo-600 hover:bg-slate-900 rounded-xl px-8 h-14 font-bold text-lg shadow-lg shadow-indigo-100 group-hover:px-10 transition-all">
+                            <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} size="lg" className="bg-indigo-600 hover:bg-slate-900 rounded-xl px-8 h-14 font-bold text-lg shadow-lg shadow-indigo-100 group-hover:px-10 transition-all">
                                 Otwórz Workshop
                             </Button>
                         </div>
@@ -73,7 +73,7 @@ export function GamesGrid() {
                                 <div className="w-full space-y-3">
                                     <h4 className="font-bold text-slate-900">{game.title}</h4>
                                     <DialogTrigger asChild>
-                                        <Button onClick={() => toast.success("Funkcja została wywołana.")} className="w-full bg-slate-900 text-white hover:bg-indigo-600 shadow-sm">
+                                        <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} className="w-full bg-slate-900 text-white hover:bg-indigo-600 shadow-sm">
                                             {t.dashboard?.games?.play || "Play now"}
                                         </Button>
                                     </DialogTrigger>

@@ -276,7 +276,7 @@ export function Sidebar({ user, activeTab, setActiveTab, handleLogout, onRoleCha
                                     <Progress value={100} className="h-1.5 bg-slate-700" />
                                     <p className="text-[10px] text-slate-400">{t.dashboard?.subscription?.limitReached || "Limit reached"}</p>
                                 </div>
-                                <Button onClick={() => toast.success("Funkcja została wywołana.")} size="sm" className="w-full bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 border-none shadow-lg shadow-indigo-500/20">
+                                <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} size="sm" className="w-full bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 border-none shadow-lg shadow-indigo-500/20">
                                     <Sparkles className="h-3 w-3 mr-2" />
                                     {t.dashboard?.subscription?.upgrade || "Upgrade Plan"}
                                 </Button>

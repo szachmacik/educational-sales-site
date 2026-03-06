@@ -99,7 +99,7 @@ export function ExitIntentPopup() {
                         </p>
 
                         <div className="space-y-3">
-                            <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} className="w-full h-12 rounded-xl bg-indigo-600 hover:bg-indigo-700 font-bold group">
+                            <Button onClick={() => toast.info(t?.premium?.comingSoon || "Subskrypcja Premium będzie dostępna wkrótce!")} className="w-full h-12 rounded-xl bg-indigo-600 hover:bg-indigo-700 font-bold group">
                                 {t.exitIntent?.cta || "I Want My Gift"}
                                 <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
                             </Button>

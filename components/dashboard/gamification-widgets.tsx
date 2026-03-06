@@ -50,7 +50,7 @@ export function GamificationWidgets({ userId, userRole }: { userId: string, user
                         <span className="text-2xl font-black">{points.balance.toLocaleString()}</span>
                     </div>
                     {userRole !== "student" && (
-                        <Button onClick={() => toast.success("Funkcja została wywołana.")} variant="ghost" size="sm" className="text-xs uppercase font-bold gap-1">
+                        <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} variant="ghost" size="sm" className="text-xs uppercase font-bold gap-1">
                             Sklep <ArrowRight className="h-3 w-3" />
                         </Button>
                     )}

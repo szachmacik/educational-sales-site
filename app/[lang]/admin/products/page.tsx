@@ -339,7 +339,7 @@ export default function ProductsPage() {
                                             <TableCell>
                                                 <DropdownMenu>
                                                     <DropdownMenuTrigger asChild>
-                                                        <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} variant="ghost" size="icon">
+                                                        <Button variant="ghost" size="icon">
                                                             <MoreHorizontal className="h-4 w-4" />
                                                         </Button>
                                                     </DropdownMenuTrigger>

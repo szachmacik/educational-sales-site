@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Badge } from "@/components/ui/badge";
-import { BlogPost, BLOG_CATEGORIES, SAMPLE_BLOG_POSTS } from "@/lib/blog-schema";
+import { BlogPost, BLOG_CATEGORIES, ALL_BLOG_POSTS } from "@/lib/blog-schema";
 import { Calendar, User, ArrowLeft, Share2 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -22,7 +22,7 @@ async function getDictionary(lang: string, namespace: string = 'common') {
 // Get post data (server-side uses sample data, client hydrates from localStorage)
 function getPost(slug: string): BlogPost | null {
     // For SSR/SSG, use sample data
-    const post = SAMPLE_BLOG_POSTS.find(
+    const post = ALL_BLOG_POSTS.find(
         (p) => p.slug === slug && p.status === "published"
     );
     return post || null;
@@ -210,7 +210,7 @@ export default async function BlogPostPage({
                              </div>
 
                              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                                 {SAMPLE_BLOG_POSTS
+                                 {ALL_BLOG_POSTS
                                      .filter(p => p.slug !== post.slug && (p.category === post.category || p.tags.some(tag => post.tags.includes(tag))))
                                      .slice(0, 3)
                                      .map((rp) => (

@@ -515,3 +515,330 @@ export const SAMPLE_BLOG_POSTS: BlogPost[] = [
         publishedAt: new Date(Date.now() - 25 * 24 * 60 * 60 * 1000).toISOString(),
     },
 ];
+
+// Additional blog posts (articles 14-21)
+export const ADDITIONAL_BLOG_POSTS: BlogPost[] = [
+    {
+        id: "post_differentiation",
+        title: "Nauczanie zróżnicowane: Jak dotrzeć do każdego ucznia w klasie?",
+        slug: "nauczanie-zroznicowane-kazdy-uczen",
+        content: `<h2>Czym jest nauczanie zróżnicowane?</h2>
+<p>Nauczanie zróżnicowane (differentiated instruction) to podejście pedagogiczne, które zakłada dostosowanie treści, procesu i produktu do indywidualnych potrzeb każdego ucznia. W klasie językowej oznacza to, że ten sam cel lekcji może być osiągany różnymi ścieżkami — zależnie od poziomu, stylu uczenia się i zainteresowań ucznia.</p>
+<h2>Trzy filary różnicowania</h2>
+<h3>1. Różnicowanie treści</h3>
+<p>Nie wszyscy uczniowie muszą pracować z identycznym materiałem. Możesz przygotować teksty na różnych poziomach trudności, zadania z różną ilością wsparcia (scaffolding) lub materiały nawiązujące do różnych zainteresowań uczniów.</p>
+<h3>2. Różnicowanie procesu</h3>
+<p>Uczniowie mogą dochodzić do tego samego celu różnymi drogami — jedni przez słuchanie, inni przez czytanie, jeszcze inni przez działanie. Stacje rotacyjne, praca w parach, samodzielna praca z kartami pracy — każda metoda trafia do innych uczniów.</p>
+<h3>3. Różnicowanie produktu</h3>
+<p>Zamiast jednego testu dla wszystkich, pozwól uczniom wykazać się wiedzą w różny sposób: prezentacja ustna, plakat, nagranie wideo, esej, komiks. Każdy uczeń może pokazać to, co potrafi, w formie, która mu odpowiada.</p>
+<h2>Praktyczne strategie dla klasy językowej</h2>
+<ul>
+    <li><strong>Stacje rotacyjne:</strong> 4 stacje z różnymi aktywnościami (czytanie, słuchanie, pisanie, mówienie) — uczniowie rotują co 10 minut</li>
+    <li><strong>Choice boards:</strong> Tablica z 9 zadaniami w układzie 3x3 — uczeń wybiera 3 zadania tworzące linię</li>
+    <li><strong>Tiered assignments:</strong> To samo zadanie w 3 wersjach trudności (podstawowa, standardowa, rozszerzona)</li>
+    <li><strong>Flexible grouping:</strong> Grupy zmieniają się w zależności od zadania — czasem według poziomu, czasem mieszane</li>
+</ul>
+<h2>Jak zacząć bez przytłaczania się?</h2>
+<p>Nie musisz różnicować wszystkiego od razu. Zacznij od jednego elementu — np. przygotuj dwie wersje karty pracy: podstawową i rozszerzoną. Z każdą lekcją dodawaj jeden nowy element różnicowania. Po miesiącu będziesz mieć bogaty repertuar strategii.</p>`,
+        excerpt: "Jak skutecznie dostosować nauczanie do potrzeb każdego ucznia? Praktyczny przewodnik po nauczaniu zróżnicowanym — stacje, choice boards i tiered assignments.",
+        featuredImage: "/ai_education_1770206350000.png",
+        author: "Kamila Łobko-Koziej",
+        category: "metodyka",
+        tags: ["różnicowanie", "differentiation", "metodyka", "indywidualizacja"],
+        readingTime: 9,
+        status: "published",
+        seo: {
+            metaTitle: "Nauczanie zróżnicowane w klasie językowej | Kamila English Blog",
+            metaDescription: "Jak dostosować nauczanie do każdego ucznia? Stacje rotacyjne, choice boards, tiered assignments — praktyczny przewodnik.",
+            ogImage: "/ai_education_1770206350000.png",
+        },
+        createdAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+        id: "post_vocabulary_games",
+        title: "15 gier słownikowych, które uczniowie uwielbiają",
+        slug: "gry-slownikowe-uczniowie-uwielbiaja",
+        content: `<h2>Dlaczego gry słownikowe działają?</h2>
+<p>Nauka słownictwa przez gry angażuje emocje, obniża stres i tworzy skojarzenia, które pomagają zapamiętać nowe słowa. Badania pokazują, że słowa poznane w kontekście zabawy są zapamiętywane nawet 3 razy skuteczniej niż te z listy do wykucia.</p>
+<h2>Gry na rozgrzewkę (5 minut)</h2>
+<ol>
+    <li><strong>Word Association:</strong> Nauczyciel mówi słowo, uczniowie po kolei podają skojarzenia. Kto się zatnie — odpada.</li>
+    <li><strong>Alphabet Race:</strong> Uczniowie mają 2 minuty, by napisać słowo na każdą literę alfabetu z danej kategorii.</li>
+    <li><strong>Hot Seat:</strong> Jeden uczeń siedzi tyłem do tablicy, reszta opisuje słowo bez jego wymówienia.</li>
+</ol>
+<h2>Gry na utrwalenie (10-15 minut)</h2>
+<ol start="4">
+    <li><strong>Kahoot/Quizlet Live:</strong> Klasyczne, ale zawsze działają. Rywalizacja motywuje nawet najsłabszych uczniów.</li>
+    <li><strong>Taboo:</strong> Opisz słowo bez użycia 5 zakazanych wyrazów. Doskonałe ćwiczenie parafrazowania.</li>
+    <li><strong>Pictionary:</strong> Rysowanie słów — świetne dla uczniów wizualnych i kinetycznych.</li>
+    <li><strong>Bingo słownikowe:</strong> Uczniowie wypełniają kartę słowami z lekcji, nauczyciel czyta definicje.</li>
+    <li><strong>Word Auction:</strong> Uczniowie "kupują" słowa za wirtualne pieniądze, tworząc zdania. Wygrywa najdłuższe poprawne zdanie.</li>
+</ol>
+<h2>Gry na głębsze przetwarzanie (20+ minut)</h2>
+<ol start="9">
+    <li><strong>Word Map:</strong> Uczniowie tworzą mapy myśli dla kluczowych słów — synonimy, antonimy, przykłady, definicja.</li>
+    <li><strong>Story Chain:</strong> Każdy uczeń dodaje zdanie do historii, używając wylosowanego słowa.</li>
+    <li><strong>Vocabulary Debate:</strong> Uczniowie losują słowa i muszą ich użyć podczas debaty na zadany temat.</li>
+    <li><strong>Crossword Creator:</strong> Uczniowie sami tworzą krzyżówki dla kolegów — wymaga głębokiego zrozumienia słów.</li>
+    <li><strong>Vocabulary Relay:</strong> Drużyny przekazują "pałeczkę" — każdy musi użyć słowa w zdaniu, zanim przekaże następnemu.</li>
+    <li><strong>Word Detectives:</strong> Uczniowie szukają słów z lekcji w autentycznych tekstach, filmach, piosenkach.</li>
+    <li><strong>Vocabulary Jenga:</strong> Na klockach Jenga napisz słowa — wyciągając klocek, musisz użyć słowa w zdaniu.</li>
+</ol>`,
+        excerpt: "15 sprawdzonych gier słownikowych na każdą lekcję angielskiego. Od 5-minutowych rozgrzewek po 20-minutowe aktywności — dla każdego poziomu i grupy wiekowej.",
+        featuredImage: "/classroom_discipline_1770205801695.png",
+        author: "Kamila Łobko-Koziej",
+        category: "inspiracje",
+        tags: ["gry", "słownictwo", "aktywności", "zabawy językowe"],
+        readingTime: 7,
+        status: "published",
+        seo: {
+            metaTitle: "15 Gier Słownikowych na Lekcje Angielskiego | Kamila English Blog",
+            metaDescription: "Najlepsze gry słownikowe dla uczniów angielskiego. Hot Seat, Taboo, Word Auction i 12 innych sprawdzonych aktywności.",
+            ogImage: "/classroom_discipline_1770205801695.png",
+        },
+        createdAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+        id: "post_digital_tools",
+        title: "Najlepsze cyfrowe narzędzia dla nauczycieli angielskiego w 2025",
+        slug: "cyfrowe-narzedzia-nauczyciel-angielskiego-2025",
+        content: `<h2>Przegląd najlepszych narzędzi</h2>
+<p>Rok 2025 przyniósł lawinę nowych narzędzi edukacyjnych. Które z nich naprawdę warto znać? Przygotowałam subiektywny przegląd narzędzi, które regularnie używam w swojej pracy i które polecam nauczycielom angielskiego.</p>
+<h2>Tworzenie materiałów</h2>
+<h3>Canva for Education</h3>
+<p>Darmowe dla nauczycieli. Tysiące szablonów kart pracy, plakatów, prezentacji. Funkcja "Magic Write" pomaga generować teksty na zadany temat i poziom. Niezbędnik każdego nauczyciela.</p>
+<h3>BookWidgets</h3>
+<p>Ponad 40 typów interaktywnych ćwiczeń: krzyżówki, memory, gry słownikowe, quizy. Integruje się z Google Classroom i Microsoft Teams. Płatne, ale warte każdej złotówki.</p>
+<h3>Wordwall</h3>
+<p>Szybkie tworzenie interaktywnych gier z własnego słownictwa. Uczniowie mogą grać na telefonach. Darmowa wersja pozwala na 5 aktywności — wystarczy na start.</p>
+<h2>Komunikacja i organizacja</h2>
+<h3>ClassDojo</h3>
+<p>Platforma do komunikacji z rodzicami, zarządzania zachowaniem i budowania portfolio ucznia. Szczególnie polecana dla klas 1-6.</p>
+<h3>Notion</h3>
+<p>Mój osobisty "command center" — plany lekcji, baza materiałów, notatki ze szkoleń, listy uczniów. Darmowy dla nauczycieli, nieograniczone możliwości.</p>
+<h2>Ocenianie i feedback</h2>
+<h3>Flipgrid (teraz Flip)</h3>
+<p>Uczniowie nagrywają krótkie wideo jako odpowiedź na zadanie. Idealne do ćwiczenia mówienia — uczniowie czują mniejszy stres niż przy mówieniu "na żywo".</p>
+<h3>Formative</h3>
+<p>Quizy w czasie rzeczywistym z natychmiastowym feedbackiem. Widzisz odpowiedzi uczniów na bieżąco i możesz reagować w trakcie lekcji.</p>
+<h2>AI w klasie</h2>
+<h3>ChatGPT / Claude</h3>
+<p>Do generowania tekstów na zadany poziom, tworzenia pytań do tekstu, pisania scenariuszy lekcji. Pamiętaj — AI to asystent, nie zastępstwo Twojej wiedzy pedagogicznej.</p>
+<h3>Diffit</h3>
+<p>Wklejasz dowolny tekst, AI dostosowuje go do wybranego poziomu. Idealne do tworzenia zróżnicowanych materiałów w kilka sekund.</p>`,
+        excerpt: "Przegląd najlepszych cyfrowych narzędzi dla nauczycieli angielskiego w 2025 roku. Canva, Wordwall, Flipgrid, AI — co warto znać i jak to stosować.",
+        featuredImage: "/ai_education_1770206350000.png",
+        author: "Kamila Łobko-Koziej",
+        category: "technologia",
+        tags: ["narzędzia cyfrowe", "technologia", "EdTech", "2025"],
+        readingTime: 10,
+        status: "published",
+        seo: {
+            metaTitle: "Najlepsze Narzędzia Cyfrowe dla Nauczycieli Angielskiego 2025 | Blog",
+            metaDescription: "Canva, Wordwall, Flipgrid, AI — przegląd najlepszych narzędzi cyfrowych dla nauczycieli angielskiego. Co naprawdę warto używać?",
+            ogImage: "/ai_education_1770206350000.png",
+        },
+        createdAt: new Date(Date.now() - 8 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 8 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 8 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+        id: "post_parents_communication",
+        title: "Jak rozmawiać z rodzicami o postępach dziecka? Praktyczny przewodnik",
+        slug: "rozmowy-z-rodzicami-postepy-dziecka",
+        content: `<h2>Dlaczego komunikacja z rodzicami jest kluczowa?</h2>
+<p>Rodzice są naturalnymi sojusznikami nauczyciela w procesie nauki. Gdy są dobrze poinformowani i zaangażowani, uczniowie osiągają lepsze wyniki. Jednak rozmowy z rodzicami bywają trudne — szczególnie gdy mamy do przekazania negatywne informacje.</p>
+<h2>Zasada "kanapki feedbackowej"</h2>
+<p>Klasyczna, ale skuteczna technika: zacznij od pozytywu, w środku umieść obszar do poprawy, zakończ kolejnym pozytywem lub planem działania. Przykład: "Marta świetnie radzi sobie z rozumieniem ze słuchu — to jej mocna strona. Widzę, że gramatyka sprawia jej trudność, szczególnie czasy przeszłe. Mam kilka pomysłów, jak możemy to wspólnie poprawić — czy możemy porozmawiać o dodatkowych ćwiczeniach w domu?"</p>
+<h2>Trudne rozmowy — jak się przygotować?</h2>
+<ul>
+    <li><strong>Zbierz konkretne przykłady:</strong> Nie "Kacper jest niestaranny", ale "W ostatnich 3 pracach domowych Kacper zostawił połowę zadań nieukończonych"</li>
+    <li><strong>Skup się na zachowaniu, nie osobowości:</strong> "Widzę, że Zosia ma trudność z koncentracją przez 45 minut" zamiast "Zosia jest roztargniona"</li>
+    <li><strong>Proponuj rozwiązania:</strong> Każda trudność powinna mieć propozycję działania — co rodzic może zrobić w domu, co Ty zrobisz w szkole</li>
+    <li><strong>Słuchaj aktywnie:</strong> Rodzice często widzą dziecko z innej perspektywy. Ich informacje mogą być bezcenne</li>
+</ul>
+<h2>Komunikacja cyfrowa</h2>
+<p>E-maile i wiadomości przez platformy szkolne stały się normą. Kilka zasad dobrej komunikacji cyfrowej:</p>
+<ul>
+    <li>Odpowiadaj w ciągu 24-48 godzin (ustal i zakomunikuj swoje godziny dostępności)</li>
+    <li>Pisz krótko i konkretnie — rodzice są zajęci</li>
+    <li>Unikaj skrótów i żargonu pedagogicznego</li>
+    <li>Trudne sprawy rozwiązuj telefonicznie lub osobiście — nie przez e-mail</li>
+</ul>`,
+        excerpt: "Jak skutecznie komunikować się z rodzicami o postępach dziecka? Technika kanapki feedbackowej, trudne rozmowy i zasady komunikacji cyfrowej.",
+        featuredImage: "/classroom_discipline_1770205801695.png",
+        author: "Kamila Łobko-Koziej",
+        category: "metodyka",
+        tags: ["rodzice", "komunikacja", "feedback", "współpraca"],
+        readingTime: 8,
+        status: "published",
+        seo: {
+            metaTitle: "Rozmowy z Rodzicami o Postępach Dziecka | Kamila English Blog",
+            metaDescription: "Jak rozmawiać z rodzicami o trudnościach ucznia? Technika kanapki feedbackowej i praktyczne wskazówki dla nauczycieli.",
+            ogImage: "/classroom_discipline_1770205801695.png",
+        },
+        createdAt: new Date(Date.now() - 12 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 12 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 12 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+        id: "post_writing_skills",
+        title: "Pisanie po angielsku: Od zdania do eseju — etapy i ćwiczenia",
+        slug: "pisanie-po-angielsku-od-zdania-do-eseju",
+        content: `<h2>Dlaczego pisanie sprawia tyle trudności?</h2>
+<p>Pisanie jest najtrudniejszą sprawnością językową — wymaga jednoczesnej aktywacji gramatyki, słownictwa, logicznego myślenia i znajomości konwencji gatunkowych. Nie dziwi więc, że uczniowie często go unikają. Kluczem jest stopniowe budowanie kompetencji — od zdania do akapitu, od akapitu do tekstu.</p>
+<h2>Etap 1: Zdanie (poziom A1-A2)</h2>
+<p>Zanim uczeń napisze tekst, musi opanować zdanie. Ćwiczenia na tym etapie:</p>
+<ul>
+    <li>Sentence starters: "I like... because...", "In my opinion..."</li>
+    <li>Scrambled sentences: układanie wyrazów w poprawnej kolejności</li>
+    <li>Sentence combining: łączenie dwóch prostych zdań spójnikami</li>
+</ul>
+<h2>Etap 2: Akapit (poziom B1)</h2>
+<p>Akapit to jednostka myśli. Uczniowie muszą zrozumieć strukturę: topic sentence → supporting sentences → concluding sentence. Ćwiczenia:</p>
+<ul>
+    <li>Paragraph frames: gotowe szablony z lukami do uzupełnienia</li>
+    <li>Paragraph analysis: uczniowie identyfikują strukturę w gotowych akapitach</li>
+    <li>Peer editing: uczniowie oceniają akapity kolegów według kryteriów</li>
+</ul>
+<h2>Etap 3: Tekst (poziom B2+)</h2>
+<p>Na tym etapie uczniowie uczą się planowania, spójności i stylu. Techniki:</p>
+<ul>
+    <li>Mind mapping przed pisaniem: wizualizacja struktury tekstu</li>
+    <li>Outline writing: tworzenie konspektu przed właściwym tekstem</li>
+    <li>Model texts: analiza przykładowych tekstów przed samodzielnym pisaniem</li>
+</ul>
+<h2>Jak poprawiać prace pisemne efektywnie?</h2>
+<p>Nie poprawiaj wszystkiego — to demotywuje i zajmuje zbyt dużo czasu. Wybierz 2-3 obszary, na których skupiasz się w danej pracy. Używaj symboli korektorskich zamiast przepisywania — uczeń sam musi znaleźć i poprawić błąd. To znacznie skuteczniejsze niż gotowa poprawka od nauczyciela.</p>`,
+        excerpt: "Jak uczyć pisania po angielsku krok po kroku? Od prostego zdania do rozbudowanego eseju — etapy, ćwiczenia i techniki efektywnego poprawiania prac.",
+        featuredImage: "/ai_education_1770206350000.png",
+        author: "Kamila Łobko-Koziej",
+        category: "metodyka",
+        tags: ["pisanie", "writing", "esej", "sprawności językowe"],
+        readingTime: 9,
+        status: "published",
+        seo: {
+            metaTitle: "Nauczanie Pisania po Angielsku — Od Zdania do Eseju | Blog",
+            metaDescription: "Jak uczyć pisania po angielsku etapami? Sentence starters, paragraph frames, outline writing — praktyczny przewodnik.",
+            ogImage: "/ai_education_1770206350000.png",
+        },
+        createdAt: new Date(Date.now() - 15 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 15 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 15 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+        id: "post_exam_preparation",
+        title: "Przygotowanie do egzaminów: Strategie, które naprawdę działają",
+        slug: "przygotowanie-do-egzaminow-strategie",
+        content: `<h2>Psychologia egzaminów</h2>
+<p>Stres egzaminacyjny to realne zjawisko, które może zablokować nawet dobrze przygotowanego ucznia. Pierwszym krokiem w przygotowaniu do egzaminu jest nauczenie uczniów, jak zarządzać stresem — techniki oddychania, pozytywna wizualizacja, realistyczne oczekiwania.</p>
+<h2>Strategia 1: Spaced repetition (powtarzanie rozłożone w czasie)</h2>
+<p>Zamiast uczyć się wszystkiego dzień przed egzaminem, rozłóż materiał na tygodnie. Krzywa zapominania Ebbinghausa pokazuje, że powtarzanie w odpowiednich odstępach czasu (1 dzień, 3 dni, 7 dni, 21 dni) dramatycznie zwiększa retencję. Aplikacje jak Anki automatyzują ten proces.</p>
+<h2>Strategia 2: Active recall (aktywne przypominanie)</h2>
+<p>Samo czytanie notatek to pasywna nauka. Aktywne przypominanie — zakrywanie odpowiedzi i próba samodzielnego odtworzenia — jest wielokrotnie skuteczniejsze. Fiszki, quizy, tłumaczenie z polskiego na angielski bez podglądania.</p>
+<h2>Strategia 3: Timed practice (ćwiczenie pod presją czasu)</h2>
+<p>Egzamin ma limit czasu — ćwiczenia też powinny. Uczniowie muszą nauczyć się zarządzania czasem: ile minut na każde zadanie, kiedy pominąć trudne pytanie i wrócić do niego, jak sprawdzić pracę w pozostałym czasie.</p>
+<h2>Strategia 4: Past papers (arkusze z poprzednich lat)</h2>
+<p>Nie ma lepszego przygotowania niż praca z autentycznymi arkuszami egzaminacyjnymi. Uczniowie poznają format, typowe pytania i poziom trudności. Analizuj błędy razem z uczniami — to najcenniejszy element tej strategii.</p>
+<h2>Tydzień przed egzaminem</h2>
+<p>Ostatni tydzień to czas na powtórzenie, nie naukę nowego materiału. Skup się na słabych stronach uczniów, rób krótkie sesje (45 minut max), zadbaj o sen i odpoczynek. Zmęczony mózg nie zapamiętuje.</p>`,
+        excerpt: "Skuteczne strategie przygotowania do egzaminów z angielskiego: spaced repetition, active recall, timed practice i analiza arkuszy. Jak pomóc uczniom osiągnąć najlepszy wynik?",
+        featuredImage: "/classroom_discipline_1770205801695.png",
+        author: "Kamila Łobko-Koziej",
+        category: "metodyka",
+        tags: ["egzaminy", "matura", "FCE", "przygotowanie", "strategie"],
+        readingTime: 10,
+        status: "published",
+        seo: {
+            metaTitle: "Przygotowanie do Egzaminów z Angielskiego — Strategie | Blog",
+            metaDescription: "Spaced repetition, active recall, timed practice — skuteczne strategie przygotowania do egzaminów z angielskiego dla nauczycieli.",
+            ogImage: "/classroom_discipline_1770205801695.png",
+        },
+        createdAt: new Date(Date.now() - 18 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 18 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 18 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+        id: "post_project_based",
+        title: "Project-Based Learning: Jak realizować projekty językowe w klasie?",
+        slug: "project-based-learning-projekty-jezykowe",
+        content: `<h2>Czym jest Project-Based Learning?</h2>
+<p>Project-Based Learning (PBL) to metoda nauczania, w której uczniowie uczą się poprzez realizację długoterminowego projektu odpowiadającego na realne pytanie lub problem. W kontekście nauki języka angielskiego PBL łączy wszystkie cztery sprawności (czytanie, pisanie, słuchanie, mówienie) w autentycznym kontekście.</p>
+<h2>Elementy dobrego projektu językowego</h2>
+<ul>
+    <li><strong>Driving question:</strong> Centralne pytanie, które napędza projekt ("How can we create a guide to our city for English-speaking tourists?")</li>
+    <li><strong>Autentyczny produkt końcowy:</strong> Coś, co ma wartość poza klasą — prezentacja, broszura, podcast, strona internetowa</li>
+    <li><strong>Collaboration:</strong> Praca w grupach uczy negocjowania, delegowania, rozwiązywania konfliktów</li>
+    <li><strong>Reflection:</strong> Regularne momenty refleksji — co działa, co trzeba zmienić</li>
+</ul>
+<h2>Przykładowe projekty dla różnych grup</h2>
+<h3>Klasy 4-6 (A1-A2)</h3>
+<p><strong>"My Dream School"</strong> — uczniowie projektują wymarzoną szkołę, opisują ją po angielsku i prezentują klasie. Produkt: plakat lub prezentacja PowerPoint.</p>
+<h3>Klasy 7-8 (A2-B1)</h3>
+<p><strong>"Our Town's Hidden Gems"</strong> — uczniowie tworzą anglojęzyczny przewodnik po swoim mieście dla turystów. Produkt: broszura lub krótki film.</p>
+<h3>Liceum (B1-B2)</h3>
+<p><strong>"Social Issues Podcast"</strong> — uczniowie nagrywają podcast po angielsku na temat wybranego problemu społecznego. Produkt: nagranie audio z transkryptem.</p>
+<h2>Jak oceniać projekty?</h2>
+<p>Ocenianie projektu powinno obejmować zarówno produkt końcowy, jak i proces. Użyj rubryk oceniania, które uczniowie znają od początku projektu. Oceniaj zarówno kompetencje językowe (gramatyka, słownictwo, wymowa), jak i kompetencje kluczowe (praca w grupie, kreatywność, zarządzanie czasem).</p>`,
+        excerpt: "Jak realizować projekty językowe metodą PBL? Driving questions, autentyczne produkty, przykładowe projekty dla klas 4-8 i liceum. Kompletny przewodnik.",
+        featuredImage: "/ai_education_1770206350000.png",
+        author: "Kamila Łobko-Koziej",
+        category: "metodyka",
+        tags: ["PBL", "projekty", "project-based learning", "metodyka"],
+        readingTime: 9,
+        status: "published",
+        seo: {
+            metaTitle: "Project-Based Learning w Nauczaniu Angielskiego | Blog",
+            metaDescription: "Jak realizować projekty językowe metodą PBL? Driving questions, przykładowe projekty i ocenianie — kompletny przewodnik.",
+            ogImage: "/ai_education_1770206350000.png",
+        },
+        createdAt: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+        id: "post_listening_skills",
+        title: "Rozumienie ze słuchu: Jak ćwiczyć tę najtrudniejszą sprawność?",
+        slug: "rozumienie-ze-sluchu-cwiczenia-strategie",
+        content: `<h2>Dlaczego słuchanie jest takie trudne?</h2>
+<p>Rozumienie ze słuchu jest dla wielu uczniów najtrudniejszą sprawnością — i to z kilku powodów. Po pierwsze, mówcy natywni mówią szybko i stosują kontrakcje, redukcje i linking sounds. Po drugie, uczniowie nie mogą "cofnąć" rozmówcy jak tekstu. Po trzecie, stres egzaminacyjny blokuje przetwarzanie informacji.</p>
+<h2>Trzy etapy ćwiczenia słuchania</h2>
+<h3>Pre-listening (przed słuchaniem)</h3>
+<p>Aktywacja wiedzy wstępnej jest kluczowa. Zanim uczniowie usłyszą nagranie, porozmawiaj o temacie, przejrzyj słownictwo kluczowe, omów pytania. Mózg, który wie, czego szukać, słyszy więcej.</p>
+<h3>While-listening (podczas słuchania)</h3>
+<p>Pierwsze słuchanie: ogólne zrozumienie (gist listening). Drugie słuchanie: szczegóły (detail listening). Nie dawaj zbyt wielu zadań naraz — to przytłacza.</p>
+<h3>Post-listening (po słuchaniu)</h3>
+<p>Dyskusja, analiza trudnych fragmentów, praca z transkryptem. Transkrypt to cenne narzędzie — uczniowie mogą zobaczyć, co słyszeli i dlaczego czegoś nie rozumieli.</p>
+<h2>Autentyczne materiały vs. nagrania egzaminacyjne</h2>
+<p>Nagrania egzaminacyjne są ważne, ale autentyczne materiały (podcasty, filmy, piosenki) budują prawdziwą kompetencję słuchania. Zacznij od materiałów z napisami, stopniowo je usuwaj. Polecam: BBC Learning English, TED-Ed, Easy English.</p>
+<h2>Strategie dla uczniów</h2>
+<ul>
+    <li><strong>Don't panic:</strong> Nie rozumiem wszystkiego — to normalne. Skup się na słowach kluczowych.</li>
+    <li><strong>Use context:</strong> Kontekst, ton głosu, słowa kluczowe pomagają domyślić się znaczenia.</li>
+    <li><strong>Predict:</strong> Przed słuchaniem przewiduj, co usłyszysz na podstawie tematu i pytań.</li>
+    <li><strong>Note-taking:</strong> Krótkie notatki podczas słuchania — słowa kluczowe, liczby, nazwy własne.</li>
+</ul>`,
+        excerpt: "Jak skutecznie ćwiczyć rozumienie ze słuchu? Trzy etapy pracy z nagraniem, strategie dla uczniów i najlepsze autentyczne materiały do słuchania.",
+        featuredImage: "/classroom_discipline_1770205801695.png",
+        author: "Kamila Łobko-Koziej",
+        category: "metodyka",
+        tags: ["słuchanie", "listening", "sprawności językowe", "strategie"],
+        readingTime: 8,
+        status: "published",
+        seo: {
+            metaTitle: "Rozumienie ze Słuchu — Jak Ćwiczyć Listening? | Blog",
+            metaDescription: "Jak ćwiczyć rozumienie ze słuchu w angielskim? Pre-listening, while-listening, post-listening — strategie i autentyczne materiały.",
+            ogImage: "/classroom_discipline_1770205801695.png",
+        },
+        createdAt: new Date(Date.now() - 35 * 24 * 60 * 60 * 1000).toISOString(),
+        updatedAt: new Date(Date.now() - 35 * 24 * 60 * 60 * 1000).toISOString(),
+        publishedAt: new Date(Date.now() - 35 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+];
+
+// Combined export of all blog posts
+export const ALL_BLOG_POSTS: BlogPost[] = [...SAMPLE_BLOG_POSTS, ...ADDITIONAL_BLOG_POSTS];

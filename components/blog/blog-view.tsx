@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { BlogPost, BLOG_CATEGORIES, SAMPLE_BLOG_POSTS } from "@/lib/blog-schema";
+import { BlogPost, BLOG_CATEGORIES, ALL_BLOG_POSTS } from "@/lib/blog-schema";
 import { Calendar, User, ArrowRight, Search, Clock, BookOpen, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -21,7 +21,7 @@ export function BlogView() {
     const blogEmpty = blog?.empty || "Brak artykułów pasujących do wybranych filtrów.";
     const blogReadMore = blog?.readMore || "Czytaj dalej";
 
-    const defaultPosts = SAMPLE_BLOG_POSTS.filter((p) => p.status === "published");
+    const defaultPosts = ALL_BLOG_POSTS.filter((p) => p.status === "published");
     const [posts, setPosts] = useState<BlogPost[]>(defaultPosts);
     const [searchQuery, setSearchQuery] = useState("");
     const [activeCategory, setActiveCategory] = useState<string>("all");

@@ -71,7 +71,7 @@ export function ApiViewerEmbed() {
                             </div>
                             <h3 className="text-xl font-black text-white mb-2">Rozszerz Licencję Szkolną</h3>
                             <p className="text-sm font-medium text-slate-300 max-w-sm mb-6">Funkcja w pełni zautomatyzowanego klonowania asortymentu na własne domeny bez kodu wymaga statusu Premium.</p>
-                            <Button onClick={() => toast.success("Funkcja została wywołana.")} size="lg" className="bg-indigo-500 hover:bg-indigo-400 text-white shadow-lg shadow-indigo-900/50 border border-indigo-400">
+                            <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} size="lg" className="bg-indigo-500 hover:bg-indigo-400 text-white shadow-lg shadow-indigo-900/50 border border-indigo-400">
                                 Wykup Integrację Premium
                             </Button>
                         </div>

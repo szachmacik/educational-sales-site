@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/components/language-provider";
 import { useCart } from "@/lib/cart-context";
+import { useWishlist } from "@/lib/wishlist-context";
 import { useToast } from "@/hooks/use-toast";
 import { getProducts } from "@/lib/product-service";
 import { CATEGORY_COLORS } from "@/lib/product-catalog";
@@ -19,7 +20,8 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
-import { ShoppingCart, Search, Filter, ArrowUpDown, LayoutGrid, List, X } from "lucide-react";
+import { ShoppingCart, Search, Filter, ArrowUpDown, LayoutGrid, List, X, Scale, Heart } from "lucide-react";
+import { Slider } from "@/components/ui/slider";
 
 const CATEGORY_ORDER = [
     "all",
@@ -42,6 +44,7 @@ const AGE_TAGS_IDS = ['zlobek', 'przedszkole', 'klasy-1-3', 'klasy-4-6', 'klasy-
 export function ProductsContent({ lang }: { lang: string }) {
     const { t, language, formatPrice } = useLanguage();
     const { addItem } = useCart();
+    const { toggleWishlist, isInWishlist } = useWishlist();
     const { toast } = useToast();
     const allProducts = getProducts(language);
     const [searchQuery, setSearchQuery] = React.useState("");
@@ -49,6 +52,13 @@ export function ProductsContent({ lang }: { lang: string }) {
     const [selectedAge, setSelectedAge] = React.useState("all");
     const [sortBy, setSortBy] = React.useState("default");
     const [viewMode, setViewMode] = React.useState<"grid" | "list">("grid");
+    const minPrice = allProducts.length > 0 ? Math.floor(Math.min(...allProducts.map(p => p.price))) : 0;
+    const maxPrice = allProducts.length > 0 ? Math.ceil(Math.max(...allProducts.map(p => p.price))) : 1000;
+    const [priceRange, setPriceRange] = React.useState<[number, number]>([0, 9999]);
+    React.useEffect(() => {
+        if (allProducts.length > 0) setPriceRange([minPrice, maxPrice]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [minPrice, maxPrice]);
 
     const categoryNames: Record<string, string> = {
         "all": t.shop?.all || "All",
@@ -72,7 +82,8 @@ export function ProductsContent({ lang }: { lang: string }) {
                 product.description.toLowerCase().includes(searchQuery.toLowerCase());
             const matchesCategory = selectedCategory === "all" || product.categories.includes(selectedCategory);
             const matchesAge = selectedAge === "all" || product.categories.includes(selectedAge);
-            return matchesSearch && matchesCategory && matchesAge;
+            const matchesPrice = product.price >= priceRange[0] && product.price <= priceRange[1];
+            return matchesSearch && matchesCategory && matchesAge && matchesPrice;
         });
         if (sortBy === "price-asc") result = [...result].sort((a, b) => a.price - b.price);
         else if (sortBy === "price-desc") result = [...result].sort((a, b) => b.price - a.price);
@@ -191,17 +202,35 @@ export function ProductsContent({ lang }: { lang: string }) {
                             </div>
                         </div>
 
-                        {/* Price range info */}
+                        {/* Price range slider */}
                         {allProducts.length > 0 && (
-                            <div className="rounded-xl bg-primary/5 border border-primary/10 p-4">
-                                <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-2">
+                            <div className="rounded-xl bg-primary/5 border border-primary/10 p-4 space-y-3">
+                                <p className="text-xs font-semibold text-primary uppercase tracking-wide">
                                     {language === 'pl' ? 'Zakres cen' : 'Price range'}
                                 </p>
-                                <p className="text-sm text-muted-foreground">
-                                    {formatPrice(Math.min(...allProducts.map(p => p.price)))}
-                                    {' — '}
-                                    {formatPrice(Math.max(...allProducts.map(p => p.price)))}
-                                </p>
+                                <Slider
+                                    min={minPrice}
+                                    max={maxPrice}
+                                    step={1}
+                                    value={[priceRange[0], priceRange[1]]}
+                                    onValueChange={(v) => setPriceRange([v[0], v[1]])}
+                                    className="mt-2"
+                                />
+                                <div className="flex items-center justify-between text-sm font-medium text-foreground">
+                                    <span>{formatPrice(priceRange[0])}</span>
+                                    <span>{formatPrice(priceRange[1])}</span>
+                                </div>
+                                {(priceRange[0] !== minPrice || priceRange[1] !== maxPrice) && (
+                                    <Button
+                                        variant="ghost"
+                                        size="sm"
+                                        className="w-full text-xs h-7 text-muted-foreground hover:text-foreground"
+                                        onClick={() => setPriceRange([minPrice, maxPrice])}
+                                    >
+                                        <X className="h-3 w-3 mr-1" />
+                                        {language === 'pl' ? 'Resetuj filtr ceny' : 'Reset price filter'}
+                                    </Button>
+                                )}
                             </div>
                         )}
                     </aside>
@@ -378,6 +407,16 @@ export function ProductsContent({ lang }: { lang: string }) {
                                                 >
                                                     {categoryNames[product.categories[0]] || product.categories[0]}
                                                 </Badge>
+                                                <button
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        toggleWishlist(product.slug);
+                                                        toast({ title: isInWishlist(product.slug) ? (language === 'pl' ? 'Usunięto z listy życzeń' : 'Removed from wishlist') : (language === 'pl' ? 'Dodano do listy życzeń' : 'Added to wishlist'), description: product.title });
+                                                    }}
+                                                    className="absolute top-3 left-3 w-8 h-8 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform"
+                                                >
+                                                    <Heart className={`h-4 w-4 transition-colors ${isInWishlist(product.slug) ? 'fill-rose-500 text-rose-500' : 'text-slate-400 hover:text-rose-400'}`} />
+                                                </button>
                                             </div>
                                             <CardContent className="p-5 flex flex-col flex-1">
                                                 <h3 className="font-bold line-clamp-2 mb-2 group-hover:text-primary transition-colors">
@@ -390,33 +429,54 @@ export function ProductsContent({ lang }: { lang: string }) {
                                                     <span className="font-bold text-lg">
                                                         {formatPrice(product.price)}
                                                     </span>
-                                                    <Button
-                                                        size="sm"
-                                                        className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg transition-all"
-                                                        onClick={(e) => {
-                                                            e.preventDefault();
-                                                            addItem({
-                                                                id: product.slug,
-                                                                title: product.title,
-                                                                price: typeof product.price === 'string' ? parseFloat(product.price) : product.price,
-                                                                images: [product.image || ''],
-                                                                description: product.description,
-                                                                category: product.categories[0],
-                                                                slug: product.slug,
-                                                                tags: product.categories,
-                                                                status: 'published',
-                                                                createdAt: new Date().toISOString(),
-                                                                updatedAt: new Date().toISOString()
-                                                            });
-                                                            toast({
-                                                                title: t.shop?.added || "Added",
-                                                                description: product.title
-                                                            });
-                                                        }}
-                                                    >
-                                                        <ShoppingCart className="h-4 w-4 mr-2" />
-                                                        {t.shop?.add || "Add"}
-                                                    </Button>
+                                                    <div className="flex items-center gap-1.5">
+                                                        <Button
+                                                            size="sm"
+                                                            variant="outline"
+                                                            className="h-8 w-8 p-0 border-slate-200 hover:border-violet-400 hover:bg-violet-50"
+                                                            title={language === 'pl' ? 'Porównaj' : 'Compare'}
+                                                            onClick={(e) => {
+                                                                e.preventDefault();
+                                                                try {
+                                                                    const stored: string[] = JSON.parse(localStorage.getItem('compare_products') || '[]');
+                                                                    if (stored.length >= 4) { toast({ title: language === 'pl' ? 'Maks. 4 produkty' : 'Max 4 products' }); return; }
+                                                                    if (!stored.includes(product.slug)) {
+                                                                        localStorage.setItem('compare_products', JSON.stringify([...stored, product.slug]));
+                                                                        toast({ title: language === 'pl' ? 'Dodano do porównania' : 'Added to compare', description: product.title });
+                                                                    }
+                                                                } catch {}
+                                                            }}
+                                                        >
+                                                            <Scale className="h-3.5 w-3.5 text-slate-500" />
+                                                        </Button>
+                                                        <Button
+                                                            size="sm"
+                                                            className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg transition-all"
+                                                            onClick={(e) => {
+                                                                e.preventDefault();
+                                                                addItem({
+                                                                    id: product.slug,
+                                                                    title: product.title,
+                                                                    price: typeof product.price === 'string' ? parseFloat(product.price) : product.price,
+                                                                    images: [product.image || ''],
+                                                                    description: product.description,
+                                                                    category: product.categories[0],
+                                                                    slug: product.slug,
+                                                                    tags: product.categories,
+                                                                    status: 'published',
+                                                                    createdAt: new Date().toISOString(),
+                                                                    updatedAt: new Date().toISOString()
+                                                                });
+                                                                toast({
+                                                                    title: t.shop?.added || "Added",
+                                                                    description: product.title
+                                                                });
+                                                            }}
+                                                        >
+                                                            <ShoppingCart className="h-4 w-4 mr-2" />
+                                                            {t.shop?.add || "Add"}
+                                                        </Button>
+                                                    </div>
                                                 </div>
                                             </CardContent>
                                         </Card>

@@ -62,7 +62,7 @@ export function SchoolLicenses() {
                                 Skorzystaj z naszych renegocjowanych stawek dystrybutorskich w x-kom.pl i MediaMarkt (tylko dla edukacji B2B). Odbierz darmową dostawę ubezpieczoną na szkołę.
                             </p>
                         </div>
-                        <Button onClick={() => toast.success("Funkcja została wywołana.")} className="w-full mt-4 bg-indigo-600 hover:bg-indigo-700 font-bold shadow-lg shadow-indigo-600/20 gap-2">
+                        <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} className="w-full mt-4 bg-indigo-600 hover:bg-indigo-700 font-bold shadow-lg shadow-indigo-600/20 gap-2">
                             <MonitorSmartphone className="h-4 w-4" /> Sprawdź listę zaufanych dostawców
                         </Button>
                     </CardContent>
@@ -105,7 +105,7 @@ export function SchoolLicenses() {
                             </div>
                         </div>
 
-                        <Button onClick={() => toast.success("Funkcja została wywołana.")} variant="outline" className="w-full text-rose-700 border-rose-200 hover:bg-rose-100 font-bold bg-white gap-2">
+                        <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} variant="outline" className="w-full text-rose-700 border-rose-200 hover:bg-rose-100 font-bold bg-white gap-2">
                             Zapytaj o wycenę pakietu
                         </Button>
                     </CardContent>
@@ -123,10 +123,10 @@ export function SchoolLicenses() {
                             <CardDescription className="mt-2">Ważna do: 25.08.2027 • Faktura: FV/2026/02/104</CardDescription>
                         </div>
                         <div className="flex items-center gap-3">
-                            <Button onClick={() => toast.success("Funkcja została wywołana.")} variant="outline" className="text-slate-600 border-slate-200 hover:bg-slate-100 font-bold gap-2">
+                            <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} variant="outline" className="text-slate-600 border-slate-200 hover:bg-slate-100 font-bold gap-2">
                                 Zarządzaj Dostępami
                             </Button>
-                            <Button onClick={() => toast.success("Funkcja została wywołana.")} className="bg-indigo-600 hover:bg-indigo-700 font-bold gap-2">
+                            <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} className="bg-indigo-600 hover:bg-indigo-700 font-bold gap-2">
                                 <Plus className="h-4 w-4" /> Zaproś Nauczyciela
                             </Button>
                         </div>
@@ -165,7 +165,7 @@ export function SchoolLicenses() {
                                 <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded-full border border-emerald-100 flex items-center gap-1">
                                     <ShieldCheck className="h-3 w-3" /> Aktywne Konto
                                 </span>
-                                <Button onClick={() => toast.success("Funkcja została wywołana.")} variant="ghost" size="icon" className="text-slate-400 hover:text-red-500">
+                                <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} variant="ghost" size="icon" className="text-slate-400 hover:text-red-500">
                                     <Settings className="h-4 w-4" />
                                 </Button>
                             </div>
@@ -186,7 +186,7 @@ export function SchoolLicenses() {
                                 <span className="text-xs font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded-full border border-slate-200 flex items-center gap-1">
                                     <UserMinus className="h-3 w-3" /> Zaproszenie Wysłane
                                 </span>
-                                <Button onClick={() => toast.success("Funkcja została wywołana.")} variant="ghost" size="icon" className="text-slate-400 hover:text-slate-600">
+                                <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} variant="ghost" size="icon" className="text-slate-400 hover:text-slate-600">
                                     <Settings className="h-4 w-4" />
                                 </Button>
                             </div>
@@ -203,7 +203,7 @@ export function SchoolLicenses() {
                                     <p className="text-xs text-slate-400">Wyślij link zaproszeniowy aby przydzielić licencję</p>
                                 </div>
                             </div>
-                            <Button onClick={() => toast.success("Funkcja została wywołana.")} variant="outline" size="sm" className="font-bold text-xs gap-2 border-indigo-200 text-indigo-600 hover:bg-indigo-50">
+                            <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} variant="outline" size="sm" className="font-bold text-xs gap-2 border-indigo-200 text-indigo-600 hover:bg-indigo-50">
                                 <Copy className="h-3 w-3" /> Kopiuj Link
                             </Button>
                         </div>
@@ -239,11 +239,11 @@ export function SchoolLicenses() {
                                     <p className="text-[10px] uppercase font-black tracking-widest text-emerald-600">Aktywny Menedżer</p>
                                 </div>
                             </div>
-                            <Button onClick={() => toast.success("Funkcja została wywołana.")} variant="outline" size="sm" className="text-red-600 border-red-100 hover:bg-red-50 hover:text-red-700 font-bold gap-2">
+                            <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} variant="outline" size="sm" className="text-red-600 border-red-100 hover:bg-red-50 hover:text-red-700 font-bold gap-2">
                                 <UserMinus className="h-4 w-4" /> Odbierz
                             </Button>
                         </div>
-                        <Button onClick={() => toast.success("Funkcja została wywołana.")} className="w-full bg-slate-900 text-white hover:bg-indigo-600 gap-2 font-bold shadow-md">
+                        <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} className="w-full bg-slate-900 text-white hover:bg-indigo-600 gap-2 font-bold shadow-md">
                             <Plus className="h-4 w-4" /> Zmień Delegata
                         </Button>
                         <p className="text-[10px] text-slate-400 text-center leading-relaxed font-medium px-2">
@@ -265,11 +265,11 @@ export function SchoolLicenses() {
                     </CardHeader>
                     <CardContent className="space-y-4">
                         <div className="grid grid-cols-2 gap-3">
-                            <Button onClick={() => toast.success("Funkcja została wywołana.")} variant="outline" className="h-14 border-indigo-200 hover:border-indigo-300 hover:bg-indigo-50 text-indigo-700 font-bold gap-2 flex-col justify-center items-center">
+                            <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} variant="outline" className="h-14 border-indigo-200 hover:border-indigo-300 hover:bg-indigo-50 text-indigo-700 font-bold gap-2 flex-col justify-center items-center">
                                 <MessageCircle className="h-5 w-5 mb-1" />
                                 <span>Czat z Asystentem</span>
                             </Button>
-                            <Button onClick={() => toast.success("Funkcja została wywołana.")} variant="outline" className="h-14 border-indigo-200 hover:border-indigo-300 hover:bg-indigo-50 text-indigo-700 font-bold gap-2 flex-col justify-center items-center">
+                            <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} variant="outline" className="h-14 border-indigo-200 hover:border-indigo-300 hover:bg-indigo-50 text-indigo-700 font-bold gap-2 flex-col justify-center items-center">
                                 <PhoneCall className="h-5 w-5 mb-1" />
                                 <span>Zamów Kontakt</span>
                             </Button>
@@ -309,7 +309,7 @@ export function SchoolLicenses() {
                         </p>
                     </div>
                 </div>
-                <Button onClick={() => toast.success("Funkcja została wywołana.")} className="relative z-10 w-full md:w-auto bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg shadow-indigo-200 font-bold gap-2 whitespace-nowrap">
+                <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} className="relative z-10 w-full md:w-auto bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg shadow-indigo-200 font-bold gap-2 whitespace-nowrap">
                     <MessageSquarePlus className="h-4 w-4" /> Zgłoś Zapotrzebowanie
                 </Button>
             </div>

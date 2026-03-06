@@ -208,7 +208,7 @@ export function SocialMediaHub({ products = [], selectedProduct, onSelectProduct
                                         </div>
                                     )}
                                     <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
-                                        <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} variant="secondary" className="rounded-2xl font-black text-[10px] uppercase tracking-widest h-12 px-8 shadow-2xl">
+                                        <Button onClick={() => { toast.info("Podgląd posta będzie dostępny wkrótce."); }} variant="secondary" className="rounded-2xl font-black text-[10px] uppercase tracking-widest h-12 px-8 shadow-2xl">
                                             {s.labels.from_gallery}
                                         </Button>
                                     </div>
@@ -231,7 +231,7 @@ export function SocialMediaHub({ products = [], selectedProduct, onSelectProduct
                                         {s.labels.ai_expectancy.replace('{percent}', '24').replace('{platform}', selectedPlatform)}
                                     </p>
                                 </div>
-                                <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} className="w-full h-16 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-black uppercase tracking-widest shadow-xl shadow-indigo-100 transition-all hover:scale-[1.02]">
+                                <Button onClick={() => { toast.info("Publikowanie w mediach społecznościowych będzie dostępne po skonfigurowaniu integracji."); }} className="w-full h-16 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-black uppercase tracking-widest shadow-xl shadow-indigo-100 transition-all hover:scale-[1.02]">
                                     {s.labels.export}
                                 </Button>
                             </div>

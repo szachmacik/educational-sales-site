@@ -66,7 +66,7 @@ export function WalletSection() {
                     </div>
                 </div>
 
-                <Button onClick={() => toast.success("Funkcja została wywołana.")} size="lg" className="bg-amber-500 hover:bg-amber-600 text-white rounded-full shadow-lg shadow-amber-200 px-8">
+                <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} size="lg" className="bg-amber-500 hover:bg-amber-600 text-white rounded-full shadow-lg shadow-amber-200 px-8">
                     {t.dashboard?.wallet?.spend || "Spend points in shop"}
                 </Button>
             </div>

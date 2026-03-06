@@ -3,7 +3,6 @@
 import { useLanguage } from "@/components/language-provider";
 import { Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { toast } from "sonner";
 
 export function SocialProofGallery() {
     const { t } = useLanguage();
@@ -33,7 +32,7 @@ export function SocialProofGallery() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} variant="outline" className="gap-2">
+                        <Button variant="outline" className="gap-2">
                             <Facebook className="w-5 h-5 text-[#1877F2]" />
                             {cta}
                         </Button>
@@ -93,7 +92,7 @@ export function SocialProofGallery() {
                                 {desc}
                             </p>
                             <a href={pageUrl} target="_blank" rel="noopener noreferrer">
-                                <Button onClick={() => toast.success(t?.common?.success || "Akcja wykonana pomyślnie.")} className="bg-white text-indigo-600 hover:bg-indigo-50 border-none font-bold py-6 px-8 rounded-full shadow-lg">
+                                <Button className="bg-white text-indigo-600 hover:bg-indigo-50 border-none font-bold py-6 px-8 rounded-full shadow-lg">
                                     {cta}
                                 </Button>
                             </a>

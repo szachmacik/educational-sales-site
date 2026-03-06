@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/components/language-provider";
-import { SAMPLE_BLOG_POSTS } from "@/lib/blog-schema";
+import { ALL_BLOG_POSTS } from "@/lib/blog-schema";
 import { useScrollReveal } from "@/hooks/use-intersection";
 import { cn } from "@/lib/utils";
 
@@ -33,7 +33,7 @@ export function LatestBlogPosts() {
   const reveal = useScrollReveal({ threshold: 0.1 });
 
   // Get 3 latest published posts
-  const posts = SAMPLE_BLOG_POSTS
+  const posts = ALL_BLOG_POSTS
     .filter((p) => p.status === 'published')
     .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
     .slice(0, 3);

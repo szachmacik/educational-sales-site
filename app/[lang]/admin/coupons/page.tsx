@@ -128,7 +128,7 @@ export default function CouponsPage() {
                 </div>
                 <Dialog open={isOpen} onOpenChange={setIsOpen}>
                     <DialogTrigger asChild>
-                        <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")}>
+                        <Button>
                             <Plus className="h-4 w-4 mr-2" />
                             {c.addCoupon}
                         </Button>

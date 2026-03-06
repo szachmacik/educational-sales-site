@@ -21,7 +21,7 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { BlogPost, BLOG_CATEGORIES, SAMPLE_BLOG_POSTS } from "@/lib/blog-schema";
+import { BlogPost, BLOG_CATEGORIES, ALL_BLOG_POSTS } from "@/lib/blog-schema";
 import {
     Plus,
     Search,
@@ -51,8 +51,8 @@ export default function BlogListPage() {
         if (stored) {
             setPosts(JSON.parse(stored));
         } else {
-            setPosts(SAMPLE_BLOG_POSTS);
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(SAMPLE_BLOG_POSTS));
+            setPosts(ALL_BLOG_POSTS);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(ALL_BLOG_POSTS));
         }
         setLoading(false);
     }, []);
@@ -199,7 +199,7 @@ export default function BlogListPage() {
                                         <TableCell>
                                             <DropdownMenu>
                                                 <DropdownMenuTrigger asChild>
-                                                    <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} variant="ghost" size="icon">
+                                                    <Button variant="ghost" size="icon">
                                                         <MoreHorizontal className="h-4 w-4" />
                                                     </Button>
                                                 </DropdownMenuTrigger>

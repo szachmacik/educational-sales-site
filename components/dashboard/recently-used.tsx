@@ -48,7 +48,7 @@ export function RecentlyUsed() {
                                     <span className="text-[10px] font-black tabular-nums text-slate-500">{progress}%</span>
                                 </div>
                             </div>
-                            <Button onClick={() => toast.success("Funkcja została wywołana.")} size="icon" className="rounded-full h-9 w-9 shadow-sm bg-indigo-50 border border-indigo-100 text-indigo-700 hover:bg-indigo-600 hover:text-white shrink-0 group-hover:scale-110 transition-transform relative z-10 mr-1">
+                            <Button onClick={() => toast.info("Ta funkcja będzie dostępna wkrótce.", { description: "Pracujemy nad tym! 🚀" })} size="icon" className="rounded-full h-9 w-9 shadow-sm bg-indigo-50 border border-indigo-100 text-indigo-700 hover:bg-indigo-600 hover:text-white shrink-0 group-hover:scale-110 transition-transform relative z-10 mr-1">
                                 <Play className="h-3.5 w-3.5 ml-0.5 fill-current" />
                             </Button>
                         </div>

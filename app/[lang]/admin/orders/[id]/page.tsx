@@ -208,7 +208,7 @@ export default function OrderDetailsPage() {
                                     {order.customer.nip && ` (NIP: ${order.customer.nip})`}
                                 </div>
                             )}
-                            <Button onClick={() => toast.success("Akcja wykonana pomyślnie.")} variant="outline" size="sm" className="w-full mt-2">
+                            <Button onClick={() => { toast.info("Wysyłanie e-maili będzie dostępne po skonfigurowaniu klucza RESEND_API_KEY."); }} variant="outline" size="sm" className="w-full mt-2">
                                 <Send className="h-3 w-3 mr-2" />
                                 {o.details.sendEmail}
                             </Button>
