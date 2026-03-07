@@ -14,8 +14,7 @@ export default function WorkshopPage() {
     const lang = (params?.lang as string) || 'pl';
     const { t } = useLanguage();
 
-    // @ts-ignore
-    const dictionary = translations[lang] || translations['pl'] || {};
+    const dictionary = (translations as Record<string, Record<string, unknown>>)[lang] || {}
     const w = t.adminSettings?.workshop || {};
     return (
         <NamespaceGuard dictionary={dictionary}>

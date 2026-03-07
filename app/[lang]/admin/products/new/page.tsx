@@ -24,8 +24,7 @@ export default function NewProductPage() {
     const { t, language } = useLanguage();
     const router = useRouter();
 
-    // @ts-ignore
-    const dictionary = translations[lang] || translations['pl'] || {};
+    const dictionary = (translations as Record<string, Record<string, unknown>>)[lang] || {}
     const p = t.adminPanel?.products || {};
     const common = t.adminSettings?.common || {};
     const [isLoading, setIsLoading] = useState(false);

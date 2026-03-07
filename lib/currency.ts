@@ -1,4 +1,5 @@
-import { Language } from './translations';
+import { Language } from "./translations"
+
 
 export interface CurrencyConfig {
     code: string;
@@ -35,15 +36,38 @@ export const CURRENCIES: Record<string, CurrencyConfig> = {
     da: { code: 'DKK', symbol: 'kr', rate: 1.7, format: '{value} {symbol}' },
 };
 
+/**
+ * Returns the currency configuration for a given language.
+ *
+ * Falls back to USD (`en`) if the language has no dedicated currency mapping.
+ *
+ * @param lang - BCP-47 language code
+ * @returns Currency configuration including code, symbol, rate and format template
+ *
+ * @example
+ * getCurrencyConfig('pl') // { code: 'PLN', symbol: 'zł', rate: 1, format: '{value} {symbol}' }
+ * getCurrencyConfig('de') // { code: 'EUR', symbol: '€', rate: 0.23, format: '{value} {symbol}' }
+ */
 export const getCurrencyConfig = (lang: Language): CurrencyConfig => {
-    return CURRENCIES[lang] || CURRENCIES.en;
-};
+    return CURRENCIES[lang] || CURRENCIES.en
+}
 
 /**
- * Formats a price value based on the selected language.
- * @param value Price in PLN (base currency)
- * @param lang Target language for currency selection
- * @returns Formatted price string
+ * Formats a price in PLN to the target language's currency.
+ *
+ * Converts from PLN using the exchange rate defined in `CURRENCIES`,
+ * applies locale-appropriate thousands separators, and formats
+ * the symbol according to the currency's `format` template.
+ *
+ * @param value - Price in PLN (base currency). Accepts number or numeric string.
+ * @param lang - BCP-47 language code determining the target currency
+ * @returns Formatted price string (e.g., `"49.99 zł"`, `"$12.50"`, `"4 500 Ft"`)
+ *
+ * @example
+ * formatPrice(49.99, 'pl')  // "49.99 zł"
+ * formatPrice(49.99, 'en')  // "$12.50"
+ * formatPrice(49.99, 'hu')  // "4 499 Ft"
+ * formatPrice('invalid', 'pl') // "0.00"
  */
 export const formatPrice = (value: number | string, lang: Language): string => {
     const amount = typeof value === 'string' ? parseFloat(value) : value;

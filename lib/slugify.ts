@@ -1,3 +1,17 @@
+/**
+ * Converts a string to a URL-friendly slug.
+ *
+ * Handles Polish and other Central/Eastern European diacritics,
+ * replaces whitespace with hyphens, and removes non-word characters.
+ *
+ * @param text - The input string to slugify
+ * @returns A lowercase, hyphen-separated URL slug
+ *
+ * @example
+ * slugify("Mega Pack 2w1") // "mega-pack-2w1"
+ * slugify("Ćwiczenia językowe") // "cwiczenia-jezykowe"
+ * slugify("  Hello   World  ") // "hello-world"
+ */
 export function slugify(text: string): string {
     return text
         .toString()
@@ -16,5 +30,5 @@ export function slugify(text: string): string {
         .replace(/[źż]/g, "z")
         .replace(/\s+/g, "-")
         .replace(/[^\w\-]+/g, "")
-        .replace(/\-\-+/g, "-");
+        .replace(/\-\-+/g, "-")
 }

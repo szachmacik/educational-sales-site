@@ -5,8 +5,7 @@ import { NamespaceGuard } from "@/components/language-provider";
 import { translations } from "@/lib/translations";
 
 export default function AbandonedContent({ lang }: { lang: string }) {
-    // @ts-ignore
-    const dictionary = translations[lang] || {};
+    const dictionary = (translations as Record<string, Record<string, unknown>>)[lang] || {}
 
     return (
         <NamespaceGuard dictionary={dictionary} namespace="abandonedHub">

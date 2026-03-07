@@ -91,8 +91,7 @@ export default function ImportPage() {
     const lang = (params?.lang as string) || 'pl';
     const { t, language } = useLanguage();
 
-    // @ts-ignore
-    const dictionary = translations[lang] || translations['pl'] || {};
+    const dictionary = (translations as Record<string, Record<string, unknown>>)[lang] || {}
     const trans = t.adminPanel?.import || {};
     const [catalogUrl, setCatalogUrl] = useState("https://www.kamilaenglish.com/sklep/");
     const [interactiveUrl, setInteractiveUrl] = useState("");
@@ -114,8 +113,7 @@ export default function ImportPage() {
 
     // Helper to get translated category name safely
     const getCategoryName = (key: string) => {
-        // @ts-ignore - dynamic key access
-        return trans.categories?.[key] || key;
+        return (trans.categories as Record<string, string>)?.[key] || key;
     };
 
     const addLog = (msg: string) => {

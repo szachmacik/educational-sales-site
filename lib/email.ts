@@ -1,27 +1,54 @@
 /**
- * Email sending utility
- * Supports: SMTP (nodemailer) and Resend API
+ * Email sending utility for Zoney educational platform.
  *
- * Configure via environment variables:
- *   SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, SMTP_FROM  — for SMTP/Gmail
- *   RESEND_API_KEY, RESEND_FROM                             — for Resend
+ * Supports two email providers with automatic fallback:
+ * 1. **Resend** (recommended) — set `RESEND_API_KEY`
+ * 2. **SMTP/nodemailer** (fallback) — set `SMTP_HOST`, `SMTP_USER`, `SMTP_PASS`
  *
- * Priority: Resend > SMTP
+ * Priority: Resend > SMTP. If neither is configured, emails are silently skipped
+ * with a warning logged to the console.
+ *
+ * @module email
+ *
+ * @example
+ * import { sendEmail, orderConfirmationEmail } from '@/lib/email'
+ *
+ * const payload = orderConfirmationEmail('user@example.com', 'Jan', 'ORD-123', ['SpeakBook'], '49 zł')
+ * const success = await sendEmail(payload)
  */
 
 import nodemailer from "nodemailer";
 
+/**
+ * Payload for sending an email message.
+ */
 export interface EmailPayload {
+  /** Recipient email address */
   to: string;
+  /** Email subject line */
   subject: string;
+  /** HTML body of the email */
   html: string;
+  /** Plain text fallback body (optional but recommended) */
   text?: string;
 }
 
+/**
+ * Sends an email via the Resend API.
+ *
+ * @param payload - Email content and recipient
+ * @returns `true` if sent successfully, `false` on error
+ */
 async function sendViaResend(payload: EmailPayload): Promise<boolean> {
   const apiKey = process.env.RESEND_API_KEY;
   const from = process.env.FROM_EMAIL || process.env.RESEND_FROM || "noreply@ofshore.dev";
 
+  if (!apiKey) {
+    console.error("[Email/Resend] RESEND_API_KEY is not set");
+    return false;
+  }
+
+  try {
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
@@ -43,8 +70,18 @@ async function sendViaResend(payload: EmailPayload): Promise<boolean> {
     return false;
   }
   return true;
+  } catch (err) {
+    console.error("[Email/Resend] Network error:", err);
+    return false;
+  }
 }
 
+/**
+ * Sends an email via SMTP using nodemailer.
+ *
+ * @param payload - Email content and recipient
+ * @returns `true` if sent successfully, `false` on error
+ */
 async function sendViaSMTP(payload: EmailPayload): Promise<boolean> {
   const host = process.env.SMTP_HOST;
   const port = parseInt(process.env.SMTP_PORT || "587", 10);
@@ -74,7 +111,30 @@ async function sendViaSMTP(payload: EmailPayload): Promise<boolean> {
   }
 }
 
+/**
+ * Sends an email using the configured provider (Resend or SMTP).
+ *
+ * Automatically selects the available provider. If neither is configured,
+ * logs a warning and returns `false` without throwing.
+ *
+ * @param payload - Email content and recipient
+ * @returns `true` if the email was sent successfully, `false` otherwise
+ *
+ * @example
+ * const sent = await sendEmail({
+ *   to: 'customer@example.com',
+ *   subject: 'Potwierdzenie zamówienia',
+ *   html: '<p>Dziękujemy za zakup!</p>',
+ *   text: 'Dziękujemy za zakup!',
+ * })
+ */
 export async function sendEmail(payload: EmailPayload): Promise<boolean> {
+  // Validate recipient
+  if (!payload.to || !payload.to.includes('@')) {
+    console.error("[Email] Invalid recipient address:", payload.to);
+    return false;
+  }
+
   if (process.env.RESEND_API_KEY) {
     return sendViaResend(payload);
   }
@@ -87,6 +147,12 @@ export async function sendEmail(payload: EmailPayload): Promise<boolean> {
 
 // ─── Email Templates ────────────────────────────────────────────────────────
 
+/**
+ * Generates an admin password reset email payload.
+ *
+ * @param password - The new temporary password to include in the email
+ * @returns Email payload ready to pass to `sendEmail()`
+ */
 export function adminPasswordResetEmail(password: string): EmailPayload {
   return {
     to: process.env.ADMIN_EMAIL || "",
@@ -117,6 +183,26 @@ export function adminPasswordResetEmail(password: string): EmailPayload {
   };
 }
 
+/**
+ * Generates an order confirmation email payload.
+ *
+ * @param customerEmail - Recipient email address
+ * @param customerName - Customer's display name
+ * @param orderId - Unique order identifier
+ * @param products - List of purchased product names
+ * @param total - Formatted total price string (e.g., "49 zł")
+ * @returns Email payload ready to pass to `sendEmail()`
+ *
+ * @example
+ * const email = orderConfirmationEmail(
+ *   'jan@example.com',
+ *   'Jan Kowalski',
+ *   'ORD-2026-001',
+ *   ['SpeakBook Pro', 'Mega Pack'],
+ *   '149 zł'
+ * )
+ * await sendEmail(email)
+ */
 export function orderConfirmationEmail(
   customerEmail: string,
   customerName: string,

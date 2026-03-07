@@ -85,8 +85,7 @@ export default function BlogListPage() {
     }, [posts, search]);
 
     const getCategoryLabel = (value: string) => {
-        // @ts-ignore - dynamic key access
-        return b.categories?.[value] || BLOG_CATEGORIES.find((c) => c.value === value)?.label || value;
+        return (b.categories as Record<string, string>)?.[value] || BLOG_CATEGORIES.find((c) => c.value === value)?.label || value;
     };
 
     const formatDate = (dateString: string) => {

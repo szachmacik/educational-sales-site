@@ -25,8 +25,7 @@ export default function EditProductPage() {
     const { t, language, formatPrice } = useLanguage();
     const router = useRouter();
 
-    // @ts-ignore
-    const dictionary = translations[lang] || translations['pl'] || {};
+    const dictionary = (translations as Record<string, Record<string, unknown>>)[lang] || {}
     const p = (t.adminPanel?.products as any) || {};
     const common = t.adminSettings?.common || {};
 

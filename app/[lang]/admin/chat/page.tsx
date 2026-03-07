@@ -48,8 +48,7 @@ export default function AdminChatPage() {
     const [sessions, setSessions] = useState<ChatSession[]>([]);
 
     useEffect(() => {
-        // @ts-ignore - dynamic key access
-        const ms = c.mockSessions;
+        const ms = (c as Record<string, unknown>).mockSessions as Record<string, {title?: string; date?: string}> | undefined;
         if (ms) {
             setSessions([
                 { id: '1', title: ms.s1?.title || 'Analiza', date: ms.s1?.date || 'Dzisiaj' },

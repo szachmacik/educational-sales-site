@@ -63,17 +63,15 @@ export function ProductsContent({ lang }: { lang: string }) {
     const categoryNames: Record<string, string> = {
         "all": t.shop?.all || "All",
         ...Object.keys(t.categories?.items || {}).reduce((acc, key) => {
-            // @ts-ignore
-            const cat = t.categories.items[key];
-            if (cat) acc[key] = cat.title;
+            const cat = (t.categories?.items as Record<string, {title?: string}>)?.[key];
+            if (cat) acc[key] = cat.title ?? key;
             return acc;
         }, {} as Record<string, string>)
     };
 
     const ageTags = AGE_TAGS_IDS.map(id => ({
         id,
-        // @ts-ignore
-        label: t.categories?.items?.[id]?.title || id
+        label: (t.categories?.items as Record<string, {title?: string}>)?.[id]?.title || id
     }));
 
     const filteredProducts = React.useMemo(() => {

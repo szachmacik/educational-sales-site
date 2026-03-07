@@ -16,8 +16,7 @@ export default function SettingsPage() {
     const lang = (params?.lang as string) || 'pl';
 
     // Load dictionary for guard
-    // @ts-ignore
-    const dictionary = translations[lang] || {};
+    const dictionary = (translations as Record<string, Record<string, unknown>>)[lang] || {}
 
     return <SettingsContent dictionary={dictionary} />;
 }

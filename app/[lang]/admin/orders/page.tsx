@@ -86,8 +86,7 @@ export default function OrdersPage() {
     const lang = (params?.lang as string) || 'pl';
     const { t, language } = useLanguage();
 
-    // @ts-ignore
-    const dictionary = translations[lang] || translations['pl'] || {};
+    const dictionary = (translations as Record<string, Record<string, unknown>>)[lang] || {}
     const o = t.adminPanel?.orders || {};
     const [orders, setOrders] = useState<Order[]>([]);
     const [search, setSearch] = useState("");

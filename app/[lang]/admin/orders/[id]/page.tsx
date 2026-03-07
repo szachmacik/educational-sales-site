@@ -48,8 +48,7 @@ export default function OrderDetailsPage() {
     const { t, language } = useLanguage();
     const router = useRouter();
 
-    // @ts-ignore
-    const dictionary = translations[lang] || translations['pl'] || {};
+    const dictionary = (translations as Record<string, Record<string, unknown>>)[lang] || {}
     const o = t.adminPanel?.orders || {};
 
     const [order, setOrder] = useState<Order | null>(null);

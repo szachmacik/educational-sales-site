@@ -97,8 +97,7 @@ export function ProductDetailView({ slug }: ProductDetailViewProps) {
     // Helper for category name translation (fallback to hardcoded map logic or extend translations)
     // Helper for category name translation
     const primaryCategory = product.categories[0];
-    // @ts-ignore
-    const categoryName = (t.products?.productCategories as any)?.[primaryCategory] || t.categories?.items?.[primaryCategory]?.title || primaryCategory;
+    const categoryName = (t.products?.productCategories as Record<string, string>)?.[primaryCategory] || t.categories?.items?.[primaryCategory]?.title || primaryCategory;
 
 
 

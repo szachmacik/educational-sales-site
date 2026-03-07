@@ -110,8 +110,7 @@ export default function ProductsPage() {
     const lang = (params?.lang as string) || 'pl';
     const { t, language } = useLanguage();
 
-    // @ts-ignore
-    const dictionary = translations[lang] || translations['pl'] || {};
+    const dictionary = (translations as Record<string, Record<string, unknown>>)[lang] || {}
     const p = t.adminPanel?.products || {};
     const [products, setProducts] = useState<Product[]>([]);
     const [search, setSearch] = useState("");
@@ -272,8 +271,7 @@ export default function ProductsPage() {
                                             </TableCell>
                                             <TableCell className="hidden md:table-cell">
                                                 <Badge variant="secondary" className="whitespace-nowrap">
-                                                    {/* @ts-ignore */}
-                                                    {t.adminPanel?.products?.categories?.[product.category] || getCategoryLabel(product.category)}
+                                                    {(t.adminPanel?.products?.categories as Record<string, string>)?.[product.category] || getCategoryLabel(product.category)}
                                                 </Badge>
                                             </TableCell>
                                             <TableCell>
