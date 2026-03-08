@@ -1,36 +1,25 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 import { sendEmail } from "@/lib/email";
 import { checkRateLimit, getClientIp } from "@/lib/rate-limit";
+import { withErrorHandler, apiResponse, ApiError, parseBody, requireFields } from "@/lib/api-error";
 
-export async function POST(req: NextRequest) {
-    try {
+export const POST = withErrorHandler(async (req: NextRequest, _ctx) => {
         // Rate limiting: 3 contact form submissions per 10 minutes per IP
         const clientIp = getClientIp(req);
         const rateLimit = checkRateLimit(`contact:${clientIp}`, { limit: 3, windowSecs: 600 });
         if (!rateLimit.success) {
-            return NextResponse.json(
-                { error: "too_many_requests", message: "Zbyt wiele wiadomości. Spróbuj ponownie za chwilę." },
-                { status: 429 }
-            );
+            throw new ApiError("RATE_LIMITED", "Zbyt wiele wiadomości. Spróbuj ponownie za chwilę.", undefined,
+                { "Retry-After": String(Math.ceil((rateLimit.resetAt - Date.now()) / 1000)) });
         }
 
-        const body = await req.json();
-        const { name, email, message, subject } = body;
-
-        if (!name || !email || !message) {
-            return NextResponse.json(
-                { error: "Missing required fields: name, email, message" },
-                { status: 400 }
-            );
-        }
+        const body = await parseBody(req);
+        requireFields(body, ["name", "email", "message"]);
+        const { name, email, message, subject } = body as { name: string; email: string; message: string; subject?: string };
 
         // Basic email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            return NextResponse.json(
-                { error: "Invalid email address" },
-                { status: 400 }
-            );
+            throw new ApiError("INVALID_FORMAT", "Nieprawidłowy adres email", { field: "email" });
         }
 
         const adminEmail = process.env.ADMIN_EMAIL || process.env.RESEND_FROM || "kontakt@ofshore.dev";
@@ -70,16 +59,8 @@ export async function POST(req: NextRequest) {
 
         if (!emailSent) {
             console.warn("[Contact] Email sending failed, but logging the submission.");
-            // Still return success to user — log to console for now
             console.info(`[Contact] Form submission: name=${name}, email=${email}, message=${message.substring(0, 100)}`);
         }
 
-        return NextResponse.json({ success: true });
-    } catch (error: any) {
-        console.error("[Contact] Error:", error);
-        return NextResponse.json(
-            { error: "Server error", message: error.message },
-            { status: 500 }
-        );
-    }
-}
+        return apiResponse.ok({ success: true });
+});

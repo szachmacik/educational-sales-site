@@ -259,7 +259,13 @@ export function logApiError(
 // MIDDLEWARE WRAPPER
 // ─────────────────────────────────────────────────────────────────────────────
 
-type RouteHandler = (req: NextRequest, context?: { params: Record<string, string> }) => Promise<NextResponse>
+// Next.js 15 route handler context type — params is a Promise (Next.js 15+)
+export type RouteContext = { params: Promise<Record<string, string>> }
+// RouteHandler accepts optional context to work for both /api/route and /api/[id]/route
+type RouteHandler = (
+  req: NextRequest,
+  context: RouteContext
+) => Promise<NextResponse>
 
 /**
  * Wraps an API route handler with automatic error handling.
@@ -289,7 +295,7 @@ type RouteHandler = (req: NextRequest, context?: { params: Record<string, string
  * })
  */
 export function withErrorHandler(handler: RouteHandler): RouteHandler {
-  return async (req: NextRequest, context?: { params: Record<string, string> }) => {
+  return async (req: NextRequest, context: RouteContext) => {
     try {
       const response = await handler(req, context)
       return response

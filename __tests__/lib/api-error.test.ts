@@ -134,9 +134,11 @@ describe('withErrorHandler', () => {
   const makeRequest = (url = 'https://example.com/api/test') =>
     new NextRequest(url, { method: 'GET' })
 
+  const emptyCtx = { params: Promise.resolve({}) }
+
   it('passes through successful handler response', async () => {
     const handler = withErrorHandler(async () => apiResponse.ok({ ok: true }))
-    const res = await handler(makeRequest())
+    const res = await handler(makeRequest(), emptyCtx)
     expect(res.status).toBe(200)
     const body = await res.json()
     expect(body.data).toEqual({ ok: true })
@@ -146,7 +148,7 @@ describe('withErrorHandler', () => {
     const handler = withErrorHandler(async () => {
       throw new ApiError('NOT_FOUND', 'Item not found')
     })
-    const res = await handler(makeRequest())
+    const res = await handler(makeRequest(), emptyCtx)
     expect(res.status).toBe(404)
     const body = await res.json()
     expect(body.error.code).toBe('NOT_FOUND')
@@ -156,7 +158,7 @@ describe('withErrorHandler', () => {
     const handler = withErrorHandler(async () => {
       throw new Error('Something exploded')
     })
-    const res = await handler(makeRequest())
+    const res = await handler(makeRequest(), emptyCtx)
     expect(res.status).toBe(500)
     const body = await res.json()
     expect(body.error.code).toBe('INTERNAL_ERROR')
@@ -164,9 +166,10 @@ describe('withErrorHandler', () => {
 
   it('passes context params to handler', async () => {
     const handler = withErrorHandler(async (_req, ctx) => {
-      return apiResponse.ok({ id: ctx?.params?.id })
+      const params = ctx?.params ? await ctx.params : {}
+      return apiResponse.ok({ id: params.id })
     })
-    const res = await handler(makeRequest(), { params: { id: 'abc-123' } })
+    const res = await handler(makeRequest(), { params: Promise.resolve({ id: 'abc-123' }) })
     const body = await res.json()
     expect(body.data.id).toBe('abc-123')
   })
