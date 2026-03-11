@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
+  // SECURITY: Remove X-Powered-By header to prevent fingerprinting
+  poweredByHeader: false,
   typescript: {
     // All TypeScript errors fixed as of 2026-03-04
     ignoreBuildErrors: false,
