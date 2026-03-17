@@ -233,6 +233,19 @@ const TOOLS = [
     }
   },
   {
+    name: "ask_claude",
+    description: "Ask Claude AI directly via API. Fast (haiku) for code questions, smart (sonnet) for architecture.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        message: { type: "string", description: "Your question or request for Claude" },
+        context: { type: "string", description: "Optional additional context (code, error, task details)" },
+        tier: { type: "string", enum: ["fast", "smart"], default: "fast", description: "fast=haiku (cheap), smart=sonnet (better reasoning)" }
+      },
+      required: ["message"]
+    }
+  },
+  {
     name: "guardian_audit",
     description: "Check if guardian endpoint works on an app",
     inputSchema: {
@@ -376,6 +389,24 @@ async function handleTool(name, args) {
       const r = await cf(`/deploy?uuid=${args.uuid}&force=true`);
       const depId = r.data?.deployments?.[0]?.deployment_uuid || "?";
       return `Deploy started: ${depId}`;
+    }
+
+    case "ask_claude": {
+      const tier = args.tier || "fast";
+      const r = await httpRequest(
+        `${SB_URL}/functions/v1/claude-bridge`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-agent-key": "ofshore-agents-2026"
+          }
+        },
+        { from: "antygravity-mcp", message: args.message, context: args.context || "", tier }
+      );
+      const d = r.data;
+      if (d.error) throw new Error(d.error);
+      return `Claude (${d.model}, ${d.tokens} tokens):\n\n${d.reply}`;
     }
 
     case "guardian_audit": {
